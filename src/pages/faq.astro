@@ -1,0 +1,30 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+const questions = (await getCollection('faq')).sort((a, b) => a.data.order - b.data.order);
+const rendered = await Promise.all(questions.map((q) => render(q)));
+---
+
+<Layout title="FAQ" description="Frequently asked questions about booking with Charrish Travels.">
+  <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+    <h1 class="font-serif text-3xl text-emerald-950">Frequently Asked Questions</h1>
+
+    <div class="mt-8 divide-y divide-emerald-100 border-y border-emerald-100">
+      {questions.map((q, i) => {
+        const { Content } = rendered[i];
+        return (
+          <details class="group py-4">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-medium text-emerald-950">
+              {q.data.question}
+              <span class="ml-4 shrink-0 text-emerald-600 transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <div class="mt-3 text-sm text-emerald-900/80">
+              <Content />
+            </div>
+          </details>
+        );
+      })}
+    </div>
+  </section>
+</Layout>

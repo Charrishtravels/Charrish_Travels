@@ -1,0 +1,649 @@
+<title>Charrish Travels — Proposal &amp; Quotation</title>
+<style>
+  :root {
+    --paper: #ffffff;
+    --paper-dim: #f2f8f7;
+    --ink: #121212;
+    --ink-soft: #333333;
+    --ink-faint: #666666;
+    --accent: #0d7d6c;
+    --accent-soft: #7ebcae;
+    --line: #d7e8e4;
+    --shadow:
+      0 1px 2px rgba(13, 125, 108, 0.05), 0 12px 32px rgba(13, 125, 108, 0.08);
+  }
+  :root[data-theme="light"],
+  :root[data-theme="dark"] {
+    --paper: #ffffff;
+    --paper-dim: #f2f8f7;
+    --ink: #121212;
+    --ink-soft: #333333;
+    --ink-faint: #666666;
+    --accent: #0d7d6c;
+    --accent-soft: #7ebcae;
+    --line: #d7e8e4;
+    --shadow:
+      0 1px 2px rgba(13, 125, 108, 0.05), 0 12px 32px rgba(13, 125, 108, 0.08);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family:
+      -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding: 40px 16px 80px;
+  }
+
+  .sheet {
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 56px 60px 48px;
+  }
+
+  /* ---- Letterhead (footer) ---- */
+  .letterhead {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-top: 22px;
+    margin-top: 8px;
+    border-top: 1px solid var(--line);
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .person {
+    font-size: 12.5px;
+    line-height: 1.55;
+  }
+  .person + .person {
+    margin-top: 10px;
+  }
+  .person-name {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    font-size: 14.5px;
+    color: var(--ink);
+    letter-spacing: 0.01em;
+  }
+  .person-contact {
+    color: var(--ink-soft);
+    font-variant-numeric: tabular-nums;
+  }
+  .person-contact a {
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+  .person-contact a:hover {
+    text-decoration: underline;
+  }
+
+  .doc-kind {
+    text-align: right;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .doc-date {
+    text-align: right;
+    font-size: 12.5px;
+    color: var(--ink-faint);
+    margin-top: 6px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- Title block ---- */
+  .title-block {
+    padding: 40px 0 28px;
+    text-align: center;
+  }
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 14px 0 0;
+  }
+  h1.doc-title {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    font-weight: 500;
+    font-size: 2.15rem;
+    line-height: 1.25;
+    margin: 0;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+
+  .flightpath {
+    display: block;
+    margin: 26px auto 0;
+    width: 220px;
+    height: 28px;
+  }
+  .flightpath path {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 1.4;
+  }
+  .flightpath circle {
+    fill: var(--accent);
+  }
+
+  /* ---- Sections ---- */
+  section.block {
+    padding: 22px 0;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  section.block:first-of-type {
+    padding-top: 30px;
+  }
+
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 14px;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  .section-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .section-rule {
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+  }
+  p.lede {
+    font-size: 14.5px;
+    color: var(--ink-soft);
+    line-height: 1.65;
+    margin: 0 0 18px;
+    max-width: 60ch;
+  }
+
+  .scope-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px 32px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .scope-item h3 {
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    color: var(--ink);
+    margin: 0 0 8px;
+    font-weight: 600;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  .scope-item ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .scope-item li {
+    position: relative;
+    padding-left: 14px;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+  .scope-item li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.72em;
+    width: 4px;
+    height: 4px;
+    background: var(--accent-soft);
+    border-radius: 50%;
+  }
+
+  table.timeline {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  table.timeline th {
+    text-align: left;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+    padding: 0 0 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  table.timeline td {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink-soft);
+    vertical-align: top;
+  }
+  table.timeline tr:last-child td {
+    border-bottom: none;
+  }
+  table.timeline .phase-num {
+    font-family: Georgia, serif;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    width: 28px;
+  }
+  table.timeline .phase-name {
+    color: var(--ink);
+    font-weight: 400;
+    width: auto;
+  }
+  table.timeline .phase-days {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  tfoot.timeline-total td {
+    border-top: 1px solid var(--ink-faint);
+    border-bottom: none;
+    padding-top: 12px;
+    color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .deliverables-list {
+    columns: 2;
+    column-gap: 32px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .deliverables-list li {
+    break-inside: avoid;
+    position: relative;
+    padding-left: 20px;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    line-height: 1.9;
+  }
+  .deliverables-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 11px;
+    top: 0.35em;
+  }
+
+  .price-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--paper-dim);
+    border: 1px solid var(--line);
+    padding: 22px 26px;
+    margin-top: 8px;
+  }
+  .price-label {
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  .price-label span {
+    display: block;
+    font-size: 11px;
+    color: var(--ink-faint);
+    margin-top: 3px;
+  }
+  .price-value {
+    font-family: Georgia, "Iowan Old Style", serif;
+    font-size: 1.9rem;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+  }
+  .price-value sup {
+    font-size: 0.9rem;
+    color: var(--accent);
+    margin-right: 2px;
+  }
+
+  .notes {
+    font-size: 12.5px;
+    color: var(--ink-faint);
+    line-height: 1.8;
+  }
+  .notes li {
+    margin-bottom: 4px;
+  }
+  .notes ul {
+    margin: 0;
+    padding-left: 16px;
+  }
+
+  @media (max-width: 620px) {
+    .sheet {
+      padding: 34px 22px 30px;
+    }
+    .letterhead {
+      flex-direction: column;
+    }
+    .doc-kind,
+    .doc-date {
+      text-align: left;
+    }
+    .scope-grid {
+      grid-template-columns: 1fr;
+    }
+    .deliverables-list {
+      columns: 1;
+    }
+    h1.doc-title {
+      font-size: 1.6rem;
+    }
+    .price-panel {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+
+  @media print {
+    body {
+      background: #fff;
+      padding: 0;
+    }
+    .sheet {
+      box-shadow: none;
+      border: none;
+      max-width: 100%;
+      padding: 0;
+    }
+    .title-block {
+      padding-top: 0;
+    }
+    section.block {
+      padding: 14px 0;
+    }
+    .letterhead {
+      margin-top: 4px;
+      padding-top: 14px;
+    }
+    .scope-item {
+      display: table;
+      width: 100%;
+      break-inside: avoid-page;
+      page-break-inside: avoid;
+    }
+    @page {
+      size: A4;
+      margin: 14mm 16mm;
+    }
+  }
+</style>
+
+<div class="sheet">
+  <div class="title-block">
+    <h1 class="doc-title">Website, Brand Theme &amp; Itinerary Document</h1>
+    <p class="eyebrow">A complete digital presence for Charrish Travels</p>
+  </div>
+
+  <section class="block">
+    <div class="section-head">
+      <span class="section-eyebrow">Overview</span>
+      <span class="section-rule"></span>
+    </div>
+    <p class="lede" style="max-width: 100%">
+      This is where Charrish Travels' digital presence begins. Over three
+      phases, we'll design a logo and brand theme, build a fully responsive
+      website, and put together a digital itinerary document — so every
+      touchpoint a traveller sees, from a Google search to a WhatsApp share,
+      reads as one studio-quality brand from day one.
+    </p>
+  </section>
+
+  <section class="block">
+    <div class="section-head">
+      <span class="section-eyebrow">01 — Brand Theme</span>
+      <span class="section-rule"></span>
+    </div>
+    <div class="scope-grid">
+      <div class="scope-item">
+        <ul>
+          <li>Logo Design</li>
+          <li>
+            Primary &amp; secondary colour palette (extended from the new logo)
+          </li>
+          <li>Heading &amp; body typeface pairing</li>
+          <li>Photography &amp; iconography direction for destinations</li>
+        </ul>
+      </div>
+      <div class="scope-item">
+        <ul>
+          <li>
+            Section motifs (dividers, markers) drawn from the new mark's
+            line-art
+          </li>
+          <li>Button, link &amp; form styling rules</li>
+          <li>One-page style reference for future use</li>
+          <li>Applied consistently across web and the itinerary document</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-head">
+      <span class="section-eyebrow">02 — Website</span>
+      <span class="section-rule"></span>
+    </div>
+    <div class="scope-grid">
+      <div class="scope-item">
+        <h3>Pages</h3>
+        <ul>
+          <li>Home</li>
+          <li>Destinations / Packages listing</li>
+          <li>Package detail page</li>
+          <li>About Us</li>
+          <li>Gallery</li>
+          <li>Testimonials &amp; Reviews</li>
+          <li>Contact</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+      <div class="scope-item">
+        <h3>Functionality</h3>
+        <ul>
+          <li>Customer review &amp; rating submission form</li>
+          <li>New reviews held for approval before publishing</li>
+          <li>Every contact channel listed — phone, email, social, location</li>
+          <li>Responsive across mobile, tablet &amp; desktop</li>
+          <li>Basic on-page SEO (titles, meta, sitemap)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-head">
+      <span class="section-eyebrow">03 — Itinerary Document</span>
+      <span class="section-rule"></span>
+    </div>
+    <div class="scope-grid">
+      <div class="scope-item">
+        <ul>
+          <li>Layout built to the brand theme above</li>
+          <li>Featured destinations &amp; services spread</li>
+          <li>Contact details</li>
+        </ul>
+      </div>
+      <div class="scope-item">
+        <ul>
+          <li>Digital PDF, optimised for WhatsApp/email sharing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-head">
+      <span class="section-eyebrow">Tools &amp; Technologies</span>
+      <span class="section-rule"></span>
+    </div>
+    <div class="scope-grid">
+      <div class="scope-item">
+        <ul>
+          <li>Design — Figma</li>
+          <li>Frontend — Astro</li>
+          <li>Hosting — Netlify / Vercel</li>
+        </ul>
+      </div>
+      <div class="scope-item">
+        <ul>
+          <li>Review &amp; form handling — lightweight serverless backend</li>
+          <li>Itinerary Document — Figma, exported to PDF</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-head">
+      <span class="section-eyebrow">Timeline</span>
+      <span class="section-rule"></span>
+    </div>
+    <table class="timeline">
+      <thead>
+        <tr>
+          <th>Phase</th>
+          <th></th>
+          <th style="text-align: right">Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="phase-num">1</td>
+          <td class="phase-name">Itinerary Document design</td>
+          <td class="phase-days">2 – 3 days</td>
+        </tr>
+        <tr>
+          <td class="phase-num">2</td>
+          <td class="phase-name">Brand theme definition</td>
+          <td class="phase-days">2 – 3 days</td>
+        </tr>
+        <tr>
+          <td class="phase-num">3</td>
+          <td class="phase-name">Website UI/UX design</td>
+          <td class="phase-days">4 – 5 days</td>
+        </tr>
+        <tr>
+          <td class="phase-num">4</td>
+          <td class="phase-name">Website development</td>
+          <td class="phase-days">6 – 8 days</td>
+        </tr>
+        <tr>
+          <td class="phase-num">5</td>
+          <td class="phase-name">Review &amp; handover</td>
+          <td class="phase-days">2 days</td>
+        </tr>
+      </tbody>
+      <tfoot class="timeline-total">
+        <tr>
+          <td></td>
+          <td>Total estimated timeline</td>
+          <td class="phase-days">16 – 21 days</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <section class="block">
+    <div class="section-head">
+      <span class="section-eyebrow">Deliverables</span>
+      <span class="section-rule"></span>
+    </div>
+    <ul class="deliverables-list">
+      <li>Fully responsive website</li>
+      <li>Brand theme reference (colour, type, usage)</li>
+      <li>Itinerary Document (digital PDF)</li>
+      <li>Source files</li>
+      <li>Basic SEO setup</li>
+    </ul>
+  </section>
+
+  <section class="block">
+    <div class="section-head">
+      <span class="section-eyebrow">Investment</span>
+      <span class="section-rule"></span>
+    </div>
+    <div class="price-panel">
+      <div class="price-label">
+        Total for website, brand theme &amp; itinerary document<span
+          >Domain, hosting &amp; third-party subscriptions billed
+          separately</span
+        >
+      </div>
+      <div class="price-value"><sup>₹</sup>15,000</div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="notes">
+      <ul>
+        <li>
+          Content (destination copy, photos, package details) to be provided by
+          Charrish Travels, or sourced together during the design phase.
+        </li>
+        <li>
+          Domain, hosting and any third-party subscriptions are billed
+          separately and remain in the client's name.
+        </li>
+        <li>
+          Scope reflects the site and itinerary document described above;
+          features requested beyond this scope can be quoted separately.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="letterhead">
+    <div>
+      <div class="person">
+        <div class="person-name">Navadeep Reddy Chilkamarri</div>
+        <div class="person-contact">
+          <a href="mailto:chilkamarrinavadeepreddy@gmail.com"
+            >chilkamarrinavadeepreddy@gmail.com</a
+          >
+          &nbsp;·&nbsp; 63028 73081
+        </div>
+      </div>
+      <div class="person">
+        <div class="person-name">Shruti Kamma</div>
+        <div class="person-contact">
+          <a href="mailto:shrutikamma@gmail.com">shrutikamma@gmail.com</a>
+          &nbsp;·&nbsp; 93926 76095
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="doc-kind">Proposal &amp; Quotation</div>
+      <div class="doc-date">20 July 2026</div>
+    </div>
+  </div>
+</div>

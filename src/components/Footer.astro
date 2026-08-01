@@ -1,0 +1,38 @@
+---
+import { SITE } from '../consts';
+---
+
+<footer class="border-t border-emerald-100 bg-emerald-50/60">
+  <div class="mx-auto grid max-w-5xl gap-8 px-4 py-12 sm:grid-cols-3 sm:px-6">
+    <div>
+      <p class="font-serif text-lg font-semibold text-emerald-900">{SITE.name}</p>
+      <p class="mt-2 text-sm text-emerald-900/70">{SITE.tagline}</p>
+    </div>
+
+    <div class="text-sm text-emerald-900/80">
+      <p class="font-semibold text-emerald-900">Contact</p>
+      <ul class="mt-2 space-y-1.5">
+        <li><a href={`tel:${SITE.phone}`} class="hover:text-emerald-600">{SITE.phone}</a></li>
+        <li><a href={`mailto:${SITE.email}`} class="hover:text-emerald-600">{SITE.email}</a></li>
+        <li>
+          <a href={`https://wa.me/${SITE.whatsapp}`} class="hover:text-emerald-600" target="_blank" rel="noopener">
+            WhatsApp us
+          </a>
+        </li>
+        <li>{SITE.location}</li>
+      </ul>
+    </div>
+
+    <div class="text-sm text-emerald-900/80">
+      <p class="font-semibold text-emerald-900">Follow</p>
+      <ul class="mt-2 space-y-1.5">
+        <li><a href={SITE.instagram} class="hover:text-emerald-600" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href={SITE.facebook} class="hover:text-emerald-600" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-emerald-100 px-4 py-4 text-center text-xs text-emerald-900/60 sm:px-6">
+    &copy; {new Date().getFullYear()} {SITE.name}. All rights reserved.
+  </div>
+</footer>
