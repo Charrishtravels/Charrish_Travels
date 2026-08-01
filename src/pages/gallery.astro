@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+const photos = (await getCollection('gallery')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Layout title="Gallery" description="Photos from Charrish Travels destinations and trips.">
+  <section class="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-16">
+    <h1 class="font-serif text-3xl text-emerald-950">Gallery</h1>
+    <p class="mt-2 max-w-2xl text-emerald-900/70">A few moments from trips we've run.</p>
+
+    <div class="mt-8 columns-1 gap-4 sm:columns-2 lg:columns-3 [&>*]:mb-4">
+      {photos.map((photo) => (
+        <figure class="overflow-hidden rounded-xl border border-emerald-100 bg-emerald-50">
+          <img src={photo.data.image} alt={photo.data.caption ?? ''} loading="lazy" class="w-full object-cover" />
+          {photo.data.caption && (
+            <figcaption class="p-3 text-xs text-emerald-900/70">{photo.data.caption}</figcaption>
+          )}
+        </figure>
+      ))}
+    </div>
+  </section>
+</Layout>

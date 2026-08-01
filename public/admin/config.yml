@@ -1,0 +1,57 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: destinations
+    label: Destinations & Packages
+    folder: src/content/destinations
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Location, name: location, widget: string }
+      - { label: Summary, name: summary, widget: text }
+      - { label: Hero Image, name: heroImage, widget: image }
+      - { label: Price From (INR), name: priceFrom, widget: number, value_type: int }
+      - { label: Duration, name: duration, widget: string, hint: 'e.g. 4 Days / 3 Nights' }
+      - { label: Highlights, name: highlights, widget: list, default: [] }
+      - { label: Featured on Home page, name: featured, widget: boolean, default: false }
+      - { label: Full Description, name: body, widget: markdown }
+
+  - name: testimonials
+    label: Testimonials
+    folder: src/content/testimonials
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: Name, name: name, widget: string }
+      - { label: Location, name: location, widget: string, required: false }
+      - { label: Rating (1-5), name: rating, widget: number, min: 1, max: 5, value_type: int }
+      - { label: Photo, name: photo, widget: image, required: false }
+      - { label: Quote, name: body, widget: markdown }
+
+  - name: gallery
+    label: Gallery
+    folder: src/content/gallery
+    create: true
+    slug: '{{fields.order}}-{{slug}}'
+    fields:
+      - { label: Image, name: image, widget: image }
+      - { label: Caption, name: caption, widget: string, required: false }
+      - { label: Sort Order, name: order, widget: number, value_type: int, default: 0 }
+
+  - name: faq
+    label: FAQ
+    folder: src/content/faq
+    create: true
+    slug: '{{fields.order}}-{{slug}}'
+    fields:
+      - { label: Question, name: question, widget: string }
+      - { label: Sort Order, name: order, widget: number, value_type: int, default: 0 }
+      - { label: Answer, name: body, widget: markdown }

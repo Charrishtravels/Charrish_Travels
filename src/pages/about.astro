@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE } from '../consts';
+---
+
+<Layout title="About Us" description={`The story behind ${SITE.name}.`}>
+  <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+    <h1 class="font-serif text-3xl text-emerald-950">About {SITE.name}</h1>
+    <div class="mt-6 space-y-4 text-emerald-900/80">
+      <p>
+        {SITE.name} started with a simple idea: travel planning shouldn't feel like a second job.
+        We put together itineraries the way we'd plan a trip for our own family — good stays,
+        honest pricing, and no surprises once you've landed.
+      </p>
+      <p>
+        Every package on this site has been travelled and vetted by our team before it's listed.
+        Where something can be tailored — dates, group size, add-ons — we'll always tell you.
+      </p>
+      <p>
+        Based out of {SITE.location}, we work with travellers across India looking for
+        everything from quick weekend escapes to longer guided trips.
+      </p>
+    </div>
+  </section>
+</Layout>
