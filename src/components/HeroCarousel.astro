@@ -1,0 +1,115 @@
+---
+interface Slide {
+  src: string;
+  alt: string;
+}
+
+interface Props {
+  slides?: Slide[];
+}
+
+const {
+  slides = [
+    { src: 'https://picsum.photos/seed/charrish-goa/1600/1200', alt: 'Beach coastline at sunset' },
+    { src: 'https://picsum.photos/seed/charrish-kerala/1600/1200', alt: 'Backwaters houseboat' },
+    { src: 'https://picsum.photos/seed/charrish-manali/1600/1200', alt: 'Mountain foothills' },
+    { src: 'https://picsum.photos/seed/charrish-desert/1600/1200', alt: 'Desert dunes at golden hour' },
+  ],
+} = Astro.props;
+---
+
+<section class="relative h-[100svh] w-full overflow-hidden bg-emerald-950">
+  <div id="carousel-track" class="absolute inset-0">
+    {slides.map((slide, i) => (
+      <img
+        src={slide.src}
+        alt={slide.alt}
+        data-slide
+        loading={i === 0 ? 'eager' : 'lazy'}
+        class:list={[
+          'absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out',
+          i === 0 ? 'opacity-100' : 'opacity-0',
+        ]}
+      />
+    ))}
+  </div>
+
+  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-black/60"></div>
+
+  <div class="relative z-10 flex h-full w-full flex-col items-center justify-center px-4 text-center text-white">
+    <div class="flex w-full max-w-2xl flex-col items-center">
+      <slot />
+    </div>
+  </div>
+
+  <div class="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+    {slides.map((_, i) => (
+      <button
+        type="button"
+        data-dot
+        aria-label={`Go to slide ${i + 1}`}
+        class:list={[
+          'h-1.5 rounded-full transition-all duration-300',
+          i === 0 ? 'w-6 bg-white' : 'w-1.5 bg-white/50',
+        ]}
+      ></button>
+    ))}
+  </div>
+</section>
+
+<script>
+  const slides = Array.from(document.querySelectorAll<HTMLElement>('[data-slide]'));
+  const dots = Array.from(document.querySelectorAll<HTMLElement>('[data-dot]'));
+  const track = document.getElementById('carousel-track');
+  let current = 0;
+  let timer: ReturnType<typeof setInterval>;
+
+  function goTo(index: number) {
+    const nextIndex = (index + slides.length) % slides.length;
+    if (nextIndex === current) return;
+
+    slides[current]?.classList.replace('opacity-100', 'opacity-0');
+    dots[current]?.classList.replace('w-6', 'w-1.5');
+    dots[current]?.classList.replace('bg-white', 'bg-white/50');
+
+    current = nextIndex;
+
+    slides[current]?.classList.replace('opacity-0', 'opacity-100');
+    dots[current]?.classList.replace('w-1.5', 'w-6');
+    dots[current]?.classList.replace('bg-white/50', 'bg-white');
+  }
+
+  function restartTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => goTo(current + 1), 5000);
+  }
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      goTo(i);
+      restartTimer();
+    });
+  });
+
+  let touchStartX = 0;
+  track?.addEventListener(
+    'touchstart',
+    (e) => {
+      touchStartX = e.touches[0].clientX;
+    },
+    { passive: true }
+  );
+  track?.addEventListener(
+    'touchend',
+    (e) => {
+      const delta = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(delta) > 40) {
+        goTo(current + (delta < 0 ? 1 : -1));
+        restartTimer();
+      }
+    },
+    { passive: true }
+  );
+
+  if (slides.length > 1) restartTimer();
+</script>
