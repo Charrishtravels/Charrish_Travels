@@ -18,7 +18,7 @@ const {
 } = Astro.props;
 ---
 
-<section class="relative h-[100svh] w-full overflow-hidden bg-emerald-950">
+<section class="relative h-[calc(100svh-4rem)] w-full overflow-hidden bg-emerald-950">
   <div id="carousel-track" class="absolute inset-0">
     {slides.map((slide, i) => (
       <img

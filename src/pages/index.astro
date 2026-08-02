@@ -1,8 +1,9 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
-import DestinationCard from '../components/DestinationCard.astro';
 import HeroCarousel from '../components/HeroCarousel.astro';
+import CredentialsStrip from '../components/CredentialsStrip.astro';
+import PackageCarousel from '../components/PackageCarousel.astro';
 import { SITE } from '../consts';
 
 const destinations = await getCollection('destinations');
@@ -13,29 +14,21 @@ const testimonialContent = await Promise.all(testimonials.map((t) => render(t)))
 
 <Layout title="Home" description="Handpicked travel packages, planned around you.">
   <HeroCarousel>
-    <img src={SITE.logoWhite} alt="" class="h-10 w-auto sm:h-14" />
-    <p class="mt-4 font-serif text-2xl tracking-[0.25em] uppercase sm:text-3xl">{SITE.name}</p>
-    <p class="mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/80 sm:text-sm">
+    <p class="font-brand text-2xl uppercase tracking-[0.3em] sm:text-3xl">{SITE.name}</p>
+    <div class="mt-3 h-px w-12 bg-white/50"></div>
+    <p class="mt-3 text-xs font-medium uppercase tracking-[0.25em] text-white/80 sm:text-sm">
       {SITE.tagline}
     </p>
-    <div class="mt-6 flex w-full flex-col items-center justify-center sm:w-auto">
-      <a
-        href="/destinations"
-        class="w-full rounded-full bg-white px-6 py-3 text-sm font-semibold text-emerald-950 transition-colors hover:bg-white/90 sm:w-auto"
-      >
-        Explore packages
-      </a>
-    </div>
   </HeroCarousel>
 
-  <section class="mx-auto max-w-5xl px-4 pb-16 sm:px-6">
+  <CredentialsStrip />
+
+  <section class="mx-auto max-w-5xl px-4 py-16 sm:px-6">
     <div class="mb-6 flex items-baseline justify-between">
       <h2 class="font-serif text-2xl text-emerald-950">Featured packages</h2>
       <a href="/destinations" class="text-sm font-medium text-emerald-600 hover:underline">View all</a>
     </div>
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {featured.map((destination) => <DestinationCard destination={destination} />)}
-    </div>
+    <PackageCarousel destinations={featured} />
   </section>
 
   <section class="bg-emerald-50/60 py-16">
