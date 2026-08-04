@@ -1,20 +1,36 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "International";
+  src: url("/fonts/International.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --font-sans: "Inter", "Segoe UI", -apple-system, Roboto, Helvetica, Arial, sans-serif;
   --font-serif: "Source Serif 4", Georgia, "Iowan Old Style", "Palatino Linotype", serif;
   --font-brand: "Cinzel", "Source Serif 4", Georgia, serif;
 
-  /* Brand: #15514f, reused on the emerald-* scale so existing utility classes pick it up. */
-  --color-emerald-50: hsl(178 45% 97%);
-  --color-emerald-100: hsl(178 42% 93%);
-  --color-emerald-200: hsl(178 40% 85%);
-  --color-emerald-300: hsl(178 40% 72%);
-  --color-emerald-400: hsl(178 45% 56%);
-  --color-emerald-500: hsl(178 52% 42%);
-  --color-emerald-600: hsl(178 56% 32%);
-  --color-emerald-700: hsl(178 58% 25%);
-  --color-emerald-800: #15514f;
-  --color-emerald-900: hsl(178 60% 15%);
-  --color-emerald-950: hsl(178 62% 9%);
+  /* Brand: darker teal anchor at 800, reused on the emerald-* scale so existing utility classes pick it up. */
+  --color-emerald-50: hsl(178 40% 95%);
+  --color-emerald-100: hsl(178 38% 90%);
+  --color-emerald-200: hsl(178 38% 80%);
+  --color-emerald-300: hsl(178 40% 66%);
+  --color-emerald-400: hsl(178 45% 50%);
+  --color-emerald-500: hsl(178 52% 36%);
+  --color-emerald-600: hsl(178 56% 27%);
+  --color-emerald-700: hsl(178 58% 20%);
+  --color-emerald-800: #0f3d3c;
+  --color-emerald-900: hsl(178 62% 11%);
+  --color-emerald-950: hsl(178 65% 6%);
+
+  --color-cream: #f5f6f4;
+}
+
+.font-brand {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
 }
