@@ -1,27 +1,52 @@
 ---
 import { SITE } from '../consts';
 
-const NAV_LINKS = [
-  { href: '/', label: 'Home' },
+const LEFT_LINKS = [
   { href: '/about', label: 'About us' },
   { href: '/destinations', label: 'Packages' },
+];
+
+const RIGHT_LINKS = [
   { href: '/testimonials', label: 'Reviews' },
   { href: '/contact', label: 'Contact us' },
 ];
 
+const ALL_LINKS = [...LEFT_LINKS, ...RIGHT_LINKS];
+
 const currentPath = Astro.url.pathname;
+
+const linkClass = (href: string) =>
+  [
+    'uppercase tracking-wide text-emerald-600 transition-colors hover:text-emerald-800',
+    currentPath === href ? 'font-semibold text-emerald-800' : '',
+  ].join(' ');
 ---
 
-<header class="sticky top-0 z-50 border-b border-emerald-100 bg-white">
-  <div class="flex h-16 items-center justify-between px-4 sm:px-6">
-    <a href="/" class="flex items-center gap-2">
+<header class="sticky top-0 z-50 border-b border-emerald-100 bg-cream">
+  <div class="grid h-16 grid-cols-[1fr_auto_1fr] items-center px-4 sm:px-6">
+    <ul class="hidden items-center justify-center gap-10 pr-8 text-xs font-medium sm:flex">
+      {LEFT_LINKS.map((link) => (
+        <li>
+          <a href={link.href} class={linkClass(link.href)}>{link.label}</a>
+        </li>
+      ))}
+    </ul>
+
+    <a href="/" class="col-start-2 flex items-center justify-self-center">
       <img src={SITE.logo} alt={SITE.name} class="h-8 w-auto" />
-      <span class="font-brand text-base uppercase tracking-[0.15em] text-emerald-800">{SITE.name}</span>
     </a>
+
+    <ul class="hidden items-center justify-center gap-10 pl-8 text-xs font-medium sm:flex">
+      {RIGHT_LINKS.map((link) => (
+        <li>
+          <a href={link.href} class={linkClass(link.href)}>{link.label}</a>
+        </li>
+      ))}
+    </ul>
 
     <button
       id="nav-toggle"
-      class="flex h-10 w-10 items-center justify-center rounded-md text-emerald-950 sm:hidden"
+      class="col-start-3 flex h-10 w-10 items-center justify-self-end rounded-md text-emerald-950 sm:hidden"
       aria-label="Toggle navigation menu"
       aria-expanded="false"
       aria-controls="nav-menu"
@@ -33,32 +58,16 @@ const currentPath = Astro.url.pathname;
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
       </svg>
     </button>
-
-    <ul class="hidden items-center gap-6 text-sm font-medium text-emerald-950 sm:flex">
-      {NAV_LINKS.map((link) => (
-        <li>
-          <a
-            href={link.href}
-            class:list={[
-              'transition-colors hover:text-emerald-600',
-              currentPath === link.href && 'text-emerald-600',
-            ]}
-          >
-            {link.label}
-          </a>
-        </li>
-      ))}
-    </ul>
   </div>
 
-  <ul id="nav-menu" class="hidden flex-col gap-1 border-t border-emerald-100 px-4 pb-4 text-sm font-medium text-emerald-950 sm:hidden">
-    {NAV_LINKS.map((link) => (
+  <ul id="nav-menu" class="hidden flex-col gap-1 border-t border-emerald-100 px-4 pb-4 text-xs font-medium uppercase tracking-wide text-emerald-600 sm:hidden">
+    {ALL_LINKS.map((link) => (
       <li>
         <a
           href={link.href}
           class:list={[
-            'block rounded-md px-2 py-2.5 transition-colors hover:bg-emerald-50',
-            currentPath === link.href && 'bg-emerald-50 text-emerald-600',
+            'block rounded-md px-2 py-2.5 transition-colors hover:bg-emerald-50 hover:text-emerald-800',
+            currentPath === link.href && 'bg-emerald-50 font-semibold text-emerald-800',
           ]}
         >
           {link.label}

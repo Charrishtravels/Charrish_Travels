@@ -6,10 +6,10 @@ import { SITE } from '../consts';
   <div class="mx-auto grid max-w-5xl gap-8 px-4 py-12 sm:grid-cols-3 sm:px-6">
     <div>
       <p class="font-serif text-lg font-semibold">{SITE.name}</p>
-      <p class="mt-2 text-sm text-white/70">{SITE.tagline}</p>
+      <p class="mt-2 text-xs text-white/70">{SITE.tagline}</p>
     </div>
 
-    <div class="text-sm text-white/80">
+    <div class="text-xs text-white/80">
       <p class="font-semibold text-white">Contact</p>
       <ul class="mt-2 space-y-1.5">
         <li><a href={`tel:${SITE.phone}`} class="hover:text-white">{SITE.phone}</a></li>
@@ -23,7 +23,7 @@ import { SITE } from '../consts';
       </ul>
     </div>
 
-    <div class="text-sm text-white/80">
+    <div class="text-xs text-white/80">
       <p class="font-semibold text-white">Follow</p>
       <ul class="mt-2 space-y-1.5">
         <li><a href={SITE.instagram} class="hover:text-white" target="_blank" rel="noopener">Instagram</a></li>
