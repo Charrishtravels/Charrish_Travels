@@ -27,7 +27,9 @@ const { title, location, summary, heroImage, priceFrom, duration } = destination
     <p class="flex-1 text-xs text-emerald-900/70">{summary}</p>
     <div class="mt-2 flex items-center justify-between text-xs">
       <span class="text-emerald-900/60">{duration}</span>
-      <span class="font-semibold text-emerald-900">from ₹{priceFrom.toLocaleString('en-IN')}</span>
+      <span class="font-semibold text-emerald-900">
+        {priceFrom ? `from ₹${priceFrom.toLocaleString('en-IN')}` : 'Enquire for pricing'}
+      </span>
     </div>
   </div>
 </a>

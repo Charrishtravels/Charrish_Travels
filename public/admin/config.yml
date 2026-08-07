@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   branch: main
 
+local_backend: true
+
 publish_mode: editorial_workflow
 
 media_folder: public/images/uploads
@@ -14,15 +16,77 @@ collections:
     create: true
     slug: '{{slug}}'
     fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Location, name: location, widget: string }
-      - { label: Summary, name: summary, widget: text }
+      - { label: Title, name: title, widget: string, hint: 'e.g. Tamil Nadu Divine Temple Yatra' }
+      - { label: Location, name: location, widget: string, hint: 'Shown as the small badge above the title, e.g. Tamil Nadu' }
+      - { label: Summary, name: summary, widget: text, hint: 'Short one-line summary shown on package cards' }
       - { label: Hero Image, name: heroImage, widget: image }
-      - { label: Price From (INR), name: priceFrom, widget: number, value_type: int }
-      - { label: Duration, name: duration, widget: string, hint: 'e.g. 4 Days / 3 Nights' }
-      - { label: Highlights, name: highlights, widget: list, default: [] }
+      - { label: Duration, name: duration, widget: string, hint: 'e.g. 12 Days / 11 Nights' }
+      - { label: Price From (INR), name: priceFrom, widget: number, value_type: int, required: false, hint: 'Leave blank to show "Enquire for pricing" instead' }
       - { label: Featured on Home page, name: featured, widget: boolean, default: false }
-      - { label: Full Description, name: body, widget: markdown }
+
+      - { label: Route, name: route, widget: string, required: false, hint: 'e.g. Chennai – Coimbatore' }
+      - { label: Departure Dates, name: departureDates, widget: string, required: false, hint: 'e.g. 18 – 29 September' }
+      - { label: Group Size, name: groupSize, widget: string, required: false, hint: 'e.g. 10 Pax' }
+      - { label: Vehicle, name: vehicle, widget: string, required: false, hint: 'e.g. Deluxe Force Urbania' }
+
+      - label: Tour Highlights
+        name: highlights
+        widget: list
+        default: []
+        required: false
+        hint: 'One line per highlight — nest related stops in the same line if needed'
+
+      - label: Travel Arrangements
+        name: travelArrangements
+        widget: object
+        collapsed: true
+        required: false
+        fields:
+          - { label: Vehicle, name: vehicle, widget: string, required: false }
+          - { label: Group, name: group, widget: string, required: false }
+          - { label: Water, name: water, widget: string, required: false }
+          - { label: Breakfast, name: breakfast, widget: text, required: false }
+          - { label: Lunch, name: lunch, widget: text, required: false }
+          - { label: Dinner, name: dinner, widget: text, required: false }
+
+      - label: Darshan / Local Assistance (optional)
+        name: assistance
+        widget: object
+        collapsed: true
+        required: false
+        fields:
+          - { label: Places assistance is available at, name: places, widget: list, default: [] }
+          - { label: Note, name: note, widget: text, required: false, hint: 'e.g. Charges extra as applicable at actuals' }
+
+      - label: Special Experience Callout (optional)
+        name: specialExperience
+        widget: object
+        collapsed: true
+        required: false
+        hint: 'e.g. a heritage stop or cultural experience worth calling out separately'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: body, widget: text }
+
+      - label: Day-by-Day Itinerary
+        name: itinerary
+        widget: list
+        default: []
+        required: false
+        summary: 'Day {{fields.day}} — {{fields.title}}'
+        fields:
+          - { label: Day Number, name: day, widget: number, value_type: int }
+          - { label: Date, name: date, widget: string, required: false, hint: 'e.g. 18 September' }
+          - { label: Title, name: title, widget: string, hint: 'e.g. Chennai Arrival – Surutupally – Kanchipuram' }
+          - { label: Details, name: details, widget: text, hint: 'Plain text — start a line with "•" for a bullet point' }
+
+      - label: Important Notes
+        name: importantNotes
+        widget: list
+        default: []
+        required: false
+
+      - { label: Full Description, name: body, widget: markdown, required: false }
 
   - name: testimonials
     label: Testimonials
