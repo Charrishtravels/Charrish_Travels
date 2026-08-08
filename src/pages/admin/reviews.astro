@@ -1,13 +1,17 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+import AdminLayout from '../../layouts/AdminLayout.astro';
+
+const testimonials = await getCollection('testimonials');
+const rendered = await Promise.all(testimonials.map((t) => render(t)));
 ---
 
-<Layout title="Review Moderation" description="Internal review moderation dashboard.">
+<AdminLayout title="Testimonials" description="Manage traveller testimonials and moderate submitted reviews.">
   <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
-    <h1 class="font-brand text-3xl text-emerald-950">Review Moderation</h1>
+    <h1 class="font-brand text-3xl text-emerald-950">Testimonials</h1>
 
     <div id="login-gate" class="mt-8">
-      <p class="text-xs text-emerald-900/70">Log in to view and moderate pending reviews.</p>
+      <p class="text-xs text-emerald-900/70">Log in to manage testimonials and moderate pending reviews.</p>
       <button
         id="login-button"
         class="mt-4 rounded-full bg-emerald-700 px-6 py-3 text-xs font-semibold text-white hover:bg-emerald-800"
@@ -22,12 +26,49 @@ import Layout from '../../layouts/Layout.astro';
         <button id="logout-button" class="text-xs font-medium text-emerald-600 hover:underline">Log out</button>
       </div>
 
-      <div id="pending-list" class="mt-6 space-y-4">
-        <p id="pending-loading" class="text-xs text-emerald-900/60">Loading pending reviews…</p>
+      <a
+        href="/admin/index.html#/collections/testimonials/new"
+        class="mt-6 inline-block rounded-full bg-emerald-700 px-6 py-3 text-xs font-semibold text-white hover:bg-emerald-800"
+      >
+        Add a testimonial
+      </a>
+
+      <div id="review-section" class="mt-10 hidden">
+        <h2 class="font-brand text-xl text-emerald-950">Review testimonials</h2>
+        <div id="pending-list" class="mt-4 space-y-4"></div>
+      </div>
+
+      <div class="mt-10">
+        <h2 class="font-brand text-xl text-emerald-950">Current testimonials</h2>
+        {testimonials.length === 0 && (
+          <p class="mt-4 text-xs text-emerald-900/60">No testimonials yet.</p>
+        )}
+        <div class="mt-4 grid gap-6 sm:grid-cols-2">
+          {testimonials.map((t, i) => {
+            const { Content } = rendered[i];
+            return (
+              <blockquote class="relative rounded-xl border border-emerald-100 bg-cream p-6 shadow-sm">
+                <a
+                  href={`/admin/index.html#/collections/testimonials/entries/${t.id}`}
+                  class="absolute right-4 top-4 rounded-full border border-emerald-200 px-3 py-1 text-[0.65rem] font-semibold text-emerald-900 hover:bg-emerald-50"
+                >
+                  Edit
+                </a>
+                <div class="text-amber-500" aria-hidden="true">{'★'.repeat(t.data.rating)}{'☆'.repeat(5 - t.data.rating)}</div>
+                <div class="mt-2 pr-14 text-xs text-emerald-900/80 italic">
+                  <Content />
+                </div>
+                <footer class="mt-4 text-xs font-semibold text-emerald-950">
+                  {t.data.name}{t.data.location && <span class="font-normal text-emerald-900/60"> · {t.data.location}</span>}
+                </footer>
+              </blockquote>
+            );
+          })}
+        </div>
       </div>
     </div>
   </section>
-</Layout>
+</AdminLayout>
 
 <script>
   declare global {
@@ -39,6 +80,7 @@ import Layout from '../../layouts/Layout.astro';
   const loginGate = document.getElementById('login-gate');
   const dashboard = document.getElementById('dashboard');
   const userEmailEl = document.getElementById('user-email');
+  const reviewSection = document.getElementById('review-section');
   const pendingList = document.getElementById('pending-list');
   const loginButton = document.getElementById('login-button');
   const logoutButton = document.getElementById('logout-button');
@@ -50,27 +92,28 @@ import Layout from '../../layouts/Layout.astro';
   }
 
   async function loadPendingReviews(token: string) {
-    if (pendingList) {
-      pendingList.innerHTML = '<p class="text-xs text-emerald-900/60">Loading pending reviews…</p>';
-    }
-
     const res = await fetch('/.netlify/functions/list-pending-reviews', {
       headers: { Authorization: `Bearer ${token}` },
     });
 
     if (!res.ok) {
-      if (pendingList) pendingList.innerHTML = '<p class="text-xs text-red-600">Could not load pending reviews.</p>';
+      if (pendingList && reviewSection) {
+        reviewSection.classList.remove('hidden');
+        pendingList.innerHTML = '<p class="text-xs text-red-600">Could not load pending reviews.</p>';
+      }
       return;
     }
 
     const { reviews } = await res.json();
-    if (!pendingList) return;
+    if (!pendingList || !reviewSection) return;
 
     if (!reviews || reviews.length === 0) {
-      pendingList.innerHTML = '<p class="text-xs text-emerald-900/60">No pending reviews right now.</p>';
+      reviewSection.classList.add('hidden');
+      pendingList.innerHTML = '';
       return;
     }
 
+    reviewSection.classList.remove('hidden');
     pendingList.innerHTML = reviews
       .map(
         (r: { id: string; name: string; rating: number; message: string }) => `
@@ -125,6 +168,12 @@ import Layout from '../../layouts/Layout.astro';
   window.addEventListener('DOMContentLoaded', () => {
     const identity = window.netlifyIdentity;
     if (!identity) return;
+
+    // The widget auto-calls init() on its own DOMContentLoaded listener, which
+    // can fire before this one registers — so check the already-loaded session
+    // synchronously instead of relying solely on the async 'init' event.
+    const existingUser = identity.currentUser();
+    if (existingUser) showDashboard(existingUser);
 
     identity.on('init', (user: any) => (user ? showDashboard(user) : showLoginGate()));
     identity.on('login', (user: any) => {
