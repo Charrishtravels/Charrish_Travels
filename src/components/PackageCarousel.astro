@@ -1,0 +1,137 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import DestinationCard from './DestinationCard.astro';
+
+interface Props {
+  destinations: CollectionEntry<'destinations'>[];
+}
+
+const { destinations } = Astro.props;
+---
+
+<div class="select-none">
+  <div id="carousel-stage" class="relative min-h-[400px] touch-pan-y sm:min-h-[380px]">
+    {destinations.map((destination, i) => (
+      <div
+        class="carousel-card absolute left-1/2 top-1/2 w-[70%] max-w-[280px] sm:w-[320px]"
+        data-index={i}
+      >
+        <DestinationCard destination={destination} />
+      </div>
+    ))}
+  </div>
+
+  <div class="mt-6 flex justify-center gap-3">
+    <button
+      type="button"
+      data-dir="prev"
+      aria-label="Previous package"
+      class="flex h-10 w-10 items-center justify-center rounded-full border border-emerald-200 text-emerald-800 transition-colors hover:bg-emerald-50"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <button
+      type="button"
+      data-dir="next"
+      aria-label="Next package"
+      class="flex h-10 w-10 items-center justify-center rounded-full border border-emerald-200 text-emerald-800 transition-colors hover:bg-emerald-50"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<style>
+  .carousel-card {
+    transition: transform 0.45s ease, opacity 0.45s ease;
+    transform-origin: center center;
+  }
+  .carousel-card > :global(a) {
+    pointer-events: auto;
+  }
+</style>
+
+<script>
+  const stage = document.getElementById('carousel-stage');
+  if (stage) {
+    const cards = Array.from(stage.querySelectorAll<HTMLElement>('.carousel-card'));
+    const count = cards.length;
+    let active = 0;
+
+    function circularDiff(index: number, activeIndex: number, length: number) {
+      let diff = index - activeIndex;
+      if (diff > length / 2) diff -= length;
+      if (diff < -length / 2) diff += length;
+      return diff;
+    }
+
+    function render() {
+      cards.forEach((card, i) => {
+        const diff = circularDiff(i, active, count);
+        const abs = Math.abs(diff);
+
+        let translateX = 0;
+        let rotate = 0;
+        let scale = 1;
+        let opacity = 1;
+        let zIndex = count;
+        let pointerEvents = 'auto';
+
+        if (abs === 0) {
+          zIndex = count + 1;
+        } else if (abs <= 2) {
+          translateX = diff * 62;
+          rotate = diff * 10;
+          scale = 1 - abs * 0.15;
+          opacity = 1 - abs * 0.35;
+          zIndex = count - abs;
+        } else {
+          opacity = 0;
+          pointerEvents = 'none';
+          translateX = diff > 0 ? 200 : -200;
+        }
+
+        card.style.transform = `translate(-50%, -50%) translateX(${translateX}%) rotate(${rotate}deg) scale(${scale})`;
+        card.style.opacity = String(opacity);
+        card.style.zIndex = String(zIndex);
+        card.style.pointerEvents = pointerEvents;
+      });
+    }
+
+    function go(direction: number) {
+      active = (active + direction + count) % count;
+      render();
+    }
+
+    document.querySelectorAll<HTMLButtonElement>('[data-dir]').forEach((button) => {
+      button.addEventListener('click', () => go(button.dataset.dir === 'next' ? 1 : -1));
+    });
+
+    cards.forEach((card, i) => {
+      card.addEventListener('click', (e) => {
+        const diff = circularDiff(i, active, count);
+        if (diff !== 0) {
+          e.preventDefault();
+          go(diff > 0 ? 1 : -1);
+        }
+      });
+    });
+
+    let touchStartX = 0;
+    stage.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    stage.addEventListener(
+      'touchend',
+      (e) => {
+        const delta = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(delta) > 40) go(delta < 0 ? 1 : -1);
+      },
+      { passive: true }
+    );
+
+    render();
+  }
+</script>

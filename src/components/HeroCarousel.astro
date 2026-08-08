@@ -10,15 +10,17 @@ interface Props {
 
 const {
   slides = [
-    { src: 'https://picsum.photos/seed/charrish-goa/1600/1200', alt: 'Beach coastline at sunset' },
-    { src: 'https://picsum.photos/seed/charrish-kerala/1600/1200', alt: 'Backwaters houseboat' },
-    { src: 'https://picsum.photos/seed/charrish-manali/1600/1200', alt: 'Mountain foothills' },
-    { src: 'https://picsum.photos/seed/charrish-desert/1600/1200', alt: 'Desert dunes at golden hour' },
+    { src: '/images/hero/taj-mahal.jpg', alt: 'Taj Mahal, Agra' },
+    { src: '/images/hero/hawa-mahal-jaipur.jpg', alt: 'Hawa Mahal, Jaipur' },
+    { src: '/images/hero/maldives.jpg', alt: 'Overwater villas, Maldives' },
+    { src: '/images/hero/prague.jpg', alt: 'Charles Bridge at sunset, Prague' },
+    { src: '/images/hero/vatican-rome.jpg', alt: 'Aerial view of Vatican City, Rome' },
+    { src: '/images/hero/dubai.jpg', alt: 'Dubai skyline' },
   ],
 } = Astro.props;
 ---
 
-<section class="relative h-[100svh] w-full overflow-hidden bg-emerald-950">
+<section class="relative h-[calc(100svh-4rem)] w-full overflow-hidden bg-emerald-950">
   <div id="carousel-track" class="absolute inset-0">
     {slides.map((slide, i) => (
       <img
@@ -34,9 +36,9 @@ const {
     ))}
   </div>
 
-  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-black/60"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-black/55 via-black/40 to-black/65"></div>
 
-  <div class="relative z-10 flex h-full w-full flex-col items-center justify-center px-4 text-center text-white">
+  <div class="relative z-10 flex h-full w-full flex-col items-center justify-center px-4 text-center text-white [text-shadow:0_2px_12px_rgb(0_0_0_/_0.45)]">
     <div class="flex w-full max-w-2xl flex-col items-center">
       <slot />
     </div>

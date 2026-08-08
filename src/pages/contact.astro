@@ -5,13 +5,13 @@ import { SITE } from '../consts';
 
 <Layout title="Contact" description={`Get in touch with ${SITE.name}.`}>
   <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
-    <h1 class="font-serif text-3xl text-emerald-950">Contact Us</h1>
-    <p class="mt-2 max-w-2xl text-emerald-900/70">
+    <h1 class="font-brand text-3xl text-emerald-950">Contact Us</h1>
+    <p class="mt-2 max-w-2xl text-xs text-emerald-900/70">
       Tell us where you'd like to go and we'll get back to you within a day.
     </p>
 
     <div class="mt-8 grid gap-10 sm:grid-cols-2">
-      <div class="space-y-3 text-sm text-emerald-900/80">
+      <div class="space-y-3 text-xs text-emerald-900/80">
         <p><span class="font-semibold text-emerald-950">Phone:</span> <a href={`tel:${SITE.phone}`} class="hover:text-emerald-600">{SITE.phone}</a></p>
         <p><span class="font-semibold text-emerald-950">Email:</span> <a href={`mailto:${SITE.email}`} class="hover:text-emerald-600">{SITE.email}</a></p>
         <p><span class="font-semibold text-emerald-950">WhatsApp:</span> <a href={`https://wa.me/${SITE.whatsapp}`} class="hover:text-emerald-600" target="_blank" rel="noopener">Message us</a></p>
@@ -38,24 +38,24 @@ import { SITE } from '../consts';
         </p>
 
         <div>
-          <label for="name" class="block text-sm font-medium text-emerald-950">Name</label>
-          <input id="name" name="name" type="text" required class="mt-1 w-full rounded-md border border-emerald-200 px-3 py-2 text-sm focus:border-emerald-500 focus:outline-none" />
+          <label for="name" class="block text-xs font-medium text-emerald-950">Name</label>
+          <input id="name" name="name" type="text" required class="mt-1 w-full rounded-md border border-emerald-200 px-3 py-2 text-xs focus:border-emerald-500 focus:outline-none" />
         </div>
         <div>
-          <label for="email" class="block text-sm font-medium text-emerald-950">Email</label>
-          <input id="email" name="email" type="email" required class="mt-1 w-full rounded-md border border-emerald-200 px-3 py-2 text-sm focus:border-emerald-500 focus:outline-none" />
+          <label for="email" class="block text-xs font-medium text-emerald-950">Email</label>
+          <input id="email" name="email" type="email" required class="mt-1 w-full rounded-md border border-emerald-200 px-3 py-2 text-xs focus:border-emerald-500 focus:outline-none" />
         </div>
         <div>
-          <label for="phone" class="block text-sm font-medium text-emerald-950">Phone</label>
-          <input id="phone" name="phone" type="tel" class="mt-1 w-full rounded-md border border-emerald-200 px-3 py-2 text-sm focus:border-emerald-500 focus:outline-none" />
+          <label for="phone" class="block text-xs font-medium text-emerald-950">Phone</label>
+          <input id="phone" name="phone" type="tel" class="mt-1 w-full rounded-md border border-emerald-200 px-3 py-2 text-xs focus:border-emerald-500 focus:outline-none" />
         </div>
         <div>
-          <label for="message" class="block text-sm font-medium text-emerald-950">Message</label>
-          <textarea id="message" name="message" rows="4" required class="mt-1 w-full rounded-md border border-emerald-200 px-3 py-2 text-sm focus:border-emerald-500 focus:outline-none"></textarea>
+          <label for="message" class="block text-xs font-medium text-emerald-950">Message</label>
+          <textarea id="message" name="message" rows="4" required class="mt-1 w-full rounded-md border border-emerald-200 px-3 py-2 text-xs focus:border-emerald-500 focus:outline-none"></textarea>
         </div>
         <button
           type="submit"
-          class="w-full rounded-full bg-emerald-700 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-800 sm:w-auto"
+          class="w-full rounded-full bg-emerald-700 px-6 py-3 text-xs font-semibold text-white transition-colors hover:bg-emerald-800 sm:w-auto"
         >
           Send message
         </button>
