@@ -62,6 +62,39 @@
         text-transform: uppercase;
         color: #0f3d3c;
       }
+
+      /* Header, once logged in: hide the quick-add dropdown, style our
+         injected Packages/Testimonials links. Content/Media/Workflow tabs
+         are hidden via JS below since they share a class with each other. */
+      [class*='AppHeaderQuickNewButton'] {
+        display: none !important;
+      }
+
+      /* Collection list page: hide the "Collections" side panel (nav links
+         in the header cover switching collections now) and reclaim the
+         280px of left padding the entries column reserved for it. */
+      [class*='SidebarContainer'] {
+        display: none !important;
+      }
+
+      [class*='CollectionMain'] {
+        padding-left: 0 !important;
+      }
+
+      .charrish-admin-nav-link {
+        display: inline-flex;
+        align-items: center;
+        padding: 16px 20px;
+        font-family: 'Inter', 'Segoe UI', sans-serif !important;
+        font-size: 16px;
+        font-weight: 500;
+        color: #7b8290;
+        text-decoration: none;
+      }
+
+      .charrish-admin-nav-link:hover {
+        color: #0f3d3c;
+      }
     </style>
   </head>
   <body>
@@ -72,7 +105,7 @@
         window.netlifyIdentity.on('init', (user) => {
           if (!user) {
             window.netlifyIdentity.on('login', () => {
-              document.location.href = '/admin/';
+              document.location.href = '/admin/index.html';
             });
           }
         });
@@ -87,9 +120,44 @@
         brand.innerHTML = '<img src="/images/logo.svg" alt="Charrish Travels" /><span>Charrish Travels</span>';
         page.insertBefore(brand, page.firstChild);
       }
-      var charrishBrandObserver = new MutationObserver(injectCharrishBrand);
+
+      function injectCharrishAdminNav() {
+        var navList = document.querySelector('header nav ul');
+        if (!navList || navList.querySelector('.charrish-admin-nav-link')) return;
+
+        var contentLi = null;
+        Array.prototype.forEach.call(navList.children, function (li) {
+          var control = li.querySelector('a, button');
+          if (!control) return;
+          var label = control.textContent.trim();
+          if (label === 'Contents' || label === 'Media' || label === 'Workflow') {
+            li.style.display = 'none';
+            if (label === 'Contents') contentLi = li;
+          }
+        });
+
+        [
+          { label: 'Packages', href: '/admin/packages' },
+          { label: 'Testimonials', href: '/admin/reviews' },
+        ].forEach(function (link) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = link.href;
+          a.textContent = link.label;
+          a.className = 'charrish-admin-nav-link';
+          li.appendChild(a);
+          if (contentLi) navList.insertBefore(li, contentLi);
+          else navList.appendChild(li);
+        });
+      }
+
+      function injectCharrish() {
+        injectCharrishBrand();
+        injectCharrishAdminNav();
+      }
+      var charrishBrandObserver = new MutationObserver(injectCharrish);
       charrishBrandObserver.observe(document.body, { childList: true, subtree: true });
-      injectCharrishBrand();
+      injectCharrish();
     </script>
   </body>
 </html>

@@ -1,8 +1,8 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import AdminLayout from '../../layouts/AdminLayout.astro';
 ---
 
-<Layout title="Import Package" description="Paste a package itinerary and publish it.">
+<AdminLayout title="Import Package" description="Paste a package itinerary and publish it.">
   <section class="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-16">
     <h1 class="font-brand text-3xl text-emerald-950">Import Package</h1>
     <p class="mt-2 text-xs text-emerald-900/70">
@@ -80,7 +80,7 @@ import Layout from '../../layouts/Layout.astro';
       </div>
     </div>
   </section>
-</Layout>
+</AdminLayout>
 
 <script>
   import { parsePackageText } from '../../lib/parsePackageText.js';
@@ -273,6 +273,12 @@ import Layout from '../../layouts/Layout.astro';
   window.addEventListener('DOMContentLoaded', () => {
     const identity = window.netlifyIdentity;
     if (!identity) return;
+
+    // The widget auto-calls init() on its own DOMContentLoaded listener, which
+    // can fire before this one registers — so check the already-loaded session
+    // synchronously instead of relying solely on the async 'init' event.
+    const existingUser = identity.currentUser();
+    if (existingUser) showDashboard(existingUser);
 
     identity.on('init', (user: any) => (user ? showDashboard(user) : showLoginGate()));
     identity.on('login', (user: any) => {

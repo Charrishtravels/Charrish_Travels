@@ -1,0 +1,120 @@
+---
+import { getCollection } from 'astro:content';
+import AdminLayout from '../../layouts/AdminLayout.astro';
+
+const destinations = await getCollection('destinations');
+---
+
+<AdminLayout title="Packages" description="Manage travel packages.">
+  <section class="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-16">
+    <h1 class="font-brand text-3xl text-emerald-950">Packages</h1>
+
+    <div id="login-gate" class="mt-8">
+      <p class="text-xs text-emerald-900/70">Log in to manage packages.</p>
+      <button
+        id="login-button"
+        class="mt-4 rounded-full bg-emerald-700 px-6 py-3 text-xs font-semibold text-white hover:bg-emerald-800"
+      >
+        Log in
+      </button>
+    </div>
+
+    <div id="dashboard" class="mt-8 hidden">
+      <div class="flex items-center justify-between">
+        <p class="text-xs text-emerald-900/70">Logged in as <span id="user-email" class="font-medium"></span></p>
+        <button id="logout-button" class="text-xs font-medium text-emerald-600 hover:underline">Log out</button>
+      </div>
+
+      <a
+        href="/admin/import"
+        class="mt-6 inline-block rounded-full bg-emerald-700 px-6 py-3 text-xs font-semibold text-white hover:bg-emerald-800"
+      >
+        Add a package
+      </a>
+
+      <div class="mt-10">
+        <h2 class="font-brand text-xl text-emerald-950">Current packages</h2>
+        {destinations.length === 0 && (
+          <p class="mt-4 text-xs text-emerald-900/60">No packages yet.</p>
+        )}
+        <div class="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {destinations.map((d) => {
+            const { title, location, summary, heroImage, priceFrom, duration } = d.data;
+            return (
+              <div class="group relative flex flex-col overflow-hidden rounded-xl border border-emerald-100 bg-cream shadow-sm">
+                <a
+                  href={`/admin/index.html#/collections/destinations/entries/${d.id}`}
+                  class="absolute right-4 top-4 z-10 rounded-full border border-emerald-200 bg-white px-3 py-1 text-[0.65rem] font-semibold text-emerald-900 hover:bg-emerald-50"
+                >
+                  Edit
+                </a>
+                <div class="aspect-[4/3] w-full overflow-hidden bg-emerald-100">
+                  <img src={heroImage} alt={title} loading="lazy" class="h-full w-full object-cover" />
+                </div>
+                <div class="flex flex-1 flex-col gap-2 p-4">
+                  <p class="text-xs font-semibold uppercase tracking-wide text-emerald-600">{location}</p>
+                  <h3 class="font-serif text-lg text-emerald-950">{title}</h3>
+                  <p class="flex-1 text-xs text-emerald-900/70">{summary}</p>
+                  <div class="mt-2 flex items-center justify-between text-xs">
+                    <span class="text-emerald-900/60">{duration}</span>
+                    <span class="font-semibold text-emerald-900">
+                      {priceFrom ? `from ₹${priceFrom.toLocaleString('en-IN')}` : 'Enquire for pricing'}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  </section>
+</AdminLayout>
+
+<script>
+  declare global {
+    interface Window {
+      netlifyIdentity: any;
+    }
+  }
+
+  const loginGate = document.getElementById('login-gate');
+  const dashboard = document.getElementById('dashboard');
+  const userEmailEl = document.getElementById('user-email');
+  const loginButton = document.getElementById('login-button');
+  const logoutButton = document.getElementById('logout-button');
+
+  function showDashboard(user: any) {
+    loginGate?.classList.add('hidden');
+    dashboard?.classList.remove('hidden');
+    if (userEmailEl) userEmailEl.textContent = user.email;
+  }
+
+  function showLoginGate() {
+    dashboard?.classList.add('hidden');
+    loginGate?.classList.remove('hidden');
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const identity = window.netlifyIdentity;
+    if (!identity) return;
+
+    // The widget auto-calls init() on its own DOMContentLoaded listener, which
+    // can fire before this one registers — so check the already-loaded session
+    // synchronously instead of relying solely on the async 'init' event.
+    const existingUser = identity.currentUser();
+    if (existingUser) showDashboard(existingUser);
+
+    identity.on('init', (user: any) => (user ? showDashboard(user) : showLoginGate()));
+    identity.on('login', (user: any) => {
+      showDashboard(user);
+      identity.close();
+    });
+    identity.on('logout', () => showLoginGate());
+
+    loginButton?.addEventListener('click', () => identity.open('login'));
+    logoutButton?.addEventListener('click', () => identity.logout());
+
+    identity.init();
+  });
+</script>
