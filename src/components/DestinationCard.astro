@@ -11,7 +11,7 @@ const { title, location, summary, heroImage, priceFrom, duration } = destination
 
 <a
   href={`/destinations/${destination.id}`}
-  class="group flex flex-col overflow-hidden rounded-xl border border-emerald-100 bg-white shadow-sm transition-shadow hover:shadow-md"
+  class="group flex flex-col overflow-hidden rounded-xl border border-emerald-100 bg-cream shadow-sm transition-shadow hover:shadow-md"
 >
   <div class="aspect-[4/3] w-full overflow-hidden bg-emerald-100">
     <img
@@ -24,10 +24,12 @@ const { title, location, summary, heroImage, priceFrom, duration } = destination
   <div class="flex flex-1 flex-col gap-2 p-4">
     <p class="text-xs font-semibold uppercase tracking-wide text-emerald-600">{location}</p>
     <h3 class="font-serif text-lg text-emerald-950">{title}</h3>
-    <p class="flex-1 text-sm text-emerald-900/70">{summary}</p>
-    <div class="mt-2 flex items-center justify-between text-sm">
+    <p class="flex-1 text-xs text-emerald-900/70">{summary}</p>
+    <div class="mt-2 flex items-center justify-between text-xs">
       <span class="text-emerald-900/60">{duration}</span>
-      <span class="font-semibold text-emerald-900">from ₹{priceFrom.toLocaleString('en-IN')}</span>
+      <span class="font-semibold text-emerald-900">
+        {priceFrom ? `from ₹${priceFrom.toLocaleString('en-IN')}` : 'Enquire for pricing'}
+      </span>
     </div>
   </div>
 </a>

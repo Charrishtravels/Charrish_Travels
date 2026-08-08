@@ -7,8 +7,8 @@ const photos = (await getCollection('gallery')).sort((a, b) => a.data.order - b.
 
 <Layout title="Gallery" description="Photos from Charrish Travels destinations and trips.">
   <section class="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-16">
-    <h1 class="font-serif text-3xl text-emerald-950">Gallery</h1>
-    <p class="mt-2 max-w-2xl text-emerald-900/70">A few moments from trips we've run.</p>
+    <h1 class="font-brand text-3xl text-emerald-950">Gallery</h1>
+    <p class="mt-2 max-w-2xl text-xs text-emerald-900/70">A few moments from trips we've run.</p>
 
     <div class="mt-8 columns-1 gap-4 sm:columns-2 lg:columns-3 [&>*]:mb-4">
       {photos.map((photo) => (

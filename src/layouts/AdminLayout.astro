@@ -1,0 +1,44 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Charrish Travels admin' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} · Charrish Travels Admin</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" is:inline></script>
+  </head>
+  <body class="min-h-screen bg-cream font-sans text-emerald-950 antialiased">
+    <header class="border-b border-emerald-100 bg-white">
+      <div class="mx-auto flex max-w-5xl items-center gap-3 px-4 py-4 sm:px-6">
+        <a href="/admin/index.html" class="flex items-center gap-3">
+          <img src="/images/logo.svg" alt="Charrish Travels" class="h-8 w-auto" />
+          <span class="font-brand text-sm text-emerald-950">Charrish Travels <span class="text-emerald-600">Admin</span></span>
+        </a>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

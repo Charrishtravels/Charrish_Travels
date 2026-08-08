@@ -8,10 +8,55 @@ const destinations = defineCollection({
     location: z.string(),
     summary: z.string(),
     heroImage: z.string(),
-    priceFrom: z.number(),
+    priceFrom: z.number().optional(),
     duration: z.string(),
-    highlights: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
+
+    // Trip logistics (optional — only used for detailed tour packages)
+    route: z.string().optional(),
+    departureDates: z.string().optional(),
+    groupSize: z.string().optional(),
+    vehicle: z.string().optional(),
+
+    highlights: z.array(z.string()).default([]),
+
+    travelArrangements: z
+      .object({
+        vehicle: z.string().optional(),
+        group: z.string().optional(),
+        water: z.string().optional(),
+        breakfast: z.string().optional(),
+        lunch: z.string().optional(),
+        dinner: z.string().optional(),
+      })
+      .optional(),
+
+    assistance: z
+      .object({
+        places: z.array(z.string()).default([]),
+        note: z.string().optional(),
+      })
+      .optional(),
+
+    specialExperience: z
+      .object({
+        title: z.string(),
+        body: z.string(),
+      })
+      .optional(),
+
+    itinerary: z
+      .array(
+        z.object({
+          day: z.number(),
+          date: z.string().optional(),
+          title: z.string(),
+          details: z.string(),
+        })
+      )
+      .default([]),
+
+    importantNotes: z.array(z.string()).default([]),
   }),
 });
 
