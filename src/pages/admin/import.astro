@@ -1,0 +1,289 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Import Package" description="Paste a package itinerary and publish it.">
+  <section class="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-16">
+    <h1 class="font-brand text-3xl text-emerald-950">Import Package</h1>
+    <p class="mt-2 text-xs text-emerald-900/70">
+      Paste the itinerary text as you receive it. It parses live below — fill in the few things
+      the text doesn't include, then publish.
+    </p>
+
+    <div id="login-gate" class="mt-8">
+      <p class="text-xs text-emerald-900/70">Log in to import a package.</p>
+      <button
+        id="login-button"
+        class="mt-4 rounded-full bg-emerald-700 px-6 py-3 text-xs font-semibold text-white hover:bg-emerald-800"
+      >
+        Log in
+      </button>
+    </div>
+
+    <div id="dashboard" class="mt-8 hidden">
+      <div class="flex items-center justify-between">
+        <p class="text-xs text-emerald-900/70">Logged in as <span id="user-email" class="font-medium"></span></p>
+        <button id="logout-button" class="text-xs font-medium text-emerald-600 hover:underline">Log out</button>
+      </div>
+
+      <div class="mt-6 grid gap-8 lg:grid-cols-2">
+        <div>
+          <label for="raw-text" class="block text-xs font-medium text-emerald-950">Paste itinerary text</label>
+          <textarea
+            id="raw-text"
+            rows="20"
+            class="mt-1 w-full rounded-md border border-emerald-200 bg-cream px-3 py-2 font-mono text-xs focus:border-emerald-500 focus:outline-none"
+            placeholder="Paste the full package text here…"
+          ></textarea>
+
+          <div class="mt-6 space-y-4 border-t border-emerald-100 pt-6">
+            <p class="text-xs font-medium text-emerald-950">Not in the text — fill these in</p>
+            <div>
+              <label for="field-location" class="block text-xs font-medium text-emerald-950">Location</label>
+              <input id="field-location" type="text" placeholder="e.g. Tamil Nadu" class="mt-1 w-full rounded-md border border-emerald-200 px-3 py-2 text-xs focus:border-emerald-500 focus:outline-none" />
+            </div>
+            <div>
+              <label for="field-summary" class="block text-xs font-medium text-emerald-950">Short summary (for the package card)</label>
+              <textarea id="field-summary" rows="2" class="mt-1 w-full rounded-md border border-emerald-200 px-3 py-2 text-xs focus:border-emerald-500 focus:outline-none"></textarea>
+            </div>
+            <div>
+              <label for="field-image" class="block text-xs font-medium text-emerald-950">Hero image path</label>
+              <input id="field-image" type="text" placeholder="/images/destinations/example.jpg" class="mt-1 w-full rounded-md border border-emerald-200 px-3 py-2 text-xs focus:border-emerald-500 focus:outline-none" />
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-1">
+                <label for="field-price" class="block text-xs font-medium text-emerald-950">Price from (₹, optional)</label>
+                <input id="field-price" type="number" class="mt-1 w-full rounded-md border border-emerald-200 px-3 py-2 text-xs focus:border-emerald-500 focus:outline-none" />
+              </div>
+              <label class="flex items-center gap-2 self-end pb-2 text-xs font-medium text-emerald-950">
+                <input id="field-featured" type="checkbox" />
+                Featured on home page
+              </label>
+            </div>
+          </div>
+
+          <button
+            id="publish-button"
+            class="mt-6 w-full rounded-full bg-emerald-700 px-6 py-3 text-xs font-semibold text-white transition-colors hover:bg-emerald-800 disabled:opacity-60"
+          >
+            Publish Package
+          </button>
+          <p id="publish-status" class="mt-2 text-xs" role="status"></p>
+        </div>
+
+        <div>
+          <p class="text-xs font-medium text-emerald-950">Live preview</p>
+          <div id="preview" class="mt-1 max-h-[720px] overflow-y-auto rounded-md border border-emerald-100 bg-cream p-4 text-xs text-emerald-900/80">
+            <p class="text-emerald-900/50">Paste text on the left to see it parsed here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  import { parsePackageText } from '../../lib/parsePackageText.js';
+
+  declare global {
+    interface Window {
+      netlifyIdentity: any;
+    }
+  }
+
+  const loginGate = document.getElementById('login-gate');
+  const dashboard = document.getElementById('dashboard');
+  const userEmailEl = document.getElementById('user-email');
+  const loginButton = document.getElementById('login-button');
+  const logoutButton = document.getElementById('logout-button');
+
+  const rawText = document.getElementById('raw-text') as HTMLTextAreaElement;
+  const preview = document.getElementById('preview') as HTMLDivElement;
+  const publishButton = document.getElementById('publish-button') as HTMLButtonElement;
+  const publishStatus = document.getElementById('publish-status') as HTMLParagraphElement;
+
+  const fieldLocation = document.getElementById('field-location') as HTMLInputElement;
+  const fieldSummary = document.getElementById('field-summary') as HTMLTextAreaElement;
+  const fieldImage = document.getElementById('field-image') as HTMLInputElement;
+  const fieldPrice = document.getElementById('field-price') as HTMLInputElement;
+  const fieldFeatured = document.getElementById('field-featured') as HTMLInputElement;
+
+  function escapeHtml(value: string) {
+    const div = document.createElement('div');
+    div.textContent = value;
+    return div.innerHTML;
+  }
+
+  function getParsed() {
+    return parsePackageText(rawText.value);
+  }
+
+  function renderPreview() {
+    const parsed = getParsed();
+
+    if (!rawText.value.trim()) {
+      preview.innerHTML = '<p class="text-emerald-900/50">Paste text on the left to see it parsed here.</p>';
+      return;
+    }
+
+    const facts = [
+      ['Title', parsed.title],
+      ['Duration', parsed.duration],
+      ['Route', parsed.route],
+      ['Departure', parsed.departureDates],
+      ['Group Size', parsed.groupSize],
+      ['Vehicle', parsed.vehicle],
+    ].filter(([, v]) => v);
+
+    const parts: string[] = [
+      '<ul class="space-y-0.5">' +
+        facts.map(([k, v]) => `<li><span class="font-semibold text-emerald-900">${k}:</span> ${escapeHtml(String(v))}</li>`).join('') +
+        '</ul>',
+    ];
+
+    if (parsed.highlights.length) {
+      parts.push(
+        `<p class="mt-4 font-semibold text-emerald-900">Highlights (${parsed.highlights.length})</p><ul class="mt-1 list-disc space-y-0.5 pl-4">` +
+          parsed.highlights.map((h: string) => `<li>${escapeHtml(h)}</li>`).join('') +
+          '</ul>'
+      );
+    }
+
+    if (Object.keys(parsed.travelArrangements).length) {
+      parts.push(
+        '<p class="mt-4 font-semibold text-emerald-900">Travel Arrangements</p><ul class="mt-1 space-y-0.5">' +
+          Object.entries(parsed.travelArrangements)
+            .map(([k, v]) => `<li><span class="font-semibold text-emerald-900">${k}:</span> ${escapeHtml(String(v))}</li>`)
+            .join('') +
+          '</ul>'
+      );
+    }
+
+    if (parsed.assistance.places.length || parsed.assistance.note) {
+      parts.push(
+        `<p class="mt-4 font-semibold text-emerald-900">Assistance</p>` +
+          (parsed.assistance.places.length
+            ? '<ul class="mt-1 list-disc space-y-0.5 pl-4">' +
+              parsed.assistance.places.map((p: string) => `<li>${escapeHtml(p)}</li>`).join('') +
+              '</ul>'
+            : '') +
+          (parsed.assistance.note ? `<p class="mt-1">${escapeHtml(parsed.assistance.note)}</p>` : '')
+      );
+    }
+
+    if (parsed.specialExperience) {
+      parts.push(
+        `<p class="mt-4 font-semibold text-emerald-900">${escapeHtml(parsed.specialExperience.title)}</p>` +
+          `<p class="mt-1">${escapeHtml(parsed.specialExperience.body)}</p>`
+      );
+    }
+
+    if (parsed.itinerary.length) {
+      parts.push(
+        `<p class="mt-4 font-semibold text-emerald-900">Itinerary (${parsed.itinerary.length} days)</p><ol class="mt-1 space-y-2">` +
+          parsed.itinerary
+            .map(
+              (day: { day: number; date: string; title: string; details: string }) =>
+                `<li><span class="font-semibold text-emerald-900">Day ${day.day}${day.date ? ' · ' + escapeHtml(day.date) : ''}:</span> ${escapeHtml(day.title)}<br /><span class="whitespace-pre-line text-emerald-900/60">${escapeHtml(day.details.slice(0, 200))}${day.details.length > 200 ? '…' : ''}</span></li>`
+            )
+            .join('') +
+          '</ol>'
+      );
+    }
+
+    if (parsed.importantNotes.length) {
+      parts.push(
+        `<p class="mt-4 font-semibold text-emerald-900">Important Notes (${parsed.importantNotes.length})</p><ul class="mt-1 list-disc space-y-0.5 pl-4">` +
+          parsed.importantNotes.map((n: string) => `<li>${escapeHtml(n)}</li>`).join('') +
+          '</ul>'
+      );
+    }
+
+    preview.innerHTML = parts.join('');
+  }
+
+  rawText?.addEventListener('input', renderPreview);
+
+  publishButton?.addEventListener('click', async () => {
+    const user = window.netlifyIdentity?.currentUser();
+    const token = user?.token?.access_token;
+    if (!token) return;
+
+    const parsed = getParsed();
+
+    if (!parsed.title) {
+      publishStatus.textContent = 'Paste the itinerary text first — no title found.';
+      publishStatus.className = 'mt-2 text-xs text-red-600';
+      return;
+    }
+    if (!fieldLocation.value || !fieldSummary.value || !fieldImage.value) {
+      publishStatus.textContent = 'Location, summary, and hero image are required before publishing.';
+      publishStatus.className = 'mt-2 text-xs text-red-600';
+      return;
+    }
+
+    publishButton.disabled = true;
+    publishStatus.textContent = 'Publishing…';
+    publishStatus.className = 'mt-2 text-xs text-emerald-900/70';
+
+    const payload = {
+      ...parsed,
+      location: fieldLocation.value.trim(),
+      summary: fieldSummary.value.trim(),
+      heroImage: fieldImage.value.trim(),
+      priceFrom: fieldPrice.value ? Number(fieldPrice.value) : undefined,
+      featured: fieldFeatured.checked,
+    };
+
+    try {
+      const res = await fetch('/.netlify/functions/create-package', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        publishStatus.textContent = data.error || 'Something went wrong.';
+        publishStatus.className = 'mt-2 text-xs text-red-600';
+        return;
+      }
+
+      publishStatus.innerHTML = `Published! It'll be live at <a href="${data.url}" class="underline">${data.url}</a> once the deploy finishes.`;
+      publishStatus.className = 'mt-2 text-xs text-emerald-700';
+    } catch {
+      publishStatus.textContent = 'Network error — please try again.';
+      publishStatus.className = 'mt-2 text-xs text-red-600';
+    } finally {
+      publishButton.disabled = false;
+    }
+  });
+
+  function showDashboard(user: any) {
+    loginGate?.classList.add('hidden');
+    dashboard?.classList.remove('hidden');
+    if (userEmailEl) userEmailEl.textContent = user.email;
+  }
+
+  function showLoginGate() {
+    dashboard?.classList.add('hidden');
+    loginGate?.classList.remove('hidden');
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const identity = window.netlifyIdentity;
+    if (!identity) return;
+
+    identity.on('init', (user: any) => (user ? showDashboard(user) : showLoginGate()));
+    identity.on('login', (user: any) => {
+      showDashboard(user);
+      identity.close();
+    });
+    identity.on('logout', () => showLoginGate());
+
+    loginButton?.addEventListener('click', () => identity.open('login'));
+    logoutButton?.addEventListener('click', () => identity.logout());
+
+    identity.init();
+  });
+</script>
