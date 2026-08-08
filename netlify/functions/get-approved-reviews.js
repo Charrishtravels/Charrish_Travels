@@ -14,7 +14,9 @@ export async function handler(event) {
     .limit(50);
 
   if (error) {
-    return jsonResponse(500, { error: 'Could not load reviews' });
+    // TEMP: surfacing real error for setup debugging — revert to a generic
+    // message once the Supabase connection is confirmed working.
+    return jsonResponse(500, { error: 'Could not load reviews', detail: error.message, code: error.code });
   }
 
   return jsonResponse(200, { reviews: data });
