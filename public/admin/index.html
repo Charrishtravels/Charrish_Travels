@@ -15,22 +15,21 @@
 
     <style>
       @font-face {
-        font-family: 'LT Soul';
-        src: url('/fonts/LTSoul-Medium.otf') format('opentype');
-        font-weight: 500;
+        font-family: 'Redaction';
+        src: url('/fonts/Redaction-Regular.woff2') format('woff2');
+        font-weight: 400;
         font-style: normal;
         font-display: swap;
       }
 
       /* Decap CMS's login screen, reskinned to match the site. Targets are
-         partial-class matches since Decap's build hashes the class prefix. */
+         partial-class matches since Decap's build hashes the class prefix.
+         The logo image itself is Decap's own native rendering of our
+         config.yml `logo.src` — no need to hide/replace it, just brand
+         everything around it. */
       [class*='StyledAuthenticationPage'] {
         background: #fbf9f4 !important;
         font-family: 'Geist', 'Segoe UI', sans-serif !important;
-      }
-
-      [class*='IconWrapper-DecapLogoIcon'] {
-        display: none !important;
       }
 
       [class*='LoginButton'] {
@@ -50,29 +49,20 @@
       }
 
       .charrish-admin-brand {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.85rem;
-        margin-bottom: 2rem;
-      }
-
-      .charrish-admin-brand img {
-        height: 44px;
-        width: auto;
+        margin-bottom: 0.5rem;
       }
 
       .charrish-admin-brand span {
-        font-family: 'LT Soul', Georgia, serif;
+        font-family: 'Redaction', Georgia, serif;
         font-size: 1.05rem;
-        font-weight: 500;
+        font-weight: 400;
         letter-spacing: 0.1em;
         text-transform: uppercase;
         color: #002d07;
       }
 
       /* Header, once logged in: hide the quick-add dropdown, style our
-         injected Packages/Testimonials links. Content/Media/Workflow tabs
+         injected Packages/Reviews links. Content/Media/Workflow tabs
          are hidden via JS below since they share a class with each other. */
       [class*='AppHeaderQuickNewButton'] {
         display: none !important;
@@ -111,9 +101,11 @@
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on('init', (user) => {
-          if (!user) {
+          if (user) {
+            document.location.href = '/admin/manage';
+          } else {
             window.netlifyIdentity.on('login', () => {
-              document.location.href = '/admin/index.html';
+              document.location.href = '/admin/manage';
             });
           }
         });
@@ -125,7 +117,7 @@
         if (!page || page.querySelector('.charrish-admin-brand')) return;
         var brand = document.createElement('div');
         brand.className = 'charrish-admin-brand';
-        brand.innerHTML = '<img src="/images/logo.svg" alt="Charrish Travels" /><span>Charrish Travels</span>';
+        brand.innerHTML = '<span>Charrish Travels</span>';
         page.insertBefore(brand, page.firstChild);
       }
 
@@ -146,7 +138,7 @@
 
         [
           { label: 'Packages', href: '/admin/packages' },
-          { label: 'Testimonials', href: '/admin/reviews' },
+          { label: 'Reviews', href: '/admin/reviews' },
         ].forEach(function (link) {
           var li = document.createElement('li');
           var a = document.createElement('a');
