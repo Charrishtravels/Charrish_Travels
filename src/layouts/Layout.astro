@@ -8,9 +8,10 @@ import { SITE } from '../consts';
 interface Props {
   title: string;
   description?: string;
+  hideFooter?: boolean;
 }
 
-const { title, description = SITE.tagline } = Astro.props;
+const { title, description = SITE.tagline, hideFooter = false } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -45,7 +46,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         window.netlifyIdentity.on('init', (user) => {
           if (!user) {
             window.netlifyIdentity.on('login', () => {
-              document.location.href = '/admin/reviews';
+              document.location.href = '/admin/manage';
             });
           }
         });
@@ -57,7 +58,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <main class="flex-1">
       <slot />
     </main>
-    <Footer />
+    {!hideFooter && <Footer />}
     <FloatingContactButtons />
   </body>
 </html>

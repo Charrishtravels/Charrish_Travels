@@ -1,0 +1,89 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+---
+
+<AdminLayout title="Manage" description="Charrish Travels admin.">
+  <section class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+    <h1 class="font-brand text-5xl text-emerald-950">Manage</h1>
+
+    <div id="login-gate" class="mt-8">
+      <p class="text-xs text-emerald-900/70">Log in to manage the site.</p>
+      <button
+        id="login-button"
+        class="mt-4 rounded-full bg-emerald-700 px-6 py-3 text-xs font-semibold text-white hover:bg-emerald-800"
+      >
+        Log in
+      </button>
+    </div>
+
+    <div id="dashboard" class="mt-10 hidden">
+      <div class="grid gap-6 sm:grid-cols-2">
+        <a
+          href="/admin/packages"
+          class="group flex aspect-square flex-col items-center justify-center gap-2 rounded-3xl border border-emerald-600 bg-cream shadow-sm transition-all duration-200 hover:scale-105 hover:bg-emerald-800 hover:shadow-md active:scale-95"
+        >
+          <span class="font-brand text-3xl uppercase tracking-wide text-emerald-950 transition-colors duration-200 group-hover:text-white">Packages</span>
+        </a>
+        <a
+          href="/admin/reviews"
+          class="group flex aspect-square flex-col items-center justify-center gap-2 rounded-3xl border border-emerald-600 bg-cream shadow-sm transition-all duration-200 hover:scale-105 hover:bg-emerald-800 hover:shadow-md active:scale-95"
+        >
+          <span class="font-brand text-3xl uppercase tracking-wide text-emerald-950 transition-colors duration-200 group-hover:text-white">Reviews</span>
+        </a>
+      </div>
+
+      <div class="mt-8 flex items-center justify-between text-xs text-emerald-900/70">
+        <span>Logged in as <span id="user-email" class="font-medium"></span></span>
+        <button id="logout-button" class="font-medium text-emerald-600 hover:underline">Log out</button>
+      </div>
+    </div>
+  </section>
+</AdminLayout>
+
+<script>
+  declare global {
+    interface Window {
+      netlifyIdentity: any;
+    }
+  }
+
+  const loginGate = document.getElementById('login-gate');
+  const dashboard = document.getElementById('dashboard');
+  const userEmailEl = document.getElementById('user-email');
+  const loginButton = document.getElementById('login-button');
+  const logoutButton = document.getElementById('logout-button');
+
+  function showDashboard(user: any) {
+    loginGate?.classList.add('hidden');
+    dashboard?.classList.remove('hidden');
+    if (userEmailEl) userEmailEl.textContent = user.email;
+  }
+
+  function showLoginGate() {
+    dashboard?.classList.add('hidden');
+    loginGate?.classList.remove('hidden');
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const identity = window.netlifyIdentity;
+    if (!identity) return;
+
+    // The widget auto-calls init() on its own DOMContentLoaded listener, which
+    // can fire before this one registers — so check the already-loaded session
+    // synchronously instead of relying solely on the async 'init' event.
+    const existingUser = identity.currentUser();
+    if (existingUser) showDashboard(existingUser);
+
+    identity.on('init', (user: any) => (user ? showDashboard(user) : showLoginGate()));
+    identity.on('login', (user: any) => {
+      showDashboard(user);
+      identity.close();
+    });
+    identity.on('logout', () => showLoginGate());
+
+    loginButton?.addEventListener('click', () => identity.open('login'));
+    logoutButton?.addEventListener('click', () => identity.logout());
+
+    identity.init();
+  });
+</script>

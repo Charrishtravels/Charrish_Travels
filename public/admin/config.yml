@@ -93,7 +93,7 @@ collections:
       - { label: Full Description, name: body, widget: markdown, required: false }
 
   - name: testimonials
-    label: Testimonials
+    label: Reviews
     folder: src/content/testimonials
     create: true
     slug: '{{slug}}'
