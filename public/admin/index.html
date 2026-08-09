@@ -100,12 +100,17 @@
     <script src="https://unpkg.com/decap-cms@^3.3.3/dist/decap-cms.js"></script>
     <script>
       if (window.netlifyIdentity) {
+        // Only redirect to the Manage hub on a bare landing (no deep link).
+        // Editing a specific entry loads this page fresh with a
+        // #/collections/.../entries/... hash — redirecting unconditionally
+        // would wipe that out before Decap ever reads it.
+        var hasDeepLink = /^#\/./.test(window.location.hash);
         window.netlifyIdentity.on('init', (user) => {
           if (user) {
-            document.location.href = '/admin/manage';
+            if (!hasDeepLink) document.location.href = '/admin/manage';
           } else {
             window.netlifyIdentity.on('login', () => {
-              document.location.href = '/admin/manage';
+              if (!hasDeepLink) document.location.href = '/admin/manage';
             });
           }
         });
