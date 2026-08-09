@@ -1,25 +1,103 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { SITE } from '../consts';
+
+const columnA = [
+  { src: '/images/hero/agra-taj-mahal.jpg', alt: 'Taj Mahal, Agra', h: 'h-72' },
+  { src: '/images/hero/sicily-cefalu.jpg', alt: 'Cefalù coastline, Sicily', h: 'h-56' },
+  { src: '/images/hero/jaipur.jpg', alt: 'Streets of Jaipur', h: 'h-80' },
+  { src: '/images/hero/thean-hou-lanterns.jpg', alt: 'Lanterns at Thean Hou Temple', h: 'h-64' },
+  { src: '/images/hero/dubai.jpg', alt: 'Dubai skyline', h: 'h-72' },
+  { src: '/images/hero/palace-courtyard.jpg', alt: 'Palace courtyard', h: 'h-60' },
+];
+
+const columnB = [
+  { src: '/images/hero/maldives.jpg', alt: 'Overwater villas, Maldives', h: 'h-64' },
+  { src: '/images/hero/prague.jpg', alt: 'Charles Bridge at sunset, Prague', h: 'h-80' },
+  { src: '/images/hero/tempio-di-ercole.jpg', alt: 'Temple of Hercules, Sicily', h: 'h-56' },
+  { src: '/images/hero/vatican-rome.jpg', alt: 'Aerial view of Vatican City, Rome', h: 'h-72' },
+  { src: '/images/heritage-tour-of-india.jpg', alt: 'Heritage tour of India', h: 'h-64' },
+  { src: '/images/hero/menton-france.jpg', alt: 'Coastal town of Menton, France', h: 'h-80' },
+];
 ---
 
-<Layout title="About Us" description={`The story behind ${SITE.name}.`}>
-  <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
-    <h1 class="font-brand text-5xl text-emerald-950">About {SITE.name}</h1>
-    <div class="mt-6 space-y-4 text-xs text-emerald-900/80">
-      <p>
-        {SITE.name} started with a simple idea: travel planning shouldn't feel like a second job.
-        We put together itineraries the way we'd plan a trip for our own family — good stays,
-        honest pricing, and no surprises once you've landed.
-      </p>
-      <p>
-        Every package on this site has been travelled and vetted by our team before it's listed.
-        Where something can be tailored — dates, group size, add-ons — we'll always tell you.
-      </p>
-      <p>
-        Based out of {SITE.location}, we work with travellers across India looking for
-        everything from quick weekend escapes to longer guided trips.
-      </p>
+<Layout title="About Us" description={`The story behind ${SITE.name}.`} hideFooter>
+  <section class="flex flex-col lg:h-[calc(100svh-3rem)] lg:flex-row">
+    <div class="flex flex-col justify-center px-4 py-12 sm:px-6 sm:py-16 lg:w-2/5 lg:py-16 lg:pl-12">
+      <h1 class="font-brand text-5xl leading-[1.05] text-emerald-950">
+        Our story
+      </h1>
+
+      <div class="mt-6 max-w-md space-y-4 text-xs text-black">
+        <p>
+          {SITE.name} started with a simple idea: we put together itineraries the way we'd plan a trip
+          for our own family — good stays, honest pricing, and no surprises once you've landed.
+        </p>
+        <p>
+          Every package on this site has been travelled and vetted by our team before it's listed.
+          Where something can be tailored — dates, group size, add-ons — we'll always tell you.
+        </p>
+        <p>
+          Based out of {SITE.location}, we work with travellers across India looking for everything
+          from quick weekend escapes to longer guided trips.
+        </p>
+      </div>
+
+      <a
+        href="/destinations"
+        class="mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-emerald-800 px-6 py-3 text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-900 active:scale-95"
+      >
+        View our packages
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 overflow-hidden px-4 py-8 sm:px-6 lg:h-full lg:w-3/5 lg:gap-6 lg:px-8 lg:py-0">
+      <div class="marquee-col overflow-hidden lg:h-full">
+        <div class="marquee-track flex flex-col gap-4 lg:gap-6">
+          {[...columnA, ...columnA].map((img) => (
+            <img
+              src={img.src}
+              alt={img.alt}
+              loading="lazy"
+              class:list={['w-full rounded-2xl object-cover shadow-sm', img.h]}
+            />
+          ))}
+        </div>
+      </div>
+      <div class="marquee-col overflow-hidden lg:h-full">
+        <div class="marquee-track marquee-track-reverse flex flex-col gap-4 lg:gap-6">
+          {[...columnB, ...columnB].map((img) => (
+            <img
+              src={img.src}
+              alt={img.alt}
+              loading="lazy"
+              class:list={['w-full rounded-2xl object-cover shadow-sm', img.h]}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   </section>
 </Layout>
+
+<style>
+  @media (min-width: 1024px) {
+    .marquee-track {
+      animation: marquee-up 45s linear infinite;
+    }
+    .marquee-track-reverse {
+      animation-name: marquee-up;
+      animation-duration: 55s;
+    }
+  }
+
+  @keyframes marquee-up {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-50%);
+    }
+  }
+</style>

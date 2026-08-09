@@ -6,12 +6,12 @@ const testimonials = await getCollection('testimonials');
 const rendered = await Promise.all(testimonials.map((t) => render(t)));
 ---
 
-<AdminLayout title="Testimonials" description="Manage traveller testimonials and moderate submitted reviews.">
+<AdminLayout title="Reviews" description="Manage traveller testimonials and moderate submitted reviews.">
   <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
-    <h1 class="font-brand text-5xl text-emerald-950">Testimonials</h1>
+    <h1 class="font-brand text-5xl text-emerald-950">Reviews</h1>
 
     <div id="login-gate" class="mt-8">
-      <p class="text-xs text-emerald-900/70">Log in to manage testimonials and moderate pending reviews.</p>
+      <p class="text-xs text-emerald-900/70">Log in to manage reviews and moderate pending submissions.</p>
       <button
         id="login-button"
         class="mt-4 rounded-full bg-emerald-700 px-6 py-3 text-xs font-semibold text-white hover:bg-emerald-800"
@@ -30,18 +30,18 @@ const rendered = await Promise.all(testimonials.map((t) => render(t)));
         href="/admin/index.html#/collections/testimonials/new"
         class="mt-6 inline-block rounded-full bg-emerald-700 px-6 py-3 text-xs font-semibold text-white hover:bg-emerald-800"
       >
-        Add a testimonial
+        Add a review
       </a>
 
       <div id="review-section" class="mt-10 hidden">
-        <h2 class="font-brand text-3xl text-emerald-950">Review testimonials</h2>
+        <h2 class="font-brand text-3xl text-emerald-950">Pending reviews</h2>
         <div id="pending-list" class="mt-4 space-y-4"></div>
       </div>
 
       <div class="mt-10">
-        <h2 class="font-brand text-3xl text-emerald-950">Current testimonials</h2>
+        <h2 class="font-brand text-3xl text-emerald-950">Current reviews</h2>
         {testimonials.length === 0 && (
-          <p class="mt-4 text-xs text-emerald-900/60">No testimonials yet.</p>
+          <p class="mt-4 text-xs text-emerald-900/60">No reviews yet.</p>
         )}
         <div class="mt-4 grid gap-6 sm:grid-cols-2">
           {testimonials.map((t, i) => {
