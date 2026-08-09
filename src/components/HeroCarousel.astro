@@ -16,11 +16,20 @@ const {
     { src: '/images/hero/prague.jpg', alt: 'Charles Bridge at sunset, Prague' },
     { src: '/images/hero/vatican-rome.jpg', alt: 'Aerial view of Vatican City, Rome' },
     { src: '/images/hero/dubai.jpg', alt: 'Dubai skyline' },
+    { src: '/images/hero/agra-taj-mahal.jpg', alt: 'Taj Mahal reflection, Agra' },
+    { src: '/images/hero/jaipur.jpg', alt: 'Streets of the Pink City, Jaipur' },
+    { src: '/images/hero/india-temple.webp', alt: 'Ornate temple, India' },
+    { src: '/images/hero/palace-courtyard.jpg', alt: 'Palace courtyard' },
+    { src: '/images/hero/cruise-ship.jpg', alt: 'Luxury cruise at sea' },
+    { src: '/images/hero/sicily-cefalu.jpg', alt: 'Cefalù coastline, Sicily' },
+    { src: '/images/hero/tempio-di-ercole.jpg', alt: 'Temple of Hercules, Sicily' },
+    { src: '/images/hero/menton-france.jpg', alt: 'Coastal town of Menton, France' },
+    { src: '/images/hero/thean-hou-lanterns.jpg', alt: 'Lanterns at Thean Hou Temple' },
   ],
 } = Astro.props;
 ---
 
-<section class="relative h-[calc(100svh-4rem)] w-full overflow-hidden bg-emerald-950">
+<section class="relative h-[calc(100svh-3rem)] w-full overflow-hidden bg-emerald-950">
   <div id="carousel-track" class="absolute inset-0">
     {slides.map((slide, i) => (
       <img

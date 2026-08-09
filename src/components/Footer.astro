@@ -2,10 +2,13 @@
 import { SITE } from '../consts';
 ---
 
-<footer class="bg-emerald-800 text-white">
-  <div class="mx-auto grid max-w-5xl gap-8 px-4 py-12 sm:grid-cols-3 sm:px-6">
+<footer class="relative overflow-hidden text-white">
+  <img src="/images/footer-background.jpg" alt="" class="absolute inset-0 h-full w-full object-cover object-[0%_center]" />
+  <div class="absolute inset-0 bg-emerald-950/20"></div>
+
+  <div class="relative mx-auto grid max-w-5xl gap-8 px-4 py-12 sm:grid-cols-3 sm:px-6">
     <div>
-      <p class="font-serif text-lg font-semibold">{SITE.name}</p>
+      <p class="font-brand text-lg uppercase tracking-wide">{SITE.name}</p>
       <p class="mt-2 text-xs text-white/70">{SITE.tagline}</p>
     </div>
 
@@ -32,7 +35,7 @@ import { SITE } from '../consts';
     </div>
   </div>
 
-  <div class="border-t border-white/15 px-4 py-4 text-center text-xs text-white/60 sm:px-6">
+  <div class="relative border-t border-white/15 px-4 py-4 text-center text-xs text-white/60 sm:px-6">
     &copy; {new Date().getFullYear()} {SITE.name}. All rights reserved.
   </div>
 </footer>

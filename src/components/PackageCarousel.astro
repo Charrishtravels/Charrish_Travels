@@ -10,18 +10,31 @@ const { destinations } = Astro.props;
 ---
 
 <div class="select-none">
-  <div id="carousel-stage" class="relative min-h-[400px] touch-pan-y sm:min-h-[380px]">
+  <div id="carousel-stage" class="relative min-h-[430px] touch-pan-y sm:min-h-[535px]">
     {destinations.map((destination, i) => (
       <div
-        class="carousel-card absolute left-1/2 top-1/2 w-[70%] max-w-[280px] sm:w-[320px]"
+        class="carousel-card absolute left-1/2 top-1/2 w-[80%] max-w-[320px] sm:w-[400px]"
         data-index={i}
       >
         <DestinationCard destination={destination} />
       </div>
     ))}
+
+    <div
+      class="carousel-card absolute left-1/2 top-1/2 w-[80%] max-w-[320px] sm:w-[400px]"
+      data-index={destinations.length}
+    >
+      <a
+        href="/destinations"
+        class="group flex aspect-[3/4] w-full flex-col items-center justify-center gap-3 rounded-3xl border border-emerald-100 bg-emerald-800 p-6 text-center shadow-lg"
+      >
+        <span class="font-brand text-xl text-white">View all packages</span>
+        <span class="text-xs text-white/70 transition-transform group-hover:translate-x-1">View destinations →</span>
+      </a>
+    </div>
   </div>
 
-  <div class="mt-6 flex justify-center gap-3">
+  <div class="flex justify-center gap-3">
     <button
       type="button"
       data-dir="prev"
@@ -85,7 +98,6 @@ const { destinations } = Astro.props;
           zIndex = count + 1;
         } else if (abs <= 2) {
           translateX = diff * 62;
-          rotate = diff * 10;
           scale = 1 - abs * 0.15;
           opacity = 1 - abs * 0.35;
           zIndex = count - abs;

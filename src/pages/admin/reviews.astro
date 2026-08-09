@@ -8,7 +8,7 @@ const rendered = await Promise.all(testimonials.map((t) => render(t)));
 
 <AdminLayout title="Testimonials" description="Manage traveller testimonials and moderate submitted reviews.">
   <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
-    <h1 class="font-brand text-3xl text-emerald-950">Testimonials</h1>
+    <h1 class="font-brand text-5xl text-emerald-950">Testimonials</h1>
 
     <div id="login-gate" class="mt-8">
       <p class="text-xs text-emerald-900/70">Log in to manage testimonials and moderate pending reviews.</p>
@@ -34,12 +34,12 @@ const rendered = await Promise.all(testimonials.map((t) => render(t)));
       </a>
 
       <div id="review-section" class="mt-10 hidden">
-        <h2 class="font-brand text-xl text-emerald-950">Review testimonials</h2>
+        <h2 class="font-brand text-3xl text-emerald-950">Review testimonials</h2>
         <div id="pending-list" class="mt-4 space-y-4"></div>
       </div>
 
       <div class="mt-10">
-        <h2 class="font-brand text-xl text-emerald-950">Current testimonials</h2>
+        <h2 class="font-brand text-3xl text-emerald-950">Current testimonials</h2>
         {testimonials.length === 0 && (
           <p class="mt-4 text-xs text-emerald-900/60">No testimonials yet.</p>
         )}
