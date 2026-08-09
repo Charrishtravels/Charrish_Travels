@@ -7,14 +7,14 @@ const rendered = await Promise.all(testimonials.map((t) => render(t)));
 ---
 
 <Layout title="Testimonials & Reviews" description="What travellers say about Charrish Travels, plus leave your own review.">
-  <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+  <section class="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-16">
     <h1 class="font-brand text-5xl text-emerald-950">Testimonials & Reviews</h1>
 
-    <div class="mt-8 grid gap-6 sm:grid-cols-2">
+    <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {testimonials.map((t, i) => {
         const { Content } = rendered[i];
         return (
-          <blockquote class="rounded-xl border border-emerald-100 bg-cream p-6 shadow-sm">
+          <blockquote class="rounded-xl border border-emerald-600 bg-cream p-6 shadow-sm">
             <div class="text-amber-500" aria-hidden="true">{'★'.repeat(t.data.rating)}{'☆'.repeat(5 - t.data.rating)}</div>
             <div class="mt-2 text-xs text-emerald-900/80 italic">
               <Content />
@@ -27,91 +27,45 @@ const rendered = await Promise.all(testimonials.map((t) => render(t)));
       })}
     </div>
 
-    <div class="mt-12">
-      <h2 class="font-brand text-4xl text-emerald-950">Traveller reviews</h2>
-      <p class="mt-1 text-xs text-emerald-900/60">Submitted by travellers, published after we approve them.</p>
-      <div id="approved-reviews" class="mt-6 grid gap-4 sm:grid-cols-2">
-        <p class="text-xs text-emerald-900/60" id="reviews-loading">Loading reviews…</p>
-      </div>
-    </div>
+    <div class="relative mt-12 overflow-hidden rounded-xl p-6">
+      <img src="/images/stats-background.jpg" alt="" class="absolute inset-0 h-full w-full object-cover object-[30%_60%]" />
+      <div class="absolute inset-0 bg-emerald-950/60"></div>
 
-    <div class="mt-12 rounded-xl border border-emerald-100 bg-cream p-6">
-      <h2 class="font-brand text-3xl text-emerald-950">Leave a review</h2>
-      <form id="review-form" class="mt-4 space-y-4">
-        <div>
-          <label for="review-name" class="block text-xs font-medium text-emerald-950">Name</label>
-          <input id="review-name" name="name" type="text" required maxlength="80" class="mt-1 w-full rounded-md border border-emerald-200 px-3 py-2 text-xs focus:border-emerald-500 focus:outline-none" />
-        </div>
-        <div>
-          <label for="review-rating" class="block text-xs font-medium text-emerald-950">Rating</label>
-          <select id="review-rating" name="rating" required class="mt-1 w-full rounded-md border border-emerald-200 px-3 py-2 text-xs focus:border-emerald-500 focus:outline-none">
-            <option value="5">★★★★★ Excellent</option>
-            <option value="4">★★★★☆ Good</option>
-            <option value="3">★★★☆☆ Average</option>
-            <option value="2">★★☆☆☆ Below average</option>
-            <option value="1">★☆☆☆☆ Poor</option>
-          </select>
-        </div>
-        <div>
-          <label for="review-message" class="block text-xs font-medium text-emerald-950">Your review</label>
-          <textarea id="review-message" name="message" rows="4" required maxlength="1000" class="mt-1 w-full rounded-md border border-emerald-200 px-3 py-2 text-xs focus:border-emerald-500 focus:outline-none"></textarea>
-        </div>
-        <button
-          type="submit"
-          class="w-full rounded-full bg-emerald-700 px-6 py-3 text-xs font-semibold text-white transition-colors hover:bg-emerald-800 disabled:opacity-60 sm:w-auto"
-        >
-          Submit review
-        </button>
-        <p id="review-status" class="text-xs" role="status"></p>
-      </form>
+      <div class="relative">
+        <h2 class="font-brand text-3xl text-white">Leave a review</h2>
+        <form id="review-form" class="mt-4 space-y-4">
+          <div>
+            <label for="review-name" class="block text-xs font-medium text-white">Name</label>
+            <input id="review-name" name="name" type="text" required maxlength="80" class="mt-1 w-full rounded-md border border-emerald-200 bg-white px-3 py-2 text-xs focus:border-emerald-500 focus:outline-none" />
+          </div>
+          <div>
+            <label for="review-rating" class="block text-xs font-medium text-white">Rating</label>
+            <select id="review-rating" name="rating" required class="mt-1 w-full rounded-md border border-emerald-200 bg-white px-3 py-2 text-xs focus:border-emerald-500 focus:outline-none">
+              <option value="5">★★★★★ Excellent</option>
+              <option value="4">★★★★☆ Good</option>
+              <option value="3">★★★☆☆ Average</option>
+              <option value="2">★★☆☆☆ Below average</option>
+              <option value="1">★☆☆☆☆ Poor</option>
+            </select>
+          </div>
+          <div>
+            <label for="review-message" class="block text-xs font-medium text-white">Your review</label>
+            <textarea id="review-message" name="message" rows="4" required maxlength="1000" class="mt-1 w-full rounded-md border border-emerald-200 bg-white px-3 py-2 text-xs focus:border-emerald-500 focus:outline-none"></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full rounded-full bg-emerald-700 px-6 py-3 text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-800 active:scale-95 disabled:opacity-60 sm:w-auto"
+          >
+            Submit review
+          </button>
+          <p id="review-status" class="text-xs text-white" role="status"></p>
+        </form>
+      </div>
     </div>
   </section>
 </Layout>
 
 <script>
-  const reviewsContainer = document.getElementById('approved-reviews');
-  const loadingEl = document.getElementById('reviews-loading');
-
-  function escapeHtml(value: string) {
-    const div = document.createElement('div');
-    div.textContent = value;
-    return div.innerHTML;
-  }
-
-  async function loadApprovedReviews() {
-    try {
-      const res = await fetch('/.netlify/functions/get-approved-reviews');
-      if (!res.ok) throw new Error('Failed to load reviews');
-      const { reviews } = await res.json();
-
-      loadingEl?.remove();
-
-      if (!reviews || reviews.length === 0) {
-        reviewsContainer?.insertAdjacentHTML(
-          'beforeend',
-          '<p class="text-xs text-emerald-900/60">No traveller reviews yet — be the first!</p>'
-        );
-        return;
-      }
-
-      for (const review of reviews) {
-        const stars = '★'.repeat(review.rating) + '☆'.repeat(5 - review.rating);
-        reviewsContainer?.insertAdjacentHTML(
-          'beforeend',
-          `<blockquote class="rounded-xl border border-emerald-100 bg-cream p-6 shadow-sm">
-            <div class="text-amber-500" aria-hidden="true">${stars}</div>
-            <p class="mt-2 text-xs text-emerald-900/80 italic">"${escapeHtml(review.message)}"</p>
-            <footer class="mt-4 text-xs font-semibold text-emerald-950">${escapeHtml(review.name)}</footer>
-          </blockquote>`
-        );
-      }
-    } catch {
-      if (loadingEl) loadingEl.textContent = 'Couldn’t load reviews right now — please try again later.';
-    }
-  }
-
-  loadApprovedReviews();
-
   const form = document.getElementById('review-form') as HTMLFormElement | null;
   const statusEl = document.getElementById('review-status');
 

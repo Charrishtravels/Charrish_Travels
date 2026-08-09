@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import { SITE } from '../../consts';
 
 export async function getStaticPaths() {
   const destinations = await getCollection('destinations');
@@ -72,7 +73,7 @@ const quickFacts = [
 
 <Layout title={title} description={summary}>
   <article class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
-    <p class="text-xs font-semibold uppercase tracking-wide text-emerald-600">{location}</p>
+    <p class="text-xs font-semibold uppercase tracking-wide text-black">{location}</p>
     <h1 class="mt-2 font-brand text-5xl text-emerald-950 sm:text-6xl">{title}</h1>
 
     <img
@@ -212,8 +213,10 @@ const quickFacts = [
 
     <div class="mt-10 flex flex-col gap-3 sm:flex-row">
       <a
-        href="/contact"
-        class="w-full rounded-full bg-emerald-700 px-6 py-3 text-center text-xs font-semibold text-white transition-colors hover:bg-emerald-800 sm:w-auto"
+        href={`https://wa.me/${SITE.whatsapp}`}
+        target="_blank"
+        rel="noopener"
+        class="w-full rounded-full bg-emerald-700 px-6 py-3 text-center text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-800 active:scale-95 sm:w-auto"
       >
         Enquire about this package
       </a>
