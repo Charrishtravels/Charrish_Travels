@@ -2,7 +2,7 @@
 title: Kerala Backwaters Retreat
 location: Alleppey, Kerala
 summary: Drift through palm-lined canals on a private houseboat.
-heroImage: /images/destinations/kerala.jpg
+heroImage: /images/footer-background.jpg
 priceFrom: 15999
 duration: 3 Days / 2 Nights
 highlights:

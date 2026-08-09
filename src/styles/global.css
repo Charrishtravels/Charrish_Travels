@@ -1,36 +1,80 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "International";
-  src: url("/fonts/International.ttf") format("truetype");
+  font-family: "LT Soul";
+  src: url("/fonts/LTSoul-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: "LT Soul";
+  src: url("/fonts/LTSoul-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LT Soul";
+  src: url("/fonts/LTSoul-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LT Soul";
+  src: url("/fonts/LTSoul-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Redaction";
+  src: url("/fonts/Redaction-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Redaction";
+  src: url("/fonts/Redaction-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
-  --font-sans: "Inter", "Segoe UI", -apple-system, Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: "Geist", "Segoe UI", -apple-system, Roboto, Helvetica, Arial, sans-serif;
   --font-serif: "Source Serif 4", Georgia, "Iowan Old Style", "Palatino Linotype", serif;
-  --font-brand: "Cinzel", "Source Serif 4", Georgia, serif;
+  --font-brand: "Redaction", "LT Soul", "Source Serif 4", Georgia, serif;
 
-  /* Brand: darker teal anchor at 800, reused on the emerald-* scale so existing utility classes pick it up. */
-  --color-emerald-50: hsl(178 40% 95%);
-  --color-emerald-100: hsl(178 38% 90%);
-  --color-emerald-200: hsl(178 38% 80%);
-  --color-emerald-300: hsl(178 40% 66%);
-  --color-emerald-400: hsl(178 45% 50%);
-  --color-emerald-500: hsl(178 52% 36%);
-  --color-emerald-600: hsl(178 56% 27%);
-  --color-emerald-700: hsl(178 58% 20%);
-  --color-emerald-800: #0f3d3c;
-  --color-emerald-900: hsl(178 62% 11%);
-  --color-emerald-950: hsl(178 65% 6%);
+  /* Body copy runs almost entirely on text-xs; bumped to the old text-sm
+     size/line-height so Geist reads larger site-wide without touching every
+     page individually. */
+  --text-xs: 0.875rem;
+  --text-xs--line-height: calc(1.25 / 0.875);
 
-  --color-cream: #f5f6f4;
+  /* Brand: dark green anchor at 800, reused on the emerald-* scale so existing utility classes pick it up. */
+  --color-emerald-50: hsl(129 40% 95%);
+  --color-emerald-100: hsl(129 38% 90%);
+  --color-emerald-200: hsl(129 38% 80%);
+  --color-emerald-300: hsl(129 40% 66%);
+  --color-emerald-400: hsl(129 45% 50%);
+  --color-emerald-500: hsl(129 52% 36%);
+  --color-emerald-600: hsl(129 56% 27%);
+  --color-emerald-700: hsl(129 58% 20%);
+  --color-emerald-800: #002d07;
+  --color-emerald-900: hsl(129 62% 11%);
+  --color-emerald-950: hsl(129 65% 6%);
+
+  --color-cream: #fbf9f4;
 }
 
 .font-brand {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
   font-weight: 500;
 }

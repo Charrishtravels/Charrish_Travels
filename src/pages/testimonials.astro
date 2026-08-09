@@ -8,7 +8,7 @@ const rendered = await Promise.all(testimonials.map((t) => render(t)));
 
 <Layout title="Testimonials & Reviews" description="What travellers say about Charrish Travels, plus leave your own review.">
   <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
-    <h1 class="font-brand text-3xl text-emerald-950">Testimonials & Reviews</h1>
+    <h1 class="font-brand text-5xl text-emerald-950">Testimonials & Reviews</h1>
 
     <div class="mt-8 grid gap-6 sm:grid-cols-2">
       {testimonials.map((t, i) => {
@@ -28,15 +28,15 @@ const rendered = await Promise.all(testimonials.map((t) => render(t)));
     </div>
 
     <div class="mt-12">
-      <h2 class="font-brand text-2xl text-emerald-950">Traveller reviews</h2>
+      <h2 class="font-brand text-4xl text-emerald-950">Traveller reviews</h2>
       <p class="mt-1 text-xs text-emerald-900/60">Submitted by travellers, published after we approve them.</p>
       <div id="approved-reviews" class="mt-6 grid gap-4 sm:grid-cols-2">
         <p class="text-xs text-emerald-900/60" id="reviews-loading">Loading reviews…</p>
       </div>
     </div>
 
-    <div class="mt-12 rounded-xl border border-emerald-100 bg-emerald-50/60 p-6">
-      <h2 class="font-brand text-xl text-emerald-950">Leave a review</h2>
+    <div class="mt-12 rounded-xl border border-emerald-100 bg-cream p-6">
+      <h2 class="font-brand text-3xl text-emerald-950">Leave a review</h2>
       <form id="review-form" class="mt-4 space-y-4">
         <div>
           <label for="review-name" class="block text-xs font-medium text-emerald-950">Name</label>
