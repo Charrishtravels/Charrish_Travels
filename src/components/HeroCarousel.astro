@@ -1,6 +1,24 @@
 ---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import tajMahal from '../assets/hero/taj-mahal.jpg';
+import hawaMahalJaipur from '../assets/hero/hawa-mahal-jaipur.jpg';
+import maldives from '../assets/hero/maldives.jpg';
+import prague from '../assets/hero/prague.jpg';
+import vaticanRome from '../assets/hero/vatican-rome.jpg';
+import dubai from '../assets/hero/dubai.jpg';
+import agraTajMahal from '../assets/hero/agra-taj-mahal.jpg';
+import jaipur from '../assets/hero/jaipur.jpg';
+import indiaTemple from '../assets/hero/india-temple.webp';
+import palaceCourtyard from '../assets/hero/palace-courtyard.jpg';
+import cruiseShip from '../assets/hero/cruise-ship.jpg';
+import sicilyCefalu from '../assets/hero/sicily-cefalu.jpg';
+import tempioDiErcole from '../assets/hero/tempio-di-ercole.jpg';
+import mentonFrance from '../assets/hero/menton-france.jpg';
+import theanHouLanterns from '../assets/hero/thean-hou-lanterns.jpg';
+
 interface Slide {
-  src: string;
+  src: ImageMetadata;
   alt: string;
 }
 
@@ -10,21 +28,21 @@ interface Props {
 
 const {
   slides = [
-    { src: '/images/hero/taj-mahal.jpg', alt: 'Taj Mahal, Agra' },
-    { src: '/images/hero/hawa-mahal-jaipur.jpg', alt: 'Hawa Mahal, Jaipur' },
-    { src: '/images/hero/maldives.jpg', alt: 'Overwater villas, Maldives' },
-    { src: '/images/hero/prague.jpg', alt: 'Charles Bridge at sunset, Prague' },
-    { src: '/images/hero/vatican-rome.jpg', alt: 'Aerial view of Vatican City, Rome' },
-    { src: '/images/hero/dubai.jpg', alt: 'Dubai skyline' },
-    { src: '/images/hero/agra-taj-mahal.jpg', alt: 'Taj Mahal reflection, Agra' },
-    { src: '/images/hero/jaipur.jpg', alt: 'Streets of the Pink City, Jaipur' },
-    { src: '/images/hero/india-temple.webp', alt: 'Ornate temple, India' },
-    { src: '/images/hero/palace-courtyard.jpg', alt: 'Palace courtyard' },
-    { src: '/images/hero/cruise-ship.jpg', alt: 'Luxury cruise at sea' },
-    { src: '/images/hero/sicily-cefalu.jpg', alt: 'Cefalù coastline, Sicily' },
-    { src: '/images/hero/tempio-di-ercole.jpg', alt: 'Temple of Hercules, Sicily' },
-    { src: '/images/hero/menton-france.jpg', alt: 'Coastal town of Menton, France' },
-    { src: '/images/hero/thean-hou-lanterns.jpg', alt: 'Lanterns at Thean Hou Temple' },
+    { src: tajMahal, alt: 'Taj Mahal, Agra' },
+    { src: hawaMahalJaipur, alt: 'Hawa Mahal, Jaipur' },
+    { src: maldives, alt: 'Overwater villas, Maldives' },
+    { src: prague, alt: 'Charles Bridge at sunset, Prague' },
+    { src: vaticanRome, alt: 'Aerial view of Vatican City, Rome' },
+    { src: dubai, alt: 'Dubai skyline' },
+    { src: agraTajMahal, alt: 'Taj Mahal reflection, Agra' },
+    { src: jaipur, alt: 'Streets of the Pink City, Jaipur' },
+    { src: indiaTemple, alt: 'Ornate temple, India' },
+    { src: palaceCourtyard, alt: 'Palace courtyard' },
+    { src: cruiseShip, alt: 'Luxury cruise at sea' },
+    { src: sicilyCefalu, alt: 'Cefalù coastline, Sicily' },
+    { src: tempioDiErcole, alt: 'Temple of Hercules, Sicily' },
+    { src: mentonFrance, alt: 'Coastal town of Menton, France' },
+    { src: theanHouLanterns, alt: 'Lanterns at Thean Hou Temple' },
   ],
 } = Astro.props;
 ---
@@ -32,9 +50,11 @@ const {
 <section class="relative h-[calc(100svh-3rem)] w-full overflow-hidden bg-emerald-950">
   <div id="carousel-track" class="absolute inset-0">
     {slides.map((slide, i) => (
-      <img
+      <Image
         src={slide.src}
         alt={slide.alt}
+        widths={[640, 1024, 1600, 2048]}
+        sizes="100vw"
         data-slide
         loading={i === 0 ? 'eager' : 'lazy'}
         class:list={[

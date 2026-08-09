@@ -1,9 +1,11 @@
 ---
+import { Image } from 'astro:assets';
 import { SITE } from '../consts';
+import footerBackground from '../assets/footer-background.jpg';
 ---
 
 <footer class="relative overflow-hidden text-white">
-  <img src="/images/footer-background.jpg" alt="" class="absolute inset-0 h-full w-full object-cover object-[0%_center]" />
+  <Image src={footerBackground} alt="" widths={[640, 1024, 1600]} sizes="100vw" class="absolute inset-0 h-full w-full object-cover object-[0%_center]" />
   <div class="absolute inset-0 bg-emerald-950/20"></div>
 
   <div class="relative mx-auto grid max-w-5xl gap-8 px-4 py-12 sm:grid-cols-3 sm:px-6">
