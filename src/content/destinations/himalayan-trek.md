@@ -2,7 +2,7 @@
 title: Himalayan Foothills Trek
 location: Manali, Himachal Pradesh
 summary: Pine forests, mountain villages, and campfire nights.
-heroImage: /images/destinations/manali.jpg
+heroImage: /images/stats-background.jpg
 priceFrom: 9999
 duration: 5 Days / 4 Nights
 highlights:

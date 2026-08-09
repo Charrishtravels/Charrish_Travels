@@ -6,30 +6,22 @@ interface Props {
 }
 
 const { destination } = Astro.props;
-const { title, location, summary, heroImage, priceFrom, duration } = destination.data;
+const { title, summary, heroImage } = destination.data;
 ---
 
 <a
   href={`/destinations/${destination.id}`}
-  class="group flex flex-col overflow-hidden rounded-xl border border-emerald-100 bg-cream shadow-sm transition-shadow hover:shadow-md"
+  class="group relative block aspect-[3/4] w-full overflow-hidden rounded-3xl border border-white/10 shadow-lg"
 >
-  <div class="aspect-[4/3] w-full overflow-hidden bg-emerald-100">
-    <img
-      src={heroImage}
-      alt={title}
-      loading="lazy"
-      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-    />
-  </div>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <p class="text-xs font-semibold uppercase tracking-wide text-emerald-600">{location}</p>
-    <h3 class="font-serif text-lg text-emerald-950">{title}</h3>
-    <p class="flex-1 text-xs text-emerald-900/70">{summary}</p>
-    <div class="mt-2 flex items-center justify-between text-xs">
-      <span class="text-emerald-900/60">{duration}</span>
-      <span class="font-semibold text-emerald-900">
-        {priceFrom ? `from ₹${priceFrom.toLocaleString('en-IN')}` : 'Enquire for pricing'}
-      </span>
-    </div>
+  <img
+    src={heroImage}
+    alt={title}
+    loading="lazy"
+    class="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+  <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/70"></div>
+  <div class="relative flex h-full flex-col justify-between p-5">
+    <h3 class="font-brand text-xl text-white">{title}</h3>
+    <p class="text-xs text-white/90">{summary}</p>
   </div>
 </a>

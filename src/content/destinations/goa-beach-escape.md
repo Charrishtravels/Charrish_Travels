@@ -2,7 +2,7 @@
 title: Goa Beach Escape
 location: Goa, India
 summary: Sun, surf, and seafood along India's most laid-back coastline.
-heroImage: /images/destinations/goa.jpg
+heroImage: /images/hero/maldives.jpg
 priceFrom: 12999
 duration: 4 Days / 3 Nights
 highlights:

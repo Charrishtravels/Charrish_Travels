@@ -7,7 +7,7 @@ const destinations = await getCollection('destinations');
 
 <AdminLayout title="Packages" description="Manage travel packages.">
   <section class="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-16">
-    <h1 class="font-brand text-3xl text-emerald-950">Packages</h1>
+    <h1 class="font-brand text-5xl text-emerald-950">Packages</h1>
 
     <div id="login-gate" class="mt-8">
       <p class="text-xs text-emerald-900/70">Log in to manage packages.</p>
@@ -33,13 +33,13 @@ const destinations = await getCollection('destinations');
       </a>
 
       <div class="mt-10">
-        <h2 class="font-brand text-xl text-emerald-950">Current packages</h2>
+        <h2 class="font-brand text-3xl text-emerald-950">Current packages</h2>
         {destinations.length === 0 && (
           <p class="mt-4 text-xs text-emerald-900/60">No packages yet.</p>
         )}
         <div class="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {destinations.map((d) => {
-            const { title, location, summary, heroImage, priceFrom, duration } = d.data;
+            const { title, summary, heroImage, priceFrom, duration } = d.data;
             return (
               <div class="group relative flex flex-col overflow-hidden rounded-xl border border-emerald-100 bg-cream shadow-sm">
                 <a
@@ -52,7 +52,6 @@ const destinations = await getCollection('destinations');
                   <img src={heroImage} alt={title} loading="lazy" class="h-full w-full object-cover" />
                 </div>
                 <div class="flex flex-1 flex-col gap-2 p-4">
-                  <p class="text-xs font-semibold uppercase tracking-wide text-emerald-600">{location}</p>
                   <h3 class="font-serif text-lg text-emerald-950">{title}</h3>
                   <p class="flex-1 text-xs text-emerald-900/70">{summary}</p>
                   <div class="mt-2 flex items-center justify-between text-xs">
