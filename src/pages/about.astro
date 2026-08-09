@@ -1,23 +1,36 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import { SITE } from '../consts';
+import agraTajMahal from '../assets/hero/agra-taj-mahal.jpg';
+import sicilyCefalu from '../assets/hero/sicily-cefalu.jpg';
+import jaipur from '../assets/hero/jaipur.jpg';
+import theanHouLanterns from '../assets/hero/thean-hou-lanterns.jpg';
+import dubai from '../assets/hero/dubai.jpg';
+import palaceCourtyard from '../assets/hero/palace-courtyard.jpg';
+import maldives from '../assets/hero/maldives.jpg';
+import prague from '../assets/hero/prague.jpg';
+import tempioDiErcole from '../assets/hero/tempio-di-ercole.jpg';
+import vaticanRome from '../assets/hero/vatican-rome.jpg';
+import heritageTourOfIndia from '../assets/heritage-tour-of-india.jpg';
+import mentonFrance from '../assets/hero/menton-france.jpg';
 
 const columnA = [
-  { src: '/images/hero/agra-taj-mahal.jpg', alt: 'Taj Mahal, Agra', h: 'h-72' },
-  { src: '/images/hero/sicily-cefalu.jpg', alt: 'Cefalù coastline, Sicily', h: 'h-56' },
-  { src: '/images/hero/jaipur.jpg', alt: 'Streets of Jaipur', h: 'h-80' },
-  { src: '/images/hero/thean-hou-lanterns.jpg', alt: 'Lanterns at Thean Hou Temple', h: 'h-64' },
-  { src: '/images/hero/dubai.jpg', alt: 'Dubai skyline', h: 'h-72' },
-  { src: '/images/hero/palace-courtyard.jpg', alt: 'Palace courtyard', h: 'h-60' },
+  { src: agraTajMahal, alt: 'Taj Mahal, Agra', h: 'h-72' },
+  { src: sicilyCefalu, alt: 'Cefalù coastline, Sicily', h: 'h-56' },
+  { src: jaipur, alt: 'Streets of Jaipur', h: 'h-80' },
+  { src: theanHouLanterns, alt: 'Lanterns at Thean Hou Temple', h: 'h-64' },
+  { src: dubai, alt: 'Dubai skyline', h: 'h-72' },
+  { src: palaceCourtyard, alt: 'Palace courtyard', h: 'h-60' },
 ];
 
 const columnB = [
-  { src: '/images/hero/maldives.jpg', alt: 'Overwater villas, Maldives', h: 'h-64' },
-  { src: '/images/hero/prague.jpg', alt: 'Charles Bridge at sunset, Prague', h: 'h-80' },
-  { src: '/images/hero/tempio-di-ercole.jpg', alt: 'Temple of Hercules, Sicily', h: 'h-56' },
-  { src: '/images/hero/vatican-rome.jpg', alt: 'Aerial view of Vatican City, Rome', h: 'h-72' },
-  { src: '/images/heritage-tour-of-india.jpg', alt: 'Heritage tour of India', h: 'h-64' },
-  { src: '/images/hero/menton-france.jpg', alt: 'Coastal town of Menton, France', h: 'h-80' },
+  { src: maldives, alt: 'Overwater villas, Maldives', h: 'h-64' },
+  { src: prague, alt: 'Charles Bridge at sunset, Prague', h: 'h-80' },
+  { src: tempioDiErcole, alt: 'Temple of Hercules, Sicily', h: 'h-56' },
+  { src: vaticanRome, alt: 'Aerial view of Vatican City, Rome', h: 'h-72' },
+  { src: heritageTourOfIndia, alt: 'Heritage tour of India', h: 'h-64' },
+  { src: mentonFrance, alt: 'Coastal town of Menton, France', h: 'h-80' },
 ];
 ---
 
@@ -56,9 +69,11 @@ const columnB = [
       <div class="marquee-col overflow-hidden lg:h-full">
         <div class="marquee-track flex flex-col gap-4 lg:gap-6">
           {[...columnA, ...columnA].map((img) => (
-            <img
+            <Image
               src={img.src}
               alt={img.alt}
+              widths={[240, 400, 600]}
+              sizes="(min-width: 1024px) 280px, 45vw"
               loading="lazy"
               class:list={['w-full rounded-2xl object-cover shadow-sm', img.h]}
             />
@@ -68,9 +83,11 @@ const columnB = [
       <div class="marquee-col overflow-hidden lg:h-full">
         <div class="marquee-track marquee-track-reverse flex flex-col gap-4 lg:gap-6">
           {[...columnB, ...columnB].map((img) => (
-            <img
+            <Image
               src={img.src}
               alt={img.alt}
+              widths={[240, 400, 600]}
+              sizes="(min-width: 1024px) 280px, 45vw"
               loading="lazy"
               class:list={['w-full rounded-2xl object-cover shadow-sm', img.h]}
             />
