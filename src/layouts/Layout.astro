@@ -9,9 +9,10 @@ interface Props {
   title: string;
   description?: string;
   hideFooter?: boolean;
+  transparentNav?: boolean;
 }
 
-const { title, description = SITE.tagline, hideFooter = false } = Astro.props;
+const { title, description = SITE.tagline, hideFooter = false, transparentNav = false } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -54,7 +55,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     </script>
   </head>
   <body class="flex min-h-screen flex-col bg-cream font-sans text-emerald-950 antialiased">
-    <Nav />
+    <Nav transparent={transparentNav} />
     <main class="flex-1">
       <slot />
     </main>
