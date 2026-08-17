@@ -4,7 +4,7 @@ location: Tamil Nadu
 summary: A 12-day pilgrimage circuit through Tamil Nadu's most important temples, from Kanchipuram to Rameswaram.
 heroImage: /images/hero/india-temple.webp
 duration: 12 Days / 11 Nights
-featured: false
+featured: true
 
 route: Chennai – Coimbatore
 departureDates: 18 – 29 September
