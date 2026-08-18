@@ -10,7 +10,7 @@ const { destinations } = Astro.props;
 ---
 
 <div class="select-none">
-  <div id="carousel-stage" class="relative min-h-[430px] touch-pan-y sm:min-h-[535px]">
+  <div id="carousel-stage" class="relative min-h-[430px] touch-pan-y overflow-x-hidden sm:min-h-[535px]">
     {destinations.map((destination, i) => (
       <div
         class="carousel-card absolute left-1/2 top-1/2 w-[80%] max-w-[320px] sm:w-[400px]"
@@ -19,19 +19,6 @@ const { destinations } = Astro.props;
         <DestinationCard destination={destination} />
       </div>
     ))}
-
-    <div
-      class="carousel-card absolute left-1/2 top-1/2 w-[80%] max-w-[320px] sm:w-[400px]"
-      data-index={destinations.length}
-    >
-      <a
-        href="/destinations"
-        class="group flex aspect-[3/4] w-full flex-col items-center justify-center gap-3 rounded-3xl border border-emerald-100 bg-emerald-800 p-6 text-center shadow-lg"
-      >
-        <span class="font-brand text-xl text-white">View all packages</span>
-        <span class="text-xs text-white/70 transition-transform group-hover:translate-x-1">View destinations →</span>
-      </a>
-    </div>
   </div>
 
   <div class="flex justify-center gap-3">
@@ -119,8 +106,17 @@ const { destinations } = Astro.props;
       render();
     }
 
+    let timer: ReturnType<typeof setInterval>;
+    function restartTimer() {
+      clearInterval(timer);
+      if (count > 1) timer = setInterval(() => go(1), 4000);
+    }
+
     document.querySelectorAll<HTMLButtonElement>('[data-dir]').forEach((button) => {
-      button.addEventListener('click', () => go(button.dataset.dir === 'next' ? 1 : -1));
+      button.addEventListener('click', () => {
+        go(button.dataset.dir === 'next' ? 1 : -1);
+        restartTimer();
+      });
     });
 
     cards.forEach((card, i) => {
@@ -129,6 +125,7 @@ const { destinations } = Astro.props;
         if (diff !== 0) {
           e.preventDefault();
           go(diff > 0 ? 1 : -1);
+          restartTimer();
         }
       });
     });
@@ -139,11 +136,15 @@ const { destinations } = Astro.props;
       'touchend',
       (e) => {
         const delta = e.changedTouches[0].clientX - touchStartX;
-        if (Math.abs(delta) > 40) go(delta < 0 ? 1 : -1);
+        if (Math.abs(delta) > 40) {
+          go(delta < 0 ? 1 : -1);
+          restartTimer();
+        }
       },
       { passive: true }
     );
 
     render();
+    restartTimer();
   }
 </script>

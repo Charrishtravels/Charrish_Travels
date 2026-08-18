@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
+import { SITE } from '../consts';
 import tajMahal from '../assets/hero/taj-mahal.jpg';
 import hawaMahalJaipur from '../assets/hero/hawa-mahal-jaipur.jpg';
 import maldives from '../assets/hero/maldives.jpg';
@@ -47,46 +48,55 @@ const {
 } = Astro.props;
 ---
 
-<section class="relative h-[calc(100svh-3rem)] w-full overflow-hidden bg-emerald-950">
-  <div id="carousel-track" class="absolute inset-0">
-    {slides.map((slide, i) => (
-      <Image
-        src={slide.src}
-        alt={slide.alt}
-        widths={[640, 1024, 1600, 2048]}
-        sizes="100vw"
-        data-slide
-        loading={i === 0 ? 'eager' : 'lazy'}
-        class:list={[
-          'absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out',
-          i === 0 ? 'opacity-100' : 'opacity-0',
-        ]}
-      />
-    ))}
-  </div>
+<div id="hero-pin" class="relative h-[180vh] sm:h-[200vh] lg:h-[220vh]">
+  <section class="sticky top-0 h-svh w-full overflow-hidden bg-emerald-950">
+    <div id="hero-photo" class="absolute inset-0 origin-center">
+      <div id="carousel-track" class="absolute inset-0">
+        {slides.map((slide, i) => (
+          <Image
+            src={slide.src}
+            alt={slide.alt}
+            widths={[640, 1024, 1600, 2048]}
+            sizes="100vw"
+            data-slide
+            loading={i === 0 ? 'eager' : 'lazy'}
+            class:list={[
+              'absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out',
+              i === 0 ? 'opacity-100' : 'opacity-0',
+            ]}
+          />
+        ))}
+      </div>
 
-  <div class="absolute inset-0 bg-gradient-to-b from-black/55 via-black/40 to-black/65"></div>
-
-  <div class="relative z-10 flex h-full w-full flex-col items-center justify-center px-4 text-center text-white [text-shadow:0_2px_12px_rgb(0_0_0_/_0.45)]">
-    <div class="flex w-full max-w-2xl flex-col items-center">
-      <slot />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/55 via-black/40 to-black/65"></div>
+      <div id="hero-photo-dim" class="absolute inset-0 bg-emerald-950 opacity-0"></div>
     </div>
-  </div>
 
-  <div class="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 gap-2">
-    {slides.map((_, i) => (
-      <button
-        type="button"
-        data-dot
-        aria-label={`Go to slide ${i + 1}`}
-        class:list={[
-          'h-1.5 rounded-full transition-all duration-300',
-          i === 0 ? 'w-6 bg-white' : 'w-1.5 bg-white/50',
-        ]}
-      ></button>
-    ))}
-  </div>
-</section>
+    <div id="hero-content" class="relative z-10 flex h-full w-full flex-col items-center justify-center px-4 text-center text-white [text-shadow:0_2px_12px_rgb(0_0_0_/_0.45)]">
+      <div class="flex w-full max-w-2xl flex-col items-center">
+        <slot />
+      </div>
+    </div>
+
+    <div id="hero-dots" class="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+      {slides.map((_, i) => (
+        <button
+          type="button"
+          data-dot
+          aria-label={`Go to slide ${i + 1}`}
+          class:list={[
+            'h-1.5 rounded-full transition-all duration-300',
+            i === 0 ? 'w-6 bg-white' : 'w-1.5 bg-white/50',
+          ]}
+        ></button>
+      ))}
+    </div>
+
+    <div id="hero-reveal" class="pointer-events-none absolute inset-0 z-20 flex flex-col items-center justify-center px-4 text-center text-white opacity-0">
+      <img src={SITE.logoWhite} alt={SITE.name} class="h-16 w-auto sm:h-24" />
+    </div>
+  </section>
+</div>
 
 <script>
   const slides = Array.from(document.querySelectorAll<HTMLElement>('[data-slide]'));
@@ -143,4 +153,114 @@ const {
   );
 
   if (slides.length > 1) restartTimer();
+
+  const pinWrap = document.getElementById('hero-pin');
+  const photo = document.getElementById('hero-photo');
+  const photoDim = document.getElementById('hero-photo-dim');
+  const content = document.getElementById('hero-content');
+  const dotsWrap = document.getElementById('hero-dots');
+  const reveal = document.getElementById('hero-reveal');
+
+  const REVEAL_HIDDEN_TRANSFORM = 'translate(-55vw, 35vh) rotate(-20deg) scale(0.45)';
+
+  if (reveal) {
+    reveal.style.opacity = '0';
+    reveal.style.transform = REVEAL_HIDDEN_TRANSFORM;
+
+    reveal.addEventListener('animationend', (e) => {
+      if (e.animationName === 'hero-plane-flyin' && revealed) {
+        reveal.classList.remove('is-flying');
+        reveal.classList.add('is-landed');
+      }
+    });
+  }
+  let revealed = false;
+  const REVEAL_THRESHOLD = 0.55;
+
+  function updateHeroScroll() {
+    if (!pinWrap) return;
+    const scrollable = pinWrap.offsetHeight - window.innerHeight;
+    const rect = pinWrap.getBoundingClientRect();
+    const progress = scrollable > 0 ? Math.min(Math.max(-rect.top / scrollable, 0), 1) : 0;
+
+    if (photo) {
+      photo.style.transform = `scale(${1 - progress * 0.45})`;
+      photo.style.borderRadius = `${progress * 16}px`;
+    }
+    if (photoDim) photoDim.style.opacity = String(Math.min(progress / 0.6, 1) * 0.85);
+
+    const chromeOpacity = 1 - Math.min(progress / 0.3, 1);
+    if (content) content.style.opacity = String(chromeOpacity);
+    if (dotsWrap) dotsWrap.style.opacity = String(chromeOpacity);
+
+    if (reveal) {
+      const shouldReveal = progress >= REVEAL_THRESHOLD;
+      if (shouldReveal !== revealed) {
+        revealed = shouldReveal;
+        reveal.classList.remove('is-landed');
+        if (revealed) {
+          reveal.style.opacity = '1';
+          reveal.style.transform = '';
+          reveal.classList.add('is-flying');
+        } else {
+          reveal.classList.remove('is-flying');
+          reveal.style.opacity = '0';
+          reveal.style.transform = REVEAL_HIDDEN_TRANSFORM;
+        }
+        window.dispatchEvent(new CustomEvent('charrish:hero-plane-revealed', { detail: revealed }));
+      }
+    }
+  }
+
+  let ticking = false;
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          updateHeroScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    },
+    { passive: true }
+  );
+
+  updateHeroScroll();
 </script>
+
+<style>
+  #hero-reveal.is-flying {
+    animation: hero-plane-flyin 1.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  #hero-reveal.is-landed {
+    animation: hero-plane-bob 3.6s ease-in-out infinite;
+  }
+
+  @keyframes hero-plane-flyin {
+    0% {
+      opacity: 0;
+      transform: translate(-55vw, 35vh) rotate(-20deg) scale(0.45);
+    }
+    60% {
+      opacity: 1;
+      transform: translate(6vw, -3vh) rotate(4deg) scale(1.05);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+  }
+
+  @keyframes hero-plane-bob {
+    0%,
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+      transform: translate(0, -6px) rotate(-1deg);
+    }
+  }
+</style>

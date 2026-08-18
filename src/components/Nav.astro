@@ -1,6 +1,12 @@
 ---
 import { SITE } from '../consts';
 
+interface Props {
+  transparent?: boolean;
+}
+
+const { transparent = false } = Astro.props;
+
 const NAV_LINKS = [
   { href: '/about', label: 'About us' },
   { href: '/destinations', label: 'Packages' },
@@ -11,15 +17,28 @@ const currentPath = Astro.url.pathname;
 
 const linkClass = (href: string) =>
   [
-    'flex h-full items-center px-4 text-black transition-all duration-200 hover:bg-emerald-50 active:scale-95',
-    currentPath === href ? 'bg-emerald-100 font-semibold' : '',
+    'flex h-full items-center px-4 transition-all duration-200 active:scale-95',
+    transparent ? 'text-white hover:bg-white/10' : 'text-black hover:bg-emerald-50',
+    currentPath === href ? (transparent ? 'bg-white/15 font-semibold' : 'bg-emerald-100 font-semibold') : '',
   ].join(' ');
 ---
 
-<header class="sticky top-0 z-50 flex h-12 items-stretch border-b border-emerald-100 bg-cream">
+<header class:list={['top-0 z-50 flex h-12 items-stretch transition-colors duration-300', transparent ? 'nav-transparent fixed inset-x-0 border-transparent bg-transparent' : 'sticky border-b border-emerald-100 bg-cream']}>
   <div class="flex flex-1 items-stretch justify-between gap-6 px-4 sm:px-6">
-    <a href="/" class="flex shrink-0 items-center gap-2">
-      <img src={SITE.logo} alt={SITE.name} class="h-7 w-auto" />
+    <a href="/" class="flex shrink-0 items-center">
+      {transparent ? (
+        <span class="grid items-center">
+          <span data-logo-icon-group class="relative col-start-1 row-start-1 flex items-center transition-opacity duration-500">
+            <img src={SITE.logoWhite} alt={SITE.name} class="h-7 w-auto" data-logo-base />
+            <img src={SITE.logo} alt="" class="absolute inset-0 h-7 w-auto opacity-0 transition-opacity duration-300" data-logo-scrolled />
+          </span>
+          <span data-logo-text class="font-brand col-start-1 row-start-1 flex items-center whitespace-nowrap text-base uppercase tracking-wide opacity-0 transition-opacity duration-500">
+            {SITE.name}
+          </span>
+        </span>
+      ) : (
+        <img src={SITE.logo} alt={SITE.name} class="h-7 w-auto" />
+      )}
     </a>
 
     <ul class="hidden flex-1 items-stretch justify-end text-xs font-medium sm:flex">
@@ -32,7 +51,7 @@ const linkClass = (href: string) =>
 
     <button
       id="nav-toggle"
-      class="flex h-10 w-10 shrink-0 items-center justify-self-end self-center rounded-md text-black sm:hidden"
+      class:list={['flex h-10 w-10 shrink-0 items-center justify-self-end self-center rounded-md sm:hidden', transparent ? 'text-white' : 'text-black']}
       aria-label="Toggle navigation menu"
       aria-expanded="false"
       aria-controls="nav-menu"
@@ -50,19 +69,20 @@ const linkClass = (href: string) =>
     href={`https://wa.me/${SITE.whatsapp}`}
     target="_blank"
     rel="noopener"
-    class="hidden shrink-0 items-center justify-center bg-emerald-800 px-6 text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-900 active:scale-95 sm:flex"
+    class="hidden shrink-0 items-center justify-center bg-emerald-800 px-7 text-xs font-semibold text-white transition-all duration-200 hover:bg-emerald-900 active:scale-95 sm:flex"
   >
     Contact us
   </a>
 
-  <ul id="nav-menu" class="hidden flex-col gap-1 border-t border-emerald-100 px-4 pb-4 text-xs font-medium text-black sm:hidden">
+  <ul id="nav-menu" class:list={['absolute inset-x-0 top-full hidden max-h-[calc(100svh-3rem)] flex-col gap-1 overflow-y-auto px-4 pb-4 text-xs font-medium shadow-lg sm:hidden', transparent ? 'border-t border-white/20 bg-emerald-950/95 text-white' : 'border-t border-emerald-100 bg-cream text-black']}>
     {[...NAV_LINKS, { href: `https://wa.me/${SITE.whatsapp}`, label: 'Contact us' }].map((link) => (
       <li>
         <a
           href={link.href}
           class:list={[
-            'block rounded-md px-2 py-2.5 transition-all duration-200 hover:bg-emerald-50 active:scale-95',
-            currentPath === link.href && 'bg-emerald-100 font-semibold',
+            'block rounded-md px-2 py-2.5 transition-all duration-200 active:scale-95',
+            transparent ? 'hover:bg-white/10' : 'hover:bg-emerald-50',
+            currentPath === link.href && (transparent ? 'bg-white/15 font-semibold' : 'bg-emerald-100 font-semibold'),
           ]}
         >
           {link.label}
@@ -72,7 +92,80 @@ const linkClass = (href: string) =>
   </ul>
 </header>
 
+{transparent && (
+  <style>
+    header.nav-transparent.nav-scrolled {
+      background-color: var(--color-cream);
+      border-color: var(--color-emerald-100);
+    }
+    header.nav-transparent.nav-scrolled a,
+    header.nav-transparent.nav-scrolled #nav-toggle,
+    header.nav-transparent.nav-scrolled #nav-menu {
+      color: #000;
+    }
+    header.nav-transparent.nav-scrolled a:hover {
+      background-color: var(--color-emerald-50);
+    }
+    header.nav-transparent.nav-scrolled a.font-semibold {
+      background-color: var(--color-emerald-100);
+    }
+    header.nav-transparent.nav-scrolled #nav-menu {
+      border-color: var(--color-emerald-100);
+      background-color: var(--color-cream);
+    }
+    header.nav-transparent.nav-scrolled [data-logo-base] {
+      opacity: 0;
+    }
+    header.nav-transparent.nav-scrolled [data-logo-scrolled] {
+      opacity: 1;
+    }
+    header.nav-transparent [data-logo-text] {
+      color: #fff;
+    }
+    header.nav-transparent.logo-is-text [data-logo-icon-group] {
+      opacity: 0;
+    }
+    header.nav-transparent.logo-is-text [data-logo-text] {
+      opacity: 1;
+    }
+    header.nav-transparent.nav-scrolled [data-logo-text] {
+      color: #000;
+    }
+  </style>
+)}
+
 <script>
+  const header = document.querySelector('header');
+  const heroPin = document.getElementById('hero-pin');
+
+  if (header?.classList.contains('nav-transparent') && heroPin) {
+    function updateNavScrolled() {
+      const rect = heroPin!.getBoundingClientRect();
+      header!.classList.toggle('nav-scrolled', rect.bottom <= header!.offsetHeight);
+    }
+
+    let navTicking = false;
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (!navTicking) {
+          requestAnimationFrame(() => {
+            updateNavScrolled();
+            navTicking = false;
+          });
+          navTicking = true;
+        }
+      },
+      { passive: true }
+    );
+
+    updateNavScrolled();
+
+    window.addEventListener('charrish:hero-plane-revealed', ((e: CustomEvent<boolean>) => {
+      header!.classList.toggle('logo-is-text', e.detail);
+    }) as EventListener);
+  }
+
   const toggle = document.getElementById('nav-toggle');
   const menu = document.getElementById('nav-menu');
   const iconOpen = document.getElementById('nav-icon-open');
