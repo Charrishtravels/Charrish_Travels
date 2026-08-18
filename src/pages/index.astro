@@ -25,6 +25,14 @@ const STATS = [
   { value: '5,000+', label: 'Happy travellers' },
   { value: '4.8★', label: 'Average rating' },
 ];
+
+const TICKER_ITEMS = [
+  'Handpicked stays',
+  'Transparent pricing',
+  '200+ packages curated',
+  'Real support, always',
+  '4.8★ average rating',
+];
 ---
 
 <Layout title="Home" description="Handpicked travel packages, planned around you." transparentNav>
@@ -89,18 +97,18 @@ const STATS = [
     </div>
   </section>
 
-  <section class="relative mt-12 overflow-hidden py-16">
+  <section class="relative overflow-hidden py-16">
     <div
       class="absolute inset-0 -z-10 bg-cover bg-fixed"
       style={`background-image: url(${statsBackgroundOptimized.src}); background-position: 30% 60%;`}
     >
     </div>
     <div class="absolute inset-0 bg-emerald-950/30"></div>
-    <div class="relative mx-auto flex max-w-5xl flex-wrap justify-between gap-x-8 gap-y-8 px-4 sm:px-10">
+    <div class="relative mx-auto grid max-w-5xl grid-cols-2 gap-x-6 gap-y-8 px-4 sm:flex sm:flex-wrap sm:justify-between sm:gap-x-8 sm:px-10">
       {STATS.map((stat) => (
         <div class="text-center">
-          <p class="font-brand text-5xl text-white">{stat.value}</p>
-          <p class="mt-0.5 text-xs font-semibold text-white">{stat.label}</p>
+          <p class="font-brand text-3xl text-white sm:text-5xl">{stat.value}</p>
+          <p class="mt-0.5 text-[11px] font-semibold text-white sm:text-xs">{stat.label}</p>
         </div>
       ))}
     </div>
@@ -111,14 +119,34 @@ const STATS = [
       <h2 class="font-brand text-4xl text-emerald-950">Featured packages</h2>
       <a
         href="/destinations"
-        class="inline-flex w-fit shrink-0 items-center gap-2 rounded-full bg-emerald-800 px-6 py-3 text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-900 active:scale-95"
+        class="hidden w-fit shrink-0 items-center gap-2 rounded-full bg-emerald-800 px-6 py-3 text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-900 active:scale-95 sm:inline-flex"
       >
         View more
         <span aria-hidden="true">→</span>
       </a>
     </div>
     <PackageCarousel destinations={featured} />
+    <div class="mt-6 flex justify-center sm:hidden">
+      <a
+        href="/destinations"
+        class="inline-flex w-fit items-center gap-2 rounded-full bg-emerald-800 px-6 py-3 text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-900 active:scale-95"
+      >
+        View more
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
   </section>
+
+  <div class="overflow-hidden bg-emerald-800 py-3">
+    <div class="ticker-track flex w-max items-center gap-10 whitespace-nowrap">
+      {Array(2).fill(TICKER_ITEMS).flat().map((item) => (
+        <span class="flex items-center gap-10">
+          <span class="text-xs font-semibold uppercase tracking-wider text-white">{item}</span>
+          <span aria-hidden="true" class="text-white/40">✦</span>
+        </span>
+      ))}
+    </div>
+  </div>
 
   <section class="pt-8 pb-16">
     <div class="mx-auto max-w-5xl px-4 sm:px-6">
@@ -168,3 +196,18 @@ const STATS = [
     }, 7000);
   }
 </script>
+
+<style>
+  .ticker-track {
+    animation: ticker-scroll 28s linear infinite;
+  }
+
+  @keyframes ticker-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+</style>
