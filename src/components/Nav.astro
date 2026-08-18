@@ -74,13 +74,19 @@ const linkClass = (href: string) =>
     Contact us
   </a>
 
-  <ul id="nav-menu" class:list={['absolute inset-x-0 top-full hidden max-h-[calc(100svh-3rem)] flex-col gap-1 overflow-y-auto px-4 pb-4 text-xs font-medium shadow-lg sm:hidden', transparent ? 'border-t border-white/20 bg-emerald-950/95 text-white' : 'border-t border-emerald-100 bg-cream text-black']}>
+  <ul
+    id="nav-menu"
+    class:list={[
+      'absolute inset-x-0 top-full flex max-h-0 flex-col overflow-hidden rounded-b-2xl text-base font-medium opacity-0 shadow-lg transition-all duration-300 ease-in-out sm:hidden',
+      transparent ? 'divide-y divide-white/10 border-t border-white/20 bg-emerald-950/95 text-white' : 'divide-y divide-emerald-100 border-t border-emerald-100 bg-cream text-black',
+    ]}
+  >
     {[...NAV_LINKS, { href: `https://wa.me/${SITE.whatsapp}`, label: 'Contact us' }].map((link) => (
       <li>
         <a
           href={link.href}
           class:list={[
-            'block rounded-md px-2 py-2.5 transition-all duration-200 active:scale-95',
+            'block px-5 py-4 transition-all duration-200 active:scale-95',
             transparent ? 'hover:bg-white/10' : 'hover:bg-emerald-50',
             currentPath === link.href && (transparent ? 'bg-white/15 font-semibold' : 'bg-emerald-100 font-semibold'),
           ]}
@@ -172,10 +178,13 @@ const linkClass = (href: string) =>
   const iconClose = document.getElementById('nav-icon-close');
 
   toggle?.addEventListener('click', () => {
-    const isOpen = menu?.classList.toggle('flex');
-    menu?.classList.toggle('hidden');
+    const willOpen = menu?.classList.contains('max-h-0');
+    menu?.classList.toggle('max-h-0', !willOpen);
+    menu?.classList.toggle('opacity-0', !willOpen);
+    menu?.classList.toggle('max-h-96', willOpen);
+    menu?.classList.toggle('opacity-100', willOpen);
     iconOpen?.classList.toggle('hidden');
     iconClose?.classList.toggle('hidden');
-    toggle.setAttribute('aria-expanded', String(Boolean(isOpen)));
+    toggle.setAttribute('aria-expanded', String(Boolean(willOpen)));
   });
 </script>
