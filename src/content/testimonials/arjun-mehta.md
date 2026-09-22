@@ -1,6 +1,6 @@
 ---
 name: Arjun Mehta
-location: Delhi
+occupation: Business Owner
 rating: 5
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: Vikram Iyer
-location: Mumbai
+occupation: Chartered Accountant
 rating: 5
 ---
 

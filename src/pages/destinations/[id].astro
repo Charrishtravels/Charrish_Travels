@@ -32,8 +32,68 @@ const {
 } = destination.data;
 const { Content } = await render(destination);
 
-type Block = { type: 'list'; items: string[] } | { type: 'p'; text: string };
+// 8-point compass star matching the logo's star mark.
+const STAR_PATH =
+  'M10 0 L10.77 8.15 L14.24 5.76 L11.85 9.23 L20 10 L11.85 10.77 L14.24 14.24 L10.77 11.85 L10 20 L9.23 11.85 L5.76 14.24 L8.15 10.77 L0 10 L8.15 9.23 L5.76 5.76 L9.23 8.15 Z';
 
+const ICONS = {
+  clock: '<circle cx="12" cy="12" r="8.5" /><path d="M12 7.5V12l3 2" />',
+  route: '<circle cx="6" cy="18" r="2" /><circle cx="18" cy="6" r="2" /><path d="M8 18h6.5a3.5 3.5 0 0 0 0-7h-5a3.5 3.5 0 0 1 0-7H16" />',
+  calendar: '<rect x="4" y="5.5" width="16" height="14.5" rx="2" /><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4" />',
+  users: '<circle cx="9" cy="8.5" r="3" /><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5" /><path d="M15.5 5.8a3 3 0 0 1 0 5.4M17.5 14.3c1.8.6 3 2.3 3 4.7" />',
+  bus: '<rect x="4" y="4" width="16" height="13" rx="2.5" /><path d="M4 11h16M8 20v-3M16 20v-3" /><circle cx="8" cy="14" r=".6" fill="currentColor" /><circle cx="16" cy="14" r=".6" fill="currentColor" />',
+  tag: '<path d="M3.5 12.3V4.5a1 1 0 0 1 1-1h7.8l8.2 8.2a1 1 0 0 1 0 1.4l-7.4 7.4a1 1 0 0 1-1.4 0z" /><circle cx="8" cy="8" r="1.3" />',
+  water: '<path d="M12 3.5s-6 6.3-6 10.5a6 6 0 0 0 12 0c0-4.2-6-10.5-6-10.5z" />',
+  meal: '<path d="M7 3.5v17M4.5 3.5v5a2.5 2.5 0 0 0 5 0v-5M17 20.5v-17c-2 0-3.5 2.5-3.5 6s1.5 5 3.5 5" />',
+  moon: '<path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10z" />',
+};
+
+const priceLabel = priceFrom ? `₹${priceFrom.toLocaleString('en-IN')}` : null;
+
+const quickFacts = [
+  { label: 'Duration', value: duration, icon: ICONS.clock },
+  { label: 'Route', value: route, icon: ICONS.route },
+  { label: 'Departure', value: departureDates, icon: ICONS.calendar },
+  { label: 'Group size', value: groupSize, icon: ICONS.users },
+  { label: 'Vehicle', value: vehicle, icon: ICONS.bus },
+  { label: 'Price', value: priceLabel ? `From ${priceLabel} / person` : 'On request', icon: ICONS.tag },
+].filter((fact) => fact.value);
+
+// "Kanchipuram Temples: Kamakshi…, Ekambareswarar…" → heading + detail line, and
+// "(Must Visit – reason)" → a badge plus the reason, so long highlights stay scannable.
+function splitHighlight(text: string) {
+  let main = text;
+  let mustVisit = false;
+  let sub: string | undefined;
+
+  const must = main.match(/\s*\(Must Visit(?:\s*[–-]\s*(.+?))?\)\s*$/i);
+  if (must) {
+    mustVisit = true;
+    sub = must[1];
+    main = main.slice(0, must.index);
+  }
+
+  const colon = main.indexOf(': ');
+  if (colon > -1) {
+    sub = main.slice(colon + 2);
+    main = main.slice(0, colon);
+  }
+
+  return { main, sub, mustVisit };
+}
+
+type Block =
+  | { type: 'list'; items: string[] }
+  | { type: 'label'; text: string }
+  | { type: 'temple'; label: string; name: string }
+  | { type: 'stay'; place: string }
+  | { type: 'kv'; key: string; value: string }
+  | { type: 'leg'; parts: string[] }
+  | { type: 'p'; text: string };
+
+// Itinerary details are free text in the source docs. Recognise the recurring
+// shapes — section labels, temple visits, route legs, "Key: value" lines and the
+// overnight stay — so each can be styled; anything else stays a paragraph.
 function parseDetails(text: string): Block[] {
   const lines = text
     .split('\n')
@@ -53,179 +113,304 @@ function parseDetails(text: string): Block[] {
   for (const line of lines) {
     if (line.startsWith('•')) {
       currentList.push(line.replace(/^•\s*/, ''));
-    } else {
-      flushList();
-      blocks.push({ type: 'p', text: line });
+      continue;
     }
+    flushList();
+
+    const stay = line.match(/^Overnight Stay:\s*(.+)$/i);
+    const temple = line.match(/^((?:Evening\s+)?Temple Visits?):\s*(.+)$/i);
+    const kv = line.match(/^([A-Za-z][A-Za-z /&()-]{1,32}):\s*(.+)$/);
+    const isLabel =
+      !line.includes(':') && !line.includes('→') && !/[.)]$/.test(line) && !line.startsWith('(') &&
+      line.split(/\s+/).length <= 5;
+
+    if (stay) blocks.push({ type: 'stay', place: stay[1] });
+    else if (temple) blocks.push({ type: 'temple', label: temple[1], name: temple[2] });
+    else if (line.includes('→')) blocks.push({ type: 'leg', parts: line.split('→').map((s) => s.trim()) });
+    else if (kv) blocks.push({ type: 'kv', key: kv[1], value: kv[2] });
+    else if (isLabel) blocks.push({ type: 'label', text: line });
+    else blocks.push({ type: 'p', text: line });
   }
   flushList();
   return blocks;
 }
 
-const quickFacts = [
-  { label: 'Duration', value: duration },
-  { label: 'Route', value: route },
-  { label: 'Departure', value: departureDates },
-  { label: 'Group Size', value: groupSize },
-  { label: 'Vehicle', value: vehicle },
-].filter((fact) => fact.value);
+// Pre-shaped here so the template only maps over plain data.
+const highlightItems = highlights.map(splitHighlight);
+const days = itinerary.map((day) => ({ ...day, blocks: parseDetails(day.details) }));
+
+const meals = travelArrangements
+  ? [
+      { label: 'Breakfast', value: travelArrangements.breakfast },
+      { label: 'Lunch', value: travelArrangements.lunch },
+      { label: 'Dinner', value: travelArrangements.dinner },
+    ].filter((m) => m.value)
+  : [];
+
+const arrangements = travelArrangements
+  ? [
+      { label: 'Vehicle', value: travelArrangements.vehicle, icon: ICONS.bus },
+      { label: 'Group', value: travelArrangements.group, icon: ICONS.users },
+      { label: 'Water', value: travelArrangements.water, icon: ICONS.water },
+    ].filter((a) => a.value)
+  : [];
+
+// Built without nesting one template literal inside another: Astro 7's Rust
+// compiler mis-parses that and reports a bogus error at the top of the file.
+const enquireMessage = "Hi, I'm interested in the " + title + ' package.';
+const enquireHref = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(enquireMessage)}`;
 ---
 
 <Layout title={title} description={summary}>
-  <article class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
-    <p class="text-xs font-semibold uppercase tracking-wide text-black">{location}</p>
-    <h1 class="mt-2 font-brand text-5xl text-emerald-950 sm:text-6xl">{title}</h1>
+  <section class="relative isolate flex min-h-[26rem] items-end overflow-hidden sm:min-h-[32rem]">
+    <img src={heroImage} alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+    <div class="absolute inset-0 -z-10 bg-gradient-to-t from-emerald-950 via-emerald-950/55 to-emerald-950/10"></div>
+    <div class="mx-auto w-full max-w-6xl px-4 pb-20 sm:px-6 sm:pb-24" data-reveal="up">
+      <p class="flex items-center gap-2 text-[11px] font-semibold tracking-[0.2em] text-gold-300 uppercase">
+        <svg viewBox="0 0 20 20" class="h-3.5 w-3.5 text-gold-400" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+        {location}
+      </p>
+      {/* Unconstrained from lg up so a long title and its summary each sit on a
+          single line; they still wrap on narrower screens. */}
+      <h1 class="font-brand mt-3 max-w-3xl text-4xl leading-tight text-white sm:text-5xl lg:max-w-none xl:text-6xl">{title}</h1>
+      <p class="mt-4 max-w-2xl text-xs leading-relaxed text-white/80 sm:text-sm lg:max-w-none">{summary}</p>
+    </div>
+  </section>
 
-    <img
-      src={heroImage}
-      alt={title}
-      class="mt-6 aspect-[16/9] w-full rounded-xl object-cover"
-    />
-
-    <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 border-y border-emerald-100 py-4 text-xs">
+  {/* Flex rather than grid: cells grow to fill each row, so any number of facts
+      (two on the simpler packages, six on Tamil Nadu) leaves no empty gold cells. */}
+  <div class="relative mx-auto -mt-12 max-w-6xl px-4 sm:px-6">
+    <dl class="flex flex-wrap gap-px overflow-hidden rounded-2xl border border-gold-300/70 bg-gold-200/70 shadow-lg">
       {quickFacts.map((fact) => (
-        <span class="text-emerald-900/70">
-          <span class="font-semibold text-emerald-900">{fact.label}:</span> {fact.value}
-        </span>
+        <div class="min-w-[9rem] flex-1 basis-[9rem] bg-cream px-5 py-4">
+          <dt class="flex items-center gap-1.5 text-[10px] font-semibold tracking-[0.18em] text-gold-600 uppercase">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5" aria-hidden="true" set:html={fact.icon} />
+            {fact.label}
+          </dt>
+          <dd class="mt-1 text-sm font-medium text-emerald-950">{fact.value}</dd>
+        </div>
       ))}
-      <span class="font-semibold text-emerald-900">
-        {priceFrom ? `from ₹${priceFrom.toLocaleString('en-IN')} / person` : 'Enquire for pricing'}
-      </span>
-    </div>
+    </dl>
+  </div>
 
-    <div class="prose prose-emerald mt-6 max-w-none text-xs text-emerald-900/80">
-      <Content />
-    </div>
+  <div class="mx-auto grid max-w-6xl gap-12 px-4 py-14 sm:px-6 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-16 lg:py-20">
+    <div class="space-y-14">
+      <section data-reveal="up">
+        <h2 class="font-brand flex items-center gap-2.5 text-3xl text-emerald-950">
+          <svg viewBox="0 0 20 20" class="h-5 w-5 shrink-0 text-gold-500" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+          Overview
+        </h2>
+        <div class="mt-4 space-y-3 text-xs leading-relaxed text-black/80 sm:text-sm">
+          <Content />
+        </div>
+      </section>
 
-    {highlights.length > 0 && (
-      <div class="mt-8">
-        <h2 class="font-brand text-3xl text-emerald-950">Tour Highlights</h2>
-        <ul class="mt-3 grid gap-2 sm:grid-cols-2">
-          {highlights.map((h: string) => (
-            <li class="flex items-start gap-2 text-xs text-emerald-900/80">
-              <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500"></span>
-              {h}
-            </li>
-          ))}
-        </ul>
-      </div>
-    )}
-
-    {travelArrangements && (
-      <div class="mt-8">
-        <h2 class="font-brand text-3xl text-emerald-950">Travel Arrangements</h2>
-        <dl class="mt-3 grid gap-x-8 gap-y-2 text-xs text-emerald-900/80 sm:grid-cols-2">
-          {travelArrangements.vehicle && (
-            <div><dt class="font-semibold text-emerald-900">Vehicle</dt><dd>{travelArrangements.vehicle}</dd></div>
-          )}
-          {travelArrangements.group && (
-            <div><dt class="font-semibold text-emerald-900">Group</dt><dd>{travelArrangements.group}</dd></div>
-          )}
-          {travelArrangements.water && (
-            <div><dt class="font-semibold text-emerald-900">Water</dt><dd>{travelArrangements.water}</dd></div>
-          )}
-          {travelArrangements.breakfast && (
-            <div><dt class="font-semibold text-emerald-900">Breakfast</dt><dd>{travelArrangements.breakfast}</dd></div>
-          )}
-          {travelArrangements.lunch && (
-            <div><dt class="font-semibold text-emerald-900">Lunch</dt><dd>{travelArrangements.lunch}</dd></div>
-          )}
-          {travelArrangements.dinner && (
-            <div><dt class="font-semibold text-emerald-900">Dinner</dt><dd>{travelArrangements.dinner}</dd></div>
-          )}
-        </dl>
-      </div>
-    )}
-
-    {specialExperience && (
-      <div class="mt-8 rounded-xl border border-emerald-100 bg-cream p-5">
-        <h2 class="font-brand text-2xl text-emerald-950">{specialExperience.title}</h2>
-        <p class="mt-2 text-xs text-emerald-900/80">{specialExperience.body}</p>
-      </div>
-    )}
-
-    {assistance && (assistance.places.length > 0 || assistance.note) && (
-      <div class="mt-8">
-        <h2 class="font-brand text-3xl text-emerald-950">Darshan / Local Assistance</h2>
-        {assistance.places.length > 0 && (
-          <ul class="mt-3 grid gap-2 sm:grid-cols-2">
-            {assistance.places.map((place: string) => (
-              <li class="flex items-start gap-2 text-xs text-emerald-900/80">
-                <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500"></span>
-                {place}
+      {highlights.length > 0 && (
+        <section data-reveal="up">
+          <h2 class="font-brand flex items-center gap-2.5 text-3xl text-emerald-950">
+            <svg viewBox="0 0 20 20" class="h-5 w-5 shrink-0 text-gold-500" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+            Tour highlights
+          </h2>
+          <ul class="mt-5 grid gap-x-8 gap-y-3.5 sm:grid-cols-2">
+            {highlightItems.map((h) => (
+              <li class="flex items-start gap-2.5 text-xs text-emerald-950 sm:text-sm">
+                <svg viewBox="0 0 20 20" class="mt-1 h-3 w-3 shrink-0 text-gold-500" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+                <span>
+                  {h.main}
+                  {h.mustVisit && (
+                    <span class="ml-1.5 inline-block rounded-full bg-emerald-950 px-2 py-0.5 align-middle text-[9px] font-semibold tracking-wider text-gold-400 uppercase">
+                      Must visit
+                    </span>
+                  )}
+                  {h.sub && <span class="mt-0.5 block text-xs text-black/55">{h.sub}</span>}
+                </span>
               </li>
             ))}
           </ul>
-        )}
-        {assistance.note && <p class="mt-3 text-xs text-emerald-900/60">{assistance.note}</p>}
-      </div>
-    )}
+        </section>
+      )}
 
-    {itinerary.length > 0 && (
-      <div class="mt-8">
-        <h2 class="font-brand text-3xl text-emerald-950">Day-by-Day Itinerary</h2>
-        <div class="mt-3 divide-y divide-emerald-100 border-y border-emerald-100">
-          {itinerary.map((day) => (
-            <details class="group py-4">
-              <summary class="flex cursor-pointer list-none items-baseline justify-between gap-4 text-xs font-medium text-emerald-950">
-                <span>
-                  <span class="font-brand text-emerald-600">Day {day.day}</span>
-                  {day.date && <span class="text-emerald-900/60"> · {day.date}</span>}
-                  <span class="ml-2">{day.title}</span>
+      {specialExperience && (
+        <section class="rounded-2xl bg-emerald-950 p-6 sm:p-8" data-reveal="up">
+          <p class="flex items-center gap-2 text-[10px] font-semibold tracking-[0.2em] text-gold-400 uppercase">
+            <svg viewBox="0 0 20 20" class="h-3.5 w-3.5" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+            Special experience
+          </p>
+          <h2 class="font-brand mt-3 text-2xl text-white sm:text-3xl">{specialExperience.title}</h2>
+          <p class="mt-3 text-xs leading-relaxed text-white/80 sm:text-sm">{specialExperience.body}</p>
+        </section>
+      )}
+
+      {itinerary.length > 0 && (
+        <section>
+          <h2 class="font-brand flex items-center gap-2.5 text-3xl text-emerald-950" data-reveal="up">
+            <svg viewBox="0 0 20 20" class="h-5 w-5 shrink-0 text-gold-500" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+            Day-by-day itinerary
+          </h2>
+
+          <ol class="relative mt-6 space-y-3 before:absolute before:top-4 before:bottom-4 before:left-[1.1rem] before:w-px before:bg-gold-300/80">
+            {days.map((day, i) => (
+              <li class="relative pl-12 sm:pl-14" data-reveal="up">
+                <span class="font-brand absolute top-3.5 left-0 flex h-9 w-9 items-center justify-center rounded-full border border-gold-400 bg-emerald-950 text-sm text-gold-400">
+                  {day.day}
                 </span>
-                <span class="shrink-0 text-emerald-600 transition-transform group-open:rotate-45">+</span>
-              </summary>
-              <div class="mt-3 space-y-3 text-xs text-emerald-900/80">
-                {parseDetails(day.details).map((block) =>
-                  block.type === 'list' ? (
-                    <ul class="grid gap-1.5">
-                      {block.items.map((item) => (
-                        <li class="flex items-start gap-2">
-                          <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500"></span>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <p>{block.text}</p>
-                  )
-                )}
-              </div>
-            </details>
-          ))}
-        </div>
-      </div>
-    )}
+                <details class="itinerary-day group rounded-2xl border border-black/10 bg-white/50 transition-colors open:border-gold-300/80 open:bg-white" open={i === 0}>
+                  <summary class="flex cursor-pointer list-none items-start justify-between gap-4 p-4 sm:p-5">
+                    <span>
+                      {day.date && <span class="block text-[10px] font-semibold tracking-[0.18em] text-gold-600 uppercase">{day.date}</span>}
+                      <span class="font-brand mt-1 block text-lg leading-snug text-emerald-950 sm:text-xl">{day.title}</span>
+                    </span>
+                    <span class="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-gold-300/80 text-gold-600 transition-transform duration-200 group-open:rotate-45" aria-hidden="true">+</span>
+                  </summary>
 
-    {importantNotes.length > 0 && (
-      <div class="mt-8">
-        <h2 class="font-brand text-3xl text-emerald-950">Important Notes</h2>
-        <ul class="mt-3 grid gap-2">
-          {importantNotes.map((note: string) => (
-            <li class="flex items-start gap-2 text-xs text-emerald-900/70">
-              <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-300"></span>
-              {note}
-            </li>
-          ))}
-        </ul>
-      </div>
-    )}
+                  <div class="space-y-2 border-t border-gold-200/70 px-4 pt-4 pb-5 text-xs leading-relaxed text-black/80 sm:px-5 sm:text-sm">
+                    {day.blocks.map((block) =>
+                      block.type === 'label' ? (
+                        <p class="pt-2 text-[10px] font-semibold tracking-[0.18em] text-gold-600 uppercase first:pt-0">{block.text}</p>
+                      ) : block.type === 'temple' ? (
+                        <p class="flex items-start gap-2.5 rounded-xl bg-emerald-950 px-3.5 py-2.5 text-white">
+                          <svg viewBox="0 0 20 20" class="mt-1 h-3.5 w-3.5 shrink-0 text-gold-400" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+                          <span>
+                            <span class="block text-[10px] font-semibold tracking-[0.18em] text-gold-300 uppercase">{block.label}</span>
+                            {block.name}
+                          </span>
+                        </p>
+                      ) : block.type === 'stay' ? (
+                        <p class="mt-3 flex items-center gap-2 border-t border-dashed border-gold-300/80 pt-3 text-emerald-950">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-gold-500" aria-hidden="true" set:html={ICONS.moon} />
+                          Overnight in <span class="font-semibold">{block.place}</span>
+                        </p>
+                      ) : block.type === 'kv' ? (
+                        <p><span class="font-semibold text-emerald-950">{block.key}:</span> {block.value}</p>
+                      ) : block.type === 'leg' ? (
+                        <p class="font-medium text-emerald-950">
+                          {block.parts.map((part, j) => (
+                            <span>{j !== 0 && <span class="mx-1.5 text-gold-500" aria-label="to">→</span>}{part}</span>
+                          ))}
+                        </p>
+                      ) : block.type === 'list' ? (
+                        <ul class="grid gap-1.5">
+                          {block.items.map((item) => (
+                            <li class="flex items-start gap-2">
+                              <span class="mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500"></span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p>{block.text}</p>
+                      )
+                    )}
+                  </div>
+                </details>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
 
-    <div class="mt-10 flex flex-col gap-3 sm:flex-row">
-      <a
-        href={`https://wa.me/${SITE.whatsapp}`}
-        target="_blank"
-        rel="noopener"
-        class="w-full rounded-full bg-emerald-700 px-6 py-3 text-center text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-800 active:scale-95 sm:w-auto"
-      >
-        Enquire about this package
-      </a>
-      <a
-        href="/destinations"
-        class="w-full rounded-full border border-emerald-200 px-6 py-3 text-center text-xs font-semibold text-emerald-900 transition-colors hover:bg-emerald-50 sm:w-auto"
-      >
-        Back to all packages
-      </a>
+      {importantNotes.length > 0 && (
+        <section class="rounded-2xl border border-gold-300/70 bg-gold-50/60 p-6 sm:p-8" data-reveal="up">
+          <h2 class="font-brand text-2xl text-emerald-950">Important notes</h2>
+          <ul class="mt-4 grid gap-2.5">
+            {importantNotes.map((note: string) => (
+              <li class="flex items-start gap-2.5 text-xs leading-relaxed text-black/75 sm:text-sm">
+                <span class="mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500"></span>
+                {note}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
     </div>
-  </article>
+
+    {/* Stretches to the full row height so the enquiry card at the end can stay
+        pinned in view for the whole length of the itinerary. */}
+    <aside class="flex flex-col gap-6">
+      {(arrangements.length > 0 || meals.length > 0) && (
+        <section class="rounded-2xl border border-gold-300/70 p-6" data-reveal="up">
+          <h2 class="font-brand text-xl text-emerald-950">Travel arrangements</h2>
+          <dl class="mt-5 space-y-4">
+            {arrangements.map((a) => (
+              <div class="flex items-start gap-3">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-950 text-gold-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true" set:html={a.icon} />
+                </span>
+                <div>
+                  <dt class="text-[10px] font-semibold tracking-[0.18em] text-gold-600 uppercase">{a.label}</dt>
+                  <dd class="mt-0.5 text-xs leading-relaxed text-emerald-950">{a.value}</dd>
+                </div>
+              </div>
+            ))}
+            {meals.length > 0 && (
+              <div class="flex items-start gap-3">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-950 text-gold-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true" set:html={ICONS.meal} />
+                </span>
+                <div>
+                  <dt class="text-[10px] font-semibold tracking-[0.18em] text-gold-600 uppercase">Meals</dt>
+                  <dd class="mt-1 space-y-1.5 text-xs leading-relaxed text-emerald-950">
+                    {meals.map((m) => (
+                      <p><span class="font-semibold">{m.label}:</span> {m.value}</p>
+                    ))}
+                  </dd>
+                </div>
+              </div>
+            )}
+          </dl>
+        </section>
+      )}
+
+      {assistance && (assistance.places.length > 0 || assistance.note) && (
+        <section class="rounded-2xl border border-gold-300/70 p-6" data-reveal="up">
+          <div class="flex items-center justify-between gap-3">
+            <h2 class="font-brand text-xl text-emerald-950">Darshan assistance</h2>
+            <span class="rounded-full border border-gold-300/80 px-2 py-0.5 text-[9px] font-semibold tracking-wider text-gold-600 uppercase">Optional</span>
+          </div>
+          {assistance.places.length > 0 && (
+            <ul class="mt-4 space-y-2.5">
+              {assistance.places.map((place: string) => (
+                <li class="flex items-start gap-2 text-xs text-emerald-950">
+                  <svg viewBox="0 0 20 20" class="mt-0.5 h-3 w-3 shrink-0 text-gold-500" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+                  {place}
+                </li>
+              ))}
+            </ul>
+          )}
+          {assistance.note && <p class="mt-4 border-t border-gold-200/70 pt-3 text-[11px] text-black/60">{assistance.note}</p>}
+        </section>
+      )}
+
+      <section class="rounded-2xl bg-emerald-950 p-6 text-white shadow-lg lg:sticky lg:top-20" data-reveal="up">
+        <p class="text-[10px] font-semibold tracking-[0.2em] text-gold-400 uppercase">{priceLabel ? 'From' : 'Pricing'}</p>
+        {priceLabel ? (
+          <p class="font-brand mt-1 text-3xl text-white">{priceLabel}<span class="ml-1 font-sans text-xs text-white/60">/ person</span></p>
+        ) : (
+          <p class="font-brand mt-1 text-2xl text-white">On request</p>
+        )}
+        <p class="mt-2 text-xs text-white/70">{duration}{departureDates && ` · ${departureDates}`}</p>
+        <p class="mt-4 border-t border-white/10 pt-4 text-xs leading-relaxed text-white/70">
+          Every package can be customized — dates, pace, group size or add-ons.
+        </p>
+        <a
+          href={enquireHref}
+          target="_blank"
+          rel="noopener"
+          class="mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-gold-500 px-6 py-3 text-xs font-semibold text-emerald-950 transition-all duration-200 hover:scale-[1.02] hover:bg-gold-400 active:scale-95"
+        >
+          Enquire about this package
+        </a>
+        <a href="/destinations" class="mt-3 block text-center text-xs text-white/70 underline decoration-gold-400/60 underline-offset-4 hover:text-white">
+          Back to all packages
+        </a>
+      </section>
+    </aside>
+  </div>
 </Layout>
+
+<style>
+  /* Safari still draws its own disclosure triangle unless it's hidden explicitly. */
+  .itinerary-day > summary::-webkit-details-marker {
+    display: none;
+  }
+</style>

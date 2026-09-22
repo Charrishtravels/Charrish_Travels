@@ -2,126 +2,184 @@
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import { SITE } from '../consts';
-import agraTajMahal from '../assets/hero/agra-taj-mahal.jpg';
-import sicilyCefalu from '../assets/hero/sicily-cefalu.jpg';
-import jaipur from '../assets/hero/jaipur.jpg';
-import theanHouLanterns from '../assets/hero/thean-hou-lanterns.jpg';
+import southIndianTempleTank from '../assets/hero/south-indian-temple-tank.jpg';
+import watArunBangkok from '../assets/hero/wat-arun-bangkok.jpg';
+import hawaMahalJaipur from '../assets/hero/hawa-mahal-jaipur.jpg';
+import swissAlpineVillage from '../assets/hero/swiss-alpine-village.jpg';
 import dubai from '../assets/hero/dubai.jpg';
-import palaceCourtyard from '../assets/hero/palace-courtyard.jpg';
 import maldives from '../assets/hero/maldives.jpg';
-import prague from '../assets/hero/prague.jpg';
-import tempioDiErcole from '../assets/hero/tempio-di-ercole.jpg';
-import vaticanRome from '../assets/hero/vatican-rome.jpg';
+import himalayanSnowPass from '../assets/hero/himalayan-snow-pass.jpg';
+import rockCutTempleHall from '../assets/hero/rock-cut-temple-hall.jpg';
 import heritageTourOfIndia from '../assets/heritage-tour-of-india.jpg';
-import mentonFrance from '../assets/hero/menton-france.jpg';
 
-const columnA = [
-  { src: agraTajMahal, alt: 'Taj Mahal, Agra', h: 'h-72' },
-  { src: sicilyCefalu, alt: 'Cefalù coastline, Sicily', h: 'h-56' },
-  { src: jaipur, alt: 'Streets of Jaipur', h: 'h-80' },
-  { src: theanHouLanterns, alt: 'Lanterns at Thean Hou Temple', h: 'h-64' },
-  { src: dubai, alt: 'Dubai skyline', h: 'h-72' },
-  { src: palaceCourtyard, alt: 'Palace courtyard', h: 'h-60' },
+// 8-point compass star matching the logo's star mark.
+const STAR_PATH =
+  'M10 0 L10.77 8.15 L14.24 5.76 L11.85 9.23 L20 10 L11.85 10.77 L14.24 14.24 L10.77 11.85 L10 20 L9.23 11.85 L5.76 14.24 L8.15 10.77 L0 10 L8.15 9.23 L5.76 5.76 L9.23 8.15 Z';
+
+const PHOTOS = [
+  { src: dubai, alt: 'Burj Al Arab at dusk, Dubai' },
+  { src: maldives, alt: 'Overwater villas, Maldives' },
+  { src: swissAlpineVillage, alt: 'Wooden chalets beneath a Swiss alpine peak' },
+  { src: hawaMahalJaipur, alt: 'Hawa Mahal, Jaipur' },
+  { src: southIndianTempleTank, alt: 'South Indian temple tank and gopuram at dusk' },
+  { src: watArunBangkok, alt: 'Wat Arun at sunset, Bangkok' },
+  { src: himalayanSnowPass, alt: 'Snow-covered Himalayan mountain pass' },
+  { src: rockCutTempleHall, alt: 'Sunlit pillared hall of a rock-cut temple' },
+  { src: heritageTourOfIndia, alt: 'Heritage tour of India' },
 ];
 
-const columnB = [
-  { src: maldives, alt: 'Overwater villas, Maldives', h: 'h-64' },
-  { src: prague, alt: 'Charles Bridge at sunset, Prague', h: 'h-80' },
-  { src: tempioDiErcole, alt: 'Temple of Hercules, Sicily', h: 'h-56' },
-  { src: vaticanRome, alt: 'Aerial view of Vatican City, Rome', h: 'h-72' },
-  { src: heritageTourOfIndia, alt: 'Heritage tour of India', h: 'h-64' },
-  { src: mentonFrance, alt: 'Coastal town of Menton, France', h: 'h-80' },
-];
+const HEIGHTS = ['h-44', 'h-56', 'h-40', 'h-52', 'h-48'];
+
+// Six columns of four photos each, every column starting at a different point in
+// the list so neighbouring columns never show the same photo side by side.
+// Columns 4–6 only appear at wider breakpoints.
+const COLUMNS = Array.from({ length: 6 }, (_, c) =>
+  Array.from({ length: 4 }, (_, r) => ({
+    ...PHOTOS[(c * 3 + r * 2) % PHOTOS.length],
+    h: HEIGHTS[(c + r) % HEIGHTS.length],
+  })),
+);
+const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hidden lg:block'];
 ---
 
-<Layout title="About Us" description={`The story behind ${SITE.name}.`} hideFooter>
-  <section class="flex flex-col lg:h-[calc(100svh-3rem)] lg:flex-row">
-    <div class="flex flex-col justify-center px-4 py-12 sm:px-6 sm:py-16 lg:w-2/5 lg:py-16 lg:pl-12">
-      <h1 class="font-brand text-5xl leading-[1.05] text-emerald-950">
-        Our story
-      </h1>
-
-      <div class="mt-6 max-w-md space-y-4 text-xs text-black">
-        <p>
-          {SITE.name} started with a simple idea: we put together itineraries the way we'd plan a trip
-          for our own family — good stays, honest pricing, and no surprises once you've landed.
-        </p>
-        <p>
-          Every package on this site has been travelled and vetted by our team before it's listed.
-          Where something can be tailored — dates, group size, add-ons — we'll always tell you. And
-          once you've booked, you'll have a direct line to our team over call or WhatsApp — before
-          you leave, while you're travelling, and if plans change last minute.
-        </p>
-        <p>
-          Based out of {SITE.location}, we work with travellers across India looking for everything
-          from quick weekend escapes to longer guided trips.
-        </p>
-        <p>
-          Most of what we plan is close to home — hill stations, backwaters, heritage cities, and
-          coastal getaways across India — alongside a smaller set of international routes we know
-          well enough to vouch for personally.
-        </p>
-      </div>
-
-      <a
-        href="/destinations"
-        class="mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-emerald-800 px-6 py-3 text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-900 active:scale-95"
-      >
-        View our packages
-        <span aria-hidden="true">→</span>
-      </a>
+<Layout title="About Us" description={`The story behind ${SITE.name}.`}>
+  <section class="relative isolate overflow-hidden">
+    {/* Scrolling photo wall behind the arch; alternate columns run in opposite
+        directions. Washed with cream so the arch stays the focal point. */}
+    <div class="absolute inset-0 -z-10 grid grid-cols-3 gap-3 px-3 sm:grid-cols-4 lg:grid-cols-6 lg:gap-4" aria-hidden="true">
+      {COLUMNS.map((column, i) => (
+        <div class:list={['overflow-hidden', COLUMN_VISIBILITY[i]]}>
+          <div
+            class:list={['about-wall-track flex flex-col gap-3 lg:gap-4', i % 2 === 1 && 'about-wall-track-reverse']}
+            style={`animation-duration: ${46 + i * 5}s`}
+          >
+            {[...column, ...column].map((img) => (
+              <Image
+                src={img.src}
+                alt=""
+                widths={[240, 400]}
+                sizes="(min-width: 1024px) 16vw, (min-width: 640px) 25vw, 33vw"
+                loading="lazy"
+                class:list={['w-full rounded-2xl object-cover', img.h]}
+              />
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
+    <div class="absolute inset-0 -z-10 bg-cream/45"></div>
+    <div class="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-cream to-transparent"></div>
 
-    <div class="grid grid-cols-2 gap-4 overflow-hidden px-4 py-8 sm:px-6 lg:h-full lg:w-3/5 lg:gap-6 lg:px-8 lg:py-0">
-      <div class="marquee-col overflow-hidden lg:h-full">
-        <div class="marquee-track flex flex-col gap-4 lg:gap-6">
-          {[...columnA, ...columnA].map((img) => (
-            <Image
-              src={img.src}
-              alt={img.alt}
-              widths={[240, 400, 600]}
-              sizes="(min-width: 1024px) 280px, 45vw"
-              loading="lazy"
-              class:list={['w-full rounded-2xl object-cover shadow-sm', img.h]}
-            />
-          ))}
+    {/* Arched doorway, nodding to temple and palace gateways. */}
+    <div class="px-4 pt-14 pb-20 sm:px-6 sm:pt-20 sm:pb-24">
+      <div class="relative mx-auto w-full max-w-sm sm:max-w-md" data-reveal="zoom">
+        <div class="absolute -inset-3 rounded-t-full border-2 border-b-0 border-gold-400 sm:-inset-4"></div>
+        {/* Threshold: joins the outline's two legs and runs past them on wider
+            screens, so the arch stands on a floor instead of stopping in mid-air. */}
+        <div class="absolute -inset-x-3 -bottom-3 h-0.5 bg-gold-400 sm:-inset-x-24 sm:-bottom-4 sm:bg-gradient-to-r sm:from-transparent sm:via-gold-400 sm:to-transparent"></div>
+        <div class="relative flex flex-col items-center rounded-t-full bg-emerald-950 px-8 pt-24 pb-12 text-center shadow-2xl sm:pt-28 sm:pb-14">
+          <svg viewBox="0 0 20 20" class="h-7 w-7 text-gold-400" aria-hidden="true">
+            <path d={STAR_PATH} fill="currentColor" />
+          </svg>
+          <h1 class="font-brand mt-5 text-4xl leading-[1.1] text-white sm:text-5xl">Where journeys begin</h1>
+          <p class="font-brand mt-4 max-w-[16rem] text-lg leading-snug text-gold-300 sm:max-w-none">
+            Travel should feel personal, not packaged.
+          </p>
         </div>
       </div>
-      <div class="marquee-col overflow-hidden lg:h-full">
-        <div class="marquee-track marquee-track-reverse flex flex-col gap-4 lg:gap-6">
-          {[...columnB, ...columnB].map((img) => (
-            <Image
-              src={img.src}
-              alt={img.alt}
-              widths={[240, 400, 600]}
-              sizes="(min-width: 1024px) 280px, 45vw"
-              loading="lazy"
-              class:list={['w-full rounded-2xl object-cover shadow-sm', img.h]}
-            />
-          ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
+    <div class="grid gap-10 lg:grid-cols-2 lg:gap-20" data-reveal="up">
+      <p class="font-brand text-2xl leading-snug text-emerald-950 sm:text-3xl lg:text-4xl">
+        {SITE.name} was built with a simple belief — every journey deserves thoughtful planning,
+        honest communication, and dedicated support.
+      </p>
+
+      <div>
+        <div class="space-y-4 border-l-2 border-gold-400/60 pl-5 text-xs leading-relaxed text-black sm:text-sm">
+          <p>
+            From family holidays and honeymoon trips to group tours, pilgrimage journeys, and
+            international vacations, we create personalized travel experiences based on your needs,
+            budget, and preferences.
+          </p>
+          <p>
+            Based in Hyderabad, we help travellers explore destinations across India and beyond, with
+            support for accommodation, transportation, sightseeing, guided experiences, and visa
+            assistance.
+          </p>
         </div>
+
+        <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-4">
+          <p class="inline-flex items-center gap-2 text-xs font-medium text-gold-600">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true">
+              <path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z" />
+              <circle cx="12" cy="10" r="2.5" />
+            </svg>
+            Hyderabad, India
+          </p>
+          <a
+            href="/destinations"
+            class="inline-flex w-fit items-center gap-2 rounded-full border border-gold-400/60 bg-emerald-800 px-6 py-3 text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-900 active:scale-95"
+          >
+            View our packages
+            <span class="text-gold-400" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:pb-24">
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="rounded-2xl border border-gold-300/70 p-6 sm:p-8" data-reveal="up">
+        <svg viewBox="0 0 20 20" class="h-5 w-5 text-gold-500" aria-hidden="true">
+          <path d={STAR_PATH} fill="currentColor" />
+        </svg>
+        <h2 class="font-brand mt-4 text-2xl text-emerald-950">More than just a booking</h2>
+        <p class="mt-3 text-xs leading-relaxed text-black sm:text-sm">
+          From planning to your return, our team stays connected to make your journey smooth and
+          stress-free. We take care of the details so you can focus on creating unforgettable
+          memories.
+        </p>
+      </div>
+
+      <div class="flex flex-col rounded-2xl bg-emerald-950 p-6 sm:p-8" data-reveal="up" style="--reveal-delay: 120ms">
+        <svg viewBox="0 0 20 20" class="h-5 w-5 text-gold-400" aria-hidden="true">
+          <path d={STAR_PATH} fill="currentColor" />
+        </svg>
+        <h2 class="font-brand mt-4 text-2xl text-white">Our promise</h2>
+        <p class="mt-3 text-xs leading-relaxed text-white/80 sm:text-sm">
+          Your journey is more than a booking. It’s an experience we’re proud to help you create.
+        </p>
+        <p class="font-brand mt-auto pt-5 text-sm tracking-[0.15em] text-gold-400 uppercase">Your journey. Our care.</p>
       </div>
     </div>
   </section>
 </Layout>
 
 <style>
-  @media (min-width: 1024px) {
-    .marquee-track {
-      animation: marquee-up 45s linear infinite;
-    }
-    .marquee-track-reverse {
-      animation-name: marquee-up;
-      animation-duration: 55s;
-    }
+  .about-wall-track {
+    animation: about-wall-up linear infinite;
   }
 
-  @keyframes marquee-up {
+  .about-wall-track-reverse {
+    animation-direction: reverse;
+  }
+
+  @keyframes about-wall-up {
     from {
       transform: translateY(0);
     }
     to {
       transform: translateY(-50%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .about-wall-track {
+      animation: none;
     }
   }
 </style>

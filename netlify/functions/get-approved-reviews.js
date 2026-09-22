@@ -8,7 +8,7 @@ export async function handler(event) {
   const supabase = getSupabaseClient();
   const { data, error } = await supabase
     .from('reviews')
-    .select('id, name, rating, message, created_at')
+    .select('id, name, occupation, rating, message, photo_url, created_at')
     .eq('status', 'approved')
     .order('created_at', { ascending: false })
     .limit(50);

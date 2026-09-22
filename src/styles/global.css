@@ -50,8 +50,8 @@
 
 @theme {
   --font-sans: "Geist", "Segoe UI", -apple-system, Roboto, Helvetica, Arial, sans-serif;
-  --font-serif: "Source Serif 4", Georgia, "Iowan Old Style", "Palatino Linotype", serif;
-  --font-brand: "Redaction", "LT Soul", "Source Serif 4", Georgia, serif;
+  --font-serif: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  --font-brand: "Redaction", "LT Soul", Georgia, serif;
 
   /* Body copy runs almost entirely on text-xs; bumped to the old text-sm
      size/line-height so Geist reads larger site-wide without touching every
@@ -73,8 +73,91 @@
   --color-emerald-950: hsl(129 65% 6%);
 
   --color-cream: #fbf9f4;
+
+  /* Accent gold: anchor at 500, sampled directly from the logo (the crescent/star/
+     plane's dominant fill, #B58E52 by traced path area). */
+  --color-gold-50: hsl(36 55% 96%);
+  --color-gold-100: hsl(36 52% 91%);
+  --color-gold-200: hsl(36 50% 82%);
+  --color-gold-300: hsl(36 46% 70%);
+  --color-gold-400: hsl(36 43% 61%);
+  --color-gold-500: hsl(36 40% 52%);
+  --color-gold-600: hsl(35 44% 43%);
+  --color-gold-700: hsl(34 48% 35%);
+  --color-gold-800: hsl(33 52% 27%);
+  --color-gold-900: hsl(32 56% 19%);
+  --color-gold-950: hsl(30 60% 11%);
 }
 
 .font-brand {
   font-weight: 500;
+}
+
+/* Scroll reveal.
+   The hidden state is scoped to `.reveal-ready`, a class only added by script when
+   IntersectionObserver exists and the visitor hasn't asked for reduced motion — so
+   without JS, or with reduced motion, everything renders visible and unanimated.
+   These use `transform` only; Tailwind v4 emits rotate/scale/translate as separate
+   properties, so a reveal never clobbers a `-rotate-2` or `-translate-x-1/2`. */
+.reveal-ready [data-reveal] {
+  opacity: 0;
+  transition:
+    opacity 700ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 700ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal-ready [data-reveal='up'] {
+  transform: translateY(28px);
+}
+
+.reveal-ready [data-reveal='left'] {
+  transform: translateX(-32px);
+}
+
+.reveal-ready [data-reveal='right'] {
+  transform: translateX(32px);
+}
+
+.reveal-ready [data-reveal='zoom'] {
+  transform: scale(0.92);
+}
+
+/* Struck onto the page: drops in from oversize with a slight overshoot. */
+.reveal-ready [data-reveal='stamp'] {
+  transform: scale(1.7);
+  transition-duration: 340ms;
+  transition-timing-function: cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+/* Temple markers popping onto the map. */
+.reveal-ready [data-reveal='star'] {
+  transform: scale(0.2);
+  transition-duration: 420ms;
+  transition-timing-function: cubic-bezier(0.34, 1.35, 0.64, 1);
+}
+
+.reveal-ready [data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+/* Slow drift along the dotted route line behind the about copy. */
+/* -120 is ten full dash periods (2 + 10), so the loop is seamless. */
+@keyframes route-drift {
+  to {
+    stroke-dashoffset: -120;
+  }
+}
+
+.route-line {
+  animation: route-drift 24s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-line {
+    animation: none;
+  }
 }

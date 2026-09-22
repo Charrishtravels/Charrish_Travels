@@ -1,6 +1,6 @@
 ---
 name: Anita Sharma
-location: Hyderabad
+occupation: Software Engineer
 rating: 5
 photo: /images/testimonials/anita.jpg
 ---

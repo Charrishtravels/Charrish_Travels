@@ -22,12 +22,14 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="apple-touch-icon" href="/images/logo.png" />
     <link rel="canonical" href={canonicalURL} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <title>{title} · {SITE.name}</title>
@@ -40,6 +42,18 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="twitter:card" content="summary_large_image" />
 
     <meta name="theme-color" content="#002d07" />
+
+    <script is:inline>
+      // Opt the document into scroll-reveal before first paint, so revealed
+      // elements never flash visible. Skipped entirely without IntersectionObserver
+      // or when reduced motion is requested — the CSS then leaves everything shown.
+      if (
+        'IntersectionObserver' in window &&
+        !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      ) {
+        document.documentElement.classList.add('reveal-ready');
+      }
+    </script>
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" is:inline></script>
     <script is:inline>
@@ -61,5 +75,27 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     </main>
     {!hideFooter && <Footer />}
     <FloatingContactButtons />
+
+    <script>
+      if (document.documentElement.classList.contains('reveal-ready')) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              if (!entry.isIntersecting) continue;
+              entry.target.classList.add('is-revealed');
+              observer.unobserve(entry.target);
+            }
+          },
+          // Fires once the element's leading edge clears the bottom tenth of the
+          // viewport, so the motion reads as a response to scrolling rather than
+          // something that already finished off-screen.
+          { threshold: 0, rootMargin: '0px 0px -10% 0px' },
+        );
+
+        for (const el of document.querySelectorAll('[data-reveal]')) {
+          observer.observe(el);
+        }
+      }
+    </script>
   </body>
 </html>

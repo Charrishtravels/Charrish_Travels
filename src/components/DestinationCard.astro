@@ -3,27 +3,98 @@ import type { CollectionEntry } from 'astro:content';
 
 interface Props {
   destination: CollectionEntry<'destinations'>;
+  /** 'portrait' suits narrow placements; 'landscape' is the standard package shape. */
+  orientation?: 'portrait' | 'landscape';
 }
 
-const { destination } = Astro.props;
-const { title, heroImage } = destination.data;
+const { destination, orientation = 'landscape' } = Astro.props;
+const { title, heroImage, location, duration, summary } = destination.data;
+
+const shapeClass = orientation === 'landscape' ? 'aspect-[4/3] rounded-lg' : 'aspect-[3/4.4] rounded-3xl';
 ---
 
 <a
   href={`/destinations/${destination.id}`}
-  class="group relative block aspect-[3/4] w-full overflow-hidden rounded-3xl border border-white/10 shadow-lg"
+  data-package-card
+  class:list={[
+    'group relative block w-full overflow-hidden border border-transparent shadow-lg transition-all duration-300 hover:z-10 hover:scale-[1.03] hover:border-gold-400 hover:shadow-2xl data-active:z-10 data-active:scale-[1.03] data-active:border-gold-400 data-active:shadow-2xl',
+    shapeClass,
+  ]}
 >
   <img
     src={heroImage}
     alt={title}
     loading="lazy"
-    class="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+    class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 group-data-active:scale-105"
   />
-  <div class="absolute inset-0 bg-gradient-to-b from-black/75 via-black/15 to-black/85"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-emerald-950/75 via-emerald-950/10 to-emerald-950/90"></div>
+
   <div class="relative flex h-full flex-col justify-between p-5">
     <h3 class="font-brand text-xl text-white [text-shadow:0_2px_10px_rgb(0_0_0_/_0.7)]">{title}</h3>
-    <p class="text-left text-xs font-semibold uppercase tracking-wide text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-      View more →
-    </p>
+
+    {/* Scrim grows with the details panel so the text always sits on a dark backing */}
+    <div class="-mx-5 -mb-5 bg-gradient-to-t from-emerald-950/95 via-emerald-950/80 to-transparent px-5 pt-12 pb-5">
+      <p class="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] font-medium text-white/90">
+        <span class="text-gold-200">{location}</span>
+        <span class="text-gold-400" aria-hidden="true">·</span>
+        <span>{duration}</span>
+      </p>
+
+      {/* grid-rows 0fr -> 1fr animates the panel open to its natural height */}
+      <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 group-hover:grid-rows-[1fr] group-data-active:grid-rows-[1fr]">
+        <div class="overflow-hidden">
+          <div class="mt-3 border-t border-gold-400/40 pt-3">
+            <p class="text-xs leading-relaxed text-white/85">{summary}</p>
+            <p class="mt-3 text-right text-[11px] font-semibold tracking-wide text-gold-300 uppercase">View details →</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </a>
+
+<script>
+  // Touch screens can't hover, so the card nearest the middle of the screen gets the
+  // expanded "hover" look instead.
+  if (window.matchMedia('(hover: none)').matches) {
+    const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-package-card]'));
+    let current: HTMLElement | null = null;
+    let queued = false;
+
+    const update = () => {
+      queued = false;
+      const cx = window.innerWidth / 2;
+      const cy = window.innerHeight / 2;
+      let best: HTMLElement | null = null;
+      let bestDist = Infinity;
+      for (const card of cards) {
+        const r = card.getBoundingClientRect();
+        const visible = r.bottom > 0 && r.top < window.innerHeight && r.right > 0 && r.left < window.innerWidth;
+        const faded = Number(getComputedStyle(card.parentElement!).opacity) < 0.5;
+        if (!visible || faded) continue;
+        const d = Math.hypot(r.left + r.width / 2 - cx, r.top + r.height / 2 - cy);
+        if (d < bestDist) {
+          bestDist = d;
+          best = card;
+        }
+      }
+      if (best === current) return;
+      current?.removeAttribute('data-active');
+      best?.setAttribute('data-active', '');
+      current = best;
+    };
+
+    const schedule = () => {
+      if (!queued) {
+        queued = true;
+        requestAnimationFrame(update);
+      }
+    };
+
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
+    // The homepage carousel moves cards without scrolling; re-check when it settles.
+    document.addEventListener('transitionend', schedule);
+    update();
+  }
+</script>

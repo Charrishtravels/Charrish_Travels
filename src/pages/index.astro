@@ -1,103 +1,187 @@
 ---
 import { getCollection, render } from 'astro:content';
-import { Image, getImage } from 'astro:assets';
+import { getImage } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import HeroCarousel from '../components/HeroCarousel.astro';
+import TempleTours from '../components/TempleTours.astro';
+import Transportation from '../components/Transportation.astro';
+import GuidedTours from '../components/GuidedTours.astro';
+import VisaAssistance from '../components/VisaAssistance.astro';
+import RouteWatermark from '../components/RouteWatermark.astro';
 import PackageCarousel from '../components/PackageCarousel.astro';
 import { SITE } from '../consts';
-import indiaTemple from '../assets/hero/india-temple.webp';
-import heritageTourOfIndia from '../assets/heritage-tour-of-india.jpg';
+import southIndianTempleTank from '../assets/hero/south-indian-temple-tank.jpg';
+import watArunBangkok from '../assets/hero/wat-arun-bangkok.jpg';
+import hawaMahalJaipur from '../assets/hero/hawa-mahal-jaipur.jpg';
+import swissAlpineVillage from '../assets/hero/swiss-alpine-village.jpg';
+import dubai from '../assets/hero/dubai.jpg';
+import maldives from '../assets/hero/maldives.jpg';
+import himalayanSnowPass from '../assets/hero/himalayan-snow-pass.jpg';
+import rockCutTempleHall from '../assets/hero/rock-cut-temple-hall.jpg';
 import statsBackground from '../assets/stats-background.jpg';
 
 const statsBackgroundOptimized = await getImage({ src: statsBackground, width: 1600, format: 'webp' });
 
 const destinations = await getCollection('destinations');
 const featured = destinations.filter((d) => d.data.featured);
+
 const testimonials = await getCollection('testimonials');
-const testimonialContent = await Promise.all(testimonials.map((t) => render(t)));
-const testimonialPages = Array.from({ length: Math.ceil(testimonials.length / 2) }, (_, i) =>
-  testimonials.slice(i * 2, i * 2 + 2).map((t, j) => ({ t, Content: testimonialContent[i * 2 + j].Content }))
+const shuffledTestimonials = [...testimonials].sort(() => Math.random() - 0.5).slice(0, 3);
+const testimonialCards = await Promise.all(
+  shuffledTestimonials.map(async (t) => ({ t, Content: (await render(t)).Content }))
 );
 
 const STATS = [
-  { value: '200+', label: 'Packages curated' },
-  { value: '20+', label: 'Years of experience' },
-  { value: '5,000+', label: 'Happy travellers' },
-  { value: '4.8★', label: 'Average rating' },
-];
-
-const TICKER_ITEMS = [
-  'Handpicked stays',
-  'Transparent pricing',
-  '200+ packages curated',
-  'Real support, always',
-  '4.8★ average rating',
+  {
+    target: 200,
+    suffix: '+',
+    decimals: 0,
+    label: 'Packages curated',
+    icon: '<rect x="5" y="8.5" width="14" height="11.5" rx="1.5" /><path d="M9.5 8.5V6a1.5 1.5 0 0 1 1.5-1.5h2A1.5 1.5 0 0 1 14.5 6v2.5" /><line x1="5" y1="13" x2="19" y2="13" /><line x1="10" y1="8.5" x2="10" y2="20" /><line x1="14" y1="8.5" x2="14" y2="20" />',
+  },
+  {
+    target: 20,
+    suffix: '+',
+    decimals: 0,
+    label: 'Years of experience',
+    icon: '<path d="M4 11.5 12 4l8 7.5" /><path d="M6 10.5V19a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-8.5" /><path d="M10 20v-4.5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1V20" />',
+  },
+  {
+    target: 5000,
+    suffix: '+',
+    decimals: 0,
+    label: 'Happy travellers',
+    icon: '<circle cx="12" cy="5.2" r="2" /><rect x="9.7" y="8" width="4.6" height="6" rx="1.3" /><path d="M9.7 9.3H8a1 1 0 0 0-1 1v2.4a1 1 0 0 0 1 1h1.7" /><path d="M9.6 14l-2 6" /><path d="M14.4 14l2 6" /><path d="M14.3 8.6l3-1.6" />',
+  },
+  {
+    target: 4.8,
+    suffix: '',
+    decimals: 1,
+    label: 'Average rating',
+    icon: '<path d="M12 3.8l1.9 4.5 4.9.5-3.7 3.3 1.1 4.8L12 14.4l-4.2 2.5 1.1-4.8-3.7-3.3 4.9-.5L12 3.8z" fill="currentColor" stroke="none" /><path d="M4.3 4.3l1 1M19.7 4.3l-1 1M3.3 12h1.4M20.7 12h-1.4M5.8 19l1-1M18.2 18l1 1" />',
+  },
 ];
 ---
 
-<Layout title="Home" description="Handpicked travel packages, planned around you." transparentNav>
-  <HeroCarousel>
-    <p class="font-brand text-4xl uppercase tracking-wide sm:text-5xl">{SITE.name}</p>
-    <div class="mt-3 h-px w-12 bg-white/50"></div>
-    <p class="mt-3 text-xs font-medium uppercase tracking-[0.25em] text-white/80 sm:text-xs">
-      {SITE.tagline}
+<Layout title="Home" description="Customized tours and temple tours, planned around you." transparentNav>
+  <HeroCarousel
+    slides={[
+      { src: southIndianTempleTank, alt: 'South Indian temple tank and gopuram at dusk' },
+      { src: watArunBangkok, alt: 'Wat Arun at sunset, Bangkok' },
+      { src: hawaMahalJaipur, alt: 'Hawa Mahal, Jaipur' },
+      { src: swissAlpineVillage, alt: 'Wooden chalets beneath a Swiss alpine peak' },
+      { src: dubai, alt: 'Burj Al Arab at dusk, Dubai' },
+      { src: maldives, alt: 'Overwater villas, Maldives' },
+      { src: himalayanSnowPass, alt: 'Snow-covered Himalayan mountain pass' },
+      { src: rockCutTempleHall, alt: 'Sunlit pillared hall of a rock-cut temple' },
+    ]}
+  >
+    <div class="flex items-center justify-center gap-2 sm:gap-3">
+      <span class="hidden h-px w-10 bg-white/50 sm:block"></span>
+      <p class="font-brand text-[11px] tracking-[0.25em] text-white/90 uppercase sm:text-sm sm:tracking-[0.35em]">{SITE.name}</p>
+      <span class="hidden h-px w-10 bg-white/50 sm:block"></span>
+    </div>
+
+    <h1 class="font-brand mt-3 text-[2rem] leading-[1.15] text-white sm:mt-5 sm:text-6xl lg:text-7xl">
+      Travel, Planned Around You.
+    </h1>
+
+    <p class="mt-3 flex flex-wrap items-center justify-center gap-x-2 gap-y-1.5 text-[11px] font-semibold tracking-[0.1em] text-white/90 uppercase sm:mt-5 sm:gap-x-3 sm:text-sm sm:tracking-[0.15em]">
+      <span class="whitespace-nowrap">Customized Tours <span class="text-white/40" aria-hidden="true">|</span></span>
+      <span class="whitespace-nowrap">Temple Tours <span class="text-white/40" aria-hidden="true">|</span></span>
+      <span class="whitespace-nowrap">Guided Tours <span class="text-white/40" aria-hidden="true">|</span></span>
+      <span class="whitespace-nowrap">Visa Assistance</span>
     </p>
+
+    <a
+      href="/destinations"
+      class="mt-6 inline-block rounded-full bg-gold-500 px-6 py-2.5 text-xs font-semibold tracking-wide text-black shadow-lg transition-all duration-200 hover:scale-105 hover:bg-gold-400 active:scale-95 sm:mt-8"
+    >
+      Explore
+    </a>
   </HeroCarousel>
 
-  <section class="mx-auto max-w-5xl px-4 py-16 sm:px-6">
-    <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
-      <div>
-        <h2 class="font-brand text-4xl text-emerald-950">About us</h2>
-        <p class="mt-4 text-xs text-black">
-          {SITE.name} started with a simple idea: travel planning shouldn't feel like a second job. We
-          put together itineraries the way we'd plan a trip for our own family — good stays, honest
-          pricing, and no surprises once you've landed. Every package on this site has been travelled
-          and vetted by our own team before it ever gets listed.
-        </p>
+  <section class="relative overflow-hidden bg-emerald-950 px-4 py-16 sm:px-6 sm:py-20">
+    <RouteWatermark />
+    <div class="relative mx-auto max-w-2xl text-center" data-reveal="up">
+      <h2 class="font-brand text-4xl leading-tight text-white">
+        We believe every traveller is different — and your journey should be too.
+      </h2>
+      <p class="mt-5 text-xs text-white/85 sm:text-sm">
+        <span class="text-white underline decoration-gold-400 decoration-1 underline-offset-4">
+          Customization isn't a feature — it's our main service.
+        </span>{' '}
+        Rather than fitting you into a fixed package, we build your itinerary around how you want
+        to travel.
+      </p>
+      <p class="mt-3 text-xs text-white/85 sm:text-sm">
+        That means a family holiday paced for every generation, a honeymoon built around quiet,
+        shared moments, a group trip that stays coordinated without losing anyone's individual
+        experience, and senior-friendly journeys that favour comfort at every step.
+      </p>
+      <p class="mt-3 text-xs text-white/85 sm:text-sm">
+        Behind it all: strong destination-wise transportation arrangements, trusted local
+        partners, and years of experience — so the logistics stay invisible, and the journey
+        feels effortless.
+      </p>
+      <p class="mt-3 text-xs text-white/85 sm:text-sm">
+        Family holiday, pilgrimage, group trip, or international getaway — we work closely with
+        you to shape something entirely your own.
+      </p>
 
-        <ul class="mt-6 space-y-2.5 text-xs text-black">
-          <li class="flex items-start gap-2">
-            <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-700"></span>
-            Handpicked stays and vetted local partners
-          </li>
-          <li class="flex items-start gap-2">
-            <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-700"></span>
-            Transparent, all-inclusive pricing — no hidden add-ons
-          </li>
-          <li class="flex items-start gap-2">
-            <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-700"></span>
-            Real support before, during, and after your trip
-          </li>
-        </ul>
+      <p class="font-brand mt-5 text-lg text-white">Your journey begins with a conversation.</p>
 
-        <a
-          href="/about"
-          class="mt-6 inline-block rounded-full bg-emerald-800 px-6 py-3 text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-900 active:scale-95"
-        >
-          More about us
-        </a>
-      </div>
-
-      <div class="relative mx-auto h-72 w-full max-w-sm sm:h-80">
-        <Image
-          src={indiaTemple}
-          alt="Ornate temple, India"
-          widths={[400, 640]}
-          sizes="(min-width: 640px) 384px, 90vw"
-          class="absolute inset-0 h-full w-full rounded-2xl object-cover shadow-lg"
-        />
-        <Image
-          src={heritageTourOfIndia}
-          alt="Heritage tour of India"
-          widths={[200, 300]}
-          sizes="192px"
-          class="absolute -right-1 -bottom-4 h-40 w-40 rotate-6 rounded-2xl border-4 border-cream object-cover shadow-xl sm:-right-4 sm:-bottom-6 sm:h-48 sm:w-48"
-        />
-      </div>
+      <a
+        href={`https://wa.me/${SITE.whatsapp}`}
+        target="_blank"
+        rel="noopener"
+        class="mt-4 inline-block rounded-full bg-gold-500 px-6 py-3 text-xs font-semibold text-emerald-950 transition-all duration-200 hover:scale-105 hover:bg-gold-400 active:scale-95"
+      >
+        Start a Conversation
+      </a>
     </div>
   </section>
 
-  <section class="relative overflow-hidden py-16">
+  <section class="mx-auto max-w-5xl px-4 py-16 sm:px-6">
+    <div class="grid gap-6">
+      <Transportation />
+      <VisaAssistance />
+      <TempleTours />
+      <GuidedTours />
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-16 sm:px-6">
+    <div class="mb-2 flex flex-wrap items-center justify-between gap-4" data-reveal="up">
+      <h2 class="font-brand flex items-center gap-3 text-4xl text-emerald-950">
+        <svg viewBox="0 0 20 20" class="h-6 w-6 shrink-0 text-gold-500" aria-hidden="true">
+          <path d="M10 0 L10.77 8.15 L14.24 5.76 L11.85 9.23 L20 10 L11.85 10.77 L14.24 14.24 L10.77 11.85 L10 20 L9.23 11.85 L5.76 14.24 L8.15 10.77 L0 10 L8.15 9.23 L5.76 5.76 L9.23 8.15 Z" fill="currentColor" />
+        </svg>
+        Featured packages
+      </h2>
+      <a
+        href="/destinations"
+        class="hidden w-fit shrink-0 items-center gap-2 rounded-full border border-gold-400/60 bg-emerald-800 px-6 py-3 text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-900 active:scale-95 sm:inline-flex"
+      >
+        View more
+        <span class="text-gold-400" aria-hidden="true">→</span>
+      </a>
+    </div>
+    <div data-reveal="up" style="--reveal-delay: 120ms">
+      <PackageCarousel destinations={featured} />
+    </div>
+    <div class="mt-6 flex justify-center sm:hidden">
+      <a
+        href="/destinations"
+        class="inline-flex w-fit items-center gap-2 rounded-full border border-gold-400/60 bg-emerald-800 px-6 py-3 text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-900 active:scale-95"
+      >
+        View more
+        <span class="text-gold-400" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="stats-section" class="relative overflow-hidden py-16">
     <div
       class="absolute inset-0 -z-10 bg-cover bg-fixed"
       style={`background-image: url(${statsBackgroundOptimized.src}); background-position: 30% 60%;`}
@@ -105,109 +189,125 @@ const TICKER_ITEMS = [
     </div>
     <div class="absolute inset-0 bg-emerald-950/30"></div>
     <div class="relative mx-auto grid max-w-5xl grid-cols-2 gap-x-6 gap-y-8 px-4 sm:flex sm:flex-wrap sm:justify-between sm:gap-x-8 sm:px-10">
-      {STATS.map((stat) => (
-        <div class="text-center">
-          <p class="font-brand text-3xl text-white sm:text-5xl">{stat.value}</p>
+      {STATS.map((stat, i) => (
+        <div class="group text-center" data-reveal="zoom" style={`--reveal-delay: ${i * 110}ms`}>
+          <div class="relative mx-auto mb-3 h-12 w-12 rounded-full border-[3px] border-gold-400/60 sm:h-14 sm:w-14 sm:border-4">
+            <div class="absolute inset-0.5 overflow-hidden rounded-full sm:inset-1">
+              <span class="absolute inset-0 flex items-center justify-center bg-white/20 text-gold-300 backdrop-blur-sm transition-transform duration-300 ease-out group-hover:-translate-x-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-5 w-5 sm:h-6 sm:w-6"
+                  set:html={stat.icon}
+                />
+              </span>
+              <span class="absolute inset-0 flex translate-x-full items-center justify-center bg-white/20 text-gold-300 backdrop-blur-sm transition-transform duration-300 ease-out group-hover:translate-x-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-5 w-5 sm:h-6 sm:w-6"
+                  set:html={stat.icon}
+                />
+              </span>
+            </div>
+          </div>
+          <p
+            class="stat-value font-brand text-3xl text-white sm:text-5xl"
+            data-target={stat.target}
+            data-decimals={stat.decimals}
+            data-suffix={stat.suffix}
+          >
+            {stat.decimals ? (0).toFixed(stat.decimals) : '0'}{stat.suffix}
+          </p>
           <p class="mt-0.5 text-[11px] font-semibold text-white sm:text-xs">{stat.label}</p>
         </div>
       ))}
     </div>
   </section>
 
-  <section class="mx-auto max-w-5xl px-4 py-16 sm:px-6">
-    <div class="mb-2 flex flex-wrap items-center justify-between gap-4">
-      <h2 class="font-brand text-4xl text-emerald-950">Featured packages</h2>
-      <a
-        href="/destinations"
-        class="hidden w-fit shrink-0 items-center gap-2 rounded-full bg-emerald-800 px-6 py-3 text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-900 active:scale-95 sm:inline-flex"
-      >
-        View more
-        <span aria-hidden="true">→</span>
-      </a>
-    </div>
-    <PackageCarousel destinations={featured} />
-    <div class="mt-6 flex justify-center sm:hidden">
-      <a
-        href="/destinations"
-        class="inline-flex w-fit items-center gap-2 rounded-full bg-emerald-800 px-6 py-3 text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-900 active:scale-95"
-      >
-        View more
-        <span aria-hidden="true">→</span>
-      </a>
-    </div>
-  </section>
+  <section class="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
+    <h2 class="mb-8 font-brand text-4xl text-emerald-950" data-reveal="up">What Travellers Say</h2>
 
-  <div class="overflow-hidden bg-emerald-800 py-3">
-    <div class="ticker-track flex w-max items-center gap-10 whitespace-nowrap">
-      {Array(2).fill(TICKER_ITEMS).flat().map((item) => (
-        <span class="flex items-center gap-10">
-          <span class="text-xs font-semibold uppercase tracking-wider text-white">{item}</span>
-          <span aria-hidden="true" class="text-white/40">✦</span>
-        </span>
+    <div class="grid gap-5 sm:grid-cols-3">
+      {testimonialCards.map(({ t, Content }, i) => (
+        <blockquote
+          class="rounded-xl border border-gold-200/60 bg-white p-5 shadow-sm"
+          data-reveal="up"
+          style={`--reveal-delay: ${120 + i * 130}ms`}
+        >
+          <div class="text-gold-500" aria-hidden="true">{'★'.repeat(t.data.rating)}{'☆'.repeat(5 - t.data.rating)}</div>
+          <div class="mt-2 text-xs leading-relaxed text-emerald-900/80 italic">
+            <Content />
+          </div>
+          <footer class="mt-4 text-xs font-semibold text-emerald-950">
+            {t.data.name}
+            {t.data.occupation && <span class="font-normal text-emerald-900/60"> · {t.data.occupation}</span>}
+          </footer>
+        </blockquote>
       ))}
     </div>
-  </div>
 
-  <section class="pt-8 pb-16">
-    <div class="mx-auto max-w-5xl px-4 sm:px-6">
-      <h2 class="mb-8 text-center font-brand text-4xl text-emerald-950">What travellers say</h2>
-      <div id="testimonial-pages" class="relative">
-        {testimonialPages.map((page, pageIndex) => (
-          <div
-            class="testimonial-page grid gap-6 transition-opacity duration-700 sm:grid-cols-2"
-            data-page={pageIndex}
-            style={pageIndex === 0 ? undefined : { display: 'none' }}
-          >
-            {page.map(({ t, Content }) => (
-              <blockquote class="rounded-xl border border-emerald-600 bg-cream p-6 shadow-sm">
-                <div class="text-amber-500" aria-hidden="true">{'★'.repeat(t.data.rating)}{'☆'.repeat(5 - t.data.rating)}</div>
-                <div class="mt-2 text-xs text-emerald-900/80 italic">
-                  <Content />
-                </div>
-                <footer class="mt-4 text-xs font-semibold text-emerald-950">
-                  {t.data.name}{t.data.location && <span class="font-normal text-emerald-900/60"> · {t.data.location}</span>}
-                </footer>
-              </blockquote>
-            ))}
-          </div>
-        ))}
-      </div>
-      <div class="mt-8 flex flex-col items-center gap-2 text-center">
-        <p class="text-xs text-emerald-900/60">Travelled with us before?</p>
-        <a
-          href="/testimonials#review-form"
-          class="inline-flex w-fit items-center rounded-full bg-emerald-800 px-6 py-3 text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-900 active:scale-95"
-        >
-          Leave a review
-        </a>
-      </div>
+    <div class="mt-8 flex justify-center">
+      <a
+        href="/testimonials#review-form"
+        class="inline-flex w-fit shrink-0 items-center gap-2 rounded-full bg-emerald-800 px-6 py-3 text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-900 active:scale-95"
+      >
+        Leave a Review
+      </a>
     </div>
   </section>
 </Layout>
 
 <script>
-  const pages = Array.from(document.querySelectorAll<HTMLElement>('.testimonial-page'));
-  if (pages.length > 1) {
-    let active = 0;
-    setInterval(() => {
-      pages[active].style.display = 'none';
-      active = (active + 1) % pages.length;
-      pages[active].style.display = '';
-    }, 7000);
+  const statsSection = document.getElementById('stats-section');
+  const statEls = Array.from(document.querySelectorAll<HTMLElement>('.stat-value'));
+
+  function animateCount(el: HTMLElement) {
+    const target = parseFloat(el.dataset.target ?? '0');
+    const decimals = parseInt(el.dataset.decimals ?? '0', 10);
+    const suffix = el.dataset.suffix ?? '';
+    const duration = 2000;
+    const start = performance.now();
+
+    function easeInOutQuad(t: number) {
+      return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+    }
+
+    function frame(now: number) {
+      const progress = Math.min((now - start) / duration, 1);
+      const current = target * easeInOutQuad(progress);
+      el.textContent =
+        current.toLocaleString('en-US', {
+          minimumFractionDigits: decimals,
+          maximumFractionDigits: decimals,
+        }) + suffix;
+      if (progress < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+
+  if (statsSection && statEls.length) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            statEls.forEach(animateCount);
+            observer.unobserve(statsSection);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(statsSection);
   }
 </script>
-
-<style>
-  .ticker-track {
-    animation: ticker-scroll 28s linear infinite;
-  }
-
-  @keyframes ticker-scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
-</style>
