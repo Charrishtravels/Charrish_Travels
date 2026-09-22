@@ -1,0 +1,135 @@
+---
+const TOUR_TYPES = [
+  'South India Temple Tours',
+  'North India Pilgrimage Tours',
+  'Odisha Temple Tours',
+  'Jyotirlinga Tours',
+  'Customized Temple Circuits',
+];
+
+// Every temple from the tour lists, deduplicated where the same temple appears
+// in more than one list (Kedarnath, Varanasi, Rameswaram). x/y are approximate
+// percentages against the map image, placed relative to real geography.
+const TEMPLES = [
+  { name: 'Tirupati (Sri Venkateswara Temple)', state: 'Andhra Pradesh', x: 44, y: 64 },
+  { name: 'Madurai (Meenakshi Amman Temple)', state: 'Tamil Nadu', x: 28, y: 76 },
+  { name: 'Rameswaram (Ramanathaswamy Temple)', state: 'Tamil Nadu', x: 31, y: 79 },
+  { name: 'Kanchipuram (Ekambareswarar, Kamakshi Amman)', state: 'Tamil Nadu', x: 36, y: 66 },
+  { name: 'Thanjavur (Brihadeeswarar Temple)', state: 'Tamil Nadu', x: 34, y: 72 },
+  { name: 'Chidambaram (Nataraja Temple)', state: 'Tamil Nadu', x: 35, y: 69 },
+  { name: 'Srirangam (Ranganathaswamy Temple)', state: 'Tamil Nadu', x: 30, y: 73 },
+  { name: 'Kumbakonam', state: 'Tamil Nadu', x: 33, y: 71 },
+  { name: 'Guruvayur (Guruvayurappan Temple)', state: 'Kerala', x: 24, y: 70 },
+  { name: 'Sabarimala (Ayyappa Temple)', state: 'Kerala', x: 27, y: 75 },
+  { name: 'Padmanabhaswamy Temple, Thiruvananthapuram', state: 'Kerala', x: 26.5, y: 77.5 },
+  { name: 'Udupi (Krishna Temple)', state: 'Karnataka', x: 24, y: 60 },
+  { name: 'Murudeshwar', state: 'Karnataka', x: 25, y: 63 },
+  { name: 'Dharmasthala', state: 'Karnataka', x: 25, y: 65 },
+  { name: 'Kollur (Mookambika Temple)', state: 'Karnataka', x: 23, y: 57 },
+  { name: 'Sringeri', state: 'Karnataka', x: 26, y: 61 },
+  { name: 'Belur & Halebidu', state: 'Karnataka', x: 28, y: 64 },
+  { name: 'Kanyakumari (Bhagavathy Amman Temple)', state: 'Tamil Nadu', x: 29, y: 83.5 },
+  { name: 'Palani (Murugan Temple)', state: 'Tamil Nadu', x: 26, y: 75 },
+  { name: 'Yadagirigutta', state: 'Telangana', x: 40, y: 54 },
+  { name: 'Bhadrachalam', state: 'Telangana', x: 45, y: 58 },
+
+  { name: 'Varanasi (Kashi Vishwanath Temple)', state: 'Uttar Pradesh', x: 51.5, y: 38.5 },
+  { name: 'Ayodhya (Ram Mandir)', state: 'Uttar Pradesh', x: 46, y: 36.5 },
+  { name: 'Mathura (Krishna Janmabhoomi)', state: 'Uttar Pradesh', x: 36, y: 33 },
+  { name: 'Vrindavan (Banke Bihari Temple)', state: 'Uttar Pradesh', x: 37, y: 34 },
+  { name: 'Haridwar', state: 'Uttarakhand', x: 34, y: 28 },
+  { name: 'Rishikesh', state: 'Uttarakhand', x: 35, y: 27 },
+  { name: 'Badrinath', state: 'Uttarakhand', x: 39, y: 23 },
+  { name: 'Kedarnath', state: 'Uttarakhand', x: 37, y: 22 },
+  { name: 'Gangotri', state: 'Uttarakhand', x: 35, y: 21 },
+  { name: 'Yamunotri', state: 'Uttarakhand', x: 33, y: 22 },
+  { name: 'Amritsar (Golden Temple)', state: 'Punjab', x: 24.5, y: 31 },
+  { name: 'Vaishno Devi', state: 'Jammu & Kashmir', x: 27.5, y: 22.5 },
+  { name: 'Amarnath', state: 'Jammu & Kashmir', x: 29, y: 20 },
+  { name: 'Chitrakoot', state: 'Uttar Pradesh / Madhya Pradesh', x: 42, y: 41 },
+  { name: 'Prayagraj (Sangam)', state: 'Uttar Pradesh', x: 46, y: 39 },
+  { name: 'Naina Devi', state: 'Himachal Pradesh', x: 28.5, y: 26.5 },
+  { name: 'Jwalamukhi', state: 'Himachal Pradesh', x: 31, y: 23 },
+  { name: 'Pushkar (Brahma Temple)', state: 'Rajasthan', x: 20, y: 38 },
+  { name: 'Salasar Balaji', state: 'Rajasthan', x: 22.5, y: 33.5 },
+  { name: 'Khatu Shyam', state: 'Rajasthan', x: 23, y: 34 },
+
+  { name: 'Puri (Jagannath Temple)', state: 'Odisha', x: 65, y: 49 },
+  { name: 'Bhubaneswar (Lingaraj Temple)', state: 'Odisha', x: 62, y: 46 },
+  { name: 'Konark (Sun Temple)', state: 'Odisha', x: 67, y: 48 },
+  { name: 'Chilika (Kalijai Temple)', state: 'Odisha', x: 62, y: 51 },
+  { name: 'Jajpur (Biraja Temple)', state: 'Odisha', x: 60, y: 43 },
+  { name: "Puri's Gundicha Temple", state: 'Odisha', x: 65.5, y: 49.5 },
+  { name: 'Baripada (Ma Ambika)', state: 'Odisha', x: 57, y: 41 },
+  { name: 'Bhubaneswar (Mukteshwar, Rajarani Temple)', state: 'Odisha', x: 63, y: 46.5 },
+  { name: 'Taratarini Temple, Ganjam', state: 'Odisha', x: 61, y: 52 },
+  { name: 'Cuttack (Chandi Temple)', state: 'Odisha', x: 61, y: 44.5 },
+
+  { name: 'Somnath (Jyotirlinga)', state: 'Gujarat', x: 15, y: 49 },
+  { name: 'Mallikarjuna, Srisailam (Jyotirlinga)', state: 'Andhra Pradesh', x: 42, y: 59 },
+  { name: 'Mahakaleshwar, Ujjain (Jyotirlinga)', state: 'Madhya Pradesh', x: 27, y: 42 },
+  { name: 'Omkareshwar (Jyotirlinga)', state: 'Madhya Pradesh', x: 26, y: 45 },
+  { name: 'Bhimashankar (Jyotirlinga)', state: 'Maharashtra', x: 22, y: 50 },
+  { name: 'Trimbakeshwar, Nashik (Jyotirlinga)', state: 'Maharashtra', x: 23, y: 47 },
+  { name: 'Vaidyanath, Deoghar (Jyotirlinga)', state: 'Jharkhand', x: 51, y: 43 },
+  { name: 'Nageshwar, Dwarka (Jyotirlinga)', state: 'Gujarat', x: 13, y: 45 },
+  { name: 'Grishneshwar, Aurangabad (Jyotirlinga)', state: 'Maharashtra', x: 27, y: 51 },
+];
+
+// Markers light up as a north-to-south sweep rather than in array order, so the
+// map fills the way the eye travels down it.
+const LIGHT_ORDER = new Map(
+  [...TEMPLES]
+    .sort((a, b) => a.y - b.y)
+    .map((temple, i) => [temple.name, 320 + i * 20]),
+);
+
+// 8-point compass star matching the logo's star mark
+const STAR_PATH =
+  'M10 0 L10.77 8.15 L14.24 5.76 L11.85 9.23 L20 10 L11.85 10.77 L14.24 14.24 L10.77 11.85 L10 20 L9.23 11.85 L5.76 14.24 L8.15 10.77 L0 10 L8.15 9.23 L5.76 5.76 L9.23 8.15 Z';
+---
+
+<div class="overflow-hidden rounded-2xl bg-emerald-950 p-6 text-white sm:p-8 lg:p-10">
+  <div class="grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-14">
+    <div class="relative order-2 mx-auto w-full max-w-md" data-reveal="zoom" style="aspect-ratio: 439 / 568;">
+      <div
+        class="absolute inset-0 bg-gold-500"
+        style="mask-image: url(/images/india-map.png); -webkit-mask-image: url(/images/india-map.png); mask-size: 100% 100%; -webkit-mask-size: 100% 100%; mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;"
+      >
+      </div>
+      {TEMPLES.map((temple) => (
+        <svg
+          viewBox="0 0 20 20"
+          width="18"
+          height="18"
+          class="absolute -translate-x-1/2 -translate-y-1/2 text-gold-300"
+          data-reveal="star"
+          style={`left: ${temple.x}%; top: ${temple.y}%; --reveal-delay: ${LIGHT_ORDER.get(temple.name)}ms;`}
+        >
+          <title>{temple.name} — {temple.state}</title>
+          <path d={STAR_PATH} fill="currentColor" />
+        </svg>
+      ))}
+    </div>
+
+    <div class="order-1" data-reveal="up">
+      <h3 class="font-brand text-2xl leading-tight sm:text-3xl">
+        Sacred Journeys, Thoughtfully Planned
+      </h3>
+      <p class="mt-3 text-xs leading-relaxed text-white/80 sm:text-sm">
+        Travel to India's most sacred temples and pilgrimage sites through journeys planned
+        around what matters most to you — your chosen destinations, dates, and pace, supported by
+        reliable transportation and on-ground assistance.
+      </p>
+
+      <ul class="mt-6 flex flex-wrap gap-2 border-t border-white/10 pt-5">
+        {TOUR_TYPES.map((title) => (
+          <li class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-3 py-1.5 text-xs text-white/90">
+            <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-400"></span>
+            {title}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</div>

@@ -17,31 +17,27 @@ const currentPath = Astro.url.pathname;
 
 const linkClass = (href: string) =>
   [
-    'flex h-full items-center px-4 transition-all duration-200 active:scale-95',
-    transparent ? 'text-white hover:bg-white/10' : 'text-black hover:bg-emerald-50',
-    currentPath === href ? (transparent ? 'bg-white/15 font-semibold' : 'bg-emerald-100 font-semibold') : '',
+    'flex h-full items-center rounded-b-xl px-4 transition-all duration-200 active:scale-95',
+    transparent ? 'text-white hover:bg-white/10' : 'text-black hover:bg-gold-100',
+    currentPath === href ? (transparent ? 'bg-white/15 font-semibold' : 'bg-gold-200 font-semibold') : '',
   ].join(' ');
 ---
 
-<header class:list={['top-0 z-50 flex h-12 items-stretch transition-colors duration-300', transparent ? 'nav-transparent fixed inset-x-0 border-transparent bg-transparent' : 'sticky border-b border-emerald-100 bg-cream']}>
-  <div class="flex flex-1 items-stretch justify-between gap-6 px-4 sm:px-6">
+<header class:list={['top-0 z-50 flex h-12 items-stretch transition-colors duration-300', transparent ? 'nav-transparent fixed inset-x-0 border-transparent bg-transparent' : 'sticky border-b border-gold-200/60 bg-cream']}>
+  <div class="flex flex-1 items-stretch justify-between gap-6 pl-4 pr-4 sm:pl-6 sm:pr-0">
     <a href="/" class="flex shrink-0 items-center">
-      {transparent ? (
-        <span class="grid items-center">
-          <span data-logo-icon-group class="relative col-start-1 row-start-1 flex items-center transition-opacity duration-500">
-            <img src={SITE.logoWhite} alt={SITE.name} class="h-7 w-auto" data-logo-base />
-            <img src={SITE.logo} alt="" class="absolute inset-0 h-7 w-auto opacity-0 transition-opacity duration-300" data-logo-scrolled />
-          </span>
-          <span data-logo-text class="font-brand col-start-1 row-start-1 flex items-center whitespace-nowrap text-base uppercase tracking-wide opacity-0 transition-opacity duration-500">
-            {SITE.name}
-          </span>
-        </span>
-      ) : (
-        <img src={SITE.logo} alt={SITE.name} class="h-7 w-auto" />
-      )}
+      <p
+        data-logo-text
+        class:list={[
+          'font-brand whitespace-nowrap text-xs uppercase tracking-[0.25em] sm:text-sm sm:tracking-[0.35em]',
+          transparent ? 'text-white' : 'text-emerald-950',
+        ]}
+      >
+        {SITE.name}
+      </p>
     </a>
 
-    <ul class="hidden flex-1 items-stretch justify-end text-xs font-medium sm:flex">
+    <ul id="nav-links" class="hidden flex-1 items-stretch justify-end text-xs font-medium sm:flex">
       {NAV_LINKS.map((link) => (
         <li class="flex">
           <a href={link.href} class={linkClass(link.href)}>{link.label}</a>
@@ -69,7 +65,8 @@ const linkClass = (href: string) =>
     href={`https://wa.me/${SITE.whatsapp}`}
     target="_blank"
     rel="noopener"
-    class="hidden shrink-0 items-center justify-center bg-emerald-800 px-7 text-xs font-semibold text-white transition-all duration-200 hover:bg-emerald-900 active:scale-95 sm:flex"
+    data-nav-cta
+    class="hidden shrink-0 items-center justify-center rounded-bl-xl bg-emerald-950 px-7 text-xs font-semibold text-gold-400 transition-all duration-200 hover:bg-emerald-900 active:scale-95 sm:flex"
   >
     Contact us
   </a>
@@ -78,7 +75,7 @@ const linkClass = (href: string) =>
     id="nav-menu"
     class:list={[
       'absolute inset-x-0 top-full flex max-h-0 flex-col overflow-hidden rounded-b-2xl text-base font-medium opacity-0 shadow-lg transition-all duration-300 ease-in-out sm:hidden',
-      transparent ? 'divide-y divide-white/10 border-t border-white/20 bg-emerald-950/95 text-white' : 'divide-y divide-emerald-100 border-t border-emerald-100 bg-cream text-black',
+      transparent ? 'divide-y divide-white/10 border-t border-white/20 bg-emerald-950/95 text-white' : 'divide-y divide-gold-200/60 border-t border-gold-200/60 bg-cream text-black',
     ]}
   >
     {[...NAV_LINKS, { href: `https://wa.me/${SITE.whatsapp}`, label: 'Contact us' }].map((link) => (
@@ -87,8 +84,8 @@ const linkClass = (href: string) =>
           href={link.href}
           class:list={[
             'block px-5 py-4 transition-all duration-200 active:scale-95',
-            transparent ? 'hover:bg-white/10' : 'hover:bg-emerald-50',
-            currentPath === link.href && (transparent ? 'bg-white/15 font-semibold' : 'bg-emerald-100 font-semibold'),
+            transparent ? 'hover:bg-white/10' : 'hover:bg-gold-100',
+            currentPath === link.href && (transparent ? 'bg-white/15 font-semibold' : 'bg-gold-200 font-semibold'),
           ]}
         >
           {link.label}
@@ -102,37 +99,28 @@ const linkClass = (href: string) =>
   <style>
     header.nav-transparent.nav-scrolled {
       background-color: var(--color-cream);
-      border-color: var(--color-emerald-100);
+      border-color: color-mix(in srgb, var(--color-gold-200) 60%, transparent);
     }
-    header.nav-transparent.nav-scrolled a,
+    /* The Contact us button keeps its own green-and-gold colours once scrolled. */
+    header.nav-transparent.nav-scrolled a:not([data-nav-cta]),
     header.nav-transparent.nav-scrolled #nav-toggle,
     header.nav-transparent.nav-scrolled #nav-menu {
       color: #000;
     }
-    header.nav-transparent.nav-scrolled a:hover {
-      background-color: var(--color-emerald-50);
+    header.nav-transparent.nav-scrolled a:not([data-nav-cta]):hover {
+      background-color: var(--color-gold-100);
     }
-    header.nav-transparent.nav-scrolled a.font-semibold {
-      background-color: var(--color-emerald-100);
+    header.nav-transparent.nav-scrolled #nav-links a.font-semibold,
+    header.nav-transparent.nav-scrolled #nav-menu a.font-semibold {
+      background-color: var(--color-gold-200);
     }
     header.nav-transparent.nav-scrolled #nav-menu {
-      border-color: var(--color-emerald-100);
+      border-color: color-mix(in srgb, var(--color-gold-200) 60%, transparent);
       background-color: var(--color-cream);
-    }
-    header.nav-transparent.nav-scrolled [data-logo-base] {
-      opacity: 0;
-    }
-    header.nav-transparent.nav-scrolled [data-logo-scrolled] {
-      opacity: 1;
     }
     header.nav-transparent [data-logo-text] {
       color: #fff;
-    }
-    header.nav-transparent.logo-is-text [data-logo-icon-group] {
-      opacity: 0;
-    }
-    header.nav-transparent.logo-is-text [data-logo-text] {
-      opacity: 1;
+      transition: color 0.3s ease;
     }
     header.nav-transparent.nav-scrolled [data-logo-text] {
       color: #000;
@@ -145,9 +133,17 @@ const linkClass = (href: string) =>
   const heroPin = document.getElementById('hero-pin');
 
   if (header?.classList.contains('nav-transparent') && heroPin) {
+    // Switch to the solid/dark-text nav once the hero's own scroll-dim overlay has
+    // washed the photo mostly light — not only once the whole pin has scrolled past —
+    // since the background under the nav turns light well before that point.
+    const NAV_SOLID_THRESHOLD = 0.28;
+
     function updateNavScrolled() {
+      const scrollable = heroPin!.offsetHeight - window.innerHeight;
       const rect = heroPin!.getBoundingClientRect();
-      header!.classList.toggle('nav-scrolled', rect.bottom <= header!.offsetHeight);
+      const progress = scrollable > 0 ? Math.min(Math.max(-rect.top / scrollable, 0), 1) : 0;
+      const pastPin = rect.bottom <= header!.offsetHeight;
+      header!.classList.toggle('nav-scrolled', progress >= NAV_SOLID_THRESHOLD || pastPin);
     }
 
     let navTicking = false;
@@ -166,10 +162,6 @@ const linkClass = (href: string) =>
     );
 
     updateNavScrolled();
-
-    window.addEventListener('charrish:hero-plane-revealed', ((e: CustomEvent<boolean>) => {
-      header!.classList.toggle('logo-is-text', e.detail);
-    }) as EventListener);
   }
 
   const toggle = document.getElementById('nav-toggle');

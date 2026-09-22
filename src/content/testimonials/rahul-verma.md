@@ -1,6 +1,6 @@
 ---
 name: Rahul Verma
-location: Bengaluru
+occupation: Physician
 rating: 5
 ---
 

@@ -13,7 +13,7 @@ export async function handler(event, context) {
   const supabase = getSupabaseClient();
   const { data, error } = await supabase
     .from('reviews')
-    .select('id, name, rating, message, created_at')
+    .select('id, name, occupation, rating, message, photo_url, created_at')
     .eq('status', 'pending')
     .order('created_at', { ascending: true });
 

@@ -1,6 +1,6 @@
 ---
 name: Priya Nair
-location: Chennai
+occupation: Architect
 rating: 5
 ---
 

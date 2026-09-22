@@ -1,0 +1,81 @@
+---
+// Decorative dotted flight path drawn behind the about copy. Sized with `slice`
+// so the curve keeps its shape at any section width and simply crops at the edges.
+
+// 8-point compass star matching the logo's star mark, dropped along the route as
+// waypoints.
+const STAR_PATH =
+  'M10 0 L10.77 8.15 L14.24 5.76 L11.85 9.23 L20 10 L11.85 10.77 L14.24 14.24 L10.77 11.85 L10 20 L9.23 11.85 L5.76 14.24 L8.15 10.77 L0 10 L8.15 9.23 L5.76 5.76 L9.23 8.15 Z';
+
+const ROUTE_PATH =
+  'M -80 470 C 120 520 210 300 400 292 C 560 285 640 400 800 330 C 960 262 1040 110 1280 150';
+
+const SECOND_PATH = 'M -80 180 C 180 90 330 150 520 110 C 700 72 780 130 960 96';
+
+// Short spur tucked into the bottom-right corner. Kept above y≈520 because the
+// `slice` crop trims roughly the bottom 75 units at desktop section proportions.
+const CORNER_PATH = 'M 930 545 C 990 500 1050 522 1110 472 C 1150 438 1200 442 1270 420';
+
+// Sampled off the two curves, and deliberately kept outside x 320–880 — that band
+// is where the centred copy sits, and a star behind a line of text reads as a
+// smudge rather than a waypoint.
+const WAYPOINTS = [
+  { x: 129, y: 426, size: 24 },
+  { x: 282, y: 325, size: 16 },
+  { x: 938, y: 247, size: 18 },
+  { x: 1099, y: 159, size: 28 },
+  { x: 203, y: 127, size: 14 },
+  { x: 934, y: 100, size: 20 },
+  { x: 1110, y: 472, size: 16 },
+];
+---
+
+<div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+  {/* Slicing at phone widths drags the curve across the copy, so it's held back
+      there and only comes up to full strength once the section is wide. */}
+  <svg
+    viewBox="0 0 1200 600"
+    preserveAspectRatio="xMidYMid slice"
+    fill="none"
+    class="h-full w-full text-gold-400/15 sm:text-gold-400/25"
+  >
+    <path
+      d={ROUTE_PATH}
+      stroke="currentColor"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      stroke-dasharray="2 10"
+      class="route-line"
+    />
+    <path
+      d={SECOND_PATH}
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-dasharray="2 10"
+      class="route-line"
+      style="animation-duration: 34s; opacity: 0.6;"
+    />
+    <path
+      d={CORNER_PATH}
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-dasharray="2 10"
+      class="route-line"
+      style="animation-duration: 28s; opacity: 0.8;"
+    />
+
+    {WAYPOINTS.map((point) => (
+      <svg
+        x={point.x - point.size / 2}
+        y={point.y - point.size / 2}
+        width={point.size}
+        height={point.size}
+        viewBox="0 0 20 20"
+      >
+        <path d={STAR_PATH} fill="currentColor" />
+      </svg>
+    ))}
+  </svg>
+</div>

@@ -22,7 +22,7 @@ Site runs at `http://localhost:4321`.
 ## One-time setup before deploying
 
 1. **Netlify site:** connect this repo, enable **Identity** and **Git Gateway** (Site settings → Identity), and invite yourself as the first Identity user — that account logs into both `/admin` (Decap CMS) and `/admin/reviews`.
-2. **Supabase project:** create one, then run [`supabase/schema.sql`](supabase/schema.sql) in the SQL editor to create the `reviews` table.
+2. **Supabase project:** create one, then run [`supabase/schema.sql`](supabase/schema.sql) in the SQL editor — this creates the `reviews` table (with an optional `photo_url` column for reviewer-submitted photos) and a public `review-photos` storage bucket. If you already ran this file before photo uploads were added, just re-run it; the new statements are safe to re-run (`add column if not exists`, `on conflict do nothing`).
 3. **Environment variables** (Netlify site settings → Environment variables, see [`.env.example`](.env.example)):
    - `SUPABASE_URL`
    - `SUPABASE_SERVICE_ROLE_KEY` (Project Settings → API in Supabase — keep this secret, it's only ever used server-side inside Netlify Functions)

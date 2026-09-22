@@ -1,6 +1,6 @@
 ---
 name: Sara Thomas
-location: Bengaluru
+occupation: Teacher
 rating: 4
 ---
 
