@@ -12,6 +12,9 @@ const destinations = defineCollection({
     duration: z.string(),
     featured: z.boolean().default(false),
 
+    // Drives the Tours menu and the three category listings.
+    category: z.enum(['domestic', 'temple', 'international']).default('domestic'),
+
     // Trip logistics (optional — only used for detailed tour packages)
     route: z.string().optional(),
     departureDates: z.string().optional(),
