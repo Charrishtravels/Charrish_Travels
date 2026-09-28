@@ -74,6 +74,11 @@
 
   --color-cream: #fbf9f4;
 
+  /* Deep navy for the dark surfaces, with gold as the accent on top of it. */
+  --color-navy-700: #1d4463;
+  --color-navy-800: #16324b;
+  --color-navy-900: #0f2537;
+
   /* Accent gold: anchor at 500, sampled directly from the logo (the crescent/star/
      plane's dominant fill, #B58E52 by traced path area). */
   --color-gold-50: hsl(36 55% 96%);

@@ -30,7 +30,7 @@ const FEATURES = [
     </div>
 
     <div class="order-1 lg:order-2" data-reveal="up">
-      <h3 class="font-brand text-2xl leading-tight text-emerald-950 sm:text-3xl">
+      <h3 class="font-brand text-2xl leading-tight text-gold-950 sm:text-3xl">
         Discover More With Local Experts
       </h3>
       <p class="mt-3 text-xs leading-relaxed text-black sm:text-sm">
@@ -42,11 +42,11 @@ const FEATURES = [
       <ul class="mt-6 flex flex-wrap gap-2 border-t border-black/10 pt-5">
         {FEATURES.map((f, i) => (
           <li
-            class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-black/[0.02] px-3 py-1.5 text-xs font-medium text-emerald-950"
+            class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-black/[0.02] px-3 py-1.5 text-xs font-medium text-gold-950"
             data-reveal="left"
             style={`--reveal-delay: ${380 + i * 90}ms`}
           >
-            <span class="font-brand text-sm text-gold-500">{f.n}</span>
+            <span class="font-brand text-sm text-emerald-800">{f.n}</span>
             {f.title}
           </li>
         ))}

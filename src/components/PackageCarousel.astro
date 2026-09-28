@@ -21,12 +21,12 @@ const { destinations } = Astro.props;
     ))}
   </div>
 
-  <div class="flex items-center justify-center gap-4">
+  <div class:list={['flex items-center justify-center gap-4', destinations.length < 2 && 'hidden']}>
     <button
       type="button"
       data-dir="prev"
       aria-label="Previous package"
-      class="flex h-10 w-10 items-center justify-center rounded-full border border-gold-400/70 text-emerald-950 transition-colors hover:bg-emerald-950 hover:text-gold-400"
+      class="flex h-10 w-10 items-center justify-center rounded-full border border-emerald-800/25 text-gold-950 transition-colors hover:bg-navy-900 hover:text-gold-400"
     >
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
@@ -34,14 +34,14 @@ const { destinations } = Astro.props;
     </button>
     <div class="flex items-center gap-1.5" aria-hidden="true">
       {destinations.map((_, i) => (
-        <span data-dot={i} class="h-1.5 w-1.5 rounded-full bg-emerald-950/20 transition-all duration-300"></span>
+        <span data-dot={i} class="h-1.5 w-1.5 rounded-full bg-navy-800/20 transition-all duration-300"></span>
       ))}
     </div>
     <button
       type="button"
       data-dir="next"
       aria-label="Next package"
-      class="flex h-10 w-10 items-center justify-center rounded-full border border-gold-400/70 text-emerald-950 transition-colors hover:bg-emerald-950 hover:text-gold-400"
+      class="flex h-10 w-10 items-center justify-center rounded-full border border-emerald-800/25 text-gold-950 transition-colors hover:bg-navy-900 hover:text-gold-400"
     >
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4">
         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
@@ -107,13 +107,13 @@ const { destinations } = Astro.props;
         card.style.pointerEvents = pointerEvents;
       });
 
-      // Active dot stretches into a gold pill; the rest stay small and green.
+      // Active dot stretches into a bright gold pill; the rest stay small and dim.
       dots.forEach((dot, i) => {
         const isActive = i === active;
         dot.classList.toggle('w-5', isActive);
         dot.classList.toggle('bg-gold-500', isActive);
         dot.classList.toggle('w-1.5', !isActive);
-        dot.classList.toggle('bg-emerald-950/20', !isActive);
+        dot.classList.toggle('bg-navy-800/20', !isActive);
       });
     }
 

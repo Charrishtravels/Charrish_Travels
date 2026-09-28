@@ -1,7 +1,9 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+import RouteWatermark from '../components/RouteWatermark.astro';
 import { SITE } from '../consts';
+
 import southIndianTempleTank from '../assets/hero/south-indian-temple-tank.jpg';
 import watArunBangkok from '../assets/hero/wat-arun-bangkok.jpg';
 import hawaMahalJaipur from '../assets/hero/hawa-mahal-jaipur.jpg';
@@ -15,6 +17,34 @@ import heritageTourOfIndia from '../assets/heritage-tour-of-india.jpg';
 // 8-point compass star matching the logo's star mark.
 const STAR_PATH =
   'M10 0 L10.77 8.15 L14.24 5.76 L11.85 9.23 L20 10 L11.85 10.77 L14.24 14.24 L10.77 11.85 L10 20 L9.23 11.85 L5.76 14.24 L8.15 10.77 L0 10 L8.15 9.23 L5.76 5.76 L9.23 8.15 Z';
+
+const PROCESS = [
+  {
+    n: '01',
+    title: 'We listen first',
+    body: 'Who is travelling, what the trip is for, the pace that suits you, the budget you have in mind, and the things you would rather not do.',
+  },
+  {
+    n: '02',
+    title: 'We draft a route',
+    body: 'A first itinerary with real distances, honest travel times and stays chosen for where you actually need to be each night.',
+  },
+  {
+    n: '03',
+    title: 'We reshape it with you',
+    body: 'Cut what does not excite you. We swap, re-pace and rebalance until the plan reads like your trip rather than ours.',
+  },
+  {
+    n: '04',
+    title: 'We arrange everything',
+    body: 'Vehicles, hotels, guides, visas, darshan assistance and the logistics between them — booked and confirmed before you leave.',
+  },
+  {
+    n: '05',
+    title: 'We stay reachable',
+    body: 'One point of contact from the first message to your return, so a change of plan on the road is a phone call, not a problem.',
+  },
+];
 
 const PHOTOS = [
   { src: dubai, alt: 'Burj Al Arab at dusk, Dubai' },
@@ -77,28 +107,29 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
         {/* Threshold: joins the outline's two legs and runs past them on wider
             screens, so the arch stands on a floor instead of stopping in mid-air. */}
         <div class="absolute -inset-x-3 -bottom-3 h-0.5 bg-gold-400 sm:-inset-x-24 sm:-bottom-4 sm:bg-gradient-to-r sm:from-transparent sm:via-gold-400 sm:to-transparent"></div>
-        <div class="relative flex flex-col items-center rounded-t-full bg-emerald-950 px-8 pt-24 pb-12 text-center shadow-2xl sm:pt-28 sm:pb-14">
+        <div class="relative flex flex-col items-center rounded-t-full bg-navy-800 px-8 pt-24 pb-12 text-center shadow-2xl sm:pt-28 sm:pb-14">
           <svg viewBox="0 0 20 20" class="h-7 w-7 text-gold-400" aria-hidden="true">
             <path d={STAR_PATH} fill="currentColor" />
           </svg>
-          <h1 class="font-brand mt-5 text-4xl leading-[1.1] text-white sm:text-5xl">Where journeys begin</h1>
-          <p class="font-brand mt-4 max-w-[16rem] text-lg leading-snug text-gold-300 sm:max-w-none">
+          <h1 class="font-brand mt-5 text-3xl leading-[1.15] text-white sm:text-4xl">
             Travel should feel personal, not packaged.
-          </p>
+          </h1>
         </div>
       </div>
     </div>
   </section>
 
   <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
-    <div class="grid gap-10 lg:grid-cols-2 lg:gap-20" data-reveal="up">
-      <p class="font-brand text-2xl leading-snug text-emerald-950 sm:text-3xl lg:text-4xl">
+    {/* The opening line runs the full measure rather than a half column, so it
+        breaks two or three times instead of five. */}
+    <div data-reveal="up">
+      <p class="font-brand max-w-5xl text-2xl leading-snug text-gold-950 sm:text-3xl">
         {SITE.name} was built with a simple belief — every journey deserves thoughtful planning,
         honest communication, and dedicated support.
       </p>
 
-      <div>
-        <div class="space-y-4 border-l-2 border-gold-400/60 pl-5 text-xs leading-relaxed text-black sm:text-sm">
+      <div class="mt-10">
+        <div class="max-w-[62ch] space-y-4 border-l-2 border-gold-400/60 pl-5 text-xs leading-relaxed text-black sm:text-sm">
           <p>
             From family holidays and honeymoon trips to group tours, pilgrimage journeys, and
             international vacations, we create personalized travel experiences based on your needs,
@@ -112,7 +143,7 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
         </div>
 
         <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-4">
-          <p class="inline-flex items-center gap-2 text-xs font-medium text-gold-600">
+          <p class="inline-flex items-center gap-2 text-xs font-medium text-emerald-800">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true">
               <path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z" />
               <circle cx="12" cy="10" r="2.5" />
@@ -120,24 +151,96 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
             Hyderabad, India
           </p>
           <a
-            href="/destinations"
-            class="inline-flex w-fit items-center gap-2 rounded-full border border-gold-400/60 bg-emerald-800 px-6 py-3 text-xs font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-emerald-900 active:scale-95"
+            href="/tours"
+            class="inline-flex w-fit items-center gap-2 rounded-full bg-gold-500 px-6 py-3 text-xs font-semibold text-gold-950 transition-all duration-200 hover:scale-105 hover:bg-gold-400 active:scale-95"
           >
-            View our packages
-            <span class="text-gold-400" aria-hidden="true">→</span>
+            View our tours
+            <span class="text-gold-950/50" aria-hidden="true">→</span>
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:pb-24">
+  {/* Customisation is the core service, so it takes the page's navy band. What
+      keeps it readable is the structure, not the background: one column at a
+      comfortable measure, the process as full-width rows, and larger type than
+      the light sections use, since body copy on dark needs the extra size. */}
+  <section class="relative overflow-hidden bg-navy-800 px-4 py-16 text-white sm:px-6 lg:py-24">
+    <RouteWatermark />
+    <div class="relative mx-auto max-w-7xl">
+      <div data-reveal="up">
+        <h2 class="font-brand text-3xl leading-tight sm:text-4xl lg:text-5xl">
+          Every itinerary starts as an empty page
+        </h2>
+        {/* Side by side rather than one narrow column, so the copy fills the band
+            without any line running long. */}
+        <div class="mt-8 grid gap-8 text-sm leading-relaxed text-white/85 sm:text-base lg:grid-cols-2 lg:gap-14">
+          <p class="max-w-[62ch]">
+            Most agencies begin with a finished package and look for travellers to fill it. We began
+            the other way round, because the trips people told us about afterwards were never the
+            ones printed in a brochure. They were the morning the family reached the temple before
+            the crowds. The afternoon nobody rushed anyone. The evening a driver knew a quieter road
+            home.
+          </p>
+          <p class="max-w-[62ch]">
+            Those moments don't survive a fixed departure. They come from knowing who is travelling —
+            a grandparent who needs the shorter walk, a couple who would rather see one city slowly
+            than four in a blur, a group of ten who want to stay together without moving as one
+            block. So we stopped selling packages and started building itineraries, one at a time,
+            around the people taking them.
+          </p>
+        </div>
+      </div>
+
+      {/* The journey line and the closing quote share the width, so neither the
+          steps nor the band end up with an empty half. */}
+      <div class="mt-16 grid gap-14 lg:mt-20 lg:grid-cols-[minmax(0,1fr)_24rem] lg:gap-16">
+      <ol class="relative border-l border-white/20 pl-10 sm:pl-14">
+        {PROCESS.map((step) => (
+          <li class="relative pb-11 last:pb-0" data-reveal="up">
+            <span class="font-brand absolute top-0 -left-[3.3rem] flex h-9 w-9 items-center justify-center rounded-full border border-gold-400/70 bg-navy-900 text-sm text-gold-400 sm:-left-[4.4rem] sm:h-11 sm:w-11 sm:text-base">
+              {step.n}
+            </span>
+            <h3 class="font-brand text-xl leading-snug text-white sm:text-2xl">{step.title}</h3>
+            <p class="mt-2.5 max-w-[62ch] text-sm leading-relaxed text-white/75 sm:text-base">{step.body}</p>
+          </li>
+        ))}
+      </ol>
+
+      <aside
+        class="rounded-2xl bg-navy-900 px-6 py-8 sm:px-8 lg:sticky lg:top-24 lg:self-start"
+        data-reveal="up"
+      >
+        <blockquote class="border-l-2 border-gold-400 pl-5">
+          <p class="font-brand text-xl leading-snug text-white">
+            A fixed package asks you to adapt to it. A tailored one adapts to you — and that is the
+            difference between a holiday you took and a holiday that was yours.
+          </p>
+          <p class="mt-4 text-sm leading-relaxed text-white/75">
+            It costs us more time. It is also the only way we know how to do this well.
+          </p>
+        </blockquote>
+        <a
+          href={`https://wa.me/${SITE.whatsapp}`}
+          target="_blank"
+          rel="noopener"
+          class="mt-7 ml-5 inline-flex w-fit items-center gap-2 rounded-full bg-gold-500 px-6 py-3 text-xs font-semibold text-gold-950 transition-all duration-200 hover:scale-105 hover:bg-gold-400 active:scale-95"
+        >
+          Tell us about your trip
+        </a>
+      </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24">
     <div class="grid gap-6 md:grid-cols-2">
-      <div class="rounded-2xl border border-gold-300/70 p-6 sm:p-8" data-reveal="up">
-        <svg viewBox="0 0 20 20" class="h-5 w-5 text-gold-500" aria-hidden="true">
+      <div class="rounded-2xl border border-emerald-800/25 p-6 sm:p-8" data-reveal="up">
+        <svg viewBox="0 0 20 20" class="h-5 w-5 text-emerald-800" aria-hidden="true">
           <path d={STAR_PATH} fill="currentColor" />
         </svg>
-        <h2 class="font-brand mt-4 text-2xl text-emerald-950">More than just a booking</h2>
+        <h2 class="font-brand mt-4 text-2xl text-gold-950">More than just a booking</h2>
         <p class="mt-3 text-xs leading-relaxed text-black sm:text-sm">
           From planning to your return, our team stays connected to make your journey smooth and
           stress-free. We take care of the details so you can focus on creating unforgettable
@@ -145,7 +248,7 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
         </p>
       </div>
 
-      <div class="flex flex-col rounded-2xl bg-emerald-950 p-6 sm:p-8" data-reveal="up" style="--reveal-delay: 120ms">
+      <div class="flex flex-col rounded-2xl bg-navy-800 p-6 sm:p-8" data-reveal="up" style="--reveal-delay: 120ms">
         <svg viewBox="0 0 20 20" class="h-5 w-5 text-gold-400" aria-hidden="true">
           <path d={STAR_PATH} fill="currentColor" />
         </svg>

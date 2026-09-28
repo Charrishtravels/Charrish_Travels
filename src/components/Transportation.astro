@@ -18,7 +18,7 @@ const ROUTE = [
       left a dead band beside it. The text takes the surplus instead. */}
   <div class="grid gap-10 lg:grid-cols-[3fr_2fr] lg:items-center lg:gap-16">
     <div class="order-1" data-reveal="up">
-      <h3 class="font-brand text-2xl leading-tight text-emerald-950 sm:text-3xl">Transportation Isn't an Add-On</h3>
+      <h3 class="font-brand text-2xl leading-tight text-gold-950 sm:text-3xl">Transportation Isn't an Add-On</h3>
       <p class="mt-3 text-xs leading-relaxed text-black sm:text-sm">
         Strong destination-wise transportation arrangements, planned before you land. From a
         private sedan for two to a full coach for a group, we match the vehicle to your itinerary
@@ -30,22 +30,22 @@ const ROUTE = [
           row rhythm. Pills size to their text and wrap as whole units. */}
       <div class="mt-6 space-y-5 border-t border-black/10 pt-5">
         <div>
-          <p class="text-[11px] font-semibold tracking-[0.2em] text-gold-600 uppercase">Our Fleet</p>
+          <p class="text-[11px] font-semibold tracking-[0.2em] text-emerald-800 uppercase">Our Fleet</p>
           <ul class="mt-3 flex flex-wrap gap-2">
             {FLEET.map((item) => (
-              <li class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-black/[0.02] px-3 py-1.5 text-xs text-emerald-950">
-                <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500"></span>
+              <li class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-black/[0.02] px-3 py-1.5 text-xs text-gold-950">
+                <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-800"></span>
                 {item}
               </li>
             ))}
           </ul>
         </div>
         <div>
-          <p class="text-[11px] font-semibold tracking-[0.2em] text-gold-600 uppercase">Services</p>
+          <p class="text-[11px] font-semibold tracking-[0.2em] text-emerald-800 uppercase">Services</p>
           <ul class="mt-3 flex flex-wrap gap-2">
             {SERVICES.map((item) => (
-              <li class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-black/[0.02] px-3 py-1.5 text-xs text-emerald-950">
-                <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500"></span>
+              <li class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-black/[0.02] px-3 py-1.5 text-xs text-gold-950">
+                <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-800"></span>
                 {item}
               </li>
             ))}
@@ -63,7 +63,7 @@ const ROUTE = [
           sizes="(min-width: 1024px) 35vw, 90vw"
           class="absolute inset-0 h-full w-full object-cover"
         />
-        <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/10 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-800/95 via-navy-800/10 to-transparent"></div>
 
         <div class="absolute inset-x-0 bottom-0 px-3 pb-5 pt-10 sm:px-4">
           <div class="relative">
@@ -75,7 +75,7 @@ const ROUTE = [
                   data-reveal="zoom"
                   style={`--reveal-delay: ${450 + i * 110}ms`}
                 >
-                  <div class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 border-gold-400 bg-emerald-950 text-gold-400 sm:h-8 sm:w-8">
+                  <div class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 border-gold-400 bg-navy-800 text-gold-400 sm:h-8 sm:w-8">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5" set:html={stop.icon} />
                   </div>
                   <p class="text-[8px] font-semibold tracking-tight text-white uppercase sm:text-[9px] sm:tracking-normal">{stop.label}</p>
