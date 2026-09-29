@@ -2,7 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
-import statsBackground from '../assets/stats-background.jpg';
+import reviewBackground from '../assets/review-background-blue.jpg';
 
 const testimonials = await getCollection('testimonials');
 const rendered = await Promise.all(testimonials.map((t) => render(t)));
@@ -22,7 +22,7 @@ const columnB = testimonialCards.filter((_, i) => i % 2 === 1);
         <div class="overflow-hidden lg:h-full">
           <div class="marquee-track flex flex-col gap-4">
             {[...columnA, ...columnA].map(({ t, Content }) => (
-              <blockquote class="rounded-xl border border-emerald-800/25 bg-cream p-4 shadow-sm">
+              <blockquote class="rounded-xl border border-emerald-800/25 bg-cream p-4 shadow-review">
                 <div class="text-gold-500" aria-hidden="true">{'★'.repeat(t.data.rating)}{'☆'.repeat(5 - t.data.rating)}</div>
                 <div class="mt-2 text-xs text-gold-950/80 italic">
                   <Content />
@@ -38,7 +38,7 @@ const columnB = testimonialCards.filter((_, i) => i % 2 === 1);
         <div class="overflow-hidden lg:h-full">
           <div class="marquee-track marquee-track-reverse flex flex-col gap-4">
             {[...columnB, ...columnB].map(({ t, Content }) => (
-              <blockquote class="rounded-xl border border-emerald-800/25 bg-cream p-4 shadow-sm">
+              <blockquote class="rounded-xl border border-emerald-800/25 bg-cream p-4 shadow-review">
                 <div class="text-gold-500" aria-hidden="true">{'★'.repeat(t.data.rating)}{'☆'.repeat(5 - t.data.rating)}</div>
                 <div class="mt-2 text-xs text-gold-950/80 italic">
                   <Content />
@@ -55,8 +55,8 @@ const columnB = testimonialCards.filter((_, i) => i % 2 === 1);
     </div>
 
     <div class="relative mx-4 mb-12 overflow-hidden rounded-xl px-4 py-8 sm:mx-6 sm:px-6 lg:mt-20 lg:mr-6 lg:mb-0 lg:ml-0 lg:w-2/5 lg:self-center-safe lg:px-8">
-      <Image src={statsBackground} alt="" widths={[640, 1024, 1600]} sizes="100vw" class="absolute inset-0 h-full w-full object-cover object-[30%_60%]" />
-      <div class="absolute inset-0 bg-navy-800/60"></div>
+      <Image src={reviewBackground} alt="" widths={[640, 1024, 1600]} sizes="100vw" class="absolute inset-0 h-full w-full object-cover object-[55%_50%]" />
+      <div class="absolute inset-0 bg-navy-800/30"></div>
 
       <div class="relative flex flex-col">
         <h2 class="font-brand text-3xl text-white">Leave a review</h2>
