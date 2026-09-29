@@ -98,6 +98,14 @@
   font-weight: 500;
 }
 
+/* Review cards lift off the page on a sheer navy shadow rather than a neutral
+   grey one, so they sit in the same colour family as the rest of the site. */
+.shadow-review {
+  box-shadow:
+    0 1px 2px rgb(22 50 75 / 0.10),
+    0 14px 30px -12px rgb(22 50 75 / 0.38);
+}
+
 /* Scroll reveal.
    The hidden state is scoped to `.reveal-ready`, a class only added by script when
    IntersectionObserver exists and the visitor hasn't asked for reduced motion — so
