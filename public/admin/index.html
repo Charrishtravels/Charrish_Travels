@@ -14,6 +14,17 @@
     />
 
     <style>
+      /* Mirrors the palette tokens in src/styles/global.css. This page is served
+         as-is, outside the Tailwind build, so keep the two in step. */
+      :root {
+        --color-saffron: #d97706;
+        --color-saffron-deep: #b45309;
+        --color-page: #fff9f0;
+        --color-earth: #321b10;
+        --color-ink-muted: #665a50;
+        --color-on-saffron: #ffffff;
+      }
+
       @font-face {
         font-family: 'Redaction';
         src: url('/fonts/Redaction-Regular.woff2') format('woff2');
@@ -28,12 +39,13 @@
          config.yml `logo.src` — no need to hide/replace it, just brand
          everything around it. */
       [class*='StyledAuthenticationPage'] {
-        background: #fbf9f4 !important;
+        background: var(--color-page) !important;
         font-family: 'Geist', 'Segoe UI', sans-serif !important;
       }
 
       [class*='LoginButton'] {
-        background-color: #002d07 !important;
+        background-color: var(--color-saffron) !important;
+        color: var(--color-on-saffron) !important;
         border: none !important;
         border-radius: 9999px !important;
         padding: 0.75rem 2.25rem !important;
@@ -45,7 +57,7 @@
       }
 
       [class*='LoginButton']:hover {
-        background-color: #01450c !important;
+        background-color: var(--color-saffron-deep) !important;
       }
 
       .charrish-admin-brand {
@@ -58,7 +70,7 @@
         font-weight: 400;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #002d07;
+        color: var(--color-earth);
       }
 
       /* Header, once logged in: hide the quick-add dropdown, style our
@@ -86,12 +98,12 @@
         font-family: 'Geist', 'Segoe UI', sans-serif !important;
         font-size: 16px;
         font-weight: 500;
-        color: #7b8290;
+        color: var(--color-ink-muted);
         text-decoration: none;
       }
 
       .charrish-admin-nav-link:hover {
-        color: #002d07;
+        color: var(--color-saffron-deep);
       }
     </style>
   </head>

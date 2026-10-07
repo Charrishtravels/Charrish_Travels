@@ -164,30 +164,30 @@ const enquireHref = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(en
 <Layout title={title} description={summary}>
   <section class="relative isolate flex min-h-[26rem] items-end overflow-hidden sm:min-h-[32rem]">
     <img src={heroImage} alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
-    <div class="absolute inset-0 -z-10 bg-gradient-to-t from-navy-800 via-navy-800/55 to-navy-800/10"></div>
+    <div class="absolute inset-0 -z-10 bg-gradient-to-t from-page via-page/75 via-45% to-transparent"></div>
     <div class="mx-auto w-full max-w-6xl px-4 pb-20 sm:px-6 sm:pb-24" data-reveal="up">
-      <p class="flex items-center gap-2 text-[11px] font-semibold tracking-[0.2em] text-gold-300 uppercase">
-        <svg viewBox="0 0 20 20" class="h-3.5 w-3.5 text-gold-400" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+      <p class="flex items-center gap-2 text-[11px] font-semibold tracking-[0.2em] text-saffron-deep uppercase">
+        <svg viewBox="0 0 20 20" class="h-3.5 w-3.5 text-temple-gold" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
         {location}
       </p>
       {/* Unconstrained from lg up so a long title and its summary each sit on a
           single line; they still wrap on narrower screens. */}
-      <h1 class="font-brand mt-3 max-w-3xl text-4xl leading-tight text-white sm:text-5xl lg:max-w-none xl:text-6xl">{title}</h1>
-      <p class="mt-4 max-w-2xl text-xs leading-relaxed text-white/80 sm:text-sm lg:max-w-none">{summary}</p>
+      <h1 class="font-brand mt-3 max-w-3xl text-4xl leading-tight text-earth sm:text-5xl lg:max-w-none xl:text-6xl">{title}</h1>
+      <p class="mt-4 max-w-2xl text-xs leading-relaxed text-ink-muted sm:text-sm lg:max-w-none">{summary}</p>
     </div>
   </section>
 
   {/* Flex rather than grid: cells grow to fill each row, so any number of facts
       (two on the simpler packages, six on Tamil Nadu) leaves no empty gold cells. */}
   <div class="relative mx-auto -mt-12 max-w-6xl px-4 sm:px-6">
-    <dl class="flex flex-wrap gap-px overflow-hidden rounded-2xl border border-emerald-800/25 bg-emerald-800/15 shadow-lg">
+    <dl class="flex flex-wrap gap-px overflow-hidden rounded-2xl border border-line bg-line shadow-lg">
       {quickFacts.map((fact) => (
-        <div class="min-w-[9rem] flex-1 basis-[9rem] bg-cream px-5 py-4">
-          <dt class="flex items-center gap-1.5 text-[10px] font-semibold tracking-[0.18em] text-emerald-800 uppercase">
+        <div class="min-w-[9rem] flex-1 basis-[9rem] bg-card px-5 py-4">
+          <dt class="flex items-center gap-1.5 text-[10px] font-semibold tracking-[0.18em] text-maroon uppercase">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5" aria-hidden="true" set:html={fact.icon} />
             {fact.label}
           </dt>
-          <dd class="mt-1 text-sm font-medium text-gold-950">{fact.value}</dd>
+          <dd class="mt-1 text-sm font-medium text-ink">{fact.value}</dd>
         </div>
       ))}
     </dl>
@@ -196,33 +196,33 @@ const enquireHref = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(en
   <div class="mx-auto grid max-w-6xl gap-12 px-4 py-14 sm:px-6 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-16 lg:py-20">
     <div class="space-y-14">
       <section data-reveal="up">
-        <h2 class="font-brand flex items-center gap-2.5 text-3xl text-gold-950">
-          <svg viewBox="0 0 20 20" class="h-5 w-5 shrink-0 text-emerald-800" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+        <h2 class="font-brand flex items-center gap-2.5 text-3xl text-earth">
+          <svg viewBox="0 0 20 20" class="h-5 w-5 shrink-0 text-saffron" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
           Overview
         </h2>
-        <div class="mt-4 space-y-3 text-xs leading-relaxed text-black/80 sm:text-sm">
+        <div class="mt-4 space-y-3 text-xs leading-relaxed text-ink-muted sm:text-sm">
           <Content />
         </div>
       </section>
 
       {highlights.length > 0 && (
         <section data-reveal="up">
-          <h2 class="font-brand flex items-center gap-2.5 text-3xl text-gold-950">
-            <svg viewBox="0 0 20 20" class="h-5 w-5 shrink-0 text-emerald-800" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+          <h2 class="font-brand flex items-center gap-2.5 text-3xl text-earth">
+            <svg viewBox="0 0 20 20" class="h-5 w-5 shrink-0 text-saffron" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
             Tour highlights
           </h2>
           <ul class="mt-5 grid gap-x-8 gap-y-3.5 sm:grid-cols-2">
             {highlightItems.map((h) => (
-              <li class="flex items-start gap-2.5 text-xs text-gold-950 sm:text-sm">
-                <svg viewBox="0 0 20 20" class="mt-1 h-3 w-3 shrink-0 text-emerald-800" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+              <li class="flex items-start gap-2.5 text-xs text-ink sm:text-sm">
+                <svg viewBox="0 0 20 20" class="mt-1 h-3 w-3 shrink-0 text-temple-gold" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
                 <span>
                   {h.main}
                   {h.mustVisit && (
-                    <span class="ml-1.5 inline-block rounded-full bg-navy-800 px-2 py-0.5 align-middle text-[9px] font-semibold tracking-wider text-gold-400 uppercase">
+                    <span class="ml-1.5 inline-block rounded-full bg-maroon px-2 py-0.5 align-middle text-[9px] font-semibold tracking-wider text-on-dark uppercase">
                       Must visit
                     </span>
                   )}
-                  {h.sub && <span class="mt-0.5 block text-xs text-black/55">{h.sub}</span>}
+                  {h.sub && <span class="mt-0.5 block text-xs text-ink-muted">{h.sub}</span>}
                 </span>
               </li>
             ))}
@@ -231,68 +231,68 @@ const enquireHref = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(en
       )}
 
       {specialExperience && (
-        <section class="rounded-2xl bg-navy-800 p-6 sm:p-8" data-reveal="up">
-          <p class="flex items-center gap-2 text-[10px] font-semibold tracking-[0.2em] text-gold-400 uppercase">
+        <section class="rounded-2xl bg-sand p-6 sm:p-8" data-reveal="up">
+          <p class="flex items-center gap-2 text-[10px] font-semibold tracking-[0.2em] text-saffron-deep uppercase">
             <svg viewBox="0 0 20 20" class="h-3.5 w-3.5" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
             Special experience
           </p>
-          <h2 class="font-brand mt-3 text-2xl text-white sm:text-3xl">{specialExperience.title}</h2>
-          <p class="mt-3 text-xs leading-relaxed text-white/80 sm:text-sm">{specialExperience.body}</p>
+          <h2 class="font-brand mt-3 text-2xl text-earth sm:text-3xl">{specialExperience.title}</h2>
+          <p class="mt-3 text-xs leading-relaxed text-ink-muted sm:text-sm">{specialExperience.body}</p>
         </section>
       )}
 
       {itinerary.length > 0 && (
         <section>
-          <h2 class="font-brand flex items-center gap-2.5 text-3xl text-gold-950" data-reveal="up">
-            <svg viewBox="0 0 20 20" class="h-5 w-5 shrink-0 text-emerald-800" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+          <h2 class="font-brand flex items-center gap-2.5 text-3xl text-earth" data-reveal="up">
+            <svg viewBox="0 0 20 20" class="h-5 w-5 shrink-0 text-saffron" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
             Day-by-day itinerary
           </h2>
 
-          <ol class="relative mt-6 space-y-3 before:absolute before:top-4 before:bottom-4 before:left-[1.1rem] before:w-px before:bg-emerald-800/25">
+          <ol class="relative mt-6 space-y-3 before:absolute before:top-4 before:bottom-4 before:left-[1.1rem] before:w-px before:bg-line">
             {days.map((day, i) => (
               <li class="relative pl-12 sm:pl-14" data-reveal="up">
-                <span class="font-brand absolute top-3.5 left-0 flex h-9 w-9 items-center justify-center rounded-full border border-gold-400 bg-navy-800 text-sm text-gold-400">
+                <span class="font-brand absolute top-3.5 left-0 flex h-9 w-9 items-center justify-center rounded-full border border-temple-gold bg-card text-sm text-temple-gold">
                   {day.day}
                 </span>
-                <details class="itinerary-day group rounded-2xl border border-black/10 bg-white/50 transition-colors open:border-emerald-800/25 open:bg-white" open={i === 0}>
+                <details class="itinerary-day group rounded-2xl border border-line bg-card/60 transition-colors open:border-saffron/40 open:bg-card" open={i === 0}>
                   <summary class="flex cursor-pointer list-none items-start justify-between gap-4 p-4 sm:p-5">
                     <span>
-                      {day.date && <span class="block text-[10px] font-semibold tracking-[0.18em] text-emerald-800 uppercase">{day.date}</span>}
-                      <span class="font-brand mt-1 block text-lg leading-snug text-gold-950 sm:text-xl">{day.title}</span>
+                      {day.date && <span class="block text-[10px] font-semibold tracking-[0.18em] text-maroon uppercase">{day.date}</span>}
+                      <span class="font-brand mt-1 block text-lg leading-snug text-earth sm:text-xl">{day.title}</span>
                     </span>
-                    <span class="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-emerald-800/25 text-emerald-800 transition-transform duration-200 group-open:rotate-45" aria-hidden="true">+</span>
+                    <span class="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-saffron/50 text-saffron transition-transform duration-200 group-open:rotate-45" aria-hidden="true">+</span>
                   </summary>
 
-                  <div class="space-y-2 border-t border-emerald-800/15 px-4 pt-4 pb-5 text-xs leading-relaxed text-black/80 sm:px-5 sm:text-sm">
+                  <div class="space-y-2 border-t border-line px-4 pt-4 pb-5 text-xs leading-relaxed text-ink-muted sm:px-5 sm:text-sm">
                     {day.blocks.map((block) =>
                       block.type === 'label' ? (
-                        <p class="pt-2 text-[10px] font-semibold tracking-[0.18em] text-emerald-800 uppercase first:pt-0">{block.text}</p>
+                        <p class="pt-2 text-[10px] font-semibold tracking-[0.18em] text-maroon uppercase first:pt-0">{block.text}</p>
                       ) : block.type === 'temple' ? (
-                        <p class="flex items-start gap-2.5 rounded-xl bg-navy-800 px-3.5 py-2.5 text-white">
-                          <svg viewBox="0 0 20 20" class="mt-1 h-3.5 w-3.5 shrink-0 text-gold-400" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+                        <p class="flex items-start gap-2.5 rounded-xl bg-sand px-3.5 py-2.5 text-earth">
+                          <svg viewBox="0 0 20 20" class="mt-1 h-3.5 w-3.5 shrink-0 text-temple-gold" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
                           <span>
-                            <span class="block text-[10px] font-semibold tracking-[0.18em] text-gold-300 uppercase">{block.label}</span>
+                            <span class="block text-[10px] font-semibold tracking-[0.18em] text-saffron-deep uppercase">{block.label}</span>
                             {block.name}
                           </span>
                         </p>
                       ) : block.type === 'stay' ? (
-                        <p class="mt-3 flex items-center gap-2 border-t border-dashed border-emerald-800/25 pt-3 text-gold-950">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-emerald-800" aria-hidden="true" set:html={ICONS.moon} />
+                        <p class="mt-3 flex items-center gap-2 border-t border-dashed border-line pt-3 text-ink">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-temple-gold" aria-hidden="true" set:html={ICONS.moon} />
                           Overnight in <span class="font-semibold">{block.place}</span>
                         </p>
                       ) : block.type === 'kv' ? (
-                        <p><span class="font-semibold text-gold-950">{block.key}:</span> {block.value}</p>
+                        <p><span class="font-semibold text-ink">{block.key}:</span> {block.value}</p>
                       ) : block.type === 'leg' ? (
-                        <p class="font-medium text-gold-950">
+                        <p class="font-medium text-ink">
                           {block.parts.map((part, j) => (
-                            <span>{j !== 0 && <span class="mx-1.5 text-emerald-800" aria-label="to">→</span>}{part}</span>
+                            <span>{j !== 0 && <span class="mx-1.5 text-saffron" aria-label="to">→</span>}{part}</span>
                           ))}
                         </p>
                       ) : block.type === 'list' ? (
                         <ul class="grid gap-1.5">
                           {block.items.map((item) => (
                             <li class="flex items-start gap-2">
-                              <span class="mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-800"></span>
+                              <span class="mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-temple-gold"></span>
                               {item}
                             </li>
                           ))}
@@ -310,12 +310,12 @@ const enquireHref = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(en
       )}
 
       {importantNotes.length > 0 && (
-        <section class="rounded-2xl border border-emerald-800/25 bg-gold-50/60 p-6 sm:p-8" data-reveal="up">
-          <h2 class="font-brand text-2xl text-gold-950">Important notes</h2>
+        <section class="rounded-2xl border border-line bg-sand/60 p-6 sm:p-8" data-reveal="up">
+          <h2 class="font-brand text-2xl text-earth">Important notes</h2>
           <ul class="mt-4 grid gap-2.5">
             {importantNotes.map((note: string) => (
-              <li class="flex items-start gap-2.5 text-xs leading-relaxed text-black/75 sm:text-sm">
-                <span class="mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-800"></span>
+              <li class="flex items-start gap-2.5 text-xs leading-relaxed text-ink-muted sm:text-sm">
+                <span class="mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-temple-gold"></span>
                 {note}
               </li>
             ))}
@@ -328,28 +328,28 @@ const enquireHref = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(en
         pinned in view for the whole length of the itinerary. */}
     <aside class="flex flex-col gap-6">
       {(arrangements.length > 0 || meals.length > 0) && (
-        <section class="rounded-2xl border border-emerald-800/25 p-6" data-reveal="up">
-          <h2 class="font-brand text-xl text-gold-950">Travel arrangements</h2>
+        <section class="rounded-2xl border border-line bg-card p-6" data-reveal="up">
+          <h2 class="font-brand text-xl text-earth">Travel arrangements</h2>
           <dl class="mt-5 space-y-4">
             {arrangements.map((a) => (
               <div class="flex items-start gap-3">
-                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-navy-800 text-gold-400">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-sand text-temple-gold">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true" set:html={a.icon} />
                 </span>
                 <div>
-                  <dt class="text-[10px] font-semibold tracking-[0.18em] text-emerald-800 uppercase">{a.label}</dt>
-                  <dd class="mt-0.5 text-xs leading-relaxed text-gold-950">{a.value}</dd>
+                  <dt class="text-[10px] font-semibold tracking-[0.18em] text-maroon uppercase">{a.label}</dt>
+                  <dd class="mt-0.5 text-xs leading-relaxed text-ink">{a.value}</dd>
                 </div>
               </div>
             ))}
             {meals.length > 0 && (
               <div class="flex items-start gap-3">
-                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-navy-800 text-gold-400">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-sand text-temple-gold">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true" set:html={ICONS.meal} />
                 </span>
                 <div>
-                  <dt class="text-[10px] font-semibold tracking-[0.18em] text-emerald-800 uppercase">Meals</dt>
-                  <dd class="mt-1 space-y-1.5 text-xs leading-relaxed text-gold-950">
+                  <dt class="text-[10px] font-semibold tracking-[0.18em] text-maroon uppercase">Meals</dt>
+                  <dd class="mt-1 space-y-1.5 text-xs leading-relaxed text-ink">
                     {meals.map((m) => (
                       <p><span class="font-semibold">{m.label}:</span> {m.value}</p>
                     ))}
@@ -362,45 +362,45 @@ const enquireHref = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(en
       )}
 
       {assistance && (assistance.places.length > 0 || assistance.note) && (
-        <section class="rounded-2xl border border-emerald-800/25 p-6" data-reveal="up">
+        <section class="rounded-2xl border border-line bg-card p-6" data-reveal="up">
           <div class="flex items-center justify-between gap-3">
-            <h2 class="font-brand text-xl text-gold-950">Darshan assistance</h2>
-            <span class="rounded-full border border-emerald-800/25 px-2 py-0.5 text-[9px] font-semibold tracking-wider text-emerald-800 uppercase">Optional</span>
+            <h2 class="font-brand text-xl text-earth">Darshan assistance</h2>
+            <span class="rounded-full border border-line px-2 py-0.5 text-[9px] font-semibold tracking-wider text-maroon uppercase">Optional</span>
           </div>
           {assistance.places.length > 0 && (
             <ul class="mt-4 space-y-2.5">
               {assistance.places.map((place: string) => (
-                <li class="flex items-start gap-2 text-xs text-gold-950">
-                  <svg viewBox="0 0 20 20" class="mt-0.5 h-3 w-3 shrink-0 text-emerald-800" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+                <li class="flex items-start gap-2 text-xs text-ink">
+                  <svg viewBox="0 0 20 20" class="mt-0.5 h-3 w-3 shrink-0 text-temple-gold" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
                   {place}
                 </li>
               ))}
             </ul>
           )}
-          {assistance.note && <p class="mt-4 border-t border-emerald-800/15 pt-3 text-[11px] text-black/60">{assistance.note}</p>}
+          {assistance.note && <p class="mt-4 border-t border-line pt-3 text-[11px] text-ink-muted">{assistance.note}</p>}
         </section>
       )}
 
-      <section class="rounded-2xl bg-navy-800 p-6 text-white shadow-lg lg:sticky lg:top-20" data-reveal="up">
-        <p class="text-[10px] font-semibold tracking-[0.2em] text-gold-400 uppercase">{priceLabel ? 'From' : 'Pricing'}</p>
+      <section class="rounded-2xl bg-card border border-line p-6 text-earth shadow-lg lg:sticky lg:top-20" data-reveal="up">
+        <p class="text-[10px] font-semibold tracking-[0.2em] text-saffron-deep uppercase">{priceLabel ? 'From' : 'Pricing'}</p>
         {priceLabel ? (
-          <p class="font-brand mt-1 text-3xl text-white">{priceLabel}<span class="ml-1 font-sans text-xs text-white/60">/ person</span></p>
+          <p class="font-brand mt-1 text-3xl text-earth">{priceLabel}<span class="ml-1 font-sans text-xs text-ink-muted/70">/ person</span></p>
         ) : (
-          <p class="font-brand mt-1 text-2xl text-white">On request</p>
+          <p class="font-brand mt-1 text-2xl text-earth">On request</p>
         )}
-        <p class="mt-2 text-xs text-white/70">{duration}{departureDates && ` · ${departureDates}`}</p>
-        <p class="mt-4 border-t border-white/10 pt-4 text-xs leading-relaxed text-white/70">
+        <p class="mt-2 text-xs text-ink-muted">{duration}{departureDates && ` · ${departureDates}`}</p>
+        <p class="mt-4 border-t border-line pt-4 text-xs leading-relaxed text-ink-muted">
           Every package can be customized — dates, pace, group size or add-ons.
         </p>
         <a
           href={enquireHref}
           target="_blank"
           rel="noopener"
-          class="mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-gold-500 px-6 py-3 text-xs font-semibold text-gold-950 transition-all duration-200 hover:scale-[1.02] hover:bg-gold-400 active:scale-95"
+          class="mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-saffron px-6 py-3 text-xs font-semibold text-on-saffron transition-all duration-200 hover:scale-[1.02] hover:bg-saffron-deep active:scale-95"
         >
           Enquire about this package
         </a>
-        <a href="/tours" class="mt-3 block text-center text-xs text-white/70 underline decoration-gold-400/60 underline-offset-4 hover:text-white">
+        <a href="/tours" class="mt-3 block text-center text-xs text-ink-muted underline decoration-temple-gold/60 underline-offset-4 hover:text-saffron-deep">
           Back to all tours
         </a>
       </section>
