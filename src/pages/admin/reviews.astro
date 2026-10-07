@@ -8,13 +8,13 @@ const rendered = await Promise.all(testimonials.map((t) => render(t)));
 
 <AdminLayout title="Reviews" description="Manage traveller testimonials and moderate submitted reviews.">
   <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
-    <h1 class="font-brand text-5xl text-gold-950">Reviews</h1>
+    <h1 class="font-brand text-5xl text-earth">Reviews</h1>
 
     <div id="login-gate" class="mt-8">
-      <p class="text-xs text-gold-950/70">Log in to manage reviews and moderate pending submissions.</p>
+      <p class="text-xs text-ink-muted">Log in to manage reviews and moderate pending submissions.</p>
       <button
         id="login-button"
-        class="mt-4 rounded-full bg-emerald-800 px-6 py-3 text-xs font-semibold text-white hover:bg-emerald-900"
+        class="mt-4 rounded-full bg-saffron px-6 py-3 text-xs font-semibold text-on-saffron hover:bg-saffron-deep"
       >
         Log in
       </button>
@@ -22,45 +22,45 @@ const rendered = await Promise.all(testimonials.map((t) => render(t)));
 
     <div id="dashboard" class="mt-8 hidden">
       <div class="flex items-center justify-between">
-        <p class="text-xs text-gold-950/70">Logged in as <span id="user-email" class="font-medium"></span></p>
-        <button id="logout-button" class="text-xs font-medium text-emerald-800 hover:underline">Log out</button>
+        <p class="text-xs text-ink-muted">Logged in as <span id="user-email" class="font-medium"></span></p>
+        <button id="logout-button" class="text-xs font-medium text-saffron-deep hover:underline">Log out</button>
       </div>
 
       <a
         href="/admin/index.html#/collections/testimonials/new"
-        class="mt-6 inline-block rounded-full bg-emerald-800 px-6 py-3 text-xs font-semibold text-white hover:bg-emerald-900"
+        class="mt-6 inline-block rounded-full bg-saffron px-6 py-3 text-xs font-semibold text-on-saffron hover:bg-saffron-deep"
       >
         Add a review
       </a>
 
       <div id="review-section" class="mt-10 hidden">
-        <h2 class="font-brand text-3xl text-gold-950">Pending reviews</h2>
+        <h2 class="font-brand text-3xl text-earth">Pending reviews</h2>
         <div id="pending-list" class="mt-4 space-y-4"></div>
       </div>
 
       <div class="mt-10">
-        <h2 class="font-brand text-3xl text-gold-950">Current reviews</h2>
+        <h2 class="font-brand text-3xl text-earth">Current reviews</h2>
         {testimonials.length === 0 && (
-          <p class="mt-4 text-xs text-gold-950/60">No reviews yet.</p>
+          <p class="mt-4 text-xs text-ink-muted">No reviews yet.</p>
         )}
         <div class="mt-4 grid gap-6 sm:grid-cols-2">
           {testimonials.map((t, i) => {
             const { Content } = rendered[i];
             return (
-              <blockquote class="relative rounded-xl border border-emerald-800/15 bg-cream p-6 shadow-review">
+              <blockquote class="relative rounded-xl border border-line bg-card p-6 shadow-review">
                 <a
                   href={`/admin/index.html#/collections/testimonials/entries/${t.id}`}
-                  class="absolute right-4 top-4 rounded-full border border-emerald-800/25 px-3 py-1 text-[0.65rem] font-semibold text-gold-950 hover:bg-gold-100"
+                  class="absolute right-4 top-4 rounded-full border border-line px-3 py-1 text-[0.65rem] font-semibold text-ink hover:bg-sand"
                 >
                   Edit
                 </a>
-                <div class="text-gold-500" aria-hidden="true">{'★'.repeat(t.data.rating)}{'☆'.repeat(5 - t.data.rating)}</div>
-                <div class="mt-2 pr-14 text-xs text-gold-950/80 italic">
+                <div class="text-temple-gold" aria-hidden="true">{'★'.repeat(t.data.rating)}{'☆'.repeat(5 - t.data.rating)}</div>
+                <div class="mt-2 pr-14 text-xs text-ink-muted italic">
                   <Content />
                 </div>
-                <footer class="mt-4 text-xs font-semibold text-gold-950">
+                <footer class="mt-4 text-xs font-semibold text-ink">
                   {t.data.name}
-                  {t.data.occupation && <span class="font-normal text-gold-950/60"> · {t.data.occupation}</span>}
+                  {t.data.occupation && <span class="font-normal text-ink-muted"> · {t.data.occupation}</span>}
                 </footer>
               </blockquote>
             );
@@ -100,7 +100,7 @@ const rendered = await Promise.all(testimonials.map((t) => render(t)));
     if (!res.ok) {
       if (pendingList && reviewSection) {
         reviewSection.classList.remove('hidden');
-        pendingList.innerHTML = '<p class="text-xs text-red-600">Could not load pending reviews.</p>';
+        pendingList.innerHTML = '<p class="text-xs text-error">Could not load pending reviews.</p>';
       }
       return;
     }
@@ -125,20 +125,20 @@ const rendered = await Promise.all(testimonials.map((t) => render(t)));
           message: string;
           photo_url?: string | null;
         }) => `
-      <div class="rounded-xl border border-emerald-800/15 bg-cream p-4" data-review-id="${r.id}">
+      <div class="rounded-xl border border-line bg-card p-4" data-review-id="${r.id}">
         ${
           r.photo_url
             ? `<img src="${escapeHtml(r.photo_url)}" alt="Photo submitted by ${escapeHtml(r.name)}" class="mb-3 h-40 w-full rounded-lg object-cover" />`
             : ''
         }
-        <div class="text-gold-500">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</div>
-        <p class="mt-1 text-xs text-gold-950/80">"${escapeHtml(r.message)}"</p>
-        <p class="mt-2 text-xs font-semibold text-gold-950">${escapeHtml(r.name)}${
-          r.occupation ? `<span class="font-normal text-gold-950/60"> · ${escapeHtml(r.occupation)}</span>` : ''
+        <div class="text-temple-gold">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</div>
+        <p class="mt-1 text-xs text-ink-muted">"${escapeHtml(r.message)}"</p>
+        <p class="mt-2 text-xs font-semibold text-ink">${escapeHtml(r.name)}${
+          r.occupation ? `<span class="font-normal text-ink-muted"> · ${escapeHtml(r.occupation)}</span>` : ''
         }</p>
         <div class="mt-3 flex gap-2">
-          <button data-action="approve" class="rounded-full bg-emerald-800 px-4 py-1.5 text-xs font-semibold text-white hover:bg-emerald-900">Approve</button>
-          <button data-action="reject" class="rounded-full border border-red-200 px-4 py-1.5 text-xs font-semibold text-red-600 hover:bg-red-50">Reject</button>
+          <button data-action="approve" class="rounded-full bg-saffron px-4 py-1.5 text-xs font-semibold text-on-saffron hover:bg-saffron-deep">Approve</button>
+          <button data-action="reject" class="rounded-full border border-error/30 px-4 py-1.5 text-xs font-semibold text-error hover:bg-error/5">Reject</button>
         </div>
       </div>`
       )

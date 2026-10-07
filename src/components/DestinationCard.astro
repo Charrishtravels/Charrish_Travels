@@ -18,7 +18,7 @@ const shapeClass = orientation === 'landscape' ? 'aspect-[4/3] rounded-lg' : 'as
   href={tourHref(destination.data.category, destination.id)}
   data-package-card
   class:list={[
-    'group relative block w-full overflow-hidden border border-transparent shadow-lg transition-all duration-300 hover:z-10 hover:scale-[1.03] hover:border-gold-400 hover:shadow-2xl data-active:z-10 data-active:scale-[1.03] data-active:border-gold-400 data-active:shadow-2xl',
+    'group relative block w-full overflow-hidden border border-transparent shadow-lg transition-all duration-300 hover:z-10 hover:scale-[1.03] hover:border-temple-gold hover:shadow-2xl data-active:z-10 data-active:scale-[1.03] data-active:border-temple-gold data-active:shadow-2xl',
     shapeClass,
   ]}
 >
@@ -28,25 +28,25 @@ const shapeClass = orientation === 'landscape' ? 'aspect-[4/3] rounded-lg' : 'as
     loading="lazy"
     class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 group-data-active:scale-105"
   />
-  <div class="absolute inset-0 bg-gradient-to-b from-navy-800/75 via-navy-800/10 to-navy-800/90"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-page/75 via-transparent via-30% to-transparent"></div>
 
   <div class="relative flex h-full flex-col justify-between p-5">
-    <h3 class="font-brand text-xl text-white [text-shadow:0_2px_10px_rgb(0_0_0_/_0.7)]">{title}</h3>
+    <h3 class="font-brand text-xl text-earth [text-shadow:0_1px_8px_rgb(255_253_247_/_0.8)]">{title}</h3>
 
     {/* Scrim grows with the details panel so the text always sits on a dark backing */}
-    <div class="-mx-5 -mb-5 bg-gradient-to-t from-navy-800/95 via-navy-800/80 to-transparent px-5 pt-12 pb-5">
-      <p class="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] font-medium text-white/90">
-        <span class="text-gold-200">{location}</span>
-        <span class="text-gold-400" aria-hidden="true">·</span>
+    <div class="-mx-5 -mb-5 bg-gradient-to-t from-page/95 via-page/85 to-transparent px-5 pt-12 pb-5">
+      <p class="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] font-medium text-ink-muted">
+        <span class="text-saffron-deep">{location}</span>
+        <span class="text-saffron-deep" aria-hidden="true">·</span>
         <span>{duration}</span>
       </p>
 
       {/* grid-rows 0fr -> 1fr animates the panel open to its natural height */}
       <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 group-hover:grid-rows-[1fr] group-data-active:grid-rows-[1fr]">
         <div class="overflow-hidden">
-          <div class="mt-3 border-t border-gold-400/40 pt-3">
-            <p class="text-xs leading-relaxed text-white/85">{summary}</p>
-            <p class="mt-3 text-right text-[11px] font-semibold tracking-wide text-gold-300 uppercase">View details →</p>
+          <div class="mt-3 border-t border-line pt-3">
+            <p class="text-xs leading-relaxed text-ink-muted">{summary}</p>
+            <p class="mt-3 text-right text-[11px] font-semibold tracking-wide text-saffron-deep uppercase">View details →</p>
           </div>
         </div>
       </div>

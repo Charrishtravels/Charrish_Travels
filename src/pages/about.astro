@@ -97,21 +97,21 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
         </div>
       ))}
     </div>
-    <div class="absolute inset-0 -z-10 bg-cream/45"></div>
-    <div class="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-cream to-transparent"></div>
+    <div class="absolute inset-0 -z-10 bg-page/45"></div>
+    <div class="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-page to-transparent"></div>
 
     {/* Arched doorway, nodding to temple and palace gateways. */}
     <div class="px-4 pt-14 pb-20 sm:px-6 sm:pt-20 sm:pb-24">
       <div class="relative mx-auto w-full max-w-sm sm:max-w-md" data-reveal="zoom">
-        <div class="absolute -inset-3 rounded-t-full border-2 border-b-0 border-gold-400 sm:-inset-4"></div>
+        <div class="absolute -inset-3 rounded-t-full border-2 border-b-0 border-temple-gold sm:-inset-4"></div>
         {/* Threshold: joins the outline's two legs and runs past them on wider
             screens, so the arch stands on a floor instead of stopping in mid-air. */}
-        <div class="absolute -inset-x-3 -bottom-3 h-0.5 bg-gold-400 sm:-inset-x-24 sm:-bottom-4 sm:bg-gradient-to-r sm:from-transparent sm:via-gold-400 sm:to-transparent"></div>
-        <div class="relative flex flex-col items-center rounded-t-full bg-navy-800 px-8 pt-24 pb-12 text-center shadow-2xl sm:pt-28 sm:pb-14">
-          <svg viewBox="0 0 20 20" class="h-7 w-7 text-gold-400" aria-hidden="true">
+        <div class="absolute -inset-x-3 -bottom-3 h-0.5 bg-temple-gold sm:-inset-x-24 sm:-bottom-4 sm:bg-gradient-to-r sm:from-transparent sm:via-temple-gold sm:to-transparent"></div>
+        <div class="relative flex flex-col items-center rounded-t-full bg-sand px-8 pt-24 pb-12 text-center shadow-2xl sm:pt-28 sm:pb-14">
+          <svg viewBox="0 0 20 20" class="h-7 w-7 text-temple-gold" aria-hidden="true">
             <path d={STAR_PATH} fill="currentColor" />
           </svg>
-          <h1 class="font-brand mt-5 text-3xl leading-[1.15] text-white sm:text-4xl">
+          <h1 class="font-brand mt-5 text-3xl leading-[1.15] text-earth sm:text-4xl">
             Travel should feel personal, not packaged.
           </h1>
         </div>
@@ -123,13 +123,13 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
     {/* The opening line runs the full measure rather than a half column, so it
         breaks two or three times instead of five. */}
     <div data-reveal="up">
-      <p class="font-brand max-w-5xl text-2xl leading-snug text-gold-950 sm:text-3xl">
+      <p class="font-brand max-w-5xl text-2xl leading-snug text-earth sm:text-3xl">
         {SITE.name} was built with a simple belief — every journey deserves thoughtful planning,
         honest communication, and dedicated support.
       </p>
 
       <div class="mt-10">
-        <div class="max-w-[62ch] space-y-4 border-l-2 border-gold-400/60 pl-5 text-xs leading-relaxed text-black sm:text-sm">
+        <div class="max-w-[62ch] space-y-4 border-l-2 border-temple-gold/60 pl-5 text-xs leading-relaxed text-ink-muted sm:text-sm">
           <p>
             From family holidays and honeymoon trips to group tours, pilgrimage journeys, and
             international vacations, we create personalized travel experiences based on your needs,
@@ -143,7 +143,7 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
         </div>
 
         <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-4">
-          <p class="inline-flex items-center gap-2 text-xs font-medium text-emerald-800">
+          <p class="inline-flex items-center gap-2 text-xs font-medium text-maroon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true">
               <path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z" />
               <circle cx="12" cy="10" r="2.5" />
@@ -152,10 +152,10 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
           </p>
           <a
             href="/tours"
-            class="inline-flex w-fit items-center gap-2 rounded-full bg-gold-500 px-6 py-3 text-xs font-semibold text-gold-950 transition-all duration-200 hover:scale-105 hover:bg-gold-400 active:scale-95"
+            class="inline-flex w-fit items-center gap-2 rounded-full bg-saffron px-6 py-3 text-xs font-semibold text-on-saffron transition-all duration-200 hover:scale-105 hover:bg-saffron-deep active:scale-95"
           >
             View our tours
-            <span class="text-gold-950/50" aria-hidden="true">→</span>
+            <span class="text-on-saffron/70" aria-hidden="true">→</span>
           </a>
         </div>
       </div>
@@ -166,7 +166,7 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
       keeps it readable is the structure, not the background: one column at a
       comfortable measure, the process as full-width rows, and larger type than
       the light sections use, since body copy on dark needs the extra size. */}
-  <section class="relative overflow-hidden bg-navy-800 px-4 py-16 text-white sm:px-6 lg:py-24">
+  <section class="relative overflow-hidden bg-sand px-4 py-16 text-earth sm:px-6 lg:py-24">
     <RouteWatermark />
     <div class="relative mx-auto max-w-7xl">
       <div data-reveal="up">
@@ -175,7 +175,7 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
         </h2>
         {/* Side by side rather than one narrow column, so the copy fills the band
             without any line running long. */}
-        <div class="mt-8 grid gap-8 text-sm leading-relaxed text-white/85 sm:text-base lg:grid-cols-2 lg:gap-14">
+        <div class="mt-8 grid gap-8 text-sm leading-relaxed text-ink-muted sm:text-base lg:grid-cols-2 lg:gap-14">
           <p class="max-w-[62ch]">
             Most agencies begin with a finished package and look for travellers to fill it. We began
             the other way round, because the trips people told us about afterwards were never the
@@ -196,28 +196,28 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
       {/* The journey line and the closing quote share the width, so neither the
           steps nor the band end up with an empty half. */}
       <div class="mt-16 grid gap-14 lg:mt-20 lg:grid-cols-[minmax(0,1fr)_24rem] lg:gap-16">
-      <ol class="relative border-l border-white/20 pl-10 sm:pl-14">
+      <ol class="relative border-l border-line pl-10 sm:pl-14">
         {PROCESS.map((step) => (
           <li class="relative pb-11 last:pb-0" data-reveal="up">
-            <span class="font-brand absolute top-0 -left-[3.3rem] flex h-9 w-9 items-center justify-center rounded-full border border-gold-400/70 bg-navy-900 text-sm text-gold-400 sm:-left-[4.4rem] sm:h-11 sm:w-11 sm:text-base">
+            <span class="font-brand absolute top-0 -left-[3.3rem] flex h-9 w-9 items-center justify-center rounded-full border border-temple-gold/70 bg-card text-sm text-temple-gold sm:-left-[4.4rem] sm:h-11 sm:w-11 sm:text-base">
               {step.n}
             </span>
-            <h3 class="font-brand text-xl leading-snug text-white sm:text-2xl">{step.title}</h3>
-            <p class="mt-2.5 max-w-[62ch] text-sm leading-relaxed text-white/75 sm:text-base">{step.body}</p>
+            <h3 class="font-brand text-xl leading-snug text-earth sm:text-2xl">{step.title}</h3>
+            <p class="mt-2.5 max-w-[62ch] text-sm leading-relaxed text-ink-muted sm:text-base">{step.body}</p>
           </li>
         ))}
       </ol>
 
       <aside
-        class="rounded-2xl bg-navy-900 px-6 py-8 sm:px-8 lg:sticky lg:top-24 lg:self-start"
+        class="rounded-2xl bg-card px-6 py-8 sm:px-8 lg:sticky lg:top-24 lg:self-start"
         data-reveal="up"
       >
-        <blockquote class="border-l-2 border-gold-400 pl-5">
-          <p class="font-brand text-xl leading-snug text-white">
+        <blockquote class="border-l-2 border-temple-gold pl-5">
+          <p class="font-brand text-xl leading-snug text-earth">
             A fixed package asks you to adapt to it. A tailored one adapts to you — and that is the
             difference between a holiday you took and a holiday that was yours.
           </p>
-          <p class="mt-4 text-sm leading-relaxed text-white/75">
+          <p class="mt-4 text-sm leading-relaxed text-ink-muted">
             It costs us more time. It is also the only way we know how to do this well.
           </p>
         </blockquote>
@@ -225,7 +225,7 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
           href={`https://wa.me/${SITE.whatsapp}`}
           target="_blank"
           rel="noopener"
-          class="mt-7 ml-5 inline-flex w-fit items-center gap-2 rounded-full bg-gold-500 px-6 py-3 text-xs font-semibold text-gold-950 transition-all duration-200 hover:scale-105 hover:bg-gold-400 active:scale-95"
+          class="mt-7 ml-5 inline-flex w-fit items-center gap-2 rounded-full bg-saffron px-6 py-3 text-xs font-semibold text-on-saffron transition-all duration-200 hover:scale-105 hover:bg-saffron-deep active:scale-95"
         >
           Tell us about your trip
         </a>
@@ -236,27 +236,27 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
 
   <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24">
     <div class="grid gap-6 md:grid-cols-2">
-      <div class="rounded-2xl border border-emerald-800/25 p-6 sm:p-8" data-reveal="up">
-        <svg viewBox="0 0 20 20" class="h-5 w-5 text-emerald-800" aria-hidden="true">
+      <div class="rounded-2xl border border-line bg-card p-6 sm:p-8" data-reveal="up">
+        <svg viewBox="0 0 20 20" class="h-5 w-5 text-saffron" aria-hidden="true">
           <path d={STAR_PATH} fill="currentColor" />
         </svg>
-        <h2 class="font-brand mt-4 text-2xl text-gold-950">More than just a booking</h2>
-        <p class="mt-3 text-xs leading-relaxed text-black sm:text-sm">
+        <h2 class="font-brand mt-4 text-2xl text-earth">More than just a booking</h2>
+        <p class="mt-3 text-xs leading-relaxed text-ink-muted sm:text-sm">
           From planning to your return, our team stays connected to make your journey smooth and
           stress-free. We take care of the details so you can focus on creating unforgettable
           memories.
         </p>
       </div>
 
-      <div class="flex flex-col rounded-2xl bg-navy-800 p-6 sm:p-8" data-reveal="up" style="--reveal-delay: 120ms">
-        <svg viewBox="0 0 20 20" class="h-5 w-5 text-gold-400" aria-hidden="true">
+      <div class="flex flex-col rounded-2xl bg-sand p-6 sm:p-8" data-reveal="up" style="--reveal-delay: 120ms">
+        <svg viewBox="0 0 20 20" class="h-5 w-5 text-temple-gold" aria-hidden="true">
           <path d={STAR_PATH} fill="currentColor" />
         </svg>
-        <h2 class="font-brand mt-4 text-2xl text-white">Our promise</h2>
-        <p class="mt-3 text-xs leading-relaxed text-white/80 sm:text-sm">
+        <h2 class="font-brand mt-4 text-2xl text-earth">Our promise</h2>
+        <p class="mt-3 text-xs leading-relaxed text-ink-muted sm:text-sm">
           Your journey is more than a booking. It’s an experience we’re proud to help you create.
         </p>
-        <p class="font-brand mt-auto pt-5 text-sm tracking-[0.15em] text-gold-400 uppercase">Your journey. Our care.</p>
+        <p class="font-brand mt-auto pt-5 text-sm tracking-[0.15em] text-saffron-deep uppercase">Your journey. Our care.</p>
       </div>
     </div>
   </section>

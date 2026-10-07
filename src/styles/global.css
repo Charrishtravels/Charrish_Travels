@@ -59,51 +59,57 @@
   --text-xs: 0.875rem;
   --text-xs--line-height: calc(1.25 / 0.875);
 
-  /* Brand: dark green anchor at 800, reused on the emerald-* scale so existing utility classes pick it up. */
-  --color-emerald-50: hsl(129 40% 95%);
-  --color-emerald-100: hsl(129 38% 90%);
-  --color-emerald-200: hsl(129 38% 80%);
-  --color-emerald-300: hsl(129 40% 66%);
-  --color-emerald-400: hsl(129 45% 50%);
-  --color-emerald-500: hsl(129 52% 36%);
-  --color-emerald-600: hsl(129 56% 27%);
-  --color-emerald-700: hsl(129 58% 20%);
-  --color-emerald-800: #002d07;
-  --color-emerald-900: hsl(129 62% 11%);
-  --color-emerald-950: hsl(129 65% 6%);
+  /* Colour system — the whole site's palette lives here. Components only use these
+     semantic names (bg-page, text-ink, bg-saffron…), so re-theming means editing
+     this block and nothing else. Tailwind's built-in palette is switched off so a
+     stray `bg-blue-500` can't slip back in. */
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
 
-  --color-cream: #fbf9f4;
+  /* Primary: CTAs, active nav, key interactive elements. */
+  --color-saffron: #b45309;
+  /* Button hover, and saffron for small text — a slightly darker saffron. */
+  --color-saffron-deep: #92400e;
+  /* Secondary: badges, eyebrow labels. Kept in the saffron family so the palette stays small. */
+  --color-maroon: #8a3f0c;
+  /* Accent, used sparingly: icons, stars, fine borders. */
+  --color-temple-gold: #c89b3c;
 
-  /* Deep navy for the dark surfaces, with gold as the accent on top of it. */
-  --color-navy-700: #1d4463;
-  --color-navy-800: #16324b;
-  --color-navy-900: #0f2537;
+  /* Surfaces */
+  --color-page: #fffdf7;
+  --color-sand: #f6efe2;
+  --color-card: #ffffff;
+  --color-earth: #3b2416;
+  /* Panels nested inside an earth section. */
+  --color-earth-deep: #2e1b10;
 
-  /* Accent gold: anchor at 500, sampled directly from the logo (the crescent/star/
-     plane's dominant fill, #B58E52 by traced path area). */
-  --color-gold-50: hsl(36 55% 96%);
-  --color-gold-100: hsl(36 52% 91%);
-  --color-gold-200: hsl(36 50% 82%);
-  --color-gold-300: hsl(36 46% 70%);
-  --color-gold-400: hsl(36 43% 61%);
-  --color-gold-500: hsl(36 40% 52%);
-  --color-gold-600: hsl(35 44% 43%);
-  --color-gold-700: hsl(34 48% 35%);
-  --color-gold-800: hsl(33 52% 27%);
-  --color-gold-900: hsl(32 56% 19%);
-  --color-gold-950: hsl(30 60% 11%);
+  /* Text */
+  --color-ink: #3b2a20;
+  --color-ink-muted: #75665a;
+  --color-on-dark: #fffdf7;
+  --color-on-dark-muted: #e8dcc8;
+  --color-on-saffron: #ffffff;
+
+  /* Lines and states */
+  --color-line: #e8dcc8;
+  --color-error: #9b1c1c;
+  --color-success: #3f6212;
+
+  /* Neutral white for glass overlays on photos (bg-white/20 etc.). */
+  --color-white: #ffffff;
 }
 
 .font-brand {
   font-weight: 500;
 }
 
-/* Review cards lift off the page on a sheer navy shadow rather than a neutral
-   grey one, so they sit in the same colour family as the rest of the site. */
+/* Review cards lift off the page on a sheer earth-brown shadow rather than a
+   neutral grey one, so they sit in the same colour family as the rest of the site. */
 .shadow-review {
   box-shadow:
-    0 1px 2px rgb(22 50 75 / 0.10),
-    0 14px 30px -12px rgb(22 50 75 / 0.38);
+    0 1px 2px color-mix(in srgb, var(--color-earth) 10%, transparent),
+    0 14px 30px -12px color-mix(in srgb, var(--color-earth) 30%, transparent);
 }
 
 /* Scroll reveal.

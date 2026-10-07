@@ -1,8 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
-import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
-import reviewBackground from '../assets/review-background-blue.jpg';
 
 const testimonials = await getCollection('testimonials');
 const rendered = await Promise.all(testimonials.map((t) => render(t)));
@@ -14,22 +12,23 @@ const columnB = testimonialCards.filter((_, i) => i % 2 === 1);
 <Layout title="Testimonials & Reviews" description="What travellers say about Charrish Travels, plus leave your own review.">
   {/* max-w-7xl with the columns' own px-6 puts the content edge at the same
       distance from the viewport as the packages grid. */}
+  <div class="bg-sand">
   <section class="mx-auto flex max-w-7xl flex-col lg:h-[calc(100svh-3rem)] lg:flex-row lg:gap-10">
     <div class="flex flex-col px-4 py-12 sm:px-6 sm:py-16 lg:w-3/5 lg:py-16">
-      <h1 class="font-brand text-5xl text-gold-950">Testimonials & Reviews</h1>
+      <h1 class="font-brand text-5xl text-earth">Testimonials & Reviews</h1>
 
       <div class="mt-8 grid grid-cols-2 gap-4 overflow-hidden lg:h-full lg:flex-1">
         <div class="overflow-hidden lg:h-full">
           <div class="marquee-track flex flex-col gap-4">
             {[...columnA, ...columnA].map(({ t, Content }) => (
-              <blockquote class="rounded-xl border border-emerald-800/25 bg-cream p-4 shadow-review">
-                <div class="text-gold-500" aria-hidden="true">{'★'.repeat(t.data.rating)}{'☆'.repeat(5 - t.data.rating)}</div>
-                <div class="mt-2 text-xs text-gold-950/80 italic">
+              <blockquote class="rounded-xl border border-line bg-card p-4 shadow-review">
+                <div class="text-temple-gold" aria-hidden="true">{'★'.repeat(t.data.rating)}{'☆'.repeat(5 - t.data.rating)}</div>
+                <div class="mt-2 text-xs text-ink-muted italic">
                   <Content />
                 </div>
-                <footer class="mt-4 text-xs font-semibold text-gold-950">
+                <footer class="mt-4 text-xs font-semibold text-earth">
                   {t.data.name}
-                  {t.data.occupation && <span class="font-normal text-gold-950/60"> · {t.data.occupation}</span>}
+                  {t.data.occupation && <span class="font-normal text-ink-muted"> · {t.data.occupation}</span>}
                 </footer>
               </blockquote>
             ))}
@@ -38,14 +37,14 @@ const columnB = testimonialCards.filter((_, i) => i % 2 === 1);
         <div class="overflow-hidden lg:h-full">
           <div class="marquee-track marquee-track-reverse flex flex-col gap-4">
             {[...columnB, ...columnB].map(({ t, Content }) => (
-              <blockquote class="rounded-xl border border-emerald-800/25 bg-cream p-4 shadow-review">
-                <div class="text-gold-500" aria-hidden="true">{'★'.repeat(t.data.rating)}{'☆'.repeat(5 - t.data.rating)}</div>
-                <div class="mt-2 text-xs text-gold-950/80 italic">
+              <blockquote class="rounded-xl border border-line bg-card p-4 shadow-review">
+                <div class="text-temple-gold" aria-hidden="true">{'★'.repeat(t.data.rating)}{'☆'.repeat(5 - t.data.rating)}</div>
+                <div class="mt-2 text-xs text-ink-muted italic">
                   <Content />
                 </div>
-                <footer class="mt-4 text-xs font-semibold text-gold-950">
+                <footer class="mt-4 text-xs font-semibold text-earth">
                   {t.data.name}
-                  {t.data.occupation && <span class="font-normal text-gold-950/60"> · {t.data.occupation}</span>}
+                  {t.data.occupation && <span class="font-normal text-ink-muted"> · {t.data.occupation}</span>}
                 </footer>
               </blockquote>
             ))}
@@ -54,26 +53,24 @@ const columnB = testimonialCards.filter((_, i) => i % 2 === 1);
       </div>
     </div>
 
-    <div class="relative mx-4 mb-12 overflow-hidden rounded-xl px-4 py-8 sm:mx-6 sm:px-6 lg:mt-20 lg:mr-6 lg:mb-0 lg:ml-0 lg:w-2/5 lg:self-center-safe lg:px-8">
-      <Image src={reviewBackground} alt="" widths={[640, 1024, 1600]} sizes="100vw" class="absolute inset-0 h-full w-full object-cover object-[55%_50%]" />
-      <div class="absolute inset-0 bg-navy-800/30"></div>
+    <div class="relative mx-4 mb-12 overflow-hidden rounded-xl px-4 py-8 sm:mx-6 sm:px-6 lg:mt-20 lg:mr-6 lg:mb-0 lg:ml-0 lg:w-2/5 lg:self-center-safe lg:px-8 border border-line bg-card shadow-review">
 
       <div class="relative flex flex-col">
-        <h2 class="font-brand text-3xl text-white">Leave a review</h2>
+        <h2 class="font-brand text-3xl text-earth">Leave a review</h2>
         <form id="review-form" class="mt-4 space-y-4">
           <div class="grid gap-4 sm:grid-cols-2">
             <div>
-              <label for="review-name" class="block text-xs font-medium text-white">Name</label>
-              <input id="review-name" name="name" type="text" required maxlength="80" class="mt-1 w-full rounded-md border border-emerald-800/25 bg-white px-3 py-2 text-xs focus:border-gold-500 focus:outline-none" />
+              <label for="review-name" class="block text-xs font-medium text-earth">Name</label>
+              <input id="review-name" name="name" type="text" required maxlength="80" class="mt-1 w-full rounded-md border border-line bg-card px-3 py-2 text-xs focus:border-saffron focus:outline-none" />
             </div>
             <div>
-              <label for="review-occupation" class="block text-xs font-medium text-white">Profession (optional)</label>
-              <input id="review-occupation" name="occupation" type="text" maxlength="80" class="mt-1 w-full rounded-md border border-emerald-800/25 bg-white px-3 py-2 text-xs focus:border-gold-500 focus:outline-none" />
+              <label for="review-occupation" class="block text-xs font-medium text-earth">Profession (optional)</label>
+              <input id="review-occupation" name="occupation" type="text" maxlength="80" class="mt-1 w-full rounded-md border border-line bg-card px-3 py-2 text-xs focus:border-saffron focus:outline-none" />
             </div>
           </div>
 
           <div>
-            <span class="block text-xs font-medium text-white">Rating</span>
+            <span class="block text-xs font-medium text-earth">Rating</span>
             <div id="review-stars" class="mt-1 flex items-center gap-1" role="radiogroup" aria-label="Rating out of 5">
               {[1, 2, 3, 4, 5].map((value) => (
                 <button
@@ -82,47 +79,48 @@ const columnB = testimonialCards.filter((_, i) => i % 2 === 1);
                   role="radio"
                   aria-checked={value === 5 ? 'true' : 'false'}
                   aria-label={`${value} star${value > 1 ? 's' : ''}`}
-                  class="cursor-pointer p-1 text-2xl leading-none text-gold-400 transition-transform duration-150 hover:scale-110 active:scale-95"
+                  class="cursor-pointer p-1 text-2xl leading-none text-temple-gold transition-transform duration-150 hover:scale-110 active:scale-95"
                 >
                   ★
                 </button>
               ))}
-              <span id="review-rating-label" class="ml-2 text-xs text-white/80">Excellent</span>
+              <span id="review-rating-label" class="ml-2 text-xs text-ink-muted">Excellent</span>
             </div>
             <input id="review-rating" name="rating" type="hidden" value="5" />
           </div>
 
           <div>
-            <label for="review-message" class="block text-xs font-medium text-white">Your review</label>
-            <textarea id="review-message" name="message" rows="4" required maxlength="1000" class="mt-1 w-full rounded-md border border-emerald-800/25 bg-white px-3 py-2 text-xs focus:border-gold-500 focus:outline-none"></textarea>
+            <label for="review-message" class="block text-xs font-medium text-earth">Your review</label>
+            <textarea id="review-message" name="message" rows="4" required maxlength="1000" class="mt-1 w-full rounded-md border border-line bg-card px-3 py-2 text-xs focus:border-saffron focus:outline-none"></textarea>
           </div>
 
           <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div class="min-w-0 flex-1 sm:max-w-60">
-              <label for="review-photo" class="block text-xs font-medium text-white">Add a photo (optional)</label>
+              <label for="review-photo" class="block text-xs font-medium text-earth">Add a photo (optional)</label>
               <input
                 id="review-photo"
                 name="photo"
                 type="file"
                 accept="image/png, image/jpeg, image/webp"
-                class="mt-1 w-full rounded-md border border-emerald-800/25 bg-white px-2 py-1 text-xs text-gold-950 file:mr-3 file:rounded-full file:border-0 file:bg-emerald-800 file:px-3 file:py-1 file:text-xs file:font-semibold file:text-white hover:file:bg-emerald-900 focus:border-gold-500 focus:outline-none"
+                class="mt-1 w-full rounded-md border border-line bg-card px-2 py-1 text-xs text-ink file:mr-3 file:rounded-full file:border-0 file:bg-maroon file:px-3 file:py-1 file:text-xs file:font-semibold file:text-on-dark hover:file:bg-earth focus:border-saffron focus:outline-none"
               />
             </div>
             <button
               type="submit"
-              class="shrink-0 rounded-full bg-gold-500 px-6 py-3 sm:mr-3 sm:ml-auto text-xs font-semibold text-gold-950 transition-all duration-200 hover:scale-105 hover:bg-gold-400 active:scale-95 disabled:opacity-60"
+              class="shrink-0 rounded-full bg-saffron px-6 py-3 sm:mr-3 sm:ml-auto text-xs font-semibold text-on-saffron transition-all duration-200 hover:scale-105 hover:bg-saffron-deep active:scale-95 disabled:opacity-60"
             >
               Submit review
             </button>
           </div>
-          <p class="text-[11px] text-white/70">JPEG, PNG or WebP — up to 5MB.</p>
+          <p class="text-[11px] text-ink-muted">JPEG, PNG or WebP — up to 5MB.</p>
           <img id="review-photo-preview" alt="Preview of your uploaded photo" class="hidden h-24 w-24 rounded-lg object-cover" />
-          <p id="review-photo-error" class="hidden text-[11px] text-red-200" role="alert"></p>
-          <p id="review-status" class="text-xs text-white" role="status"></p>
+          <p id="review-photo-error" class="hidden text-[11px] text-error" role="alert"></p>
+          <p id="review-status" class="text-xs text-ink" role="status"></p>
         </form>
       </div>
     </div>
   </section>
+  </div>
 </Layout>
 
 <style>
@@ -173,8 +171,8 @@ const columnB = testimonialCards.filter((_, i) => i % 2 === 1);
       const v = Number(btn.dataset.star);
       const filled = v <= value;
       btn.textContent = filled ? '★' : '☆';
-      btn.classList.toggle('text-gold-400', filled);
-      btn.classList.toggle('text-white/50', !filled);
+      btn.classList.toggle('text-temple-gold', filled);
+      btn.classList.toggle('text-line', !filled);
       btn.setAttribute('aria-checked', String(v === value));
     });
   }
