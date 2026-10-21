@@ -4,7 +4,7 @@ backend:
 
 local_backend: true
 
-publish_mode: editorial_workflow
+publish_mode: simple
 
 media_folder: public/images/uploads
 public_folder: /images/uploads
