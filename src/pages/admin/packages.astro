@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import AdminLayout from '../../layouts/AdminLayout.astro';
+import { tourHref } from '../../consts';
 
 const destinations = await getCollection('destinations');
 ---
@@ -39,15 +40,27 @@ const destinations = await getCollection('destinations');
         )}
         <div class="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {destinations.map((d) => {
-            const { title, summary, heroImage, priceFrom, duration } = d.data;
+            const { title, summary, heroImage, priceFrom, duration, category } = d.data;
             return (
               <div class="group relative flex flex-col overflow-hidden rounded-xl border border-line bg-card shadow-sm">
-                <a
-                  href={`/admin/index.html#/collections/destinations/entries/${d.id}`}
-                  class="absolute right-4 top-4 z-10 rounded-full border border-line bg-card px-3 py-1 text-[0.65rem] font-semibold text-ink hover:bg-sand"
-                >
-                  Edit
-                </a>
+                <div class="absolute right-4 top-4 z-10 flex gap-2">
+                  {/* Opens the tour page straight into the print dialog, where
+                      the browser's "Save as PDF" produces the document. */}
+                  <a
+                    href={`${tourHref(category, d.id)}?print=1`}
+                    target="_blank"
+                    rel="noopener"
+                    class="rounded-full border border-line bg-card px-3 py-1 text-[0.65rem] font-semibold text-ink hover:bg-sand"
+                  >
+                    PDF
+                  </a>
+                  <a
+                    href={`/admin/index.html#/collections/destinations/entries/${d.id}`}
+                    class="rounded-full border border-line bg-card px-3 py-1 text-[0.65rem] font-semibold text-ink hover:bg-sand"
+                  >
+                    Edit
+                  </a>
+                </div>
                 <div class="aspect-[4/3] w-full overflow-hidden bg-sand">
                   <img src={heroImage} alt={title} loading="lazy" class="h-full w-full object-cover" />
                 </div>
