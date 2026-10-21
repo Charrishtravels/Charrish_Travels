@@ -25,6 +25,15 @@ collections:
       - { label: Summary, name: summary, widget: text, hint: 'Short one-line summary shown on package cards' }
       - { label: Hero Image, name: heroImage, widget: image }
       - { label: Duration, name: duration, widget: string, hint: 'e.g. 12 Days / 11 Nights' }
+      - label: Category
+        name: category
+        widget: select
+        default: domestic
+        hint: 'Which Tours menu this appears under. Also sets the page address, e.g. /tours/temple/...'
+        options:
+          - { label: Domestic Tours, value: domestic }
+          - { label: Temple Tours, value: temple }
+          - { label: International Tours, value: international }
       - { label: Price From (INR), name: priceFrom, widget: number, value_type: int, required: false, hint: 'Leave blank to show "Enquire for pricing" instead' }
       - { label: Featured on Home page, name: featured, widget: boolean, default: false }
 
@@ -99,7 +108,7 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: Name, name: name, widget: string }
-      - { label: Location, name: location, widget: string, required: false }
+      - { label: Profession, name: occupation, widget: string, required: false, hint: 'Shown next to the name, e.g. Software Engineer' }
       - { label: Rating (1-5), name: rating, widget: number, min: 1, max: 5, value_type: int }
       - { label: Photo, name: photo, widget: image, required: false }
       - { label: Quote, name: body, widget: markdown }

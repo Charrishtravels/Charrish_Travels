@@ -24,6 +24,9 @@ function githubHeaders(token) {
 // Builds the frontmatter object in a fixed key order, omitting empty
 // optional fields so the generated markdown stays clean and readable.
 function buildFrontmatter(pkg) {
+  // category decides the Tours menu section and the page address, so it is
+  // always written — falling back to domestic rather than leaving it unset.
+  const CATEGORIES = ['domestic', 'temple', 'international'];
   const fm = {
     title: pkg.title,
     location: pkg.location,
@@ -31,6 +34,7 @@ function buildFrontmatter(pkg) {
     heroImage: pkg.heroImage,
     duration: pkg.duration,
     featured: Boolean(pkg.featured),
+    category: CATEGORIES.includes(pkg.category) ? pkg.category : 'domestic',
   };
 
   if (pkg.priceFrom) fm.priceFrom = Number(pkg.priceFrom);
