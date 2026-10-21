@@ -164,6 +164,98 @@ function parseSpecialExperienceBlock(block, result) {
   result.specialExperience = { title, body };
 }
 
+const TEMPLE_LABEL = /^(evening\s+)?temple visits?$/i;
+
+/**
+ * The source documents break a single fact across several lines — a bare
+ * "Temple Visit" above the temple's name, a route leg above its distance and
+ * travel time, a trailing-colon lead-in above its value. Rejoining them lets the
+ * tour page recognise each one: "Temple Visit: X" becomes a highlighted block,
+ * and a leg carries its own numbers instead of trailing two loose lines.
+ */
+function tidyDayDetails(rawLines) {
+  const items = rawLines.map((l) => l.trim());
+  const nextIdx = (from) => {
+    let j = from;
+    while (j < items.length && !items[j]) j++;
+    return j < items.length ? j : -1;
+  };
+
+  const out = [];
+  let i = 0;
+
+  while (i < items.length) {
+    const line = items[i];
+    if (!line) {
+      out.push('');
+      i++;
+      continue;
+    }
+
+    // "Temple Visit" / "Evening Temple Visits" followed by the temple itself,
+    // plus any parenthetical note on the line after it.
+    if (TEMPLE_LABEL.test(line)) {
+      const vIdx = nextIdx(i + 1);
+      if (vIdx !== -1 && !items[vIdx].startsWith('•')) {
+        let value = items[vIdx];
+        let consumed = vIdx;
+        const pIdx = nextIdx(vIdx + 1);
+        if (pIdx !== -1 && items[pIdx].startsWith('(')) {
+          value += ` ${items[pIdx]}`;
+          consumed = pIdx;
+        }
+        out.push(`${line}: ${value}`);
+        i = consumed + 1;
+        continue;
+      }
+    }
+
+    // "A → B" followed by its Distance and Travel Time.
+    if (line.includes('→')) {
+      const dIdx = nextIdx(i + 1);
+      const distance = dIdx !== -1 ? items[dIdx].match(/^Distance:\s*(.+)$/i) : null;
+      if (distance) {
+        const tIdx = nextIdx(dIdx + 1);
+        const travel = tIdx !== -1 ? items[tIdx].match(/^Travel Time:\s*(.+)$/i) : null;
+        if (travel) {
+          out.push(`${line} — ${distance[1]}, ${travel[1]}`);
+          i = tIdx + 1;
+          continue;
+        }
+        out.push(`${line} — ${distance[1]}`);
+        i = dIdx + 1;
+        continue;
+      }
+    }
+
+    // A lead-in ending in a colon, e.g. "If time permits:" — but leave it alone
+    // when what follows is a bullet list, a temple label or another route leg.
+    if (/:$/.test(line)) {
+      const vIdx = nextIdx(i + 1);
+      const value = vIdx !== -1 ? items[vIdx] : '';
+      if (
+        value &&
+        !value.startsWith('•') &&
+        !TEMPLE_LABEL.test(value) &&
+        !value.includes('→') &&
+        !/^Total\b/i.test(value)
+      ) {
+        out.push(`${line} ${value}`);
+        i = vIdx + 1;
+        continue;
+      }
+    }
+
+    out.push(line);
+    i++;
+  }
+
+  return out
+    .filter((l, idx) => !(l === '' && out[idx - 1] === ''))
+    .join('\n')
+    .trim();
+}
+
 function parseDayBlock(block, dayMatch, result) {
   const day = parseInt(dayMatch[1], 10);
   const date = titleCase(dayMatch[2].trim());
@@ -179,7 +271,7 @@ function parseDayBlock(block, dayMatch, result) {
   while (lines.length && !lines[0].trim()) lines.shift();
   while (lines.length && !lines[lines.length - 1].trim()) lines.pop();
 
-  result.itinerary.push({ day, date, title, details: lines.join('\n').trim() });
+  result.itinerary.push({ day, date, title, details: tidyDayDetails(lines) });
 }
 
 /**

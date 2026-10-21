@@ -27,3 +27,6 @@ pnpm-debug.log*
 Charrish Travels - Proposal & Quotation.pdf
 charrish-travels-quotation.html
 packagesformat.txt
+
+# Local Netlify folder
+.netlify
