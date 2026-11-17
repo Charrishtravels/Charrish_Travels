@@ -3,16 +3,23 @@ import { SITE, TOUR_CATEGORIES } from '../consts';
 
 interface Props {
   transparent?: boolean;
+  /** Pre-filled text for the Contact us WhatsApp links. */
+  whatsappMessage?: string;
 }
 
-const { transparent = false } = Astro.props;
+const { transparent = false, whatsappMessage = "Hi Charrish Travels, I'd like to plan a trip." } = Astro.props;
+const whatsappHref = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(whatsappMessage)}`;
 
 const NAV_LINKS = [
   { href: '/about', label: 'About us' },
   {
+    // No page of its own: clicking Tours opens the menu of tour types.
     href: '/tours',
     label: 'Tours',
-    children: TOUR_CATEGORIES.map((c) => ({ href: `/tours/${c.slug}`, label: c.label })),
+    children: TOUR_CATEGORIES.filter((c) => c.slug === 'domestic' || c.slug === 'international').map((c) => ({
+      href: `/tours/${c.slug}`,
+      label: c.label,
+    })),
   },
   { href: '/testimonials', label: 'Reviews' },
 ];
@@ -47,17 +54,19 @@ const linkClass = (href: string) =>
 
     <ul id="nav-links" class="hidden flex-1 items-stretch justify-end text-xs font-medium sm:flex">
       {NAV_LINKS.map((link) => (
-        <li class:list={['flex', link.children && 'group relative']}>
-          <a href={link.href} class={linkClass(link.href)}>
-            {link.label}
-            {link.children && (
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="ml-1.5 h-3 w-3 transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180" aria-hidden="true">
+        <li class:list={['flex', link.children && 'group relative']} data-nav-dropdown={link.children ? '' : undefined}>
+          {link.children ? (
+            <button type="button" aria-haspopup="true" aria-expanded="false" data-nav-dropdown-toggle class={linkClass(link.href)}>
+              {link.label}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="ml-1.5 h-3 w-3 transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180 group-data-open:rotate-180" aria-hidden="true">
                 <path d="M6 9l6 6 6-6" />
               </svg>
-            )}
-          </a>
+            </button>
+          ) : (
+            <a href={link.href} class={linkClass(link.href)}>{link.label}</a>
+          )}
           {link.children && (
-            <div class="invisible absolute top-full right-0 w-56 translate-y-1 overflow-hidden rounded-b-xl border border-line border-t-0 bg-page opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+            <div class="invisible absolute top-full right-0 w-56 translate-y-1 overflow-hidden rounded-b-xl border border-line border-t-0 bg-page opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100 group-data-open:visible group-data-open:translate-y-0 group-data-open:opacity-100">
               <ul class="py-1.5">
                 {link.children.map((child) => (
                   <li>
@@ -96,7 +105,7 @@ const linkClass = (href: string) =>
   </div>
 
   <a
-    href={`https://wa.me/${SITE.whatsapp}`}
+    href={whatsappHref}
     target="_blank"
     rel="noopener"
     data-nav-cta
@@ -112,18 +121,22 @@ const linkClass = (href: string) =>
       transparent ? 'divide-y divide-line border-t border-line bg-page text-earth' : 'divide-y divide-line border-t border-line bg-page text-earth',
     ]}
   >
-    {[...NAV_LINKS, { href: `https://wa.me/${SITE.whatsapp}`, label: 'Contact us', children: undefined }].map((link) => (
+    {[...NAV_LINKS, { href: whatsappHref, label: 'Contact us', children: undefined }].map((link) => (
       <li>
-        <a
-          href={link.href}
-          class:list={[
-            'block px-5 py-4 transition-all duration-200 active:scale-95',
-            transparent ? 'hover:bg-sand hover:text-saffron-deep' : 'hover:bg-sand hover:text-saffron-deep',
-            currentPath === link.href && (transparent ? 'bg-sand font-semibold text-saffron-deep' : 'bg-sand font-semibold text-saffron-deep'),
-          ]}
-        >
-          {link.label}
-        </a>
+        {link.children ? (
+          <p class="px-5 pt-4 pb-2 text-xs font-semibold tracking-[0.18em] text-maroon uppercase">{link.label}</p>
+        ) : (
+          <a
+            href={link.href}
+            class:list={[
+              'block px-5 py-4 transition-all duration-200 active:scale-95',
+              'hover:bg-sand hover:text-saffron-deep',
+              currentPath === link.href && 'bg-sand font-semibold text-saffron-deep',
+            ]}
+          >
+            {link.label}
+          </a>
+        )}
         {link.children && (
           <ul class:list={['text-sm', transparent ? 'bg-sand/40' : 'bg-sand/40']}>
             {link.children.map((child) => (
@@ -155,15 +168,18 @@ const linkClass = (href: string) =>
     }
     /* The Contact us button keeps its own saffron-and-white colours once scrolled. */
     header.nav-transparent.nav-scrolled a:not([data-nav-cta]),
+    header.nav-transparent.nav-scrolled [data-nav-dropdown-toggle],
     header.nav-transparent.nav-scrolled #nav-toggle,
     header.nav-transparent.nav-scrolled #nav-menu {
       color: var(--color-earth);
     }
-    header.nav-transparent.nav-scrolled a:not([data-nav-cta]):hover {
+    header.nav-transparent.nav-scrolled a:not([data-nav-cta]):hover,
+    header.nav-transparent.nav-scrolled [data-nav-dropdown-toggle]:hover {
       background-color: var(--color-sand);
       color: var(--color-saffron-deep);
     }
     header.nav-transparent.nav-scrolled #nav-links a.font-semibold,
+    header.nav-transparent.nav-scrolled #nav-links button.font-semibold,
     header.nav-transparent.nav-scrolled #nav-menu a.font-semibold {
       background-color: var(--color-sand);
       color: var(--color-saffron-deep);
@@ -183,7 +199,8 @@ const linkClass = (href: string) =>
       );
     }
     header.nav-transparent:not(.nav-scrolled) [data-logo-text],
-    header.nav-transparent:not(.nav-scrolled) #nav-links > li > a {
+    header.nav-transparent:not(.nav-scrolled) #nav-links > li > a,
+    header.nav-transparent:not(.nav-scrolled) #nav-links > li > button {
       text-shadow:
         0 1px 2px color-mix(in srgb, var(--color-earth) 85%, transparent),
         0 0 14px color-mix(in srgb, var(--color-earth) 65%, transparent);
@@ -235,6 +252,28 @@ const linkClass = (href: string) =>
     );
 
     updateNavScrolled();
+  }
+
+  // Desktop Tours menu: opens on click (as well as hover), closes on outside click or Escape.
+  for (const item of document.querySelectorAll<HTMLElement>('[data-nav-dropdown]')) {
+    const button = item.querySelector<HTMLButtonElement>('[data-nav-dropdown-toggle]')!;
+    const setOpen = (open: boolean) => {
+      item.toggleAttribute('data-open', open);
+      button.setAttribute('aria-expanded', String(open));
+    };
+    button.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setOpen(!item.hasAttribute('data-open'));
+    });
+    document.addEventListener('click', (e) => {
+      if (!item.contains(e.target as Node)) setOpen(false);
+    });
+    item.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        setOpen(false);
+        button.focus();
+      }
+    });
   }
 
   const toggle = document.getElementById('nav-toggle');

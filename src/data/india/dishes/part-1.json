@@ -1,0 +1,488 @@
+{
+  "andhra-pradesh": [
+    {
+      "name": "Pesarattu",
+      "blurb": "A thin crepe of ground whole green moong and ginger, often topped with onion and upma for a breakfast called MLA pesarattu, served with ginger chutney.",
+      "veg": true
+    },
+    {
+      "name": "Gongura Mamsam",
+      "blurb": "Mutton slow-cooked with sour gongura (sorrel) leaves and plenty of red chilli, a Guntur-style curry eaten with hot rice.",
+      "veg": false
+    },
+    {
+      "name": "Punugulu",
+      "blurb": "Crisp fried balls of leftover idli-dosa batter, sold hot from roadside carts in Vijayawada with peanut or ginger chutney.",
+      "veg": true
+    },
+    {
+      "name": "Pulihora",
+      "blurb": "Tamarind rice tempered with mustard seeds, peanuts, curry leaves and chillies, cooked at home for festivals and served as prasadam in temples.",
+      "veg": true
+    },
+    {
+      "name": "Pootharekulu",
+      "blurb": "Paper-thin rice-starch sheets layered with ghee, sugar or jaggery and nuts, a sweet from Atreyapuram in the Godavari delta.",
+      "veg": true
+    }
+  ],
+  "arunachal-pradesh": [
+    {
+      "name": "Thukpa",
+      "blurb": "A noodle soup with vegetables and often pork or chicken in a light broth, eaten across the Monpa and Sherdukpen areas around Tawang.",
+      "veg": false
+    },
+    {
+      "name": "Lukter",
+      "blurb": "Dried meat, usually pork or yak, tossed with fiery bhut jolokia chilli flakes and eaten as a side with rice.",
+      "veg": false
+    },
+    {
+      "name": "Zan",
+      "blurb": "A thick porridge of millet flour stirred into boiling water, sometimes with greens, a filling staple in winter villages.",
+      "veg": true
+    },
+    {
+      "name": "Khura",
+      "blurb": "A buckwheat pancake made by the Monpa people of Tawang and West Kameng, eaten for breakfast with chilli-cheese chutney or tea.",
+      "veg": true
+    },
+    {
+      "name": "Khapse",
+      "blurb": "Twisted pastries of wheat flour, sugar and butter fried crisp, made in large batches for the Losar new year.",
+      "veg": true
+    }
+  ],
+  "assam": [
+    {
+      "name": "Masor Tenga",
+      "blurb": "A light, sour fish curry made with tomatoes, lemon or outenga (elephant apple), a summer favourite eaten with rice.",
+      "veg": false
+    },
+    {
+      "name": "Khar",
+      "blurb": "A dish of raw papaya or other vegetables cooked with khar, an alkaline liquid filtered from sun-dried banana-peel ash, traditionally the first course of an Assamese meal.",
+      "veg": true
+    },
+    {
+      "name": "Aloo Pitika",
+      "blurb": "Mashed potatoes mixed with raw mustard oil, chopped onion, green chilli and coriander, a simple side at almost every home meal.",
+      "veg": true
+    },
+    {
+      "name": "Hanhor Mangxo",
+      "blurb": "Duck curry cooked with ash gourd or lentils and spices, a dish closely tied to Bihu feasts and winter gatherings.",
+      "veg": false
+    },
+    {
+      "name": "Til Pitha",
+      "blurb": "Rolled rice-flour crepes filled with black sesame and jaggery, made in Assamese homes for Magh Bihu in January.",
+      "veg": true
+    }
+  ],
+  "bihar": [
+    {
+      "name": "Litti Chokha",
+      "blurb": "Wheat balls stuffed with spiced roasted gram flour (sattu), baked over coals and dipped in ghee, served with mashed roasted brinjal, tomato and potato.",
+      "veg": true
+    },
+    {
+      "name": "Champaran Meat",
+      "blurb": "Mutton sealed in a clay pot (handi) with whole garlic, mustard oil and spices and slow-cooked over coals, also called ahuna or handi meat.",
+      "veg": false
+    },
+    {
+      "name": "Dal Pitha",
+      "blurb": "Steamed rice-flour dumplings stuffed with spiced chana dal, a home-style snack popular in winter.",
+      "veg": true
+    },
+    {
+      "name": "Thekua",
+      "blurb": "Crisp cookies of wheat flour, jaggery and ghee pressed into wooden moulds and fried, prepared as an offering for the Chhath festival.",
+      "veg": true
+    },
+    {
+      "name": "Khaja",
+      "blurb": "A flaky, layered pastry fried and soaked in sugar syrup, most famous from Silao near Nalanda and Rajgir.",
+      "veg": true
+    }
+  ],
+  "chhattisgarh": [
+    {
+      "name": "Chila",
+      "blurb": "A soft pancake of rice flour batter cooked on an iron griddle, eaten for breakfast with tomato or green chutney.",
+      "veg": true
+    },
+    {
+      "name": "Fara",
+      "blurb": "Steamed rolls of rice-flour dough, often tempered afterwards with mustard seeds, sesame and curry leaves, a common evening snack.",
+      "veg": true
+    },
+    {
+      "name": "Bafauri",
+      "blurb": "Steamed dumplings of ground chana dal with onion and spices, a light, oil-free alternative to fried pakoras.",
+      "veg": true
+    },
+    {
+      "name": "Chapda Chutney",
+      "blurb": "A tangy chutney of red ants and their eggs ground with chilli, garlic and salt, a traditional food of the Bastar tribal region.",
+      "veg": false
+    },
+    {
+      "name": "Dehrori",
+      "blurb": "Fried dumplings of ground rice and curd soaked in sugar syrup, made for Diwali and weddings.",
+      "veg": true
+    }
+  ],
+  "goa": [
+    {
+      "name": "Goan Fish Curry",
+      "blurb": "Kingfish or pomfret simmered in a coconut gravy soured with kokum or tamarind and red chillies, eaten daily with rice as xitt-kodi.",
+      "veg": false
+    },
+    {
+      "name": "Pork Vindaloo",
+      "blurb": "Pork marinated in palm vinegar, garlic and dried Kashmiri chillies, a Goan Catholic dish shaped by Portuguese carne de vinha d'alhos.",
+      "veg": false
+    },
+    {
+      "name": "Khatkhate",
+      "blurb": "A thick stew of several vegetables, lentils and coconut flavoured with tirphal (Sichuan-type pepper), cooked by Goan Hindu families for festivals and weddings.",
+      "veg": true
+    },
+    {
+      "name": "Patoleo",
+      "blurb": "Rice paste spread on turmeric leaves, filled with coconut and jaggery and steamed, made for the feast of the Assumption on 15 August.",
+      "veg": true
+    },
+    {
+      "name": "Bebinca",
+      "blurb": "A layered cake of coconut milk, egg yolks, sugar and ghee, each layer baked from above, served at Christmas and weddings.",
+      "veg": false
+    }
+  ],
+  "gujarat": [
+    {
+      "name": "Khaman Dhokla",
+      "blurb": "A spongy steamed cake of fermented gram flour, tempered with mustard seeds, green chillies and curry leaves, eaten at breakfast or teatime.",
+      "veg": true
+    },
+    {
+      "name": "Undhiyu",
+      "blurb": "Winter vegetables such as surti papdi beans, purple yam and baby brinjal cooked with fenugreek dumplings, a Surat specialty eaten on Uttarayan.",
+      "veg": true
+    },
+    {
+      "name": "Thepla",
+      "blurb": "A soft flatbread of wheat flour and fresh fenugreek leaves, the standard travel food of Gujarati families, eaten with pickle or curd.",
+      "veg": true
+    },
+    {
+      "name": "Dabeli",
+      "blurb": "A pav filled with sweet-spicy potato masala, pomegranate and roasted peanuts, a street snack that started in Mandvi in Kutch.",
+      "veg": true
+    },
+    {
+      "name": "Mohanthal",
+      "blurb": "A fudge of coarse gram flour roasted in ghee with sugar, cardamom and nuts, made for Diwali and offered in Krishna temples.",
+      "veg": true
+    }
+  ],
+  "haryana": [
+    {
+      "name": "Bajra Khichdi",
+      "blurb": "Pearl millet and moong dal cooked slowly into a porridge and served with ghee, jaggery or buttermilk through the winter months.",
+      "veg": true
+    },
+    {
+      "name": "Kadhi Pakora",
+      "blurb": "Gram-flour fritters simmered in a sour curd-and-besan gravy, a home favourite in a state known for its dairy.",
+      "veg": true
+    },
+    {
+      "name": "Hara Dhania Cholia",
+      "blurb": "Fresh green chickpeas cooked with plenty of coriander leaves and spices, a seasonal winter dish.",
+      "veg": true
+    },
+    {
+      "name": "Kachri ki Sabzi",
+      "blurb": "A tangy curry of kachri, a small wild desert melon, cooked with onion and spices and eaten with bajra roti.",
+      "veg": true
+    },
+    {
+      "name": "Churma",
+      "blurb": "Crushed rotis or baked wheat dough mixed with ghee, jaggery or sugar and dry fruits, served at village festivals and weddings.",
+      "veg": true
+    }
+  ],
+  "himachal-pradesh": [
+    {
+      "name": "Siddu",
+      "blurb": "A steamed bun of yeasted wheat dough stuffed with walnut, poppy seed or lentil paste, eaten with ghee in Kullu and Shimla villages.",
+      "veg": true
+    },
+    {
+      "name": "Chamba Madra",
+      "blurb": "Chickpeas or kidney beans slow-cooked in yoghurt with ghee and whole spices, a centrepiece of the Chamba dham feast.",
+      "veg": true
+    },
+    {
+      "name": "Chha Gosht",
+      "blurb": "Marinated lamb cooked in a gravy of yoghurt and gram flour with cardamom and bay leaf, a Kangra-region specialty.",
+      "veg": false
+    },
+    {
+      "name": "Babru",
+      "blurb": "A fried bread of wheat dough stuffed with soaked black gram paste, sold as a snack with tamarind chutney around Shimla.",
+      "veg": true
+    },
+    {
+      "name": "Mittha",
+      "blurb": "Sweet rice cooked with sugar, raisins and dry fruits, served at the end of a traditional dham meal on leaf plates.",
+      "veg": true
+    }
+  ],
+  "jharkhand": [
+    {
+      "name": "Dhuska",
+      "blurb": "Deep-fried bread of rice and chana dal batter, served for breakfast in Ranchi with spiced chickpea ghugni or potato curry.",
+      "veg": true
+    },
+    {
+      "name": "Rugra",
+      "blurb": "A curry of wild puffball mushrooms gathered from sal forests during the monsoon, cooked with onion and spices.",
+      "veg": true
+    },
+    {
+      "name": "Chilka Roti",
+      "blurb": "A thin pancake of rice flour and chana dal batter cooked on a griddle, a staple of tribal home kitchens.",
+      "veg": true
+    },
+    {
+      "name": "Karil Sabzi",
+      "blurb": "Tender bamboo shoots cooked with mustard oil, onion and chilli, a seasonal dish of the forest regions.",
+      "veg": true
+    },
+    {
+      "name": "Arsa Pitha",
+      "blurb": "Fried discs of rice flour and jaggery, made for festivals such as Sohrai and Karma.",
+      "veg": true
+    }
+  ],
+  "karnataka": [
+    {
+      "name": "Bisi Bele Bath",
+      "blurb": "Rice, toor dal and vegetables cooked together with tamarind and a fresh-roasted spice powder, finished with ghee and served with boondi or papad.",
+      "veg": true
+    },
+    {
+      "name": "Mysore Masala Dosa",
+      "blurb": "A crisp dosa spread with red chutney on the inside and filled with potato palya, served with coconut chutney and sambar.",
+      "veg": true
+    },
+    {
+      "name": "Kori Rotti",
+      "blurb": "Spicy Mangalorean chicken curry in coconut milk poured over crisp, wafer-thin dried rice rotis.",
+      "veg": false
+    },
+    {
+      "name": "Coorg Pandi Curry",
+      "blurb": "Pork cooked dark and tangy with kachampuli, a vinegar made from the kodumpuli fruit, a signature dish of Kodagu eaten with rice balls (kadambuttu).",
+      "veg": false
+    },
+    {
+      "name": "Mysore Pak",
+      "blurb": "A rich sweet of gram flour cooked with generous ghee and sugar, first made in the kitchens of the Mysore Palace.",
+      "veg": true
+    }
+  ],
+  "kerala": [
+    {
+      "name": "Onam Sadya",
+      "blurb": "A vegetarian feast of rice with more than a dozen dishes such as sambar, avial, olan and thoran served on a banana leaf, especially at Onam.",
+      "veg": true
+    },
+    {
+      "name": "Puttu and Kadala Curry",
+      "blurb": "Steamed cylinders of rice flour layered with grated coconut, eaten for breakfast with black chickpea curry.",
+      "veg": true
+    },
+    {
+      "name": "Karimeen Pollichathu",
+      "blurb": "Pearl spot fish from the backwaters marinated in spices, wrapped in banana leaf and pan-roasted, a Kuttanad specialty.",
+      "veg": false
+    },
+    {
+      "name": "Pazham Pori",
+      "blurb": "Slices of ripe nendran banana dipped in flour batter and fried, sold at tea shops with a glass of chai.",
+      "veg": true
+    },
+    {
+      "name": "Palada Payasam",
+      "blurb": "Rice flakes (ada) slow-cooked in milk and sugar until pink and creamy, a classic close to a sadya.",
+      "veg": true
+    }
+  ],
+  "madhya-pradesh": [
+    {
+      "name": "Indori Poha",
+      "blurb": "Steamed flattened rice with onion, fennel and turmeric, topped with sev and jeeravan masala, eaten for breakfast in Indore with hot jalebi.",
+      "veg": true
+    },
+    {
+      "name": "Bhutte ka Kees",
+      "blurb": "Grated fresh corn cooked in milk with green chillies and mustard seeds, a monsoon street snack at Indore's Sarafa night market.",
+      "veg": true
+    },
+    {
+      "name": "Dal Bafla",
+      "blurb": "Wheat dough balls boiled, then baked and soaked in ghee, served with spiced toor dal, a Malwa-region favourite.",
+      "veg": true
+    },
+    {
+      "name": "Bhopali Gosht Korma",
+      "blurb": "Mutton slow-cooked in a gravy of fried onions, yoghurt and whole spices, a legacy of the Nawabi kitchens of Bhopal.",
+      "veg": false
+    },
+    {
+      "name": "Mawa Bati",
+      "blurb": "Fried dumplings of khoya stuffed with dry fruits and soaked in sugar syrup, a Malwa cousin of gulab jamun.",
+      "veg": true
+    }
+  ],
+  "maharashtra": [
+    {
+      "name": "Vada Pav",
+      "blurb": "A spiced potato fritter in a soft pav with dry garlic chutney and fried green chilli, Mumbai's everyday street snack.",
+      "veg": true
+    },
+    {
+      "name": "Misal Pav",
+      "blurb": "Sprouted moth beans in a spicy, oily gravy (kat) topped with farsan, onion and lemon, served with pav, especially around Pune, Nashik and Kolhapur.",
+      "veg": true
+    },
+    {
+      "name": "Kolhapuri Tambda Rassa",
+      "blurb": "A fiery red mutton curry made with Kolhapuri chillies and dry coconut, served with mutton, a white broth (pandhra rassa) and bhakri.",
+      "veg": false
+    },
+    {
+      "name": "Sabudana Khichdi",
+      "blurb": "Soaked tapioca pearls tossed with roasted peanuts, potato, cumin and green chilli, a common food on fasting days.",
+      "veg": true
+    },
+    {
+      "name": "Puran Poli",
+      "blurb": "A flatbread stuffed with chana dal cooked with jaggery and cardamom, served with ghee at Holi and Gudi Padwa.",
+      "veg": true
+    }
+  ],
+  "manipur": [
+    {
+      "name": "Eromba",
+      "blurb": "Boiled vegetables such as potato and beans mashed with fermented fish (ngari) and king chilli, eaten with rice at most meals.",
+      "veg": false
+    },
+    {
+      "name": "Nga Thongba",
+      "blurb": "A fish curry with potatoes and onions, lightly spiced and flavoured with herbs, a regular part of the Manipuri thali.",
+      "veg": false
+    },
+    {
+      "name": "Singju",
+      "blurb": "A salad of shredded cabbage, lotus stem and local herbs dressed with roasted chickpea flour, chilli and usually ngari, sold at evening stalls.",
+      "veg": false
+    },
+    {
+      "name": "Kelli Chana",
+      "blurb": "Dried yellow peas cooked with ginger and chilli and topped with herbs, a popular street snack in Imphal.",
+      "veg": true
+    },
+    {
+      "name": "Chak-hao Kheer",
+      "blurb": "Manipuri black rice simmered in milk and sugar until deep purple, made for festivals and special occasions.",
+      "veg": true
+    }
+  ],
+  "meghalaya": [
+    {
+      "name": "Jadoh",
+      "blurb": "Red rice cooked with pork, turmeric, ginger and bay leaf, a Khasi staple sold at small eateries in Shillong.",
+      "veg": false
+    },
+    {
+      "name": "Dohneiiong",
+      "blurb": "Pork cooked in a thick, dark paste of roasted black sesame seeds with onion and ginger, a Khasi favourite eaten with rice.",
+      "veg": false
+    },
+    {
+      "name": "Tungrymbai",
+      "blurb": "Fermented soybeans cooked with black sesame, onion and chilli, often with pork, served as a pungent side dish.",
+      "veg": false
+    },
+    {
+      "name": "Pumaloi",
+      "blurb": "Powdered rice steamed in a special pot into soft, fluffy cakes, eaten with meat curries or tea.",
+      "veg": true
+    },
+    {
+      "name": "Pukhlein",
+      "blurb": "Fritters of rice flour and jaggery deep-fried until puffed and golden, a Khasi sweet made for celebrations.",
+      "veg": true
+    }
+  ],
+  "mizoram": [
+    {
+      "name": "Bai",
+      "blurb": "A simple stew of greens, bamboo shoot and herbs boiled with a pinch of soda (chingal), the everyday Mizo dish served with rice.",
+      "veg": true
+    },
+    {
+      "name": "Sawhchiar",
+      "blurb": "Rice cooked into a thick, savoury porridge with chicken or pork, a comfort dish served at gatherings.",
+      "veg": false
+    },
+    {
+      "name": "Vawksa Rep",
+      "blurb": "Pork smoked over the kitchen fire until dry and smoky, then cooked with mustard greens or bamboo shoot.",
+      "veg": false
+    },
+    {
+      "name": "Chhum Han",
+      "blurb": "Seasonal vegetables such as cabbage, beans and pumpkin steamed and lightly seasoned, served with chilli chutney.",
+      "veg": true
+    },
+    {
+      "name": "Koat Pitha",
+      "blurb": "Fritters of rice flour, mashed banana and jaggery fried until crisp, served with tea.",
+      "veg": true
+    }
+  ],
+  "nagaland": [
+    {
+      "name": "Smoked Pork with Bamboo Shoot",
+      "blurb": "Fire-smoked pork cooked with fermented bamboo shoot and raja mircha chilli, the dish most closely tied to Naga cooking.",
+      "veg": false
+    },
+    {
+      "name": "Axone Pork",
+      "blurb": "Pork cooked with axone, fermented soybean paste, plus tomatoes and chilli, a Sumi specialty with a strong aroma.",
+      "veg": false
+    },
+    {
+      "name": "Anishi",
+      "blurb": "Dried, fermented colocasia leaf cakes cooked with smoked pork, a traditional dish of the Ao Naga people.",
+      "veg": false
+    },
+    {
+      "name": "Hinkejvu",
+      "blurb": "A light Sumi dish of colocasia, cabbage, mustard leaves and French beans boiled together, eaten with rice.",
+      "veg": true
+    },
+    {
+      "name": "Raja Mircha Chutney",
+      "blurb": "A fiery chutney of roasted king chilli (ghost pepper), tomato and garlic, served on the side with nearly every Naga meal.",
+      "veg": true
+    }
+  ]
+}

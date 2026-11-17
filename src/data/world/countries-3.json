@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "nepal",
+    "name": "Nepal",
+    "region": "Neighbouring Countries",
+    "tagline": "Pashupatinath darshan, Pokhara lakes and Himalayan sunrises",
+    "places": [
+      "Kathmandu",
+      "Pokhara",
+      "Chitwan National Park",
+      "Nagarkot",
+      "Lumbini",
+      "Muktinath"
+    ],
+    "bestTime": "October to April",
+    "idealDuration": "5–7 days",
+    "visa": "No visa needed (valid passport or voter ID required)",
+    "photoArticle": "Phewa Lake",
+    "photoAlt": "Boats on Phewa Lake in Pokhara with green hills along the shore"
+  },
+  {
+    "slug": "bhutan",
+    "name": "Bhutan",
+    "region": "Neighbouring Countries",
+    "tagline": "Tiger's Nest, riverside dzongs and quiet Himalayan valleys",
+    "places": [
+      "Paro",
+      "Thimphu",
+      "Punakha",
+      "Dochula Pass",
+      "Phobjikha Valley"
+    ],
+    "bestTime": "March to May and September to November",
+    "idealDuration": "6–8 days",
+    "visa": "No visa needed; an entry permit and a daily Sustainable Development Fee apply",
+    "photoArticle": "Paro Taktsang",
+    "photoAlt": "Paro Taktsang, the Tiger's Nest monastery, built into a cliff face above the Paro valley"
+  },
+  {
+    "slug": "kazakhstan",
+    "name": "Kazakhstan",
+    "region": "Central Asia & Caucasus",
+    "tagline": "Almaty mountain lakes, Charyn Canyon and Tien Shan cable cars",
+    "places": [
+      "Almaty",
+      "Big Almaty Lake",
+      "Charyn Canyon",
+      "Shymbulak",
+      "Kolsai Lakes",
+      "Astana"
+    ],
+    "bestTime": "May to September (December to March for snow)",
+    "idealDuration": "5–7 days",
+    "visa": "Visa-free entry for short stays",
+    "photoArticle": "Charyn Canyon",
+    "photoAlt": "Red sandstone walls of Charyn Canyon in south-east Kazakhstan"
+  },
+  {
+    "slug": "uzbekistan",
+    "name": "Uzbekistan",
+    "region": "Central Asia & Caucasus",
+    "tagline": "Blue-tiled Samarkand, old Bukhara and the walled town of Khiva",
+    "places": [
+      "Tashkent",
+      "Samarkand",
+      "Bukhara",
+      "Khiva",
+      "Shakhrisabz"
+    ],
+    "bestTime": "April to June and September to October",
+    "idealDuration": "6–8 days",
+    "visa": "e-Visa",
+    "photoArticle": "Registan",
+    "photoAlt": "The three tiled madrasas facing the Registan square in Samarkand"
+  },
+  {
+    "slug": "kyrgyzstan",
+    "name": "Kyrgyzstan",
+    "region": "Central Asia & Caucasus",
+    "tagline": "Yurt stays, alpine lakes and horse trails in the Tien Shan",
+    "places": [
+      "Bishkek",
+      "Ala-Archa",
+      "Issyk-Kul",
+      "Karakol",
+      "Song-Kul",
+      "Burana Tower"
+    ],
+    "bestTime": "June to September",
+    "idealDuration": "6–8 days",
+    "visa": "e-Visa",
+    "photoArticle": "Ala-Archa Nature Park",
+    "photoAlt": "A mountain valley with snow-capped peaks in Ala-Archa Nature Park near Bishkek"
+  },
+  {
+    "slug": "azerbaijan",
+    "name": "Azerbaijan",
+    "region": "Central Asia & Caucasus",
+    "tagline": "Baku old town, the Caspian seafront and an Indian-built fire temple",
+    "places": [
+      "Baku",
+      "Gobustan",
+      "Absheron Peninsula",
+      "Gabala",
+      "Sheki",
+      "Shahdag"
+    ],
+    "bestTime": "April to June and September to November",
+    "idealDuration": "4–6 days",
+    "visa": "e-Visa",
+    "photoArticle": "Ateshgah of Baku",
+    "photoAlt": "The courtyard and central fire altar of the Ateshgah fire temple near Baku"
+  },
+  {
+    "slug": "georgia",
+    "name": "Georgia",
+    "region": "Central Asia & Caucasus",
+    "tagline": "Old Tbilisi, mountain churches of Kazbegi and Black Sea Batumi",
+    "places": [
+      "Tbilisi",
+      "Kazbegi",
+      "Gudauri",
+      "Mtskheta",
+      "Sighnaghi",
+      "Batumi"
+    ],
+    "bestTime": "May to October (December to March for snow)",
+    "idealDuration": "6–8 days",
+    "visa": "e-Visa",
+    "photoArticle": "Gergeti Trinity Church",
+    "photoAlt": "Gergeti Trinity Church on a grassy ridge in the Caucasus mountains above Stepantsminda"
+  },
+  {
+    "slug": "armenia",
+    "name": "Armenia",
+    "region": "Central Asia & Caucasus",
+    "tagline": "Ancient monasteries, Lake Sevan and views of Mount Ararat",
+    "places": [
+      "Yerevan",
+      "Garni",
+      "Geghard",
+      "Lake Sevan",
+      "Dilijan",
+      "Tatev"
+    ],
+    "bestTime": "May to October",
+    "idealDuration": "5–7 days",
+    "visa": "e-Visa or visa on arrival",
+    "photoArticle": "Khor Virap",
+    "photoAlt": "Khor Virap monastery on a hill with the plain and mountains beyond"
+  }
+]

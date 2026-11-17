@@ -1,0 +1,291 @@
+{
+  "philippines": {
+    "capital": "Manila",
+    "currency": "Philippine peso (PHP)",
+    "intro": "The Philippines is a country of more than 7,000 islands, and most Indian families combine a day or two in Manila with beach time in Boracay or Palawan and the countryside of Bohol. English is widely spoken, people are friendly and helpful, and island hops are done by short domestic flights and boats.",
+    "destinations": [
+      { "name": "Intramuros", "blurb": "Manila's old walled Spanish city, with Fort Santiago, cobbled streets and horse-drawn kalesa rides." },
+      { "name": "Boracay", "blurb": "A small island known for the long, soft White Beach, calm water and sunset sailing trips." },
+      { "name": "El Nido", "blurb": "A town in northern Palawan where island-hopping boats visit limestone lagoons and quiet beaches." },
+      { "name": "Puerto Princesa Subterranean River", "blurb": "A navigable underground river in Palawan, explored by paddle boat through a long limestone cave." },
+      { "name": "Chocolate Hills", "blurb": "More than a thousand grassy domes in Bohol that turn brown in the dry season, seen from a hilltop viewing deck." },
+      { "name": "Kawasan Falls", "blurb": "Turquoise tiered waterfalls in southern Cebu, often visited with a canyoneering trip." },
+      { "name": "Tagaytay", "blurb": "A cool ridge town south of Manila with views over Taal Lake and its volcano island." }
+    ],
+    "devotional": [
+      { "name": "San Agustin Church", "blurb": "A UNESCO-listed stone church in Intramuros, completed in 1607 and the oldest standing church in the country." },
+      { "name": "Manila Cathedral", "blurb": "The city's main Catholic cathedral, rebuilt several times, facing Plaza de Roma in Intramuros." },
+      { "name": "Basilica del Santo Nino", "blurb": "A basilica in Cebu City that keeps the Santo Nino image brought by Magellan's expedition in 1521." },
+      { "name": "Quiapo Church", "blurb": "Home of the Black Nazarene statue, drawing large crowds of devotees, especially on Fridays." }
+    ],
+    "dishes": [
+      { "name": "Chicken Adobo", "blurb": "Chicken braised in vinegar, soy sauce, garlic and bay leaf, often called the national dish.", "veg": false },
+      { "name": "Sinigang", "blurb": "A sour tamarind soup with vegetables and pork, prawns or fish.", "veg": false },
+      { "name": "Lechon", "blurb": "Whole spit-roasted pig with crisp skin, served at fiestas and family feasts, especially in Cebu.", "veg": false },
+      { "name": "Turon", "blurb": "Sliced saba banana and jackfruit wrapped in a spring roll sheet, fried and coated in caramelised sugar.", "veg": true },
+      { "name": "Taho", "blurb": "Warm silken tofu with brown sugar syrup and sago pearls, sold by street vendors in the morning.", "veg": true }
+    ],
+    "highlights": [
+      "Island-hopping boat tour in El Nido",
+      "Sunset sail on a paraw boat off Boracay",
+      "Paddle boat ride through the underground river",
+      "Viewing deck at the Chocolate Hills",
+      "Kalesa ride through Intramuros",
+      "Snorkelling over coral reefs in Cebu or Palawan"
+    ],
+    "indianTraveller": "Indian restaurants are found in Manila's Makati area, Cebu and Boracay, though vegetarian choices are thinner on smaller islands; there are no direct flights from Hyderabad, so expect about 8 to 10 hours with a stop in Singapore, Kuala Lumpur or Bangkok, and pack a US-style plug adapter and some US dollars to change locally."
+  },
+  "taiwan": {
+    "capital": "Taipei",
+    "currency": "New Taiwan dollar (TWD)",
+    "intro": "Taiwan is a safe, easy-going island with a fast metro and high-speed rail, which makes a week-long loop from Taipei to Taroko Gorge and Sun Moon Lake very manageable. Its long Buddhist tradition means vegetarian restaurants are common, and the night markets are a highlight for families of all ages.",
+    "destinations": [
+      { "name": "Taipei 101", "blurb": "Once the world's tallest building, with an observatory on the 89th floor and a huge tuned mass damper on show." },
+      { "name": "National Palace Museum", "blurb": "A museum in Taipei holding one of the largest collections of Chinese imperial art, jade and porcelain." },
+      { "name": "Chiang Kai-shek Memorial Hall", "blurb": "A white memorial hall with a blue roof on a large plaza, known for its hourly changing of the guard." },
+      { "name": "Jiufen", "blurb": "A former gold-mining town on a hillside, with narrow lanes, lantern-lit teahouses and sea views." },
+      { "name": "Taroko Gorge", "blurb": "A marble canyon on the east coast with walking trails, cliff-side roads and the Eternal Spring Shrine." },
+      { "name": "Sun Moon Lake", "blurb": "Taiwan's largest lake, ringed by forested hills, with boat rides, cycle paths and a cable car." },
+      { "name": "Shilin Night Market", "blurb": "Taipei's best-known night market for street snacks, games and inexpensive shopping." }
+    ],
+    "devotional": [
+      { "name": "Longshan Temple", "blurb": "A busy temple in Taipei's Wanhua district, founded in 1738, where Buddhist and folk deities are worshipped together." },
+      { "name": "Fo Guang Shan Monastery", "blurb": "A large Buddhist monastery near Kaohsiung with a seated bronze Buddha and a museum." },
+      { "name": "Wen Wu Temple", "blurb": "A hillside temple on the shore of Sun Moon Lake with red stone lions and lake views." },
+      { "name": "Dalongdong Baoan Temple", "blurb": "A Taipei folk temple restored with UNESCO recognition for its carvings and painted halls." }
+    ],
+    "dishes": [
+      { "name": "Beef Noodle Soup", "blurb": "Wheat noodles in a rich, slow-cooked broth with tender braised beef.", "veg": false },
+      { "name": "Xiaolongbao", "blurb": "Thin-skinned steamed dumplings filled with pork and hot soup.", "veg": false },
+      { "name": "Gua Bao", "blurb": "A soft steamed bun folded around braised pork belly, peanut powder and pickled greens.", "veg": false },
+      { "name": "Stinky Tofu", "blurb": "Fermented tofu deep-fried until crisp and served with pickled cabbage and chilli sauce.", "veg": true },
+      { "name": "Douhua", "blurb": "Soft tofu pudding in sweet syrup, topped with peanuts, red beans or taro balls.", "veg": true }
+    ],
+    "highlights": [
+      "Sunset from the Taipei 101 observatory",
+      "Evening at Shilin Night Market",
+      "Teahouse stop in the lanes of Jiufen",
+      "Walk along the Shakadang Trail in Taroko Gorge",
+      "Boat ride across Sun Moon Lake",
+      "Releasing a sky lantern at Shifen Old Street"
+    ],
+    "indianTraveller": "Buddhist vegetarian restaurants are easy to find, though many leave out onion and garlic, and Taipei has several Indian restaurants; there are no direct flights from Hyderabad, so plan on about 8 to 10 hours via Singapore, Bangkok or Hong Kong, and note that Taiwan uses US-style plugs at 110 volts."
+  },
+  "bahrain": {
+    "capital": "Manama",
+    "currency": "Bahraini dinar (BHD)",
+    "intro": "Bahrain is a small island kingdom that suits a short break or a stopover, with old souqs, a seaside fort and modern malls within a short drive of each other. A large Indian community has lived here for generations, so familiar food, temples and Indian schools are part of everyday life in Manama.",
+    "destinations": [
+      { "name": "Bahrain National Museum", "blurb": "A museum on the Manama waterfront covering Dilmun burial mounds, pearling and traditional life." },
+      { "name": "Bab Al Bahrain and Manama Souq", "blurb": "The old gateway to the city and the lanes behind it, full of spice, gold, textile and perfume shops." },
+      { "name": "Qal'at al-Bahrain", "blurb": "A UNESCO-listed fort and archaeological site on the north coast, best visited near sunset." },
+      { "name": "Tree of Life", "blurb": "A lone mesquite tree, around 400 years old, growing in the desert with no obvious water source." },
+      { "name": "Bahrain International Circuit", "blurb": "The Formula One track in Sakhir, which offers circuit tours and driving experiences outside race weekends." },
+      { "name": "Pearling Path in Muharraq", "blurb": "A UNESCO-listed trail through old Muharraq linking merchant houses, oyster beds and the seafront." },
+      { "name": "Bahrain World Trade Center", "blurb": "Twin towers on the Manama skyline joined by bridges carrying three large wind turbines." }
+    ],
+    "devotional": [
+      { "name": "Shrinathji Temple", "blurb": "A Krishna temple in the old Manama souq, about 200 years old and among the oldest Hindu temples in the Gulf." },
+      { "name": "Al Fateh Grand Mosque", "blurb": "One of the largest mosques in the region, open to visitors outside prayer times with free guided tours." },
+      { "name": "Sacred Heart Church", "blurb": "A Catholic church in Manama opened in 1939, the first church built in the Gulf in modern times." },
+      { "name": "Our Lady of Arabia Cathedral", "blurb": "A large Catholic cathedral in Awali, consecrated in 2021 with a design inspired by a desert tent." }
+    ],
+    "dishes": [
+      { "name": "Machboos", "blurb": "Spiced rice cooked with chicken, lamb or fish, dried lime and a Gulf spice mix.", "veg": false },
+      { "name": "Harees", "blurb": "Wheat slow-cooked with meat and beaten to a smooth porridge, popular during Ramadan.", "veg": false },
+      { "name": "Balaleet", "blurb": "Sweet vermicelli with saffron and cardamom, topped with a thin omelette, eaten at breakfast.", "veg": false },
+      { "name": "Muhammar", "blurb": "Sweet rice cooked with date syrup or sugar and flavoured with cardamom and rose water.", "veg": true },
+      { "name": "Bahraini Halwa", "blurb": "A soft, glossy sweet made with starch, sugar, ghee, saffron and nuts, sold in Muharraq's old shops.", "veg": true }
+    ],
+    "highlights": [
+      "Darshan at the Shrinathji Temple in the old souq",
+      "Guided tour of Al Fateh Grand Mosque",
+      "Sunset at Qal'at al-Bahrain",
+      "Walking the Pearling Path in Muharraq",
+      "Tour of the Bahrain International Circuit",
+      "Shopping in the gold souq near Bab Al Bahrain"
+    ],
+    "indianTraveller": "Indian and pure-vegetarian restaurants are everywhere in Manama thanks to the large Indian community, flights from Hyderabad take about 4 hours, and Bahrain uses UK-style three-pin plugs, so carry an adapter and change rupees or dollars into dinars on arrival."
+  },
+  "kuwait": {
+    "capital": "Kuwait City",
+    "currency": "Kuwaiti dinar (KWD)",
+    "intro": "Kuwait is a compact Gulf country where many Indian families visit relatives, and a two or three day stay covers the main sights of Kuwait City. Expect a relaxed pace, a long corniche, well-kept museums and some of the best malls in the region.",
+    "destinations": [
+      { "name": "Kuwait Towers", "blurb": "Three towers on the corniche, the tallest with a revolving viewing sphere over the Gulf." },
+      { "name": "Souq Al-Mubarakiya", "blurb": "One of the oldest markets in Kuwait, with dates, spices, perfumes and small restaurants." },
+      { "name": "Al Shaheed Park", "blurb": "A large landscaped park in the city centre with gardens, a lake and two small museums." },
+      { "name": "Sheikh Jaber Al-Ahmad Cultural Centre", "blurb": "A modern opera house and arts complex hosting concerts, theatre and exhibitions." },
+      { "name": "Tareq Rajab Museum", "blurb": "A private museum with Islamic calligraphy, jewellery, ceramics and costumes from across the Muslim world." },
+      { "name": "Failaka Island", "blurb": "An island reached by ferry, with Greek-era ruins, old village houses and quiet beaches." },
+      { "name": "The Avenues", "blurb": "One of the largest malls in the Middle East, with themed shopping districts and plenty of food courts." }
+    ],
+    "devotional": [
+      { "name": "Grand Mosque of Kuwait", "blurb": "The country's largest mosque, with a decorated main hall and guided tours for visitors outside prayer times." },
+      { "name": "Holy Family Cathedral", "blurb": "The Catholic cathedral in central Kuwait City, serving a large community of Indian and other expatriate worshippers." },
+      { "name": "National Evangelical Church", "blurb": "A Protestant church compound in Kuwait City founded in 1931, hosting services in many languages including Malayalam." }
+    ],
+    "dishes": [
+      { "name": "Machboos Dyay", "blurb": "Kuwait's national dish of spiced rice cooked with chicken, dried lime and baharat.", "veg": false },
+      { "name": "Mutabbaq Samak", "blurb": "Fried fish, often pomfret, served over rice cooked in the fish stock.", "veg": false },
+      { "name": "Harees", "blurb": "Wheat and meat slow-cooked into a smooth porridge, finished with ghee and cinnamon.", "veg": false },
+      { "name": "Lugaimat", "blurb": "Crisp fried dough balls soaked in date syrup and sprinkled with sesame seeds.", "veg": true },
+      { "name": "Muhammar", "blurb": "Sweet rice cooked with sugar or date syrup, saffron and cardamom.", "veg": true }
+    ],
+    "highlights": [
+      "View from the revolving sphere of Kuwait Towers",
+      "Evening walk along the Arabian Gulf corniche",
+      "Dinner in the lanes of Souq Al-Mubarakiya",
+      "Ferry day trip to Failaka Island",
+      "Guided tour of the Grand Mosque",
+      "Shopping at The Avenues"
+    ],
+    "indianTraveller": "Indian vegetarian restaurants are easy to find across Kuwait City, flights from Hyderabad take roughly 4 to 5 hours depending on routing, alcohol is prohibited in the country, and Kuwait uses UK-style three-pin plugs, so pack an adapter and change money into dinars locally."
+  },
+  "ireland": {
+    "capital": "Dublin",
+    "currency": "Euro (EUR)",
+    "intro": "Ireland is a green, friendly country of old towns, castles and dramatic Atlantic coastline, and English is spoken everywhere. A week usually covers Dublin, the west coast around Galway and the Cliffs of Moher, and the lakes and mountains of Kerry, ideally with a self-drive or a small-group tour.",
+    "destinations": [
+      { "name": "Trinity College Dublin", "blurb": "The country's oldest university, home of the Book of Kells and the vaulted Long Room library." },
+      { "name": "Dublin Castle", "blurb": "A former seat of British rule in the city centre, with state apartments, gardens and a medieval tower." },
+      { "name": "Cliffs of Moher", "blurb": "Sea cliffs in County Clare rising more than 200 metres above the Atlantic, with a clifftop walking path." },
+      { "name": "Galway", "blurb": "A lively west coast city with a colourful Latin Quarter, street musicians and a long seafront promenade." },
+      { "name": "Ring of Kerry", "blurb": "A scenic driving loop around the Iveragh Peninsula past lakes, mountains and small coastal villages." },
+      { "name": "Killarney National Park", "blurb": "Lakes, woodland and waterfalls around Muckross House, with jaunting car rides through the park." },
+      { "name": "Blarney Castle", "blurb": "A medieval castle near Cork where visitors climb to the top to kiss the Blarney Stone." }
+    ],
+    "devotional": [
+      { "name": "St Patrick's Cathedral", "blurb": "Dublin's largest church, founded in 1191 and linked with Jonathan Swift, who was its dean." },
+      { "name": "Christ Church Cathedral", "blurb": "Dublin's oldest cathedral, with a large medieval crypt beneath its nave." },
+      { "name": "Rock of Cashel", "blurb": "A hilltop group of medieval church buildings and a round tower in County Tipperary." },
+      { "name": "Galway Cathedral", "blurb": "A large domed Catholic cathedral beside the River Corrib, completed in 1965." },
+      { "name": "St Fin Barre's Cathedral", "blurb": "A Gothic Revival cathedral in Cork with three spires and detailed stone carvings." }
+    ],
+    "dishes": [
+      { "name": "Irish Stew", "blurb": "Lamb or mutton slow-cooked with potatoes, onions and carrots.", "veg": false },
+      { "name": "Full Irish Breakfast", "blurb": "Sausages, bacon, eggs, black and white pudding, beans and toast.", "veg": false },
+      { "name": "Seafood Chowder", "blurb": "A creamy soup of fish and shellfish, served with brown bread in coastal towns.", "veg": false },
+      { "name": "Colcannon", "blurb": "Buttery mashed potato mixed with cabbage or kale and spring onions.", "veg": true },
+      { "name": "Irish Soda Bread", "blurb": "A dense bread made with buttermilk and baking soda, served warm with butter.", "veg": true }
+    ],
+    "highlights": [
+      "Seeing the Book of Kells at Trinity College",
+      "Clifftop walk at the Cliffs of Moher",
+      "Driving the Ring of Kerry",
+      "Jaunting car ride in Killarney National Park",
+      "Evening of live music in Galway",
+      "Kissing the Blarney Stone"
+    ],
+    "indianTraveller": "Indian restaurants are common in Dublin, Cork and Galway and most cafes offer vegetarian dishes, flights from Hyderabad take about 12 to 14 hours with one stop in the Gulf, and Ireland uses UK-style three-pin plugs, so carry an adapter and a forex card loaded with euros."
+  },
+  "denmark": {
+    "capital": "Copenhagen",
+    "currency": "Danish krone (DKK)",
+    "intro": "Denmark is a small, orderly country that is easy to travel with children, with short train rides between castles, harbours and the original LEGOLAND. Copenhagen is the main base, and it pairs well with a few days in Sweden or Norway on a wider Scandinavia tour.",
+    "destinations": [
+      { "name": "Nyhavn", "blurb": "A 17th-century canal lined with painted townhouses and cafes, and the starting point for harbour boat tours." },
+      { "name": "Tivoli Gardens", "blurb": "One of the world's oldest amusement parks, in central Copenhagen, with gardens, rides and evening lights." },
+      { "name": "The Little Mermaid", "blurb": "A small bronze statue on the Copenhagen waterfront, based on the Hans Christian Andersen story." },
+      { "name": "Kronborg Castle", "blurb": "A Renaissance castle at Helsingor, known as the setting of Shakespeare's Hamlet." },
+      { "name": "Rosenborg Castle", "blurb": "A royal palace in central Copenhagen that houses the Danish crown jewels." },
+      { "name": "LEGOLAND Billund", "blurb": "The first LEGOLAND park, next to the LEGO company's home town, with rides and miniature cities." },
+      { "name": "Hans Christian Andersen House", "blurb": "A museum in Odense, the author's birthplace, telling his life story through his fairy tales." }
+    ],
+    "devotional": [
+      { "name": "Frederik's Church", "blurb": "Known as the Marble Church, with one of the largest church domes in Scandinavia, near Amalienborg Palace." },
+      { "name": "Church of Our Saviour", "blurb": "A baroque church in Christianshavn with an outdoor spiral staircase winding up its spire." },
+      { "name": "Copenhagen Cathedral", "blurb": "The city's main Lutheran church, with Bertel Thorvaldsen's marble statues of Christ and the apostles." },
+      { "name": "Roskilde Cathedral", "blurb": "A UNESCO-listed brick cathedral where Danish kings and queens have been buried for centuries." }
+    ],
+    "dishes": [
+      { "name": "Smorrebrod", "blurb": "Open sandwiches on dark rye bread, usually topped with herring, prawns or roast meats.", "veg": false },
+      { "name": "Frikadeller", "blurb": "Pan-fried meatballs of minced pork, served with potatoes and gravy.", "veg": false },
+      { "name": "Stegt Flaesk", "blurb": "Crisp fried pork belly with boiled potatoes and parsley sauce, often called the national dish.", "veg": false },
+      { "name": "Risalamande", "blurb": "Cold rice pudding folded with whipped cream and chopped almonds, served with warm cherry sauce.", "veg": true },
+      { "name": "Rodgrod med Flode", "blurb": "A thick red berry pudding served with cream, a classic summer dessert.", "veg": true }
+    ],
+    "highlights": [
+      "Canal boat tour from Nyhavn",
+      "Evening at Tivoli Gardens",
+      "Day trip to Kronborg Castle",
+      "Climbing the spiral spire of the Church of Our Saviour",
+      "Full day at LEGOLAND Billund",
+      "Cycling around Copenhagen's harbour"
+    ],
+    "indianTraveller": "Copenhagen has a good number of Indian restaurants and vegetarian options are clearly marked on most menus, flights from Hyderabad take about 12 to 14 hours with one stop, and Denmark uses European two-pin plugs; cards are accepted almost everywhere, so a forex card is more useful than cash."
+  },
+  "sweden": {
+    "capital": "Stockholm",
+    "currency": "Swedish krona (SEK)",
+    "intro": "Sweden offers two quite different holidays: long summer days in Stockholm and its island archipelago, or snow, husky rides and the northern lights in Lapland in winter. Trains are comfortable, English is widely spoken, and Stockholm itself is spread across 14 islands linked by bridges and ferries.",
+    "destinations": [
+      { "name": "Gamla Stan", "blurb": "Stockholm's old town of cobbled lanes, the Royal Palace and the colourful houses of Stortorget square." },
+      { "name": "Vasa Museum", "blurb": "Home of a 17th-century warship that sank on its first voyage and was raised almost intact in 1961." },
+      { "name": "Skansen", "blurb": "An open-air museum with historic Swedish houses and Nordic animals such as elk and brown bears." },
+      { "name": "Stockholm City Hall", "blurb": "A red-brick waterfront building whose Blue Hall hosts the Nobel Prize banquet each December." },
+      { "name": "Stockholm Archipelago", "blurb": "Thousands of islands reached by ferry, with fishing villages, swimming spots and summer cafes." },
+      { "name": "Liseberg", "blurb": "A large amusement park in Gothenburg with roller coasters and a well-known Christmas market." },
+      { "name": "Abisko National Park", "blurb": "A park in Swedish Lapland known for clear winter skies and some of the best northern lights viewing." }
+    ],
+    "devotional": [
+      { "name": "Uppsala Cathedral", "blurb": "The tallest church in Scandinavia, a Gothic cathedral where Carl Linnaeus is buried." },
+      { "name": "Storkyrkan", "blurb": "Stockholm's cathedral in Gamla Stan, with a famous wooden sculpture of St George and the Dragon." },
+      { "name": "Riddarholmen Church", "blurb": "A medieval church on a small island in Stockholm and the burial place of Swedish monarchs." },
+      { "name": "Lund Cathedral", "blurb": "A Romanesque cathedral in southern Sweden with a 15th-century astronomical clock." },
+      { "name": "Kiruna Church", "blurb": "A large wooden church in Lapland shaped like a Sami hut, being moved as the town relocates." }
+    ],
+    "dishes": [
+      { "name": "Kottbullar", "blurb": "Swedish meatballs with cream sauce, mashed potato and lingonberry jam.", "veg": false },
+      { "name": "Gravlax", "blurb": "Raw salmon cured with salt, sugar and dill, served with a sweet mustard sauce.", "veg": false },
+      { "name": "Kanelbulle", "blurb": "A soft cardamom-scented cinnamon bun, usually brushed with egg, eaten at the daily coffee break called fika.", "veg": false },
+      { "name": "Rarakor", "blurb": "Crisp pancakes of grated potato fried in butter and served with lingonberry jam.", "veg": true },
+      { "name": "Knackebrod with Cheese", "blurb": "Crunchy rye crispbread topped with butter and sharp Vasterbotten cheese.", "veg": true }
+    ],
+    "highlights": [
+      "Exploring the Vasa Museum",
+      "Ferry trip into the Stockholm Archipelago",
+      "Walking the lanes of Gamla Stan",
+      "Northern lights night in Abisko",
+      "Husky sledding in Swedish Lapland",
+      "Fika with cinnamon buns at a Stockholm cafe"
+    ],
+    "indianTraveller": "Stockholm and Gothenburg have plenty of Indian restaurants and vegetarian food is widely available, though choices thin out in Lapland, flights from Hyderabad take about 12 to 14 hours with one stop, and Sweden uses European two-pin plugs; many places are cashless, so carry a forex card."
+  },
+  "iceland": {
+    "capital": "Reykjavik",
+    "currency": "Icelandic krona (ISK)",
+    "intro": "Iceland is a volcanic island of waterfalls, geysers, glaciers and black sand beaches, best explored on a road trip or guided tour from Reykjavik. Summer brings almost round-the-clock daylight, while winter visits are planned around the northern lights, so it is worth packing warm, waterproof layers in any season.",
+    "destinations": [
+      { "name": "Thingvellir National Park", "blurb": "A rift valley where the North American and Eurasian plates pull apart, and the site of an ancient parliament." },
+      { "name": "Geysir and Strokkur", "blurb": "A geothermal field where the Strokkur geyser shoots hot water into the air every few minutes." },
+      { "name": "Gullfoss", "blurb": "A powerful two-step waterfall dropping into a narrow canyon on the Hvita river." },
+      { "name": "Seljalandsfoss and Skogafoss", "blurb": "Two tall waterfalls on the south coast, one with a path that runs behind the falling water." },
+      { "name": "Reynisfjara", "blurb": "A black sand beach near Vik with basalt columns and sea stacks, where the waves must be watched carefully." },
+      { "name": "Jokulsarlon", "blurb": "A glacier lagoon filled with floating icebergs, with boat tours and ice chunks washed up on nearby Diamond Beach." },
+      { "name": "Blue Lagoon", "blurb": "A geothermal spa near the airport with warm, milky-blue water set in a lava field." }
+    ],
+    "devotional": [
+      { "name": "Hallgrimskirkja", "blurb": "Reykjavik's tall concrete church, inspired by basalt columns, with a lift to a viewing deck in the tower." },
+      { "name": "Reykjavik Cathedral", "blurb": "A small 18th-century cathedral beside the parliament building in the city centre." },
+      { "name": "Landakotskirkja", "blurb": "The Catholic Cathedral of Christ the King in Reykjavik, with a flat-topped tower overlooking the old town." },
+      { "name": "Akureyrarkirkja", "blurb": "A hilltop church in the northern town of Akureyri, reached by a long flight of steps." }
+    ],
+    "dishes": [
+      { "name": "Plokkfiskur", "blurb": "Mashed boiled fish and potatoes in a creamy white sauce, served with rye bread.", "veg": false },
+      { "name": "Kjotsupa", "blurb": "A warming lamb soup with root vegetables and rice or oats.", "veg": false },
+      { "name": "Pylsur", "blurb": "Icelandic hot dogs made mainly with lamb, topped with fried onions and sweet mustard.", "veg": false },
+      { "name": "Skyr", "blurb": "A thick, protein-rich cultured dairy product, eaten plain, with berries or as a dessert.", "veg": true },
+      { "name": "Rugbraud", "blurb": "Dense, slightly sweet dark rye bread, traditionally baked slowly in geothermal ground.", "veg": true }
+    ],
+    "highlights": [
+      "Driving the Golden Circle",
+      "Walking behind the Seljalandsfoss waterfall",
+      "Boat tour among the icebergs at Jokulsarlon",
+      "Soaking at the Blue Lagoon",
+      "Northern lights hunt on a winter night",
+      "View over Reykjavik from Hallgrimskirkja tower"
+    ],
+    "indianTraveller": "Reykjavik has a few Indian restaurants and supermarkets stock vegetarian basics, but eating out is expensive and options are limited in the countryside; expect about 14 to 18 hours from Hyderabad with one or two stops in Europe, Iceland uses European two-pin plugs, and cards are accepted almost everywhere."
+  }
+}

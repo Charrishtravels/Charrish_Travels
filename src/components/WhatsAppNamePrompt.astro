@@ -1,0 +1,117 @@
+---
+// Asks for the visitor's name the first time they tap any WhatsApp link, then adds it
+// to the pre-filled message ("Hi Charrish Travels, I'm Priya. I'd like to plan a trip
+// to Georgia."). The name is remembered in this browser only, so later taps go straight
+// through. Without JavaScript the links still open WhatsApp with the normal message.
+---
+
+<dialog
+  id="wa-name-dialog"
+  aria-labelledby="wa-name-title"
+  class="m-auto w-[min(92vw,24rem)] rounded-2xl border border-line bg-page p-0 text-ink shadow-2xl backdrop:bg-earth/50"
+>
+  <form method="dialog" class="p-6" data-wa-name-form>
+    <p id="wa-name-title" class="font-brand text-2xl text-earth">Before we chat</p>
+    <p class="mt-1 text-xs leading-relaxed text-ink-muted">
+      Tell us your name and we'll add it to your WhatsApp message, so our team knows who they're talking to.
+    </p>
+    <label class="mt-5 block text-xs font-medium text-earth">
+      Your name
+      <input
+        name="name"
+        autocomplete="name"
+        maxlength="60"
+        class="mt-1.5 w-full rounded-lg border border-line bg-card px-3.5 py-2.5 text-sm text-ink focus:border-saffron focus:outline-none"
+      />
+    </label>
+    <div class="mt-5 flex flex-col gap-2.5">
+      <button value="ok" class="min-h-11 rounded-full bg-[#25D366] px-5 text-sm font-semibold text-earth hover:brightness-95">
+        Continue to WhatsApp
+      </button>
+      <button value="skip" formnovalidate class="min-h-10 rounded-full px-5 text-xs text-ink-muted underline underline-offset-4 hover:text-saffron-deep">
+        Skip
+      </button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+  const KEY = 'charrish-visitor-name';
+  const dialog = document.getElementById('wa-name-dialog') as HTMLDialogElement | null;
+  const form = dialog?.querySelector<HTMLFormElement>('[data-wa-name-form]');
+  const input = form?.querySelector<HTMLInputElement>('input[name="name"]');
+
+  const read = () => {
+    try {
+      return localStorage.getItem(KEY) ?? '';
+    } catch {
+      return '';
+    }
+  };
+  const save = (name: string) => {
+    try {
+      localStorage.setItem(KEY, name);
+    } catch {
+      /* private mode: just don't remember */
+    }
+  };
+
+  // "Hi Charrish Travels, I'd like…" -> "Hi Charrish Travels, I'm Priya. I'd like…"
+  const withName = (href: string, name: string) => {
+    if (!name) return href;
+    const url = new URL(href);
+    const text = url.searchParams.get('text') ?? "Hi Charrish Travels, I'd like to plan a trip.";
+    const greeting = 'Hi Charrish Travels,';
+    const rest = text.startsWith(greeting) ? text.slice(greeting.length).trim() : text;
+    url.searchParams.set('text', `${greeting} I'm ${name}. ${rest}`);
+    return url.toString();
+  };
+
+  // Fall back to the same tab if a popup blocker stops the new one.
+  const open = (href: string) => {
+    // ('noopener' in the features string makes window.open return null, so detach by hand.)
+    const win = window.open(href, '_blank');
+    if (win) win.opener = null;
+    else window.location.href = href;
+  };
+
+  if (dialog && form && input && typeof dialog.showModal === 'function') {
+    let pending = '';
+
+    document.addEventListener('click', (e) => {
+      const link = (e.target as Element).closest?.<HTMLAnchorElement>('a[href^="https://wa.me/"]');
+      if (!link || e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey) return;
+      e.preventDefault();
+      const name = read();
+      if (name) {
+        open(withName(link.href, name));
+        return;
+      }
+      pending = link.href;
+      input.value = '';
+      dialog.showModal();
+      input.focus();
+    });
+
+    dialog.addEventListener('close', () => {
+      if (!pending) return;
+      const name = dialog.returnValue === 'ok' ? input.value.trim().replace(/\s+/g, ' ') : '';
+      if (name) save(name);
+      open(withName(pending, name));
+      pending = '';
+    });
+
+    // Escape cancels without opening WhatsApp.
+    dialog.addEventListener('cancel', () => {
+      pending = '';
+    });
+
+    // Clicking the dimmed backdrop cancels too.
+    dialog.addEventListener('click', (e) => {
+      if (e.target === dialog) {
+        pending = '';
+        dialog.close();
+      }
+    });
+  }
+</script>

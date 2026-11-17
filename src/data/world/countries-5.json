@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "croatia",
+    "name": "Croatia",
+    "region": "Europe",
+    "tagline": "Walled Dubrovnik, Roman Split and lakes that fall in turquoise steps",
+    "places": ["Dubrovnik", "Split", "Plitvice Lakes National Park", "Hvar", "Zagreb", "Krka National Park"],
+    "bestTime": "May to June and September to October; July and August are hot and crowded",
+    "idealDuration": "7–9 days",
+    "visa": "Schengen visa",
+    "photoArticle": "Dubrovnik",
+    "photoAlt": "Dubrovnik's stone city walls and terracotta roofs above the Adriatic Sea"
+  },
+  {
+    "slug": "poland",
+    "name": "Poland",
+    "region": "Europe",
+    "tagline": "Krakow's royal hill, rebuilt Warsaw and amber-trading Gdansk",
+    "places": ["Krakow", "Warsaw", "Gdansk", "Wieliczka Salt Mine", "Zakopane", "Wroclaw"],
+    "bestTime": "May to September; December for Christmas markets",
+    "idealDuration": "6–8 days",
+    "visa": "Schengen visa",
+    "photoArticle": "Wawel Castle",
+    "photoAlt": "Wawel Castle and Cathedral on their hill above the Vistula River in Krakow"
+  },
+  {
+    "slug": "russia",
+    "name": "Russia",
+    "region": "Europe",
+    "tagline": "Red Square, the Hermitage and the fountains of Peterhof",
+    "places": ["Moscow", "Saint Petersburg", "Kazan", "Sochi", "Lake Baikal"],
+    "bestTime": "May to September; June for the White Nights in Saint Petersburg",
+    "idealDuration": "7–10 days",
+    "visa": "e-Visa",
+    "photoArticle": "Red Square",
+    "photoAlt": "Red Square in Moscow with the Kremlin walls and towers along one side"
+  },
+  {
+    "slug": "zimbabwe",
+    "name": "Zimbabwe",
+    "region": "Africa",
+    "tagline": "The thundering spray of Victoria Falls and big-game Hwange",
+    "places": ["Victoria Falls", "Hwange National Park", "Matobo National Park", "Great Zimbabwe", "Lake Kariba"],
+    "bestTime": "April to June for full falls; August to October for game viewing",
+    "idealDuration": "5–7 days",
+    "visa": "Visa on arrival or e-Visa",
+    "photoArticle": "Victoria Falls National Park",
+    "photoAlt": "The long curtain of Victoria Falls dropping into the Zambezi gorge"
+  },
+  {
+    "slug": "rwanda",
+    "name": "Rwanda",
+    "region": "Africa",
+    "tagline": "Mountain gorillas, misty volcanoes and the calm shores of Lake Kivu",
+    "places": ["Kigali", "Volcanoes National Park", "Nyungwe National Park", "Lake Kivu", "Akagera National Park"],
+    "bestTime": "June to September and December to February, the drier seasons",
+    "idealDuration": "5–7 days",
+    "visa": "Visa on arrival or e-Visa",
+    "photoArticle": "Akagera National Park",
+    "photoAlt": "Lakes and rolling savanna hills in Akagera National Park, eastern Rwanda"
+  },
+  {
+    "slug": "uganda",
+    "name": "Uganda",
+    "region": "Africa",
+    "tagline": "Gorillas in Bwindi, chimps in Kibale and the source of the Nile",
+    "places": ["Bwindi Impenetrable National Park", "Murchison Falls National Park", "Queen Elizabeth National Park", "Kibale National Park", "Jinja", "Kampala"],
+    "bestTime": "June to September and December to February, the drier seasons",
+    "idealDuration": "7–10 days",
+    "visa": "e-Visa",
+    "photoArticle": "Murchison Falls National Park",
+    "photoAlt": "The Nile forcing through a narrow rock gorge at Murchison Falls"
+  },
+  {
+    "slug": "peru",
+    "name": "Peru",
+    "region": "North & South America",
+    "tagline": "Machu Picchu, Inca Cusco and the reed islands of Lake Titicaca",
+    "places": ["Machu Picchu", "Cusco", "Sacred Valley", "Lima", "Lake Titicaca", "Arequipa"],
+    "bestTime": "May to September, the dry season in the Andes",
+    "idealDuration": "9–12 days",
+    "visa": "Visa required (waived with a valid US, UK or Schengen visa)",
+    "photoArticle": "Machu Picchu",
+    "photoAlt": "The stone terraces and ruins of Machu Picchu below the peak of Huayna Picchu"
+  },
+  {
+    "slug": "chile",
+    "name": "Chile",
+    "region": "North & South America",
+    "tagline": "Patagonian granite towers, the Atacama Desert and Easter Island",
+    "places": ["Santiago", "Torres del Paine National Park", "San Pedro de Atacama", "Easter Island", "Valparaiso", "Puerto Varas"],
+    "bestTime": "October to April; November to March for Patagonia",
+    "idealDuration": "10–14 days",
+    "visa": "Visa required",
+    "photoArticle": "Cuernos del Paine",
+    "photoAlt": "The jagged Cuernos del Paine peaks rising above a lake in Torres del Paine"
+  }
+]

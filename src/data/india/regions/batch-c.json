@@ -1,0 +1,1273 @@
+[
+  {
+    "slug": "punjab",
+    "name": "Punjab",
+    "kind": "state",
+    "capital": "Chandigarh",
+    "zone": "North",
+    "tagline": "Gilded gurdwaras, border ceremonies and kitchens that never close",
+    "intro": "Punjab is best known for Amritsar, where the Golden Temple feeds tens of thousands of visitors every day at its free community kitchen. Beyond it lie the princely palaces of Patiala and Kapurthala, Anandpur Sahib, the birthplace of the Khalsa, and wide wheat country crossed by easy, fast highways. Come hungry: the food here is a reason to travel on its own.",
+    "bestTime": "October to March",
+    "idealDuration": "3–7 days",
+    "photoArticle": "Golden Temple",
+    "photoAlt": "The gold-plated Harmandir Sahib reflected in its surrounding sacred pool in Amritsar",
+    "destinations": [
+      {
+        "name": "Amritsar",
+        "blurb": "A lively old city with Jallianwala Bagh, the Partition Museum in the Town Hall and some of the best kulchas and lassi in the country."
+      },
+      {
+        "name": "Attari–Wagah Border",
+        "blurb": "The nightly Beating Retreat ceremony between Indian and Pakistani border guards draws loud, cheering crowds on both sides."
+      },
+      {
+        "name": "Patiala",
+        "blurb": "A former princely capital with the sprawling Qila Mubarak complex and the Sheesh Mahal palace and gardens."
+      },
+      {
+        "name": "Kapurthala",
+        "blurb": "A small former princely town with the French-inspired Jagatjit Palace and the nearby Kanjli Wetland."
+      },
+      {
+        "name": "Harike Wetland",
+        "blurb": "Where the Beas and Sutlej rivers meet, a winter haven for tens of thousands of migratory waterbirds."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Harmandir Sahib (Golden Temple), Amritsar",
+        "blurb": "The holiest gurdwara of Sikhism, its gilded sanctum set in a sacred pool, where the langar kitchen serves free meals to tens of thousands of visitors every day."
+      },
+      {
+        "name": "Durgiana Temple, Amritsar",
+        "blurb": "A Hindu temple to Durga and Lakshmi Narayan, built in the style of the Golden Temple with a domed shrine standing in its own tank."
+      },
+      {
+        "name": "Anandpur Sahib",
+        "blurb": "The town where Guru Gobind Singh founded the Khalsa in 1699, with Takht Sri Kesgarh Sahib at its heart and crowds arriving for the Hola Mohalla festival."
+      },
+      {
+        "name": "Fatehgarh Sahib",
+        "blurb": "A gurdwara town marking the martyrdom of the two youngest sons of Guru Gobind Singh, who were bricked alive here in 1704."
+      },
+      {
+        "name": "Takht Sri Damdama Sahib, Talwandi Sabo",
+        "blurb": "One of the five Sikh takhts, where Guru Gobind Singh is said to have compiled the final version of the Guru Granth Sahib."
+      },
+      {
+        "name": "Gurdwara Ber Sahib, Sultanpur Lodhi",
+        "blurb": "The gurdwara beside the Kali Bein rivulet where Guru Nanak is believed to have gained enlightenment, with the old ber tree he sat under still standing."
+      },
+      {
+        "name": "Moorish Mosque, Kapurthala",
+        "blurb": "A mosque commissioned by Maharaja Jagatjit Singh and modelled on the Great Mosque of Marrakesh, with an inlaid courtyard and finely painted interior."
+      }
+    ],
+    "highlights": [
+      "The late-night and pre-dawn palki processions at the Golden Temple",
+      "Eating and volunteering at the Golden Temple's langar",
+      "The Beating Retreat ceremony at the Attari border",
+      "Jallianwala Bagh and the Partition Museum in Amritsar",
+      "The Virasat-e-Khalsa museum at Anandpur Sahib",
+      "An Amritsari kulcha and lassi trail through the old city lanes"
+    ],
+    "itineraries": [
+      {
+        "title": "Amritsar Heritage Weekend",
+        "duration": "3 Days / 2 Nights",
+        "days": [
+          {
+            "title": "Arrive in Amritsar",
+            "details": "Check in near the old city and walk to the Golden Temple in the evening to see it lit up and watch the palki ceremony that carries the holy book to rest."
+          },
+          {
+            "title": "History and the border",
+            "details": "Visit Jallianwala Bagh, the Partition Museum and Gobindgarh Fort in the morning. In the afternoon drive 45 minutes to Attari for the Beating Retreat ceremony."
+          },
+          {
+            "title": "Dawn at the temple and departure",
+            "details": "Return to the Golden Temple at dawn and share breakfast at the langar, then visit Durgiana Temple before your onward journey."
+          }
+        ]
+      },
+      {
+        "title": "Punjab Heritage Trail",
+        "duration": "7 Days / 6 Nights",
+        "days": [
+          {
+            "title": "Arrive in Chandigarh",
+            "details": "Explore Nek Chand's Rock Garden and Le Corbusier's Capitol Complex, then stroll along Sukhna Lake at sunset."
+          },
+          {
+            "title": "Chandigarh to Patiala",
+            "details": "Drive about 1.5 hours to Patiala to see Qila Mubarak and the Sheesh Mahal, and shop for Patiala juttis and phulkari embroidery."
+          },
+          {
+            "title": "Patiala to Anandpur Sahib",
+            "details": "Stop at the gurdwaras of Fatehgarh Sahib (about 1 hour) before continuing roughly 2 hours to Anandpur Sahib for the evening."
+          },
+          {
+            "title": "Anandpur Sahib to Amritsar via Kapurthala",
+            "details": "Spend the morning at Virasat-e-Khalsa, then drive west to Kapurthala to see Jagatjit Palace and the Moorish Mosque before reaching Amritsar, about 4.5 hours of driving in all."
+          },
+          {
+            "title": "Golden Temple and the border",
+            "details": "Spend the morning at the Golden Temple and Jallianwala Bagh, then drive to Attari for the late-afternoon Beating Retreat ceremony."
+          },
+          {
+            "title": "Harike Wetland",
+            "details": "Make a day trip of about 1.5 hours each way to Harike for birdwatching by boat, returning for an evening food walk in old Amritsar."
+          },
+          {
+            "title": "Departure",
+            "details": "Visit the Partition Museum or revisit the temple at dawn before transferring to Amritsar airport or station."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "rajasthan",
+    "name": "Rajasthan",
+    "kind": "state",
+    "capital": "Jaipur",
+    "zone": "North",
+    "tagline": "Hill forts, lake palaces and caravan towns at the edge of the Thar",
+    "intro": "Rajasthan packs more forts and palaces into one state than most countries have in total, from Jaipur's pink old city to the golden walls of Jaisalmer. Each city has its own character: Udaipur on its lakes, Jodhpur under Mehrangarh, Pushkar around its sacred tank. Add tiger safaris in Ranthambore and nights in the dunes, and it suits first-time visitors and repeat travellers alike.",
+    "bestTime": "October to March",
+    "idealDuration": "7–10 days",
+    "photoArticle": "Mehrangarh",
+    "photoAlt": "Mehrangarh Fort rising above the blue houses of Jodhpur",
+    "destinations": [
+      {
+        "name": "Jaipur",
+        "blurb": "The Pink City, with Amber Fort, the City Palace, Jantar Mantar and lively bazaars for block prints and gems."
+      },
+      {
+        "name": "Udaipur",
+        "blurb": "A city of lakes where the City Palace rises above Lake Pichola and sunset boat rides pass the Lake Palace."
+      },
+      {
+        "name": "Jodhpur",
+        "blurb": "The Blue City, watched over by Mehrangarh, one of the largest and best-preserved forts in India."
+      },
+      {
+        "name": "Jaisalmer",
+        "blurb": "A sandstone fort still lived in today, ornate havelis and camel rides on the Sam Sand Dunes."
+      },
+      {
+        "name": "Ranthambore National Park",
+        "blurb": "One of the best places in India to see wild tigers, with a ruined fort standing inside the reserve."
+      },
+      {
+        "name": "Chittorgarh",
+        "blurb": "The largest fort complex in India, with towers and palaces tied to Rajput legends of valour."
+      },
+      {
+        "name": "Mount Abu",
+        "blurb": "Rajasthan's only hill station, with boating on Nakki Lake, sunset views and a walk up to Guru Shikhar, the highest point in the Aravallis."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Pushkar",
+        "blurb": "A small pilgrim town around a sacred lake with 52 bathing ghats, home to one of the very few temples dedicated to Brahma."
+      },
+      {
+        "name": "Ajmer Sharif Dargah",
+        "blurb": "The shrine of the Sufi saint Khwaja Moinuddin Chishti, visited by people of every faith and busiest during the Urs festival."
+      },
+      {
+        "name": "Dilwara Temples, Mount Abu",
+        "blurb": "A group of Jain temples from the 11th to 13th centuries whose white marble ceilings are carved as finely as lace."
+      },
+      {
+        "name": "Ranakpur Jain Temple",
+        "blurb": "A 15th-century marble temple to Adinatha in the Aravalli foothills, famous for its more than 1,400 carved pillars, no two alike."
+      },
+      {
+        "name": "Nathdwara",
+        "blurb": "A temple town near Udaipur devoted to Shrinathji, a form of Krishna, known for its daily darshan rituals and pichwai paintings."
+      },
+      {
+        "name": "Karni Mata Temple, Deshnoke",
+        "blurb": "A temple near Bikaner to the folk goddess Karni Mata, where thousands of rats are revered and spotting a white one is thought lucky."
+      },
+      {
+        "name": "Galtaji, Jaipur",
+        "blurb": "A complex of temples and sacred spring-fed tanks in a narrow gorge on the edge of Jaipur, home to a large troop of monkeys."
+      }
+    ],
+    "highlights": [
+      "Exploring Amber Fort above Jaipur",
+      "A sunset boat ride on Lake Pichola in Udaipur",
+      "Mehrangarh Fort and the blue lanes of old Jodhpur",
+      "A tiger safari in Ranthambore",
+      "Camel rides and a desert camp at the Sam Sand Dunes",
+      "The marble Jain temple at Ranakpur"
+    ],
+    "itineraries": [
+      {
+        "title": "Jaipur and Ranthambore",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Arrive in Jaipur",
+            "details": "Visit the City Palace, Jantar Mantar and Hawa Mahal, then wander Johari and Bapu bazaars in the evening."
+          },
+          {
+            "title": "Amber Fort and Nahargarh",
+            "details": "Spend the morning at Amber Fort and stop at Jal Mahal on the way back. End the day with sunset views from Nahargarh Fort."
+          },
+          {
+            "title": "Jaipur to Ranthambore",
+            "details": "Drive about 3.5 hours to Sawai Madhopur and head out on an afternoon jeep or canter safari in the tiger reserve."
+          },
+          {
+            "title": "Morning safari and departure",
+            "details": "Take an early safari, then visit Ranthambore Fort or return to Jaipur, about 3.5 hours away, for your onward journey."
+          }
+        ]
+      },
+      {
+        "title": "Royal Rajasthan",
+        "duration": "9 Days / 8 Nights",
+        "days": [
+          {
+            "title": "Arrive in Jaipur",
+            "details": "Settle in and visit the City Palace and Hawa Mahal, then take an evening walk through the old city bazaars."
+          },
+          {
+            "title": "Jaipur sightseeing",
+            "details": "Explore Amber Fort, Jantar Mantar and the Albert Hall Museum, ending with sunset at Nahargarh Fort."
+          },
+          {
+            "title": "Jaipur to Pushkar",
+            "details": "Drive about 3 hours to Pushkar, visit the Brahma temple and watch the evening aarti on the ghats of the sacred lake."
+          },
+          {
+            "title": "Pushkar to Jodhpur",
+            "details": "Drive about 4.5 hours to Jodhpur and spend the evening around the Clock Tower and Sardar Market."
+          },
+          {
+            "title": "Jodhpur sightseeing",
+            "details": "Spend the morning at Mehrangarh Fort and Jaswant Thada, then walk through the blue houses of the old city."
+          },
+          {
+            "title": "Jodhpur to Udaipur via Ranakpur",
+            "details": "Drive about 3 hours to the marble Jain temple at Ranakpur, then continue about 2 hours to Udaipur."
+          },
+          {
+            "title": "Udaipur sightseeing",
+            "details": "Visit the City Palace, Jagdish Temple and Saheliyon ki Bari, followed by a sunset boat ride on Lake Pichola."
+          },
+          {
+            "title": "Kumbhalgarh day trip",
+            "details": "Drive about 2.5 hours to Kumbhalgarh Fort and walk part of its 36 km wall, returning to Udaipur in the evening."
+          },
+          {
+            "title": "Departure from Udaipur",
+            "details": "Take a relaxed morning at Fateh Sagar Lake before transferring to Udaipur airport."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sikkim",
+    "name": "Sikkim",
+    "kind": "state",
+    "capital": "Gangtok",
+    "zone": "North-East",
+    "tagline": "Prayer flags, glacial lakes and Kangchenjunga on the horizon",
+    "intro": "Sikkim is a small Himalayan state where Buddhist monasteries sit on ridges facing Kangchenjunga, the world's third-highest mountain. Gangtok makes a comfortable base for high lakes like Tsomgo, while North Sikkim opens up rhododendron valleys and lakes above 5,000 metres. Roads are slow and winding, so plan unhurried days. Permits are needed for several areas, and we arrange them.",
+    "bestTime": "March to May and October to December",
+    "idealDuration": "6–8 days",
+    "photoArticle": "Tsomgo Lake",
+    "photoAlt": "Tsomgo Lake ringed by mountains on the road from Gangtok",
+    "destinations": [
+      {
+        "name": "Gangtok",
+        "blurb": "The hillside capital, with the car-free MG Marg promenade, a ropeway over the town and wide valley views."
+      },
+      {
+        "name": "Tsomgo Lake",
+        "blurb": "A glacial lake at about 3,750 metres, a short drive from Gangtok, that often freezes over in winter."
+      },
+      {
+        "name": "Yumthang Valley",
+        "blurb": "A high valley above Lachung that fills with rhododendron blooms in April and May."
+      },
+      {
+        "name": "Gurudongmar Lake",
+        "blurb": "One of the highest lakes in the world at about 5,400 metres, sacred to both Buddhists and Sikhs."
+      },
+      {
+        "name": "Pelling",
+        "blurb": "The best close-up views of Kangchenjunga at sunrise, plus the ruins of Rabdentse, the old royal capital."
+      },
+      {
+        "name": "Ravangla",
+        "blurb": "A quiet ridge town between Gangtok and Pelling, close to the Temi Tea Garden and the forest trails of Maenam Wildlife Sanctuary."
+      },
+      {
+        "name": "Yuksom",
+        "blurb": "Sikkim's first capital and the starting point of the Goecha La trek into the Kangchenjunga range."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Rumtek Monastery",
+        "blurb": "The seat of the Karmapa of the Kagyu school, a large monastery above Gangtok known for its masked cham dances."
+      },
+      {
+        "name": "Pemayangtse Monastery",
+        "blurb": "One of the oldest monasteries in Sikkim, near Pelling, with a seven-tiered wooden model of the celestial palace of Guru Rinpoche."
+      },
+      {
+        "name": "Tashiding Monastery",
+        "blurb": "A hilltop monastery in West Sikkim where pilgrims gather for the Bumchu festival, when a sacred pot of water is opened to foretell the year ahead."
+      },
+      {
+        "name": "Enchey Monastery, Gangtok",
+        "blurb": "A small Nyingma monastery on a pine-covered ridge above Gangtok, where lamas perform cham dances in winter."
+      },
+      {
+        "name": "Buddha Park, Ravangla",
+        "blurb": "A landscaped park built for the 2,550th birth anniversary of the Buddha, centred on a 130-foot statue facing the snow peaks."
+      },
+      {
+        "name": "Samdruptse, Namchi",
+        "blurb": "A hilltop with a giant statue of Guru Padmasambhava, the teacher who brought Buddhism to Sikkim, gazing out over the valleys."
+      },
+      {
+        "name": "Siddhesvara Dham, Namchi",
+        "blurb": "A Hindu pilgrimage complex on Solophok hill with a large Shiva statue and replicas of the twelve Jyotirlingas and the Char Dham shrines."
+      }
+    ],
+    "highlights": [
+      "Sunrise on Kangchenjunga from Pelling",
+      "Rumtek Monastery, seat of the Karmapa lineage",
+      "An evening stroll along Gangtok's MG Marg",
+      "Rhododendron season in Yumthang Valley",
+      "Tsomgo Lake and Baba Harbhajan Singh Mandir",
+      "Buddha Park in Ravangla"
+    ],
+    "itineraries": [
+      {
+        "title": "Gangtok Getaway",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Bagdogra to Gangtok",
+            "details": "Arrive at Bagdogra airport or NJP station and drive about 4.5 hours along the Teesta river to Gangtok, with an evening on MG Marg."
+          },
+          {
+            "title": "Tsomgo Lake excursion",
+            "details": "With permits arranged in advance, drive about 1.5 hours each way to Tsomgo Lake and Baba Harbhajan Singh Mandir."
+          },
+          {
+            "title": "Gangtok monasteries and viewpoints",
+            "details": "Visit Rumtek Monastery, the Namgyal Institute of Tibetology, Enchey Monastery and the Ganesh Tok viewpoint."
+          },
+          {
+            "title": "Departure",
+            "details": "Drive back down to Bagdogra or NJP for your onward journey."
+          }
+        ]
+      },
+      {
+        "title": "Sikkim Circuit",
+        "duration": "8 Days / 7 Nights",
+        "days": [
+          {
+            "title": "Bagdogra to Gangtok",
+            "details": "Drive about 4.5 hours from Bagdogra to Gangtok and spend a relaxed evening on MG Marg."
+          },
+          {
+            "title": "Tsomgo Lake",
+            "details": "Make a half-day excursion to Tsomgo Lake and Baba Mandir, returning to Gangtok by mid-afternoon."
+          },
+          {
+            "title": "Gangtok sightseeing",
+            "details": "Visit Rumtek, the Namgyal Institute of Tibetology, the flower exhibition centre and Ganesh Tok, while the North Sikkim permits are processed."
+          },
+          {
+            "title": "Gangtok to Lachung",
+            "details": "Drive 5–6 hours north past Seven Sisters Falls and the Teesta valley to the village of Lachung."
+          },
+          {
+            "title": "Yumthang Valley and back to Gangtok",
+            "details": "Drive about an hour to Yumthang Valley early in the morning, then return all the way to Gangtok, around 6 hours on the road."
+          },
+          {
+            "title": "Gangtok to Pelling via Ravangla",
+            "details": "Drive about 3 hours to Ravangla for Buddha Park, then about 2 hours more to Pelling."
+          },
+          {
+            "title": "Pelling sightseeing",
+            "details": "Watch the sunrise over Kangchenjunga, then visit Pemayangtse Monastery, the Rabdentse ruins and Khecheopalri Lake."
+          },
+          {
+            "title": "Departure",
+            "details": "Drive about 6 hours down to Bagdogra or NJP for your onward journey."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "tamil-nadu",
+    "name": "Tamil Nadu",
+    "kind": "state",
+    "capital": "Chennai",
+    "zone": "South",
+    "tagline": "Towering gopurams, Chola bronzes and a coastline carved in stone",
+    "intro": "Tamil Nadu has some of the oldest living temple traditions in India, from the Chola-era Brihadeeswarar in Thanjavur to the many-towered Meenakshi temple in Madurai. The coast holds the Pallava rock carvings of Mahabalipuram, while the Nilgiris offer tea estates and cool air in Ooty. Food, silk and classical dance are part of everyday life here, not just shows for visitors.",
+    "bestTime": "November to March",
+    "idealDuration": "6–9 days",
+    "photoArticle": "Shore Temple",
+    "photoAlt": "The weathered granite Shore Temple of Mahabalipuram standing beside the Bay of Bengal",
+    "destinations": [
+      {
+        "name": "Chennai",
+        "blurb": "The state capital, with Fort St George, the Government Museum, Carnatic music in the December season and the long Marina Beach."
+      },
+      {
+        "name": "Mahabalipuram",
+        "blurb": "A UNESCO-listed group of 7th- and 8th-century Pallava monuments, including the Shore Temple and Arjuna's Penance."
+      },
+      {
+        "name": "Thanjavur",
+        "blurb": "The heart of the Chola empire, with the Thanjavur Palace, the Saraswathi Mahal Library and a fine gallery of Chola bronzes."
+      },
+      {
+        "name": "Madurai",
+        "blurb": "One of the oldest cities in South India, with the Thirumalai Nayakkar Palace, a busy jasmine market and late-night street food."
+      },
+      {
+        "name": "Kanyakumari",
+        "blurb": "The southern tip of mainland India, where travellers gather to watch sunrise over the Vivekananda Rock Memorial."
+      },
+      {
+        "name": "Ooty",
+        "blurb": "A Nilgiri hill station of tea gardens and pine forest, reached by the Nilgiri Mountain Railway."
+      },
+      {
+        "name": "Kodaikanal",
+        "blurb": "A hill station in the Palani hills with a star-shaped lake, misty pine forests and walks along Coaker's Walk."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Meenakshi Amman Temple, Madurai",
+        "blurb": "A vast temple to Meenakshi and Sundareswarar whose fourteen painted gopurams hold thousands of sculpted figures."
+      },
+      {
+        "name": "Brihadeeswarar Temple, Thanjavur",
+        "blurb": "A UNESCO-listed Chola temple to Shiva completed in 1010, with a towering granite vimana and one of the largest Nandi statues in India."
+      },
+      {
+        "name": "Sri Ranganathaswamy Temple, Srirangam",
+        "blurb": "One of the largest functioning Hindu temple complexes in the world, devoted to Vishnu on an island in the Kaveri near Tiruchirappalli."
+      },
+      {
+        "name": "Rameswaram",
+        "blurb": "An island pilgrimage town reached by the Pamban Bridge, where pilgrims bathe in the 22 wells of Ramanathaswamy Temple and walk its long pillared corridors."
+      },
+      {
+        "name": "Kanchipuram",
+        "blurb": "One of the seven sacred cities of Hinduism, with the Ekambareswarar and Kailasanathar temples and handloom silk weavers in its lanes."
+      },
+      {
+        "name": "Arunachaleswarar Temple, Tiruvannamalai",
+        "blurb": "A great Shiva temple at the foot of Arunachala hill, where pilgrims walk the 14 km girivalam path around the hill on full moon nights."
+      },
+      {
+        "name": "Velankanni",
+        "blurb": "A coastal town known for the Basilica of Our Lady of Good Health, which draws large crowds of pilgrims for its September feast."
+      },
+      {
+        "name": "Nagore Dargah",
+        "blurb": "The 16th-century shrine of the Sufi saint Shahul Hameed near Nagapattinam, with five minarets and an annual Kandoori festival."
+      }
+    ],
+    "highlights": [
+      "The Shore Temple and Five Rathas at Mahabalipuram",
+      "Brihadeeswarar Temple in Thanjavur at golden hour",
+      "The night ceremony at Madurai's Meenakshi Temple",
+      "The Nilgiri Mountain Railway toy train up to Ooty",
+      "The Chettinad mansions and cuisine of Karaikudi",
+      "Watching silk saris being woven in Kanchipuram"
+    ],
+    "itineraries": [
+      {
+        "title": "Chennai and the Temple Coast",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Arrive in Chennai",
+            "details": "Visit the Kapaleeshwarar Temple, Fort St George and the Government Museum, then walk along Marina Beach at sunset."
+          },
+          {
+            "title": "Kanchipuram and on to Mahabalipuram",
+            "details": "Drive about 2 hours to Kanchipuram for its Kailasanathar and Ekambareswarar temples and silk weavers, then about 1.5 hours to Mahabalipuram."
+          },
+          {
+            "title": "Mahabalipuram monuments",
+            "details": "Explore the Shore Temple, Arjuna's Penance, Krishna's Butterball and the Five Rathas, with a seafood dinner by the beach."
+          },
+          {
+            "title": "Back to Chennai",
+            "details": "Stop at the DakshinaChitra heritage village on the 1.5-hour drive back to Chennai for your departure."
+          }
+        ]
+      },
+      {
+        "title": "Temples of Tamil Nadu",
+        "duration": "8 Days / 7 Nights",
+        "days": [
+          {
+            "title": "Arrive in Chennai",
+            "details": "See Mylapore's Kapaleeshwarar Temple and San Thome Basilica, ending with an evening on Marina Beach."
+          },
+          {
+            "title": "Chennai to Mahabalipuram via Kanchipuram",
+            "details": "Visit the temples and silk looms of Kanchipuram, then continue to Mahabalipuram for the night."
+          },
+          {
+            "title": "Mahabalipuram to Puducherry",
+            "details": "Spend the morning at the Shore Temple and Five Rathas, then drive about 2 hours to Puducherry for an evening in the French Quarter."
+          },
+          {
+            "title": "Puducherry to Thanjavur via the Chola temples",
+            "details": "Drive via the Nataraja Temple at Chidambaram and the Chola temples at Gangaikondacholapuram and Darasuram to reach Thanjavur, about 5 hours of driving in all."
+          },
+          {
+            "title": "Thanjavur to Karaikudi",
+            "details": "Visit the Brihadeeswarar Temple and Thanjavur Palace in the morning, then drive about 2 hours to Karaikudi in Chettinad."
+          },
+          {
+            "title": "Chettinad to Madurai",
+            "details": "Tour the grand Chettiar mansions and a tile workshop at Athangudi, then drive about 2 hours to Madurai."
+          },
+          {
+            "title": "Madurai",
+            "details": "Explore the Meenakshi Temple and the Thirumalai Nayak Palace, returning to the temple at night for the ceremony that carries the deity to rest."
+          },
+          {
+            "title": "Departure from Madurai",
+            "details": "Walk through the morning flower market before transferring to Madurai airport."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "telangana",
+    "name": "Telangana",
+    "kind": "state",
+    "capital": "Hyderabad",
+    "zone": "South",
+    "tagline": "Qutb Shahi domes, Kakatiya stone and the best biryani in the Deccan",
+    "intro": "Telangana is our home state. Hyderabad mixes 400 years of Qutb Shahi and Nizami heritage with Charminar's bazaars, Golconda Fort and a famous food scene. A few hours away, Warangal and the UNESCO-listed Ramappa Temple show off the stonework of the Kakatiya dynasty, set among quiet lakes and forested hills. Because we are based here, we know the best times, guides and kitchens personally.",
+    "bestTime": "October to February",
+    "idealDuration": "4–8 days",
+    "photoArticle": "Charminar",
+    "photoAlt": "Charminar's four minarets and arches rising above the busy streets of old Hyderabad",
+    "destinations": [
+      {
+        "name": "Hyderabad",
+        "blurb": "Charminar, Golconda Fort, Chowmahalla Palace, the Qutb Shahi Tombs and a biryani and Irani chai culture all its own."
+      },
+      {
+        "name": "Warangal",
+        "blurb": "The Kakatiya capital, with the carved stone gateways of Warangal Fort and Bhadrakali Lake below its rocky hills."
+      },
+      {
+        "name": "Laknavaram Lake",
+        "blurb": "A forest-ringed lake with a hanging bridge linking small islands, about an hour beyond Ramappa."
+      },
+      {
+        "name": "Nagarjuna Sagar",
+        "blurb": "One of the world's largest masonry dams, with boat trips to the Buddhist relics and museum on Nagarjunakonda island."
+      },
+      {
+        "name": "Pochampally",
+        "blurb": "A UNESCO-recognised weaving village where families make the famous double ikat saris on handlooms."
+      },
+      {
+        "name": "Bhongir Fort",
+        "blurb": "A fort on a huge egg-shaped monolith east of Hyderabad, a steep but rewarding climb with views over the Deccan plateau."
+      },
+      {
+        "name": "Kuntala Waterfall",
+        "blurb": "The highest waterfall in Telangana, dropping through the forests of Adilabad district and at its fullest after the monsoon."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Ramappa Temple",
+        "blurb": "A UNESCO-listed 13th-century Shiva temple at Palampet, still in worship, famous for its graceful bracket figures and floating bricks."
+      },
+      {
+        "name": "Thousand Pillar Temple, Warangal",
+        "blurb": "A star-shaped Kakatiya temple dedicated to Shiva, Vishnu and Surya, with a large carved monolithic Nandi."
+      },
+      {
+        "name": "Yadagirigutta",
+        "blurb": "A hilltop temple to Lakshmi Narasimha, rebuilt in carved black granite, that draws large weekend crowds of pilgrims."
+      },
+      {
+        "name": "Bhadrachalam",
+        "blurb": "A riverside temple town on the Godavari sacred to Rama, where the Sri Rama Navami wedding celebration draws huge crowds."
+      },
+      {
+        "name": "Basar",
+        "blurb": "A town on the Godavari with the Gnana Saraswati Temple, where families bring young children for the Aksharabhyasam rite before they start school."
+      },
+      {
+        "name": "Mecca Masjid, Hyderabad",
+        "blurb": "One of the largest mosques in India, begun under the Qutb Shahis, with bricks said to contain soil brought from Mecca."
+      },
+      {
+        "name": "Medak Cathedral",
+        "blurb": "A large Gothic-style church completed in 1924, known for its stained-glass windows and crowded Christmas services."
+      },
+      {
+        "name": "Birla Mandir, Hyderabad",
+        "blurb": "A white marble temple to Venkateswara on Naubat Pahad, with evening views over Hussain Sagar lake."
+      }
+    ],
+    "highlights": [
+      "Charminar at dusk and bangle shopping in Laad Bazaar",
+      "The sound and light show at Golconda Fort",
+      "Chowmahalla Palace, the Nizams' ceremonial seat",
+      "The restored Qutb Shahi Tombs heritage park",
+      "Kakatiya carvings at Ramappa and the Thousand Pillar Temple",
+      "A Hyderabadi biryani, haleem and Irani chai trail through the old city"
+    ],
+    "itineraries": [
+      {
+        "title": "Hyderabad Heritage and Flavours",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Old City and Charminar",
+            "details": "Begin at Charminar and Mecca Masjid, browse the bangles of Laad Bazaar and visit Chowmahalla Palace. End the evening with Irani chai and Osmania biscuits at a heritage cafe."
+          },
+          {
+            "title": "Qutb Shahi Tombs and Golconda",
+            "details": "Explore the restored Qutb Shahi Tombs in the morning, then climb Golconda Fort in the late afternoon and stay for the sound and light show."
+          },
+          {
+            "title": "Museums and Hussain Sagar",
+            "details": "Visit the Salar Jung Museum and Birla Mandir, then take a boat to the Buddha statue on Hussain Sagar and walk Necklace Road at sunset."
+          },
+          {
+            "title": "Pochampally and Bhongir",
+            "details": "Drive about 1.5 hours to Pochampally to watch ikat weaving, then climb Bhongir Fort before returning to Hyderabad for your departure."
+          }
+        ]
+      },
+      {
+        "title": "Telangana Discovery",
+        "duration": "8 Days / 7 Nights",
+        "days": [
+          {
+            "title": "Arrive in Hyderabad",
+            "details": "Walk through the Old City around Charminar, Mecca Masjid and Laad Bazaar, followed by a biryani dinner at a long-running local favourite."
+          },
+          {
+            "title": "Palaces, tombs and Golconda",
+            "details": "Visit Chowmahalla Palace and the Salar Jung Museum, then the Qutb Shahi Tombs, ending with sunset and the light show at Golconda Fort."
+          },
+          {
+            "title": "Hyderabad to Warangal via Bhongir and Yadagirigutta",
+            "details": "Drive about 1.5 hours to Bhongir Fort, then to the granite temple at Yadagirigutta nearby, before continuing about 2 hours to Warangal."
+          },
+          {
+            "title": "Warangal heritage",
+            "details": "Explore the Kakatiya stone gateways of Warangal Fort, the Thousand Pillar Temple and Bhadrakali Temple overlooking its lake."
+          },
+          {
+            "title": "Ramappa Temple and Laknavaram Lake",
+            "details": "Drive about 1.5 hours to the UNESCO-listed Ramappa Temple and Ramappa Lake, then about an hour to Laknavaram for a night by the lake."
+          },
+          {
+            "title": "Laknavaram to Hyderabad via Pochampally",
+            "details": "Cross the hanging bridge in the morning light, then drive back toward Hyderabad with a stop to see ikat weaving at Pochampally, about 4.5 hours of driving in all."
+          },
+          {
+            "title": "Nagarjuna Sagar",
+            "details": "Drive about 3 hours to Nagarjuna Sagar dam and take the launch to Nagarjunakonda island for its Buddhist relics and museum, staying overnight nearby."
+          },
+          {
+            "title": "Return and departure",
+            "details": "Drive back to Hyderabad, about 3 hours, for a last evening of shopping for pearls and Kalamkari before your departure."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "tripura",
+    "name": "Tripura",
+    "kind": "state",
+    "capital": "Agartala",
+    "zone": "North-East",
+    "tagline": "A royal lake palace, rock-cut gods and bamboo-green hills",
+    "intro": "Tripura is one of India's least-visited states, yet it is easy to reach by air from Kolkata and Guwahati and full of character. Agartala has the white Ujjayanta Palace, while Neermahal rises from a lake to the south and Unakoti hides huge rock-cut reliefs of Shiva in the forest. Travel here is unhurried and the welcome is warm.",
+    "bestTime": "October to March",
+    "idealDuration": "4–7 days",
+    "photoArticle": "Ujjayanta Palace",
+    "photoAlt": "The white domed facade of Ujjayanta Palace in Agartala behind its formal gardens and pools",
+    "destinations": [
+      {
+        "name": "Agartala",
+        "blurb": "The capital, centred on Ujjayanta Palace, now the Tripura State Museum, and its gardens."
+      },
+      {
+        "name": "Neermahal",
+        "blurb": "A former royal summer palace standing in Rudrasagar Lake at Melaghar, reached by boat."
+      },
+      {
+        "name": "Jampui Hills",
+        "blurb": "A ridge of Mizo villages and orange orchards with sunrise views across to Mizoram and Bangladesh."
+      },
+      {
+        "name": "Sepahijala Wildlife Sanctuary",
+        "blurb": "A forest reserve near Agartala known for spectacled langurs and clouded leopard enclosures."
+      },
+      {
+        "name": "Chabimura",
+        "blurb": "Ancient carvings of deities on the steep rock walls of the Gomati river, seen by boat."
+      },
+      {
+        "name": "Dumboor Lake",
+        "blurb": "A large reservoir dotted with dozens of small islands, near the source of the Gomati."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Tripura Sundari Temple, Udaipur",
+        "blurb": "A temple to the goddess Tripura Sundari in the old royal capital, counted among the 51 Shakti Peethas and busiest during Diwali."
+      },
+      {
+        "name": "Unakoti",
+        "blurb": "A forested hillside of colossal rock-cut reliefs of Shiva and other deities, over a thousand years old, where pilgrims gather for the Ashokastami fair."
+      },
+      {
+        "name": "Chaturdasha Devata Temple",
+        "blurb": "The Fourteen Gods temple near Agartala, where the royal Kharchi Puja is held every July."
+      },
+      {
+        "name": "Kamalasagar Kali Temple",
+        "blurb": "A 16th-century Kali temple on a hillock above a lake, right beside the Bangladesh border."
+      },
+      {
+        "name": "Jagannath Bari Temple, Agartala",
+        "blurb": "A brightly coloured Jagannath temple standing by a lake just in front of Ujjayanta Palace."
+      },
+      {
+        "name": "Benuban Vihar, Agartala",
+        "blurb": "A peaceful Buddhist monastery with brass images of the Buddha, a focus for the Buddhist community of Tripura."
+      },
+      {
+        "name": "Gedu Mian Mosque, Agartala",
+        "blurb": "An early 20th-century mosque with white domes and decorative tilework, one of the landmarks of the capital."
+      }
+    ],
+    "highlights": [
+      "The galleries of Ujjayanta Palace in Agartala",
+      "A boat across Rudrasagar Lake to Neermahal",
+      "The giant rock reliefs of Unakoti",
+      "The Tripura Sundari Temple at Udaipur",
+      "A river boat to the Chabimura carvings",
+      "The orange season in the Jampui Hills in November"
+    ],
+    "itineraries": [
+      {
+        "title": "Agartala and Neermahal",
+        "duration": "3 Days / 2 Nights",
+        "days": [
+          {
+            "title": "Arrive in Agartala",
+            "details": "Visit Ujjayanta Palace and its museum, the Jagannath Temple beside it and the Heritage Park in the evening."
+          },
+          {
+            "title": "Sepahijala, Neermahal and Udaipur",
+            "details": "Drive about an hour to Sepahijala Wildlife Sanctuary, continue to Melaghar for the boat to Neermahal, then visit the Tripura Sundari Temple at Udaipur before returning to Agartala."
+          },
+          {
+            "title": "Kamalasagar and departure",
+            "details": "Drive about an hour to the Kamalasagar Kali Temple overlooking the Bangladesh border, then return for your flight."
+          }
+        ]
+      },
+      {
+        "title": "Tripura Explorer",
+        "duration": "7 Days / 6 Nights",
+        "days": [
+          {
+            "title": "Arrive in Agartala",
+            "details": "Explore Ujjayanta Palace, the State Museum collections and the old royal quarter."
+          },
+          {
+            "title": "Sepahijala and Neermahal",
+            "details": "Spot spectacled langurs at Sepahijala, then continue to Melaghar for the boat to Neermahal and an overnight stay by Rudrasagar Lake."
+          },
+          {
+            "title": "Udaipur and Chabimura",
+            "details": "Visit the Tripura Sundari and Bhuvaneshwari temples at Udaipur, then drive to Amarpur for a boat on the Gomati to the Chabimura carvings, returning to Agartala in the evening."
+          },
+          {
+            "title": "Agartala to Unakoti",
+            "details": "Drive about 4.5 hours north to Unakoti and walk among the rock reliefs in the afternoon light, staying overnight in Kailashahar."
+          },
+          {
+            "title": "Kailashahar to the Jampui Hills",
+            "details": "Drive about 3 hours to the Jampui Hills and spend the afternoon among orange orchards around Vanghmun village."
+          },
+          {
+            "title": "Jampui sunrise and return",
+            "details": "Watch the sunrise from the ridge, then make the long drive back to Agartala, about 7 hours with a lunch stop."
+          },
+          {
+            "title": "Departure",
+            "details": "Pick up handloom and bamboo crafts in Agartala before your flight."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "uttar-pradesh",
+    "name": "Uttar Pradesh",
+    "kind": "state",
+    "capital": "Lucknow",
+    "zone": "North",
+    "tagline": "The Taj at sunrise, Ganga at dusk and Awadhi kebabs in between",
+    "intro": "Uttar Pradesh holds some of India's most visited sites: the Taj Mahal and Agra Fort, the ghats of Varanasi and the Buddhist site of Sarnath. Lucknow adds Nawabi architecture and refined Awadhi food, while Mathura, Vrindavan and Ayodhya draw pilgrims from across the country. New expressways have made it much faster to link Agra, Lucknow and Varanasi in one trip.",
+    "bestTime": "October to March",
+    "idealDuration": "5–8 days",
+    "photoArticle": "Taj Mahal",
+    "photoAlt": "The white marble Taj Mahal and its reflecting pool seen from the gardens in Agra",
+    "destinations": [
+      {
+        "name": "Agra",
+        "blurb": "The Taj Mahal, Agra Fort and the tomb of Itimad-ud-Daulah, often called the Baby Taj."
+      },
+      {
+        "name": "Fatehpur Sikri",
+        "blurb": "Akbar's red sandstone capital, abandoned within decades, with its grand Buland Darwaza."
+      },
+      {
+        "name": "Lucknow",
+        "blurb": "The city of the Nawabs, with the Bara Imambara, Rumi Darwaza and celebrated kebabs and chikan embroidery."
+      },
+      {
+        "name": "Prayagraj",
+        "blurb": "A university city with Anand Bhavan, the Allahabad Fort and Khusro Bagh, set where the Ganga and Yamuna meet."
+      },
+      {
+        "name": "Jhansi",
+        "blurb": "The hilltop fort of Rani Lakshmibai, heroine of the 1857 uprising, and a good base for the temples and palaces of Orchha just over the border."
+      },
+      {
+        "name": "Dudhwa National Park",
+        "blurb": "A Terai reserve on the Nepal border with tall grasslands and sal forest, home to tigers, swamp deer and reintroduced rhinos."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Varanasi",
+        "blurb": "One of the holiest cities of Hinduism, where pilgrims visit the Kashi Vishwanath Temple and watch the evening Ganga aarti at Dashashwamedh Ghat."
+      },
+      {
+        "name": "Sarnath",
+        "blurb": "Where the Buddha gave his first sermon, marked by the Dhamek Stupa and visited by Buddhist pilgrims from across Asia."
+      },
+      {
+        "name": "Kushinagar",
+        "blurb": "The place where the Buddha passed into parinirvana, with a reclining Buddha statue in the Mahaparinirvana Temple."
+      },
+      {
+        "name": "Mathura and Vrindavan",
+        "blurb": "The twin towns of Krishna's birth and childhood, with the Banke Bihari and ISKCON temples and lively Holi and Janmashtami celebrations."
+      },
+      {
+        "name": "Ayodhya",
+        "blurb": "The birthplace of Rama, with the new Ram Mandir and evening aarti on the ghats of the Saryu river."
+      },
+      {
+        "name": "Triveni Sangam, Prayagraj",
+        "blurb": "The sacred confluence of the Ganga, Yamuna and mythical Saraswati, reached by boat and the site of the Kumbh Mela."
+      },
+      {
+        "name": "Dargah of Salim Chishti, Fatehpur Sikri",
+        "blurb": "A white marble tomb of the Sufi saint whose blessing Akbar sought for a son, where visitors tie threads on the carved screens as they make a wish."
+      },
+      {
+        "name": "Dewa Sharif",
+        "blurb": "The shrine of the Sufi saint Haji Waris Ali Shah near Barabanki, known for its inclusive annual fair attended by Hindus and Muslims alike."
+      }
+    ],
+    "highlights": [
+      "Sunrise at the Taj Mahal",
+      "The evening Ganga Aarti at Dashashwamedh Ghat",
+      "A dawn boat ride along the Varanasi ghats",
+      "The labyrinth inside Lucknow's Bara Imambara",
+      "Galouti kebabs and Awadhi biryani in old Lucknow",
+      "The Dhamek Stupa and museum at Sarnath"
+    ],
+    "itineraries": [
+      {
+        "title": "Varanasi and Sarnath",
+        "duration": "3 Days / 2 Nights",
+        "days": [
+          {
+            "title": "Arrive in Varanasi",
+            "details": "Check in near the ghats and walk to Dashashwamedh Ghat for the evening Ganga Aarti."
+          },
+          {
+            "title": "Dawn on the river and Sarnath",
+            "details": "Take a sunrise boat past the ghats, then explore the old lanes around Kashi Vishwanath. In the afternoon drive 30 minutes to Sarnath."
+          },
+          {
+            "title": "Weavers and departure",
+            "details": "Visit a Banarasi silk weaving workshop and Ramnagar Fort across the river before your departure."
+          }
+        ]
+      },
+      {
+        "title": "Uttar Pradesh Heritage",
+        "duration": "8 Days / 7 Nights",
+        "days": [
+          {
+            "title": "Arrive in Agra",
+            "details": "Visit Agra Fort in the afternoon and watch the sunset over the Taj from Mehtab Bagh across the Yamuna."
+          },
+          {
+            "title": "Taj Mahal and Fatehpur Sikri",
+            "details": "See the Taj Mahal at sunrise and the tomb of Itimad-ud-Daulah, then drive an hour to Fatehpur Sikri."
+          },
+          {
+            "title": "Agra to Lucknow",
+            "details": "Drive about 4.5 hours along the Agra–Lucknow Expressway and spend the evening in Hazratganj."
+          },
+          {
+            "title": "Lucknow",
+            "details": "Explore the Bara Imambara, Rumi Darwaza, Chota Imambara and the British Residency, with a kebab trail through Chowk in the evening."
+          },
+          {
+            "title": "Lucknow to Ayodhya",
+            "details": "Drive about 2.5 hours to Ayodhya to visit the Ram Mandir and Hanuman Garhi, and watch the aarti on the Saryu ghats."
+          },
+          {
+            "title": "Ayodhya to Varanasi",
+            "details": "Drive about 4 hours to Varanasi in time for the evening Ganga Aarti at Dashashwamedh Ghat."
+          },
+          {
+            "title": "Varanasi and Sarnath",
+            "details": "Take a dawn boat along the ghats and visit Kashi Vishwanath, then spend the afternoon at Sarnath."
+          },
+          {
+            "title": "Departure from Varanasi",
+            "details": "Visit a silk weavers' workshop before transferring to Varanasi airport."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "uttarakhand",
+    "name": "Uttarakhand",
+    "kind": "state",
+    "capital": "Dehradun",
+    "zone": "North",
+    "tagline": "Ganga ghats, Himalayan shrines and tiger country in the foothills",
+    "intro": "Uttarakhand stretches from the Ganga's ghats at Haridwar and Rishikesh up to the high Himalayan shrines of Kedarnath and Badrinath. In between are colonial hill stations like Mussoorie and Nainital, alpine meadows at Auli and the Valley of Flowers, and Jim Corbett, India's oldest national park. It works equally well for a spiritual journey, a family holiday or a trekking trip.",
+    "bestTime": "March to June and September to November",
+    "idealDuration": "5–9 days",
+    "photoArticle": "Kedarnath Temple",
+    "photoAlt": "The stone Kedarnath Temple set against snow-covered Himalayan peaks",
+    "destinations": [
+      {
+        "name": "Rishikesh",
+        "blurb": "The yoga capital on the Ganga, known for its suspension bridges, ashrams and white-water rafting."
+      },
+      {
+        "name": "Mussoorie",
+        "blurb": "A ridge-top hill station above Dehradun with the Mall Road, Landour's quiet lanes and views of the Garhwal peaks."
+      },
+      {
+        "name": "Nainital",
+        "blurb": "A lake town in the Kumaon hills, good for boating, ropeway rides and walks to Snow View."
+      },
+      {
+        "name": "Jim Corbett National Park",
+        "blurb": "India's oldest national park, with jeep safaris through sal forest and grassland in search of tigers and elephants."
+      },
+      {
+        "name": "Auli",
+        "blurb": "Ski slopes and summer meadows above Joshimath with views of Nanda Devi, linked by a long ropeway."
+      },
+      {
+        "name": "Valley of Flowers",
+        "blurb": "A UNESCO-listed alpine valley that blooms with hundreds of wildflower species from July to September."
+      },
+      {
+        "name": "Binsar Wildlife Sanctuary",
+        "blurb": "Oak and rhododendron forest above Almora with a 300 km sweep of Himalayan peaks from the Zero Point viewpoint."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Haridwar",
+        "blurb": "One of the holiest cities of Hinduism, where the evening aarti at Har Ki Pauri fills the Ganga with floating lamps."
+      },
+      {
+        "name": "Kedarnath",
+        "blurb": "One of the twelve Jyotirlingas, reached by a 16 km trek or helicopter from Gaurikund and open from about May to November."
+      },
+      {
+        "name": "Badrinath",
+        "blurb": "A shrine to Vishnu on the Alaknanda river, one of the Char Dham, where pilgrims bathe in the Tapt Kund hot springs before darshan."
+      },
+      {
+        "name": "Gangotri",
+        "blurb": "A temple town near the source of the Ganga, the starting point for the trek to the Gaumukh glacier."
+      },
+      {
+        "name": "Yamunotri",
+        "blurb": "The Char Dham shrine to the goddess Yamuna, reached on foot from Janki Chatti, where pilgrims cook rice in the Surya Kund hot spring."
+      },
+      {
+        "name": "Hemkund Sahib",
+        "blurb": "A high-altitude gurdwara beside a glacial lake at about 4,600 metres, reached by a steep trek from Ghangaria."
+      },
+      {
+        "name": "Jageshwar",
+        "blurb": "A cluster of more than a hundred stone temples to Shiva in a deodar forest near Almora, dating from the 9th to 13th centuries."
+      },
+      {
+        "name": "Piran Kaliyar Sharif",
+        "blurb": "The dargah of the Sufi saint Alauddin Ali Ahmed Sabir near Roorkee, visited by Muslims and Hindus alike."
+      }
+    ],
+    "highlights": [
+      "The Ganga Aarti at Har Ki Pauri in Haridwar",
+      "White-water rafting on the Ganga near Rishikesh",
+      "A jeep safari in Jim Corbett National Park",
+      "The short trek from Chopta to Tungnath temple",
+      "Boating on Naini Lake",
+      "Sunrise views of Trishul and Nanda Devi from Kausani"
+    ],
+    "itineraries": [
+      {
+        "title": "Haridwar, Rishikesh and Mussoorie",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Dehradun to Haridwar",
+            "details": "Arrive at Dehradun airport and drive about an hour to Haridwar for the evening aarti at Har Ki Pauri."
+          },
+          {
+            "title": "Haridwar to Rishikesh",
+            "details": "Drive about 45 minutes to Rishikesh, cross Ram Jhula, visit the Beatles Ashram and attend the aarti at Parmarth Niketan."
+          },
+          {
+            "title": "Rafting and on to Mussoorie",
+            "details": "Raft from Shivpuri back toward Rishikesh in the morning, then drive about 2.5 hours up to Mussoorie."
+          },
+          {
+            "title": "Mussoorie and departure",
+            "details": "Walk the Mall Road and up to Landour for mountain views, then descend about 1.5 hours to Dehradun for your departure."
+          }
+        ]
+      },
+      {
+        "title": "Corbett and the Kumaon Hills",
+        "duration": "7 Days / 6 Nights",
+        "days": [
+          {
+            "title": "Delhi to Jim Corbett",
+            "details": "Drive about 6 hours from Delhi to Ramnagar and settle into a forest lodge on the Kosi river."
+          },
+          {
+            "title": "Corbett safaris",
+            "details": "Head out on morning and afternoon jeep safaris in the Bijrani or Jhirna zones to look for tigers, elephants and birds."
+          },
+          {
+            "title": "Corbett to Nainital",
+            "details": "Drive about 2.5 hours into the hills to Nainital for an evening boat ride on Naini Lake and a walk on the Mall Road."
+          },
+          {
+            "title": "Nainital lakes",
+            "details": "Take the ropeway to Snow View, then visit the quieter lakes of Bhimtal and Sattal."
+          },
+          {
+            "title": "Nainital to Kausani via Almora",
+            "details": "Drive about 4.5 hours through Almora to Kausani, a ridge village facing a long line of Himalayan peaks."
+          },
+          {
+            "title": "Kausani and Baijnath",
+            "details": "Watch sunrise on Trishul and Nanda Devi, visit a tea estate and drive 40 minutes to the old stone temples of Baijnath."
+          },
+          {
+            "title": "Kausani to Kathgodam",
+            "details": "Drive about 5 hours down to Kathgodam station for the train back to Delhi."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "west-bengal",
+    "name": "West Bengal",
+    "kind": "state",
+    "capital": "Kolkata",
+    "zone": "East",
+    "tagline": "Tea-garden ridges, mangrove tigers and Kolkata's lively streets",
+    "intro": "West Bengal runs from the Darjeeling hills, with their tea estates and toy train, down to the mangrove creeks of the Sundarbans on the Bay of Bengal. In between is Kolkata, a city of colonial landmarks, book markets, sweet shops and the October frenzy of Durga Puja. Smaller towns like Bishnupur and Shantiniketan add terracotta temples and Tagore's legacy.",
+    "bestTime": "October to March (March to May for Darjeeling)",
+    "idealDuration": "6–8 days",
+    "photoArticle": "Victoria Memorial, Kolkata",
+    "photoAlt": "The white marble Victoria Memorial in Kolkata behind its gardens and reflecting pool",
+    "destinations": [
+      {
+        "name": "Kolkata",
+        "blurb": "The former British capital, with the Victoria Memorial, Howrah Bridge, College Street and a famous sweet and street-food culture."
+      },
+      {
+        "name": "Darjeeling",
+        "blurb": "A hill town of tea estates and a UNESCO-listed toy train, with Kangchenjunga views from Tiger Hill."
+      },
+      {
+        "name": "Kalimpong",
+        "blurb": "A quieter hill town known for its flower nurseries, monasteries and views over the Teesta valley."
+      },
+      {
+        "name": "Sundarbans",
+        "blurb": "The world's largest mangrove forest, explored by boat through creeks where Bengal tigers roam."
+      },
+      {
+        "name": "Shantiniketan",
+        "blurb": "Rabindranath Tagore's university town, known for open-air classes and the colourful Basanta Utsav at Holi."
+      },
+      {
+        "name": "Bishnupur",
+        "blurb": "A town of 17th-century terracotta temples and the place to buy Baluchari silk saris."
+      },
+      {
+        "name": "Murshidabad",
+        "blurb": "The last capital of the Nawabs of Bengal, with the grand Hazarduari Palace on the Bhagirathi river."
+      },
+      {
+        "name": "Dooars",
+        "blurb": "Forested foothills with tea estates and the Jaldapara and Gorumara parks, home to one-horned rhinos."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Dakshineswar Kali Temple",
+        "blurb": "A 19th-century riverside temple to Kali north of Kolkata, closely tied to the mystic Ramakrishna Paramahamsa."
+      },
+      {
+        "name": "Kalighat Kali Temple",
+        "blurb": "One of the 51 Shakti Peethas, in south Kolkata, a busy and atmospheric temple that gave the city its name."
+      },
+      {
+        "name": "Belur Math",
+        "blurb": "The headquarters of the Ramakrishna Mission on the Hooghly, whose main temple blends Hindu, Christian and Islamic architectural styles."
+      },
+      {
+        "name": "Mayapur",
+        "blurb": "The birthplace of Chaitanya Mahaprabhu and the global headquarters of ISKCON, with a vast new temple rising beside the river."
+      },
+      {
+        "name": "Tarapith",
+        "blurb": "A temple town in Birbhum devoted to the goddess Tara, known for its cremation ground and Tantric traditions."
+      },
+      {
+        "name": "Ghum Monastery",
+        "blurb": "A monastery near Darjeeling housing a 15-foot statue of the Maitreya Buddha, beside the highest station on the toy train line."
+      },
+      {
+        "name": "Nakhoda Masjid, Kolkata",
+        "blurb": "The largest mosque in Kolkata, modelled on the tomb of Akbar at Sikandra, and especially lively during Ramzan."
+      },
+      {
+        "name": "St Paul's Cathedral, Kolkata",
+        "blurb": "An Indo-Gothic Anglican cathedral from 1847 with a fine Burne-Jones stained-glass window and a candlelit Christmas service."
+      }
+    ],
+    "highlights": [
+      "A ride on the Darjeeling Himalayan Railway toy train",
+      "Sunrise over Kangchenjunga from Tiger Hill",
+      "The Victoria Memorial and Maidan in Kolkata",
+      "Kumartuli's clay idol makers and the Howrah flower market",
+      "A boat safari through the Sundarbans mangroves",
+      "The terracotta temples of Bishnupur"
+    ],
+    "itineraries": [
+      {
+        "title": "Kolkata City Break",
+        "duration": "3 Days / 2 Nights",
+        "days": [
+          {
+            "title": "Colonial Kolkata",
+            "details": "Visit the Victoria Memorial, St Paul's Cathedral and the Indian Museum, then dine on Park Street in the evening."
+          },
+          {
+            "title": "River and old north Kolkata",
+            "details": "Start at the Mullick Ghat flower market under Howrah Bridge, walk through Kumartuli's idol workshops, then visit Dakshineswar and take a boat across to Belur Math."
+          },
+          {
+            "title": "Books, sweets and departure",
+            "details": "Browse College Street and stop at the Indian Coffee House, followed by a sweet-shop tasting before your departure."
+          }
+        ]
+      },
+      {
+        "title": "Sundarbans to Darjeeling",
+        "duration": "8 Days / 7 Nights",
+        "days": [
+          {
+            "title": "Arrive in Kolkata",
+            "details": "See the Victoria Memorial and Howrah Bridge, and walk along the Prinsep Ghat riverfront at sunset."
+          },
+          {
+            "title": "Kolkata to the Sundarbans",
+            "details": "Drive about 3 hours to Godkhali jetty and continue by boat to a riverside lodge in the mangroves."
+          },
+          {
+            "title": "Sundarbans boat safari",
+            "details": "Spend the day cruising the creeks with stops at the Sajnekhali and Sudhanyakhali watchtowers to look for tigers, crocodiles and birds."
+          },
+          {
+            "title": "Back to Kolkata",
+            "details": "Return by boat and road to Kolkata in the afternoon and spend the evening at Kumartuli or New Market."
+          },
+          {
+            "title": "Fly to Bagdogra, drive to Darjeeling",
+            "details": "Take a morning flight to Bagdogra and drive about 3 hours up through the tea gardens to Darjeeling."
+          },
+          {
+            "title": "Darjeeling",
+            "details": "Watch sunrise at Tiger Hill, see Batasia Loop and Ghoom Monastery, ride the toy train and visit a tea estate."
+          },
+          {
+            "title": "Darjeeling to Kalimpong",
+            "details": "Drive about 2.5 hours to Kalimpong to visit the Durpin Monastery, flower nurseries and Deolo Hill viewpoint."
+          },
+          {
+            "title": "Departure",
+            "details": "Drive about 3 hours down to Bagdogra airport for your onward flight."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,974 @@
+[
+  {
+    "slug": "andaman-and-nicobar-islands",
+    "name": "Andaman and Nicobar Islands",
+    "kind": "ut",
+    "capital": "Sri Vijaya Puram (Port Blair)",
+    "zone": "Islands",
+    "tagline": "White sand, coral reefs and colonial history in the Bay of Bengal",
+    "intro": "An archipelago far out in the Bay of Bengal, the Andamans pair clear turquoise water and coral reefs with the sobering history of the Cellular Jail. Most trips base themselves in Sri Vijaya Puram (Port Blair) and hop by ferry to Swaraj Dweep (Havelock) and Shaheed Dweep (Neil) for beaches, snorkelling and diving.",
+    "bestTime": "October to May",
+    "idealDuration": "5–7 days",
+    "photoArticle": "Cellular Jail",
+    "photoAlt": "The Cellular Jail national memorial in Sri Vijaya Puram",
+    "destinations": [
+      {
+        "name": "Sri Vijaya Puram (Port Blair)",
+        "blurb": "The island capital, home to the Cellular Jail, the Samudrika naval museum and the evening sound-and-light show on the freedom struggle."
+      },
+      {
+        "name": "Swaraj Dweep (Havelock Island)",
+        "blurb": "The most popular island, with Radhanagar Beach for sunsets and Elephant Beach for easy snorkelling over coral."
+      },
+      {
+        "name": "Shaheed Dweep (Neil Island)",
+        "blurb": "A small, slow-paced island of cycling lanes, village markets and the natural rock arch at Laxmanpur."
+      },
+      {
+        "name": "Netaji Subhas Chandra Bose Dweep (Ross Island)",
+        "blurb": "The overgrown ruins of the former British headquarters, with deer and peacocks wandering among church and bungalow walls."
+      },
+      {
+        "name": "Baratang Island",
+        "blurb": "A day trip through mangrove creeks to limestone caves and an active mud volcano."
+      },
+      {
+        "name": "North Bay Island",
+        "blurb": "The lighthouse pictured on the old 20-rupee note, and a calm spot for glass-bottom boat rides and sea walking."
+      },
+      {
+        "name": "Chidiya Tapu",
+        "blurb": "A forested headland south of the capital known for birdwatching and some of the best sunsets in South Andaman."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Sri Vetrimalai Murugan Temple",
+        "blurb": "A Dravidian-style temple to Murugan on a small hill in Port Blair, the main Hindu pilgrimage site of the islands and busiest during Thaipusam and Kanda Shashti."
+      },
+      {
+        "name": "Stella Maris Cathedral",
+        "blurb": "The hilltop seat of the Catholic Diocese of Port Blair at Haddo, where the island community gathers for Sunday Mass and the Christmas midnight service."
+      }
+    ],
+    "highlights": [
+      "Cellular Jail light-and-sound show",
+      "Snorkelling and scuba diving off Havelock",
+      "Sunset at Radhanagar Beach",
+      "Mangrove creek boat ride to the Baratang limestone caves",
+      "Cycling around Shaheed Dweep (Neil Island)",
+      "Glass-bottom boat trip at North Bay"
+    ],
+    "itineraries": [
+      {
+        "title": "Port Blair and Havelock Short Break",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Arrive Sri Vijaya Puram",
+            "details": "Fly into Veer Savarkar International Airport and check in. Visit the Cellular Jail in the afternoon and stay for the evening light-and-sound show."
+          },
+          {
+            "title": "Ferry to Havelock",
+            "details": "Take a morning ferry to Swaraj Dweep (about 2 hours). Spend the afternoon at Radhanagar Beach and watch the sunset."
+          },
+          {
+            "title": "Elephant Beach",
+            "details": "Boat across to Elephant Beach for snorkelling or try a beginner dive with a certified operator. Evening ferry back to Sri Vijaya Puram."
+          },
+          {
+            "title": "Ross Island and depart",
+            "details": "Short boat trip to Netaji Subhas Chandra Bose Dweep to see the colonial ruins, then transfer to the airport."
+          }
+        ]
+      },
+      {
+        "title": "Andaman Islands Explorer",
+        "duration": "7 Days / 6 Nights",
+        "days": [
+          {
+            "title": "Arrive Sri Vijaya Puram",
+            "details": "Airport pickup and hotel check-in. Visit the Cellular Jail and Corbyn's Cove, then attend the light-and-sound show."
+          },
+          {
+            "title": "Ross and North Bay Islands",
+            "details": "Half-day boat excursion to Ross Island's ruins and North Bay for snorkelling or a glass-bottom boat ride. Evening at leisure."
+          },
+          {
+            "title": "Baratang day trip",
+            "details": "Early start by road with a police convoy section (about 3 hours each way), then a speedboat through mangroves to the limestone caves and a stop at the mud volcano."
+          },
+          {
+            "title": "Ferry to Havelock",
+            "details": "Morning ferry to Swaraj Dweep. Afternoon and sunset at Radhanagar Beach."
+          },
+          {
+            "title": "Havelock at leisure",
+            "details": "Snorkel at Elephant Beach or take a discover-scuba session. Kalapathar Beach makes a quiet late-afternoon stop."
+          },
+          {
+            "title": "Shaheed Dweep (Neil)",
+            "details": "Short ferry to Neil Island (about 1 hour). Cycle to Laxmanpur's natural rock arch, Bharatpur Beach and Sitapur for sunrise or sunset."
+          },
+          {
+            "title": "Return and depart",
+            "details": "Ferry back to Sri Vijaya Puram (about 1.5 hours) and transfer to the airport for your flight home."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chandigarh",
+    "name": "Chandigarh",
+    "kind": "ut",
+    "capital": "Chandigarh",
+    "zone": "North",
+    "tagline": "Le Corbusier's planned city of gardens at the Shivalik foothills",
+    "intro": "India's first planned city was laid out by Le Corbusier in the 1950s, and its Capitol Complex is a UNESCO World Heritage Site. Wide leafy sectors, Nek Chand's Rock Garden and Sukhna Lake make it an easy, relaxed stop, and the hills of Shimla and Kasauli are only a few hours away.",
+    "bestTime": "October to March",
+    "idealDuration": "1–2 days",
+    "photoArticle": "Rock Garden of Chandigarh",
+    "photoAlt": "Sculpted figures made from recycled ceramic and stone lined up along a path in Nek Chand's Rock Garden",
+    "destinations": [
+      {
+        "name": "Rock Garden",
+        "blurb": "Nek Chand's 40-acre maze of waterfalls and thousands of figures built from broken crockery, bangles and industrial waste."
+      },
+      {
+        "name": "Capitol Complex",
+        "blurb": "Le Corbusier's UNESCO-listed Secretariat, High Court and Assembly, plus the Open Hand Monument, seen on guided tours."
+      },
+      {
+        "name": "Sukhna Lake",
+        "blurb": "A man-made lake below the Shivaliks with a long promenade for morning walks and evening boating."
+      },
+      {
+        "name": "Zakir Hussain Rose Garden",
+        "blurb": "One of Asia's largest rose gardens, with more than 1,500 varieties that peak in February and March."
+      },
+      {
+        "name": "Government Museum and Art Gallery",
+        "blurb": "Gandhara sculptures, Pahari miniature paintings and a gallery on the making of the city itself."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "ISKCON Sri Sri Radha Madhava Temple",
+        "blurb": "The Hare Krishna temple in Sector 36, open to all, with a large prayer hall, daily aartis and a simple vegetarian prasadam lunch."
+      },
+      {
+        "name": "Gurdwara Nanaksar Sahib",
+        "blurb": "A white gurdwara in Sector 28 known for its calm marble halls, continuous kirtan and a langar that serves anyone who walks in."
+      },
+      {
+        "name": "Gurdwara Shri Guru Tegh Bahadur Sahib",
+        "blurb": "A large Sector 34 gurdwara dedicated to the ninth Sikh Guru, busiest on gurpurab days when the whole neighbourhood turns out for langar."
+      }
+    ],
+    "highlights": [
+      "Wandering through Nek Chand's Rock Garden",
+      "Guided tour of the Capitol Complex",
+      "Sunset boating on Sukhna Lake",
+      "Rose Garden in late-winter bloom",
+      "Le Corbusier Centre in Sector 19",
+      "Shopping and Punjabi food in Sector 17 Plaza"
+    ],
+    "itineraries": [
+      {
+        "title": "Chandigarh City Weekend",
+        "duration": "2 Days / 1 Night",
+        "days": [
+          {
+            "title": "Rock Garden and Sukhna Lake",
+            "details": "Arrive by air or Shatabdi from Delhi (about 3.5 hours) and start at the Rock Garden. End the day with a walk and boat ride on Sukhna Lake."
+          },
+          {
+            "title": "Capitol Complex and Rose Garden",
+            "details": "Morning guided tour of the Capitol Complex and Open Hand Monument. Afternoon at the Rose Garden and Government Museum before departure."
+          }
+        ]
+      },
+      {
+        "title": "Chandigarh, Kasauli and Shimla",
+        "duration": "6 Days / 5 Nights",
+        "days": [
+          {
+            "title": "Arrive Chandigarh",
+            "details": "Check in and visit the Rock Garden, then an evening stroll at Sukhna Lake."
+          },
+          {
+            "title": "Chandigarh sightseeing",
+            "details": "Capitol Complex tour in the morning, followed by the Rose Garden, Government Museum and Sector 17 Plaza."
+          },
+          {
+            "title": "Drive to Kasauli",
+            "details": "Drive into Himachal Pradesh (about 1.5 hours) to the cantonment town of Kasauli. Walk the Mall and Christ Church, and catch sunset from Sunset Point."
+          },
+          {
+            "title": "Kasauli to Shimla",
+            "details": "Drive to Shimla (about 2.5 hours). Afternoon on the Mall Road, the Ridge and Christ Church."
+          },
+          {
+            "title": "Kufri and Shimla",
+            "details": "Morning excursion to Kufri and the Himalayan views at Mahasu Peak. Visit the Viceregal Lodge and Jakhoo Temple on the way back."
+          },
+          {
+            "title": "Return to Chandigarh",
+            "details": "Drive down to Chandigarh (about 3.5 hours), or ride the Kalka–Shimla toy train to Kalka, for your onward flight or train."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "dadra-and-nagar-haveli-and-daman-and-diu",
+    "name": "Dadra and Nagar Haveli and Daman and Diu",
+    "kind": "ut",
+    "capital": "Daman",
+    "zone": "West",
+    "tagline": "Portuguese forts, quiet beaches and forested tribal hills",
+    "intro": "This union territory joins three former Portuguese enclaves on India's west coast: the forts and churches of Daman, the beaches and limestone caves of Diu, and the green tribal hills of Dadra and Nagar Haveli. Diu sits off the Saurashtra coast of Gujarat, a long way from the other two, so most visitors pick one area or combine them with Gujarat.",
+    "bestTime": "October to March",
+    "idealDuration": "3–5 days",
+    "photoArticle": "Diu Fort",
+    "photoAlt": "Stone ramparts of the Portuguese-built Diu Fort rising above the Arabian Sea",
+    "destinations": [
+      {
+        "name": "Diu Fort",
+        "blurb": "A 16th-century Portuguese sea fort with cannons, a lighthouse and views across to the Panikota fortress in the channel."
+      },
+      {
+        "name": "Nagoa Beach",
+        "blurb": "A horseshoe-shaped beach on Diu lined with hokka palms, good for swimming and water sports."
+      },
+      {
+        "name": "Naida Caves",
+        "blurb": "A maze of eroded limestone passages near Diu Fort where shafts of light fall through gaps in the rock."
+      },
+      {
+        "name": "Moti Daman Fort",
+        "blurb": "A walled Portuguese town with the Bom Jesus Church and quiet lanes of colonial buildings."
+      },
+      {
+        "name": "Devka Beach",
+        "blurb": "Daman's main seafront, with a promenade, food stalls and lively evenings."
+      },
+      {
+        "name": "Silvassa",
+        "blurb": "The capital of Dadra and Nagar Haveli, with the Tribal Cultural Museum and the Vanganga Lake garden."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "St. Paul's Church, Diu",
+        "blurb": "A whitewashed baroque church from the early 1600s, dedicated to Our Lady of the Immaculate Conception, with an ornate carved wooden altar that is still used for services."
+      },
+      {
+        "name": "Gangeshwar Mahadev Temple",
+        "blurb": "A seashore Shiva shrine at Fudam near Diu where five lingams sit in a rock cleft and are washed by the tide twice a day."
+      },
+      {
+        "name": "Church of Bom Jesus, Daman",
+        "blurb": "A 17th-century Portuguese church inside the Moti Daman walls, with a carved doorway and a gilded altar honouring the infant Jesus."
+      },
+      {
+        "name": "Our Lady of the Rosary Chapel",
+        "blurb": "A small chapel in Moti Daman whose walls and altar are covered in gilded wood carvings of scenes from the life of Christ."
+      }
+    ],
+    "highlights": [
+      "Exploring Diu Fort and its lighthouse",
+      "Walking through the Naida Caves",
+      "Sunset at Nagoa Beach",
+      "Heritage walk inside Moti Daman Fort",
+      "Tribal Cultural Museum in Silvassa",
+      "Fresh seafood in Diu's old town"
+    ],
+    "itineraries": [
+      {
+        "title": "Diu Coast Getaway",
+        "duration": "3 Days / 2 Nights",
+        "days": [
+          {
+            "title": "Arrive Diu",
+            "details": "Fly to Diu airport or drive from Somnath (about 2 hours). Spend the evening at Nagoa Beach."
+          },
+          {
+            "title": "Forts and caves",
+            "details": "Explore Diu Fort, the Naida Caves and St. Paul's Church, then visit the INS Khukri Memorial at sunset."
+          },
+          {
+            "title": "Ghoghla Beach and depart",
+            "details": "A relaxed morning at Ghoghla Beach before your flight or the drive back to Somnath."
+          }
+        ]
+      },
+      {
+        "title": "Daman, Silvassa and Diu with Somnath",
+        "duration": "6 Days / 5 Nights",
+        "days": [
+          {
+            "title": "Arrive Daman",
+            "details": "Arrive via Vapi railway station (about 30 minutes away) or Surat airport (about 2.5 hours). Evening at Devka Beach."
+          },
+          {
+            "title": "Moti and Nani Daman",
+            "details": "Walk through Moti Daman Fort and Bom Jesus Church, then cross the river to Nani Daman's fort and Jampore Beach."
+          },
+          {
+            "title": "Silvassa day trip",
+            "details": "Drive to Silvassa (about 1 hour) for the Tribal Cultural Museum, Vanganga Lake and the Vasona Lion Safari, returning to Daman."
+          },
+          {
+            "title": "Travel to Diu",
+            "details": "Long transfer to Diu via Surat by flight or a full-day drive across Gujarat (about 9 hours). Rest and sunset at Nagoa Beach."
+          },
+          {
+            "title": "Diu sightseeing",
+            "details": "Diu Fort, Naida Caves, St. Paul's Church and the Gangeshwar Temple with its sea-washed shivlings."
+          },
+          {
+            "title": "Somnath and depart",
+            "details": "Drive to Somnath (about 2 hours) to visit the Jyotirlinga temple, then continue to Rajkot or Diu airport for departure."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "delhi",
+    "name": "Delhi",
+    "kind": "ut",
+    "capital": "New Delhi",
+    "zone": "North",
+    "tagline": "Mughal tombs, old bazaars and the boulevards of New Delhi",
+    "intro": "Delhi layers seven historic cities into one sprawling capital, from the Qutub Minar and Mughal monuments to Lutyens' grand avenues. Spend mornings at Humayun's Tomb or the Red Fort, afternoons in Chandni Chowk's lanes and evenings at Dilli Haat, then continue to Agra and Jaipur on the Golden Triangle.",
+    "bestTime": "October to March",
+    "idealDuration": "2–3 days",
+    "photoArticle": "Humayun's Tomb",
+    "photoAlt": "Red sandstone and white marble Mughal mausoleum with a large dome set behind formal gardens at Humayun's Tomb",
+    "destinations": [
+      {
+        "name": "Humayun's Tomb",
+        "blurb": "A UNESCO-listed garden tomb from 1570 that set the pattern later perfected at the Taj Mahal."
+      },
+      {
+        "name": "Qutub Minar",
+        "blurb": "A 73-metre fluted victory tower begun in 1193, surrounded by the ruins of Delhi's first mosque and the iron pillar."
+      },
+      {
+        "name": "Red Fort",
+        "blurb": "Shah Jahan's sandstone citadel in Old Delhi, where the Prime Minister raises the flag every Independence Day."
+      },
+      {
+        "name": "Chandni Chowk",
+        "blurb": "Shah Jahan's old market street, a maze of spice, silver and sweet-shop lanes best explored by cycle-rickshaw."
+      },
+      {
+        "name": "India Gate and Kartavya Path",
+        "blurb": "The war memorial arch at the end of the ceremonial avenue leading up to Rashtrapati Bhavan."
+      },
+      {
+        "name": "Mehrauli Archaeological Park",
+        "blurb": "Over 100 scattered monuments, from Sultanate tombs to stepwells, along shaded walking trails."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Jama Masjid",
+        "blurb": "Shah Jahan's red sandstone mosque from 1656, one of India's largest, where the courtyard holds 25,000 worshippers and the southern minaret looks over Old Delhi."
+      },
+      {
+        "name": "Gurudwara Bangla Sahib",
+        "blurb": "The gold-domed Sikh shrine linked to Guru Har Krishan, with a holy sarovar and a community kitchen that feeds thousands every day."
+      },
+      {
+        "name": "Gurudwara Sis Ganj Sahib",
+        "blurb": "A gurdwara on Chandni Chowk marking the spot where the ninth Sikh Guru, Tegh Bahadur, was executed in 1675."
+      },
+      {
+        "name": "Hazrat Nizamuddin Dargah",
+        "blurb": "The shrine of the 14th-century Sufi saint Nizamuddin Auliya, where qawwali singers perform in the courtyard on Thursday evenings."
+      },
+      {
+        "name": "Akshardham",
+        "blurb": "A vast carved-stone Swaminarayan temple complex opened in 2005, with exhibitions on Hindu tradition and an evening water show."
+      },
+      {
+        "name": "Lotus Temple",
+        "blurb": "The lotus-shaped Bahai House of Worship, made of 27 marble petals and open to people of every faith for silent prayer."
+      },
+      {
+        "name": "Sacred Heart Cathedral",
+        "blurb": "A 1930s Catholic cathedral near Connaught Place, the seat of the Archdiocese of Delhi and crowded for midnight Mass at Christmas."
+      }
+    ],
+    "highlights": [
+      "Cycle-rickshaw ride through Chandni Chowk",
+      "Sunset at Humayun's Tomb",
+      "Street food trail in Old Delhi",
+      "Qutub Minar and the iron pillar",
+      "Evening qawwali at Hazrat Nizamuddin Dargah",
+      "Crafts and regional food at Dilli Haat"
+    ],
+    "itineraries": [
+      {
+        "title": "Old and New Delhi Highlights",
+        "duration": "3 Days / 2 Nights",
+        "days": [
+          {
+            "title": "Arrive and New Delhi",
+            "details": "Check in, then drive past Rashtrapati Bhavan and India Gate along Kartavya Path. Visit Humayun's Tomb in the late afternoon light."
+          },
+          {
+            "title": "Old Delhi",
+            "details": "Morning at the Red Fort and Jama Masjid, then a cycle-rickshaw ride and food walk through Chandni Chowk. Evening qawwali at Nizamuddin Dargah on a Thursday."
+          },
+          {
+            "title": "South Delhi and depart",
+            "details": "Visit the Qutub Minar and the Lotus Temple, with time at Dilli Haat for shopping before your departure."
+          }
+        ]
+      },
+      {
+        "title": "Golden Triangle: Delhi, Agra and Jaipur",
+        "duration": "6 Days / 5 Nights",
+        "days": [
+          {
+            "title": "Arrive Delhi",
+            "details": "Airport pickup and check-in. Evening at India Gate and dinner at Connaught Place."
+          },
+          {
+            "title": "Delhi sightseeing",
+            "details": "Old Delhi's Red Fort, Jama Masjid and Chandni Chowk in the morning, then Humayun's Tomb and the Qutub Minar in the afternoon."
+          },
+          {
+            "title": "Delhi to Agra",
+            "details": "Drive the Yamuna Expressway to Agra (about 3.5 hours). Visit Agra Fort and watch sunset over the Taj from Mehtab Bagh."
+          },
+          {
+            "title": "Taj Mahal to Jaipur",
+            "details": "Sunrise visit to the Taj Mahal (closed Fridays), then drive to Jaipur via Fatehpur Sikri (about 5 hours with the stop)."
+          },
+          {
+            "title": "Jaipur",
+            "details": "Amber Fort in the morning, then the City Palace, Jantar Mantar and Hawa Mahal, with an evening in the bazaars."
+          },
+          {
+            "title": "Return to Delhi",
+            "details": "Drive back to Delhi (about 5 hours) or fly out from Jaipur for your onward journey."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "jammu-and-kashmir",
+    "name": "Jammu and Kashmir",
+    "kind": "ut",
+    "capital": "Srinagar (summer), Jammu (winter)",
+    "zone": "North",
+    "tagline": "Houseboats on Dal Lake and alpine meadows under the Himalaya",
+    "intro": "The Kashmir Valley is known for Srinagar's houseboats and Mughal gardens, the ski slopes of Gulmarg and the river valleys of Pahalgam and Sonamarg. In the south, Jammu is the gateway to the Vaishno Devi shrine, drawing millions of pilgrims each year.",
+    "bestTime": "April to October (December to February for snow)",
+    "idealDuration": "5–7 days",
+    "photoArticle": "Gulmarg",
+    "photoAlt": "Meadows and pine forest at Gulmarg in Kashmir",
+    "destinations": [
+      {
+        "name": "Srinagar",
+        "blurb": "The summer capital, with houseboat stays on Dal Lake, the Mughal gardens and the old city's wooden mosques."
+      },
+      {
+        "name": "Gulmarg",
+        "blurb": "A high meadow resort with the Gulmarg Gondola, one of the highest cable cars in the world, and winter skiing."
+      },
+      {
+        "name": "Pahalgam",
+        "blurb": "A riverside town on the Lidder with pony rides to Baisaran meadow and the Aru and Betaab valleys."
+      },
+      {
+        "name": "Sonamarg",
+        "blurb": "The meadow of gold on the Sindh river, base for the walk or pony ride to the Thajiwas Glacier."
+      },
+      {
+        "name": "Doodhpathri",
+        "blurb": "Quiet rolling grasslands and pine forest about two hours from Srinagar, far less crowded than Gulmarg."
+      },
+      {
+        "name": "Jammu",
+        "blurb": "The winter capital, with Bahu Fort above the Tawi river, the Amar Mahal Palace museum and the old Mubarak Mandi palace complex."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Vaishno Devi",
+        "blurb": "A cave shrine to the mother goddess at the end of a 12-km mountain trail from Katra, one of the most visited Hindu pilgrimages in India."
+      },
+      {
+        "name": "Amarnath Cave",
+        "blurb": "A high Himalayan cave where an ice lingam forms each year, reached by the July–August yatra from Pahalgam or Baltal."
+      },
+      {
+        "name": "Hazratbal Shrine",
+        "blurb": "A white marble mosque on the north shore of Dal Lake that houses a relic believed to be a hair of the Prophet Muhammad, shown to crowds on holy days."
+      },
+      {
+        "name": "Kheer Bhawani Temple",
+        "blurb": "A spring-fed temple to the goddess Ragnya Devi at Tulmulla, sacred to Kashmiri Pandits, whose spring water is said to change colour."
+      },
+      {
+        "name": "Shankaracharya Temple",
+        "blurb": "An ancient stone Shiva temple on a hill above Srinagar, reached by a climb of about 240 steps with wide views over Dal Lake."
+      },
+      {
+        "name": "Jamia Masjid, Srinagar",
+        "blurb": "The great mosque of old Srinagar, with a courtyard garden and 378 wooden pillars, each cut from a single deodar trunk."
+      },
+      {
+        "name": "Khanqah-e-Moula",
+        "blurb": "A Sufi shrine on the Jhelum dedicated to Mir Sayyid Ali Hamadani, with intricate papier-mache and painted wood interiors."
+      },
+      {
+        "name": "Raghunath Temple",
+        "blurb": "A 19th-century temple complex in the heart of Jammu dedicated to Lord Rama, with gold-plated spires and halls of shrines."
+      }
+    ],
+    "highlights": [
+      "Dawn shikara ride to the floating vegetable market on Dal Lake",
+      "Night on a carved-cedar houseboat",
+      "Gulmarg Gondola to Kongdori and Apharwat",
+      "Shalimar Bagh and Nishat Bagh Mughal gardens",
+      "Pony ride to Baisaran meadow in Pahalgam",
+      "Kashmiri wazwan feast"
+    ],
+    "itineraries": [
+      {
+        "title": "Srinagar and Gulmarg Escape",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Arrive Srinagar",
+            "details": "Fly into Srinagar and check in to a Dal Lake houseboat. Evening shikara ride along the lake."
+          },
+          {
+            "title": "Mughal gardens and old city",
+            "details": "Visit Shalimar Bagh, Nishat Bagh and Pari Mahal, then the Jamia Masjid and Shah-e-Hamdan shrine in the old city."
+          },
+          {
+            "title": "Gulmarg day trip",
+            "details": "Drive to Gulmarg (about 1.5 hours) and ride the gondola to Kongdori, weather permitting continuing to Apharwat. Return to Srinagar."
+          },
+          {
+            "title": "Floating market and depart",
+            "details": "Early shikara ride to the floating vegetable market before your transfer to the airport."
+          }
+        ]
+      },
+      {
+        "title": "Kashmir Valley Grand Tour",
+        "duration": "7 Days / 6 Nights",
+        "days": [
+          {
+            "title": "Arrive Srinagar",
+            "details": "Airport pickup and houseboat check-in on Dal or Nigeen Lake. Sunset shikara ride."
+          },
+          {
+            "title": "Srinagar sightseeing",
+            "details": "Mughal gardens, Shankaracharya Temple for city views and a walk through the old city's craft workshops."
+          },
+          {
+            "title": "Sonamarg day trip",
+            "details": "Drive along the Sindh valley to Sonamarg (about 2.5 hours) and ride or walk to the Thajiwas Glacier. Return to Srinagar."
+          },
+          {
+            "title": "Srinagar to Gulmarg",
+            "details": "Drive to Gulmarg (about 1.5 hours) and ride the gondola in the afternoon. Overnight in Gulmarg."
+          },
+          {
+            "title": "Gulmarg to Pahalgam",
+            "details": "Drive to Pahalgam (about 4 hours), stopping at the saffron fields of Pampore and the Avantipura temple ruins."
+          },
+          {
+            "title": "Pahalgam valleys",
+            "details": "Visit Betaab Valley, Aru Valley and Chandanwari by local taxi, or ride a pony up to Baisaran meadow."
+          },
+          {
+            "title": "Return to Srinagar and depart",
+            "details": "Drive back to Srinagar airport (about 2.5 hours) for your flight home."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "ladakh",
+    "name": "Ladakh",
+    "kind": "ut",
+    "capital": "Leh",
+    "zone": "North",
+    "tagline": "High-altitude desert, Buddhist monasteries and blue mountain lakes",
+    "intro": "Ladakh is a cold desert at 3,000 metres and above, with whitewashed monasteries perched on ridges and roads crossing some of the world's highest passes. Leh is the base for trips to the Nubra Valley's sand dunes and the changing blues of Pangong Tso. Plan a full rest day on arrival to acclimatise.",
+    "bestTime": "May to September",
+    "idealDuration": "6–8 days",
+    "photoArticle": "Leh Palace",
+    "photoAlt": "Leh Palace overlooking the town of Leh",
+    "destinations": [
+      {
+        "name": "Leh",
+        "blurb": "The old trading town below Leh Palace, with Shanti Stupa, a lively main bazaar and easy access to the Indus valley monasteries."
+      },
+      {
+        "name": "Nubra Valley",
+        "blurb": "Reached over the Khardung La, with the Diskit Monastery's giant Maitreya statue and Bactrian camels on the Hunder dunes."
+      },
+      {
+        "name": "Pangong Tso",
+        "blurb": "A 134-km-long lake stretching into Tibet whose water shifts from turquoise to deep blue through the day."
+      },
+      {
+        "name": "Tso Moriri",
+        "blurb": "A remote high lake in the Changthang plateau, home to nomadic herders and migratory birds."
+      },
+      {
+        "name": "Zanskar Valley",
+        "blurb": "A remote valley of high passes and frozen-river winter treks along the Zanskar river, reached by a long drive from Kargil."
+      },
+      {
+        "name": "Hall of Fame Museum",
+        "blurb": "An army-run museum near Leh on the region's wars and high-altitude soldiering, with an evening sound-and-light show."
+      },
+      {
+        "name": "Kargil and Drass",
+        "blurb": "The Suru valley town on the old Srinagar road and nearby Drass, with the Kargil War Memorial set below the peaks fought over in 1999."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Hemis Monastery",
+        "blurb": "Ladakh's largest and wealthiest monastery, of the Drukpa lineage, famous for its summer masked-dance festival honouring Guru Padmasambhava."
+      },
+      {
+        "name": "Thiksey Monastery",
+        "blurb": "A hilltop gompa that resembles Lhasa's Potala Palace, with a two-storey Maitreya statue and early-morning prayers open to visitors."
+      },
+      {
+        "name": "Lamayuru Monastery",
+        "blurb": "One of the oldest monasteries in Ladakh, set above eroded moonland landscapes on the Srinagar road."
+      },
+      {
+        "name": "Alchi Monastery",
+        "blurb": "An 11th-century temple complex on the Indus, prized for some of the oldest surviving Buddhist murals in the Himalaya."
+      },
+      {
+        "name": "Diskit Monastery",
+        "blurb": "The oldest gompa in the Nubra Valley, with a 32-metre Maitreya Buddha statue facing down the valley towards Pakistan."
+      },
+      {
+        "name": "Gurudwara Pathar Sahib",
+        "blurb": "A gurdwara on the Leh–Kargil road built around a boulder said to bear the imprint of Guru Nanak, run by the army with tea and langar for travellers."
+      },
+      {
+        "name": "Jama Masjid, Leh",
+        "blurb": "A mosque at the head of Leh's main bazaar, first built in the 17th century, serving the town's long-settled Muslim community."
+      }
+    ],
+    "highlights": [
+      "Crossing the Khardung La pass",
+      "Morning prayers at Thiksey Monastery",
+      "Camel ride on the Hunder sand dunes",
+      "Overnight camp beside Pangong Tso",
+      "Sunset at Shanti Stupa above Leh",
+      "Confluence of the Indus and Zanskar at Nimmu"
+    ],
+    "itineraries": [
+      {
+        "title": "Leh and Monasteries Short Tour",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Arrive Leh and acclimatise",
+            "details": "Fly into Leh (3,500 m) and rest for the full day to adjust to the altitude. A gentle evening walk to the main bazaar only if you feel well."
+          },
+          {
+            "title": "Leh town",
+            "details": "Visit Leh Palace, Shanti Stupa and the Hall of Fame war museum, keeping the pace easy."
+          },
+          {
+            "title": "Indus valley monasteries",
+            "details": "Day trip to Shey Palace, Thiksey and Hemis monasteries, returning to Leh in the evening."
+          },
+          {
+            "title": "Sham valley and depart",
+            "details": "Morning drive to the Magnetic Hill, Gurudwara Pathar Sahib and the Indus–Zanskar confluence, then transfer to Leh airport."
+          }
+        ]
+      },
+      {
+        "title": "Ladakh with Nubra and Pangong",
+        "duration": "7 Days / 6 Nights",
+        "days": [
+          {
+            "title": "Arrive Leh and acclimatise",
+            "details": "Fly into Leh and rest completely for the day. Drink plenty of water and avoid exertion; we arrange the permits and registration needed for Nubra and Pangong while you rest."
+          },
+          {
+            "title": "Leh sightseeing",
+            "details": "Gentle visits to Leh Palace, Shanti Stupa and the old town, with a second night in Leh to finish acclimatising."
+          },
+          {
+            "title": "Leh to Nubra Valley",
+            "details": "Drive over the Khardung La to Nubra (about 5 hours). Visit Diskit Monastery and take a camel ride on the Hunder dunes at sunset."
+          },
+          {
+            "title": "Nubra to Pangong",
+            "details": "Drive via the Shyok river route to Pangong Tso (about 6 hours, road conditions permitting). Overnight in a lakeside camp."
+          },
+          {
+            "title": "Pangong to Leh",
+            "details": "Sunrise at the lake, then drive back to Leh over the Chang La (about 5 hours)."
+          },
+          {
+            "title": "Indus valley monasteries",
+            "details": "Visit Thiksey for morning prayers, then Hemis and Shey Palace before an evening in Leh bazaar."
+          },
+          {
+            "title": "Depart Leh",
+            "details": "Transfer to Leh airport for your morning flight."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "lakshadweep",
+    "name": "Lakshadweep",
+    "kind": "ut",
+    "capital": "Kavaratti",
+    "zone": "Islands",
+    "tagline": "Coral atolls and quiet lagoons off the Kerala coast",
+    "intro": "Lakshadweep is a scatter of coral islands in the Arabian Sea, about 200 to 440 km off Kerala, with shallow lagoons ideal for snorkelling, kayaking and diving. Only a few islands are open to visitors and every visitor needs an entry permit from the Lakshadweep administration, so trips are planned well in advance through approved packages from Kochi.",
+    "bestTime": "October to May",
+    "idealDuration": "4–6 days",
+    "photoArticle": "Kavaratti",
+    "photoAlt": "Lagoon and palm-lined shore at Kavaratti, Lakshadweep",
+    "destinations": [
+      {
+        "name": "Agatti",
+        "blurb": "The island with Lakshadweep's only airport, where a long lagoon offers easy snorkelling right off the beach."
+      },
+      {
+        "name": "Bangaram",
+        "blurb": "A small uninhabited teardrop-shaped island with a quiet resort, soft sand and clear water for diving."
+      },
+      {
+        "name": "Kavaratti",
+        "blurb": "The capital, with a marine aquarium, glass-bottom boat rides and over 50 mosques, including the carved Ujra Mosque."
+      },
+      {
+        "name": "Kadmat",
+        "blurb": "A long, narrow island known for its water-sports centre and turtle nesting beaches."
+      },
+      {
+        "name": "Minicoy",
+        "blurb": "The southernmost island, culturally closer to the Maldives, with a 19th-century British lighthouse and tuna fishing traditions."
+      },
+      {
+        "name": "Thinnakara",
+        "blurb": "A tiny islet near Bangaram where tented stays sit a few steps from the lagoon."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Ujra Mosque, Kavaratti",
+        "blurb": "A 17th-century mosque famous for its ceiling carved from a single piece of driftwood, with a well whose water is believed to heal."
+      },
+      {
+        "name": "Juma Masjid, Andrott",
+        "blurb": "The mosque on Andrott holding the tomb of Ubaidullah, the saint credited with bringing Islam to the islands, visited by pilgrims from across the archipelago."
+      }
+    ],
+    "highlights": [
+      "Snorkelling over coral in the Agatti lagoon",
+      "Scuba diving off Bangaram or Kadmat",
+      "Kayaking across shallow turquoise lagoons",
+      "Glass-bottom boat ride at Kavaratti",
+      "Climbing the Minicoy lighthouse",
+      "Fresh tuna dishes cooked island-style"
+    ],
+    "itineraries": [
+      {
+        "title": "Agatti Lagoon Escape",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Fly Kochi to Agatti",
+            "details": "Take the morning flight from Kochi to Agatti (about 1.5 hours) with your entry permit, arranged in advance. Afternoon on the lagoon beach."
+          },
+          {
+            "title": "Snorkelling and kayaking",
+            "details": "Guided snorkelling over the reef and a kayak session in the calm lagoon."
+          },
+          {
+            "title": "Bangaram or Thinnakara day trip",
+            "details": "Boat excursion to the uninhabited islands nearby for swimming, snorkelling and a beach lunch."
+          },
+          {
+            "title": "Fly back to Kochi",
+            "details": "A last swim in the morning before the return flight to Kochi."
+          }
+        ]
+      },
+      {
+        "title": "Lakshadweep Islands with Kochi",
+        "duration": "6 Days / 5 Nights",
+        "days": [
+          {
+            "title": "Arrive Kochi",
+            "details": "Arrive in Kochi and complete permit paperwork. Evening in Fort Kochi to see the Chinese fishing nets at sunset."
+          },
+          {
+            "title": "Fly to Agatti",
+            "details": "Morning flight to Agatti, then settle in and spend the afternoon in the lagoon."
+          },
+          {
+            "title": "Agatti to Bangaram",
+            "details": "Boat transfer to Bangaram (about 1.5 hours) for a beach stay. Snorkel along the reef edge."
+          },
+          {
+            "title": "Bangaram water sports",
+            "details": "Discover-scuba dive, kayaking or a boat trip to Thinnakara and Parali islets."
+          },
+          {
+            "title": "Return to Agatti",
+            "details": "Boat back to Agatti for an afternoon of village walks and a sunset over the lagoon."
+          },
+          {
+            "title": "Fly to Kochi and depart",
+            "details": "Return flight to Kochi to connect with your onward journey."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "puducherry",
+    "name": "Puducherry",
+    "kind": "ut",
+    "capital": "Puducherry",
+    "zone": "South",
+    "tagline": "French quarter lanes, sea breezes and the calm of Auroville",
+    "intro": "Puducherry's French Quarter is a grid of mustard-yellow villas, bougainvillea and seaside cafes, while the Tamil Quarter keeps its temples and markets. The Sri Aurobindo Ashram and nearby Auroville give the town a reflective pace, and it pairs well with Mahabalipuram's shore temples on the drive from Chennai.",
+    "bestTime": "October to March",
+    "idealDuration": "2–3 days",
+    "photoArticle": "Matrimandir",
+    "photoAlt": "Large golden spherical meditation hall surrounded by lawns and trees at the Matrimandir in Auroville",
+    "destinations": [
+      {
+        "name": "French Quarter (White Town)",
+        "blurb": "Colonial villas, cafes and boutiques along tree-lined streets like Rue Romain Rolland and Rue Suffren."
+      },
+      {
+        "name": "Promenade Beach",
+        "blurb": "A 1.5-km seafront walk past the Gandhi statue and old lighthouse, closed to traffic in the evenings."
+      },
+      {
+        "name": "Auroville",
+        "blurb": "An experimental international township 10 km north, centred on the golden Matrimandir meditation hall."
+      },
+      {
+        "name": "Paradise Beach",
+        "blurb": "A sandbar beach reached by a short boat ride through the backwaters at Chunnambar."
+      },
+      {
+        "name": "Puducherry Museum",
+        "blurb": "A compact museum in the French Quarter with Roman-era finds from Arikamedu, Chola bronzes and French colonial furniture."
+      },
+      {
+        "name": "Botanical Garden",
+        "blurb": "A shaded garden laid out by the French in 1826, with old trees, a small aquarium and a toy train for children."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Sri Aurobindo Ashram",
+        "blurb": "The spiritual community founded in 1926, where visitors sit in silence by the flower-covered samadhi of Sri Aurobindo and the Mother."
+      },
+      {
+        "name": "Manakula Vinayagar Temple",
+        "blurb": "A Ganesha temple near the ashram that predates French rule, with painted walls, a gold-covered chariot and a resident temple elephant."
+      },
+      {
+        "name": "Basilica of the Sacred Heart of Jesus",
+        "blurb": "A Gothic-style church from 1907 on the southern edge of town, with stained-glass panels showing the life of Christ."
+      },
+      {
+        "name": "Immaculate Conception Cathedral",
+        "blurb": "A cathedral on Mission Street founded by the Jesuits, rebuilt in the 1790s, with a pale blue and white facade."
+      },
+      {
+        "name": "Varadaraja Perumal Temple",
+        "blurb": "One of the oldest temples in the city, dedicated to Vishnu, with a carved tower and a busy festival calendar."
+      },
+      {
+        "name": "Thirunallar Saniswaran Temple",
+        "blurb": "A Shiva temple in Karaikal district with a famous shrine to Saturn, where pilgrims bathe in the Nala Theertham tank to ease bad luck."
+      }
+    ],
+    "highlights": [
+      "Heritage walk through the French Quarter",
+      "Sunrise on Promenade Beach",
+      "Visit to the Matrimandir in Auroville",
+      "Boat ride to Paradise Beach",
+      "French and Tamil cuisine in White Town",
+      "Basilica of the Sacred Heart of Jesus"
+    ],
+    "itineraries": [
+      {
+        "title": "Puducherry Heritage Break",
+        "duration": "3 Days / 2 Nights",
+        "days": [
+          {
+            "title": "Arrive Puducherry",
+            "details": "Drive from Chennai (about 3 hours on the East Coast Road). Evening walk along Promenade Beach."
+          },
+          {
+            "title": "French Quarter and Auroville",
+            "details": "Morning heritage walk through White Town and the Sri Aurobindo Ashram, then the Matrimandir viewing point and Auroville Visitor Centre in the afternoon."
+          },
+          {
+            "title": "Paradise Beach and depart",
+            "details": "Boat ride to Paradise Beach in the morning, then drive back to Chennai."
+          }
+        ]
+      },
+      {
+        "title": "Chennai, Mahabalipuram and Puducherry",
+        "duration": "5 Days / 4 Nights",
+        "days": [
+          {
+            "title": "Arrive Chennai",
+            "details": "Check in and visit Kapaleeshwarar Temple in Mylapore and Marina Beach at sunset."
+          },
+          {
+            "title": "Chennai to Mahabalipuram",
+            "details": "Drive to Mahabalipuram (about 1.5 hours) via Dakshinachitra heritage village. Afternoon at the Shore Temple and Pancha Rathas."
+          },
+          {
+            "title": "Mahabalipuram to Puducherry",
+            "details": "Morning at Arjuna's Penance and Krishna's Butterball, then drive to Puducherry (about 2.5 hours). Evening on Promenade Beach."
+          },
+          {
+            "title": "Puducherry and Auroville",
+            "details": "French Quarter walk, the ashram and Manakula Vinayagar Temple, followed by an afternoon in Auroville."
+          },
+          {
+            "title": "Depart",
+            "details": "Morning at Paradise Beach before the drive back to Chennai airport (about 3 hours)."
+          }
+        ]
+      }
+    ]
+  }
+]

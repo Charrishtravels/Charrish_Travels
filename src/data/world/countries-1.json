@@ -1,0 +1,470 @@
+[
+  {
+    "slug": "thailand",
+    "name": "Thailand",
+    "region": "Southeast Asia",
+    "tagline": "Bangkok street food, Phuket beaches and the temples of Chiang Mai",
+    "places": [
+      "Bangkok",
+      "Phuket",
+      "Krabi",
+      "Pattaya",
+      "Chiang Mai",
+      "Koh Samui"
+    ],
+    "bestTime": "November to March",
+    "idealDuration": "5–7 days",
+    "visa": "Visa-free entry for short stays",
+    "photoArticle": "Wat Arun",
+    "photoAlt": "The spires of Wat Arun temple on the bank of the Chao Phraya River in Bangkok"
+  },
+  {
+    "slug": "singapore",
+    "name": "Singapore",
+    "region": "Southeast Asia",
+    "tagline": "Hawker centres, Sentosa rides and the Marina Bay skyline",
+    "places": [
+      "Marina Bay",
+      "Sentosa Island",
+      "Gardens by the Bay",
+      "Singapore Zoo and Night Safari",
+      "Chinatown",
+      "Little India"
+    ],
+    "bestTime": "February to April",
+    "idealDuration": "4–5 days",
+    "visa": "e-Visa through an authorised agent",
+    "photoArticle": "Marina Bay Sands",
+    "photoAlt": "Marina Bay Sands with its rooftop SkyPark rising above the waters of Marina Bay"
+  },
+  {
+    "slug": "malaysia",
+    "name": "Malaysia",
+    "region": "Southeast Asia",
+    "tagline": "Kuala Lumpur towers, Langkawi islands and cool Cameron Highlands tea",
+    "places": [
+      "Kuala Lumpur",
+      "Langkawi",
+      "Penang",
+      "Genting Highlands",
+      "Cameron Highlands",
+      "Malacca"
+    ],
+    "bestTime": "December to April",
+    "idealDuration": "5–7 days",
+    "visa": "Visa-free entry for short stays",
+    "photoArticle": "Batu Caves",
+    "photoAlt": "The golden Murugan statue and rainbow-painted steps leading up to Batu Caves"
+  },
+  {
+    "slug": "indonesia",
+    "name": "Indonesia (Bali)",
+    "region": "Southeast Asia",
+    "tagline": "Rice terraces in Ubud, sea temples and sunsets over Seminyak",
+    "places": [
+      "Ubud",
+      "Seminyak",
+      "Kuta",
+      "Nusa Penida",
+      "Uluwatu",
+      "Kintamani"
+    ],
+    "bestTime": "April to October",
+    "idealDuration": "5–7 days",
+    "visa": "Visa on arrival or e-Visa on arrival",
+    "photoArticle": "Pura Ulun Danu Bratan",
+    "photoAlt": "The tiered shrines of Pura Ulun Danu Bratan temple on the edge of Lake Bratan in Bali"
+  },
+  {
+    "slug": "vietnam",
+    "name": "Vietnam",
+    "region": "Southeast Asia",
+    "tagline": "Ha Long Bay cruises, lantern-lit Hoi An and Hanoi's old quarter",
+    "places": [
+      "Hanoi",
+      "Ha Long Bay",
+      "Hoi An",
+      "Da Nang",
+      "Ho Chi Minh City",
+      "Phu Quoc"
+    ],
+    "bestTime": "February to April",
+    "idealDuration": "7–9 days",
+    "visa": "e-Visa",
+    "photoArticle": "Hạ Long Bay",
+    "photoAlt": "Limestone islands rising from the green waters of Ha Long Bay"
+  },
+  {
+    "slug": "cambodia",
+    "name": "Cambodia",
+    "region": "Southeast Asia",
+    "tagline": "Sunrise at Angkor Wat and riverside evenings in Phnom Penh",
+    "places": [
+      "Siem Reap",
+      "Angkor Wat",
+      "Phnom Penh",
+      "Tonle Sap Lake",
+      "Sihanoukville"
+    ],
+    "bestTime": "November to March",
+    "idealDuration": "4–6 days",
+    "visa": "e-Visa or visa on arrival",
+    "photoArticle": "Angkor Wat",
+    "photoAlt": "The five towers of Angkor Wat reflected in the pond in front of the temple"
+  },
+  {
+    "slug": "laos",
+    "name": "Laos",
+    "region": "Southeast Asia",
+    "tagline": "Saffron-robed monks, Mekong sunsets and the turquoise pools of Kuang Si",
+    "places": [
+      "Luang Prabang",
+      "Vientiane",
+      "Vang Vieng",
+      "Kuang Si Falls",
+      "Pakse"
+    ],
+    "bestTime": "November to March",
+    "idealDuration": "5–7 days",
+    "visa": "e-Visa or visa on arrival",
+    "photoArticle": "Pha That Luang",
+    "photoAlt": "The golden stupa of Pha That Luang under a blue sky in Vientiane"
+  },
+  {
+    "slug": "uae",
+    "name": "United Arab Emirates",
+    "region": "Middle East",
+    "tagline": "Desert safaris, Burj Khalifa views and Abu Dhabi's grand mosque",
+    "places": [
+      "Dubai",
+      "Abu Dhabi",
+      "Sharjah",
+      "Ras Al Khaimah",
+      "Fujairah"
+    ],
+    "bestTime": "November to March",
+    "idealDuration": "4–6 days",
+    "visa": "e-Visa; visa on arrival for some travellers with US, UK or Schengen visas",
+    "photoArticle": "Dubai Marina",
+    "photoAlt": "Towers and yachts along Dubai Marina"
+  },
+  {
+    "slug": "oman",
+    "name": "Oman",
+    "region": "Middle East",
+    "tagline": "Old forts, wadi swims and a night under the stars in Wahiba Sands",
+    "places": [
+      "Muscat",
+      "Nizwa",
+      "Wahiba Sands",
+      "Wadi Shab",
+      "Jebel Akhdar",
+      "Salalah"
+    ],
+    "bestTime": "October to March",
+    "idealDuration": "5–7 days",
+    "visa": "e-Visa",
+    "photoArticle": "Muttrah",
+    "photoAlt": "Aerial view of the Muttrah corniche and harbour in Muscat"
+  },
+  {
+    "slug": "qatar",
+    "name": "Qatar",
+    "region": "Middle East",
+    "tagline": "Souq Waqif evenings, desert dunes and Doha's museums by the sea",
+    "places": [
+      "Doha",
+      "Souq Waqif",
+      "The Pearl-Qatar",
+      "Katara Cultural Village",
+      "Khor Al Adaid"
+    ],
+    "bestTime": "November to March",
+    "idealDuration": "3–4 days",
+    "visa": "Visa waiver on arrival for short stays",
+    "photoArticle": "Souq Waqif",
+    "photoAlt": "Lanes and lanterns of Souq Waqif in Doha"
+  },
+  {
+    "slug": "saudi-arabia",
+    "name": "Saudi Arabia",
+    "region": "Middle East",
+    "tagline": "Nabataean tombs in AlUla, old Jeddah and Riyadh's mud-brick Diriyah",
+    "places": [
+      "Riyadh",
+      "Jeddah",
+      "AlUla",
+      "Diriyah",
+      "Edge of the World"
+    ],
+    "bestTime": "November to February",
+    "idealDuration": "6–8 days",
+    "visa": "Tourist e-Visa; Umrah visa for pilgrims",
+    "photoArticle": "Al-Ula",
+    "photoAlt": "Sandstone cliffs and desert valley landscape around AlUla in northwestern Saudi Arabia"
+  },
+  {
+    "slug": "jordan",
+    "name": "Jordan",
+    "region": "Middle East",
+    "tagline": "Petra's carved facades, Wadi Rum camps and a float in the Dead Sea",
+    "places": [
+      "Amman",
+      "Petra",
+      "Wadi Rum",
+      "Dead Sea",
+      "Jerash",
+      "Aqaba"
+    ],
+    "bestTime": "March to May and September to November",
+    "idealDuration": "5–7 days",
+    "visa": "Visa on arrival or Jordan Pass",
+    "photoArticle": "Petra",
+    "photoAlt": "The Monastery, a facade carved into the sandstone cliffs at Petra"
+  },
+  {
+    "slug": "turkey",
+    "name": "Turkey",
+    "region": "Middle East",
+    "tagline": "Istanbul's bazaars, Cappadocia balloon rides and the Pamukkale terraces",
+    "places": [
+      "Istanbul",
+      "Cappadocia",
+      "Pamukkale",
+      "Ephesus",
+      "Antalya",
+      "Bodrum"
+    ],
+    "bestTime": "April to June and September to October",
+    "idealDuration": "7–10 days",
+    "visa": "e-Visa for holders of valid US, UK or Schengen visas; otherwise sticker visa",
+    "photoArticle": "Cappadocia",
+    "photoAlt": "Hot-air balloons drifting over the rock formations of Cappadocia at sunrise"
+  },
+  {
+    "slug": "maldives",
+    "name": "Maldives",
+    "region": "Island Destinations",
+    "tagline": "Overwater villas, house reefs and seaplane hops between atolls",
+    "places": [
+      "Male",
+      "Maafushi",
+      "Baa Atoll",
+      "Ari Atoll",
+      "North Male Atoll"
+    ],
+    "bestTime": "November to April",
+    "idealDuration": "4–5 days",
+    "visa": "Free visa on arrival",
+    "photoArticle": "Malé",
+    "photoAlt": "Aerial view of Male, the compact capital island of the Maldives, surrounded by blue sea"
+  },
+  {
+    "slug": "mauritius",
+    "name": "Mauritius",
+    "region": "Island Destinations",
+    "tagline": "Lagoon beaches, the Seven Coloured Earths and a sail to Ile aux Cerfs",
+    "places": [
+      "Port Louis",
+      "Grand Baie",
+      "Le Morne",
+      "Chamarel",
+      "Ile aux Cerfs",
+      "Black River Gorges"
+    ],
+    "bestTime": "May to December",
+    "idealDuration": "6–7 days",
+    "visa": "Visa-free entry for short stays",
+    "photoArticle": "Le Morne Brabant",
+    "photoAlt": "Le Morne Brabant mountain rising above the lagoon on the southwest coast of Mauritius"
+  },
+  {
+    "slug": "seychelles",
+    "name": "Seychelles",
+    "region": "Island Destinations",
+    "tagline": "Granite boulder beaches, giant tortoises and quiet island-hopping",
+    "places": [
+      "Mahe",
+      "Praslin",
+      "La Digue",
+      "Anse Source d'Argent",
+      "Vallee de Mai"
+    ],
+    "bestTime": "April to May and October to November",
+    "idealDuration": "6–8 days",
+    "visa": "Visa-free entry with a visitor's permit on arrival",
+    "photoArticle": "Anse Source d'Argent",
+    "photoAlt": "Granite boulders and white sand at Anse Source d'Argent beach on La Digue"
+  },
+  {
+    "slug": "sri-lanka",
+    "name": "Sri Lanka",
+    "region": "Island Destinations",
+    "tagline": "Sigiriya rock, hill-country tea estates and the old fort at Galle",
+    "places": [
+      "Colombo",
+      "Kandy",
+      "Sigiriya",
+      "Nuwara Eliya",
+      "Ella",
+      "Galle"
+    ],
+    "bestTime": "December to April",
+    "idealDuration": "6–8 days",
+    "visa": "Electronic Travel Authorisation (ETA)",
+    "photoArticle": "Sigiriya",
+    "photoAlt": "The Sigiriya rock fortress rising above the surrounding forest"
+  },
+  {
+    "slug": "tanzania",
+    "name": "Tanzania (Zanzibar)",
+    "region": "Island Destinations",
+    "tagline": "Spice farms, Stone Town alleys and the white sands of Nungwi",
+    "places": [
+      "Stone Town",
+      "Nungwi",
+      "Kendwa",
+      "Paje",
+      "Prison Island",
+      "Jozani Forest"
+    ],
+    "bestTime": "June to October",
+    "idealDuration": "5–7 days",
+    "visa": "e-Visa",
+    "photoArticle": "Stone Town",
+    "photoAlt": "The seafront of Stone Town in Zanzibar with the old Sultan's Palace"
+  },
+  {
+    "slug": "switzerland",
+    "name": "Switzerland",
+    "region": "Europe",
+    "tagline": "Snow at Jungfraujoch, Lucerne's lakefront and scenic train journeys",
+    "places": [
+      "Zurich",
+      "Lucerne",
+      "Interlaken",
+      "Jungfraujoch",
+      "Zermatt",
+      "Geneva"
+    ],
+    "bestTime": "May to September",
+    "idealDuration": "6–8 days",
+    "visa": "Schengen visa",
+    "photoArticle": "Matterhorn",
+    "photoAlt": "The pyramid-shaped peak of the Matterhorn above Alpine glaciers"
+  },
+  {
+    "slug": "france",
+    "name": "France",
+    "region": "Europe",
+    "tagline": "Paris cafes, Riviera promenades and chateaux along the Loire",
+    "places": [
+      "Paris",
+      "Nice",
+      "Mont-Saint-Michel",
+      "Loire Valley",
+      "Lyon",
+      "Provence"
+    ],
+    "bestTime": "April to June and September to October",
+    "idealDuration": "6–8 days",
+    "visa": "Schengen visa",
+    "photoArticle": "Mont-Saint-Michel",
+    "photoAlt": "Aerial view of Mont-Saint-Michel, the island abbey surrounded by tidal flats in Normandy"
+  },
+  {
+    "slug": "italy",
+    "name": "Italy",
+    "region": "Europe",
+    "tagline": "Roman ruins, Venetian canals and long lunches in Tuscany",
+    "places": [
+      "Rome",
+      "Venice",
+      "Florence",
+      "Pisa",
+      "Amalfi Coast",
+      "Milan"
+    ],
+    "bestTime": "April to June and September to October",
+    "idealDuration": "7–10 days",
+    "visa": "Schengen visa",
+    "photoArticle": "Colosseum",
+    "photoAlt": "The Colosseum amphitheatre in Rome under a clear sky"
+  },
+  {
+    "slug": "united-kingdom",
+    "name": "United Kingdom",
+    "region": "Europe",
+    "tagline": "London landmarks, Scottish Highlands and Cotswold villages",
+    "places": [
+      "London",
+      "Edinburgh",
+      "Scottish Highlands",
+      "Cotswolds",
+      "Bath",
+      "Oxford"
+    ],
+    "bestTime": "May to September",
+    "idealDuration": "7–10 days",
+    "visa": "UK Standard Visitor visa",
+    "photoArticle": "Tower Bridge",
+    "photoAlt": "Tower Bridge over the River Thames in London at dawn"
+  },
+  {
+    "slug": "spain",
+    "name": "Spain",
+    "region": "Europe",
+    "tagline": "Gaudi's Barcelona, Madrid's art museums and the Alhambra at dusk",
+    "places": [
+      "Barcelona",
+      "Madrid",
+      "Seville",
+      "Granada",
+      "Valencia",
+      "Ibiza"
+    ],
+    "bestTime": "April to June and September to October",
+    "idealDuration": "7–9 days",
+    "visa": "Schengen visa",
+    "photoArticle": "Alhambra",
+    "photoAlt": "The Alhambra palace complex on its hill above Granada at dawn"
+  },
+  {
+    "slug": "greece",
+    "name": "Greece",
+    "region": "Europe",
+    "tagline": "The Acropolis, whitewashed Santorini and lazy days in Mykonos",
+    "places": [
+      "Athens",
+      "Santorini",
+      "Mykonos",
+      "Crete",
+      "Meteora",
+      "Delphi"
+    ],
+    "bestTime": "May to June and September to October",
+    "idealDuration": "7–9 days",
+    "visa": "Schengen visa",
+    "photoArticle": "Acropolis of Athens",
+    "photoAlt": "The Acropolis of Athens lit up at night above the city"
+  },
+  {
+    "slug": "netherlands",
+    "name": "Netherlands",
+    "region": "Europe",
+    "tagline": "Amsterdam canals, spring tulips at Keukenhof and old windmills",
+    "places": [
+      "Amsterdam",
+      "Keukenhof",
+      "Zaanse Schans",
+      "Rotterdam",
+      "Kinderdijk",
+      "Giethoorn"
+    ],
+    "bestTime": "April to May",
+    "idealDuration": "4–5 days",
+    "visa": "Schengen visa",
+    "photoArticle": "Kinderdijk",
+    "photoAlt": "A row of traditional windmills along the canals at Kinderdijk"
+  }
+]

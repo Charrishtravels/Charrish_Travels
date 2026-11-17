@@ -1,0 +1,181 @@
+---
+import { Image, getImage } from 'astro:assets';
+import Layout from '../../layouts/Layout.astro';
+import CountryCard from '../../components/CountryCard.astro';
+import ContactButtons from '../../components/ContactButtons.astro';
+import CustomiseNote from '../../components/CustomiseNote.astro';
+import { SITE } from '../../consts';
+import { countries, countryHref, type CountryWithPhoto } from '../../data/world';
+import type { CountryDetail } from '../../data/world/schema';
+
+export function getStaticPaths() {
+  // In dev a country's page appears once its details file is written; the build
+  // requires every country to have one (see data/world/index.ts).
+  return countries.filter((c) => c.details).map((country) => ({ params: { country: country.slug }, props: { country } }));
+}
+
+interface Props {
+  country: CountryWithPhoto;
+}
+
+const { country } = Astro.props;
+const d = country.details as CountryDetail;
+const shortName = country.name.replace(/ \(.*\)$/, '');
+
+// Prev/next in the directory order; "more" = other countries in the same region.
+const idx = countries.findIndex((c) => c.slug === country.slug);
+const prev = countries[(idx - 1 + countries.length) % countries.length];
+const next = countries[(idx + 1) % countries.length];
+const nearby = countries.filter((c) => c.region === country.region && c.slug !== country.slug).slice(0, 4);
+
+const title = `${shortName} Tour Packages from India – Popular Places & Temples`;
+const topPlaces = d.destinations.slice(0, 4).map((p) => p.name).join(', ');
+const description = `Plan a custom ${shortName} holiday from Hyderabad: ${topPlaces} and more. Temples and sacred sites, best time to visit, visa help and a free quote from ${SITE.name}.`;
+const ogImage = (await getImage({ src: country.photo, width: 1200, format: 'jpg' })).src;
+
+// One combined list: sightseeing first, then temples and sacred sites.
+const places = [...d.destinations, ...d.devotional];
+
+const STAR_PATH =
+  'M10 0 L10.77 8.15 L14.24 5.76 L11.85 9.23 L20 10 L11.85 10.77 L14.24 14.24 L10.77 11.85 L10 20 L9.23 11.85 L5.76 14.24 L8.15 10.77 L0 10 L8.15 9.23 L5.76 5.76 L9.23 8.15 Z';
+
+const pageUrl = new URL(countryHref(country.slug), Astro.site).href;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'TouristDestination',
+      name: country.name,
+      description: d.intro,
+      url: pageUrl,
+      image: new URL(ogImage, Astro.site).href,
+      includesAttraction: [...d.devotional, ...d.destinations].map((p) => ({ '@type': 'TouristAttraction', name: p.name, description: p.blurb })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: Astro.site?.href },
+        { '@type': 'ListItem', position: 2, name: 'International Tours', item: new URL('/tours/international', Astro.site).href },
+        { '@type': 'ListItem', position: 3, name: country.name, item: pageUrl },
+      ],
+    },
+  ],
+};
+
+const facts = [
+  { label: 'Capital', value: d.capital },
+  { label: 'Best time', value: country.bestTime },
+  { label: 'Ideal trip', value: country.idealDuration },
+  { label: 'Visa (Indian passport)', value: country.visa },
+  { label: 'Currency', value: d.currency },
+];
+---
+
+<Layout title={title} description={description} image={ogImage} whatsappMessage={`Hi Charrish Travels, I'd like to plan a trip to ${shortName}.`}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <section class="relative isolate flex min-h-[24rem] items-end overflow-hidden sm:min-h-[30rem]">
+    <Image src={country.photo} alt={country.photoAlt} widths={[800, 1280]} sizes="100vw" loading="eager" fetchpriority="high" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+    <div class="absolute inset-0 -z-10 bg-gradient-to-t from-page via-page/80 via-45% to-page/10"></div>
+    {/* Phones: the text covers most of the photo, so wash it lighter for legibility. */}
+    <div class="absolute inset-0 -z-10 bg-page/55 sm:hidden"></div>
+    <div class="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6 sm:pb-20" data-reveal="up">
+      <p class="flex items-center gap-2 text-[11px] font-semibold tracking-[0.2em] text-saffron-deep uppercase">
+        <svg viewBox="0 0 20 20" class="h-3.5 w-3.5 text-temple-gold" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+        {country.continent} · {country.region}
+      </p>
+      <h1 class="font-brand mt-2 text-4xl leading-tight text-earth sm:text-6xl">{country.name}</h1>
+      <p class="mt-3 max-w-2xl text-sm text-ink-muted sm:text-base">{country.tagline}</p>
+    </div>
+  </section>
+
+  <div class="relative mx-auto -mt-8 max-w-6xl px-4 sm:px-6">
+    <dl class="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line shadow-lg lg:grid-cols-5 [&>*:last-child]:col-span-2 lg:[&>*:last-child]:col-span-1">
+      {facts.map((f) => (
+        <div class="bg-card px-4 py-3.5 sm:px-5 sm:py-4">
+          <dt class="text-[10px] font-semibold tracking-[0.18em] text-maroon uppercase">{f.label}</dt>
+          <dd class="mt-1 text-sm font-medium text-ink">{f.value}</dd>
+        </div>
+      ))}
+    </dl>
+  </div>
+
+  <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-14 lg:py-16">
+    <div class="space-y-12 sm:space-y-14">
+      <section>
+        <h2 class="font-brand text-3xl text-earth">About {shortName}</h2>
+        <p class="mt-4 max-w-3xl text-sm leading-relaxed text-ink-muted sm:text-base">{d.intro}</p>
+      </section>
+      <section aria-labelledby="dest-heading">
+        <h2 id="dest-heading" class="font-brand flex items-center gap-2.5 text-2xl text-earth sm:text-3xl">
+          <svg viewBox="0 0 20 20" class="h-5 w-5 shrink-0 text-saffron" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+          Popular places to visit in {shortName}
+        </h2>
+        <ol class="mt-6 grid gap-x-8 gap-y-0 md:grid-cols-2">
+          {places.map((place, i) => (
+            <li class="flex gap-3 border-t border-line py-4">
+              <span class="font-brand flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-temple-gold text-xs text-temple-gold">{i + 1}</span>
+              <div>
+                <h3 class="text-sm font-semibold text-earth">{place.name}</h3>
+                <p class="mt-0.5 text-xs leading-relaxed text-ink-muted">{place.blurb}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <CustomiseNote
+        heading="Add as many places as you like"
+        text={`These are just the popular picks for ${shortName}. Want a place that isn't listed, an extra town, more temples or a neighbouring country? Tell us and we'll add it — then plan the route, hotels and meals around everything you want to see.`}
+        options={['Add places not listed here', 'Add a neighbouring country', 'More temples or more sightseeing', 'Extra days', 'Your dates', 'Hotel category', 'Your budget', 'Veg / Jain meals', 'Pace for elders & kids']}
+      />
+
+      <section aria-labelledby="highlights-heading" class="rounded-2xl bg-sand p-6 sm:p-8">
+        <h2 id="highlights-heading" class="font-brand text-3xl text-earth">Sightseeing highlights</h2>
+        <ul class="mt-5 grid gap-x-8 gap-y-3 sm:grid-cols-2">
+          {d.highlights.map((h) => (
+            <li class="flex items-start gap-2.5 text-sm text-ink">
+              <svg viewBox="0 0 20 20" class="mt-1 h-3 w-3 shrink-0 text-temple-gold" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+              {h}
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
+
+  </div>
+
+  <section class="bg-earth py-12 sm:py-16">
+    <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
+      <div>
+        <h2 class="font-brand text-3xl text-on-dark sm:text-4xl">Plan your {shortName} trip</h2>
+        <p class="mt-2 max-w-xl text-sm leading-relaxed text-on-dark-muted">
+          Tell us your dates, who's travelling and whether it's a pilgrimage, a holiday or both — we'll send a day-by-day plan and a quote, usually the same day.
+        </p>
+      </div>
+      <ContactButtons tone="dark" message={`Hi Charrish Travels, I'd like to plan a trip to ${shortName}.`} />
+    </div>
+  </section>
+
+  {nearby.length > 0 && (
+    <section class="border-t border-line bg-sand/60 py-14 sm:py-16" aria-labelledby="nearby-heading">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 id="nearby-heading" class="font-brand text-3xl text-earth">More in {country.region}</h2>
+        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {nearby.map((r) => <CountryCard country={r} />)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <nav aria-label="Other countries" class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-8 text-sm sm:px-6">
+    <a href={countryHref(prev.slug)} class="max-w-[45%] text-earth hover:text-saffron-deep">← {prev.name}</a>
+    <a href="/tours/international#directory" class="hidden text-xs text-ink-muted underline decoration-temple-gold underline-offset-4 hover:text-saffron-deep sm:inline">All countries</a>
+    <a href={countryHref(next.slug)} class="max-w-[45%] text-right text-earth hover:text-saffron-deep">{next.name} →</a>
+  </nav>
+
+  <p class="mx-auto max-w-6xl px-4 pb-8 text-[11px] text-ink-muted sm:px-6">
+    Photo: <a href={country.credit.sourceUrl} target="_blank" rel="noopener nofollow" class="underline">{country.credit.artist}</a>,{' '}
+    {country.credit.licenseUrl ? <a href={country.credit.licenseUrl} target="_blank" rel="noopener nofollow" class="underline">{country.credit.license}</a> : country.credit.license}, via Wikimedia Commons
+  </p>
+</Layout>

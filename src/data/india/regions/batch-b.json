@@ -1,0 +1,1221 @@
+[
+  {
+    "slug": "karnataka",
+    "name": "Karnataka",
+    "kind": "state",
+    "capital": "Bengaluru",
+    "zone": "South",
+    "tagline": "Boulder-strewn ruins, palace cities and coffee-scented hills",
+    "intro": "Karnataka packs the ruins of the Vijayanagara empire, the carved Hoysala temples and the royal city of Mysuru into one easy road trip from Hyderabad. Coffee estates in Coorg and Chikmagalur, tiger reserves at Nagarhole and Bandipur, and the quiet beaches of Gokarna round it out.",
+    "bestTime": "October to March",
+    "idealDuration": "7–10 days",
+    "photoArticle": "Mysore Palace",
+    "photoAlt": "Mysore Palace with its domes and arches in Mysuru",
+    "destinations": [
+      {
+        "name": "Hampi",
+        "blurb": "The ruined capital of the Vijayanagara empire spreads across a landscape of granite boulders and banana groves along the Tungabhadra River."
+      },
+      {
+        "name": "Mysuru",
+        "blurb": "Mysore Palace is lit by nearly 100,000 bulbs on Sunday evenings, and Chamundi Hill gives a view over the whole city."
+      },
+      {
+        "name": "Coorg (Kodagu)",
+        "blurb": "Misty coffee and pepper estates around Madikeri, with Abbey Falls and the Tibetan settlement at Bylakuppe close by."
+      },
+      {
+        "name": "Chikmagalur",
+        "blurb": "The birthplace of Indian coffee, with estate stays and a drive up to Mullayanagiri, the highest peak in the state."
+      },
+      {
+        "name": "Badami, Aihole and Pattadakal",
+        "blurb": "Red sandstone cave temples at Badami and early Chalukyan temples at Aihole and UNESCO-listed Pattadakal."
+      },
+      {
+        "name": "Gokarna",
+        "blurb": "A laid-back coastal town with a string of quiet beaches, including Om Beach and Kudle, linked by headland walking trails."
+      },
+      {
+        "name": "Kabini",
+        "blurb": "Boat and jeep safaris on the edge of Nagarhole National Park, known for elephant herds and the occasional black panther."
+      },
+      {
+        "name": "Jog Falls",
+        "blurb": "The Sharavathi River drops about 250 m in four separate streams, at its fullest just after the monsoon."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Chennakeshava Temple, Belur",
+        "blurb": "A 12th-century Hoysala temple to Vishnu, still in daily worship, its soapstone brackets carved with dancing celestial maidens."
+      },
+      {
+        "name": "Sri Krishna Temple, Udupi",
+        "blurb": "Devotees view the Krishna idol through the Kanakana Kindi, a small latticed window, and share a free meal in the temple dining hall."
+      },
+      {
+        "name": "Shravanabelagola",
+        "blurb": "Jain pilgrims climb some 600 steps up Vindhyagiri to the 18 m monolith of Gommateshwara, anointed every twelve years in the Mahamastakabhisheka."
+      },
+      {
+        "name": "Dharmasthala",
+        "blurb": "The Manjunatha Temple, a Shiva shrine run by a Jain family with Vaishnava priests, feeds thousands of pilgrims every day."
+      },
+      {
+        "name": "Kukke Subramanya",
+        "blurb": "A forest temple in the Western Ghats where Kartikeya is worshipped as lord of serpents, visited for rites to ease sarpa dosha."
+      },
+      {
+        "name": "Chamundeshwari Temple, Mysuru",
+        "blurb": "The hilltop temple of Mysuru's guardian goddess, reached by a road or by 1,000 stone steps passing a giant Nandi carved from rock."
+      },
+      {
+        "name": "Mahabaleshwar Temple, Gokarna",
+        "blurb": "A Shiva temple said to hold the Atmalinga brought by Ravana, where pilgrims bathe in the sea before darshan."
+      },
+      {
+        "name": "Namdroling Monastery, Bylakuppe",
+        "blurb": "The Golden Temple of the Tibetan settlement near Kushalnagar, with gilded statues of the Buddha, Padmasambhava and Amitayus."
+      }
+    ],
+    "highlights": [
+      "Sunset from Hemakuta Hill or Matanga Hill in Hampi",
+      "Mysore Palace illuminated on a Sunday evening",
+      "Coffee plantation walk and estate stay in Coorg",
+      "Hoysala carvings at Chennakeshava Temple, Belur",
+      "Coracle ride on the Tungabhadra River",
+      "Wildlife safari at Kabini or Bandipur"
+    ],
+    "itineraries": [
+      {
+        "title": "Mysuru and Coorg Getaway",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Bengaluru to Mysuru",
+            "details": "Drive about 3.5 hours to Mysuru, stopping at Srirangapatna on the way. Evening visit to Mysore Palace."
+          },
+          {
+            "title": "Mysuru sightseeing",
+            "details": "Climb or drive up Chamundi Hill, browse Devaraja Market and visit St. Philomena's Church. Evening at Brindavan Gardens."
+          },
+          {
+            "title": "Mysuru to Coorg",
+            "details": "Drive about 3 hours to Madikeri via the Golden Temple at Bylakuppe. Afternoon at Abbey Falls and Raja's Seat at sunset."
+          },
+          {
+            "title": "Coorg to Bengaluru",
+            "details": "Morning plantation walk, then drive about 5.5 hours back to Bengaluru."
+          }
+        ]
+      },
+      {
+        "title": "Karnataka Heritage Trail",
+        "duration": "8 Days / 7 Nights",
+        "days": [
+          {
+            "title": "Arrive Hubballi, drive to Hampi",
+            "details": "Fly or take the train to Hubballi and drive about 3.5 hours to Hampi. Sunset from Hemakuta Hill."
+          },
+          {
+            "title": "Hampi royal centre",
+            "details": "Virupaksha Temple, the Vittala Temple and its stone chariot, the Lotus Mahal and the Elephant Stables."
+          },
+          {
+            "title": "Hampi riverside",
+            "details": "Coracle ride on the Tungabhadra, a cycle ride through the boulder fields and a visit to Anegundi across the river."
+          },
+          {
+            "title": "Hampi to Badami",
+            "details": "Drive about 3 hours to Badami, visiting Aihole and Pattadakal temples on the way."
+          },
+          {
+            "title": "Badami to Chikmagalur",
+            "details": "Morning at the Badami cave temples, then a long drive of about 7 hours south to Chikmagalur."
+          },
+          {
+            "title": "Belur and Halebidu",
+            "details": "Day trip to the Hoysala temples at Belur and Halebidu, each about an hour from Chikmagalur."
+          },
+          {
+            "title": "Chikmagalur to Mysuru",
+            "details": "Drive about 4 hours to Mysuru via Shravanabelagola and its monolithic Gomateshwara statue."
+          },
+          {
+            "title": "Mysuru and departure",
+            "details": "Morning at Mysore Palace and Devaraja Market, then drive about 3.5 hours to Bengaluru for departure."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "kerala",
+    "name": "Kerala",
+    "kind": "state",
+    "capital": "Thiruvananthapuram",
+    "zone": "South",
+    "tagline": "Houseboats, tea hills and a coastline lined with coconut palms",
+    "intro": "Kerala is a narrow strip between the Western Ghats and the Arabian Sea, so a single week can take in the tea estates of Munnar, the spice forests of Thekkady and a night on a Kumarakom or Alappuzha houseboat. Fort Kochi adds colonial history and Kathakali, while Varkala and Kovalam finish things off by the sea.",
+    "bestTime": "September to March",
+    "idealDuration": "6–8 days",
+    "photoArticle": "Kerala backwaters",
+    "photoAlt": "A thatched houseboat moving along a palm-lined backwater canal in Kerala",
+    "destinations": [
+      {
+        "name": "Munnar",
+        "blurb": "Rolling tea estates at around 1,600 m, with Eravikulam National Park sheltering the endangered Nilgiri tahr."
+      },
+      {
+        "name": "Alappuzha",
+        "blurb": "The main base for overnight houseboat cruises along the canals and paddy fields of the Kuttanad backwaters."
+      },
+      {
+        "name": "Fort Kochi",
+        "blurb": "Chinese fishing nets, Portuguese and Dutch-era buildings, the Jew Town synagogue and nightly Kathakali performances."
+      },
+      {
+        "name": "Thekkady",
+        "blurb": "Boat rides on Periyar Lake inside the tiger reserve, plus spice plantation tours of cardamom and pepper."
+      },
+      {
+        "name": "Kumarakom",
+        "blurb": "Lakeside resorts on Vembanad Lake and a bird sanctuary that fills with migratory species in winter."
+      },
+      {
+        "name": "Varkala",
+        "blurb": "Red laterite cliffs drop straight onto the beach, with cafes and guesthouses running along the clifftop path."
+      },
+      {
+        "name": "Wayanad",
+        "blurb": "Forested hills in the north with the Edakkal Caves petroglyphs, Chembra Peak and wildlife sanctuaries."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Sabarimala",
+        "blurb": "Devotees keep a 41-day vow and climb barefoot through forest to the hilltop shrine of Ayyappa, carrying offerings in a cloth bundle on their heads."
+      },
+      {
+        "name": "Guruvayur Sri Krishna Temple",
+        "blurb": "One of the most important Krishna shrines in South India, busy with weddings and first-rice ceremonies for infants from dawn."
+      },
+      {
+        "name": "Sree Padmanabhaswamy Temple",
+        "blurb": "Vishnu reclines on the serpent Anantha in this Thiruvananthapuram temple, viewed through three doors, with a strict traditional dress code."
+      },
+      {
+        "name": "Cheraman Juma Masjid",
+        "blurb": "A mosque at Kodungallur that tradition dates to the 7th century, built in the Kerala style with a sloping tiled roof and an old oil lamp."
+      },
+      {
+        "name": "St. Francis Church, Fort Kochi",
+        "blurb": "Among the oldest European churches in India, where Vasco da Gama was first buried in 1524 before his remains went to Portugal."
+      },
+      {
+        "name": "Paradesi Synagogue",
+        "blurb": "Built in 1568 in Kochi's Jew Town, with a floor of hand-painted Chinese tiles and Belgian chandeliers."
+      },
+      {
+        "name": "Sivagiri Mutt, Varkala",
+        "blurb": "The hilltop ashram and resting place of the reformer Sree Narayana Guru, drawing large crowds for the Sivagiri pilgrimage each December."
+      }
+    ],
+    "highlights": [
+      "Overnight houseboat cruise on the Alappuzha backwaters",
+      "Tea factory visit and estate walk in Munnar",
+      "Kathakali performance in Fort Kochi",
+      "Bamboo rafting or boat safari at Periyar",
+      "Sunset from the Varkala cliffs",
+      "Traditional Kerala sadya served on a banana leaf"
+    ],
+    "itineraries": [
+      {
+        "title": "Kochi and the Backwaters",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Arrive Kochi",
+            "details": "Explore Fort Kochi's Chinese fishing nets, St. Francis Church and Mattancherry Palace. Kathakali show in the evening."
+          },
+          {
+            "title": "Kochi to Alappuzha houseboat",
+            "details": "Drive about 1.5 hours to Alappuzha and board a houseboat around noon. Cruise the backwaters with meals cooked on board."
+          },
+          {
+            "title": "Alappuzha to Kumarakom",
+            "details": "Disembark after breakfast and drive about an hour to Kumarakom. Evening canoe ride on Vembanad Lake."
+          },
+          {
+            "title": "Kumarakom to Kochi",
+            "details": "Morning walk in the bird sanctuary, then drive about 2 hours to Kochi airport."
+          }
+        ]
+      },
+      {
+        "title": "Classic Kerala Circuit",
+        "duration": "8 Days / 7 Nights",
+        "days": [
+          {
+            "title": "Arrive Kochi",
+            "details": "Afternoon walk through Fort Kochi and Jew Town, ending at the fishing nets at sunset."
+          },
+          {
+            "title": "Kochi to Munnar",
+            "details": "Drive about 4 hours into the hills, stopping at Cheeyappara and Valara waterfalls on the way."
+          },
+          {
+            "title": "Munnar",
+            "details": "Eravikulam National Park, the Tata Tea Museum, Mattupetty Dam and Echo Point."
+          },
+          {
+            "title": "Munnar to Thekkady",
+            "details": "Drive about 3 hours through cardamom country. Afternoon spice plantation tour."
+          },
+          {
+            "title": "Thekkady",
+            "details": "Morning boat ride on Periyar Lake, then a Kalaripayattu martial arts show in the evening."
+          },
+          {
+            "title": "Thekkady to Alappuzha houseboat",
+            "details": "Drive about 4 hours to Alappuzha and spend the night cruising the backwaters on a houseboat."
+          },
+          {
+            "title": "Alappuzha to Varkala",
+            "details": "Disembark and drive about 3 hours south to Varkala. Evening on the clifftop."
+          },
+          {
+            "title": "Varkala to Thiruvananthapuram",
+            "details": "Morning on the beach, then drive about an hour to Thiruvananthapuram for the Padmanabhaswamy Temple exterior and departure."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "madhya-pradesh",
+    "name": "Madhya Pradesh",
+    "kind": "state",
+    "capital": "Bhopal",
+    "zone": "Central",
+    "tagline": "Tiger forests, carved temples and forgotten Mughal-era forts",
+    "intro": "Madhya Pradesh sits at the centre of India and holds some of its best tiger country in Kanha, Bandhavgarh and Pench. The temples of Khajuraho, the Buddhist stupa at Sanchi, the ruined city of Mandu and the riverside palaces of Orchha make it just as strong for history.",
+    "bestTime": "October to March",
+    "idealDuration": "7–9 days",
+    "photoArticle": "Khajuraho Group of Monuments",
+    "photoAlt": "The sandstone spires of Kandariya Mahadeva Temple at Khajuraho",
+    "destinations": [
+      {
+        "name": "Khajuraho",
+        "blurb": "Chandela-era temples from around 950 to 1050 CE, covered in intricately carved sculpture and listed by UNESCO."
+      },
+      {
+        "name": "Bandhavgarh National Park",
+        "blurb": "One of the densest tiger populations in India, with a hilltop fort overlooking the meadows."
+      },
+      {
+        "name": "Kanha National Park",
+        "blurb": "Sal forests and grasslands that are home to tigers and the hard-ground barasingha, saved from extinction here."
+      },
+      {
+        "name": "Orchha",
+        "blurb": "Bundela palaces, the Chaturbhuj Temple and riverside cenotaphs along the Betwa River."
+      },
+      {
+        "name": "Mandu",
+        "blurb": "A plateau-top ruined city of Afghan-style palaces, including the Jahaz Mahal and Rani Roopmati's Pavilion."
+      },
+      {
+        "name": "Pachmarhi",
+        "blurb": "The state's only hill station, with waterfalls, sandstone caves and walks in the Satpura range."
+      },
+      {
+        "name": "Gwalior Fort",
+        "blurb": "A hilltop fort with the tiled Man Singh Palace and a sound-and-light show on its sandstone ramparts."
+      },
+      {
+        "name": "Bhimbetka Rock Shelters",
+        "blurb": "UNESCO-listed sandstone shelters near Bhopal with paintings of hunters, dancers and animals, some thought to be over 10,000 years old."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Mahakaleshwar Temple, Ujjain",
+        "blurb": "One of the twelve Jyotirlingas, where the pre-dawn Bhasma Aarti offers sacred ash to Shiva."
+      },
+      {
+        "name": "Omkareshwar",
+        "blurb": "A Jyotirlinga temple on an island in the Narmada shaped like the sacred syllable Om, circled by pilgrims on foot."
+      },
+      {
+        "name": "Sanchi Stupa",
+        "blurb": "The Great Stupa commissioned by Ashoka, with carved gateways telling the Buddha's life, still a stop for Buddhist pilgrims from across Asia."
+      },
+      {
+        "name": "Ram Raja Temple, Orchha",
+        "blurb": "The only temple where Rama is worshipped as a king, given a police guard of honour at every aarti."
+      },
+      {
+        "name": "Taj-ul-Masajid, Bhopal",
+        "blurb": "One of the largest mosques in India, with pink sandstone towers and the Aalami Tablighi Ijtema gathering held nearby each year."
+      },
+      {
+        "name": "Amarkantak",
+        "blurb": "The source of the Narmada on the Maikal hills, with a temple complex around the spring and old Kalachuri shrines nearby."
+      }
+    ],
+    "highlights": [
+      "Jeep safari in Bandhavgarh or Kanha for tiger sightings",
+      "Evening sound and light show at Khajuraho's Western Group",
+      "Great Stupa and gateways of Sanchi",
+      "Rock shelters with prehistoric paintings at Bhimbetka",
+      "Sunset over the Betwa cenotaphs in Orchha",
+      "Bhasma Aarti at Mahakaleshwar Temple, Ujjain"
+    ],
+    "itineraries": [
+      {
+        "title": "Khajuraho and Orchha",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Arrive Khajuraho",
+            "details": "Fly into Khajuraho and visit the Western Group of temples, staying for the evening sound and light show."
+          },
+          {
+            "title": "Khajuraho temples and Panna",
+            "details": "Eastern and Southern temple groups in the morning, then an afternoon boat ride on the Ken River in Panna National Park."
+          },
+          {
+            "title": "Khajuraho to Orchha",
+            "details": "Drive about 4 hours to Orchha. Afternoon at Jahangir Mahal and Raja Mahal, then evening aarti at Ram Raja Temple."
+          },
+          {
+            "title": "Orchha and departure",
+            "details": "Morning at the Betwa cenotaphs, then drive about 30 minutes to Jhansi station for onward travel."
+          }
+        ]
+      },
+      {
+        "title": "Tigers and Temples of Central India",
+        "duration": "8 Days / 7 Nights",
+        "days": [
+          {
+            "title": "Arrive Jabalpur, drive to Kanha",
+            "details": "Arrive in Jabalpur and drive about 4 hours to Kanha National Park."
+          },
+          {
+            "title": "Kanha safaris",
+            "details": "Morning and afternoon jeep safaris through the Kanha meadows looking for tigers and barasingha."
+          },
+          {
+            "title": "Kanha to Bandhavgarh",
+            "details": "Drive about 5–6 hours to Bandhavgarh, arriving for a relaxed evening at the lodge."
+          },
+          {
+            "title": "Bandhavgarh safaris",
+            "details": "Two safaris in the Tala zone, known for some of the most reliable tiger sightings in India."
+          },
+          {
+            "title": "Bandhavgarh to Khajuraho",
+            "details": "Drive about 6 hours to Khajuraho. Evening sound and light show at the Western Group."
+          },
+          {
+            "title": "Khajuraho temples",
+            "details": "Full day across the Western, Eastern and Southern temple groups with a local guide."
+          },
+          {
+            "title": "Khajuraho to Orchha",
+            "details": "Drive about 4 hours to Orchha and spend the afternoon at the palaces and riverside cenotaphs."
+          },
+          {
+            "title": "Orchha to Jhansi",
+            "details": "Morning at Chaturbhuj Temple, then transfer to Jhansi for the train to Delhi or onward."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "maharashtra",
+    "name": "Maharashtra",
+    "kind": "state",
+    "capital": "Mumbai",
+    "zone": "West",
+    "tagline": "Rock-cut caves, hill forts and the restless energy of Mumbai",
+    "intro": "Maharashtra runs from the bustle of Mumbai to the rock-cut monasteries of Ajanta and Ellora and the Sahyadri hill stations of Lonavala and Mahabaleshwar. Add the Konkan coast, Maratha forts and the vineyards of Nashik, and there is enough for several very different trips.",
+    "bestTime": "October to March",
+    "idealDuration": "6–8 days",
+    "photoArticle": "Ajanta Caves",
+    "photoAlt": "The horseshoe-shaped gorge of the Waghur River lined with the rock-cut Ajanta Caves",
+    "destinations": [
+      {
+        "name": "Mumbai",
+        "blurb": "The Gateway of India, art deco Marine Drive, Elephanta Caves and some of the best street food in the country."
+      },
+      {
+        "name": "Ajanta Caves",
+        "blurb": "Buddhist caves cut into a horseshoe gorge, with painted murals dating back as far as the 2nd century BCE."
+      },
+      {
+        "name": "Ellora Caves",
+        "blurb": "Buddhist, Hindu and Jain caves side by side, including the Kailasa Temple carved from a single rock."
+      },
+      {
+        "name": "Mahabaleshwar",
+        "blurb": "A Sahyadri hill station of viewpoints, strawberry farms and the nearby Pratapgad Fort."
+      },
+      {
+        "name": "Lonavala",
+        "blurb": "An easy escape from Mumbai and Pune, with the Karla and Bhaja caves and green valleys in the monsoon."
+      },
+      {
+        "name": "Nashik",
+        "blurb": "The centre of India's wine country, with vineyard tours and tastings at estates such as Sula, plus the Ramkund ghats on the Godavari."
+      },
+      {
+        "name": "Tadoba Andhari Tiger Reserve",
+        "blurb": "Maharashtra's oldest tiger reserve, known for frequent sightings in its teak forests."
+      },
+      {
+        "name": "Alibaug",
+        "blurb": "Beaches and the sea fort of Kolaba, reached by ferry across the harbour from Mumbai."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Shirdi",
+        "blurb": "Home of the Sai Baba Samadhi Mandir, where devotees of every faith queue for darshan of the saint's marble statue."
+      },
+      {
+        "name": "Siddhivinayak Temple, Mumbai",
+        "blurb": "Mumbai's best-loved Ganesha temple, with long Tuesday queues of people asking for luck before exams, journeys and new ventures."
+      },
+      {
+        "name": "Haji Ali Dargah",
+        "blurb": "The tomb of a 15th-century Sufi saint on an islet off Worli, reached by a causeway that disappears at high tide."
+      },
+      {
+        "name": "Mount Mary Basilica, Bandra",
+        "blurb": "A hilltop church overlooking the sea, at the centre of the week-long Bandra Fair each September."
+      },
+      {
+        "name": "Trimbakeshwar",
+        "blurb": "A Jyotirlinga temple near the source of the Godavari, outside Nashik, whose linga has three small faces for Brahma, Vishnu and Shiva."
+      },
+      {
+        "name": "Pandharpur",
+        "blurb": "The temple of Vitthal on the Bhima River, the goal of the Wari, a walking pilgrimage of hundreds of thousands each Ashadhi Ekadashi."
+      },
+      {
+        "name": "Grishneshwar Temple",
+        "blurb": "The twelfth Jyotirlinga, a red-stone temple just a kilometre from the Ellora Caves."
+      },
+      {
+        "name": "Hazur Sahib, Nanded",
+        "blurb": "One of the five Takhts of Sikhism, built where Guru Gobind Singh spent his last days in 1708."
+      }
+    ],
+    "highlights": [
+      "Kailasa Temple at Ellora",
+      "Painted murals inside the Ajanta Caves",
+      "Ferry to Elephanta Caves from the Gateway of India",
+      "Evening walk along Marine Drive",
+      "Sunrise at Arthur's Seat, Mahabaleshwar",
+      "Vineyard tour and tasting in Nashik"
+    ],
+    "itineraries": [
+      {
+        "title": "Ajanta and Ellora",
+        "duration": "3 Days / 2 Nights",
+        "days": [
+          {
+            "title": "Arrive Chhatrapati Sambhajinagar",
+            "details": "Arrive in Chhatrapati Sambhajinagar (Aurangabad) and visit Bibi Ka Maqbara and the Daulatabad Fort."
+          },
+          {
+            "title": "Ajanta Caves",
+            "details": "Drive about 2.5 hours to Ajanta and spend the day with the murals and the gorge viewpoint before returning."
+          },
+          {
+            "title": "Ellora and departure",
+            "details": "Drive about 45 minutes to Ellora for the Kailasa Temple and Jain caves, then fly or take the train onward."
+          }
+        ]
+      },
+      {
+        "title": "Mumbai, Caves and Hills",
+        "duration": "8 Days / 7 Nights",
+        "days": [
+          {
+            "title": "Arrive Mumbai",
+            "details": "Gateway of India, the Chhatrapati Shivaji Maharaj Terminus facade and sunset on Marine Drive."
+          },
+          {
+            "title": "Mumbai",
+            "details": "Morning ferry to Elephanta Caves, then Colaba Causeway, Crawford Market and the dhobi ghat at Mahalaxmi."
+          },
+          {
+            "title": "Mumbai to Chhatrapati Sambhajinagar",
+            "details": "Short flight to Chhatrapati Sambhajinagar. Afternoon at Bibi Ka Maqbara."
+          },
+          {
+            "title": "Ajanta Caves",
+            "details": "Full-day trip to Ajanta, about 2.5 hours each way."
+          },
+          {
+            "title": "Ellora Caves",
+            "details": "Morning at Ellora's Kailasa Temple, then Daulatabad Fort on the way back."
+          },
+          {
+            "title": "To Pune",
+            "details": "Drive about 5 hours to Pune. Evening at Shaniwar Wada and the old city lanes."
+          },
+          {
+            "title": "Pune to Mahabaleshwar",
+            "details": "Drive about 3 hours to Mahabaleshwar. Afternoon at Pratapgad Fort and sunset from a valley viewpoint."
+          },
+          {
+            "title": "Mahabaleshwar to Mumbai",
+            "details": "Early visit to Arthur's Seat, then drive about 5.5 hours back to Mumbai for departure."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "manipur",
+    "name": "Manipur",
+    "kind": "state",
+    "capital": "Imphal",
+    "zone": "North-East",
+    "tagline": "Floating islands, classical dance and the home of modern polo",
+    "intro": "Manipur is an oval valley ringed by green hills, with Loktak Lake and its floating phumdis at its heart. Imphal's Ima Keithel, a market run entirely by women, Manipuri dance and the Second World War sites around the city give the state a character all its own.",
+    "bestTime": "October to April",
+    "idealDuration": "4–6 days",
+    "photoArticle": "Loktak Lake",
+    "photoAlt": "Circular floating phumdis and fishing huts on the calm surface of Loktak Lake",
+    "destinations": [
+      {
+        "name": "Imphal",
+        "blurb": "The capital, home to Kangla Fort, the Shree Govindajee Temple and the women-run Ima Keithel market."
+      },
+      {
+        "name": "Loktak Lake",
+        "blurb": "The largest freshwater lake in the North-East, dotted with floating islands of vegetation called phumdis."
+      },
+      {
+        "name": "Keibul Lamjao National Park",
+        "blurb": "The world's only floating national park and the last home of the sangai, Manipur's brow-antlered deer."
+      },
+      {
+        "name": "Moirang",
+        "blurb": "Site of the INA Memorial, where the Indian National Army first raised the tricolour on Indian soil in 1944."
+      },
+      {
+        "name": "Ukhrul",
+        "blurb": "Tangkhul Naga hill country, famous for the Shirui lily on Shirui Kashung Peak."
+      },
+      {
+        "name": "Andro",
+        "blurb": "A traditional village known for its black pottery and a cultural complex of tribal houses."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Shree Govindajee Temple",
+        "blurb": "The royal Vaishnava temple beside the old palace in Imphal, with twin gold domes and Manipuri Raas Leela performed on festival nights."
+      },
+      {
+        "name": "Ebudhou Thangjing Temple, Moirang",
+        "blurb": "The shrine of Moirang's guardian deity, centre of the Lai Haraoba festival, with a pilgrimage climb to Thangjing Hill each spring."
+      },
+      {
+        "name": "Kaina",
+        "blurb": "A hillside Vaishnava pilgrimage site where King Bhagyachandra is said to have dreamed of Govindaji, marked by a temple and a Raas Leela festival."
+      },
+      {
+        "name": "Pakhangba Temple, Kangla",
+        "blurb": "A shrine to the serpent deity Pakhangba inside Kangla Fort, the most sacred place in the traditional Meitei faith."
+      }
+    ],
+    "highlights": [
+      "Boat ride among the phumdis on Loktak Lake",
+      "Spotting the sangai deer at Keibul Lamjao",
+      "Browsing Ima Keithel, the mothers' market in Imphal",
+      "Manipuri Ras Leela dance performance",
+      "Imphal War Cemetery and the INA Memorial at Moirang",
+      "A polo match at Mapal Kangjeibung, among the oldest polo grounds in the world"
+    ],
+    "itineraries": [
+      {
+        "title": "Imphal and Loktak",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Arrive Imphal",
+            "details": "Visit Kangla Fort and the Shree Govindajee Temple, then the Ima Keithel market in the late afternoon."
+          },
+          {
+            "title": "Loktak Lake and Moirang",
+            "details": "Drive about 1.5 hours to Moirang for the INA Memorial, then a boat ride on Loktak Lake from Sendra."
+          },
+          {
+            "title": "Keibul Lamjao and Imphal",
+            "details": "Early visit to Keibul Lamjao to look for the sangai, then return to Imphal for the War Cemetery and Manipur State Museum."
+          },
+          {
+            "title": "Andro and departure",
+            "details": "Morning trip to Andro village for black pottery, about an hour from Imphal, before your flight."
+          }
+        ]
+      },
+      {
+        "title": "Manipur Valley and Hills",
+        "duration": "6 Days / 5 Nights",
+        "days": [
+          {
+            "title": "Arrive Imphal",
+            "details": "Settle in and visit Kangla Fort and Ima Keithel."
+          },
+          {
+            "title": "Imphal heritage",
+            "details": "Shree Govindajee Temple, Manipur State Museum, the Imphal War Cemetery and an evening Manipuri dance performance."
+          },
+          {
+            "title": "Imphal to Loktak",
+            "details": "Drive about 1.5 hours to Loktak Lake and stay overnight at Sendra or a homestay by the lake."
+          },
+          {
+            "title": "Keibul Lamjao to Imphal",
+            "details": "Morning at Keibul Lamjao National Park and the INA Memorial at Moirang, then return to Imphal."
+          },
+          {
+            "title": "Imphal to Ukhrul",
+            "details": "Drive about 3 hours into the Tangkhul Naga hills, visiting a local village in the afternoon."
+          },
+          {
+            "title": "Ukhrul to Imphal",
+            "details": "Morning walk around Ukhrul, then drive back to Imphal for your onward flight."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "meghalaya",
+    "name": "Meghalaya",
+    "kind": "state",
+    "capital": "Shillong",
+    "zone": "North-East",
+    "tagline": "Living root bridges, plunging falls and some of the wettest hills on earth",
+    "intro": "Meghalaya's Khasi and Jaintia Hills catch some of the heaviest rainfall on the planet, feeding waterfalls, limestone caves and the living root bridges that villagers have grown over generations. Shillong makes a lively base, and Cherrapunji, Mawlynnong and Dawki are all within a few hours' drive.",
+    "bestTime": "October to April",
+    "idealDuration": "5–7 days",
+    "photoArticle": "Nohkalikai Falls",
+    "photoAlt": "Nohkalikai Falls dropping off a green cliff into a turquoise pool near Cherrapunji",
+    "destinations": [
+      {
+        "name": "Shillong",
+        "blurb": "A hill capital with colonial-era lanes, Ward's Lake, a strong music scene and the viewpoint at Shillong Peak."
+      },
+      {
+        "name": "Cherrapunji (Sohra)",
+        "blurb": "Plateau country of deep gorges, Nohkalikai and Seven Sisters falls, and Mawsmai Cave."
+      },
+      {
+        "name": "Nongriat",
+        "blurb": "A village at the bottom of a 3,500-step descent, home to the double-decker living root bridge."
+      },
+      {
+        "name": "Mawlynnong",
+        "blurb": "A tidy Khasi village with bamboo walkways, a tree-top viewing platform and a single-decker root bridge nearby."
+      },
+      {
+        "name": "Dawki",
+        "blurb": "Boats on the Umngot River float over water so clear the riverbed shows through, right by the Bangladesh border."
+      },
+      {
+        "name": "Mawphlang Sacred Forest",
+        "blurb": "An ancient Khasi grove protected by tradition, explored with a local guide."
+      },
+      {
+        "name": "Laitlum Canyons",
+        "blurb": "Ridge-top views over deep valleys and a village far below, about an hour from Shillong."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Cathedral of Mary Help of Christians",
+        "blurb": "Shillong's Catholic cathedral, rebuilt after a 1936 fire, with tall stained-glass windows and a hilltop setting in Laitumkhrah."
+      },
+      {
+        "name": "Nartiang Durga Temple",
+        "blurb": "A Jaintia hill temple counted among the Shakti Peethas, a short walk from the tall monoliths of Nartiang."
+      },
+      {
+        "name": "Church of the Epiphany, Mawlynnong",
+        "blurb": "A stone church over a century old at the heart of the village, its tidy lawn and Sunday hymns part of daily life here."
+      },
+      {
+        "name": "Mawjymbuin Cave",
+        "blurb": "A limestone cave near Mawsynram where a stalagmite shaped like a Shiva linga sits beneath a dripping rock, visited by Hindu devotees."
+      }
+    ],
+    "highlights": [
+      "Trek down to the double-decker root bridge at Nongriat",
+      "Boat ride on the clear Umngot River at Dawki",
+      "Viewpoint over Nohkalikai Falls",
+      "Exploring Mawsmai Cave near Sohra",
+      "Walking through Mawlynnong village",
+      "Evening at a live music cafe in Shillong"
+    ],
+    "itineraries": [
+      {
+        "title": "Shillong and Sohra",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Guwahati to Shillong",
+            "details": "Drive about 3 hours from Guwahati to Shillong, stopping at Umiam Lake. Evening at Police Bazaar."
+          },
+          {
+            "title": "Shillong to Sohra",
+            "details": "Drive about 1.5 hours to Sohra via Mawkdok Dympep viewpoint, then visit Nohkalikai Falls, Mawsmai Cave and Seven Sisters Falls."
+          },
+          {
+            "title": "Mawlynnong and Dawki",
+            "details": "Day trip to Mawlynnong village and its root bridge, then a boat ride on the Umngot at Dawki, returning to Shillong."
+          },
+          {
+            "title": "Shillong to Guwahati",
+            "details": "Morning at Shillong Peak and Ward's Lake, then drive back to Guwahati for departure."
+          }
+        ]
+      },
+      {
+        "title": "Meghalaya in Depth",
+        "duration": "7 Days / 6 Nights",
+        "days": [
+          {
+            "title": "Guwahati to Shillong",
+            "details": "Drive about 3 hours to Shillong with a stop at Umiam Lake."
+          },
+          {
+            "title": "Shillong",
+            "details": "Shillong Peak, Don Bosco Museum of indigenous cultures, and a half-day trip to Laitlum Canyons."
+          },
+          {
+            "title": "Shillong to Sohra",
+            "details": "Drive to Sohra via Mawphlang Sacred Forest. Afternoon at Nohkalikai Falls and Mawsmai Cave."
+          },
+          {
+            "title": "Nongriat trek",
+            "details": "Descend about 3,500 steps from Tyrna to the double-decker root bridge and Rainbow Falls, overnight in Nongriat."
+          },
+          {
+            "title": "Nongriat to Mawlynnong",
+            "details": "Climb back to Tyrna and drive about 2.5 hours to Mawlynnong for an overnight village stay."
+          },
+          {
+            "title": "Dawki and Shnongpdeng",
+            "details": "Boat on the Umngot River at Dawki and Shnongpdeng, then drive about 3 hours back to Shillong."
+          },
+          {
+            "title": "Shillong to Guwahati",
+            "details": "Drive about 3 hours to Guwahati airport for departure."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "mizoram",
+    "name": "Mizoram",
+    "kind": "state",
+    "capital": "Aizawl",
+    "zone": "North-East",
+    "tagline": "Ridge-top towns, bamboo forests and the Blue Mountain",
+    "intro": "Mizoram is a state of steep parallel ridges where towns like Aizawl cling to hilltops and churches ring out across the valleys. It sees few visitors, which suits travellers looking for quiet drives, Mizo hospitality, waterfalls and the cool heights of Phawngpui.",
+    "bestTime": "October to March",
+    "idealDuration": "5–7 days",
+    "photoArticle": "Vantawng Falls",
+    "photoAlt": "Vantawng Falls dropping through forested hills in Mizoram",
+    "destinations": [
+      {
+        "name": "Aizawl",
+        "blurb": "The ridge-top capital, with Solomon's Temple, the Mizoram State Museum and the Bara Bazar market."
+      },
+      {
+        "name": "Reiek",
+        "blurb": "A hill about 30 km from Aizawl with a traditional Mizo heritage village and wide views over the ridges."
+      },
+      {
+        "name": "Champhai",
+        "blurb": "A broad valley of rice fields near the Myanmar border, with the Rih Dil lake visible across the frontier."
+      },
+      {
+        "name": "Vantawng Falls",
+        "blurb": "The highest waterfall in the state, dropping through thick bamboo forest near Thenzawl."
+      },
+      {
+        "name": "Phawngpui National Park",
+        "blurb": "The Blue Mountain, Mizoram's highest peak, known for orchids, rhododendrons and mountain birds."
+      },
+      {
+        "name": "Tam Dil",
+        "blurb": "A peaceful lake surrounded by forest, about 80 km from Aizawl, with boating and a small fish farm."
+      },
+      {
+        "name": "Lunglei",
+        "blurb": "The second-largest town, set on a ridge in the south with routes onward to Phawngpui."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Solomon's Temple, Aizawl",
+        "blurb": "A large white church built by the Kohhran Thianghlim denomination, with four towers and space for thousands of worshippers."
+      },
+      {
+        "name": "Serkawn, Lunglei",
+        "blurb": "The headquarters of the Baptist Church of Mizoram, where early missionaries set up a church, school and hospital in the south."
+      }
+    ],
+    "highlights": [
+      "Mizo heritage village at Reiek",
+      "Vantawng Falls viewpoint near Thenzawl",
+      "Sunday church choirs in Aizawl",
+      "Handloom puan weaving in Thenzawl",
+      "Rice-field landscapes of the Champhai valley",
+      "Chapchar Kut spring festival in March"
+    ],
+    "itineraries": [
+      {
+        "title": "Aizawl and Around",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Arrive Aizawl",
+            "details": "Fly into Lengpui airport, about an hour from the city. Evening walk around Bara Bazar."
+          },
+          {
+            "title": "Aizawl sightseeing",
+            "details": "Mizoram State Museum, Solomon's Temple and the Durtlang Hills viewpoint."
+          },
+          {
+            "title": "Reiek day trip",
+            "details": "Drive about 1.5 hours to Reiek for the heritage village and ridge walk, then return to Aizawl."
+          },
+          {
+            "title": "Tam Dil and departure",
+            "details": "Morning visit to Tam Dil lake, about 2 hours away, then head to Lengpui for your flight."
+          }
+        ]
+      },
+      {
+        "title": "Mizoram Hills Journey",
+        "duration": "7 Days / 6 Nights",
+        "days": [
+          {
+            "title": "Arrive Aizawl",
+            "details": "Transfer from Lengpui airport and spend the evening at Bara Bazar."
+          },
+          {
+            "title": "Aizawl and Reiek",
+            "details": "Morning at the State Museum and Solomon's Temple, afternoon at Reiek heritage village."
+          },
+          {
+            "title": "Aizawl to Thenzawl",
+            "details": "Drive about 3 hours south to Thenzawl to see handloom weaving and the Vantawng Falls viewpoint."
+          },
+          {
+            "title": "Thenzawl to Aizawl",
+            "details": "Return to Aizawl via Tam Dil lake, about 3–4 hours of driving in total."
+          },
+          {
+            "title": "Aizawl to Champhai",
+            "details": "A long scenic drive of about 6–7 hours east across the ridges to Champhai."
+          },
+          {
+            "title": "Champhai",
+            "details": "Explore the valley's rice fields and vineyards, the Murlen area and views toward Rih Dil across the border."
+          },
+          {
+            "title": "Champhai to Aizawl",
+            "details": "Drive back to Aizawl and continue to Lengpui for departure, or stay a final night in Aizawl."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "nagaland",
+    "name": "Nagaland",
+    "kind": "state",
+    "capital": "Kohima",
+    "zone": "North-East",
+    "tagline": "Naga villages, the Hornbill Festival and the meadows of Dzukou",
+    "intro": "Nagaland is home to more than a dozen Naga tribes, each with its own dress, language and festivals, best seen together at the Hornbill Festival every December. Kohima carries the memory of a decisive Second World War battle, and nearby Khonoma and the Dzukou Valley make for village walks and treks.",
+    "bestTime": "October to May",
+    "idealDuration": "5–7 days",
+    "photoArticle": "Dzukou Valley",
+    "photoAlt": "Rolling green meadows of Dzukou Valley on the Nagaland–Manipur border",
+    "destinations": [
+      {
+        "name": "Kohima",
+        "blurb": "The hill capital, with the Kohima War Cemetery, the Nagaland State Museum and a lively local market."
+      },
+      {
+        "name": "Kisama Heritage Village",
+        "blurb": "Venue of the Hornbill Festival, with traditional morungs built in the style of each Naga tribe."
+      },
+      {
+        "name": "Khonoma",
+        "blurb": "An Angami village of stone terraces and fields, known as India's first green village for its conservation efforts."
+      },
+      {
+        "name": "Dzukou Valley",
+        "blurb": "Rolling meadows on the Nagaland-Manipur border reached by a day hike from Viswema or Zakhama."
+      },
+      {
+        "name": "Mokokchung",
+        "blurb": "The cultural centre of the Ao Nagas, with villages such as Ungma and Longkhum nearby."
+      },
+      {
+        "name": "Mon",
+        "blurb": "Konyak country, where the village chief's house at Longwa straddles the India-Myanmar border."
+      },
+      {
+        "name": "Dimapur",
+        "blurb": "The state's gateway by rail and air, with the megalithic pillars of the Kachari Ruins."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Mary Help of Christians Cathedral, Kohima",
+        "blurb": "A Catholic cathedral whose facade echoes a traditional Naga house, with a large carved wooden crucifix inside."
+      },
+      {
+        "name": "Sumi Baptist Church, Zunheboto",
+        "blurb": "A huge Baptist church on a hill in Zunheboto, among the largest in Asia, a sign of how central the faith is in Nagaland."
+      },
+      {
+        "name": "Molungyimsen",
+        "blurb": "An Ao village near Mokokchung counted as the first Christian village in Nagaland, founded by the missionary Edward Clark in the 1870s."
+      },
+      {
+        "name": "Impur Mission Centre",
+        "blurb": "The American Baptist mission station near Mokokchung, set up in the 1890s, with a historic church and the Ao Baptist association offices."
+      }
+    ],
+    "highlights": [
+      "Hornbill Festival at Kisama, 1–10 December",
+      "Kohima War Cemetery on Garrison Hill",
+      "Village walk through the terraces of Khonoma",
+      "Day hike into the Dzukou Valley",
+      "Meeting Konyak elders at Longwa in Mon district",
+      "Smoked pork and axone at a Kohima eatery"
+    ],
+    "itineraries": [
+      {
+        "title": "Kohima and Khonoma",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Dimapur to Kohima",
+            "details": "Arrive in Dimapur, see the Kachari Ruins, and drive about 3 hours up to Kohima."
+          },
+          {
+            "title": "Kohima",
+            "details": "Kohima War Cemetery, the State Museum and the main market, followed by Kisama Heritage Village in the afternoon."
+          },
+          {
+            "title": "Khonoma",
+            "details": "Drive about 45 minutes to Khonoma for a guided village walk among the terraces and stone gateways."
+          },
+          {
+            "title": "Kohima to Dimapur",
+            "details": "Drive back to Dimapur for your flight or train."
+          }
+        ]
+      },
+      {
+        "title": "Naga Hills Explorer",
+        "duration": "7 Days / 6 Nights",
+        "days": [
+          {
+            "title": "Dimapur to Kohima",
+            "details": "Drive about 3 hours from Dimapur to Kohima after visiting the Kachari Ruins."
+          },
+          {
+            "title": "Kohima",
+            "details": "War Cemetery, State Museum and Kisama Heritage Village."
+          },
+          {
+            "title": "Dzukou Valley hike",
+            "details": "Drive about 45 minutes to Viswema and hike up into the Dzukou Valley, returning to Kohima in the evening or staying at the rest house."
+          },
+          {
+            "title": "Khonoma",
+            "details": "Full day in Khonoma with a homestay night and a village walk to the old fort site."
+          },
+          {
+            "title": "Kohima to Mokokchung",
+            "details": "Drive about 5–6 hours north to Mokokchung, the heart of Ao Naga country."
+          },
+          {
+            "title": "Mokokchung villages",
+            "details": "Visit Ungma, one of the oldest Ao villages, and the hilltop village of Longkhum."
+          },
+          {
+            "title": "Mokokchung to Jorhat",
+            "details": "Drive about 3 hours to Jorhat in Assam for your onward flight."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "odisha",
+    "name": "Odisha",
+    "kind": "state",
+    "capital": "Bhubaneswar",
+    "zone": "East",
+    "tagline": "Temple towns, a stone chariot to the sun and a lagoon full of dolphins",
+    "intro": "Odisha's golden triangle of Bhubaneswar, Puri and Konark brings together centuries of Kalinga temple building within a two-hour drive. Beyond it lie Chilika Lake with its Irrawaddy dolphins, the mangroves of Bhitarkanika and the crafts villages of Raghurajpur and Pipili.",
+    "bestTime": "October to March",
+    "idealDuration": "5–7 days",
+    "photoArticle": "Konark Sun Temple",
+    "photoAlt": "The carved stone chariot of the Konark Sun Temple with its great wheels",
+    "destinations": [
+      {
+        "name": "Bhubaneswar",
+        "blurb": "The state capital, with the Jain-carved caves of Udayagiri and Khandagiri, the Odisha State Museum and the old lanes around Bindu Sagar."
+      },
+      {
+        "name": "Konark",
+        "blurb": "The 13th-century Sun Temple, built as a giant chariot with 24 carved stone wheels."
+      },
+      {
+        "name": "Chilika Lake",
+        "blurb": "Asia's largest brackish-water lagoon, where boats from Satapada go out to see Irrawaddy dolphins."
+      },
+      {
+        "name": "Raghurajpur",
+        "blurb": "A heritage crafts village near Puri where every house paints pattachitra scrolls."
+      },
+      {
+        "name": "Bhitarkanika National Park",
+        "blurb": "Mangrove creeks with large saltwater crocodiles, explored by boat."
+      },
+      {
+        "name": "Gopalpur-on-Sea",
+        "blurb": "A quiet seaside town in the south with a lighthouse and a long sandy beach."
+      },
+      {
+        "name": "Simlipal National Park",
+        "blurb": "A tiger reserve in the north with sal forests and the Barehipani and Joranda waterfalls."
+      },
+      {
+        "name": "Ratnagiri, Udayagiri and Lalitgiri",
+        "blurb": "Excavated Buddhist monasteries and stupas on low hills near Jajpur, with fine carved doorways and Buddha heads in the site museums."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Jagannath Temple, Puri",
+        "blurb": "One of the four Char Dham sites, famous for the Rath Yatra, when the deities ride giant wooden chariots down Grand Road."
+      },
+      {
+        "name": "Lingaraj Temple, Bhubaneswar",
+        "blurb": "An 11th-century Kalinga-style temple to Shiva as Harihara, whose 55 m tower rises over the old town."
+      },
+      {
+        "name": "Dhauli Shanti Stupa",
+        "blurb": "A white peace pagoda built in 1972 on the hill near Ashoka's rock edicts, where the Kalinga War is said to have changed the emperor."
+      },
+      {
+        "name": "Tara Tarini Temple",
+        "blurb": "A hilltop Shakti Peetha above the Rushikulya River near Berhampur, reached by steps or a ropeway."
+      },
+      {
+        "name": "Biraja Temple, Jajpur",
+        "blurb": "A Shakti shrine to the goddess Durga as Biraja, with Jajpur long considered a key site for ancestral rites."
+      },
+      {
+        "name": "Samaleswari Temple, Sambalpur",
+        "blurb": "The presiding goddess of western Odisha, honoured with crowds and processions during Navratri."
+      },
+      {
+        "name": "Qadam-e-Rasool, Cuttack",
+        "blurb": "A walled shrine holding a stone said to bear the Prophet's footprint, with domed buildings and a graveyard in the old city."
+      }
+    ],
+    "highlights": [
+      "Wheels and carvings of the Konark Sun Temple",
+      "Dolphin-spotting boat ride on Chilika Lake",
+      "Pattachitra painting demonstration at Raghurajpur",
+      "Udayagiri and Khandagiri caves in Bhubaneswar",
+      "Odissi dance performance in Bhubaneswar",
+      "Rath Yatra festival in Puri, usually in June or July"
+    ],
+    "itineraries": [
+      {
+        "title": "Odisha Golden Triangle",
+        "duration": "4 Days / 3 Nights",
+        "days": [
+          {
+            "title": "Arrive Bhubaneswar",
+            "details": "Visit the Lingaraj and Mukteshwar temples, then the Udayagiri and Khandagiri caves."
+          },
+          {
+            "title": "Bhubaneswar to Puri via Konark",
+            "details": "Drive about 1.5 hours to Konark for the Sun Temple, then follow the coast road about an hour to Puri."
+          },
+          {
+            "title": "Puri and Raghurajpur",
+            "details": "Morning at the Jagannath Temple surroundings, afternoon in Raghurajpur village, and an evening on the beach."
+          },
+          {
+            "title": "Puri to Bhubaneswar",
+            "details": "Drive about 1.5 hours back to Bhubaneswar via Pipili's applique workshops for departure."
+          }
+        ]
+      },
+      {
+        "title": "Temples, Lagoon and Mangroves",
+        "duration": "7 Days / 6 Nights",
+        "days": [
+          {
+            "title": "Arrive Bhubaneswar",
+            "details": "Afternoon at the Lingaraj and Mukteshwar temples, then an evening Odissi performance."
+          },
+          {
+            "title": "Bhubaneswar",
+            "details": "Udayagiri and Khandagiri caves, Dhauli Peace Pagoda and the Odisha State Museum."
+          },
+          {
+            "title": "Bhubaneswar to Puri via Konark",
+            "details": "Konark Sun Temple in the morning, then on to Puri along the Marine Drive."
+          },
+          {
+            "title": "Puri and Raghurajpur",
+            "details": "Explore the lanes around the Jagannath Temple and spend the afternoon with the painters of Raghurajpur."
+          },
+          {
+            "title": "Chilika Lake",
+            "details": "Drive about 1.5 hours to Satapada for a boat trip to see Irrawaddy dolphins, then continue toward Bhubaneswar."
+          },
+          {
+            "title": "Bhubaneswar to Bhitarkanika",
+            "details": "Drive about 4 hours to Bhitarkanika and take an afternoon boat ride through the mangrove creeks."
+          },
+          {
+            "title": "Bhitarkanika to Bhubaneswar",
+            "details": "Early boat safari for crocodiles and birds, then drive back to Bhubaneswar for departure."
+          }
+        ]
+      }
+    ]
+  }
+]

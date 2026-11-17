@@ -10,7 +10,9 @@ import watArunBangkok from '../../assets/hero/wat-arun-bangkok.jpg';
 
 export async function getStaticPaths() {
   const destinations = await getCollection('destinations');
-  return TOUR_CATEGORIES.map((category) => ({
+  // Domestic and International have their own directory pages (tours/domestic/,
+  // tours/international/); only Temple Tours is rendered here.
+  return TOUR_CATEGORIES.filter((category) => !['domestic', 'international'].includes(category.slug)).map((category) => ({
     params: { category: category.slug },
     props: {
       category,
@@ -82,7 +84,7 @@ const STAR_PATH =
           travelling and when, and build the itinerary from there.
         </p>
         <a
-          href={`https://wa.me/${SITE.whatsapp}`}
+          href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent("Hi Charrish Travels, I'd like to plan a trip.")}`}
           target="_blank"
           rel="noopener"
           class="mt-8 inline-flex items-center gap-2 rounded-full bg-saffron px-7 py-3 text-xs font-semibold text-on-saffron transition-all duration-200 hover:scale-105 hover:bg-saffron-deep active:scale-95"

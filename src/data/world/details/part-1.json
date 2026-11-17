@@ -1,0 +1,468 @@
+{
+  "thailand": {
+    "capital": "Bangkok",
+    "currency": "Thai baht (THB)",
+    "intro": "Thailand is one of the easiest first international holidays for Indian families, with short flights, a simple visa process and plenty of Indian restaurants. A typical trip pairs the temples, markets and malls of Bangkok with beach time in Phuket, Krabi or Pattaya, and Chiang Mai adds cooler hills and elephant sanctuaries in the north.",
+    "destinations": [
+      { "name": "Bangkok", "blurb": "A busy capital of riverside palaces, giant malls like Siam Paragon and late-night markets such as Asiatique." },
+      { "name": "Phuket", "blurb": "Thailand's largest island, with Patong and Kata beaches, the Big Buddha viewpoint and day trips by speedboat." },
+      { "name": "Phi Phi Islands", "blurb": "Limestone islands off Krabi and Phuket known for clear water, snorkelling and the cliffs around Maya Bay." },
+      { "name": "Krabi", "blurb": "A quieter beach base with Railay's cliffs, Ao Nang's seafront and island-hopping by longtail boat." },
+      { "name": "Pattaya", "blurb": "A short drive from Bangkok, popular for Coral Island trips, Nong Nooch Tropical Garden and family shows." },
+      { "name": "Chiang Mai", "blurb": "A walled old city in the northern hills with night bazaars, cooking schools and ethical elephant sanctuaries nearby." },
+      { "name": "Safari World", "blurb": "A drive-through safari park and marine park on the edge of Bangkok, good for a full day with children." }
+    ],
+    "devotional": [
+      { "name": "Wat Pho", "blurb": "Home of the 46-metre gilded Reclining Buddha and one of Bangkok's oldest temple complexes." },
+      { "name": "Wat Arun", "blurb": "The Temple of Dawn, whose porcelain-studded central spire rises over the Chao Phraya River." },
+      { "name": "Erawan Shrine", "blurb": "A busy roadside shrine to Brahma at Ratchaprasong, where many Indian visitors stop to offer flowers." },
+      { "name": "Sri Maha Mariamman Temple", "blurb": "A colourful South Indian-style temple on Silom Road, built by Tamil settlers in the 1870s." },
+      { "name": "Wat Phra That Doi Suthep", "blurb": "A hilltop temple above Chiang Mai reached by a long naga staircase, with views over the city." }
+    ],
+    "dishes": [
+      { "name": "Pad Thai", "blurb": "Stir-fried rice noodles with tamarind, peanuts and usually egg and prawns or chicken.", "veg": false },
+      { "name": "Tom Yum Goong", "blurb": "A hot and sour prawn soup flavoured with lemongrass, galangal and lime leaves.", "veg": false },
+      { "name": "Massaman Curry", "blurb": "A mild, slightly sweet curry with potatoes and peanuts, usually made with chicken or beef.", "veg": false },
+      { "name": "Mango Sticky Rice", "blurb": "Ripe mango served with sweet coconut sticky rice, a favourite street dessert.", "veg": true },
+      { "name": "Kluay Buat Chee", "blurb": "Bananas simmered in warm, lightly salted coconut milk.", "veg": true }
+    ],
+    "highlights": [
+      "Longtail boat trip to the Phi Phi Islands",
+      "Snorkelling off Coral Island near Pattaya",
+      "Dinner cruise on the Chao Phraya River",
+      "Morning at a floating market such as Damnoen Saduak",
+      "Half-day visit to an elephant sanctuary near Chiang Mai",
+      "Shopping at Bangkok's night markets"
+    ],
+    "indianTraveller": "Indian and pure-vegetarian restaurants are easy to find in Bangkok, Pattaya and Phuket, direct flights from Hyderabad take about 4 hours, and a universal plug adapter plus a forex card or some US dollars to exchange locally will cover most needs."
+  },
+  "singapore": {
+    "capital": "Singapore",
+    "currency": "Singapore dollar (SGD)",
+    "intro": "Singapore is a compact, very clean city-state where Indian families can see theme parks, gardens and a world-class zoo in four or five days without long transfers. Little India and the large Tamil community mean familiar food, temples and shops are never far away, and the public transport is simple to use with elderly parents and children.",
+    "destinations": [
+      { "name": "Gardens by the Bay", "blurb": "Waterfront gardens with the Supertree Grove and two huge glass conservatories, the Flower Dome and Cloud Forest." },
+      { "name": "Marina Bay", "blurb": "The city's skyline centre, with the Marina Bay Sands SkyPark, the Merlion and an evening promenade." },
+      { "name": "Universal Studios Singapore", "blurb": "A movie theme park on Sentosa Island with rides themed on Transformers, Jurassic Park and Shrek." },
+      { "name": "Singapore Zoo and Night Safari", "blurb": "Open-concept zoo by day and a tram-based Night Safari after dark, both in the Mandai area." },
+      { "name": "Jewel Changi Airport", "blurb": "A glass dome at the airport built around the Rain Vortex, the world's tallest indoor waterfall." },
+      { "name": "Little India", "blurb": "Serangoon Road's shops, flower garland stalls, Mustafa Centre and South Indian restaurants." },
+      { "name": "Chinatown", "blurb": "Shophouse streets with souvenir stalls, the Chinatown Complex hawker centre and heritage museums." }
+    ],
+    "devotional": [
+      { "name": "Sri Mariamman Temple", "blurb": "Singapore's oldest Hindu temple, founded in 1827, with a tall sculpted gopuram on South Bridge Road." },
+      { "name": "Sri Veeramakaliamman Temple", "blurb": "A busy Kali temple on Serangoon Road at the heart of Little India." },
+      { "name": "Sri Srinivasa Perumal Temple", "blurb": "A Vishnu temple in Little India and the starting point of the Thaipusam procession." },
+      { "name": "Sri Thendayuthapani Temple", "blurb": "A Murugan temple on Tank Road where the Thaipusam kavadi procession ends." },
+      { "name": "Buddha Tooth Relic Temple", "blurb": "A Tang-style Buddhist temple in Chinatown housing a revered relic and a rooftop prayer wheel." }
+    ],
+    "dishes": [
+      { "name": "Hainanese Chicken Rice", "blurb": "Poached chicken with rice cooked in chicken stock, served with chilli and ginger sauces.", "veg": false },
+      { "name": "Chilli Crab", "blurb": "Whole crab in a thick, sweet-spicy tomato and chilli gravy, eaten with fried buns.", "veg": false },
+      { "name": "Laksa", "blurb": "Rice noodles in a spicy coconut curry broth with prawns and fishcake.", "veg": false },
+      { "name": "Chendol", "blurb": "Shaved ice with coconut milk, palm sugar syrup, green rice-flour jelly and red beans.", "veg": true },
+      { "name": "Ice Kachang", "blurb": "A mound of shaved ice topped with coloured syrups, sweet corn, red beans and jelly.", "veg": true }
+    ],
+    "highlights": [
+      "Garden Rhapsody light show at the Supertree Grove",
+      "Tram ride through the Night Safari",
+      "Cable car ride across to Sentosa",
+      "Spectra light and water show at Marina Bay",
+      "Hawker centre dinner at Lau Pa Sat",
+      "Watching the Rain Vortex at Jewel Changi"
+    ],
+    "indianTraveller": "Vegetarian and Jain-friendly Indian food is easy to find, especially around Little India, direct flights from Hyderabad take about 4 hours, and Singapore uses three-pin UK-style (Type G) sockets, so pack an adapter."
+  },
+  "malaysia": {
+    "capital": "Kuala Lumpur",
+    "currency": "Malaysian ringgit (MYR)",
+    "intro": "Malaysia combines a modern capital, cool hill stations and island beaches, all at prices that suit Indian family budgets. Its large Tamil community means South Indian food and Hindu temples are part of everyday life, and Batu Caves near Kuala Lumpur is a major draw during Thaipusam.",
+    "destinations": [
+      { "name": "Petronas Twin Towers", "blurb": "Kuala Lumpur's landmark 88-storey towers, with a skybridge and observation deck open to visitors." },
+      { "name": "Langkawi", "blurb": "A duty-free island group with sandy beaches, mangrove boat tours and the SkyCab cable car." },
+      { "name": "Genting Highlands", "blurb": "A cool hilltop resort about an hour from Kuala Lumpur, with theme parks and the Awana Skyway cable car." },
+      { "name": "George Town, Penang", "blurb": "A heritage city of shophouses, street art murals and some of Malaysia's best hawker food." },
+      { "name": "Cameron Highlands", "blurb": "Hill country with tea estates, strawberry farms and pleasantly cool weather." },
+      { "name": "Malacca", "blurb": "A historic port town with Dutch-era buildings, Jonker Street night market and river cruises." },
+      { "name": "Sunway Lagoon", "blurb": "A large water and theme park in Petaling Jaya that works well as a family day out." }
+    ],
+    "devotional": [
+      { "name": "Batu Caves", "blurb": "Limestone cave temples to Lord Murugan, reached by 272 steps beside a 42-metre golden statue." },
+      { "name": "Sri Mahamariamman Temple, Kuala Lumpur", "blurb": "The city's oldest Hindu temple, founded in 1873, with an ornate five-tier gopuram near Chinatown." },
+      { "name": "Kek Lok Si Temple", "blurb": "A large Buddhist temple complex on a Penang hillside, with a seven-tier pagoda and a bronze Guanyin statue." },
+      { "name": "Thean Hou Temple", "blurb": "A three-tiered Chinese temple on a Kuala Lumpur hill, dedicated to the sea goddess Mazu." },
+      { "name": "National Mosque of Malaysia", "blurb": "Masjid Negara, a modernist mosque with a star-shaped roof that welcomes visitors outside prayer times." }
+    ],
+    "dishes": [
+      { "name": "Nasi Lemak", "blurb": "Coconut rice with sambal, fried anchovies, peanuts, egg and often fried chicken.", "veg": false },
+      { "name": "Char Kway Teow", "blurb": "Flat rice noodles wok-fried with prawns, cockles, egg and bean sprouts.", "veg": false },
+      { "name": "Satay", "blurb": "Grilled skewers of marinated chicken or beef served with peanut sauce.", "veg": false },
+      { "name": "Roti Canai", "blurb": "Flaky, griddle-cooked flatbread served with dal and curry, a breakfast staple.", "veg": true },
+      { "name": "Banana Leaf Rice", "blurb": "South Indian-style rice served on a banana leaf with vegetables, rasam and papad.", "veg": true }
+    ],
+    "highlights": [
+      "Climbing the steps of Batu Caves",
+      "Petronas Towers skybridge visit",
+      "SkyCab cable car and Sky Bridge in Langkawi",
+      "Street art walk in George Town",
+      "Tea estate visit in the Cameron Highlands",
+      "Awana Skyway ride up to Genting"
+    ],
+    "indianTraveller": "Indian vegetarian food is widely available, especially in Brickfields (Kuala Lumpur's Little India) and Penang, direct flights from Hyderabad take about 4 hours, and Malaysia uses UK-style three-pin (Type G) sockets."
+  },
+  "indonesia": {
+    "capital": "Jakarta",
+    "currency": "Indonesian rupiah (IDR)",
+    "intro": "For most Indian travellers Indonesia means Bali, a largely Hindu island where temple ceremonies, offerings and Ramayana-themed dance are part of daily life. Beyond Bali's beaches and rice terraces, Java has the great temples of Borobudur and Prambanan, and Komodo National Park suits more adventurous families.",
+    "destinations": [
+      { "name": "Ubud", "blurb": "Bali's cultural centre, surrounded by rice fields, craft villages and the Sacred Monkey Forest." },
+      { "name": "Seminyak and Kuta", "blurb": "Bali's busiest beach strip, with surf schools, sunset cafes and shopping." },
+      { "name": "Nusa Penida", "blurb": "A rugged island off Bali known for Kelingking Beach's cliff viewpoint and manta ray snorkelling." },
+      { "name": "Tegallalang Rice Terraces", "blurb": "Stepped green paddy fields north of Ubud, with jungle swings and cafes along the ridge." },
+      { "name": "Mount Batur", "blurb": "An active volcano in north-east Bali, popular for pre-dawn treks to watch the sunrise." },
+      { "name": "Komodo National Park", "blurb": "Islands in eastern Indonesia where you can see Komodo dragons and snorkel over coral reefs." }
+    ],
+    "devotional": [
+      { "name": "Tanah Lot", "blurb": "A Balinese Hindu sea temple on a rock outcrop, best seen at sunset as the tide comes in." },
+      { "name": "Uluwatu Temple", "blurb": "A cliff-top temple on Bali's southern tip, known for its evening Kecak dance based on the Ramayana." },
+      { "name": "Besakih Temple", "blurb": "Bali's largest and holiest Hindu temple complex, on the slopes of Mount Agung." },
+      { "name": "Prambanan", "blurb": "A 9th-century Hindu temple compound in Central Java dedicated to the Trimurti, with tall Shiva shrines." },
+      { "name": "Borobudur", "blurb": "The world's largest Buddhist monument, a stepped stone mandala with over 2,600 relief panels." }
+    ],
+    "dishes": [
+      { "name": "Nasi Goreng", "blurb": "Indonesian fried rice with sweet soy sauce, usually topped with a fried egg and chicken.", "veg": false },
+      { "name": "Sate Lilit", "blurb": "Balinese minced fish or chicken mixed with coconut and spices, wrapped around lemongrass and grilled.", "veg": false },
+      { "name": "Beef Rendang", "blurb": "Beef slow-cooked in coconut milk and spices until dark and dry.", "veg": false },
+      { "name": "Tempeh Goreng", "blurb": "Fried slices of fermented soybean cake, crisp outside and nutty inside.", "veg": true },
+      { "name": "Pisang Goreng", "blurb": "Banana fritters fried in a light batter, sold as a snack across Bali and Java.", "veg": true }
+    ],
+    "highlights": [
+      "Sunrise trek up Mount Batur",
+      "Kecak fire dance at Uluwatu at sunset",
+      "Jungle swing over the Ubud rice terraces",
+      "Day trip to Nusa Penida's Kelingking Beach",
+      "White-water rafting on the Ayung River",
+      "Balinese cooking class in Ubud"
+    ],
+    "indianTraveller": "Indian and vegetarian restaurants are common in Kuta, Seminyak and Ubud, Bali is usually reached from Hyderabad with one stop via Singapore, Kuala Lumpur or Bangkok, and Indonesia uses European two-pin round sockets, so carry an adapter."
+  },
+  "vietnam": {
+    "capital": "Hanoi",
+    "currency": "Vietnamese dong (VND)",
+    "intro": "Vietnam has become a popular value-for-money holiday for Indian travellers, with an e-visa, good hotels and a long coastline. Most trips combine Hanoi and a Ha Long Bay cruise in the north with Da Nang and Hoi An in the centre, or Ho Chi Minh City and the Mekong Delta in the south.",
+    "destinations": [
+      { "name": "Ha Long Bay", "blurb": "Thousands of limestone islands rising from emerald water, best seen on an overnight cruise." },
+      { "name": "Hoi An Ancient Town", "blurb": "A well-preserved trading port with yellow shophouses, a Japanese bridge and lantern-lit evenings." },
+      { "name": "Ba Na Hills", "blurb": "A hill resort above Da Nang reached by cable car, home to the Golden Bridge held up by giant stone hands." },
+      { "name": "Ho Chi Minh City", "blurb": "Vietnam's busiest city, with French colonial buildings, Ben Thanh Market and the War Remnants Museum." },
+      { "name": "Cu Chi Tunnels", "blurb": "An underground tunnel network used during the Vietnam War, a day trip from Ho Chi Minh City." },
+      { "name": "Sapa", "blurb": "A mountain town in the far north with terraced rice fields and treks through ethnic minority villages." },
+      { "name": "Mekong Delta", "blurb": "A maze of rivers and canals where boat trips pass fruit orchards and floating markets." }
+    ],
+    "devotional": [
+      { "name": "My Son Sanctuary", "blurb": "Ruined brick temples to Lord Shiva built by the Cham kings, near Hoi An and listed by UNESCO." },
+      { "name": "Mariamman Temple, Ho Chi Minh City", "blurb": "A Tamil-built Hindu temple in District 1, also visited by local Vietnamese worshippers." },
+      { "name": "Tran Quoc Pagoda", "blurb": "Hanoi's oldest Buddhist pagoda, with a tall red stupa on a small island in West Lake." },
+      { "name": "Thien Mu Pagoda", "blurb": "A seven-storey pagoda on the Perfume River in Hue and an emblem of the old imperial city." }
+    ],
+    "dishes": [
+      { "name": "Pho", "blurb": "Rice noodle soup in a clear, aromatic beef or chicken broth with fresh herbs.", "veg": false },
+      { "name": "Banh Mi", "blurb": "A crisp baguette sandwich filled with pork or chicken, pate, pickles and coriander.", "veg": false },
+      { "name": "Bun Cha", "blurb": "Hanoi-style grilled pork patties with rice noodles, herbs and a dipping sauce.", "veg": false },
+      { "name": "Com Chay", "blurb": "Buddhist vegetarian rice meals with tofu, mushrooms and vegetables, served at dedicated chay restaurants.", "veg": true },
+      { "name": "Che", "blurb": "Sweet dessert soups and drinks made with beans, coconut milk, jelly and fruit.", "veg": true }
+    ],
+    "highlights": [
+      "Overnight cruise on Ha Long Bay",
+      "Lantern-lit evening walk in Hoi An",
+      "Cable car to the Golden Bridge at Ba Na Hills",
+      "Water puppet show in Hanoi",
+      "Crawling through the Cu Chi Tunnels",
+      "Boat trip through the Mekong Delta"
+    ],
+    "indianTraveller": "Indian restaurants operate in Hanoi, Da Nang and Ho Chi Minh City, and Buddhist chay restaurants serve vegetarian food, flights from Hyderabad take roughly 5–8 hours depending on routing, and carrying US dollars to exchange locally plus a universal adapter is practical."
+  },
+  "cambodia": {
+    "capital": "Phnom Penh",
+    "currency": "Cambodian riel (KHR); US dollars are widely used",
+    "intro": "Cambodia is a natural extension of a Thailand or Vietnam trip for Indian travellers interested in history, because the temples of Angkor were built as Hindu shrines before becoming Buddhist. Two or three days in Siem Reap covers the main Angkor sites, and Phnom Penh adds the Royal Palace and riverside markets.",
+    "destinations": [
+      { "name": "Siem Reap", "blurb": "The gateway town to Angkor, with the Old Market, Pub Street and a relaxed riverside." },
+      { "name": "Royal Palace, Phnom Penh", "blurb": "The king's residence, with gilded throne halls and gardens beside the Tonle Sap and Mekong rivers." },
+      { "name": "Tonle Sap Lake", "blurb": "Southeast Asia's largest freshwater lake, with stilted and floating villages near Siem Reap." },
+      { "name": "Tuol Sleng Genocide Museum", "blurb": "A former school turned Khmer Rouge prison, a sombre but important visit in Phnom Penh." },
+      { "name": "Koh Rong", "blurb": "An island off the southern coast with white-sand beaches and clear water for swimming." },
+      { "name": "Kampot", "blurb": "A slow-paced riverside town known for pepper farms, sunset boat rides and nearby Bokor Mountain." }
+    ],
+    "devotional": [
+      { "name": "Angkor Wat", "blurb": "The 12th-century temple built for Lord Vishnu, with long bas-reliefs of the Ramayana and the churning of the ocean." },
+      { "name": "Bayon Temple", "blurb": "The central temple of Angkor Thom, known for over 200 serene carved stone faces." },
+      { "name": "Ta Prohm", "blurb": "A Buddhist temple left partly in the grip of giant silk-cotton and strangler fig roots." },
+      { "name": "Banteay Srei", "blurb": "A small 10th-century Shiva temple in pink sandstone with some of the finest carving in Angkor." },
+      { "name": "Wat Phnom", "blurb": "A hilltop Buddhist temple marking the legendary founding spot of Phnom Penh." }
+    ],
+    "dishes": [
+      { "name": "Fish Amok", "blurb": "Fish steamed in banana leaf with coconut milk and kroeung, a lemongrass spice paste.", "veg": false },
+      { "name": "Beef Lok Lak", "blurb": "Stir-fried beef cubes served with rice, salad and a lime and pepper dipping sauce.", "veg": false },
+      { "name": "Kuy Teav", "blurb": "A breakfast noodle soup with pork broth, sliced meat and fresh herbs.", "veg": false },
+      { "name": "Num Ansom Chek", "blurb": "Sticky rice wrapped around banana in a banana leaf and steamed.", "veg": true },
+      { "name": "Kralan", "blurb": "Sticky rice, coconut milk and beans roasted inside bamboo tubes over charcoal.", "veg": true }
+    ],
+    "highlights": [
+      "Sunrise over Angkor Wat",
+      "Tuk-tuk circuit of the Angkor temples",
+      "Boat trip to the floating villages of Tonle Sap",
+      "Apsara dance dinner show in Siem Reap",
+      "Phare circus performance in Siem Reap",
+      "Evening walk along Phnom Penh's riverside"
+    ],
+    "indianTraveller": "Several Indian restaurants operate in Siem Reap and Phnom Penh, there are no direct flights from Hyderabad so most travellers connect via Bangkok, Singapore or Kuala Lumpur, and carrying clean US dollar notes plus a universal adapter makes daily spending easy."
+  },
+  "laos": {
+    "capital": "Vientiane",
+    "currency": "Lao kip (LAK)",
+    "intro": "Laos is a quiet, unhurried destination best suited to Indian travellers who enjoy Buddhist culture, rivers and waterfalls rather than nightlife or shopping. Luang Prabang, a UNESCO-listed town of monasteries, is the highlight, and it combines well with Vang Vieng and the capital Vientiane, now linked by fast trains.",
+    "destinations": [
+      { "name": "Luang Prabang", "blurb": "A riverside town of teak houses, French-era villas and saffron-robed monks, listed by UNESCO." },
+      { "name": "Kuang Si Falls", "blurb": "Tiered turquoise pools and waterfalls outside Luang Prabang, with a bear rescue centre at the entrance." },
+      { "name": "Vang Vieng", "blurb": "A small town ringed by limestone karsts, known for kayaking, caves and hot-air balloon rides." },
+      { "name": "Plain of Jars", "blurb": "Fields scattered with ancient stone jars near Phonsavan, a UNESCO World Heritage site." },
+      { "name": "Si Phan Don", "blurb": "The Four Thousand Islands on the Mekong in the far south, with waterfalls and laid-back river life." },
+      { "name": "Patuxai", "blurb": "Vientiane's victory monument with a rooftop viewpoint over the city's main boulevard." }
+    ],
+    "devotional": [
+      { "name": "Pha That Luang", "blurb": "A gold-covered stupa in Vientiane and the most important national monument of Laos." },
+      { "name": "Wat Xieng Thong", "blurb": "Luang Prabang's finest monastery, with sweeping tiered roofs and a glass-mosaic tree of life." },
+      { "name": "Vat Phou", "blurb": "A Khmer-era temple complex near Champasak, originally dedicated to Shiva and now a UNESCO site." },
+      { "name": "Wat Si Saket", "blurb": "Vientiane's oldest surviving temple, its cloister walls lined with thousands of small Buddha images." }
+    ],
+    "dishes": [
+      { "name": "Larb", "blurb": "A minced meat or fish salad with lime, mint, chilli and toasted rice powder.", "veg": false },
+      { "name": "Khao Piak Sen", "blurb": "Thick hand-cut rice noodles in a chicken broth, a comforting breakfast dish.", "veg": false },
+      { "name": "Tam Mak Hoong", "blurb": "Lao green papaya salad pounded with chilli, lime and fermented fish sauce.", "veg": false },
+      { "name": "Khao Niao", "blurb": "Sticky rice steamed in bamboo baskets and eaten by hand with every meal.", "veg": true },
+      { "name": "Khao Lam", "blurb": "Sticky rice with coconut milk, sugar and beans roasted in bamboo tubes.", "veg": true }
+    ],
+    "highlights": [
+      "Morning alms-giving procession in Luang Prabang",
+      "Swimming in the pools of Kuang Si Falls",
+      "Sunset from the top of Mount Phousi",
+      "Slow boat journey on the Mekong",
+      "Kayaking among the karsts of Vang Vieng",
+      "Luang Prabang night market"
+    ],
+    "indianTraveller": "Indian restaurants can be found in Vientiane, Luang Prabang and Vang Vieng but vegetarian choices are limited elsewhere, there are no direct flights from Hyderabad so travellers usually connect via Bangkok or Hanoi, and carrying US dollars plus a universal adapter is sensible."
+  },
+  "uae": {
+    "capital": "Abu Dhabi",
+    "currency": "UAE dirham (AED)",
+    "intro": "The UAE is the closest big international holiday from Hyderabad, and Dubai and Abu Dhabi are built for families, with theme parks, malls, desert safaris and Indian food everywhere. The BAPS Hindu Mandir in Abu Dhabi has added a strong reason for devotional travellers to include the capital.",
+    "destinations": [
+      { "name": "Burj Khalifa", "blurb": "The world's tallest building, with observation decks on levels 124, 125 and 148." },
+      { "name": "Dubai Mall and Dubai Fountain", "blurb": "A huge mall with an aquarium and ice rink, beside the evening musical fountain show." },
+      { "name": "Palm Jumeirah", "blurb": "A palm-shaped artificial island with beach resorts, Atlantis Aquaventure and The View observation deck." },
+      { "name": "Dubai Frame", "blurb": "A 150-metre picture-frame structure with a glass-floored bridge between old and new Dubai." },
+      { "name": "Yas Island", "blurb": "Abu Dhabi's leisure island with Ferrari World, Warner Bros. World and Yas Waterworld." },
+      { "name": "Louvre Abu Dhabi", "blurb": "An art museum on Saadiyat Island under a vast perforated dome that filters the sunlight." },
+      { "name": "Dubai Desert", "blurb": "Red dunes on the city's edge, used for 4x4 safaris, camel rides and evening camp dinners." }
+    ],
+    "devotional": [
+      { "name": "BAPS Hindu Mandir, Abu Dhabi", "blurb": "A hand-carved stone mandir at Abu Mureikhah, opened in 2024 as the first traditional Hindu stone temple in the Middle East." },
+      { "name": "Hindu Temple, Jebel Ali", "blurb": "A Dubai temple opened in 2022 that houses deities from several traditions under one roof." },
+      { "name": "Guru Nanak Darbar, Jebel Ali", "blurb": "Dubai's large Sikh gurdwara, which serves langar to all visitors." },
+      { "name": "Sheikh Zayed Grand Mosque", "blurb": "Abu Dhabi's white marble mosque with 82 domes, open to visitors of all faiths outside prayer times." },
+      { "name": "Jumeirah Mosque", "blurb": "A stone mosque in Dubai that offers guided tours explaining Islam and Emirati culture." }
+    ],
+    "dishes": [
+      { "name": "Machboos", "blurb": "Spiced rice cooked with chicken, lamb or fish and dried black lime.", "veg": false },
+      { "name": "Harees", "blurb": "Wheat and meat slow-cooked to a smooth porridge, traditional during Ramadan.", "veg": false },
+      { "name": "Shawarma", "blurb": "Spit-roasted chicken or lamb wrapped in flatbread with garlic sauce and pickles.", "veg": false },
+      { "name": "Luqaimat", "blurb": "Small crisp dumplings drizzled with date syrup and sesame seeds.", "veg": true },
+      { "name": "Falafel", "blurb": "Fried chickpea fritters served in pita with tahini and salad, sold all over the Gulf.", "veg": true }
+    ],
+    "highlights": [
+      "Desert safari with dune drive and camp dinner",
+      "At the Top observation deck of the Burj Khalifa",
+      "Evening Dubai Fountain show",
+      "Abra boat ride across Dubai Creek",
+      "Dhow dinner cruise at Dubai Marina",
+      "Browsing the gold and spice souks in Deira"
+    ],
+    "indianTraveller": "Indian vegetarian, Jain and South Indian food is available almost everywhere, direct flights from Hyderabad take about 3.5–4 hours, and the UAE uses UK-style three-pin (Type G) sockets."
+  },
+  "oman": {
+    "capital": "Muscat",
+    "currency": "Omani rial (OMR)",
+    "intro": "Oman is a calmer, more traditional alternative to Dubai, with forts, mountains, desert and turquoise wadis within a few hours' drive of Muscat. Indian merchants have lived in Muscat for centuries, so Indian food and long-established Hindu temples are part of the city.",
+    "destinations": [
+      { "name": "Mutrah Corniche and Souq", "blurb": "Muscat's harbour-front promenade and an old covered market selling frankincense, silver and halwa." },
+      { "name": "Wahiba Sands", "blurb": "Rolling orange dunes where you can stay overnight in a desert camp." },
+      { "name": "Wadi Shab", "blurb": "A gorge on the coast road to Sur with emerald pools and a cave waterfall reached by a short swim." },
+      { "name": "Nizwa Fort", "blurb": "A 17th-century fort with a huge round tower in Oman's old interior capital." },
+      { "name": "Jebel Akhdar", "blurb": "The Green Mountain, with terraced villages, pomegranate orchards and cooler summer temperatures." },
+      { "name": "Musandam", "blurb": "A northern peninsula of fjord-like inlets explored by dhow from Khasab, often with dolphins alongside." },
+      { "name": "Royal Opera House Muscat", "blurb": "An elegant marble opera house that hosts international concerts and offers daytime tours." }
+    ],
+    "devotional": [
+      { "name": "Sultan Qaboos Grand Mosque", "blurb": "Muscat's main mosque, with a vast hand-woven carpet and crystal chandelier, open to visitors on weekday mornings." },
+      { "name": "Shri Motishwar Mandir", "blurb": "A Shiva temple in old Muscat, believed to be over a century old and among the oldest Hindu temples in the Gulf." },
+      { "name": "Shri Krishna Temple, Darsait", "blurb": "A Krishna temple in Muscat that is a gathering point for the Indian community during festivals." }
+    ],
+    "dishes": [
+      { "name": "Shuwa", "blurb": "Spiced lamb or goat wrapped in leaves and slow-cooked for up to two days in an underground pit.", "veg": false },
+      { "name": "Majboos", "blurb": "Fragrant spiced rice cooked with chicken or mutton, Oman's everyday celebration dish.", "veg": false },
+      { "name": "Mishkak", "blurb": "Marinated meat skewers grilled over charcoal, sold at evening street stalls.", "veg": false },
+      { "name": "Omani Halwa", "blurb": "A dense, glossy sweet made with sugar, ghee, rose water, saffron and nuts.", "veg": true },
+      { "name": "Kahwa and Dates", "blurb": "Cardamom-scented Omani coffee served with fresh dates as a gesture of welcome.", "veg": true }
+    ],
+    "highlights": [
+      "Dhow cruise through the Musandam fjords",
+      "Overnight desert camp in Wahiba Sands",
+      "Swimming in the pools of Wadi Shab",
+      "Friday livestock market at Nizwa",
+      "Turtle watching at Ras al Jinz",
+      "Evening stroll along the Mutrah Corniche"
+    ],
+    "indianTraveller": "Indian restaurants are common in Muscat and larger towns, direct flights from Hyderabad take about 3.5 hours, and Oman uses UK-style three-pin (Type G) sockets."
+  },
+  "qatar": {
+    "capital": "Doha",
+    "currency": "Qatari riyal (QAR)",
+    "intro": "Qatar works well as a short city break or a stopover on a longer journey, with Doha's museums, souqs and waterfront within easy reach of each other. A desert trip to the Inland Sea adds adventure, and the large Indian community keeps Indian food widely available.",
+    "destinations": [
+      { "name": "Museum of Islamic Art", "blurb": "An I. M. Pei-designed museum on its own island, with a park looking back at the Doha skyline." },
+      { "name": "Souq Waqif", "blurb": "A restored old market of spices, textiles and falcons, lively in the evenings." },
+      { "name": "National Museum of Qatar", "blurb": "A museum shaped like a desert rose, telling the story of Qatar from Bedouin life to oil." },
+      { "name": "The Pearl-Qatar", "blurb": "An artificial island with marinas, Venetian-style canals and waterfront cafes." },
+      { "name": "Katara Cultural Village", "blurb": "A seaside cultural district with an amphitheatre, galleries, a beach and restaurants." },
+      { "name": "Khor Al Adaid", "blurb": "The Inland Sea in the south, where tall dunes meet a tidal inlet, reached by 4x4." },
+      { "name": "Doha Corniche", "blurb": "A seven-kilometre waterfront promenade around Doha Bay, ideal for an evening walk." }
+    ],
+    "devotional": [
+      { "name": "Imam Muhammad ibn Abd al-Wahhab Mosque", "blurb": "Qatar's State Grand Mosque, with 90 domes and room for thousands of worshippers." },
+      { "name": "Abdulla Bin Zaid Al Mahmoud Islamic Cultural Center", "blurb": "Known as the Spiral Mosque, a landmark near Souq Waqif that offers guided visits." },
+      { "name": "Church of Our Lady of the Rosary", "blurb": "Qatar's first Catholic church, opened in 2008 in the Mesaimeer religious complex." }
+    ],
+    "dishes": [
+      { "name": "Machboos", "blurb": "Spiced rice with chicken, lamb or fish, the national dish of Qatar.", "veg": false },
+      { "name": "Madrouba", "blurb": "Rice and chicken cooked down with spices and ghee into a thick, comforting porridge.", "veg": false },
+      { "name": "Thareed", "blurb": "Thin bread soaked in a spiced meat and vegetable stew, popular in Ramadan.", "veg": false },
+      { "name": "Ful Medames", "blurb": "Slow-cooked fava beans with olive oil, cumin and lemon, a common breakfast.", "veg": true },
+      { "name": "Luqaimat", "blurb": "Crisp sweet dumplings coated in date syrup.", "veg": true }
+    ],
+    "highlights": [
+      "4x4 desert trip to the Inland Sea",
+      "Dhow cruise along the Doha Corniche",
+      "Evening at Souq Waqif and its falcon souq",
+      "Sunset in the MIA Park",
+      "Kayaking through the mangroves at Al Thakira",
+      "Walk around Msheireb Downtown"
+    ],
+    "indianTraveller": "Indian vegetarian food is easy to find across Doha, direct flights from Hyderabad take about 4 hours, and Qatar uses UK-style three-pin (Type G) sockets."
+  },
+  "saudi-arabia": {
+    "capital": "Riyadh",
+    "currency": "Saudi riyal (SAR)",
+    "intro": "For many of our customers Saudi Arabia means Umrah, a pilgrimage to Makkah and Madinah that is often combined with ziyarat of nearby historic sites. The country also now issues tourist visas, opening up Jeddah's old town, the Nabataean tombs of AlUla and the desert landscapes around Riyadh.",
+    "destinations": [
+      { "name": "AlUla and Hegra", "blurb": "Sandstone valleys with over a hundred Nabataean tombs at Hegra, Saudi Arabia's first UNESCO site." },
+      { "name": "Edge of the World", "blurb": "Sheer cliffs of the Tuwaiq escarpment north-west of Riyadh with views across the desert plain." },
+      { "name": "Diriyah", "blurb": "The mud-brick At-Turaif district, birthplace of the Saudi state, now restored with museums and restaurants." },
+      { "name": "Al-Balad, Jeddah", "blurb": "Jeddah's historic quarter of coral-stone houses with carved wooden balconies." },
+      { "name": "Jeddah Corniche", "blurb": "A long Red Sea waterfront with parks, sculptures and the King Fahd Fountain." },
+      { "name": "Abha", "blurb": "A mountain city in the Asir region with a cooler climate, cable cars and painted village houses." }
+    ],
+    "devotional": [
+      { "name": "Masjid al-Haram", "blurb": "The Grand Mosque in Makkah surrounding the Kaaba, the centre of Umrah and Hajj; Makkah is open to Muslims only." },
+      { "name": "Al-Masjid an-Nabawi", "blurb": "The Prophet's Mosque in Madinah, visited by pilgrims before or after Umrah; entry to the mosque is for Muslims only." },
+      { "name": "Quba Mosque", "blurb": "The first mosque in Islam, on the edge of Madinah, a regular stop on ziyarat tours for Muslim pilgrims." }
+    ],
+    "dishes": [
+      { "name": "Kabsa", "blurb": "Long-grain rice cooked with spices and chicken or lamb, the national dish.", "veg": false },
+      { "name": "Mandi", "blurb": "Meat and rice slow-cooked in a pit oven for a tender, smoky result.", "veg": false },
+      { "name": "Saleeg", "blurb": "Creamy rice cooked in milk and broth, served with chicken, a Hijazi favourite.", "veg": false },
+      { "name": "Areeka", "blurb": "A Southern dish of wheat dough kneaded with dates, topped with honey and ghee.", "veg": true },
+      { "name": "Ajwa Dates", "blurb": "Soft, dark dates grown around Madinah, a favourite gift for pilgrims to bring home.", "veg": true }
+    ],
+    "highlights": [
+      "Guided Umrah with a group from Hyderabad",
+      "Ziyarat tour of historic sites around Madinah",
+      "Exploring Hegra's Nabataean tombs at AlUla",
+      "Sunset at the Edge of the World",
+      "Evening walk through Jeddah's Al-Balad",
+      "Shopping for dates and attar in Madinah"
+    ],
+    "indianTraveller": "Indian food is widely available in Makkah, Madinah, Jeddah and Riyadh, direct flights from Hyderabad to Jeddah take about 5 hours, and since sockets vary between UK-style and other types, a universal adapter is the safest choice."
+  },
+  "jordan": {
+    "capital": "Amman",
+    "currency": "Jordanian dinar (JOD)",
+    "intro": "Jordan packs a lot into a week: the rose-red city of Petra, the desert of Wadi Rum, Roman ruins at Jerash and a float in the Dead Sea. It is also important to Christian pilgrims for Mount Nebo and the baptism site on the Jordan River, and its mezze-style food makes vegetarian travel straightforward.",
+    "destinations": [
+      { "name": "Petra", "blurb": "The Nabataean city carved into pink sandstone, entered through the narrow Siq gorge to the Treasury." },
+      { "name": "Wadi Rum", "blurb": "A red desert valley of sandstone mountains, explored by jeep with nights in Bedouin camps." },
+      { "name": "Dead Sea", "blurb": "The lowest point on land, where the salty water lets you float with ease." },
+      { "name": "Jerash", "blurb": "One of the best-preserved Roman cities outside Italy, with colonnaded streets and theatres." },
+      { "name": "Amman Citadel", "blurb": "A hilltop site with the Temple of Hercules ruins and wide views over the capital." },
+      { "name": "Aqaba", "blurb": "Jordan's Red Sea port, good for snorkelling and glass-bottom boat trips over coral reefs." }
+    ],
+    "devotional": [
+      { "name": "Mount Nebo", "blurb": "The hill where Moses is believed to have seen the Promised Land, with a memorial church and Byzantine mosaics." },
+      { "name": "Bethany Beyond the Jordan", "blurb": "Al-Maghtas, the UNESCO-listed site on the Jordan River identified as where Jesus was baptised." },
+      { "name": "St George's Church, Madaba", "blurb": "A Greek Orthodox church famous for its 6th-century mosaic map of the Holy Land." },
+      { "name": "King Abdullah I Mosque", "blurb": "Amman's blue-domed mosque, which welcomes visitors outside prayer times." }
+    ],
+    "dishes": [
+      { "name": "Mansaf", "blurb": "Lamb cooked in fermented dried yoghurt sauce and served over rice, the national dish.", "veg": false },
+      { "name": "Maqluba", "blurb": "An upside-down pot of rice, fried vegetables and chicken, flipped onto a platter to serve.", "veg": false },
+      { "name": "Zarb", "blurb": "A Bedouin barbecue of meat and vegetables slow-cooked in an underground oven in Wadi Rum.", "veg": false },
+      { "name": "Hummus", "blurb": "Smooth chickpea and tahini dip with olive oil, eaten with warm bread at almost every meal.", "veg": true },
+      { "name": "Knafeh", "blurb": "Warm, soft white cheese under shredded pastry, soaked in sugar syrup.", "veg": true }
+    ],
+    "highlights": [
+      "Walking the Siq to Petra's Treasury",
+      "Petra by Night candlelit evening",
+      "Jeep tour and desert camp in Wadi Rum",
+      "Floating in the Dead Sea",
+      "Snorkelling the Red Sea at Aqaba",
+      "Bedouin zarb dinner under the stars"
+    ],
+    "indianTraveller": "Vegetarian mezze is easy to find everywhere and there are Indian restaurants in Amman and Aqaba, flights from Hyderabad usually connect via a Gulf hub and take around 7–9 hours, sockets vary so carry a universal adapter, and the Jordan Pass can bundle the visa fee with entry to Petra."
+  },
+  "turkey": {
+    "capital": "Ankara",
+    "currency": "Turkish lira (TRY)",
+    "intro": "Turkey has become a favourite with Indian honeymooners and families for its mix of Istanbul's history, Cappadocia's balloon flights and the Aegean and Mediterranean coasts. A week to ten days covers Istanbul, Cappadocia and Pamukkale comfortably, often with Ephesus or Antalya added.",
+    "destinations": [
+      { "name": "Istanbul", "blurb": "A city across two continents, with Topkapi Palace, the Grand Bazaar and ferries on the Bosphorus." },
+      { "name": "Cappadocia", "blurb": "A valley landscape of fairy chimneys, cave hotels and early-morning hot-air balloons." },
+      { "name": "Pamukkale", "blurb": "White travertine terraces of warm mineral water beside the ruins of ancient Hierapolis." },
+      { "name": "Ephesus", "blurb": "A large ancient Greek and Roman city with the two-storey Library of Celsus facade." },
+      { "name": "Antalya", "blurb": "A Mediterranean resort city with an old harbour, beaches and nearby waterfalls." },
+      { "name": "Bodrum", "blurb": "An Aegean town of whitewashed houses, a crusader castle and boat trips to quiet coves." }
+    ],
+    "devotional": [
+      { "name": "Hagia Sophia", "blurb": "Built as a cathedral in 537, later a mosque and museum, and a working mosque again since 2020." },
+      { "name": "Blue Mosque", "blurb": "The Sultan Ahmed Mosque, named for the blue Iznik tiles inside, with six minarets." },
+      { "name": "Suleymaniye Mosque", "blurb": "Sinan's 16th-century masterpiece on Istanbul's third hill, overlooking the Golden Horn." },
+      { "name": "House of the Virgin Mary", "blurb": "A small stone chapel near Ephesus, venerated by Christians and Muslims as Mary's last home." },
+      { "name": "Mevlana Museum", "blurb": "The mausoleum of the Sufi poet Rumi in Konya, under its distinctive green-tiled dome." }
+    ],
+    "dishes": [
+      { "name": "Doner Kebab", "blurb": "Thin slices of meat carved from a rotating spit and served in bread or on rice.", "veg": false },
+      { "name": "Lahmacun", "blurb": "A thin, crisp flatbread spread with minced meat, tomato and herbs, rolled up with salad.", "veg": false },
+      { "name": "Mercimek Corbasi", "blurb": "A smooth red lentil soup with lemon and paprika butter, served in almost every restaurant.", "veg": true },
+      { "name": "Imam Bayildi", "blurb": "Whole aubergine stuffed with onion, tomato and garlic and slow-cooked in olive oil.", "veg": true },
+      { "name": "Baklava", "blurb": "Layers of thin pastry filled with pistachio or walnut and soaked in syrup.", "veg": true }
+    ],
+    "highlights": [
+      "Sunrise hot-air balloon flight over Cappadocia",
+      "Bosphorus cruise between Europe and Asia",
+      "Walking the travertine terraces of Pamukkale",
+      "Bargaining in Istanbul's Grand Bazaar",
+      "Traditional Turkish hamam experience",
+      "Whirling dervish ceremony"
+    ],
+    "indianTraveller": "Indian restaurants are easy to find in Istanbul and there are some in Cappadocia and Antalya, flights from Hyderabad take roughly 7–9 hours direct or with one stop, and Turkey uses European two-pin round sockets, so carry an adapter and a forex card."
+  }
+}

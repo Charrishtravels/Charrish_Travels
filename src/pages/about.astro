@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import RouteWatermark from '../components/RouteWatermark.astro';
+import WhatsAppIcon from '../components/WhatsAppIcon.astro';
 import { SITE } from '../consts';
 
 import southIndianTempleTank from '../assets/hero/south-indian-temple-tank.jpg';
@@ -17,6 +18,27 @@ import heritageTourOfIndia from '../assets/heritage-tour-of-india.jpg';
 // 8-point compass star matching the logo's star mark.
 const STAR_PATH =
   'M10 0 L10.77 8.15 L14.24 5.76 L11.85 9.23 L20 10 L11.85 10.77 L14.24 14.24 L10.77 11.85 L10 20 L9.23 11.85 L5.76 14.24 L8.15 10.77 L0 10 L8.15 9.23 L5.76 5.76 L9.23 8.15 Z';
+
+const SERVICES = [
+  'Domestic holidays',
+  'International holidays',
+  'Pilgrimage tours',
+  'Family vacations',
+  'Group tours',
+  'Hotel reservations',
+  'Flight bookings',
+  'Visa assistance',
+];
+
+const VISA_TYPES = ['Tourist visas', 'Business visas', 'Family visit visas', 'Other visitor visas'];
+const VISA_COUNTRIES = ['USA', 'UK', 'Europe (Schengen)', 'Canada', 'Australia', 'Dubai', 'Singapore', 'Malaysia', 'Thailand', 'and more'];
+const VISA_SERVICES = [
+  'Visa requirement guidance',
+  'Document checklist and verification assistance',
+  'Application form preparation',
+  'Appointment and biometrics guidance',
+  'Visa application tracking support',
+];
 
 const PROCESS = [
   {
@@ -72,7 +94,7 @@ const COLUMNS = Array.from({ length: 6 }, (_, c) =>
 const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hidden lg:block'];
 ---
 
-<Layout title="About Us" description={`The story behind ${SITE.name}.`}>
+<Layout title="About Us" description={`${SITE.name}, Hyderabad – customised domestic and international holidays, pilgrimage tours, group tours, hotel and flight bookings, and visa assistance.`}>
   <section class="relative isolate overflow-hidden">
     {/* Scrolling photo wall behind the arch; alternate columns run in opposite
         directions. Washed with cream so the arch stays the focal point. */}
@@ -123,26 +145,48 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
     {/* The opening line runs the full measure rather than a half column, so it
         breaks two or three times instead of five. */}
     <div data-reveal="up">
-      <p class="font-brand max-w-5xl text-2xl leading-snug text-earth sm:text-3xl">
-        {SITE.name} was built with a simple belief — every journey deserves thoughtful planning,
-        honest communication, and dedicated support.
+      <p class="text-[11px] font-semibold tracking-[0.2em] text-saffron-deep uppercase">{SITE.name} – Your Journey, Our Commitment</p>
+      <p class="font-brand mt-3 max-w-5xl text-2xl leading-snug text-earth sm:text-3xl">
+        At {SITE.name}, we believe every journey deserves thoughtful planning and personal attention.
       </p>
 
-      <div class="mt-10">
-        <div class="max-w-[62ch] space-y-4 border-l-2 border-temple-gold/60 pl-5 text-xs leading-relaxed text-ink-muted sm:text-sm">
+      <div class="mt-10 grid gap-10 lg:grid-cols-[minmax(0,62ch)_1fr] lg:gap-16">
+        <div class="space-y-4 border-l-2 border-temple-gold/60 pl-5 text-xs leading-relaxed text-ink-muted sm:text-sm">
           <p>
-            From family holidays and honeymoon trips to group tours, pilgrimage journeys, and
-            international vacations, we create personalized travel experiences based on your needs,
-            budget, and preferences.
+            We are a travel company offering customised domestic and international holidays, pilgrimage
+            tours, family vacations, group tours, hotel reservations, flight bookings and comprehensive
+            visa assistance.
           </p>
           <p>
-            Based in Hyderabad, we help travellers explore destinations across India and beyond, with
-            support for accommodation, transportation, sightseeing, guided experiences, and visa
-            assistance.
+            From carefully planned itineraries to comfortable accommodation, reliable transportation,
+            experienced local guides and on-ground coordination, we take care of every detail to make
+            travel smooth and memorable.
           </p>
+          <p>
+            With a strong network of travel partners and service providers across destinations, we bring
+            together the right arrangements to suit every traveller's preferences, requirements and budget.
+          </p>
+          <p>
+            Whether it is a spiritual journey, a family holiday, a group tour or an international vacation,
+            we are committed to delivering dependable service and personalised travel experiences.
+          </p>
+          <p class="font-brand pt-1 text-base text-saffron-deep sm:text-lg">{SITE.name} – Travel Beyond Expectations.</p>
         </div>
 
-        <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-4">
+        <div>
+          <h2 class="text-[11px] font-semibold tracking-[0.2em] text-maroon uppercase">What we do</h2>
+          <ul class="mt-4 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+            {SERVICES.map((service) => (
+              <li class="flex items-center gap-2.5 rounded-xl border border-line bg-card px-4 py-3 text-xs font-medium text-earth sm:text-sm">
+                <svg viewBox="0 0 20 20" class="h-3.5 w-3.5 shrink-0 text-temple-gold" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+                {service}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+        <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
           <p class="inline-flex items-center gap-2 text-xs font-medium text-maroon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true">
               <path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z" />
@@ -151,14 +195,13 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
             Hyderabad, India
           </p>
           <a
-            href="/tours"
+            href="/tours/domestic"
             class="inline-flex w-fit items-center gap-2 rounded-full bg-saffron px-6 py-3 text-xs font-semibold text-on-saffron transition-all duration-200 hover:scale-105 hover:bg-saffron-deep active:scale-95"
           >
             View our tours
             <span class="text-on-saffron/70" aria-hidden="true">→</span>
           </a>
         </div>
-      </div>
     </div>
   </section>
 
@@ -222,7 +265,7 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
           </p>
         </blockquote>
         <a
-          href={`https://wa.me/${SITE.whatsapp}`}
+          href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent("Hi Charrish Travels, I'd like to plan a trip.")}`}
           target="_blank"
           rel="noopener"
           class="mt-7 ml-5 inline-flex w-fit items-center gap-2 rounded-full bg-saffron px-6 py-3 text-xs font-semibold text-on-saffron transition-all duration-200 hover:scale-105 hover:bg-saffron-deep active:scale-95"
@@ -230,6 +273,67 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
           Tell us about your trip
         </a>
       </aside>
+      </div>
+    </div>
+  </section>
+
+  {/* Visa assistance */}
+  <section id="visa-assistance" class="mx-auto max-w-7xl scroll-mt-20 px-4 pt-16 sm:px-6 lg:pt-24" aria-labelledby="visa-heading">
+    <div class="overflow-hidden rounded-3xl border border-line bg-card">
+      <div class="grid lg:grid-cols-[1.1fr_1fr]">
+        <div class="p-6 sm:p-10" data-reveal="up">
+          <p class="flex items-center gap-2 text-[11px] font-semibold tracking-[0.2em] text-saffron-deep uppercase">
+            <svg viewBox="0 0 20 20" class="h-3.5 w-3.5 text-temple-gold" aria-hidden="true"><path d={STAR_PATH} fill="currentColor" /></svg>
+            Visa Assistance
+          </p>
+          <h2 id="visa-heading" class="font-brand mt-3 text-3xl leading-tight text-earth sm:text-4xl">Travel with confidence</h2>
+          <p class="mt-4 max-w-[62ch] text-sm leading-relaxed text-ink-muted">
+            At {SITE.name}, we make your international travel preparation easier with reliable visa guidance
+            and documentation assistance.
+          </p>
+          <p class="mt-3 max-w-[62ch] text-sm leading-relaxed text-ink-muted">
+            We assist with tourist visas, business visas, family visit visas and other visitor visa categories
+            for destinations worldwide.
+          </p>
+
+          <h3 class="mt-7 text-[11px] font-semibold tracking-[0.18em] text-maroon uppercase">Visa types</h3>
+          <ul class="mt-3 flex flex-wrap gap-2">
+            {VISA_TYPES.map((t) => <li class="rounded-full bg-sand px-3 py-1.5 text-xs font-medium text-earth">{t}</li>)}
+          </ul>
+
+          <h3 class="mt-6 text-[11px] font-semibold tracking-[0.18em] text-maroon uppercase">Destinations include</h3>
+          <ul class="mt-3 flex flex-wrap gap-2">
+            {VISA_COUNTRIES.map((c) => <li class="rounded-full border border-line px-3 py-1.5 text-xs text-ink">{c}</li>)}
+          </ul>
+        </div>
+
+        <div class="flex flex-col bg-sand p-6 sm:p-10" data-reveal="up" style="--reveal-delay: 120ms">
+          <h3 class="font-brand text-2xl text-earth">Our services include</h3>
+          <ol class="mt-5 space-y-3">
+            {VISA_SERVICES.map((service, i) => (
+              <li class="flex items-start gap-3 text-sm text-ink">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-maroon text-[11px] font-semibold text-on-dark">{i + 1}</span>
+                <span class="pt-0.5">{service}</span>
+              </li>
+            ))}
+          </ol>
+          <p class="font-brand mt-7 text-lg leading-snug text-saffron-deep">
+            Travel with confidence. Let {SITE.name} guide you through your visa journey!
+          </p>
+          <a
+            href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent("Hi Charrish Travels, I need help with a visa application.")}`}
+            target="_blank"
+            rel="noopener"
+            class="mt-5 inline-flex min-h-11 w-fit items-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-xs font-semibold text-earth transition-all duration-200 hover:scale-105 active:scale-95"
+          >
+            <WhatsAppIcon class="h-4 w-4" />
+            Ask about your visa
+          </a>
+          <p class="mt-auto pt-6 text-[11px] leading-relaxed text-ink-muted">
+            <strong class="font-semibold">Note:</strong> Visa approval and processing timelines are solely at the discretion of
+            the respective embassy or immigration authority. We do not guarantee visa approvals.
+          </p>
+        </div>
       </div>
     </div>
   </section>

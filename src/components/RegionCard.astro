@@ -1,0 +1,59 @@
+---
+import { Image } from 'astro:assets';
+import { regionHref, type RegionWithPhoto } from '../data/india';
+
+interface Props {
+  region: RegionWithPhoto;
+}
+
+const { region } = Astro.props;
+const searchText = [region.name, region.capital, region.zone, ...region.destinations.map((d) => d.name), ...region.devotional.map((d) => d.name)]
+  .join(' ')
+  .toLowerCase();
+---
+
+<a
+  href={regionHref(region.slug)}
+  data-region-card
+  data-zone={region.zone}
+  data-search={searchText}
+  class="group flex flex-col overflow-hidden rounded-2xl border border-line bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-temple-gold hover:shadow-xl focus-visible:border-saffron"
+>
+  <div class="relative aspect-[4/3] overflow-hidden bg-sand">
+    <Image
+      src={region.photo}
+      alt={region.photoAlt}
+      widths={[400, 640, 900]}
+      sizes="(min-width: 1280px) 300px, (min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+      loading="lazy"
+      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+    <span class="absolute top-3 left-3 rounded-full bg-page/90 px-2.5 py-1 text-[10px] font-semibold tracking-wider text-maroon uppercase">
+      {region.zone}
+    </span>
+  </div>
+
+  <div class="flex flex-1 flex-col p-5">
+    <h3 class="font-brand text-2xl text-earth">{region.name}</h3>
+    <p class="mt-1 text-xs leading-snug text-ink-muted">{region.tagline}</p>
+
+    <p class="mt-3 flex flex-wrap gap-x-3 text-[11px] font-medium text-maroon">
+      <span>{region.devotional.length} devotional</span>
+      <span aria-hidden="true">·</span>
+      <span>{region.destinations.length} sightseeing</span>
+    </p>
+
+    <ul class="mt-3 flex flex-wrap gap-1.5" aria-label={`Popular destinations in ${region.name}`}>
+      {region.destinations.slice(0, 5).map((d) => (
+        <li class="rounded-full bg-sand px-2.5 py-1 text-[11px] text-ink">{d.name}</li>
+      ))}
+      {region.destinations.length > 5 && (
+        <li class="rounded-full px-1.5 py-1 text-[11px] text-ink-muted">+{region.destinations.length - 5} more</li>
+      )}
+    </ul>
+
+    <p class="mt-auto pt-5 text-[11px] font-semibold tracking-wide text-saffron-deep uppercase">
+      Explore {region.name} <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-1">→</span>
+    </p>
+  </div>
+</a>

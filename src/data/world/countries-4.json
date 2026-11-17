@@ -1,0 +1,151 @@
+[
+  {
+    "slug": "philippines",
+    "name": "Philippines",
+    "region": "Southeast Asia",
+    "tagline": "Boracay's white sand, Palawan lagoons and the Chocolate Hills of Bohol",
+    "places": [
+      "Manila",
+      "Boracay",
+      "El Nido",
+      "Cebu",
+      "Bohol"
+    ],
+    "bestTime": "December to May",
+    "idealDuration": "6–8 days",
+    "visa": "Visa-free entry for short stays, or e-Visa for longer trips",
+    "photoArticle": "Chocolate Hills",
+    "photoAlt": "Rows of rounded grassy Chocolate Hills rolling across the countryside of Bohol"
+  },
+  {
+    "slug": "taiwan",
+    "name": "Taiwan",
+    "region": "East Asia",
+    "tagline": "Taipei night markets, Taroko Gorge and misty Sun Moon Lake",
+    "places": [
+      "Taipei",
+      "Jiufen",
+      "Taroko Gorge",
+      "Sun Moon Lake",
+      "Alishan",
+      "Kaohsiung"
+    ],
+    "bestTime": "October to April",
+    "idealDuration": "6–8 days",
+    "visa": "e-Visa (or online travel authorisation with certain other visas)",
+    "photoArticle": "Chiang Kai-shek Memorial Hall",
+    "photoAlt": "The white Chiang Kai-shek Memorial Hall with its blue tiled roof above a wide plaza in Taipei"
+  },
+  {
+    "slug": "bahrain",
+    "name": "Bahrain",
+    "region": "Middle East",
+    "tagline": "Old Manama souqs, a seaside fort and the Shrinathji temple",
+    "places": [
+      "Manama",
+      "Muharraq",
+      "Qal'at al-Bahrain",
+      "Tree of Life",
+      "Bahrain International Circuit"
+    ],
+    "bestTime": "November to March",
+    "idealDuration": "2–3 days",
+    "visa": "e-Visa (visa on arrival for some with other valid visas)",
+    "photoArticle": "Qal'at al-Bahrain",
+    "photoAlt": "The stone walls of Qal'at al-Bahrain fort on the coast north of Manama"
+  },
+  {
+    "slug": "kuwait",
+    "name": "Kuwait",
+    "region": "Middle East",
+    "tagline": "The Kuwait Towers, old Mubarakiya souq and a calm Gulf seafront",
+    "places": [
+      "Kuwait City",
+      "Kuwait Towers",
+      "Souq Al-Mubarakiya",
+      "Failaka Island",
+      "Sheikh Jaber Al-Ahmad Cultural Centre"
+    ],
+    "bestTime": "November to March",
+    "idealDuration": "2–3 days",
+    "visa": "Tourist e-Visa (check current eligibility before booking)",
+    "photoArticle": "Souq Al-Mubarakiya",
+    "photoAlt": "Lit-up lanes and shopfronts of Souq Al-Mubarakiya in Kuwait City at night"
+  },
+  {
+    "slug": "ireland",
+    "name": "Ireland",
+    "region": "Europe",
+    "tagline": "Dublin's old streets, the Cliffs of Moher and the green Ring of Kerry",
+    "places": [
+      "Dublin",
+      "Galway",
+      "Cliffs of Moher",
+      "Killarney",
+      "Cork",
+      "Wicklow Mountains"
+    ],
+    "bestTime": "May to September",
+    "idealDuration": "6–8 days",
+    "visa": "Irish visa (or UK BIVS where eligible)",
+    "photoArticle": "Cliffs of Moher",
+    "photoAlt": "The Cliffs of Moher dropping into the Atlantic, with O'Brien's Tower on the clifftop"
+  },
+  {
+    "slug": "denmark",
+    "name": "Denmark",
+    "region": "Europe",
+    "tagline": "Colourful Nyhavn, Tivoli Gardens and the original LEGOLAND",
+    "places": [
+      "Copenhagen",
+      "Helsingor",
+      "Roskilde",
+      "Odense",
+      "Billund",
+      "Aarhus"
+    ],
+    "bestTime": "May to September",
+    "idealDuration": "4–6 days",
+    "visa": "Schengen visa",
+    "photoArticle": "Nyhavn",
+    "photoAlt": "Brightly painted townhouses and wooden boats along the Nyhavn canal in Copenhagen"
+  },
+  {
+    "slug": "sweden",
+    "name": "Sweden",
+    "region": "Europe",
+    "tagline": "Stockholm's old town, island ferries and Lapland's northern lights",
+    "places": [
+      "Stockholm",
+      "Stockholm Archipelago",
+      "Gothenburg",
+      "Uppsala",
+      "Kiruna",
+      "Abisko"
+    ],
+    "bestTime": "June to August (December to March for northern lights)",
+    "idealDuration": "5–7 days",
+    "visa": "Schengen visa",
+    "photoArticle": "Gamla Stan",
+    "photoAlt": "The church spires and waterfront buildings of Gamla Stan, Stockholm's old town"
+  },
+  {
+    "slug": "iceland",
+    "name": "Iceland",
+    "region": "Europe",
+    "tagline": "Waterfalls, geysers, glacier lagoons and winter northern lights",
+    "places": [
+      "Reykjavik",
+      "Golden Circle",
+      "Vik",
+      "Jokulsarlon",
+      "Blue Lagoon",
+      "Snaefellsnes Peninsula"
+    ],
+    "bestTime": "June to August (September to March for northern lights)",
+    "idealDuration": "6–8 days",
+    "visa": "Schengen visa",
+    "photoArticle": "Gullfoss",
+    "photoAlt": "The two-tiered Gullfoss waterfall pouring into a deep canyon in southwest Iceland"
+  }
+]

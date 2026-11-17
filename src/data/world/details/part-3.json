@@ -1,0 +1,1163 @@
+{
+  "germany": {
+    "capital": "Berlin",
+    "currency": "Euro (EUR)",
+    "intro": "Germany suits Indian families who like a well-organised trip: fast trains link Berlin, Munich, Frankfurt and the Rhine, so a week can cover cities, castles and countryside without long road days. Summer brings river cruises and Black Forest drives, while late November to December fills town squares with Christmas markets. Frankfurt and Munich are common entry points, and both have a good spread of Indian restaurants.",
+    "destinations": [
+      {
+        "name": "Neuschwanstein Castle",
+        "blurb": "King Ludwig II's hilltop castle in Bavaria, reached by a short uphill walk or horse cart from the village of Hohenschwangau."
+      },
+      {
+        "name": "Brandenburg Gate and the Berlin Wall",
+        "blurb": "Berlin's landmark gate stands a short walk from the Reichstag, and the East Side Gallery keeps a long painted stretch of the old Wall."
+      },
+      {
+        "name": "Marienplatz, Munich",
+        "blurb": "Munich's central square, where the New Town Hall's Glockenspiel plays mechanical figures at 11 am and noon."
+      },
+      {
+        "name": "Heidelberg Old Town",
+        "blurb": "A university town on the Neckar River with a red sandstone castle ruin above cobbled lanes and the Old Bridge."
+      },
+      {
+        "name": "Rhine Valley",
+        "blurb": "The stretch between Rudesheim and Koblenz is lined with vineyards and hilltop castles, best seen from a day cruise boat."
+      },
+      {
+        "name": "Black Forest",
+        "blurb": "Wooded hills around Triberg known for cuckoo-clock workshops, the Triberg waterfalls and slow scenic drives."
+      },
+      {
+        "name": "Zugspitze",
+        "blurb": "Germany's highest peak at 2,962 m, reached by cog railway and cable car from Garmisch-Partenkirchen, with snow even in early summer."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Cologne Cathedral",
+        "blurb": "A soaring Gothic cathedral beside Cologne's main station that took over 600 years to complete and houses the Shrine of the Three Kings."
+      },
+      {
+        "name": "Aachen Cathedral",
+        "blurb": "Charlemagne's palace chapel from around 800 AD, one of Germany's first UNESCO World Heritage Sites, with a glittering octagonal dome."
+      },
+      {
+        "name": "Frauenkirche, Dresden",
+        "blurb": "A Baroque Lutheran church destroyed in 1945 and rebuilt stone by stone, reopening in 2005 as a symbol of reconciliation."
+      },
+      {
+        "name": "Sri Kamadchi Ampal Temple, Hamm",
+        "blurb": "A large South Indian-style Hindu temple in Hamm-Uentrop built by the Tamil community, known for its annual chariot festival."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Brezel",
+        "blurb": "The soft, salt-crusted Bavarian pretzel, eaten with butter or mustard at bakeries and beer gardens.",
+        "veg": true
+      },
+      {
+        "name": "Kaesespaetzle",
+        "blurb": "Soft egg noodles layered with melted mountain cheese and topped with crisp fried onions, a Swabian and Alpine favourite.",
+        "veg": false
+      },
+      {
+        "name": "Apfelstrudel",
+        "blurb": "Thin pastry rolled around spiced apple and raisins, served warm with vanilla sauce or cream.",
+        "veg": true
+      },
+      {
+        "name": "Bratwurst",
+        "blurb": "Grilled pork sausage served in a bread roll with mustard, sold at street stalls and Christmas markets.",
+        "veg": false
+      },
+      {
+        "name": "Schweinshaxe",
+        "blurb": "Roast pork knuckle with crackling skin, a Bavarian beer-hall staple served with potato dumplings and sauerkraut.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Cruise the Rhine past hilltop castles",
+      "Walk up to Neuschwanstein Castle",
+      "Browse a Christmas market with mulled apple juice",
+      "Ride the cog railway up the Zugspitze",
+      "Watch the Glockenspiel at Marienplatz",
+      "See cuckoo clocks being made in the Black Forest"
+    ],
+    "indianTraveller": "Indian restaurants and vegetarian options are easy to find in Frankfurt, Munich and Berlin, the flight from Hyderabad takes roughly 9–10 hours direct to Frankfurt or longer with one stop, sockets are Type C/F at 230 V so carry a universal adapter, and a forex card in euros works almost everywhere though some small cafes still prefer cash."
+  },
+  "austria": {
+    "capital": "Vienna",
+    "currency": "Euro (EUR)",
+    "intro": "Austria pairs imperial Vienna with Alpine lakes and mountain villages, and the distances are short enough that families can see both in a week. Salzburg, Hallstatt and Innsbruck are popular with Indian travellers for their lake and snow views, and many itineraries combine Austria with Switzerland or Germany. Trains and well-kept mountain roads make it a comfortable trip for older parents.",
+    "destinations": [
+      {
+        "name": "Schonbrunn Palace",
+        "blurb": "The Habsburg summer palace in Vienna with formal gardens, a hilltop Gloriette and the world's oldest operating zoo."
+      },
+      {
+        "name": "Hallstatt",
+        "blurb": "A lakeside village of wooden houses under steep mountains, with a funicular up to an old salt mine and a viewing platform."
+      },
+      {
+        "name": "Salzburg Old Town",
+        "blurb": "Mozart's birthplace on Getreidegasse, Hohensalzburg Fortress above the river, and Mirabell Gardens from The Sound of Music."
+      },
+      {
+        "name": "Innsbruck and the Nordkette",
+        "blurb": "The Tyrolean capital's Golden Roof sits in the old town, and a funicular and cable cars climb the Nordkette range from the centre."
+      },
+      {
+        "name": "Wachau Valley",
+        "blurb": "A stretch of the Danube between Melk and Krems lined with vineyards, apricot orchards and riverside villages."
+      },
+      {
+        "name": "Grossglockner High Alpine Road",
+        "blurb": "A summer-only mountain road with hairpin bends leading to views of Austria's highest peak and the Pasterze glacier."
+      },
+      {
+        "name": "Swarovski Crystal Worlds",
+        "blurb": "Art installations and a garden built around the crystal brand at Wattens, a short drive from Innsbruck."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "St Stephen's Cathedral, Vienna",
+        "blurb": "Vienna's Gothic cathedral with a colourful tiled roof, a south tower you can climb and catacombs beneath the nave."
+      },
+      {
+        "name": "Melk Abbey",
+        "blurb": "A Benedictine abbey in golden Baroque style above the Danube, with a painted library and church still used by monks."
+      },
+      {
+        "name": "Salzburg Cathedral",
+        "blurb": "An early Baroque cathedral where Mozart was baptised, with a great dome and five organs."
+      },
+      {
+        "name": "Basilica of Mariazell",
+        "blurb": "Austria's most important Marian pilgrimage church, visited for its centuries-old wooden statue of the Virgin."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Wiener Schnitzel",
+        "blurb": "A thin veal cutlet breaded and fried golden, served with lemon and potato salad.",
+        "veg": false
+      },
+      {
+        "name": "Tafelspitz",
+        "blurb": "Boiled beef in its broth served with apple-horseradish sauce and fried potatoes, a classic of Viennese taverns.",
+        "veg": false
+      },
+      {
+        "name": "Kaiserschmarrn",
+        "blurb": "Fluffy torn pancake dusted with powdered sugar and eaten with plum compote, popular in mountain huts.",
+        "veg": false
+      },
+      {
+        "name": "Apfelstrudel",
+        "blurb": "Paper-thin pastry wrapped around apples, cinnamon and raisins, served at nearly every Viennese cafe.",
+        "veg": true
+      },
+      {
+        "name": "Sachertorte",
+        "blurb": "A dense chocolate cake with apricot jam and dark glaze, created at Vienna's Hotel Sacher.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Tour the state rooms of Schonbrunn Palace",
+      "Take the funicular above Hallstatt lake",
+      "Follow Sound of Music spots in Salzburg",
+      "Cruise the Danube through the Wachau",
+      "Drive the Grossglockner road in summer",
+      "Try Sachertorte in a Viennese coffee house"
+    ],
+    "indianTraveller": "Vienna, Salzburg and Innsbruck each have Indian restaurants and most cafes offer vegetarian dishes, flights from Hyderabad usually connect via the Gulf or a European hub for about 11–13 hours in total, sockets are Type C/F at 230 V, and carrying some euro cash helps in villages and mountain huts."
+  },
+  "czech-republic": {
+    "capital": "Prague",
+    "currency": "Czech koruna (CZK)",
+    "intro": "Prague is one of Europe's best-preserved old cities, with a castle, bridges and church spires that can be explored largely on foot. It is usually more affordable than Western Europe, and many Indian travellers add it to a Vienna or Budapest circuit. Day trips to spa towns and medieval villages round out a short stay.",
+    "destinations": [
+      {
+        "name": "Charles Bridge",
+        "blurb": "A 14th-century stone bridge over the Vltava lined with 30 statues, quietest for photos just after sunrise."
+      },
+      {
+        "name": "Prague Castle",
+        "blurb": "A vast hilltop castle complex with palaces, gardens and the tiny houses of Golden Lane, plus a changing of the guard at noon."
+      },
+      {
+        "name": "Old Town Square and Astronomical Clock",
+        "blurb": "Prague's main square, where the medieval clock on the Old Town Hall puts on a show of moving apostles every hour."
+      },
+      {
+        "name": "Cesky Krumlov",
+        "blurb": "A riverside town in South Bohemia with a castle, painted tower and winding lanes, about three hours from Prague."
+      },
+      {
+        "name": "Karlovy Vary",
+        "blurb": "A 19th-century spa town where visitors sip warm mineral water from porcelain cups along colonnaded promenades."
+      },
+      {
+        "name": "Petrin Hill",
+        "blurb": "A green hill above Mala Strana with a funicular, rose garden and a lookout tower modelled on the Eiffel Tower."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "St Vitus Cathedral",
+        "blurb": "The Gothic cathedral inside Prague Castle, with Alfons Mucha's stained-glass window and the tomb of St Wenceslas."
+      },
+      {
+        "name": "Church of Our Lady before Tyn",
+        "blurb": "Twin-spired Gothic church that dominates the Old Town Square skyline."
+      },
+      {
+        "name": "St Barbara's Church, Kutna Hora",
+        "blurb": "A Gothic church in the old silver-mining town of Kutna Hora, with tent-like roofs and frescoes of medieval miners."
+      },
+      {
+        "name": "Old-New Synagogue",
+        "blurb": "Europe's oldest active synagogue, built in the 13th century in Prague's Jewish Quarter."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Svickova",
+        "blurb": "Marinated beef in a creamy root-vegetable sauce, served with bread dumplings and cranberries.",
+        "veg": false
+      },
+      {
+        "name": "Vepro knedlo zelo",
+        "blurb": "Roast pork with dumplings and braised cabbage, often called the national dish.",
+        "veg": false
+      },
+      {
+        "name": "Smazeny syr",
+        "blurb": "A thick slice of cheese breaded and fried, served with fries and tartar sauce; a vegetarian standby on most menus.",
+        "veg": false
+      },
+      {
+        "name": "Bramboraky",
+        "blurb": "Crisp potato pancakes seasoned with garlic and marjoram, sold at pubs and street stalls.",
+        "veg": true
+      },
+      {
+        "name": "Ovocne knedliky",
+        "blurb": "Sweet fruit dumplings filled with plums or apricots and topped with butter, sugar and quark.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Cross Charles Bridge at sunrise",
+      "Watch the Astronomical Clock strike the hour",
+      "Explore Golden Lane in Prague Castle",
+      "Take a Vltava river cruise",
+      "Sip spring water in Karlovy Vary",
+      "Spend a night in Cesky Krumlov"
+    ],
+    "indianTraveller": "Prague has several Indian restaurants and vegetarian dishes like fried cheese are on most menus, flights from Hyderabad connect via the Gulf or Europe for roughly 12–14 hours, sockets are Type E at 230 V (Indian two-pin plugs often fit but an adapter is safer), and euros are not legal tender, so carry korunas or a multi-currency forex card."
+  },
+  "belgium": {
+    "capital": "Brussels",
+    "currency": "Euro (EUR)",
+    "intro": "Belgium is small enough to base yourself in Brussels and make easy train trips to Bruges, Ghent and Antwerp. Its medieval squares, canals and chocolate shops appeal to families, and it fits neatly into a Paris and Amsterdam itinerary. Waffles, chocolate and fries make it an easy place for vegetarian snacking.",
+    "destinations": [
+      {
+        "name": "Grand-Place, Brussels",
+        "blurb": "Brussels' central square framed by gilded guildhalls and the Gothic Town Hall, covered in a flower carpet every other August."
+      },
+      {
+        "name": "Atomium",
+        "blurb": "A 102 m steel model of an iron crystal built for the 1958 World Expo, with exhibitions and a panoramic top sphere."
+      },
+      {
+        "name": "Bruges",
+        "blurb": "A canal city of brick houses and swans, where boat rides and a climb up the Belfry show off the medieval centre."
+      },
+      {
+        "name": "Gravensteen, Ghent",
+        "blurb": "A moated 12th-century castle in the middle of Ghent, close to the Graslei and Korenlei quays."
+      },
+      {
+        "name": "Antwerp Diamond District",
+        "blurb": "The streets beside Antwerp Central Station where much of the world's rough diamond trade passes, with a large Indian business community."
+      },
+      {
+        "name": "Manneken Pis",
+        "blurb": "The small bronze fountain statue that is a symbol of Brussels and is regularly dressed in costumes from around the world."
+      },
+      {
+        "name": "Dinant",
+        "blurb": "A riverside town on the Meuse with a clifftop citadel, an onion-domed church and links to Adolphe Sax, inventor of the saxophone."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Cathedral of St Michael and St Gudula",
+        "blurb": "Brussels' Gothic cathedral with twin towers and fine stained glass, used for royal weddings and funerals."
+      },
+      {
+        "name": "Basilica of the Holy Blood, Bruges",
+        "blurb": "A two-level chapel on the Burg square that keeps a relic venerated since the 12th century."
+      },
+      {
+        "name": "Cathedral of Our Lady, Antwerp",
+        "blurb": "Belgium's tallest Gothic church, housing four major paintings by Peter Paul Rubens."
+      },
+      {
+        "name": "St Bavo's Cathedral, Ghent",
+        "blurb": "Home of the Van Eyck brothers' Ghent Altarpiece, one of the most celebrated paintings in Europe."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Moules-frites",
+        "blurb": "A pot of mussels steamed in white wine or broth, served with a cone of fries.",
+        "veg": false
+      },
+      {
+        "name": "Carbonade flamande",
+        "blurb": "Beef slow-cooked in dark Belgian beer with onions, a hearty Flemish stew.",
+        "veg": false
+      },
+      {
+        "name": "Liege waffle",
+        "blurb": "A dense, chewy waffle studded with pearl sugar that caramelises on the iron, sold warm on the street.",
+        "veg": true
+      },
+      {
+        "name": "Stoemp",
+        "blurb": "Mashed potatoes mixed with carrots, leeks or spinach, a Brussels comfort dish easy to order without meat.",
+        "veg": true
+      },
+      {
+        "name": "Speculoos",
+        "blurb": "Crisp spiced shortcrust biscuits, also sold as a spread, traditionally baked for St Nicholas Day.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Stand in the Grand-Place at night",
+      "Take a canal boat ride in Bruges",
+      "Join a chocolate-making workshop",
+      "Go up the Atomium's top sphere",
+      "See the Ghent Altarpiece",
+      "Try a warm Liege waffle on the street"
+    ],
+    "indianTraveller": "Brussels and Antwerp have many Indian restaurants and vegetarian options are common, flights from Hyderabad connect via the Gulf or Europe for about 11–13 hours, sockets are Type E at 230 V so carry a universal adapter, and cards are accepted nearly everywhere though a few euros help for toilets and street snacks."
+  },
+  "portugal": {
+    "capital": "Lisbon",
+    "currency": "Euro (EUR)",
+    "intro": "Portugal offers hilly Lisbon, the palaces of Sintra, port-wine Porto and the cliffs of the Algarve, usually at gentler prices than much of Western Europe. Goa's Portuguese past means Indian travellers often notice familiar names, churches and sweets. Catholic families also come for Fatima, one of the world's major Marian shrines.",
+    "destinations": [
+      {
+        "name": "Belem Tower",
+        "blurb": "A 16th-century riverside fort on the Tagus marking the point where Portuguese explorers, including Vasco da Gama's fleet, set sail."
+      },
+      {
+        "name": "Alfama and Tram 28",
+        "blurb": "Lisbon's oldest quarter of steep lanes and tiled houses, best seen from the rattling yellow Tram 28."
+      },
+      {
+        "name": "Pena Palace, Sintra",
+        "blurb": "A brightly painted hilltop palace surrounded by forested gardens, about 40 minutes by train from Lisbon."
+      },
+      {
+        "name": "Porto Ribeira and the Douro",
+        "blurb": "Porto's riverfront of colourful houses faces the port-wine cellars of Vila Nova de Gaia across the Dom Luis I bridge."
+      },
+      {
+        "name": "Ponta da Piedade, Algarve",
+        "blurb": "Golden sea cliffs and arches near Lagos, explored by boat or along cliff-top paths."
+      },
+      {
+        "name": "Cabo da Roca",
+        "blurb": "The westernmost point of mainland Europe, a windswept headland with a lighthouse above the Atlantic."
+      },
+      {
+        "name": "Obidos",
+        "blurb": "A walled medieval town of whitewashed houses where you can walk along the ramparts."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Sanctuary of Fatima",
+        "blurb": "The Catholic shrine where three shepherd children reported visions of the Virgin Mary in 1917, drawing large crowds for the 13 May and 13 October pilgrimages."
+      },
+      {
+        "name": "Jeronimos Monastery",
+        "blurb": "An ornate Manueline monastery in Belem that holds the tomb of Vasco da Gama."
+      },
+      {
+        "name": "Bom Jesus do Monte, Braga",
+        "blurb": "A hilltop sanctuary reached by a zigzag Baroque stairway that pilgrims climb, or by a water-powered funicular from 1882."
+      },
+      {
+        "name": "Lisbon Cathedral",
+        "blurb": "Lisbon's fortress-like Romanesque cathedral, the Se, begun in 1147 and passed by Tram 28."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Pastel de nata",
+        "blurb": "A flaky custard tart with a scorched top, most famous at the Pasteis de Belem bakery.",
+        "veg": false
+      },
+      {
+        "name": "Bacalhau a Bras",
+        "blurb": "Shredded salt cod scrambled with egg, onion and straw potatoes, one of many ways the Portuguese cook cod.",
+        "veg": false
+      },
+      {
+        "name": "Sardinhas assadas",
+        "blurb": "Charcoal-grilled sardines served on bread, at their best during Lisbon's June festivals.",
+        "veg": false
+      },
+      {
+        "name": "Francesinha",
+        "blurb": "Porto's layered sandwich of meats under melted cheese and a beer-tomato sauce, served with fries.",
+        "veg": false
+      },
+      {
+        "name": "Arroz doce",
+        "blurb": "Creamy rice pudding flavoured with lemon peel and dusted with cinnamon, close cousin of Indian kheer.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Ride Tram 28 through the Alfama",
+      "Eat a warm pastel de nata in Belem",
+      "Explore Pena Palace in Sintra",
+      "Take a Douro river cruise in Porto",
+      "See the Algarve sea caves by boat",
+      "Attend the candlelight procession at Fatima"
+    ],
+    "indianTraveller": "Lisbon has a long-settled Indian and Goan community and several Indian restaurants, while vegetarian dishes can be limited in smaller towns, flights from Hyderabad connect via the Gulf or Europe for roughly 13–15 hours, sockets are Type C/F at 230 V, and cards are widely accepted with some cash useful in villages."
+  },
+  "hungary": {
+    "capital": "Budapest",
+    "currency": "Hungarian forint (HUF)",
+    "intro": "Budapest straddles the Danube with hilly Buda on one bank and grand Pest on the other, and its thermal baths and evening river cruises are what most visitors remember. It is good value for families and often combined with Vienna and Prague by train. Day trips reach Lake Balaton and the Danube Bend.",
+    "destinations": [
+      {
+        "name": "Hungarian Parliament Building",
+        "blurb": "A Gothic Revival parliament on the Danube that holds the Holy Crown of Hungary and offers guided tours."
+      },
+      {
+        "name": "Fisherman's Bastion and Buda Castle",
+        "blurb": "White turreted terraces on Castle Hill with sweeping views across the river to Parliament."
+      },
+      {
+        "name": "Szechenyi Thermal Bath",
+        "blurb": "A large yellow bathhouse in City Park with warm outdoor pools fed by natural hot springs, open year-round."
+      },
+      {
+        "name": "Danube evening cruise",
+        "blurb": "A one-hour boat ride past the lit-up Parliament, Chain Bridge and Buda Castle."
+      },
+      {
+        "name": "Central Market Hall",
+        "blurb": "Budapest's 19th-century covered market, good for paprika, embroidery and langos stalls upstairs."
+      },
+      {
+        "name": "Szentendre",
+        "blurb": "An artists' town on the Danube Bend with cobbled lanes and galleries, under an hour from Budapest."
+      },
+      {
+        "name": "Lake Balaton",
+        "blurb": "Central Europe's largest lake, with resort towns and the Tihany peninsula, popular in summer."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "St Stephen's Basilica",
+        "blurb": "Budapest's largest church, with a dome you can climb and the relic of King Stephen's right hand."
+      },
+      {
+        "name": "Matthias Church",
+        "blurb": "A Gothic church on Castle Hill with a colourful diamond-patterned tiled roof, beside Fisherman's Bastion."
+      },
+      {
+        "name": "Dohany Street Synagogue",
+        "blurb": "Europe's largest synagogue, with a Moorish-style interior and a Holocaust memorial garden."
+      },
+      {
+        "name": "Esztergom Basilica",
+        "blurb": "Hungary's largest church, set on a hill above the Danube at the Slovak border."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Gulyas",
+        "blurb": "Hungary's paprika-rich beef and vegetable soup, traditionally cooked in a kettle over an open fire.",
+        "veg": false
+      },
+      {
+        "name": "Csirkepaprikas",
+        "blurb": "Chicken simmered in a paprika and sour-cream sauce, served with small dumplings called nokedli.",
+        "veg": false
+      },
+      {
+        "name": "Langos",
+        "blurb": "Deep-fried flatbread topped with garlic, sour cream and grated cheese, much like a giant bhatura.",
+        "veg": true
+      },
+      {
+        "name": "Lecso",
+        "blurb": "A stew of peppers, tomatoes and onions with paprika; ask for it without sausage.",
+        "veg": true
+      },
+      {
+        "name": "Kurtoskalacs",
+        "blurb": "Chimney cake of sweet dough spun around a spit, baked and rolled in cinnamon sugar.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Soak in the Szechenyi outdoor pools",
+      "Cruise the Danube after dark",
+      "Climb the dome of St Stephen's Basilica",
+      "Watch sunset from Fisherman's Bastion",
+      "Shop for paprika at the Central Market Hall",
+      "Eat a fresh langos"
+    ],
+    "indianTraveller": "Budapest has a handful of Indian restaurants and vegetarian versions of local dishes are usually available, flights from Hyderabad connect via the Gulf or Europe for about 11–13 hours, sockets are Type C/F at 230 V, and prices are in forints, so use a forex card or withdraw local cash rather than paying in euros at poor rates."
+  },
+  "norway": {
+    "capital": "Oslo",
+    "currency": "Norwegian krone (NOK)",
+    "intro": "Norway is for travellers who want fjords, waterfalls and mountain railways in summer, or the northern lights over snow in winter. Distances are long, so most itineraries mix trains, ferries and a domestic flight to Tromso or the Lofoten Islands. It is one of Europe's more expensive countries, so a well-planned package helps keep costs in check.",
+    "destinations": [
+      {
+        "name": "Geirangerfjord",
+        "blurb": "A deep UNESCO-listed fjord with the Seven Sisters waterfall, best seen from a ferry or the Dalsnibba viewpoint."
+      },
+      {
+        "name": "Flam Railway",
+        "blurb": "A steep 20 km railway from Myrdal down to the fjord village of Flam, passing the Kjosfossen waterfall."
+      },
+      {
+        "name": "Bryggen, Bergen",
+        "blurb": "A row of colourful wooden Hanseatic wharf buildings on Bergen's harbour, close to the Floibanen funicular."
+      },
+      {
+        "name": "Tromso",
+        "blurb": "An Arctic city where winter visitors chase the northern lights and summer visitors see the midnight sun."
+      },
+      {
+        "name": "Preikestolen",
+        "blurb": "Pulpit Rock, a flat clifftop 604 m above Lysefjord, reached by a hike of about four hours return near Stavanger."
+      },
+      {
+        "name": "Lofoten Islands",
+        "blurb": "Arctic islands of sharp peaks, fishing villages and red rorbu cabins on stilts."
+      },
+      {
+        "name": "Vigeland Sculpture Park",
+        "blurb": "Over 200 sculptures by Gustav Vigeland in Oslo's Frogner Park, free to enter year-round."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Nidaros Cathedral",
+        "blurb": "Scandinavia's largest medieval cathedral in Trondheim, built over the grave of St Olav and the end point of a pilgrim route."
+      },
+      {
+        "name": "Urnes Stave Church",
+        "blurb": "Norway's oldest wooden stave church from the 12th century, a UNESCO site on the Sognefjord."
+      },
+      {
+        "name": "Borgund Stave Church",
+        "blurb": "A well-preserved stave church with dragon-head gables, on the road between Oslo and the western fjords."
+      },
+      {
+        "name": "Arctic Cathedral, Tromso",
+        "blurb": "A striking white triangular church from 1965 with a huge glass mosaic, known for midnight sun concerts."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Rokelaks",
+        "blurb": "Norwegian smoked salmon, served on bread with scrambled egg or as part of the breakfast spread.",
+        "veg": false
+      },
+      {
+        "name": "Farikal",
+        "blurb": "Mutton and cabbage stewed with whole black peppercorns, the national dish eaten in autumn.",
+        "veg": false
+      },
+      {
+        "name": "Fiskesuppe",
+        "blurb": "Creamy Bergen-style fish soup with root vegetables, warming on a cold day by the harbour.",
+        "veg": false
+      },
+      {
+        "name": "Brunost",
+        "blurb": "Sweet caramel-coloured brown cheese, sliced thin with a cheese slicer onto bread or waffles.",
+        "veg": true
+      },
+      {
+        "name": "Skillingsboller",
+        "blurb": "Large cinnamon buns that are a Bergen bakery speciality.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Ride the Flam Railway to the fjord",
+      "Cruise the Geirangerfjord",
+      "Chase the northern lights from Tromso",
+      "Take the Floibanen funicular in Bergen",
+      "Hike to Preikestolen",
+      "Stay in a rorbu cabin in Lofoten"
+    ],
+    "indianTraveller": "Oslo, Bergen and Stavanger have Indian restaurants but food is expensive and vegetarian choices thin out in small fjord villages, so ready-to-eat packs help, flights from Hyderabad connect via the Gulf or Europe for roughly 12–14 hours, sockets are Type C/F at 230 V, and cards are accepted almost everywhere so little cash is needed."
+  },
+  "finland": {
+    "capital": "Helsinki",
+    "currency": "Euro (EUR)",
+    "intro": "Finland is best known to Indian families for Lapland in winter: Santa Claus Village, husky and reindeer sleigh rides, and good odds of seeing the northern lights. Summer swaps that for long daylight, lakes and forests. Helsinki itself is compact and calm, with sea fortresses and design shops.",
+    "destinations": [
+      {
+        "name": "Santa Claus Village, Rovaniemi",
+        "blurb": "Meet Santa year-round on the Arctic Circle line, send postcards from his post office and ride husky or reindeer sleds nearby."
+      },
+      {
+        "name": "Suomenlinna",
+        "blurb": "An 18th-century sea fortress spread over islands, a 15-minute public ferry ride from Helsinki's Market Square."
+      },
+      {
+        "name": "Saariselka and Inari",
+        "blurb": "Northern Lapland villages where glass igloos and aurora safaris give strong chances of seeing the northern lights between September and March."
+      },
+      {
+        "name": "Olavinlinna, Savonlinna",
+        "blurb": "A 15th-century island castle in the Lakeland, home to an opera festival every July."
+      },
+      {
+        "name": "Nuuksio National Park",
+        "blurb": "Lake and forest trails under an hour from Helsinki, good for a gentle walk and berry picking in late summer."
+      },
+      {
+        "name": "Porvoo",
+        "blurb": "Finland's second-oldest town, with red riverside storehouses and wooden houses, about an hour from Helsinki."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Helsinki Cathedral",
+        "blurb": "The white Lutheran cathedral with green domes that towers over Senate Square."
+      },
+      {
+        "name": "Uspenski Cathedral",
+        "blurb": "A red-brick Orthodox cathedral with golden onion domes, the largest in Western Europe."
+      },
+      {
+        "name": "Temppeliaukio Church",
+        "blurb": "The Rock Church, carved into solid granite with a copper dome, known for its acoustics."
+      },
+      {
+        "name": "Turku Cathedral",
+        "blurb": "Finland's national shrine and mother church, consecrated in 1300 in the former capital."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Karjalanpiirakka",
+        "blurb": "Karelian pies of thin rye crust filled with rice porridge, topped with egg butter.",
+        "veg": false
+      },
+      {
+        "name": "Leipajuusto",
+        "blurb": "Squeaky baked cheese, warmed and served with cloudberry jam in Lapland.",
+        "veg": true
+      },
+      {
+        "name": "Korvapuusti",
+        "blurb": "Cardamom and cinnamon buns, a fixture of Finnish coffee breaks.",
+        "veg": true
+      },
+      {
+        "name": "Lohikeitto",
+        "blurb": "Creamy salmon soup with potatoes, leeks and dill.",
+        "veg": false
+      },
+      {
+        "name": "Poronkaristys",
+        "blurb": "Sauteed reindeer served with mashed potatoes and lingonberries, a Lapland staple.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Meet Santa on the Arctic Circle",
+      "Ride a husky sled through snowy forest",
+      "Watch the northern lights from a glass igloo",
+      "Take the ferry to Suomenlinna",
+      "Try a traditional Finnish sauna",
+      "Walk the old lanes of Porvoo"
+    ],
+    "indianTraveller": "Helsinki and Rovaniemi have Indian restaurants and most cafes label vegetarian food, though remote Lapland lodges have fewer choices, flights from Hyderabad connect via Delhi, the Gulf or Europe for about 11–13 hours, sockets are Type C/F at 230 V, and winter trips need proper thermal layers, which tour operators can often rent."
+  },
+  "japan": {
+    "capital": "Tokyo",
+    "currency": "Japanese yen (JPY)",
+    "intro": "Japan blends neon cities with old temples, and the bullet train makes a Tokyo, Hakone, Kyoto, Nara and Osaka circuit comfortable within ten days. It is extremely safe and clean, which suits families with children or elderly parents. Spring cherry blossom (late March to early April) and autumn colours (November) are the most popular seasons.",
+    "destinations": [
+      {
+        "name": "Mount Fuji and Hakone",
+        "blurb": "Lake Ashi cruises, the Owakudani volcanic valley and ropeways give views of Fuji on clear days."
+      },
+      {
+        "name": "Shibuya and Shinjuku, Tokyo",
+        "blurb": "The Shibuya scramble crossing and Shinjuku's neon streets and observation decks show Tokyo at its busiest."
+      },
+      {
+        "name": "Arashiyama Bamboo Grove",
+        "blurb": "A path through towering bamboo on Kyoto's western edge, near the Togetsukyo Bridge and monkey park."
+      },
+      {
+        "name": "Nara Park",
+        "blurb": "A large park where over a thousand free-roaming deer bow for special crackers."
+      },
+      {
+        "name": "Hiroshima Peace Memorial Park",
+        "blurb": "A memorial park and museum around the Atomic Bomb Dome, with a day-trip option to Miyajima island."
+      },
+      {
+        "name": "Dotonbori, Osaka",
+        "blurb": "A canal-side food street of giant signs and stalls selling takoyaki and okonomiyaki."
+      },
+      {
+        "name": "Himeji Castle",
+        "blurb": "Japan's finest original castle, a white wooden fortress a short bullet-train ride from Osaka."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Fushimi Inari Taisha",
+        "blurb": "A Kyoto Shinto shrine with thousands of vermilion torii gates running up the forested slopes of Mount Inari."
+      },
+      {
+        "name": "Todai-ji",
+        "blurb": "Nara's great Buddhist temple, whose wooden hall shelters a 15 m bronze Buddha."
+      },
+      {
+        "name": "Senso-ji",
+        "blurb": "Tokyo's oldest temple in Asakusa, entered through the Kaminarimon gate and the Nakamise shopping street."
+      },
+      {
+        "name": "Kiyomizu-dera",
+        "blurb": "A Kyoto temple with a wooden stage jutting out over the hillside, especially lovely in cherry blossom and autumn seasons."
+      },
+      {
+        "name": "Meiji Jingu",
+        "blurb": "A calm Shinto shrine set in a forest beside Harajuku in central Tokyo."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Sushi",
+        "blurb": "Vinegared rice with raw fish or other toppings; conveyor-belt shops make it easy to try a few pieces.",
+        "veg": false
+      },
+      {
+        "name": "Ramen",
+        "blurb": "Wheat noodles in rich broth, with regional styles from Sapporo miso to Fukuoka tonkotsu.",
+        "veg": false
+      },
+      {
+        "name": "Okonomiyaki",
+        "blurb": "A savoury cabbage pancake cooked on a griddle at the table, an Osaka and Hiroshima speciality.",
+        "veg": false
+      },
+      {
+        "name": "Shojin ryori",
+        "blurb": "Traditional Buddhist temple cuisine with no meat, fish, onion or garlic, served at temple lodgings and some Kyoto restaurants.",
+        "veg": true
+      },
+      {
+        "name": "Wagashi",
+        "blurb": "Delicate sweets of sweet bean paste and rice flour, often served with matcha tea.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Ride the Shinkansen bullet train",
+      "Walk through Fushimi Inari's torii gates",
+      "Feed the bowing deer in Nara",
+      "See cherry blossoms in spring",
+      "Join a traditional tea ceremony in Kyoto",
+      "Cross the Shibuya scramble at night"
+    ],
+    "indianTraveller": "Vegetarian food takes planning because many broths use fish stock, though Tokyo, Kyoto and Osaka have Indian and vegetarian restaurants and convenience stores sell rice balls and snacks, flights from Hyderabad usually connect via Delhi, Singapore or Bangkok for about 10–13 hours, sockets are Type A at 100 V so carry an adapter, and cash in yen is still handy for small shops and temples."
+  },
+  "south-korea": {
+    "capital": "Seoul",
+    "currency": "South Korean won (KRW)",
+    "intro": "South Korea combines royal palaces and Buddhist temples with K-pop districts, skincare shopping and island scenery. Seoul's metro is easy to use, and fast KTX trains reach Busan and Gyeongju in under three hours. Spring blossom and autumn foliage are the most pleasant seasons, and Jeju adds a relaxed beach and volcano stop.",
+    "destinations": [
+      {
+        "name": "Gyeongbokgung Palace",
+        "blurb": "Seoul's largest Joseon palace, with a changing of the guard ceremony and free entry for visitors wearing hanbok."
+      },
+      {
+        "name": "Bukchon Hanok Village",
+        "blurb": "A hillside neighbourhood of traditional tiled-roof homes between two palaces, still lived in, so visitors keep their voices low."
+      },
+      {
+        "name": "N Seoul Tower",
+        "blurb": "A tower on Namsan mountain reached by cable car, with city views and walls of love locks."
+      },
+      {
+        "name": "Jeju Island",
+        "blurb": "A volcanic island with Seongsan Ilchulbong crater, lava tubes, waterfalls and tangerine farms."
+      },
+      {
+        "name": "DMZ",
+        "blurb": "Guided tours visit observation posts and infiltration tunnels along the border with North Korea."
+      },
+      {
+        "name": "Gamcheon Culture Village, Busan",
+        "blurb": "A hillside of brightly painted houses and murals overlooking Busan's port."
+      },
+      {
+        "name": "Nami Island",
+        "blurb": "A tree-lined river island famous from the drama Winter Sonata, best in autumn colours."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Bulguksa",
+        "blurb": "A UNESCO-listed 8th-century Buddhist temple near Gyeongju, with stone pagodas and bridges, close to the Seokguram grotto Buddha."
+      },
+      {
+        "name": "Jogyesa",
+        "blurb": "The chief temple of Korean Zen Buddhism in central Seoul, hung with thousands of lanterns around Buddha's Birthday."
+      },
+      {
+        "name": "Haeinsa",
+        "blurb": "A mountain temple that preserves the Tripitaka Koreana, over 80,000 13th-century wooden printing blocks."
+      },
+      {
+        "name": "Bongeunsa",
+        "blurb": "A Buddhist temple opposite the COEX Mall in Gangnam, offering short temple-stay programmes."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Bulgogi",
+        "blurb": "Thin slices of marinated beef grilled at the table and wrapped in lettuce leaves.",
+        "veg": false
+      },
+      {
+        "name": "Samgyetang",
+        "blurb": "A whole young chicken stuffed with rice, ginseng and jujube, simmered in broth.",
+        "veg": false
+      },
+      {
+        "name": "Bibimbap",
+        "blurb": "Rice topped with seasoned vegetables and gochujang chilli paste, which can be ordered without meat or egg.",
+        "veg": true
+      },
+      {
+        "name": "Hotteok",
+        "blurb": "A griddled pancake filled with brown sugar, cinnamon and nuts, sold hot at street stalls in winter.",
+        "veg": true
+      },
+      {
+        "name": "Temple food",
+        "blurb": "Buddhist temple cooking free of meat, fish, garlic and onion, served at temple stays and specialist Seoul restaurants.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Wear hanbok at Gyeongbokgung Palace",
+      "Stroll the lanes of Bukchon",
+      "Ride the KTX to Busan",
+      "Climb Seongsan Ilchulbong on Jeju",
+      "Visit the DMZ with a guided tour",
+      "Shop for skincare in Myeongdong"
+    ],
+    "indianTraveller": "Itaewon and other Seoul districts have Indian restaurants, but kimchi and many soups contain fish sauce or seafood, so vegetarians should ask clearly, flights from Hyderabad connect via Delhi, Singapore or Bangkok for about 9–12 hours, sockets are Type C/F at 220 V, and cards and the T-money transit card cover most spending."
+  },
+  "hong-kong": {
+    "capital": "– (Special Administrative Region of China)",
+    "currency": "Hong Kong dollar (HKD)",
+    "intro": "Hong Kong is one of the easiest short-haul holidays from India, packing a harbour skyline, theme parks and island temples into a small, well-connected area. Families often spend four or five days here, sometimes adding Macau by ferry. Its long-established Indian community means vegetarian and Indian food is easy to find.",
+    "destinations": [
+      {
+        "name": "Victoria Peak",
+        "blurb": "Ride the historic Peak Tram up for the classic view over the skyscrapers and Victoria Harbour."
+      },
+      {
+        "name": "Star Ferry and Tsim Sha Tsui Promenade",
+        "blurb": "A short ferry crossing across the harbour, then a waterfront walk to watch the nightly Symphony of Lights at 8 pm."
+      },
+      {
+        "name": "Hong Kong Disneyland",
+        "blurb": "A compact Disney park on Lantau Island with themed lands and evening fireworks."
+      },
+      {
+        "name": "Ocean Park",
+        "blurb": "A hillside marine park with giant pandas, aquariums, a cable car and thrill rides."
+      },
+      {
+        "name": "Ngong Ping 360",
+        "blurb": "A 25-minute cable car ride over Lantau's hills and sea, with glass-floor cabins available."
+      },
+      {
+        "name": "Temple Street Night Market",
+        "blurb": "An evening market in Yau Ma Tei with stalls selling trinkets, street food and fortune tellers."
+      },
+      {
+        "name": "Tai O",
+        "blurb": "A fishing village on Lantau with stilt houses over the water and boat trips to look for pink dolphins."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Tian Tan Buddha and Po Lin Monastery",
+        "blurb": "A 34 m seated bronze Buddha at the top of 268 steps on Lantau, beside a monastery that serves vegetarian lunches."
+      },
+      {
+        "name": "Wong Tai Sin Temple",
+        "blurb": "A busy Taoist temple in Kowloon where worshippers shake bamboo fortune sticks."
+      },
+      {
+        "name": "Man Mo Temple",
+        "blurb": "A smoky 19th-century temple on Hollywood Road honouring the gods of literature and war, with giant hanging incense coils."
+      },
+      {
+        "name": "Hindu Temple, Happy Valley",
+        "blurb": "The main Hindu temple serving Hong Kong's Indian community, with daily aarti and festival celebrations."
+      },
+      {
+        "name": "Chi Lin Nunnery",
+        "blurb": "A Tang-style Buddhist nunnery built of wood without nails, next to the landscaped Nan Lian Garden."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Dim sum",
+        "blurb": "Steamed dumplings like har gow and siu mai, served in bamboo baskets with tea, especially at weekend brunch.",
+        "veg": false
+      },
+      {
+        "name": "Roast goose",
+        "blurb": "Glossy roast goose with crisp skin, served over rice or with plum sauce.",
+        "veg": false
+      },
+      {
+        "name": "Wonton noodles",
+        "blurb": "Thin egg noodles in broth with shrimp wontons, a Cantonese classic.",
+        "veg": false
+      },
+      {
+        "name": "Buddha's delight",
+        "blurb": "A vegetarian stir-fry of tofu, mushrooms and vegetables, served at Buddhist monasteries and vegetarian restaurants.",
+        "veg": true
+      },
+      {
+        "name": "Mango pomelo sago",
+        "blurb": "A chilled dessert of mango puree, coconut milk, pomelo and sago pearls.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Ride the Peak Tram up Victoria Peak",
+      "Cross the harbour on the Star Ferry",
+      "Climb the steps to the Tian Tan Buddha",
+      "Spend a day at Disneyland or Ocean Park",
+      "Watch the Symphony of Lights",
+      "Browse Temple Street Night Market"
+    ],
+    "indianTraveller": "Indian and vegetarian food is easy to find, especially around Tsim Sha Tsui and Chungking Mansions, flights from Hyderabad take about 5–6 hours direct or a little longer with one stop, sockets are the three-pin Type G at 220 V so bring an adapter, and an Octopus card covers transport and convenience-store purchases."
+  },
+  "macau": {
+    "capital": "– (Special Administrative Region of China)",
+    "currency": "Macanese pataca (MOP); Hong Kong dollars widely accepted",
+    "intro": "Macau is usually a one- or two-night add-on from Hong Kong, reached in under an hour by ferry or across the Hong Kong-Zhuhai-Macau Bridge. Its old centre mixes Portuguese tiled squares and churches with Chinese temples, while the Cotai Strip has large resorts with shows and family attractions. It is compact enough to cover the main sights in a day.",
+    "destinations": [
+      {
+        "name": "Senado Square",
+        "blurb": "Macau's central square paved with wave-patterned Portuguese tiles and lined with pastel colonial buildings."
+      },
+      {
+        "name": "Macau Tower",
+        "blurb": "A 338 m tower with a glass-floored observation deck and one of the world's highest bungee jumps."
+      },
+      {
+        "name": "Cotai Strip",
+        "blurb": "A stretch of large resorts with shows, shopping malls and replica landmarks such as a Venetian canal."
+      },
+      {
+        "name": "Taipa Village",
+        "blurb": "Narrow lanes of snack shops and Portuguese restaurants beside the Taipa Houses Museum."
+      },
+      {
+        "name": "Guia Fortress",
+        "blurb": "A 17th-century hilltop fort with the oldest lighthouse on the China coast, reached by a short cable car."
+      },
+      {
+        "name": "Coloane Village",
+        "blurb": "A quiet fishing village on Macau's southern island, home to the original Lord Stow's egg tart bakery."
+      },
+      {
+        "name": "Mount Fortress",
+        "blurb": "A Jesuit-built fort beside the Ruins of St Paul's that now houses the Macau Museum."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "A-Ma Temple",
+        "blurb": "Macau's oldest temple, dedicated to the sea goddess Mazu, from which the city is thought to take its name."
+      },
+      {
+        "name": "Ruins of St Paul's",
+        "blurb": "The carved stone facade of a 17th-century Jesuit church, reached by a broad flight of steps and Macau's best-known landmark."
+      },
+      {
+        "name": "Kun Iam Temple",
+        "blurb": "A 17th-century temple to the goddess of mercy, where an 1844 treaty between the US and China was signed."
+      },
+      {
+        "name": "Lin Fung Temple",
+        "blurb": "The Lotus Temple, an old Buddhist and Taoist temple near the border gate, once a lodging for officials travelling to Guangzhou."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Portuguese egg tart",
+        "blurb": "A flaky tart with caramelised custard, popularised by Lord Stow's Bakery in Coloane.",
+        "veg": false
+      },
+      {
+        "name": "Serradura",
+        "blurb": "Sawdust pudding of whipped cream layered with crushed biscuits, served chilled.",
+        "veg": true
+      },
+      {
+        "name": "African chicken",
+        "blurb": "Grilled chicken in a spicy sauce of peanuts, coconut and peri-peri, a Macanese creation.",
+        "veg": false
+      },
+      {
+        "name": "Minchi",
+        "blurb": "Minced meat stir-fried with soy and diced potatoes, often topped with a fried egg; a Macanese home dish.",
+        "veg": false
+      },
+      {
+        "name": "Pork chop bun",
+        "blurb": "A fried marinated pork chop in a crusty bun, a Taipa snack.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Climb the steps to the Ruins of St Paul's",
+      "Walk the tiled Senado Square",
+      "Eat a warm egg tart in Coloane",
+      "Look down from Macau Tower's glass deck",
+      "Explore the lanes of Taipa Village",
+      "Take the ferry over from Hong Kong"
+    ],
+    "indianTraveller": "The big Cotai resorts have Indian restaurants and vegetarian options, though choices are limited in the old town, Macau is usually reached via Hong Kong (about 5–6 hours from Hyderabad plus an hour by ferry or bus), sockets are mostly Type G at 220 V, and Hong Kong dollars are accepted almost everywhere, though change often comes back in patacas."
+  },
+  "china": {
+    "capital": "Beijing",
+    "currency": "Renminbi yuan (CNY)",
+    "intro": "China is a big-ticket trip of the Great Wall, the Forbidden City, the Terracotta Warriors and Shanghai's skyline, linked by an extensive high-speed rail network. Ten to fourteen days covers Beijing, Xi'an and Shanghai, with Guilin or Chengdu as scenic extras. A guided package helps with language, and Buddhist sites have special meaning for many Indian visitors.",
+    "destinations": [
+      {
+        "name": "Great Wall at Mutianyu",
+        "blurb": "A restored, less crowded section of the Wall about 90 minutes from Beijing, with a cable car up and a toboggan down."
+      },
+      {
+        "name": "Forbidden City",
+        "blurb": "The vast imperial palace at the heart of Beijing, home to emperors for nearly 500 years; tickets must be booked ahead."
+      },
+      {
+        "name": "Terracotta Warriors, Xi'an",
+        "blurb": "Thousands of life-size clay soldiers guarding the tomb of China's first emperor, each with a different face."
+      },
+      {
+        "name": "The Bund, Shanghai",
+        "blurb": "A riverside promenade of colonial-era buildings facing the Pudong skyline, best at night."
+      },
+      {
+        "name": "Li River, Guilin",
+        "blurb": "A river cruise from Guilin to Yangshuo past limestone karst peaks pictured on the 20-yuan note."
+      },
+      {
+        "name": "Zhangjiajie National Forest Park",
+        "blurb": "Sandstone pillars rising out of forest, reached by glass elevators and cable cars."
+      },
+      {
+        "name": "Chengdu Panda Base",
+        "blurb": "A research centre where giant pandas are most active in the early morning."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Temple of Heaven",
+        "blurb": "The Ming-era complex in Beijing where emperors prayed for good harvests, centred on the round blue-roofed Hall of Prayer."
+      },
+      {
+        "name": "Shaolin Temple",
+        "blurb": "The Buddhist monastery on Mount Song in Henan, birthplace of Chan Buddhism and Shaolin kung fu, traditionally linked to the Indian monk Bodhidharma."
+      },
+      {
+        "name": "Yonghe Temple",
+        "blurb": "Beijing's Lama Temple, a working Tibetan Buddhist monastery with an 18 m Buddha carved from a single sandalwood tree."
+      },
+      {
+        "name": "Jade Buddha Temple, Shanghai",
+        "blurb": "A working Buddhist temple holding two Buddha statues carved from white jade brought from Burma."
+      },
+      {
+        "name": "Leshan Giant Buddha",
+        "blurb": "A 71 m Buddha carved into a riverside cliff in Sichuan during the Tang dynasty, a UNESCO site."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Peking duck",
+        "blurb": "Roast duck with crisp lacquered skin, carved at the table and wrapped in thin pancakes with scallions.",
+        "veg": false
+      },
+      {
+        "name": "Xiaolongbao",
+        "blurb": "Shanghai soup dumplings with a pork filling and hot broth sealed inside.",
+        "veg": false
+      },
+      {
+        "name": "Kung Pao chicken",
+        "blurb": "A Sichuan stir-fry of diced chicken with peanuts and dried chillies.",
+        "veg": false
+      },
+      {
+        "name": "Di san xian",
+        "blurb": "A northern stir-fry of potato, aubergine and green pepper in a savoury sauce.",
+        "veg": true
+      },
+      {
+        "name": "Buddhist vegetarian cuisine",
+        "blurb": "Tofu, mushroom and gluten dishes served at temple restaurants such as those at the Jade Buddha Temple.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Walk the Great Wall at Mutianyu",
+      "Explore the Forbidden City",
+      "Stand before the Terracotta Warriors",
+      "Cruise the Li River to Yangshuo",
+      "See the Bund lit up at night",
+      "Ride a high-speed train between cities"
+    ],
+    "indianTraveller": "Indian restaurants exist in Beijing and Shanghai, but elsewhere vegetarian dishes may be cooked with meat stock, so carry a note in Chinese saying 'no meat, no fish', flights from Hyderabad connect via Delhi, Singapore or Bangkok for about 8–12 hours, sockets accept Type A, C and I plugs at 220 V, and since most payments run on Alipay or WeChat Pay, set up one of them with an international card before travel and keep some cash."
+  }
+}

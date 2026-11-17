@@ -1,0 +1,1074 @@
+{
+  "maldives": {
+    "capital": "Male",
+    "currency": "Maldivian Rufiyaa (MVR)",
+    "intro": "The Maldives is a chain of 26 coral atolls where most holidays are spent at island resorts, each reached by speedboat or seaplane from Velana International Airport near Male. It is one of the shortest international trips from South India, and many resorts now have Indian chefs and vegetarian menus, which makes it a popular choice for honeymooners and family celebrations. Local guesthouse islands such as Maafushi offer a lower-cost way to see the same reefs.",
+    "destinations": [
+      {
+        "name": "Male",
+        "blurb": "The compact capital, where a walk takes in the fish market, the local market for coconuts and dried tuna, and the Republic Square seafront."
+      },
+      {
+        "name": "Hulhumale",
+        "blurb": "A reclaimed island linked to Male by bridge, with a long public beach and inexpensive cafes that suit a stopover night."
+      },
+      {
+        "name": "Maafushi",
+        "blurb": "A local island in Kaafu Atoll with guesthouses, a bikini beach and day trips to sandbanks and snorkel reefs."
+      },
+      {
+        "name": "Hanifaru Bay, Baa Atoll",
+        "blurb": "A protected bay in a UNESCO biosphere reserve where large numbers of manta rays gather to feed, mainly between June and November."
+      },
+      {
+        "name": "South Ari Atoll",
+        "blurb": "Known for year-round sightings of whale sharks on guided snorkel trips along the outer reef."
+      },
+      {
+        "name": "Vaadhoo Island",
+        "blurb": "A small island in Raa Atoll where bioluminescent plankton can sometimes make the shoreline glow blue after dark."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Hukuru Miskiy (Old Friday Mosque), Male",
+        "blurb": "Built in 1658 from carved coral stone, with lacquered wooden interiors and an old cemetery of engraved tombstones."
+      },
+      {
+        "name": "Grand Friday Mosque (Islamic Centre), Male",
+        "blurb": "The capital's large white mosque with a golden dome, which visitors can usually view outside prayer times when modestly dressed."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Mas huni",
+        "blurb": "Shredded tuna mixed with grated coconut, onion and chilli, eaten at breakfast with roshi flatbread.",
+        "veg": false
+      },
+      {
+        "name": "Garudhiya",
+        "blurb": "A clear tuna broth served with rice, lime, chilli and onion, the traditional everyday meal.",
+        "veg": false
+      },
+      {
+        "name": "Fihunu mas",
+        "blurb": "Whole reef fish rubbed with a chilli paste and grilled, often served at resort beach dinners.",
+        "veg": false
+      },
+      {
+        "name": "Boshi mashuni",
+        "blurb": "A salad of finely chopped banana flower tossed with coconut, lime and chilli.",
+        "veg": true
+      },
+      {
+        "name": "Bondibai",
+        "blurb": "A sweet rice pudding cooked with coconut milk, sugar and cardamom.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Seaplane transfer over the atolls",
+      "Snorkelling with manta rays in Baa Atoll",
+      "A night in an overwater villa",
+      "Sandbank picnic from a local island",
+      "Sunset dolphin cruise",
+      "Walking tour of Male's markets"
+    ],
+    "indianTraveller": "Flights from Hyderabad usually take about 4–6 hours with one connection via Bengaluru, Kochi or another Indian hub; most resorts can arrange Indian vegetarian meals if told in advance, US dollars are widely accepted at resorts, and sockets are mostly the UK-style three-pin type, so carry an adaptor."
+  },
+  "mauritius": {
+    "capital": "Port Louis",
+    "currency": "Mauritian Rupee (MUR)",
+    "intro": "Mauritius combines lagoon beaches, volcanic hills and sugar-cane country with a population in which roughly half are of Indian descent, so Hindi and Bhojpuri are heard and temples and Indian sweets are part of daily life. Indian families find the food, festivals and welcome familiar, while the resorts, catamaran trips and island excursions make it a strong honeymoon choice. The island is small enough to cover the north, south and west coasts in a week.",
+    "destinations": [
+      {
+        "name": "Chamarel Seven Coloured Earth",
+        "blurb": "Rippled dunes of red, brown and violet volcanic soil in the south-west, close to the Chamarel waterfall."
+      },
+      {
+        "name": "Black River Gorges National Park",
+        "blurb": "The island's largest forest reserve, with viewpoints over the gorges and walking trails through native trees."
+      },
+      {
+        "name": "Ile aux Cerfs",
+        "blurb": "An islet off the east coast reached by boat, with a shallow turquoise lagoon and water sports."
+      },
+      {
+        "name": "Le Morne Brabant",
+        "blurb": "A UNESCO-listed basalt mountain on the south-west tip, linked to the history of escaped slaves and framed by a wide lagoon."
+      },
+      {
+        "name": "Sir Seewoosagur Ramgoolam Botanical Garden, Pamplemousses",
+        "blurb": "A historic garden known for its giant Victoria water lilies and many palm species."
+      },
+      {
+        "name": "Caudan Waterfront, Port Louis",
+        "blurb": "The capital's harbourside area of shops, restaurants and the Blue Penny Museum."
+      },
+      {
+        "name": "Grand Baie",
+        "blurb": "The lively northern bay for catamaran cruises, shopping and evening restaurants."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Ganga Talao (Grand Bassin)",
+        "blurb": "A crater lake regarded as sacred by Mauritian Hindus, lined with shrines and guarded by a 33-metre statue of Lord Shiva, and the focus of the Maha Shivaratri pilgrimage."
+      },
+      {
+        "name": "Maheswarnath Mandir, Triolet",
+        "blurb": "The island's largest Hindu temple complex, first built in the late nineteenth century, with shrines to Shiva, Ganesh, Krishna and other deities."
+      },
+      {
+        "name": "Sagar Shiv Mandir, Poste de Flacq",
+        "blurb": "A white Shiva temple set on a small islet joined to the shore by a causeway on the east coast."
+      },
+      {
+        "name": "Pere Laval Shrine, Sainte-Croix",
+        "blurb": "The tomb of the nineteenth-century missionary Jacques-Desire Laval, visited by people of many faiths, especially on the anniversary of his death in September."
+      },
+      {
+        "name": "Jummah Mosque, Port Louis",
+        "blurb": "A mosque from the 1850s in the city's Chinatown, with carved teak doors and white Indo-Islamic arches."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Dholl puri",
+        "blurb": "Soft flatbread stuffed with ground yellow split peas, served with bean curry, rougaille and chutney from street stalls.",
+        "veg": true
+      },
+      {
+        "name": "Gateaux piments",
+        "blurb": "Small crisp chilli fritters made from split peas, sold hot by the paper bag.",
+        "veg": true
+      },
+      {
+        "name": "Rougaille",
+        "blurb": "A thick tomato, onion and garlic sauce usually cooked with sausage, salted fish or seafood.",
+        "veg": false
+      },
+      {
+        "name": "Vindaye",
+        "blurb": "Fish or octopus fried and then tossed in a mustard, turmeric and vinegar dressing.",
+        "veg": false
+      },
+      {
+        "name": "Alouda",
+        "blurb": "A cold sweet milk drink with basil seeds and agar jelly, sold at Port Louis market.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Darshan at Ganga Talao",
+      "Catamaran day trip to Ile aux Cerfs",
+      "Dholl puri at Port Louis market",
+      "Sunset over Le Morne",
+      "Undersea walk or glass-bottom boat in the lagoon",
+      "Drive through Chamarel and the gorges"
+    ],
+    "indianTraveller": "Flights from Hyderabad take roughly 8–11 hours with one connection via Mumbai, Bengaluru or Dubai; Indian vegetarian food is easy to find everywhere, Indian rupees are not used locally so carry US dollars or euros to exchange, and sockets are a mix of UK three-pin and two-pin types."
+  },
+  "seychelles": {
+    "capital": "Victoria",
+    "currency": "Seychellois Rupee (SCR)",
+    "intro": "Seychelles is a group of granite and coral islands in the western Indian Ocean, best known for beaches framed by smooth granite boulders and for rare wildlife such as giant tortoises and the coco de mer palm. Most visitors split their time between Mahe, Praslin and La Digue, moving between them by ferry. It suits couples and families who want quiet beaches and nature walks rather than nightlife.",
+    "destinations": [
+      {
+        "name": "Vallee de Mai, Praslin",
+        "blurb": "A UNESCO-listed palm forest where the coco de mer, with the world's largest seed, grows wild."
+      },
+      {
+        "name": "Anse Source d'Argent, La Digue",
+        "blurb": "A shallow beach of pink-grey granite boulders that visitors usually reach by bicycle."
+      },
+      {
+        "name": "Anse Lazio, Praslin",
+        "blurb": "A curved bay with calm water and soft sand, good for swimming and snorkelling."
+      },
+      {
+        "name": "Morne Seychellois National Park, Mahe",
+        "blurb": "Mountain forest covering much of Mahe, with walking trails to viewpoints such as Copolia."
+      },
+      {
+        "name": "Curieuse Island",
+        "blurb": "A small island where giant Aldabra tortoises roam near a mangrove boardwalk."
+      },
+      {
+        "name": "Sir Selwyn Selwyn-Clarke Market, Victoria",
+        "blurb": "The capital's covered market for fresh fish, tropical fruit and spices."
+      },
+      {
+        "name": "Beau Vallon, Mahe",
+        "blurb": "Mahe's longest family beach, with water sports by day and food stalls on some evenings."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Arul Mihu Navasakthi Vinayagar Temple, Victoria",
+        "blurb": "The islands' Hindu temple, built by the local Tamil community, with a colourful gopuram and a yearly Thaipoosam Kavadi festival."
+      },
+      {
+        "name": "Cathedral of the Immaculate Conception, Victoria",
+        "blurb": "The Roman Catholic cathedral of Seychelles, with a separate clock tower beside it."
+      },
+      {
+        "name": "St Paul's Cathedral, Victoria",
+        "blurb": "The Anglican cathedral in the centre of town, rebuilt in the twentieth century on a site used since 1859."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Kari koko pwason",
+        "blurb": "Creole fish curry cooked in coconut milk with local spices and served with rice.",
+        "veg": false
+      },
+      {
+        "name": "Kari zourit",
+        "blurb": "Octopus curry simmered in coconut milk, a long-standing island favourite.",
+        "veg": false
+      },
+      {
+        "name": "Salad palmis",
+        "blurb": "A salad of thinly sliced heart of palm, sometimes called millionaire's salad.",
+        "veg": true
+      },
+      {
+        "name": "Ladob",
+        "blurb": "Ripe plantain or breadfruit slowly cooked in coconut milk with nutmeg, vanilla and sugar.",
+        "veg": true
+      },
+      {
+        "name": "Breadfruit chips",
+        "blurb": "Thin slices of fried breadfruit sold as a salted snack.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Cycling around La Digue",
+      "Walk among coco de mer palms in Vallee de Mai",
+      "Feeding giant tortoises on Curieuse",
+      "Snorkelling at Anse Lazio",
+      "Inter-island ferry from Mahe to Praslin",
+      "Fresh fruit and spices at Victoria market"
+    ],
+    "indianTraveller": "Flights from Hyderabad usually take about 7–10 hours with one connection via Mumbai, Dubai, Abu Dhabi or Colombo; there are a few Indian restaurants on Mahe and resorts can arrange vegetarian meals, card payments and euros or dollars are convenient, and sockets are the UK three-pin type."
+  },
+  "sri-lanka": {
+    "capital": "Sri Jayawardenepura Kotte",
+    "currency": "Sri Lankan Rupee (LKR)",
+    "intro": "Sri Lanka packs ancient cities, tea-covered hills, wildlife parks and southern beaches into a small island that is a short flight from Hyderabad. For many Indian travellers it holds special meaning through sites linked to the Ramayana, alongside the Buddhist heritage of Kandy and the Cultural Triangle. The food, with its rice and curry, hoppers and coconut, feels close to South Indian cooking.",
+    "destinations": [
+      {
+        "name": "Sigiriya",
+        "blurb": "A fifth-century rock fortress with frescoes and a lion-paw gateway, climbed by steps to the palace ruins on top."
+      },
+      {
+        "name": "Galle Fort",
+        "blurb": "A walled colonial town on the south coast, with ramparts, a lighthouse and small cafes along old Dutch streets."
+      },
+      {
+        "name": "Ella",
+        "blurb": "A hill village known for the Nine Arch Bridge, tea estates and the short hike up Little Adam's Peak."
+      },
+      {
+        "name": "Nuwara Eliya",
+        "blurb": "A cool hill station of tea factories, Gregory Lake and colonial-era bungalows."
+      },
+      {
+        "name": "Yala National Park",
+        "blurb": "The country's best-known park for jeep safaris, with one of the highest densities of leopards in the world."
+      },
+      {
+        "name": "Polonnaruwa",
+        "blurb": "The medieval royal capital, with well-preserved palace ruins and a large reservoir best explored by bicycle."
+      },
+      {
+        "name": "Mirissa",
+        "blurb": "A south-coast beach town where whale-watching boats go out between roughly November and April."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Temple of the Sacred Tooth Relic, Kandy",
+        "blurb": "The country's most revered Buddhist shrine, holding a tooth relic of the Buddha and the centre of the Esala Perahera procession."
+      },
+      {
+        "name": "Seetha Amman Temple, Seetha Eliya",
+        "blurb": "A Hindu temple near Nuwara Eliya beside a stream, at the place traditionally identified with Ashok Vatika, where Sita is said to have been held."
+      },
+      {
+        "name": "Munneswaram Temple, Chilaw",
+        "blurb": "An ancient Shiva temple on the west coast, linked in local tradition to Lord Rama's prayers after the war with Ravana."
+      },
+      {
+        "name": "Koneswaram Temple, Trincomalee",
+        "blurb": "A Shiva temple on Swami Rock above the sea, one of the island's most important Hindu shrines."
+      },
+      {
+        "name": "Dambulla Cave Temple",
+        "blurb": "Five Buddhist cave shrines filled with painted ceilings and over 150 Buddha images, a UNESCO World Heritage Site."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Hoppers (appa)",
+        "blurb": "Bowl-shaped rice-flour and coconut-milk pancakes, crisp at the edges, eaten with sambol or curry.",
+        "veg": true
+      },
+      {
+        "name": "Parippu",
+        "blurb": "Red lentil curry cooked with coconut milk, turmeric and curry leaves, served with rice.",
+        "veg": true
+      },
+      {
+        "name": "Kiribath with lunu miris",
+        "blurb": "Rice cooked in coconut milk and cut into diamonds, eaten with a fiery onion and chilli relish.",
+        "veg": true
+      },
+      {
+        "name": "Kottu roti",
+        "blurb": "Chopped godamba roti stir-fried on a griddle with vegetables, egg and usually chicken.",
+        "veg": false
+      },
+      {
+        "name": "Lamprais",
+        "blurb": "A Dutch Burgher dish of rice, meat curry and accompaniments baked together in a banana leaf.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Ramayana trail from Seetha Eliya to Munneswaram",
+      "Evening puja at the Temple of the Tooth",
+      "Climbing Sigiriya at sunrise",
+      "Train ride from Kandy to Ella",
+      "Leopard safari in Yala",
+      "Sunset walk on Galle Fort ramparts"
+    ],
+    "indianTraveller": "Colombo is about 2 hours from Hyderabad by direct flight or a short connection; vegetarian rice and curry and South Indian-style food are widely available, Indian rupees are not generally accepted so exchange to Sri Lankan rupees, and many sockets take Indian round-pin plugs, though UK three-pin sockets are also common."
+  },
+  "tanzania": {
+    "capital": "Dodoma",
+    "currency": "Tanzanian Shilling (TZS)",
+    "intro": "Tanzania is one of Africa's great safari countries, with the Serengeti, the Ngorongoro Crater and Mount Kilimanjaro all in the north, and the spice island of Zanzibar a short flight away for beach days. A long-established Indian community, especially in Dar es Salaam, Arusha and Zanzibar, means Indian food and temples are easier to find than visitors expect. A typical trip pairs four or five days of safari with a few nights on the coast.",
+    "destinations": [
+      {
+        "name": "Serengeti National Park",
+        "blurb": "Wide grassland plains that host the Great Migration of wildebeest and zebra, along with lions, cheetahs and elephants."
+      },
+      {
+        "name": "Ngorongoro Crater",
+        "blurb": "A collapsed volcanic caldera whose floor holds a dense population of wildlife, including black rhino."
+      },
+      {
+        "name": "Mount Kilimanjaro",
+        "blurb": "Africa's highest peak at 5,895 metres, climbed over six to eight days or viewed from the lodges around Moshi."
+      },
+      {
+        "name": "Tarangire National Park",
+        "blurb": "A park of baobab trees and seasonal rivers known for large elephant herds in the dry season."
+      },
+      {
+        "name": "Stone Town, Zanzibar",
+        "blurb": "A UNESCO-listed old town of carved wooden doors, narrow lanes and the Forodhani Gardens night food market."
+      },
+      {
+        "name": "Nungwi, Zanzibar",
+        "blurb": "A beach village on Zanzibar's northern tip where the tide stays high enough for swimming most of the day."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Christ Church Anglican Cathedral, Stone Town",
+        "blurb": "Built in the 1870s on the site of Zanzibar's last open slave market, with a memorial and small museum alongside."
+      },
+      {
+        "name": "St Joseph's Cathedral, Stone Town",
+        "blurb": "A twin-spired Roman Catholic cathedral from the 1890s, designed by the architect of Marseille's cathedral."
+      },
+      {
+        "name": "BAPS Shri Swaminarayan Mandir, Dar es Salaam",
+        "blurb": "A Hindu temple serving the city's long-settled Gujarati community, open to visitors for darshan."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Ugali",
+        "blurb": "A firm maize-flour porridge eaten by hand with stews and greens, the national staple.",
+        "veg": true
+      },
+      {
+        "name": "Maharage ya nazi",
+        "blurb": "Red kidney beans simmered in coconut milk with onion and tomato.",
+        "veg": true
+      },
+      {
+        "name": "Mandazi",
+        "blurb": "Lightly sweet fried dough flavoured with cardamom and coconut, eaten with chai.",
+        "veg": true
+      },
+      {
+        "name": "Nyama choma",
+        "blurb": "Goat or beef grilled over charcoal and served with kachumbari salad.",
+        "veg": false
+      },
+      {
+        "name": "Zanzibar pilau",
+        "blurb": "Rice cooked with cumin, cardamom, cinnamon and cloves, usually with beef or chicken.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Game drives on the Serengeti plains",
+      "Descent into the Ngorongoro Crater",
+      "Hot-air balloon flight at dawn",
+      "Spice farm tour on Zanzibar",
+      "Evening food stalls at Forodhani Gardens",
+      "Dhow cruise at sunset off Stone Town"
+    ],
+    "indianTraveller": "Flights from Hyderabad typically take about 10–13 hours with one connection via Dubai, Doha, Mumbai, Nairobi or Addis Ababa; safari lodges can prepare vegetarian meals on request and Indian restaurants are common in Dar es Salaam, Arusha and Zanzibar, US dollars printed after 2009 are widely used for park and lodge payments, and sockets are mainly the UK three-pin type."
+  },
+  "switzerland": {
+    "capital": "Bern",
+    "currency": "Swiss Franc (CHF)",
+    "intro": "Switzerland is one of the most popular European holidays for Indian families, with snow viewpoints reachable by train and cable car even in summer, lakeside towns and a rail network that makes travel between them simple. Many of its sights are familiar from Indian films, and destinations such as Interlaken, Lucerne and Mount Titlis cater well to Indian groups. Costs are high, so a Swiss Travel Pass and well-planned day trips help keep the budget in check.",
+    "destinations": [
+      {
+        "name": "Jungfraujoch",
+        "blurb": "The highest railway station in Europe at 3,454 metres, with the Aletsch Glacier, an ice palace and snow year-round."
+      },
+      {
+        "name": "Interlaken",
+        "blurb": "A resort town between Lakes Thun and Brienz, used as a base for the Jungfrau region and for paragliding."
+      },
+      {
+        "name": "Lucerne",
+        "blurb": "A lakeside city known for the wooden Chapel Bridge, the Lion Monument and boat trips to nearby peaks."
+      },
+      {
+        "name": "Mount Titlis",
+        "blurb": "A glacier mountain above Engelberg reached by the rotating Rotair cable car, with a cliff walk and snow play area."
+      },
+      {
+        "name": "Zermatt and the Matterhorn",
+        "blurb": "A car-free village under the Matterhorn, with the Gornergrat railway climbing to a viewpoint over glaciers."
+      },
+      {
+        "name": "Rhine Falls",
+        "blurb": "Europe's largest waterfall by volume, near Schaffhausen, with boats that go out to a rock in the middle."
+      },
+      {
+        "name": "Chateau de Chillon, Montreux",
+        "blurb": "A medieval castle built on a rock in Lake Geneva, close to the Montreux promenade."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Sri Sivasubramaniar Temple, Adliswil",
+        "blurb": "A Tamil Hindu temple near Zurich dedicated to Lord Murugan, with regular pujas and a large annual chariot festival."
+      },
+      {
+        "name": "Haus der Religionen, Bern",
+        "blurb": "A centre that houses a Hindu temple alongside a mosque, a church, a Buddhist centre and other places of worship under one roof."
+      },
+      {
+        "name": "Einsiedeln Abbey",
+        "blurb": "A Benedictine monastery and baroque church that has been a major Catholic pilgrimage site for centuries, known for its Black Madonna."
+      },
+      {
+        "name": "Grossmunster, Zurich",
+        "blurb": "The twin-towered Romanesque church where Huldrych Zwingli began the Swiss Reformation."
+      },
+      {
+        "name": "Abbey of St Gall",
+        "blurb": "A UNESCO-listed abbey with a baroque cathedral and one of the oldest monastic libraries in the world."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Cheese fondue",
+        "blurb": "A pot of melted Gruyere and Vacherin cheese, traditionally made with white wine, into which bread is dipped.",
+        "veg": true
+      },
+      {
+        "name": "Raclette",
+        "blurb": "Melted raclette cheese scraped over boiled potatoes and served with pickled onions and gherkins.",
+        "veg": true
+      },
+      {
+        "name": "Rosti",
+        "blurb": "A crisp pan-fried cake of grated potato, originally a farmer's breakfast from the Bern area.",
+        "veg": true
+      },
+      {
+        "name": "Birchermuesli",
+        "blurb": "Oats soaked overnight with milk or yoghurt and grated apple, created by a Swiss doctor around 1900.",
+        "veg": true
+      },
+      {
+        "name": "Zurcher Geschnetzeltes",
+        "blurb": "Thin strips of veal in a creamy mushroom and white wine sauce, usually served with rosti.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Train ride to Jungfraujoch",
+      "Rotair cable car up Mount Titlis",
+      "Lake Lucerne boat cruise",
+      "Glacier Express or Bernina Express scenic rail",
+      "Swiss chocolate tasting",
+      "Matterhorn views from Gornergrat"
+    ],
+    "indianTraveller": "Flights from Hyderabad take roughly 12–15 hours with one connection via the Gulf or a European hub; Indian restaurants are common in Interlaken, Lucerne, Zurich and Geneva and Titlis even has an Indian food counter, carry Swiss francs or a forex card since euros are not always accepted, and Swiss sockets take slim two-pin Europlugs, so pack a Swiss or universal adaptor."
+  },
+  "france": {
+    "capital": "Paris",
+    "currency": "Euro (EUR)",
+    "intro": "France offers Paris landmarks, royal chateaux, Riviera beaches and Alpine views, and it is often the first stop on a multi-country Europe tour from India. Paris alone can fill four or five days with museums, river cruises and Disneyland, while the fast TGV trains make Nice, Lyon or the Loire easy additions. Indian food is readily available in Paris, particularly around Gare du Nord and La Chapelle.",
+    "destinations": [
+      {
+        "name": "Eiffel Tower, Paris",
+        "blurb": "The iron tower of 1889, with lifts to viewing platforms and evening light displays on the hour."
+      },
+      {
+        "name": "Louvre Museum, Paris",
+        "blurb": "The world's most visited museum, home to the Mona Lisa and the Venus de Milo under its glass pyramid."
+      },
+      {
+        "name": "Palace of Versailles",
+        "blurb": "The royal palace outside Paris with the Hall of Mirrors and formal gardens of fountains and hedges."
+      },
+      {
+        "name": "Disneyland Paris",
+        "blurb": "Two theme parks east of the city that make an easy day out for families with children."
+      },
+      {
+        "name": "Nice and the French Riviera",
+        "blurb": "A Mediterranean seafront city on the Promenade des Anglais, close to Monaco, Eze and Cannes."
+      },
+      {
+        "name": "Loire Valley chateaux",
+        "blurb": "Renaissance castles such as Chambord and Chenonceau set among vineyards and river towns."
+      },
+      {
+        "name": "Chamonix-Mont-Blanc",
+        "blurb": "An Alpine town where the Aiguille du Midi cable car rises to a viewpoint facing Mont Blanc."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Notre-Dame de Paris",
+        "blurb": "The Gothic cathedral on the Ile de la Cite, reopened in December 2024 after restoration following the 2019 fire."
+      },
+      {
+        "name": "Basilique du Sacre-Coeur, Paris",
+        "blurb": "A white-domed basilica on top of Montmartre hill, with wide views across the city."
+      },
+      {
+        "name": "Sri Manicka Vinayakar Alayam, Paris",
+        "blurb": "A Ganesh temple in the La Chapelle area, known for its yearly Ganesh Chaturthi street procession."
+      },
+      {
+        "name": "Sanctuary of Our Lady of Lourdes",
+        "blurb": "A major Catholic pilgrimage site in the Pyrenees foothills, centred on the grotto where Bernadette reported her visions in 1858."
+      },
+      {
+        "name": "Mont-Saint-Michel Abbey",
+        "blurb": "A medieval abbey crowning a tidal island in Normandy, reached on foot or by shuttle across a causeway."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Croissant",
+        "blurb": "A flaky, buttery crescent pastry best bought warm from a neighbourhood boulangerie.",
+        "veg": true
+      },
+      {
+        "name": "Ratatouille",
+        "blurb": "A Provencal stew of aubergine, courgette, peppers and tomato cooked slowly in olive oil.",
+        "veg": true
+      },
+      {
+        "name": "Crepes",
+        "blurb": "Thin pancakes from Brittany, served sweet with sugar, Nutella or fruit from street stands.",
+        "veg": true
+      },
+      {
+        "name": "Coq au vin",
+        "blurb": "Chicken braised in red wine with mushrooms, onions and bacon.",
+        "veg": false
+      },
+      {
+        "name": "Bouillabaisse",
+        "blurb": "A Marseille fish stew flavoured with saffron and fennel, served with rouille-topped bread.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Seine river cruise at night",
+      "Eiffel Tower summit visit",
+      "Day trip to Versailles",
+      "Family day at Disneyland Paris",
+      "Ganesh darshan at La Chapelle",
+      "Fresh crepes in Montmartre"
+    ],
+    "indianTraveller": "Flights from Hyderabad usually take about 11–14 hours with one connection via Mumbai, Delhi, the Gulf or a European hub; Paris has many Indian and vegetarian restaurants, a forex card or credit card works almost everywhere, and sockets take two-pin round plugs, which suit Indian two-pin chargers but not three-pin plugs."
+  },
+  "italy": {
+    "capital": "Rome",
+    "currency": "Euro (EUR)",
+    "intro": "Italy brings together ancient Rome, Renaissance Florence, the canals of Venice and the coastlines of Amalfi and Cinque Terre, all linked by fast trains. Indian travellers often find Italian food easy to enjoy, since pizza, pasta and risotto have many vegetarian versions. A first trip usually covers Rome, Florence and Venice in about a week.",
+    "destinations": [
+      {
+        "name": "Colosseum, Rome",
+        "blurb": "The first-century amphitheatre that held 50,000 spectators, next to the Roman Forum and Palatine Hill."
+      },
+      {
+        "name": "Venice",
+        "blurb": "A city of canals best seen by vaporetto or gondola, with St Mark's Square and the Rialto Bridge at its heart."
+      },
+      {
+        "name": "Uffizi Gallery, Florence",
+        "blurb": "A Renaissance art collection including Botticelli's Birth of Venus, near the Ponte Vecchio."
+      },
+      {
+        "name": "Leaning Tower of Pisa",
+        "blurb": "The tilting white marble bell tower that visitors can climb by its spiral stairs."
+      },
+      {
+        "name": "Amalfi Coast",
+        "blurb": "Cliffside towns such as Positano and Amalfi linked by a winding coastal road and ferries."
+      },
+      {
+        "name": "Pompeii",
+        "blurb": "The Roman town buried by Vesuvius in 79 AD, with streets, houses and frescoes still standing."
+      },
+      {
+        "name": "Lake Como",
+        "blurb": "A mountain lake of villas and gardens north of Milan, explored by ferry between Bellagio and Varenna."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "St Peter's Basilica, Vatican City",
+        "blurb": "The centre of the Catholic world, with Michelangelo's dome and Pieta inside the world's largest church."
+      },
+      {
+        "name": "Sistine Chapel, Vatican City",
+        "blurb": "The papal chapel whose ceiling and Last Judgment were painted by Michelangelo, visited through the Vatican Museums."
+      },
+      {
+        "name": "Florence Cathedral (Duomo)",
+        "blurb": "Santa Maria del Fiore, crowned by Brunelleschi's brick dome, which visitors can climb for city views."
+      },
+      {
+        "name": "Milan Cathedral",
+        "blurb": "A Gothic cathedral of white marble with a rooftop terrace among its many spires."
+      },
+      {
+        "name": "Basilica of St Francis, Assisi",
+        "blurb": "The hillside pilgrimage church built over the tomb of St Francis, with frescoes by Giotto."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Pizza Margherita",
+        "blurb": "Neapolitan pizza with tomato, mozzarella and basil, baked quickly in a wood-fired oven.",
+        "veg": true
+      },
+      {
+        "name": "Pasta al pesto",
+        "blurb": "Ligurian pasta tossed with a sauce of fresh basil, pine nuts, olive oil and cheese.",
+        "veg": true
+      },
+      {
+        "name": "Gelato",
+        "blurb": "Dense Italian ice cream in flavours such as pistachio, stracciatella and hazelnut.",
+        "veg": true
+      },
+      {
+        "name": "Lasagne alla bolognese",
+        "blurb": "Layers of egg pasta, slow-cooked meat ragu and bechamel baked together.",
+        "veg": false
+      },
+      {
+        "name": "Spaghetti alla carbonara",
+        "blurb": "A Roman pasta of egg yolk, pecorino cheese, black pepper and cured pork cheek.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Gondola ride in Venice",
+      "Guided tour of the Colosseum",
+      "Climbing Brunelleschi's dome",
+      "Drive along the Amalfi Coast",
+      "Gelato tasting in Florence",
+      "Photos with the Leaning Tower of Pisa"
+    ],
+    "indianTraveller": "Flights from Hyderabad usually take about 12–15 hours with one connection via the Gulf or a European hub; vegetarian pizza and pasta are available everywhere and Indian restaurants exist in Rome, Milan, Florence and Venice, cards are widely accepted though some small shops prefer cash, and sockets take two-pin round plugs, so a universal adaptor is useful for three-pin Indian chargers."
+  },
+  "united-kingdom": {
+    "capital": "London",
+    "currency": "Pound Sterling (GBP)",
+    "intro": "The United Kingdom is one of the easiest long-haul trips for Indian travellers, with direct flights from Hyderabad, English spoken everywhere and a large Indian community that makes Indian food and temples easy to find. London alone has royal palaces, free museums and West End shows, while Scotland, the Lake District and the Cotswolds offer countryside within a few hours by train. Summer is the busiest season, and spring and early autumn are quieter.",
+    "destinations": [
+      {
+        "name": "Tower of London",
+        "blurb": "A riverside fortress built from 1078 that houses the Crown Jewels, including the Koh-i-Noor in the Queen Mother's crown."
+      },
+      {
+        "name": "British Museum, London",
+        "blurb": "A free museum with the Rosetta Stone, Egyptian mummies and a large gallery of South Asian art."
+      },
+      {
+        "name": "Edinburgh Castle",
+        "blurb": "A castle on volcanic rock above Scotland's capital, at the top of the Royal Mile."
+      },
+      {
+        "name": "Scottish Highlands and Loch Ness",
+        "blurb": "Mountains, lochs and glens north of Inverness, often visited on coach tours from Edinburgh."
+      },
+      {
+        "name": "Lake District",
+        "blurb": "A national park of lakes and fells in north-west England, with boat rides on Windermere."
+      },
+      {
+        "name": "Stonehenge",
+        "blurb": "A prehistoric stone circle on Salisbury Plain, built in stages from around 3000 BC."
+      },
+      {
+        "name": "Warner Bros. Studio Tour London",
+        "blurb": "The Harry Potter film sets and props at Leavesden, popular with families."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "BAPS Shri Swaminarayan Mandir, Neasden",
+        "blurb": "A traditional Hindu mandir of hand-carved Indian marble and Bulgarian limestone, opened in 1995 in north-west London."
+      },
+      {
+        "name": "Bhaktivedanta Manor, Watford",
+        "blurb": "An ISKCON temple in a country house north of London, with large Janmashtami celebrations each year."
+      },
+      {
+        "name": "Sri Venkateswara (Balaji) Temple, Tividale",
+        "blurb": "A large South Indian-style temple near Birmingham dedicated to Lord Venkateswara."
+      },
+      {
+        "name": "Westminster Abbey, London",
+        "blurb": "The Gothic church where English and British monarchs have been crowned since 1066."
+      },
+      {
+        "name": "St Paul's Cathedral, London",
+        "blurb": "Christopher Wren's domed cathedral, with the Whispering Gallery and views from the Golden Gallery."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Fish and chips",
+        "blurb": "Battered cod or haddock with thick-cut chips, often eaten with mushy peas.",
+        "veg": false
+      },
+      {
+        "name": "Full English breakfast",
+        "blurb": "Eggs, bacon, sausage, baked beans, grilled tomato, mushrooms and toast.",
+        "veg": false
+      },
+      {
+        "name": "Cornish pasty",
+        "blurb": "A crimped pastry filled with beef, potato, swede and onion.",
+        "veg": false
+      },
+      {
+        "name": "Cream tea",
+        "blurb": "Warm scones served with clotted cream, strawberry jam and a pot of tea.",
+        "veg": true
+      },
+      {
+        "name": "Sticky toffee pudding",
+        "blurb": "A moist date sponge covered in hot toffee sauce, served with custard or ice cream.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Crown Jewels at the Tower of London",
+      "Darshan at Neasden Temple",
+      "A West End musical",
+      "Ride on the London Eye",
+      "Walking the Royal Mile in Edinburgh",
+      "Afternoon tea with scones"
+    ],
+    "indianTraveller": "Direct flights from Hyderabad to London take about 10–11 hours; Indian vegetarian food is easy to find, especially in Wembley, Southall and Leicester, contactless cards work almost everywhere, and sockets are the UK three-pin type, which needs an adaptor for Indian plugs."
+  },
+  "spain": {
+    "capital": "Madrid",
+    "currency": "Euro (EUR)",
+    "intro": "Spain offers Moorish palaces in Andalusia, Gaudi's architecture in Barcelona, art museums in Madrid and long Mediterranean beaches. Fast AVE trains link Madrid, Barcelona, Seville and Cordoba, so a single trip can mix city sightseeing with flamenco evenings and seaside days. Meals start late by Indian standards, with dinner often after 9 pm.",
+    "destinations": [
+      {
+        "name": "Alhambra, Granada",
+        "blurb": "A Nasrid palace and fortress with carved stucco halls, courtyards of fountains and the Generalife gardens."
+      },
+      {
+        "name": "Park Guell, Barcelona",
+        "blurb": "Gaudi's hillside park of mosaic benches and gingerbread-style houses overlooking the city."
+      },
+      {
+        "name": "Casa Batllo, Barcelona",
+        "blurb": "A Gaudi house on Passeig de Gracia with a wave-like facade and dragon-scale roof."
+      },
+      {
+        "name": "Prado Museum, Madrid",
+        "blurb": "One of Europe's great art collections, with works by Velazquez, Goya and El Greco."
+      },
+      {
+        "name": "Plaza de Espana, Seville",
+        "blurb": "A semicircular plaza of tiled alcoves and bridges built for the 1929 exhibition."
+      },
+      {
+        "name": "Toledo",
+        "blurb": "A hilltop old city above the Tagus river, known for its layered Christian, Muslim and Jewish heritage."
+      },
+      {
+        "name": "Costa del Sol",
+        "blurb": "The southern coastline around Malaga and Marbella, with long beaches and resort towns."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Sagrada Familia, Barcelona",
+        "blurb": "Gaudi's basilica, under construction since 1882, with forest-like columns and stained glass that colours the interior."
+      },
+      {
+        "name": "Mezquita-Catedral, Cordoba",
+        "blurb": "A former great mosque with hundreds of red-and-white striped arches and a cathedral built in its centre."
+      },
+      {
+        "name": "Santiago de Compostela Cathedral",
+        "blurb": "The end point of the Camino de Santiago pilgrimage, believed to hold the remains of St James."
+      },
+      {
+        "name": "Seville Cathedral",
+        "blurb": "One of the largest Gothic cathedrals in the world, with the Giralda bell tower and the tomb of Columbus."
+      },
+      {
+        "name": "Montserrat Monastery",
+        "blurb": "A Benedictine monastery in jagged mountains outside Barcelona, home to the Black Madonna and a boys' choir."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Gazpacho",
+        "blurb": "A chilled Andalusian soup of blended tomato, cucumber, pepper, garlic and olive oil.",
+        "veg": true
+      },
+      {
+        "name": "Patatas bravas",
+        "blurb": "Fried potato cubes with a spicy tomato sauce, a standard tapas bar dish.",
+        "veg": true
+      },
+      {
+        "name": "Churros con chocolate",
+        "blurb": "Fried dough sticks dipped in thick hot chocolate, often eaten at breakfast.",
+        "veg": true
+      },
+      {
+        "name": "Paella valenciana",
+        "blurb": "Saffron rice cooked in a wide pan with chicken, rabbit and beans; seafood versions are also common.",
+        "veg": false
+      },
+      {
+        "name": "Jamon iberico",
+        "blurb": "Dry-cured ham from Iberian pigs, sliced thin and served as tapas.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Inside the Sagrada Familia",
+      "Evening at the Alhambra",
+      "Flamenco show in Seville",
+      "Tapas crawl in Madrid",
+      "Walk along La Rambla in Barcelona",
+      "Cable car or rack railway up Montserrat"
+    ],
+    "indianTraveller": "Flights from Hyderabad usually take about 13–16 hours with one connection via the Gulf or a European hub; Indian restaurants are easy to find in Barcelona and Madrid and vegetarian tapas are available though ham appears in many dishes, cards are widely accepted, and sockets take two-pin round plugs, so carry an adaptor for three-pin chargers."
+  },
+  "greece": {
+    "capital": "Athens",
+    "currency": "Euro (EUR)",
+    "intro": "Greece pairs the ancient sites of Athens and Delphi with whitewashed island villages in the Aegean, and many visitors combine a few days on the mainland with Santorini and Mykonos by ferry or short flight. Greek food has plenty of vegetable, bean and yoghurt dishes that vegetarian travellers enjoy. Late May to early October is the main season, with ferries running most often in summer.",
+    "destinations": [
+      {
+        "name": "Acropolis, Athens",
+        "blurb": "The rocky hill crowned by the Parthenon, with the Acropolis Museum at its foot."
+      },
+      {
+        "name": "Oia, Santorini",
+        "blurb": "A cliffside village of white houses and blue domes above the volcanic caldera, known for its sunsets."
+      },
+      {
+        "name": "Mykonos Town",
+        "blurb": "A maze of whitewashed lanes, the windmills on the hill and the waterfront Little Venice."
+      },
+      {
+        "name": "Delphi",
+        "blurb": "The ancient site of the oracle of Apollo on the slopes of Mount Parnassus, with a theatre and stadium."
+      },
+      {
+        "name": "Knossos, Crete",
+        "blurb": "The Bronze Age Minoan palace near Heraklion, linked to the legend of the Minotaur."
+      },
+      {
+        "name": "Navagio Beach, Zakynthos",
+        "blurb": "A cove of white sand and a rusting shipwreck enclosed by cliffs, usually reached by boat."
+      },
+      {
+        "name": "Plaka, Athens",
+        "blurb": "The old neighbourhood below the Acropolis, with tavernas and souvenir shops along narrow streets."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Meteora",
+        "blurb": "Eastern Orthodox monasteries built on top of tall sandstone pillars in central Greece, six of which are still active and open to visitors."
+      },
+      {
+        "name": "Monastery of St John the Theologian, Patmos",
+        "blurb": "A fortified monastery above the island's main town, near the Cave of the Apocalypse."
+      },
+      {
+        "name": "Panagia Evangelistria, Tinos",
+        "blurb": "The country's most visited Orthodox pilgrimage church, where pilgrims gather each year on 15 August."
+      },
+      {
+        "name": "Metropolitan Cathedral of Athens",
+        "blurb": "The city's main Orthodox cathedral, beside the small twelfth-century Little Metropolis church."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Horiatiki",
+        "blurb": "Greek village salad of tomato, cucumber, onion, olives and a slab of feta with olive oil.",
+        "veg": true
+      },
+      {
+        "name": "Gemista",
+        "blurb": "Tomatoes and peppers stuffed with herbed rice and baked in olive oil.",
+        "veg": true
+      },
+      {
+        "name": "Fasolada",
+        "blurb": "A thick white bean soup with tomato, carrot and celery, often called the national dish.",
+        "veg": true
+      },
+      {
+        "name": "Moussaka",
+        "blurb": "Baked layers of aubergine, minced lamb or beef and bechamel sauce.",
+        "veg": false
+      },
+      {
+        "name": "Souvlaki",
+        "blurb": "Grilled skewers of pork or chicken, often wrapped in pita with tzatziki.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Sunset at Oia in Santorini",
+      "Morning visit to the Acropolis",
+      "Day trip to the Meteora monasteries",
+      "Island ferry across the Aegean",
+      "Boat trip to Navagio Beach",
+      "Taverna dinner in Plaka"
+    ],
+    "indianTraveller": "Flights from Hyderabad usually take about 10–13 hours with one connection via the Gulf; vegetarian Greek dishes are easy to order and Indian restaurants exist in Athens and on the main islands, cards are accepted widely though small island tavernas may prefer cash, and sockets take two-pin round plugs."
+  },
+  "netherlands": {
+    "capital": "Amsterdam",
+    "currency": "Euro (EUR)",
+    "intro": "The Netherlands is a compact, flat country of canals, windmills, tulip fields and world-class museums, easily covered by train in a few days. Amsterdam is the main base, with day trips to Zaanse Schans, Kinderdijk and, in spring, the Keukenhof gardens that many Indian visitors recognise from films. It fits well into a wider Europe tour with Belgium, France or Switzerland.",
+    "destinations": [
+      {
+        "name": "Keukenhof",
+        "blurb": "A spring garden near Lisse with millions of tulips and other bulbs, open roughly from mid-March to mid-May."
+      },
+      {
+        "name": "Rijksmuseum, Amsterdam",
+        "blurb": "The national museum, home to Rembrandt's Night Watch and Vermeer's Milkmaid."
+      },
+      {
+        "name": "Van Gogh Museum, Amsterdam",
+        "blurb": "The largest collection of Vincent van Gogh's paintings and letters, including Sunflowers."
+      },
+      {
+        "name": "Anne Frank House, Amsterdam",
+        "blurb": "The canal house where Anne Frank and her family hid during the Second World War; tickets must be booked online in advance."
+      },
+      {
+        "name": "Zaanse Schans",
+        "blurb": "A riverside village of working windmills, a clog workshop and cheese farms near Amsterdam."
+      },
+      {
+        "name": "Kinderdijk",
+        "blurb": "A UNESCO-listed line of nineteen eighteenth-century windmills built to drain the polders."
+      },
+      {
+        "name": "Giethoorn",
+        "blurb": "A village without roads in its old centre, where thatched farmhouses are reached by boat along canals."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Sri Varatharaja Selvavinayagar Temple, Den Helder",
+        "blurb": "A large Tamil Hindu temple in the north of the country, built in South Indian style and dedicated to Lord Ganesh."
+      },
+      {
+        "name": "Oude Kerk, Amsterdam",
+        "blurb": "Amsterdam's oldest building, a fourteenth-century church with a wooden vaulted ceiling and Rembrandt's wife Saskia buried inside."
+      },
+      {
+        "name": "Dom Tower and Cathedral, Utrecht",
+        "blurb": "The country's tallest church tower, climbable by 465 steps, beside the remaining part of the Gothic cathedral."
+      },
+      {
+        "name": "St John's Cathedral, 's-Hertogenbosch",
+        "blurb": "A richly carved Gothic cathedral known for the small sculpted figures that climb its flying buttresses."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Stroopwafel",
+        "blurb": "Two thin waffles joined with caramel syrup, best eaten warm from a market stall.",
+        "veg": true
+      },
+      {
+        "name": "Poffertjes",
+        "blurb": "Small fluffy buckwheat pancakes served with butter and powdered sugar.",
+        "veg": true
+      },
+      {
+        "name": "Dutch apple pie (appeltaart)",
+        "blurb": "A deep lattice-topped pie of cinnamon apples, usually served with whipped cream.",
+        "veg": true
+      },
+      {
+        "name": "Bitterballen",
+        "blurb": "Crumbed and fried balls of beef ragout, served with mustard as a bar snack.",
+        "veg": false
+      },
+      {
+        "name": "Hollandse nieuwe haring",
+        "blurb": "Lightly brined raw herring eaten with chopped onion and pickles from street stands.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Tulip fields at Keukenhof in spring",
+      "Amsterdam canal cruise",
+      "Windmills at Zaanse Schans",
+      "Rembrandt's Night Watch at the Rijksmuseum",
+      "Cycling along canals and polders",
+      "Boat ride through Giethoorn"
+    ],
+    "indianTraveller": "Flights from Hyderabad usually take about 12–14 hours with one connection via the Gulf or a European hub; Amsterdam and The Hague have many Indian and Surinamese-Hindustani restaurants, cards are preferred over cash in most places, and sockets take two-pin round plugs, so bring an adaptor for three-pin chargers."
+  }
+}

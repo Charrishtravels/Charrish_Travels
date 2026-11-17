@@ -1,0 +1,1034 @@
+{
+  "australia": {
+    "capital": "Canberra",
+    "currency": "Australian dollar (AUD)",
+    "intro": "Australia suits Indian families who want big cities, beaches and wildlife in a single trip, usually combining Sydney, Melbourne and the Gold Coast or Cairns. A large Indian community means Indian groceries, restaurants and temples are easy to find in every major city. Distances are huge, so most itineraries use short domestic flights between regions.",
+    "destinations": [
+      {
+        "name": "Sydney Harbour",
+        "blurb": "Walk from Circular Quay to the Opera House steps, then take the ferry to Manly for views back across the harbour and Harbour Bridge."
+      },
+      {
+        "name": "Great Barrier Reef",
+        "blurb": "Day boats from Cairns and Port Douglas reach outer-reef pontoons where non-swimmers can view coral from glass-bottom boats and semi-submersibles."
+      },
+      {
+        "name": "Blue Mountains",
+        "blurb": "About two hours west of Sydney, the Three Sisters lookout at Echo Point and the Scenic World cable cars show off eucalyptus valleys and sandstone cliffs."
+      },
+      {
+        "name": "Great Ocean Road",
+        "blurb": "This coastal drive from Melbourne passes surf towns and rainforest before reaching the limestone stacks of the Twelve Apostles."
+      },
+      {
+        "name": "Gold Coast",
+        "blurb": "Theme parks such as Movie World, Sea World and Dreamworld sit close to the long surf beaches of Surfers Paradise, making it an easy base for children."
+      },
+      {
+        "name": "Uluru-Kata Tjuta National Park",
+        "blurb": "The red sandstone monolith of Uluru changes colour at sunrise and sunset, and the base walk introduces Anangu culture and rock art."
+      },
+      {
+        "name": "Phillip Island",
+        "blurb": "Every evening at dusk, little penguins waddle ashore at Summerland Beach, about two hours from Melbourne."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Sri Venkateswara Temple, Helensburgh",
+        "blurb": "Set in bushland south of Sydney, this temple dedicated to Lord Venkateswara is a familiar stop for Telugu families and serves prasadam at its canteen."
+      },
+      {
+        "name": "BAPS Shri Swaminarayan Mandir, Sydney",
+        "blurb": "The BAPS mandir in Rosehill, western Sydney, holds daily aarti and is a centre for the city's Gujarati community."
+      },
+      {
+        "name": "Shri Shiva Vishnu Temple, Carrum Downs",
+        "blurb": "One of Melbourne's largest Hindu temples, built in South Indian style with shrines to both Shiva and Vishnu."
+      },
+      {
+        "name": "St Mary's Cathedral, Sydney",
+        "blurb": "This Gothic Revival sandstone cathedral beside Hyde Park is the seat of Sydney's Catholic archbishop and has a notable crypt floor mosaic."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Meat pie",
+        "blurb": "A hand-sized pastry filled with minced beef and gravy, traditionally eaten at football matches with tomato sauce.",
+        "veg": false
+      },
+      {
+        "name": "Barramundi",
+        "blurb": "A mild white fish, usually grilled or pan-fried and served with chips and salad in coastal towns.",
+        "veg": false
+      },
+      {
+        "name": "Pavlova",
+        "blurb": "A meringue dessert with a crisp shell and soft centre, topped with cream and fresh fruit such as kiwi and passionfruit.",
+        "veg": true
+      },
+      {
+        "name": "Lamingtons",
+        "blurb": "Squares of sponge cake dipped in chocolate and rolled in desiccated coconut, found in every bakery.",
+        "veg": true
+      },
+      {
+        "name": "Vegemite on toast",
+        "blurb": "A salty yeast-extract spread scraped thinly over buttered toast, the classic Australian breakfast.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Ferry ride from Circular Quay to Manly",
+      "Holding a koala at a wildlife park",
+      "Snorkelling or glass-bottom boat on the reef",
+      "Twelve Apostles at sunset",
+      "Penguin Parade on Phillip Island",
+      "Theme park day on the Gold Coast"
+    ],
+    "indianTraveller": "Indian and vegetarian food is widely available in all major cities; flights from Hyderabad take roughly 13–16 hours with one stop (often via Singapore, Kuala Lumpur or Delhi); Australia uses Type I plugs, so pack an adapter, and cards work almost everywhere."
+  },
+  "new-zealand": {
+    "capital": "Wellington",
+    "currency": "New Zealand dollar (NZD)",
+    "intro": "New Zealand is a favourite for Indian honeymooners and families who enjoy lakes, mountains and road trips, with most visitors flying into Auckland and touring the South Island around Queenstown. Driving is on the left, as in India, which makes self-drive holidays straightforward for those with an international permit. Auckland has a sizeable Indian community, so vegetarian meals are easy in the cities, though choices narrow in small towns.",
+    "destinations": [
+      {
+        "name": "Queenstown",
+        "blurb": "Set on Lake Wakatipu, it is the base for the Skyline gondola, jet-boat rides on the Shotover River and the original bungy jump at Kawarau Bridge."
+      },
+      {
+        "name": "Milford Sound",
+        "blurb": "A cruise through this fiord passes waterfalls such as Stirling Falls and sheer cliffs rising straight out of the water."
+      },
+      {
+        "name": "Rotorua",
+        "blurb": "Geysers and bubbling mud pools at Te Puia sit alongside Maori cultural evenings with a traditional hangi meal."
+      },
+      {
+        "name": "Hobbiton Movie Set",
+        "blurb": "Near Matamata, guided tours walk through the hobbit holes and Green Dragon Inn built for The Lord of the Rings films."
+      },
+      {
+        "name": "Lake Tekapo",
+        "blurb": "A turquoise glacial lake in the Mackenzie Basin, known for lupins in early summer and dark-sky stargazing at night."
+      },
+      {
+        "name": "Franz Josef Glacier",
+        "blurb": "Helicopter flights land on the glacier, which descends towards the rainforest of the West Coast."
+      },
+      {
+        "name": "Auckland",
+        "blurb": "The Sky Tower, harbour ferries to Waiheke Island and volcanic Mount Eden give a good first day in the country's largest city."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "BAPS Shri Swaminarayan Mandir, Auckland",
+        "blurb": "A carved stone mandir in Avondale that is one of the main gathering places for Auckland's Hindu community."
+      },
+      {
+        "name": "Bharatiya Mandir, Auckland",
+        "blurb": "A long-established community temple in Sandringham, the heart of Auckland's Indian neighbourhood."
+      },
+      {
+        "name": "Church of the Good Shepherd, Lake Tekapo",
+        "blurb": "A small stone church from 1935 whose altar window frames the lake and mountains behind it."
+      },
+      {
+        "name": "Transitional Cathedral, Christchurch",
+        "blurb": "Known as the Cardboard Cathedral, it was designed by Shigeru Ban with cardboard tubes after the 2011 earthquake damaged the city's main cathedral."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Hangi",
+        "blurb": "Meat and root vegetables cooked slowly in an earth oven over heated stones, a Maori tradition served at cultural evenings.",
+        "veg": false
+      },
+      {
+        "name": "Green-lipped mussels",
+        "blurb": "Large native mussels, steamed with garlic and white wine, especially good in the Marlborough region.",
+        "veg": false
+      },
+      {
+        "name": "Hokey pokey ice cream",
+        "blurb": "Vanilla ice cream studded with small lumps of crunchy honeycomb toffee, a Kiwi favourite.",
+        "veg": true
+      },
+      {
+        "name": "Kumara chips",
+        "blurb": "Fries made from the local sweet potato, usually served with sour cream and sweet chilli sauce.",
+        "veg": true
+      },
+      {
+        "name": "Pavlova",
+        "blurb": "New Zealand also claims this meringue dessert, served with whipped cream and kiwifruit.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Skyline gondola ride over Queenstown",
+      "Cruise through Milford Sound",
+      "Maori cultural evening in Rotorua",
+      "Walking through the Hobbiton set",
+      "Stargazing at Lake Tekapo",
+      "Helicopter landing on a glacier"
+    ],
+    "indianTraveller": "Indian restaurants are common in Auckland, Christchurch and Queenstown but sparse in rural areas, so carry snacks on road trips; flights from Hyderabad take roughly 17–20 hours with one stop (often Singapore); New Zealand uses Type I plugs and cards are accepted almost everywhere."
+  },
+  "fiji": {
+    "capital": "Suva",
+    "currency": "Fijian dollar (FJD)",
+    "intro": "Fiji offers relaxed island resorts and coral reefs, and it feels familiar to Indian visitors because nearly a third of the population is of Indian descent and Fiji Hindi is widely spoken. Most holidays are based around Nadi and the nearby Mamanuca and Yasawa islands, reached by ferry or seaplane. Dal, roti and curry are everyday food, so vegetarian travellers eat well.",
+    "destinations": [
+      {
+        "name": "Mamanuca Islands",
+        "blurb": "A string of small resort islands a short boat ride from Nadi, with calm lagoons good for snorkelling and family swimming."
+      },
+      {
+        "name": "Yasawa Islands",
+        "blurb": "Further north, these volcanic islands have quieter beaches and the chance to swim with manta rays in season."
+      },
+      {
+        "name": "Garden of the Sleeping Giant",
+        "blurb": "Near Nadi, this garden started by actor Raymond Burr displays a large collection of orchids beneath the Sabeto mountains."
+      },
+      {
+        "name": "Sabeto Mud Pool and Hot Springs",
+        "blurb": "Visitors coat themselves in warm volcanic mud, let it dry and then rinse off in geothermal pools."
+      },
+      {
+        "name": "Sigatoka Sand Dunes National Park",
+        "blurb": "Fiji's first national park, with tall dunes along the Coral Coast and walking trails through coastal forest."
+      },
+      {
+        "name": "Pacific Harbour",
+        "blurb": "Known as the adventure capital of Fiji for river rafting on the Navua and shark dives in Beqa Lagoon."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Sri Siva Subramaniya Swami Temple, Nadi",
+        "blurb": "The largest Hindu temple in the Southern Hemisphere, built in Dravidian style with brightly painted gopurams and dedicated to Lord Murugan."
+      },
+      {
+        "name": "Sacred Heart Cathedral, Suva",
+        "blurb": "A sandstone Catholic cathedral completed in 1902, with stone imported from Sydney, in the centre of the capital."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Kokoda",
+        "blurb": "Raw fish marinated in lime juice and mixed with coconut cream, chilli, onion and tomato, served in a coconut shell.",
+        "veg": false
+      },
+      {
+        "name": "Lovo",
+        "blurb": "Meat, fish and root vegetables wrapped in leaves and cooked in an earth oven for feasts and celebrations.",
+        "veg": false
+      },
+      {
+        "name": "Palusami",
+        "blurb": "Taro leaves wrapped around onion and thick coconut cream and baked until soft; check, as some versions add tinned meat.",
+        "veg": true
+      },
+      {
+        "name": "Fiji Indian dal and roti",
+        "blurb": "Thin yellow dal with soft roti and vegetable curry, a staple of Indo-Fijian homes and roadside eateries.",
+        "veg": true
+      },
+      {
+        "name": "Cassava in coconut milk",
+        "blurb": "Boiled cassava, known locally as tavioka, simmered in sweetened coconut milk.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Snorkelling in a Mamanuca lagoon",
+      "Kava ceremony in a Fijian village",
+      "Mud bath at Sabeto",
+      "Darshan at the Nadi Murugan temple",
+      "Seaplane or ferry hop between islands",
+      "Sunset cruise from Denarau"
+    ],
+    "indianTraveller": "Indian vegetarian food is easy to find thanks to the Indo-Fijian community; flights from Hyderabad take roughly 16–20 hours with one or two stops (often via Singapore or Hong Kong to Nadi); Fiji uses Type I plugs and Fijian dollars are best obtained on arrival at Nadi airport."
+  },
+  "south-africa": {
+    "capital": "Pretoria (executive), Cape Town (legislative), Bloemfontein (judicial)",
+    "currency": "South African rand (ZAR)",
+    "intro": "South Africa combines a Big Five safari, the coastline and vineyards around Cape Town, and the Garden Route drive in one well-connected country. Durban has one of the largest Indian-origin communities outside India, with temples, spice markets and Indian dishes that have become part of South African food. Indian families usually spend 8–12 days split between Cape Town and a safari region.",
+    "destinations": [
+      {
+        "name": "Table Mountain",
+        "blurb": "A rotating cable car climbs to the flat summit for views over Cape Town, Robben Island and the Atlantic."
+      },
+      {
+        "name": "Cape Point and Boulders Beach",
+        "blurb": "The Cape Peninsula drive passes Chapman's Peak to the clifftop lighthouse at Cape Point and the African penguin colony at Boulders Beach."
+      },
+      {
+        "name": "Kruger National Park",
+        "blurb": "One of Africa's largest game reserves, where lion, leopard, elephant, buffalo and rhino can be spotted on morning and evening drives."
+      },
+      {
+        "name": "Garden Route",
+        "blurb": "This coastal drive links Mossel Bay, Knysna and Plettenberg Bay, with ostrich farms and the Cango Caves inland at Oudtshoorn."
+      },
+      {
+        "name": "Cape Winelands",
+        "blurb": "The towns of Stellenbosch and Franschhoek have Cape Dutch estates with mountain backdrops and good restaurants."
+      },
+      {
+        "name": "Robben Island",
+        "blurb": "Ferries from the V&A Waterfront visit the prison where Nelson Mandela spent 18 years, guided by former political prisoners."
+      },
+      {
+        "name": "Sun City",
+        "blurb": "A resort complex near Pilanesberg National Park with a water park, golf and easy access to a malaria-free safari."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Temple of Understanding, Durban",
+        "blurb": "The ISKCON Sri Sri Radha Radhanath Temple in Chatsworth is set in a lotus-shaped garden and serves vegetarian meals at its restaurant."
+      },
+      {
+        "name": "Shree Ambalavaanar Alayam, Durban",
+        "blurb": "Founded in the 1870s by indentured labourers and rebuilt in Cato Manor, it is one of South Africa's oldest Hindu temples."
+      },
+      {
+        "name": "Juma Masjid, Durban",
+        "blurb": "Built by Gujarati traders in the 1880s, this mosque on Dr Yusuf Dadoo Street is one of the largest in the Southern Hemisphere."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Bunny chow",
+        "blurb": "A hollowed half-loaf of white bread filled with curry, created by Durban's Indian community; mutton and bean versions are common.",
+        "veg": false
+      },
+      {
+        "name": "Bobotie",
+        "blurb": "Spiced minced meat baked under an egg custard topping, a Cape Malay dish served with yellow rice.",
+        "veg": false
+      },
+      {
+        "name": "Boerewors",
+        "blurb": "A coiled, coriander-spiced sausage grilled at a braai, South Africa's version of a barbecue.",
+        "veg": false
+      },
+      {
+        "name": "Chakalaka",
+        "blurb": "A spicy relish of beans, tomatoes, peppers and carrots, served with pap or bread.",
+        "veg": true
+      },
+      {
+        "name": "Malva pudding",
+        "blurb": "A soft, sticky apricot sponge soaked in a warm cream sauce and served with custard.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Cable car up Table Mountain",
+      "Big Five game drive in Kruger",
+      "Penguins at Boulders Beach",
+      "Self-drive along the Garden Route",
+      "Robben Island tour",
+      "Curry and spice market in Durban"
+    ],
+    "indianTraveller": "Indian vegetarian food is widely available, especially in Durban and Johannesburg; flights from Hyderabad take roughly 10–14 hours with one stop (often via Mumbai or Dubai); sockets are mainly the large three-pin Type M and newer Type N, so carry a universal adapter, and cards work widely."
+  },
+  "kenya": {
+    "capital": "Nairobi",
+    "currency": "Kenyan shilling (KES)",
+    "intro": "Kenya is the classic East African safari, with the Great Migration crossing the Maasai Mara between roughly July and October. It is also one of the closest safari destinations to India, and a long-established Gujarati and Punjabi community means Indian food and temples are easy to find in Nairobi and Mombasa. Many trips add a few beach days at Diani on the Indian Ocean coast.",
+    "destinations": [
+      {
+        "name": "Maasai Mara National Reserve",
+        "blurb": "Wildebeest herds cross the Mara River during the migration, and lions, cheetahs and elephants are seen year-round."
+      },
+      {
+        "name": "Amboseli National Park",
+        "blurb": "Large elephant herds graze against the backdrop of Mount Kilimanjaro, which is clearest early in the morning."
+      },
+      {
+        "name": "Lake Nakuru National Park",
+        "blurb": "A soda lake in the Rift Valley known for flamingos and a sanctuary for both black and white rhino."
+      },
+      {
+        "name": "Nairobi National Park",
+        "blurb": "Giraffes and rhinos graze within sight of the city skyline, making it an easy half-day safari."
+      },
+      {
+        "name": "Giraffe Centre and Sheldrick Elephant Orphanage",
+        "blurb": "In Nairobi, children can feed endangered Rothschild giraffes and watch orphaned baby elephants at their morning feed."
+      },
+      {
+        "name": "Diani Beach",
+        "blurb": "White sand and a reef-protected lagoon south of Mombasa, good for a relaxed finish after a safari."
+      },
+      {
+        "name": "Fort Jesus, Mombasa",
+        "blurb": "A 16th-century Portuguese fort at the edge of Mombasa's Old Town, now a museum and UNESCO site."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "BAPS Shri Swaminarayan Mandir, Nairobi",
+        "blurb": "A carved mandir in the Parklands area that has served Nairobi's Gujarati community for decades and welcomes visitors."
+      },
+      {
+        "name": "Lord Shiva Temple, Mombasa",
+        "blurb": "A large Hindu temple in Mombasa's Old Town area with a tall shikhara, central to the city's Indian community."
+      },
+      {
+        "name": "Jamia Mosque, Nairobi",
+        "blurb": "Built in 1925 with silver domes and twin minarets, it is Nairobi's main mosque, located in the city centre."
+      },
+      {
+        "name": "Holy Family Minor Basilica, Nairobi",
+        "blurb": "The seat of the Catholic Archdiocese of Nairobi and one of the largest churches in East Africa."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Nyama choma",
+        "blurb": "Goat or beef roasted slowly over charcoal and eaten with kachumbari salad, Kenya's favourite social meal.",
+        "veg": false
+      },
+      {
+        "name": "Pilau",
+        "blurb": "Rice cooked with cumin, cardamom and cloves, usually with beef, reflecting Swahili and Indian influences on the coast.",
+        "veg": false
+      },
+      {
+        "name": "Ugali and sukuma wiki",
+        "blurb": "A firm maize porridge eaten by hand with sauteed collard greens, the everyday staple across Kenya.",
+        "veg": true
+      },
+      {
+        "name": "Githeri",
+        "blurb": "A filling stew of boiled maize and beans, sometimes cooked with potatoes and greens.",
+        "veg": true
+      },
+      {
+        "name": "Mandazi",
+        "blurb": "Lightly sweet fried dough, often flavoured with cardamom and coconut, eaten with chai.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Game drives in the Maasai Mara",
+      "Watching a Mara River crossing",
+      "Hot-air balloon ride at sunrise",
+      "Elephants under Kilimanjaro in Amboseli",
+      "Feeding giraffes in Nairobi",
+      "Beach days at Diani"
+    ],
+    "indianTraveller": "Indian vegetarian food is readily available in Nairobi, Mombasa and most safari lodges on request; flights from Hyderabad take roughly 8–10 hours with one stop (often via Mumbai or a Gulf hub); Kenya uses UK-style Type G plugs, and US dollars are useful for tips and park fees."
+  },
+  "egypt": {
+    "capital": "Cairo",
+    "currency": "Egyptian pound (EGP)",
+    "intro": "Egypt is a history-focused holiday built around the Pyramids of Giza, a Nile cruise between Luxor and Aswan, and the temples of Abu Simbel. Indian families often add a few days on the Red Sea coast at Hurghada or Sharm el-Sheikh. Vegetarian travellers do well because many Egyptian staples are built on beans, lentils and rice.",
+    "destinations": [
+      {
+        "name": "Pyramids of Giza and the Sphinx",
+        "blurb": "The Great Pyramid of Khufu and the Sphinx stand on the Giza plateau at the edge of Cairo, best visited early to avoid heat and crowds."
+      },
+      {
+        "name": "Grand Egyptian Museum",
+        "blurb": "Near the pyramids, this large museum displays the full Tutankhamun collection along with a colossal statue of Ramesses II."
+      },
+      {
+        "name": "Valley of the Kings, Luxor",
+        "blurb": "Painted royal tombs cut into the hills of the West Bank, including the tomb of Tutankhamun."
+      },
+      {
+        "name": "Karnak and Luxor Temples",
+        "blurb": "The vast columned halls of Karnak and the avenue of sphinxes leading to Luxor Temple are the centrepieces of ancient Thebes."
+      },
+      {
+        "name": "Abu Simbel",
+        "blurb": "Two temples carved into a cliff by Ramesses II, relocated in the 1960s to save them from the rising waters of Lake Nasser."
+      },
+      {
+        "name": "Nile cruise from Luxor to Aswan",
+        "blurb": "A three- to four-night cruise stops at the temples of Edfu and Kom Ombo along the way."
+      },
+      {
+        "name": "Khan el-Khalili",
+        "blurb": "A centuries-old bazaar in Islamic Cairo selling spices, lamps, perfume and brassware."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Al-Azhar Mosque",
+        "blurb": "Founded in 970 AD, it is one of the oldest mosques in Cairo and home to a historic centre of Islamic learning; modest dress is required."
+      },
+      {
+        "name": "Mosque of Muhammad Ali, Cairo Citadel",
+        "blurb": "An Ottoman-style alabaster mosque on the Citadel hill with domes and minarets visible across Cairo."
+      },
+      {
+        "name": "Hanging Church, Coptic Cairo",
+        "blurb": "Built above the gatehouse of a Roman fortress, it is one of Egypt's oldest Coptic churches and holds fine icons."
+      },
+      {
+        "name": "St Catherine's Monastery, Sinai",
+        "blurb": "A working Greek Orthodox monastery at the foot of Mount Sinai, among the oldest in continuous use in the world."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Koshari",
+        "blurb": "Rice, lentils and pasta topped with spiced tomato sauce, chickpeas and crisp fried onions, Egypt's national street food.",
+        "veg": true
+      },
+      {
+        "name": "Ful medames",
+        "blurb": "Slow-cooked fava beans mashed with olive oil, cumin and lemon, eaten with flatbread at breakfast.",
+        "veg": true
+      },
+      {
+        "name": "Ta'ameya",
+        "blurb": "Egyptian falafel made with fava beans and fresh herbs, giving it a green centre.",
+        "veg": true
+      },
+      {
+        "name": "Molokhia",
+        "blurb": "A thick soup of jute leaves cooked with garlic and coriander, usually made with chicken or rabbit stock.",
+        "veg": false
+      },
+      {
+        "name": "Hawawshi",
+        "blurb": "Flatbread stuffed with spiced minced meat and baked until crisp.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Sunrise at the Giza pyramids",
+      "Nile cruise with temple stops",
+      "Tutankhamun's treasures at the Grand Egyptian Museum",
+      "Early morning trip to Abu Simbel",
+      "Felucca sail at Aswan",
+      "Snorkelling in the Red Sea"
+    ],
+    "indianTraveller": "Vegetarian food is easy thanks to bean and lentil dishes, and Indian restaurants exist in Cairo and the Red Sea resorts; flights from Hyderabad take roughly 8–11 hours with one stop (often via a Gulf hub or Mumbai); Egypt uses Type C and F plugs, and small notes in Egyptian pounds are handy for tips."
+  },
+  "morocco": {
+    "capital": "Rabat",
+    "currency": "Moroccan dirham (MAD)",
+    "intro": "Morocco offers walled medinas, Atlas mountain villages and a night in a desert camp in the Sahara, usually on a loop from Casablanca or Marrakech through Fes and Merzouga. Markets, spices and mint tea make it feel welcoming to Indian visitors, though vegetarian meals need a little asking. Spring and autumn are the most comfortable seasons for touring.",
+    "destinations": [
+      {
+        "name": "Marrakech",
+        "blurb": "Jemaa el-Fnaa square fills with food stalls and performers each evening, surrounded by souks selling leather, lamps and spices."
+      },
+      {
+        "name": "Jardin Majorelle",
+        "blurb": "A Marrakech garden of cactus and bamboo framed by a cobalt-blue villa, once owned by Yves Saint Laurent."
+      },
+      {
+        "name": "Fes el-Bali",
+        "blurb": "One of the largest car-free medinas in the world, where the Chouara tannery dyes leather in open stone vats."
+      },
+      {
+        "name": "Chefchaouen",
+        "blurb": "A mountain town in the Rif whose lanes and houses are washed in shades of blue."
+      },
+      {
+        "name": "Merzouga and Erg Chebbi",
+        "blurb": "Camel treks lead into tall orange dunes for sunset and a night in a desert camp."
+      },
+      {
+        "name": "Ait Benhaddou",
+        "blurb": "A fortified mud-brick village on the old caravan route, used as a set for many films."
+      },
+      {
+        "name": "Essaouira",
+        "blurb": "A breezy Atlantic port town with ramparts, a working fishing harbour and a relaxed medina."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Hassan II Mosque, Casablanca",
+        "blurb": "Built partly over the Atlantic with a 210-metre minaret, it is one of the few mosques in Morocco that non-Muslims can enter on guided tours."
+      },
+      {
+        "name": "Koutoubia Mosque, Marrakech",
+        "blurb": "The 12th-century minaret is Marrakech's main landmark; non-Muslims can admire it and the gardens from outside."
+      },
+      {
+        "name": "Bou Inania Madrasa, Fes",
+        "blurb": "A 14th-century religious college open to visitors, with carved cedar, stucco and zellige tilework around its courtyard."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Vegetable tagine",
+        "blurb": "Seasonal vegetables slow-cooked with spices, olives and preserved lemon in a cone-lidded clay pot.",
+        "veg": true
+      },
+      {
+        "name": "Seven-vegetable couscous",
+        "blurb": "Steamed semolina topped with a stew of carrots, pumpkin, turnips, chickpeas and more, traditionally served on Fridays.",
+        "veg": true
+      },
+      {
+        "name": "Msemen",
+        "blurb": "Square, flaky griddled flatbread eaten at breakfast with honey or butter.",
+        "veg": true
+      },
+      {
+        "name": "Harira",
+        "blurb": "A tomato, lentil and chickpea soup often made with lamb stock, eaten to break the fast during Ramadan.",
+        "veg": false
+      },
+      {
+        "name": "Pastilla",
+        "blurb": "A flaky pastry pie filled with spiced chicken or pigeon and almonds, dusted with sugar and cinnamon.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Evening food stalls at Jemaa el-Fnaa",
+      "Night in a Sahara desert camp",
+      "Getting lost in the Fes medina",
+      "Photographing Chefchaouen's blue lanes",
+      "Guided tour of the Hassan II Mosque",
+      "Hammam scrub and mint tea"
+    ],
+    "indianTraveller": "Vegetable tagine and couscous are available almost everywhere and Marrakech and Casablanca have a few Indian restaurants; flights from Hyderabad take roughly 13–17 hours with one stop (often via Dubai, Doha or Europe); Morocco uses Type C and E plugs, and dirhams are a closed currency, so exchange on arrival or use ATMs."
+  },
+  "usa": {
+    "capital": "Washington, D.C.",
+    "currency": "US dollar (USD)",
+    "intro": "Indian families often visit the USA to see relatives and combine it with East Coast cities, Niagara Falls and Orlando, or a West Coast loop through San Francisco, Las Vegas and the Grand Canyon. The country is vast, so domestic flights or long drives are part of most plans. Indian food, groceries and Hindu temples are found in nearly every large metro area.",
+    "destinations": [
+      {
+        "name": "New York City",
+        "blurb": "The Statue of Liberty ferry, Times Square, Central Park and the view from the Empire State Building fill several days."
+      },
+      {
+        "name": "Niagara Falls, New York",
+        "blurb": "The Maid of the Mist boat takes visitors close to the base of the falls, and Cave of the Winds walkways lead to Bridal Veil Falls."
+      },
+      {
+        "name": "Washington, D.C.",
+        "blurb": "The National Mall links the Lincoln Memorial, the Capitol and free Smithsonian museums such as Air and Space."
+      },
+      {
+        "name": "Orlando",
+        "blurb": "Walt Disney World, Universal Orlando and Kennedy Space Center within driving distance make it a family favourite."
+      },
+      {
+        "name": "Grand Canyon National Park",
+        "blurb": "The South Rim viewpoints look over a mile-deep canyon carved by the Colorado River."
+      },
+      {
+        "name": "Las Vegas",
+        "blurb": "Beyond the casinos, the Strip has fountain shows at the Bellagio and is a base for Hoover Dam and Grand Canyon trips."
+      },
+      {
+        "name": "San Francisco",
+        "blurb": "Cable cars, the Golden Gate Bridge and a ferry to Alcatraz are the classic sights."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "BAPS Swaminarayan Akshardham, Robbinsville",
+        "blurb": "Inaugurated in 2023 in New Jersey, it is one of the largest Hindu temples in the world, built from hand-carved stone."
+      },
+      {
+        "name": "Sri Venkateswara Temple, Pittsburgh",
+        "blurb": "Opened in 1977 in Penn Hills, it was one of the first traditional Hindu temples in the USA and draws many devotees of Lord Balaji."
+      },
+      {
+        "name": "Hindu Temple Society of North America, Flushing",
+        "blurb": "The Sri Maha Vallabha Ganapati Devasthanam in Queens, New York, is known for its South Indian canteen."
+      },
+      {
+        "name": "St Patrick's Cathedral, New York",
+        "blurb": "A Neo-Gothic cathedral on Fifth Avenue opposite Rockefeller Center, open to visitors throughout the day."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "New York-style pizza",
+        "blurb": "Large, thin, foldable slices sold by the piece, with plain cheese the classic order.",
+        "veg": true
+      },
+      {
+        "name": "Bagel with cream cheese",
+        "blurb": "A chewy, boiled-then-baked bread ring, sliced and spread with cream cheese for breakfast.",
+        "veg": true
+      },
+      {
+        "name": "Macaroni and cheese",
+        "blurb": "Baked pasta in a rich cheddar sauce, a Southern comfort-food side.",
+        "veg": true
+      },
+      {
+        "name": "Texas barbecue brisket",
+        "blurb": "Beef brisket smoked for many hours until tender, served sliced with pickles and white bread.",
+        "veg": false
+      },
+      {
+        "name": "Hamburger",
+        "blurb": "A grilled beef patty in a soft bun with lettuce, tomato and cheese, sold everywhere from diners to drive-ins.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Ferry to the Statue of Liberty",
+      "Maid of the Mist at Niagara Falls",
+      "Theme parks in Orlando",
+      "Sunset at the Grand Canyon South Rim",
+      "Smithsonian museums in Washington, D.C.",
+      "Darshan at Akshardham Robbinsville"
+    ],
+    "indianTraveller": "Indian vegetarian food is widely available in most cities and many supermarkets stock Indian brands; flights from Hyderabad take roughly 20–24 hours with one stop (via the Gulf, Europe or Delhi); the USA uses Type A and B plugs on 120V, so check that chargers are dual-voltage, and tipping of 15–20% is expected at restaurants."
+  },
+  "canada": {
+    "capital": "Ottawa",
+    "currency": "Canadian dollar (CAD)",
+    "intro": "Canada pairs Niagara Falls and Toronto in the east with the Rocky Mountain lakes of Banff and Jasper in the west, linked by a domestic flight to Calgary or Vancouver. A large Indian diaspora, especially in Toronto and Vancouver, means Indian food, temples and gurdwaras are close at hand. Summer is the main season, while autumn brings fall colours in Ontario and Quebec.",
+    "destinations": [
+      {
+        "name": "Niagara Falls, Ontario",
+        "blurb": "The Canadian side faces the Horseshoe Falls, best seen from the Niagara City Cruises boat and the Journey Behind the Falls tunnels."
+      },
+      {
+        "name": "Toronto",
+        "blurb": "The CN Tower's glass floor, Ripley's Aquarium and a ferry to the Toronto Islands make an easy city stay."
+      },
+      {
+        "name": "Banff National Park",
+        "blurb": "Lake Louise and Moraine Lake shine turquoise in summer, and the Banff Gondola climbs Sulphur Mountain."
+      },
+      {
+        "name": "Icefields Parkway and Jasper",
+        "blurb": "The drive from Lake Louise to Jasper passes glaciers, and Ice Explorer vehicles drive onto the Athabasca Glacier."
+      },
+      {
+        "name": "Vancouver",
+        "blurb": "The seawall around Stanley Park, Granville Island market and the Capilano Suspension Bridge are the main draws."
+      },
+      {
+        "name": "Old Quebec City",
+        "blurb": "A walled French-speaking old town with cobbled streets and the Chateau Frontenac above the St Lawrence River."
+      },
+      {
+        "name": "Whistler",
+        "blurb": "A mountain resort north of Vancouver with the Peak 2 Peak Gondola in summer and skiing in winter."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "BAPS Shri Swaminarayan Mandir, Toronto",
+        "blurb": "A hand-carved marble and limestone mandir in Etobicoke with an attached museum on Hindu heritage in Canada."
+      },
+      {
+        "name": "Ross Street Gurdwara, Vancouver",
+        "blurb": "Run by the Khalsa Diwan Society, whose first Vancouver gurdwara opened in 1908, it serves langar daily."
+      },
+      {
+        "name": "Notre-Dame Basilica, Montreal",
+        "blurb": "Its Gothic Revival interior has a deep blue vaulted ceiling with gold stars and intricate carved woodwork."
+      },
+      {
+        "name": "Saint Joseph's Oratory, Montreal",
+        "blurb": "Canada's largest church, set on the slope of Mount Royal, with a large copper dome and city views."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Poutine",
+        "blurb": "French fries topped with cheese curds and hot gravy, a Quebec classic; the gravy is usually meat-based.",
+        "veg": false
+      },
+      {
+        "name": "Montreal smoked meat",
+        "blurb": "Spiced, smoked beef brisket piled into rye bread sandwiches with mustard.",
+        "veg": false
+      },
+      {
+        "name": "Butter tarts",
+        "blurb": "Small pastry shells filled with a gooey butter, sugar and syrup filling, sometimes with raisins.",
+        "veg": false
+      },
+      {
+        "name": "Nanaimo bars",
+        "blurb": "A no-bake layered bar of crumb base, custard buttercream and chocolate, named after the British Columbia city.",
+        "veg": true
+      },
+      {
+        "name": "Maple taffy",
+        "blurb": "Hot maple syrup poured onto fresh snow and rolled onto a stick, a sugar-shack treat in Quebec.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Boat ride to the Horseshoe Falls",
+      "Glass floor of the CN Tower",
+      "Canoeing on Lake Louise",
+      "Driving the Icefields Parkway",
+      "Walking the Stanley Park seawall",
+      "Evening in Old Quebec City"
+    ],
+    "indianTraveller": "Indian vegetarian food is easy to find in Toronto, Vancouver, Calgary and Montreal, and langar is served at gurdwaras; flights from Hyderabad take roughly 20–24 hours with one stop (often via Delhi, the Gulf or Europe); Canada uses Type A and B plugs on 120V, and cards are accepted almost everywhere."
+  },
+  "mexico": {
+    "capital": "Mexico City",
+    "currency": "Mexican peso (MXN)",
+    "intro": "Mexico combines Maya and Aztec ruins, Caribbean beaches around Cancun and colonial cities such as Oaxaca and Guanajuato. Indian travellers often pair it with a US trip, since Cancun and Mexico City are a short flight from many American cities. The food uses beans, corn, chilli and lime, so it feels approachable to Indian palates.",
+    "destinations": [
+      {
+        "name": "Chichen Itza",
+        "blurb": "The stepped pyramid of El Castillo dominates this Maya city on the Yucatan Peninsula, an easy day trip from Cancun."
+      },
+      {
+        "name": "Teotihuacan",
+        "blurb": "An hour from Mexico City, visitors walk the Avenue of the Dead between the Pyramids of the Sun and Moon."
+      },
+      {
+        "name": "Cancun and the Riviera Maya",
+        "blurb": "All-inclusive resorts line the Caribbean coast, with ferries to Isla Mujeres and eco-parks like Xcaret nearby."
+      },
+      {
+        "name": "Tulum",
+        "blurb": "Maya ruins sit on a clifftop above a turquoise beach, with swimmable cenotes inland."
+      },
+      {
+        "name": "Mexico City",
+        "blurb": "The Zocalo, the National Museum of Anthropology and the Frida Kahlo Museum in Coyoacan fill several days."
+      },
+      {
+        "name": "Oaxaca",
+        "blurb": "A colonial city known for its markets, mole sauces and nearby ruins of Monte Alban."
+      },
+      {
+        "name": "Guanajuato",
+        "blurb": "A hillside silver-mining town of colourful houses, underground roads and narrow alleys."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Basilica of Our Lady of Guadalupe, Mexico City",
+        "blurb": "One of the most visited Catholic shrines in the world, housing the image of the Virgin of Guadalupe and drawing millions of pilgrims on 12 December."
+      },
+      {
+        "name": "Metropolitan Cathedral, Mexico City",
+        "blurb": "The largest cathedral in the Americas, built over three centuries on the north side of the Zocalo."
+      },
+      {
+        "name": "Templo de Santo Domingo, Oaxaca",
+        "blurb": "A baroque church with a gilded interior, attached to a former monastery that now houses a cultural museum."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Tacos al pastor",
+        "blurb": "Pork marinated in chilli and achiote, cooked on a vertical spit and served in corn tortillas with pineapple.",
+        "veg": false
+      },
+      {
+        "name": "Mole poblano",
+        "blurb": "A dark sauce of chillies, spices, nuts and chocolate from Puebla, traditionally served over turkey or chicken.",
+        "veg": false
+      },
+      {
+        "name": "Guacamole",
+        "blurb": "Mashed avocado with lime, onion, coriander and green chilli, eaten with tortilla chips.",
+        "veg": true
+      },
+      {
+        "name": "Elote",
+        "blurb": "Grilled corn on the cob coated in mayonnaise, crumbly cheese, chilli powder and lime, sold from street carts.",
+        "veg": true
+      },
+      {
+        "name": "Chilaquiles",
+        "blurb": "Fried tortilla pieces simmered in red or green salsa and topped with cream, cheese and onion, a popular breakfast.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Climbing the Pyramid of the Sun",
+      "Swimming in a Yucatan cenote",
+      "Day trip to Chichen Itza",
+      "Beach time on the Riviera Maya",
+      "Visit to the Basilica of Guadalupe",
+      "Street food in Mexico City"
+    ],
+    "indianTraveller": "Vegetarian options built on beans, cheese and vegetables are easy to find, and Cancun and Mexico City have a few Indian restaurants; flights from Hyderabad take roughly 24–30 hours with one or two stops (via the USA, Europe or the Gulf); Mexico uses Type A and B plugs on 127V, and pesos are better than dollars for everyday spending."
+  },
+  "brazil": {
+    "capital": "Brasilia",
+    "currency": "Brazilian real (BRL)",
+    "intro": "Brazil is a long-haul trip usually focused on Rio de Janeiro, Iguacu Falls and, for the adventurous, the Amazon or the Pantanal wetlands. Rio's beaches and mountain viewpoints are the main draw for first-time Indian visitors, often combined with Argentina for the falls. Distances within Brazil are large, so internal flights are needed between regions.",
+    "destinations": [
+      {
+        "name": "Sugarloaf Mountain",
+        "blurb": "Two cable cars climb this granite peak at the mouth of Guanabara Bay for views over Rio, especially at sunset."
+      },
+      {
+        "name": "Copacabana and Ipanema",
+        "blurb": "Rio's famous beaches have long promenades, beach kiosks and views of the Two Brothers mountain."
+      },
+      {
+        "name": "Iguacu Falls (Foz do Iguacu)",
+        "blurb": "The Brazilian side offers a walkway giving panoramic views of the falls, including a platform near the Devil's Throat."
+      },
+      {
+        "name": "Amazon rainforest, Manaus",
+        "blurb": "Lodges near Manaus run boat trips to the Meeting of the Waters, where the dark Rio Negro joins the sandy Solimoes."
+      },
+      {
+        "name": "Pantanal",
+        "blurb": "The world's largest tropical wetland is one of the best places in South America to see jaguars, caimans and capybaras."
+      },
+      {
+        "name": "Pelourinho, Salvador",
+        "blurb": "The colonial centre of Salvador has pastel buildings, capoeira performances and strong Afro-Brazilian culture."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Christ the Redeemer",
+        "blurb": "The 30-metre statue on Corcovado mountain overlooks Rio and has a small chapel at its base; a cog train climbs through the Tijuca forest."
+      },
+      {
+        "name": "Cathedral of Brasilia",
+        "blurb": "Designed by Oscar Niemeyer, its sixteen curved concrete columns frame a stained-glass interior."
+      },
+      {
+        "name": "National Shrine of Our Lady of Aparecida",
+        "blurb": "Between Sao Paulo and Rio, it is one of the largest Catholic churches in the world and Brazil's main pilgrimage site."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Feijoada",
+        "blurb": "A slow-cooked stew of black beans with pork and sausage, served with rice, collard greens and orange slices.",
+        "veg": false
+      },
+      {
+        "name": "Moqueca",
+        "blurb": "A fish or seafood stew cooked with coconut milk, tomatoes and dende palm oil, from Bahia.",
+        "veg": false
+      },
+      {
+        "name": "Pao de queijo",
+        "blurb": "Small, chewy cheese bread rolls made with cassava flour, eaten at breakfast or with coffee.",
+        "veg": true
+      },
+      {
+        "name": "Brigadeiro",
+        "blurb": "Soft chocolate truffles made with condensed milk and rolled in chocolate sprinkles, served at every celebration.",
+        "veg": true
+      },
+      {
+        "name": "Acai na tigela",
+        "blurb": "Frozen acai berry pulp blended thick and topped with banana and granola, a beach-side favourite.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Sunrise at Christ the Redeemer",
+      "Cable car to Sugarloaf at sunset",
+      "Walkways at Iguacu Falls",
+      "Beach afternoon at Copacabana",
+      "Boat trip on the Amazon",
+      "Samba night in Lapa"
+    ],
+    "indianTraveller": "Indian restaurants are limited to Rio and Sao Paulo, but rice, beans, salads and cheese breads make vegetarian eating manageable; flights from Hyderabad take roughly 26–32 hours with one or two stops (often via the Gulf or Europe); Brazil uses Type N plugs (Type C plugs also fit), and cards are widely accepted."
+  },
+  "argentina": {
+    "capital": "Buenos Aires",
+    "currency": "Argentine peso (ARS)",
+    "intro": "Argentina covers tango-filled Buenos Aires, the Perito Moreno Glacier in Patagonia, the Argentine side of Iguazu Falls and the vineyards of Mendoza. It is one of the longest journeys from India, so most visitors spend at least ten days and often combine it with Brazil. The cuisine centres on beef, but cheese, pastries and pasta give vegetarians enough to work with.",
+    "destinations": [
+      {
+        "name": "Buenos Aires",
+        "blurb": "The colourful houses of Caminito in La Boca, the Recoleta Cemetery and an evening tango show are the city's highlights."
+      },
+      {
+        "name": "Perito Moreno Glacier",
+        "blurb": "From walkways near El Calafate, visitors watch chunks of ice break off the glacier's 60-metre face into Lago Argentino."
+      },
+      {
+        "name": "Iguazu Falls (Puerto Iguazu)",
+        "blurb": "The Argentine side has trails and a train that brings visitors right above the roaring Devil's Throat."
+      },
+      {
+        "name": "Ushuaia",
+        "blurb": "Known as the southernmost city in the world, it offers Beagle Channel cruises past sea lion colonies and is the gateway to Antarctica."
+      },
+      {
+        "name": "Mendoza",
+        "blurb": "Wineries at the foot of the Andes are known for Malbec, with views of Aconcagua, the highest peak in the Americas."
+      },
+      {
+        "name": "Bariloche",
+        "blurb": "A lakeside town in the Lake District known for chocolate shops, Swiss-style chalets and the Cerro Campanario viewpoint."
+      },
+      {
+        "name": "Quebrada de Humahuaca",
+        "blurb": "A valley in the far north with striped multicoloured hills, including the Hill of Seven Colours at Purmamarca."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Buenos Aires Metropolitan Cathedral",
+        "blurb": "Facing the Plaza de Mayo, it was the seat of Pope Francis when he was archbishop and holds the mausoleum of General San Martin."
+      },
+      {
+        "name": "Basilica of Our Lady of Lujan",
+        "blurb": "A neo-Gothic basilica west of Buenos Aires, Argentina's most important pilgrimage site."
+      },
+      {
+        "name": "Basilica of Our Lady of the Pillar, Recoleta",
+        "blurb": "A white colonial church from 1732 next to the Recoleta Cemetery, with a silver altar."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Asado",
+        "blurb": "Cuts of beef, sausages and offal grilled slowly over wood embers, the centre of weekend gatherings.",
+        "veg": false
+      },
+      {
+        "name": "Empanadas",
+        "blurb": "Baked or fried pastry turnovers, classically filled with spiced beef, though cheese and onion versions are common.",
+        "veg": false
+      },
+      {
+        "name": "Provoleta",
+        "blurb": "A thick round of provolone cheese grilled until bubbling and sprinkled with oregano and chilli flakes.",
+        "veg": true
+      },
+      {
+        "name": "Alfajores",
+        "blurb": "Two soft biscuits sandwiched with dulce de leche and often dipped in chocolate.",
+        "veg": true
+      },
+      {
+        "name": "Humita en chala",
+        "blurb": "A northern dish of grated corn, onion and cheese wrapped in corn husks and steamed.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Tango show in Buenos Aires",
+      "Watching ice fall at Perito Moreno",
+      "Train to the Devil's Throat at Iguazu",
+      "Beagle Channel cruise from Ushuaia",
+      "Winery visit in Mendoza",
+      "Chocolate tasting in Bariloche"
+    ],
+    "indianTraveller": "Indian restaurants are few outside Buenos Aires, so ask for vegetarian pasta, pizza and cheese dishes elsewhere; flights from Hyderabad take roughly 28–34 hours with one or two stops (often via the Gulf, Europe or Sao Paulo); Argentina uses Type I plugs, and since exchange rules change often, carry some clean US dollar notes and check the current card rate before travelling."
+  }
+}

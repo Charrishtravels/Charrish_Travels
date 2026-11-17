@@ -411,7 +411,7 @@ const enquireHref = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(en
           </svg>
           Download PDF
         </button>
-        <a href="/tours" class="mt-3 block text-center text-xs text-ink-muted underline decoration-temple-gold/60 underline-offset-4 hover:text-saffron-deep">
+        <a href={`/tours/${destination.data.category}`} class="mt-3 block text-center text-xs text-ink-muted underline decoration-temple-gold/60 underline-offset-4 hover:text-saffron-deep">
           Back to all tours
         </a>
       </section>

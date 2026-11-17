@@ -1,0 +1,128 @@
+{
+  "odisha": [
+    { "name": "Dalma", "blurb": "Toor dal simmered with raw papaya, pumpkin, plantain and eggplant, finished with a panch phoron tempering and served at home and in Puri's temple kitchens.", "veg": true },
+    { "name": "Pakhala Bhata", "blurb": "Cooked rice soaked overnight in water, sometimes lightly fermented with curd, and eaten through the hot months with fried vegetables, badi and green chilli.", "veg": true },
+    { "name": "Machha Besara", "blurb": "Rohu or other river fish cooked in a sharp mustard paste with garlic and turmeric, an everyday coastal Odia curry eaten with rice.", "veg": false },
+    { "name": "Dahibara Aloodum", "blurb": "Soft urad dal fritters soaked in spiced, thin curd and topped with spicy potato curry, sev and onions, the signature street breakfast of Cuttack.", "veg": true },
+    { "name": "Chhena Poda", "blurb": "Fresh chhena kneaded with sugar and semolina and baked slowly until the outside caramelises, a sweet first made in Nayagarh and offered to Lord Jagannath.", "veg": true }
+  ],
+  "punjab": [
+    { "name": "Sarson da Saag with Makki di Roti", "blurb": "Mustard greens slow-cooked with spinach and bathua, mashed and topped with white butter, eaten with flat maize-flour bread through the Punjabi winter.", "veg": true },
+    { "name": "Amritsari Kulcha", "blurb": "Flaky leavened bread stuffed with spiced potato, baked in a tandoor and served with chole and onion chutney in the lanes around Amritsar's Golden Temple.", "veg": true },
+    { "name": "Langar Dal (Maa di Dal)", "blurb": "Whole black urad and chana dal simmered for hours with ginger and garlic, served free to everyone at the Golden Temple's community kitchen.", "veg": true },
+    { "name": "Amritsari Fish", "blurb": "Freshwater fish marinated in carom seeds, chilli and gram flour batter and deep-fried, a winter evening favourite at Amritsar's roadside dhabas.", "veg": false },
+    { "name": "Pinni", "blurb": "Dense balls of wheat flour roasted in ghee with jaggery, almonds and edible gum, made at home in winter and handed out at weddings.", "veg": true }
+  ],
+  "rajasthan": [
+    { "name": "Dal Baati Churma", "blurb": "Hard wheat dumplings baked over coals and dipped in ghee, served with mixed dal and sweet crumbled churma, the classic Rajasthani festive meal.", "veg": true },
+    { "name": "Laal Maas", "blurb": "Mutton cooked with fiery red Mathania chillies, garlic and curd, a Rajput hunting-era dish now ordered in Jodhpur and Jaipur restaurants.", "veg": false },
+    { "name": "Gatte ki Sabzi", "blurb": "Steamed gram flour dumplings simmered in a tangy yogurt gravy, a desert-kitchen staple made without fresh vegetables.", "veg": true },
+    { "name": "Pyaaz Kachori", "blurb": "Deep-fried pastry stuffed with spiced onion filling and eaten with tamarind chutney, famously sold at Jodhpur's Rawat Mishthan Bhandar.", "veg": true },
+    { "name": "Ghewar", "blurb": "A disc-shaped honeycomb of fried batter soaked in sugar syrup and often topped with rabri, sold across Jaipur during Teej and Raksha Bandhan.", "veg": true }
+  ],
+  "sikkim": [
+    { "name": "Momos", "blurb": "Steamed dumplings filled with pork, chicken or cabbage and served with fiery tomato achar, sold everywhere from MG Marg in Gangtok to roadside stalls.", "veg": false },
+    { "name": "Phagshapa", "blurb": "Strips of pork fat stewed with radish and dried chillies without oil, a traditional Sikkimese dish eaten with rice.", "veg": false },
+    { "name": "Gundruk Soup", "blurb": "A sour, warming soup of fermented and sun-dried mustard and radish greens cooked with tomato, onion and chilli.", "veg": true },
+    { "name": "Kinema Curry", "blurb": "Fermented soybeans cooked with onion, tomato and turmeric, a pungent Nepali-Sikkimese protein dish served with rice.", "veg": true },
+    { "name": "Sel Roti", "blurb": "Ring-shaped, slightly sweet bread made from ground rice batter and deep-fried, prepared for Dashain and Tihar and eaten with tea.", "veg": true }
+  ],
+  "tamil-nadu": [
+    { "name": "Idli with Sambar and Chutney", "blurb": "Steamed cakes of fermented rice and urad dal batter served with lentil-vegetable sambar and coconut chutney, the standard breakfast across the state.", "veg": true },
+    { "name": "Chettinad Chicken", "blurb": "Chicken cooked in a dark roasted masala of black pepper, fennel, kalpasi and dried red chillies, from the Chettiar mansions of Karaikudi.", "veg": false },
+    { "name": "Kothu Parotta", "blurb": "Shredded flaky parotta chopped on a hot griddle with egg, salna and meat or vegetables, its clanging a familiar night sound in Madurai.", "veg": false },
+    { "name": "Tirunelveli Halwa", "blurb": "Glossy wheat halwa slow-cooked with ghee and sugar, famously sold hot from Iruttu Kadai near the Nellaiappar temple.", "veg": true },
+    { "name": "Palani Panchamirtham", "blurb": "A thick temple offering of banana, jaggery, ghee, honey and cardamom, prepared at the Murugan temple in Palani and taken home by pilgrims.", "veg": true }
+  ],
+  "telangana": [
+    { "name": "Hyderabadi Biryani", "blurb": "Basmati rice layered with marinated mutton or chicken, saffron and fried onions and cooked dum style in a sealed pot, the city's signature dish.", "veg": false },
+    { "name": "Haleem", "blurb": "Wheat, lentils and meat pounded together over hours into a thick, spiced porridge, sold from Hyderabad's bhattis every Ramzan.", "veg": false },
+    { "name": "Sarva Pindi", "blurb": "A savoury rice-flour pancake with chana dal, peanuts, sesame and curry leaves, pressed into a pan by hand, a Telangana teatime snack.", "veg": true },
+    { "name": "Bagara Baingan", "blurb": "Small eggplants cooked in a gravy of roasted peanuts, sesame, coconut and tamarind, the traditional side to biryani at Hyderabadi weddings.", "veg": true },
+    { "name": "Qubani ka Meetha", "blurb": "Dried apricots stewed down into a thick sweet and served with cream or custard, a Deccani dessert found at weddings and Nizami restaurants.", "veg": true }
+  ],
+  "tripura": [
+    { "name": "Mui Borok", "blurb": "The umbrella name for Tripuri tribal cooking, built around berma (dried fermented fish) with bamboo shoot, vegetables and very little oil.", "veg": false },
+    { "name": "Wahan Mosdeng", "blurb": "Boiled or grilled pork tossed with onion, roasted green chilli and herbs, a spicy salad-style dish of the Tripuri community.", "veg": false },
+    { "name": "Gudok", "blurb": "A thick stew of jackfruit, bamboo shoot or other vegetables cooked with berma and chillies inside a bamboo tube or pot.", "veg": false },
+    { "name": "Bangwi", "blurb": "Aromatic local rice wrapped in sabai leaves with ginger, onion and ghee, then boiled, made for festivals and family gatherings.", "veg": true },
+    { "name": "Chakhwi", "blurb": "Bamboo shoot and vegetables cooked with a little rice flour and soda from banana-plant ash, often with pork or berma added for feasts.", "veg": false }
+  ],
+  "uttar-pradesh": [
+    { "name": "Galouti Kebab", "blurb": "Finely minced mutton blended with papaya and spices into patties so soft they melt, created for the Nawabs of Lucknow and served with ulte tawe ka paratha.", "veg": false },
+    { "name": "Awadhi Biryani", "blurb": "Fragrant pulao-style biryani in which rice and mutton are cooked separately in stock, then layered and finished on dum in Lucknow's kitchens.", "veg": false },
+    { "name": "Kachori Sabzi", "blurb": "Crisp lentil-stuffed kachoris served with spicy potato curry and jalebi, the morning meal in the lanes leading down to Varanasi's ghats.", "veg": true },
+    { "name": "Agra Petha", "blurb": "Translucent candied cubes of ash gourd soaked in sugar syrup, sold in dozens of flavours in shops near the Taj Mahal.", "veg": true },
+    { "name": "Mathura Peda", "blurb": "Brown pedas made from milk reduced until caramelised and rolled in sugar, offered to Krishna in Mathura and Vrindavan temples.", "veg": true }
+  ],
+  "uttarakhand": [
+    { "name": "Kafuli", "blurb": "Spinach and fenugreek greens cooked into a thick gravy with rice paste, a Garhwali dish eaten with rice or mandua roti.", "veg": true },
+    { "name": "Bhatt ki Churkani", "blurb": "Black soybeans from the hills cooked with iron-pan roasted spices and rice paste, a hearty Kumaoni dal.", "veg": true },
+    { "name": "Aloo ke Gutke", "blurb": "Boiled hill potatoes stir-fried with jakhiya seeds, red chilli and coriander, a simple Kumaoni snack served with tea or raita.", "veg": true },
+    { "name": "Mandua ki Roti", "blurb": "Flatbread of finger millet flour, dark and earthy, eaten with ghee and greens in mountain villages through the cold months.", "veg": true },
+    { "name": "Bal Mithai", "blurb": "Fudge of roasted khoya coated in tiny white sugar balls, a sweet from Almora sold across Kumaon.", "veg": true }
+  ],
+  "west-bengal": [
+    { "name": "Shorshe Ilish", "blurb": "Hilsa steaks cooked in a sharp mustard seed paste with green chillies and mustard oil, the most prized fish dish of the monsoon in Kolkata homes.", "veg": false },
+    { "name": "Kosha Mangsho", "blurb": "Mutton slow-fried with onions, ginger and spices until dark and dry, eaten with luchi or rice on Sunday afternoons and during Durga Puja.", "veg": false },
+    { "name": "Puchka", "blurb": "Crisp hollow puris filled with spiced mashed potato and dunked in tamarind water, Kolkata's version of pani puri sold on every street corner.", "veg": true },
+    { "name": "Luchi with Cholar Dal", "blurb": "Puffed deep-fried white-flour breads served with Bengal gram dal cooked with coconut and a touch of sugar, a festive breakfast.", "veg": true },
+    { "name": "Rosogolla", "blurb": "Spongy balls of fresh chhena simmered in light sugar syrup, a Bengali sweet made famous by Kolkata's confectioners.", "veg": true }
+  ],
+  "andaman-and-nicobar-islands": [
+    { "name": "Andaman Fish Curry", "blurb": "Fresh reef fish cooked in coconut milk with tamarind, chilli and curry leaves, eaten with rice in homes and eateries around Port Blair.", "veg": false },
+    { "name": "Grilled Lobster", "blurb": "Whole lobster grilled with garlic butter or a chilli masala, served at beach shacks on Havelock (Swaraj Dweep) and Neil Island.", "veg": false },
+    { "name": "Chilli Crab", "blurb": "Mud crabs from the mangroves stir-fried in a spicy tomato and chilli sauce, a popular seafood dish in Port Blair's restaurants.", "veg": false },
+    { "name": "Sambar Rice Meals", "blurb": "Rice served with sambar, rasam and vegetable poriyal on a banana leaf, brought by the islands' large Tamil and Telugu settler communities.", "veg": true },
+    { "name": "Coconut Ladoo", "blurb": "Grated island coconut cooked with jaggery or condensed milk and cardamom and rolled into balls, made in homes for festivals.", "veg": true }
+  ],
+  "chandigarh": [
+    { "name": "Chole Bhature", "blurb": "Spiced chickpea curry served with large puffed fried breads, a weekend breakfast staple in Chandigarh's sector markets.", "veg": true },
+    { "name": "Paneer Tikka", "blurb": "Cubes of paneer, onion and capsicum marinated in spiced yogurt and charred in a tandoor, a fixture on every Chandigarh dhaba menu.", "veg": true },
+    { "name": "Aloo Paratha with White Butter", "blurb": "Whole-wheat flatbread stuffed with spiced potato, cooked on a griddle and topped with homemade white butter, often eaten with curd and pickle.", "veg": true },
+    { "name": "Tandoori Chicken", "blurb": "Chicken marinated in yogurt, red chilli and spices and roasted in a clay oven, a Punjabi favourite in the city's restaurants.", "veg": false },
+    { "name": "Gajar ka Halwa", "blurb": "Grated red winter carrots slow-cooked in milk, ghee and sugar with nuts, a cold-season sweet sold at sweet shops across the city.", "veg": true }
+  ],
+  "dadra-and-nagar-haveli-and-daman-and-diu": [
+    { "name": "Pomfret Recheado", "blurb": "Pomfret slit and stuffed with a red Portuguese-style chilli, garlic and vinegar paste, then shallow-fried, served in Daman's seaside eateries.", "veg": false },
+    { "name": "Bombil Fry", "blurb": "Bombay duck coated in semolina and spices and fried crisp, a common coastal catch on menus in Daman and Diu.", "veg": false },
+    { "name": "Ubadiyu", "blurb": "Surti papdi beans, small potatoes and yam packed with herbs into an earthen pot and roasted upside down over a fire, a South Gujarat winter dish eaten across the region.", "veg": true },
+    { "name": "Nagli Rotla", "blurb": "Thick finger millet flatbread eaten by the Warli and Kokna tribal communities of Dadra and Nagar Haveli with seasonal vegetables and chutney.", "veg": true },
+    { "name": "Dodol", "blurb": "A dense, dark sweet of rice flour, coconut milk and jaggery stirred for hours, made by Daman's Catholic families at Christmas.", "veg": true }
+  ],
+  "delhi": [
+    { "name": "Butter Chicken", "blurb": "Tandoori chicken simmered in a mild tomato, butter and cream gravy, a dish created at Moti Mahal in Daryaganj and now eaten across the city.", "veg": false },
+    { "name": "Nihari", "blurb": "Slow-cooked mutton shank stew thickened with flour and spices, eaten with khameeri roti for breakfast near Jama Masjid.", "veg": false },
+    { "name": "Paranthe Wali Gali Parathas", "blurb": "Stuffed parathas fried in ghee with fillings like potato, paneer or rabri, served with chutneys in the narrow lane off Chandni Chowk.", "veg": true },
+    { "name": "Chole Kulche", "blurb": "Spicy white peas topped with onion, lemon and chutney and served with soft kulchas, sold from carts all over the city.", "veg": true },
+    { "name": "Daulat ki Chaat", "blurb": "Milk and cream whipped overnight into a light froth and topped with saffron and pistachio, sold in Old Delhi's lanes only during winter.", "veg": true }
+  ],
+  "jammu-and-kashmir": [
+    { "name": "Rogan Josh", "blurb": "Mutton braised with Kashmiri red chillies, fennel and dry ginger in a rich red gravy, a centrepiece of the Kashmiri wazwan feast.", "veg": false },
+    { "name": "Gushtaba", "blurb": "Large pounded mutton balls simmered in a spiced yogurt gravy, traditionally the final dish served at a wazwan.", "veg": false },
+    { "name": "Kashmiri Dum Aloo", "blurb": "Small potatoes fried and slow-cooked in a yogurt gravy with fennel, ginger powder and Kashmiri chilli, a Kashmiri Pandit favourite.", "veg": true },
+    { "name": "Kalari Kulcha", "blurb": "Kalari, a stretchy cheese from Udhampur, fried until crisp outside and tucked into a kulcha, a popular Jammu street snack.", "veg": true },
+    { "name": "Phirni", "blurb": "Ground rice cooked in milk with sugar and cardamom, set in small earthen bowls and topped with nuts, sold in Srinagar especially during Ramzan and Eid.", "veg": true }
+  ],
+  "ladakh": [
+    { "name": "Thukpa", "blurb": "A noodle soup of hand-made noodles in mutton or vegetable broth with vegetables, eaten across Leh to warm up in the high-altitude cold.", "veg": false },
+    { "name": "Skyu", "blurb": "Thumb-pressed wheat dough pieces cooked in a stew with root vegetables and water, a hearty traditional Ladakhi home dish.", "veg": true },
+    { "name": "Chutagi", "blurb": "Bow-tie shaped wheat dough cooked with vegetables in a thick stock, a staple meal in Ladakhi homes during winter.", "veg": true },
+    { "name": "Mok Mok", "blurb": "Ladakhi momos filled with mutton or vegetables and served with chilli sauce and soup in the cafes of Leh market.", "veg": false },
+    { "name": "Khambir with Butter Tea", "blurb": "Thick, round local brown bread eaten for breakfast with gur gur cha, a salty tea churned with yak butter.", "veg": true }
+  ],
+  "lakshadweep": [
+    { "name": "Mas Curry", "blurb": "Fresh tuna cooked in a coconut gravy with chilli, turmeric and curry leaves, the everyday main meal of the islands eaten with rice.", "veg": false },
+    { "name": "Mas Podi", "blurb": "Tuna boiled, smoked and sun-dried into hard pieces, then shredded and fried with onion, coconut and chilli, the islands' signature preserved fish.", "veg": false },
+    { "name": "Octopus Fry", "blurb": "Octopus caught from the lagoons cleaned, cut and fried with a coconut, chilli and pepper masala, a dish found on Kavaratti and Agatti.", "veg": false },
+    { "name": "Tuna Cutlet", "blurb": "Shredded tuna mixed with potato, onion and green chilli, crumbed and fried, served as a teatime snack in island homes.", "veg": false },
+    { "name": "Kalathappam", "blurb": "A dense rice-flour and jaggery cake cooked in a pot with coconut slivers and shallots fried in ghee, a Malabar-influenced sweet served with tea.", "veg": true }
+  ],
+  "puducherry": [
+    { "name": "Creole Fish Curry", "blurb": "Fish cooked with coconut milk, tamarind and a French-Tamil spice blend, a dish of Pondicherry's Franco-Tamil Creole families.", "veg": false },
+    { "name": "Prawn Assad", "blurb": "Prawns simmered in a mild coconut milk gravy with ginger, garlic and turmeric, a classic of Pondicherry Creole home cooking.", "veg": false },
+    { "name": "Meen Puttu", "blurb": "Boiled fish crumbled and stir-fried with onions, garlic, curry leaves and spices, a coastal Tamil dish eaten with rice.", "veg": false },
+    { "name": "Ven Pongal", "blurb": "Rice and moong dal cooked soft with ghee, black pepper, cumin and cashews, served for breakfast with sambar and chutney in town eateries.", "veg": true },
+    { "name": "Sundal", "blurb": "Boiled chickpeas tempered with mustard seeds, curry leaves and grated coconut, sold in paper cones along the Promenade on Beach Road in the evening.", "veg": true }
+  ]
+}

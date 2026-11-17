@@ -1,0 +1,714 @@
+{
+  "croatia": {
+    "capital": "Zagreb",
+    "currency": "Euro (EUR)",
+    "intro": "Croatia works well for Indian families who want old stone towns, island ferries and easy lake walks in one trip, usually moving down the Adriatic coast from Zagreb or Plitvice to Split and Dubrovnik. Since 2023 it uses the euro and is part of the Schengen area, so it combines easily with Slovenia, Austria or Italy.",
+    "destinations": [
+      {
+        "name": "Dubrovnik Old Town and City Walls",
+        "blurb": "The full circuit of the medieval walls takes about two hours and looks down on marble streets, terracotta roofs and the harbour; the cable car up Mount Srd gives the classic view at sunset."
+      },
+      {
+        "name": "Plitvice Lakes National Park",
+        "blurb": "Sixteen terraced lakes linked by waterfalls are crossed on wooden boardwalks, with an electric boat across the largest lake to shorten the walk for children and elders."
+      },
+      {
+        "name": "Diocletian's Palace, Split",
+        "blurb": "A Roman emperor's retirement palace from around 300 AD now holds shops, homes and cafes inside its walls, opening onto the palm-lined Riva promenade."
+      },
+      {
+        "name": "Krka National Park",
+        "blurb": "Between Split and Zadar, boardwalks loop around the wide cascades of Skradinski Buk, and boats run upriver to the island monastery of Visovac."
+      },
+      {
+        "name": "Hvar",
+        "blurb": "A two-hour ferry from Split reaches Hvar Town, with a Venetian square, a hilltop fortress and lavender fields inland in early summer."
+      },
+      {
+        "name": "Rovinj",
+        "blurb": "On the Istrian peninsula, this fishing town of pastel houses climbs a small hill above the harbour, a short drive from the Italian border."
+      },
+      {
+        "name": "Zagreb Upper Town",
+        "blurb": "The funicular climbs to the old quarter, where St Mark's Church has a tiled roof bearing the city's coat of arms and the Lotrscak Tower fires a noon cannon daily."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Zagreb Cathedral",
+        "blurb": "The twin neo-Gothic spires of the Cathedral of the Assumption are the tallest structures in Croatia and are visible across the capital."
+      },
+      {
+        "name": "Cathedral of Saint Domnius, Split",
+        "blurb": "Built into Diocletian's former mausoleum, it is one of the oldest Catholic cathedrals still in use, and its bell tower can be climbed for views over Split."
+      },
+      {
+        "name": "Euphrasian Basilica, Porec",
+        "blurb": "A UNESCO World Heritage Site in Istria known for its sixth-century Byzantine gold mosaics in the apse."
+      },
+      {
+        "name": "Cathedral of St James, Sibenik",
+        "blurb": "Built entirely of stone without brick or timber supports, this UNESCO-listed cathedral has a frieze of 71 carved stone faces around its outer walls."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Peka",
+        "blurb": "Lamb, veal or octopus slow-cooked with potatoes under an iron bell covered in hot embers; it usually needs to be ordered a few hours ahead.",
+        "veg": false
+      },
+      {
+        "name": "Crni rizot",
+        "blurb": "A black risotto coloured and flavoured with cuttlefish ink, served all along the Dalmatian coast.",
+        "veg": false
+      },
+      {
+        "name": "Pasticada",
+        "blurb": "Beef marinated in wine vinegar and slow-braised with prunes and spices, traditionally served with gnocchi.",
+        "veg": false
+      },
+      {
+        "name": "Soparnik",
+        "blurb": "A thin Dalmatian pie of Swiss chard, onion and parsley baked between two layers of plain dough, then brushed with olive oil and garlic.",
+        "veg": true
+      },
+      {
+        "name": "Paski sir",
+        "blurb": "A firm, salty sheep's milk cheese from the island of Pag, served in thin slices with olives and bread.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Walking Dubrovnik's city walls",
+      "Boardwalks over the Plitvice lakes",
+      "Evening on Split's Riva promenade",
+      "Ferry hop to Hvar",
+      "Swimming below the falls at Krka",
+      "Cable car up Mount Srd"
+    ],
+    "indianTraveller": "Indian restaurants are few outside Zagreb, Split and Dubrovnik, but pizza, pasta and grilled vegetables make vegetarian meals easy; flights from Hyderabad take roughly 12–16 hours with one stop (often via Dubai, Doha or Istanbul); Croatia uses Type C and F plugs, and cards are widely accepted."
+  },
+  "poland": {
+    "capital": "Warsaw",
+    "currency": "Polish zloty (PLN)",
+    "intro": "Poland offers Indian travellers medieval squares, castles and mountain scenery at lower prices than much of Western Europe. Most trips pair Krakow and its salt mine with Warsaw, adding Gdansk on the Baltic or Zakopane in the Tatra Mountains. Poland is in the Schengen area, so it combines easily with Germany, the Czech Republic or Hungary.",
+    "destinations": [
+      {
+        "name": "Krakow Old Town",
+        "blurb": "The Main Market Square, one of the largest medieval squares in Europe, is ringed by the Cloth Hall arcade, cafes and horse-drawn carriages."
+      },
+      {
+        "name": "Wawel Royal Castle",
+        "blurb": "The Renaissance residence of Polish kings sits on a hill above the Vistula, with state rooms hung with Flemish tapestries."
+      },
+      {
+        "name": "Wieliczka Salt Mine",
+        "blurb": "A guided route leads more than 100 metres underground past chambers, lakes and a chapel carved entirely from rock salt."
+      },
+      {
+        "name": "Warsaw Old Town",
+        "blurb": "Destroyed in 1944 and carefully rebuilt from paintings and photographs, the old quarter is now a UNESCO World Heritage Site."
+      },
+      {
+        "name": "Gdansk Main Town",
+        "blurb": "Tall, narrow merchant houses line the Long Market, and the riverside has amber shops and the medieval wooden port crane."
+      },
+      {
+        "name": "Zakopane and the Tatra Mountains",
+        "blurb": "A funicular climbs Gubalowka hill and a cable car reaches Kasprowy Wierch, with wooden chalets and mountain lakes such as Morskie Oko nearby."
+      },
+      {
+        "name": "Malbork Castle",
+        "blurb": "Built by the Teutonic Knights, this red-brick fortress south of Gdansk is the largest castle in the world by land area."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Jasna Gora Monastery, Czestochowa",
+        "blurb": "Poland's most important pilgrimage site holds the icon of the Black Madonna and draws millions of visitors each year."
+      },
+      {
+        "name": "Wawel Cathedral",
+        "blurb": "The coronation and burial church of Polish kings, with the great Sigismund Bell in its tower."
+      },
+      {
+        "name": "St Mary's Basilica, Krakow",
+        "blurb": "Its carved wooden altarpiece by Veit Stoss is a Gothic masterpiece, and a trumpeter plays a call from the taller tower every hour."
+      },
+      {
+        "name": "Divine Mercy Sanctuary, Krakow",
+        "blurb": "A modern basilica in Lagiewniki dedicated to the Divine Mercy devotion of Saint Faustina, visited by Catholic pilgrims from around the world."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Zurek",
+        "blurb": "A sour rye soup with sausage and boiled egg, sometimes served inside a hollowed bread loaf.",
+        "veg": false
+      },
+      {
+        "name": "Bigos",
+        "blurb": "Hunter's stew of sauerkraut, fresh cabbage and several kinds of meat, simmered for hours.",
+        "veg": false
+      },
+      {
+        "name": "Oscypek",
+        "blurb": "Smoked sheep's milk cheese from the Tatra highlands, grilled and served with cranberry jam at Zakopane's stalls.",
+        "veg": true
+      },
+      {
+        "name": "Zapiekanka",
+        "blurb": "Krakow's favourite street snack: half a baguette topped with mushrooms and melted cheese, finished with ketchup.",
+        "veg": true
+      },
+      {
+        "name": "Obwarzanek krakowski",
+        "blurb": "A braided bread ring, boiled then baked and sprinkled with poppy or sesame seeds, sold from carts across Krakow.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Krakow's Main Market Square at dusk",
+      "Underground chambers of Wieliczka",
+      "Warsaw's rebuilt Old Town",
+      "Amber shopping in Gdansk",
+      "Cable car in the Tatra Mountains",
+      "Grilled oscypek with cranberry jam"
+    ],
+    "indianTraveller": "Indian and vegetarian restaurants are easy to find in Warsaw and Krakow; flights from Hyderabad take roughly 11–14 hours with one stop (often via Dubai, Doha or a European hub); Poland uses Type C and E plugs, and cards are accepted almost everywhere."
+  },
+  "russia": {
+    "capital": "Moscow",
+    "currency": "Russian ruble (RUB)",
+    "intro": "Russia has long been popular with Indian travellers, and most trips focus on Moscow and Saint Petersburg, linked by a fast train of about four hours. Summer brings long days, palace fountains and river cruises, while winter suits those who want snow. The e-Visa makes short tourist trips simpler to plan.",
+    "destinations": [
+      {
+        "name": "Moscow Kremlin",
+        "blurb": "Inside the red walls are cathedral squares, the Tsar Bell, the Tsar Cannon and the Armoury museum of royal treasures."
+      },
+      {
+        "name": "Moscow Metro",
+        "blurb": "Stations such as Komsomolskaya and Mayakovskaya have chandeliers, mosaics and marble halls, and a ride costs very little."
+      },
+      {
+        "name": "State Hermitage Museum",
+        "blurb": "Housed partly in the Winter Palace in Saint Petersburg, its collection runs from Egyptian antiquities to Rembrandt and Matisse."
+      },
+      {
+        "name": "Peterhof Palace",
+        "blurb": "Gilded statues and the Grand Cascade fountains run down to the Gulf of Finland; the hydrofoil from central Saint Petersburg takes about 40 minutes."
+      },
+      {
+        "name": "Catherine Palace",
+        "blurb": "The blue-and-white palace at Tsarskoye Selo holds the reconstructed Amber Room."
+      },
+      {
+        "name": "Kazan Kremlin",
+        "blurb": "A UNESCO-listed fortress in the capital of Tatarstan where Russian and Tatar traditions meet."
+      },
+      {
+        "name": "Lake Baikal",
+        "blurb": "The world's deepest lake, in Siberia, is reached via Irkutsk and freezes into clear blue ice in late winter."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Saint Basil's Cathedral",
+        "blurb": "The colourful onion domes at the end of Red Square were built in the 1550s by order of Ivan the Terrible."
+      },
+      {
+        "name": "Cathedral of Christ the Saviour",
+        "blurb": "Moscow's largest Orthodox cathedral, rebuilt in the 1990s, stands beside the Moskva River with a gold central dome."
+      },
+      {
+        "name": "Saint Isaac's Cathedral",
+        "blurb": "Its gilded dome dominates the Saint Petersburg skyline, and the colonnade walk around it gives wide views over the city."
+      },
+      {
+        "name": "Church of the Savior on Spilled Blood",
+        "blurb": "Built where Tsar Alexander II was assassinated, the interior is covered almost entirely in mosaics."
+      },
+      {
+        "name": "Kul Sharif Mosque",
+        "blurb": "With its blue domes and white minarets, this mosque inside the Kazan Kremlin is one of the largest in Russia."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Borscht",
+        "blurb": "A deep-red beetroot soup usually made with beef stock and served with a spoonful of sour cream.",
+        "veg": false
+      },
+      {
+        "name": "Pelmeni",
+        "blurb": "Small dumplings filled with minced meat, boiled and eaten with butter or sour cream.",
+        "veg": false
+      },
+      {
+        "name": "Blini",
+        "blurb": "Thin pancakes made with eggs and milk, served with sour cream, jam, honey or caviar.",
+        "veg": false
+      },
+      {
+        "name": "Vinegret",
+        "blurb": "A salad of diced beetroot, potato, carrot, pickles and sauerkraut dressed with sunflower oil.",
+        "veg": true
+      },
+      {
+        "name": "Grechka",
+        "blurb": "Buckwheat kasha, a nutty staple served with butter and mushrooms or as a side dish at almost every canteen.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Red Square and the Kremlin",
+      "Riding the Moscow Metro",
+      "A day in the Hermitage",
+      "Peterhof's Grand Cascade fountains",
+      "White Nights in Saint Petersburg",
+      "High-speed train between the two capitals"
+    ],
+    "indianTraveller": "Moscow and Saint Petersburg have several Indian restaurants and vegetarian food is manageable; flights from Hyderabad take roughly 9–12 hours with one stop (often via Delhi or a Gulf hub); Indian and international cards generally do not work in Russia, so carry enough cash in US dollars or euros to exchange, and pack a Type C/F adapter."
+  },
+  "zimbabwe": {
+    "capital": "Harare",
+    "currency": "Zimbabwe Gold (ZiG); US dollars widely used",
+    "intro": "Most Indian travellers come to Zimbabwe for Victoria Falls, where the Zambezi drops more than 100 metres along a wide basalt gorge. The town of Victoria Falls makes a safe, walkable base for the falls, river cruises and a day trip to Chobe in Botswana, and many add a safari in Hwange. The KAZA Univisa covers both Zimbabwe and Zambia for those visiting both sides.",
+    "destinations": [
+      {
+        "name": "Victoria Falls Rainforest Walk",
+        "blurb": "A path along the Zimbabwean side has viewpoints facing the main falls, and rented raincoats are useful from March to June when the spray is heaviest."
+      },
+      {
+        "name": "Zambezi Sunset Cruise",
+        "blurb": "Evening boats above the falls pass hippos, crocodiles and elephants drinking at the riverbank."
+      },
+      {
+        "name": "Victoria Falls Bridge",
+        "blurb": "The 1905 bridge between Zimbabwe and Zambia offers a bungee jump, zipline and a guided walk under the deck."
+      },
+      {
+        "name": "Hwange National Park",
+        "blurb": "Zimbabwe's largest park is known for big elephant herds, and is about two hours by road from Victoria Falls."
+      },
+      {
+        "name": "Matobo National Park",
+        "blurb": "Balanced granite boulders, ancient rock paintings and rhino tracking on foot, near Bulawayo."
+      },
+      {
+        "name": "Great Zimbabwe",
+        "blurb": "The stone ruins of a medieval city near Masvingo gave the country its name and are a UNESCO World Heritage Site."
+      },
+      {
+        "name": "Lake Kariba",
+        "blurb": "A huge man-made lake on the Zambezi with houseboat stays, fishing and sunsets over drowned trees."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Cathedral of St Mary and All Saints, Harare",
+        "blurb": "The Anglican cathedral in central Harare is built of local granite and has a quiet bell tower facing Africa Unity Square."
+      },
+      {
+        "name": "Sacred Heart Cathedral, Harare",
+        "blurb": "The seat of Harare's Catholic archdiocese, a red-brick church in the city centre."
+      },
+      {
+        "name": "St Mary's Cathedral, Bulawayo",
+        "blurb": "Bulawayo's Catholic cathedral, dating from the early twentieth century, is a calm stop on the way to Matobo."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Sadza",
+        "blurb": "A stiff white maize porridge eaten by hand with relishes, the staple of every Zimbabwean meal.",
+        "veg": true
+      },
+      {
+        "name": "Muriwo une dovi",
+        "blurb": "Leafy greens cooked with tomato, onion and peanut butter, a common partner to sadza.",
+        "veg": true
+      },
+      {
+        "name": "Nyama",
+        "blurb": "Beef or goat stewed with tomato and onion, or grilled over coals at weekend braais.",
+        "veg": false
+      },
+      {
+        "name": "Kapenta",
+        "blurb": "Tiny sun-dried fish from Lake Kariba, fried with onion and tomato.",
+        "veg": false
+      },
+      {
+        "name": "Mopane worms",
+        "blurb": "Dried caterpillars of the emperor moth, fried crisp or stewed, sold in markets as a protein-rich snack.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Rainforest walk facing the falls",
+      "Sunset cruise on the Zambezi",
+      "Walking across Victoria Falls Bridge",
+      "Elephant herds in Hwange",
+      "Day trip to Chobe in Botswana",
+      "Helicopter flight over the falls"
+    ],
+    "indianTraveller": "Indian restaurants are limited, but lodges and hotels in Victoria Falls readily prepare vegetarian meals on request; flights from Hyderabad take roughly 12–16 hours with one or two stops (usually via Johannesburg, Addis Ababa or Nairobi); carry small, clean US dollar notes, and pack an adapter for Type D and G plugs."
+  },
+  "rwanda": {
+    "capital": "Kigali",
+    "currency": "Rwandan franc (RWF)",
+    "intro": "Rwanda is small, green and easy to travel, with good roads that link gorilla trekking in the north, chimpanzee forests in the south-west and a savanna safari in the east. Kigali is one of the cleanest and safest capitals in Africa. Gorilla permits are expensive and limited, so they should be booked well in advance.",
+    "destinations": [
+      {
+        "name": "Gorilla Trekking, Volcanoes National Park",
+        "blurb": "Small groups hike through bamboo forest on the slopes of the Virunga volcanoes to spend one hour with a habituated mountain gorilla family."
+      },
+      {
+        "name": "Golden Monkey Trekking",
+        "blurb": "A shorter, gentler trek in the same park to see playful golden monkeys feeding in the bamboo."
+      },
+      {
+        "name": "Kigali Genocide Memorial",
+        "blurb": "A moving and essential visit that explains the 1994 genocide against the Tutsi and Rwanda's recovery since."
+      },
+      {
+        "name": "Nyungwe National Park",
+        "blurb": "Ancient montane rainforest with chimpanzee tracking and a canopy walkway suspended high above the valley floor."
+      },
+      {
+        "name": "Akagera National Park",
+        "blurb": "Lakes, papyrus swamps and savanna in the east, where lions and rhinos have been reintroduced, with boat safaris on Lake Ihema."
+      },
+      {
+        "name": "Lake Kivu",
+        "blurb": "Lakeside towns such as Rubavu and Karongi offer beaches, boat rides to islands and a relaxed end to a safari."
+      },
+      {
+        "name": "Twin Lakes Burera and Ruhondo",
+        "blurb": "Two lakes framed by terraced hills and volcanoes, a scenic detour near Musanze."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Our Lady of Kibeho Shrine",
+        "blurb": "In southern Rwanda, the site of Marian apparitions from 1981 recognised by the Catholic Church draws pilgrims especially in late November."
+      },
+      {
+        "name": "Saint Michael's Cathedral, Kigali",
+        "blurb": "The Catholic cathedral of the Archdiocese of Kigali, set on a hill in the city centre."
+      },
+      {
+        "name": "Sainte-Famille Church, Kigali",
+        "blurb": "One of the oldest churches in Kigali, a large red-brick building near the city centre."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Brochettes",
+        "blurb": "Skewers of goat or beef grilled over charcoal, often served with grilled plantain and chips.",
+        "veg": false
+      },
+      {
+        "name": "Sambaza",
+        "blurb": "Small sardine-like fish from Lake Kivu, deep-fried and eaten whole with a squeeze of lime.",
+        "veg": false
+      },
+      {
+        "name": "Akabenz",
+        "blurb": "Fried or grilled pork, a favourite in Kigali's local bars.",
+        "veg": false
+      },
+      {
+        "name": "Ibihaza",
+        "blurb": "Pumpkin cooked together with beans into a soft, mildly sweet stew.",
+        "veg": true
+      },
+      {
+        "name": "Ubugali",
+        "blurb": "A firm dough of maize or cassava flour, eaten with beans, greens or stew.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "An hour with a gorilla family",
+      "Canopy walkway in Nyungwe",
+      "Boat safari on Lake Ihema",
+      "Quiet afternoons by Lake Kivu",
+      "Kigali Genocide Memorial",
+      "Tea plantations in the south-west"
+    ],
+    "indianTraveller": "Kigali has a number of Indian restaurants and vegetarian meals are easy to arrange at lodges; flights from Hyderabad take roughly 9–12 hours with one stop (often via Mumbai, Nairobi, Addis Ababa or a Gulf hub); carry a yellow fever vaccination certificate, note that plastic bags are banned, and pack an adapter for Type C and J plugs."
+  },
+  "uganda": {
+    "capital": "Kampala",
+    "currency": "Ugandan shilling (UGX)",
+    "intro": "Uganda combines gorilla and chimpanzee trekking with classic savanna safaris and the source of the Nile, where part of Mahatma Gandhi's ashes were immersed in 1948. A long-established Indian community means Indian food, temples and familiar groceries in Kampala and Jinja. Distances between parks are long, so a week or more works best.",
+    "destinations": [
+      {
+        "name": "Bwindi Impenetrable National Park",
+        "blurb": "Home to roughly half the world's mountain gorillas, with treks through steep rainforest from several trailheads."
+      },
+      {
+        "name": "Murchison Falls",
+        "blurb": "A boat trip up the Nile passes hippos and crocodiles to the base of the falls, where the river squeezes through a gap about 7 metres wide."
+      },
+      {
+        "name": "Queen Elizabeth National Park",
+        "blurb": "A boat cruise on the Kazinga Channel brings elephants and buffalo close, and the Ishasha sector is known for tree-climbing lions."
+      },
+      {
+        "name": "Kibale National Park",
+        "blurb": "The best place in East Africa for chimpanzee tracking, with forest walks among many other primate species."
+      },
+      {
+        "name": "Source of the Nile, Jinja",
+        "blurb": "Boats take visitors to where the Nile leaves Lake Victoria, near a memorial marking where part of Gandhi's ashes were immersed."
+      },
+      {
+        "name": "Lake Bunyonyi",
+        "blurb": "A quiet lake of terraced hills and small islands, a restful stop after gorilla trekking."
+      },
+      {
+        "name": "Ziwa Rhino Sanctuary",
+        "blurb": "On the way to Murchison, rangers lead walks to see white rhinos on foot."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Uganda Martyrs Basilica, Namugongo",
+        "blurb": "Built on the site where Christian converts were martyred in 1886, it draws huge crowds of pilgrims every 3 June."
+      },
+      {
+        "name": "Uganda National Mosque",
+        "blurb": "On Kampala Hill in Old Kampala, its minaret can be climbed for one of the best views over the city."
+      },
+      {
+        "name": "Shree Sanatan Dharma Mandal Temple, Kampala",
+        "blurb": "A large Hindu temple in central Kampala that has served the city's Indian community for decades and is busy during Navratri and Diwali."
+      },
+      {
+        "name": "BAPS Shri Swaminarayan Mandir, Kampala",
+        "blurb": "A Swaminarayan temple in Kampala that holds daily aarti and is a familiar stop for Gujarati families."
+      },
+      {
+        "name": "Baha'i House of Worship, Kampala",
+        "blurb": "Set in gardens on Kikaya Hill, this domed temple was the first Baha'i House of Worship in Africa."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Rolex",
+        "blurb": "Uganda's street-side favourite: an omelette with tomato and cabbage rolled up in a chapati.",
+        "veg": false
+      },
+      {
+        "name": "Luwombo",
+        "blurb": "Chicken or beef steamed in banana leaves with groundnut sauce, a dish for special occasions.",
+        "veg": false
+      },
+      {
+        "name": "Grilled tilapia",
+        "blurb": "Whole fish from Lake Victoria, grilled or fried and served with kachumbari salad.",
+        "veg": false
+      },
+      {
+        "name": "Matoke with groundnut sauce",
+        "blurb": "Green cooking bananas steamed and mashed, served with a thick peanut sauce.",
+        "veg": true
+      },
+      {
+        "name": "Posho and beans",
+        "blurb": "Firm maize meal with a stew of red beans, the everyday lunch across the country.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Gorilla trek in Bwindi",
+      "Boat to the foot of Murchison Falls",
+      "Kazinga Channel boat cruise",
+      "Chimpanzee tracking in Kibale",
+      "Source of the Nile at Jinja",
+      "Rhino walk at Ziwa"
+    ],
+    "indianTraveller": "Indian and vegetarian food is easy to find in Kampala and Jinja, and lodges cater to vegetarians on request; flights from Hyderabad to Entebbe take roughly 8–11 hours with one stop (often via Nairobi, Dubai, Doha or Addis Ababa); a yellow fever vaccination certificate is required, and Uganda uses Type G plugs."
+  },
+  "peru": {
+    "capital": "Lima",
+    "currency": "Peruvian sol (PEN)",
+    "intro": "Peru centres on Machu Picchu and the Inca heartland around Cusco, usually combined with Lima's food scene and the high-altitude shores of Lake Titicaca. Cusco sits at about 3,400 metres, so plan a slow first day and start in the lower Sacred Valley if possible. Indian passport holders with a valid US, UK or Schengen visa can usually enter without a separate Peruvian visa.",
+    "destinations": [
+      {
+        "name": "Machu Picchu",
+        "blurb": "The fifteenth-century Inca citadel is reached by train to Aguas Calientes and a bus up the mountain, and entry tickets are timed and limited."
+      },
+      {
+        "name": "Sacred Valley",
+        "blurb": "Inca terraces at Pisac and Ollantaytambo, the salt pans of Maras and the circular terraces of Moray lie along the Urubamba River."
+      },
+      {
+        "name": "Cusco and Sacsayhuaman",
+        "blurb": "The former Inca capital has colonial plazas built on Inca walls, and the massive fitted stones of Sacsayhuaman overlook the city."
+      },
+      {
+        "name": "Lake Titicaca",
+        "blurb": "From Puno, boats visit the floating reed islands of the Uros people and the farming island of Taquile."
+      },
+      {
+        "name": "Colca Canyon",
+        "blurb": "One of the deepest canyons in the world, near Arequipa, where Andean condors ride the morning thermals at Cruz del Condor."
+      },
+      {
+        "name": "Nazca Lines",
+        "blurb": "Small-plane flights reveal giant ancient figures of a hummingbird, monkey and spider etched into the desert floor."
+      },
+      {
+        "name": "Miraflores and Barranco, Lima",
+        "blurb": "Clifftop parks above the Pacific, a seafront promenade and the colourful bohemian lanes of Barranco."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Cusco Cathedral",
+        "blurb": "Built on the site of an Inca palace, it holds colonial paintings including a Last Supper by Marcos Zapata with a roasted guinea pig on the table."
+      },
+      {
+        "name": "Qorikancha",
+        "blurb": "The Inca Temple of the Sun in Cusco, whose finely fitted stone walls now support the Convent of Santo Domingo."
+      },
+      {
+        "name": "Santa Catalina Monastery, Arequipa",
+        "blurb": "A walled convent of brightly painted lanes, courtyards and cells, almost a small town within the city."
+      },
+      {
+        "name": "Basilica and Convent of San Francisco, Lima",
+        "blurb": "A baroque church in Lima's historic centre with a historic library and catacombs beneath."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Ceviche",
+        "blurb": "Raw white fish cured in lime juice with chilli and red onion, served with sweet potato and corn.",
+        "veg": false
+      },
+      {
+        "name": "Lomo saltado",
+        "blurb": "Strips of beef stir-fried with onion, tomato and soy sauce, served with rice and chips, a reminder of Chinese influence.",
+        "veg": false
+      },
+      {
+        "name": "Aji de gallina",
+        "blurb": "Shredded chicken in a creamy yellow chilli sauce thickened with bread and walnuts, served over rice.",
+        "veg": false
+      },
+      {
+        "name": "Choclo con queso",
+        "blurb": "Andean corn with very large kernels, boiled and served with a slab of fresh cheese, sold at roadsides in the Sacred Valley.",
+        "veg": true
+      },
+      {
+        "name": "Solterito",
+        "blurb": "An Arequipa salad of broad beans, corn, fresh cheese, tomato, onion and olives dressed with lime and oil.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Sunrise at Machu Picchu",
+      "Vistadome train through the Sacred Valley",
+      "Reed islands on Lake Titicaca",
+      "Condors over Colca Canyon",
+      "Inca walls in Cusco",
+      "Clifftop sunset in Miraflores"
+    ],
+    "indianTraveller": "There are a few Indian restaurants in Lima and Cusco, and vegetarian dishes based on potato, corn and quinoa are easy to find; flights from Hyderabad take roughly 24–30 hours with one or two stops, usually via Europe; Peru uses Type A and C plugs, and soles in cash are handy for markets and small towns."
+  },
+  "chile": {
+    "capital": "Santiago",
+    "currency": "Chilean peso (CLP)",
+    "intro": "Chile stretches more than 4,000 kilometres from the Atacama Desert in the north to Patagonia in the south, so most trips choose two or three regions linked by domestic flights. Indian travellers usually pair Santiago and Valparaiso with either the granite towers of Torres del Paine or the salt flats of the Atacama, and some add Easter Island.",
+    "destinations": [
+      {
+        "name": "Torres del Paine National Park",
+        "blurb": "Granite towers, glaciers and blue lakes in Patagonia, seen on day hikes, boat trips to Grey Glacier or scenic drives."
+      },
+      {
+        "name": "Valle de la Luna",
+        "blurb": "Near San Pedro de Atacama, wind-carved ridges and salt formations turn pink and gold at sunset."
+      },
+      {
+        "name": "El Tatio Geysers",
+        "blurb": "At about 4,300 metres, dozens of geysers steam in the cold dawn air; tours leave San Pedro before sunrise."
+      },
+      {
+        "name": "Rapa Nui National Park",
+        "blurb": "On Easter Island, five hours by air from Santiago, the moai statues stand on stone platforms, most famously the fifteen at Ahu Tongariki."
+      },
+      {
+        "name": "Valparaiso",
+        "blurb": "A port city of steep hills, old funiculars and brightly painted houses, about 90 minutes from Santiago."
+      },
+      {
+        "name": "Chilean Lake District",
+        "blurb": "From Puerto Varas, the snow cone of Osorno Volcano rises above Lake Llanquihue, with the Petrohue waterfalls nearby."
+      },
+      {
+        "name": "Colchagua Valley",
+        "blurb": "Vineyards and an old wine train south of Santiago, with estates that welcome visitors for tours and lunch."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Metropolitan Cathedral of Santiago",
+        "blurb": "The neoclassical cathedral on the Plaza de Armas is the seat of the Catholic Archdiocese of Santiago."
+      },
+      {
+        "name": "Votive Temple of Maipu",
+        "blurb": "A national shrine to Our Lady of Mount Carmel on the outskirts of Santiago, near the site of a decisive independence battle."
+      },
+      {
+        "name": "Churches of Chiloe",
+        "blurb": "Wooden churches on Chiloe Island, built by local carpenters with shingle facades, are a UNESCO World Heritage Site."
+      },
+      {
+        "name": "Baha'i House of Worship, Santiago",
+        "blurb": "A luminous dome of glass and marble in the Andean foothills, open to visitors of all faiths."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Empanada de pino",
+        "blurb": "A baked pastry filled with minced beef, onion, boiled egg and an olive.",
+        "veg": false
+      },
+      {
+        "name": "Pastel de choclo",
+        "blurb": "A summer casserole of seasoned meat topped with sweet ground corn and baked until golden.",
+        "veg": false
+      },
+      {
+        "name": "Curanto",
+        "blurb": "A Chiloe feast of shellfish, meat and potatoes cooked in a pit over hot stones covered with leaves.",
+        "veg": false
+      },
+      {
+        "name": "Porotos granados",
+        "blurb": "A summer stew of fresh beans, squash and corn, flavoured with basil.",
+        "veg": true
+      },
+      {
+        "name": "Mote con huesillo",
+        "blurb": "A cold drink of dried peaches in sweet nectar with husked wheat at the bottom, sold from street carts in summer.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Sunrise on the towers of Torres del Paine",
+      "Sunset in Valle de la Luna",
+      "Stargazing in the Atacama",
+      "Moai at Ahu Tongariki",
+      "Funicular rides in Valparaiso",
+      "Vineyard lunch in Colchagua"
+    ],
+    "indianTraveller": "Indian restaurants are few outside Santiago, but vegetarian options are available in cities and tour lodges cater on request; flights from Hyderabad take roughly 26–32 hours with one or two stops, usually via Europe or the Gulf; Chile uses Type C and L plugs, and cards work widely, though cash helps in remote areas."
+  }
+}

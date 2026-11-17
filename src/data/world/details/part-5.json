@@ -1,0 +1,718 @@
+{
+  "nepal": {
+    "capital": "Kathmandu",
+    "currency": "Nepalese rupee (NPR)",
+    "intro": "Nepal is the simplest foreign trip for most Indian families, with no visa, Indian rupees accepted in many places and short flights to Kathmandu. A first visit usually combines darshan at Pashupatinath and the old squares of the Kathmandu Valley with the lakes of Pokhara, while pilgrims often add Muktinath, Janakpur or Lumbini.",
+    "destinations": [
+      {
+        "name": "Kathmandu Durbar Square",
+        "blurb": "The old royal square of the capital, lined with pagoda-roofed temples, palace courtyards and the house of the Kumari."
+      },
+      {
+        "name": "Bhaktapur Durbar Square",
+        "blurb": "A well-kept Newar town east of Kathmandu, known for its five-storey Nyatapola temple, woodcarving and juju dhau curd."
+      },
+      {
+        "name": "Patan Durbar Square",
+        "blurb": "A compact square of stone and brick temples across the river from Kathmandu, with a fine museum in the old palace."
+      },
+      {
+        "name": "Pokhara",
+        "blurb": "A relaxed lakeside town on Phewa Lake, with boating, paragliding and the Annapurna range on the skyline on clear days."
+      },
+      {
+        "name": "Sarangkot",
+        "blurb": "A hilltop above Pokhara where visitors gather before dawn to watch the sun light up Machhapuchhre and the Annapurnas."
+      },
+      {
+        "name": "Chitwan National Park",
+        "blurb": "Lowland forest and grassland in the south, home to one-horned rhinos, with jeep safaris and canoe rides on the Rapti River."
+      },
+      {
+        "name": "Nagarkot",
+        "blurb": "A ridge on the edge of the Kathmandu Valley with wide Himalayan views at sunrise, about an hour and a half from the city."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Pashupatinath Temple",
+        "blurb": "Nepal's most sacred Shiva temple on the Bagmati River in Kathmandu, with an evening aarti on the ghats."
+      },
+      {
+        "name": "Muktinath Temple",
+        "blurb": "A Vishnu temple at about 3,700 metres in Mustang, revered by Hindus and Buddhists, with 108 water spouts for a ritual bath."
+      },
+      {
+        "name": "Janaki Mandir",
+        "blurb": "A white marble temple in Janakpur dedicated to Sita, built in the early 1900s at the place traditionally held to be her birthplace."
+      },
+      {
+        "name": "Lumbini",
+        "blurb": "The birthplace of the Buddha, with the Maya Devi Temple, the Ashoka pillar and monasteries built by many Buddhist countries."
+      },
+      {
+        "name": "Manakamana Temple",
+        "blurb": "A hilltop temple to the goddess Bhagwati on the Kathmandu–Pokhara road, reached by a cable car ride over the Trishuli valley."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Dal Bhat",
+        "blurb": "The everyday Nepali meal of rice, lentil soup, vegetable curry and pickle, often with free refills.",
+        "veg": true
+      },
+      {
+        "name": "Momo",
+        "blurb": "Steamed dumplings filled with chicken, buffalo or vegetables, served with a spicy tomato and sesame chutney.",
+        "veg": false
+      },
+      {
+        "name": "Aloo Tama",
+        "blurb": "A tangy curry of potatoes, fermented bamboo shoots and black-eyed beans.",
+        "veg": true
+      },
+      {
+        "name": "Sel Roti",
+        "blurb": "A ring-shaped, lightly sweet rice-flour bread fried in oil, made especially during Tihar and Dashain.",
+        "veg": true
+      },
+      {
+        "name": "Choila",
+        "blurb": "A Newar dish of grilled buffalo meat marinated with mustard oil, chilli and spices.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Evening aarti on the Bagmati at Pashupatinath",
+      "Sunrise over the Annapurnas from Sarangkot",
+      "Boating on Phewa Lake in Pokhara",
+      "Early-morning mountain flight past Everest",
+      "Jeep safari to spot rhinos in Chitwan",
+      "Cable car ride up to Manakamana Temple"
+    ],
+    "indianTraveller": "Vegetarian and Indian food is easy to find across Nepal, flights from Hyderabad usually connect via Delhi and take around 5 hours in total, Indian plugs fit, and smaller Indian rupee notes are widely accepted alongside Nepalese rupees."
+  },
+  "bhutan": {
+    "capital": "Thimphu",
+    "currency": "Bhutanese ngultrum (BTN), pegged to the Indian rupee",
+    "intro": "Bhutan is a calm, unhurried Himalayan kingdom where monasteries, fortress-dzongs and farmhouses still follow traditional styles. Indian travellers need no visa, and the Indian rupee is accepted at par, which keeps things simple. Most trips follow a loop of Paro, Thimphu and Punakha, with the hike to Tiger's Nest as the highlight.",
+    "destinations": [
+      {
+        "name": "Thimphu",
+        "blurb": "A small, walkable capital with the weekend farmers' market, the Folk Heritage Museum and craft shops selling hand-woven textiles."
+      },
+      {
+        "name": "Dochula Pass",
+        "blurb": "A mountain pass on the Thimphu–Punakha road marked by 108 memorial chortens, with views of the eastern Himalaya on clear days."
+      },
+      {
+        "name": "Punakha Suspension Bridge",
+        "blurb": "One of the longest suspension bridges in Bhutan, strung with prayer flags across the Po Chhu river."
+      },
+      {
+        "name": "Phobjikha Valley",
+        "blurb": "A wide glacial valley in central Bhutan where black-necked cranes arrive from Tibet to spend the winter."
+      },
+      {
+        "name": "Chele La Pass",
+        "blurb": "The highest motorable pass in Bhutan, between Paro and Haa, with prayer flags and views towards Jomolhari."
+      },
+      {
+        "name": "Motithang Takin Preserve",
+        "blurb": "A hillside enclosure above Thimphu where visitors can see the takin, Bhutan's unusual national animal."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Paro Taktsang",
+        "blurb": "The Tiger's Nest monastery, clinging to a cliff about 900 metres above the Paro valley, reached by a steep hike of a few hours."
+      },
+      {
+        "name": "Punakha Dzong",
+        "blurb": "A grand 17th-century fortress-monastery where the Pho Chhu and Mo Chhu rivers meet, especially pretty in spring with jacaranda in bloom."
+      },
+      {
+        "name": "Buddha Dordenma",
+        "blurb": "A giant gilded statue of the seated Buddha on a hill above Thimphu, holding thousands of smaller Buddha figures inside."
+      },
+      {
+        "name": "Kyichu Lhakhang",
+        "blurb": "One of the oldest temples in Bhutan, near Paro, traditionally dated to the 7th century."
+      },
+      {
+        "name": "Chimi Lhakhang",
+        "blurb": "A small hilltop temple near Punakha, reached by a walk through rice fields, visited by couples praying for children."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Ema Datshi",
+        "blurb": "Bhutan's national dish of green or red chillies cooked in a melted local cheese sauce, eaten with rice.",
+        "veg": true
+      },
+      {
+        "name": "Kewa Datshi",
+        "blurb": "A milder cousin of ema datshi made with potatoes and cheese, popular with visitors who find chillies too hot.",
+        "veg": true
+      },
+      {
+        "name": "Bhutanese Red Rice",
+        "blurb": "A nutty, slightly sticky red rice grown in the Paro and Punakha valleys, served with almost every meal.",
+        "veg": true
+      },
+      {
+        "name": "Phaksha Paa",
+        "blurb": "Pork cooked with dried red chillies and radish or greens.",
+        "veg": false
+      },
+      {
+        "name": "Jasha Maru",
+        "blurb": "A spicy chicken stew with tomato, onion, garlic and ginger.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Hike to the Tiger's Nest monastery",
+      "Watching an archery match, the national sport",
+      "Crossing Dochula Pass with its 108 chortens",
+      "Black-necked cranes in Phobjikha in winter",
+      "Dinner at a traditional farmhouse",
+      "A masked-dance tshechu festival, if dates allow"
+    ],
+    "indianTraveller": "Indian and vegetarian meals are standard in most Bhutan hotels, flights to Paro connect via Delhi or Kolkata and take about 5–6 hours from Hyderabad, and Indian rupees are accepted at par, though carrying smaller notes is easier; Indian plugs usually fit."
+  },
+  "kazakhstan": {
+    "capital": "Astana",
+    "currency": "Kazakhstani tenge (KZT)",
+    "intro": "Kazakhstan has become a popular short trip for Indian families thanks to visa-free entry and direct flights from Delhi to Almaty. Almaty sits right under the snowy Tien Shan, so mountain lakes, cable cars and canyons are all within a day trip of a modern, green city.",
+    "destinations": [
+      {
+        "name": "Almaty",
+        "blurb": "The largest city, with tree-lined avenues, Panfilov Park, the Green Bazaar and cafes set against snowy peaks."
+      },
+      {
+        "name": "Kok Tobe",
+        "blurb": "A hill above Almaty reached by cable car, with a viewpoint, small rides for children and restaurants."
+      },
+      {
+        "name": "Medeu and Shymbulak",
+        "blurb": "A high-altitude ice rink and, above it, a ski resort reached by gondola, with snow in winter and cool walks in summer."
+      },
+      {
+        "name": "Big Almaty Lake",
+        "blurb": "A turquoise reservoir at about 2,500 metres in the mountains south of Almaty, with peaks rising on all sides."
+      },
+      {
+        "name": "Charyn Canyon",
+        "blurb": "A red rock canyon about three hours from Almaty, where the Valley of Castles trail leads down to the Charyn River."
+      },
+      {
+        "name": "Kolsai and Kaindy Lakes",
+        "blurb": "Mountain lakes near the Kyrgyz border; Kaindy is known for the dead spruce trunks rising out of its water."
+      },
+      {
+        "name": "Astana",
+        "blurb": "The futuristic capital on the steppe, with the Baiterek tower and the Khan Shatyr tent-shaped mall."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Ascension Cathedral, Almaty",
+        "blurb": "A colourful wooden Russian Orthodox cathedral in Panfilov Park, completed in 1907 and still standing after a major earthquake."
+      },
+      {
+        "name": "Central Mosque of Almaty",
+        "blurb": "A large white mosque with blue domes near the Green Bazaar, open to respectful visitors outside prayer times."
+      },
+      {
+        "name": "Hazret Sultan Mosque",
+        "blurb": "One of the largest mosques in Central Asia, in Astana, built in white marble with gold-trimmed domes."
+      },
+      {
+        "name": "Mausoleum of Khoja Ahmed Yasawi",
+        "blurb": "A huge 14th-century tiled mausoleum in Turkistan, built under Timur and now a UNESCO World Heritage Site."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Beshbarmak",
+        "blurb": "The national dish of boiled meat, usually horse or lamb, served over flat noodles with onion broth.",
+        "veg": false
+      },
+      {
+        "name": "Plov",
+        "blurb": "Rice cooked with carrots, onions and lamb or beef in a large cast-iron kazan.",
+        "veg": false
+      },
+      {
+        "name": "Shelpek",
+        "blurb": "Thin, soft flatbreads fried in oil, often served with tea.",
+        "veg": true
+      },
+      {
+        "name": "Kurt",
+        "blurb": "Small, hard balls of dried salted cheese, a common snack for road trips.",
+        "veg": true
+      },
+      {
+        "name": "Kumys",
+        "blurb": "Lightly fermented mare's milk, a traditional drink of the steppe that is sour and slightly fizzy.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Cable car up Kok Tobe at sunset",
+      "Day trip to Charyn Canyon",
+      "Gondola ride to Shymbulak",
+      "Photos at Big Almaty Lake",
+      "Dried fruit and nut shopping at the Green Bazaar",
+      "Ice skating at Medeu in winter"
+    ],
+    "indianTraveller": "Almaty and Astana have several Indian restaurants, though local food is meat-heavy so vegetarians should ask clearly, flights from Hyderabad connect via Delhi and take around 6–7 hours, plugs are the European two-pin type, and US dollars are easy to exchange for tenge."
+  },
+  "uzbekistan": {
+    "capital": "Tashkent",
+    "currency": "Uzbekistani som (UZS)",
+    "intro": "Uzbekistan holds some of the finest Silk Road cities, and Indian travellers often feel a connection here, since Timur, buried in Samarkand, was an ancestor of Babur and the Mughals. Fast trains link Tashkent, Samarkand and Bukhara, which makes a week-long tour comfortable for families and senior travellers.",
+    "destinations": [
+      {
+        "name": "Registan",
+        "blurb": "The great square of Samarkand, framed by three tiled madrasas from the 15th to 17th centuries and lit up in the evenings."
+      },
+      {
+        "name": "Gur-e-Amir",
+        "blurb": "The ribbed blue-domed mausoleum of Timur in Samarkand, whose design influenced Mughal tombs such as the Taj Mahal."
+      },
+      {
+        "name": "Ulugh Beg Observatory",
+        "blurb": "Remains of the 15th-century observatory of the astronomer-king Ulugh Beg, with a large curved sextant cut into the hill."
+      },
+      {
+        "name": "Ark of Bukhara",
+        "blurb": "A massive mud-brick fortress that was home to the rulers of Bukhara for centuries, now housing small museums."
+      },
+      {
+        "name": "Itchan Kala",
+        "blurb": "The walled inner town of Khiva, packed with minarets, madrasas and palaces, best seen from the walls at sunset."
+      },
+      {
+        "name": "Chorsu Bazaar",
+        "blurb": "A domed market in old Tashkent selling spices, dried fruit, nuts, bread and fresh produce."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Shah-i-Zinda",
+        "blurb": "An avenue of richly tiled mausoleums in Samarkand, linked to Qusam ibn Abbas, a cousin of the Prophet Muhammad."
+      },
+      {
+        "name": "Bibi-Khanym Mosque",
+        "blurb": "A vast 15th-century mosque in Samarkand built by Timur after his campaigns in India, partly restored in recent decades."
+      },
+      {
+        "name": "Po-i-Kalyan",
+        "blurb": "The central ensemble of Bukhara, with the 12th-century Kalyan Minaret, the Kalyan Mosque and the Mir-i-Arab Madrasa."
+      },
+      {
+        "name": "Hazrati Imam Complex",
+        "blurb": "A religious complex in Tashkent whose library holds an early Quran manuscript traditionally linked to Caliph Uthman."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Plov",
+        "blurb": "The national dish of rice cooked with carrots, onions, chickpeas and lamb, made in huge pots for weddings and gatherings.",
+        "veg": false
+      },
+      {
+        "name": "Samsa",
+        "blurb": "Flaky pastries baked in a tandoor, usually filled with minced lamb and onion.",
+        "veg": false
+      },
+      {
+        "name": "Lagman",
+        "blurb": "Hand-pulled noodles in a rich broth with beef or lamb and vegetables.",
+        "veg": false
+      },
+      {
+        "name": "Non",
+        "blurb": "Round, stamped Uzbek bread baked against the walls of a clay tandoor, sold fresh in every bazaar.",
+        "veg": true
+      },
+      {
+        "name": "Achichuk",
+        "blurb": "A simple salad of sliced tomatoes, onions and herbs, served alongside plov.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "The Registan lit up in the evening",
+      "High-speed Afrosiyob train to Samarkand",
+      "Visiting Timur's tomb at Gur-e-Amir",
+      "Walking the walls of Khiva at sunset",
+      "Silk and suzani shopping in Bukhara",
+      "The ornate stations of the Tashkent Metro"
+    ],
+    "indianTraveller": "Tashkent has a good number of Indian restaurants and Samarkand and Bukhara have a few, though vegetarians should carry some snacks for days on the road, flights from Hyderabad connect via Delhi and take about 6 hours, plugs are the European two-pin type, and clean US dollar notes are the easiest currency to exchange."
+  },
+  "kyrgyzstan": {
+    "capital": "Bishkek",
+    "currency": "Kyrgyzstani som (KGS)",
+    "intro": "Kyrgyzstan is a mountain country of high pastures, lakes and nomadic traditions, best for families who enjoy the outdoors. Summer is the season for yurt stays, horse rides and swims in Issyk-Kul, while Bishkek is a relaxed base with parks and bazaars.",
+    "destinations": [
+      {
+        "name": "Ala-Archa Nature Park",
+        "blurb": "A mountain valley less than an hour from Bishkek with walking trails beside a glacier-fed river and juniper forest."
+      },
+      {
+        "name": "Issyk-Kul",
+        "blurb": "A huge alpine lake that never freezes, with beaches and resorts around Cholpon-Ata on its northern shore."
+      },
+      {
+        "name": "Cholpon-Ata Petroglyphs",
+        "blurb": "An open-air field of boulders carved with ibex, deer and hunters, some thousands of years old."
+      },
+      {
+        "name": "Burana Tower",
+        "blurb": "An 11th-century minaret near Tokmok, all that remains of the old city of Balasagun, with a field of carved stone figures nearby."
+      },
+      {
+        "name": "Jeti-Oguz Gorge",
+        "blurb": "A valley near Karakol known for the red sandstone cliffs called the Seven Bulls and the Broken Heart rock."
+      },
+      {
+        "name": "Song-Kul",
+        "blurb": "A high mountain lake at about 3,000 metres where herders graze horses in summer and visitors stay in yurt camps."
+      },
+      {
+        "name": "Skazka Canyon",
+        "blurb": "The Fairy Tale Canyon on the south shore of Issyk-Kul, with wind-carved red and orange rock formations."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Holy Trinity Cathedral, Karakol",
+        "blurb": "A wooden Russian Orthodox cathedral from the late 19th century, still used for services."
+      },
+      {
+        "name": "Dungan Mosque",
+        "blurb": "A Chinese-style wooden mosque in Karakol built by the Dungan community in the early 1900s, famously without metal nails."
+      },
+      {
+        "name": "Sulaiman-Too",
+        "blurb": "A rocky sacred mountain in the city of Osh, a pilgrimage site for centuries and a UNESCO World Heritage Site."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Beshbarmak",
+        "blurb": "Boiled lamb or horse meat chopped and served over flat noodles with onions and broth.",
+        "veg": false
+      },
+      {
+        "name": "Ashlan-Fu",
+        "blurb": "A cold, spicy noodle soup from Karakol with starch jelly, vinegar and egg.",
+        "veg": false
+      },
+      {
+        "name": "Lagman",
+        "blurb": "Hand-pulled noodles stir-fried or served in broth with meat and vegetables.",
+        "veg": false
+      },
+      {
+        "name": "Tandyr Nan",
+        "blurb": "Round bread baked in a clay tandyr oven, eaten at every meal.",
+        "veg": true
+      },
+      {
+        "name": "Kymyz",
+        "blurb": "Fermented mare's milk, sold at roadside yurts in summer.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "A night in a yurt camp at Song-Kul",
+      "Horse riding on high summer pastures",
+      "An eagle-hunting demonstration",
+      "A swim in Issyk-Kul",
+      "Climbing the stairs inside Burana Tower",
+      "Exploring Osh Bazaar in Bishkek"
+    ],
+    "indianTraveller": "Local food is mostly meat, but Bishkek has some Indian restaurants thanks to its many Indian students, flights from Hyderabad connect via Delhi, Almaty or Tashkent and take about 7–9 hours, plugs are the European two-pin type, and US dollars are easy to change for som."
+  },
+  "azerbaijan": {
+    "capital": "Baku",
+    "currency": "Azerbaijani manat (AZN)",
+    "intro": "Azerbaijan pairs the walled old town and modern skyline of Baku with green mountain towns in the Caucasus. Indian visitors often seek out the Ateshgah, a fire temple near Baku built and used by Hindu and Zoroastrian traders from India, which still carries inscriptions in Sanskrit and Punjabi. Baku is a short trip with an easy e-Visa.",
+    "destinations": [
+      {
+        "name": "Icherisheher",
+        "blurb": "Baku's walled Old City, with the Maiden Tower, the Palace of the Shirvanshahs, caravanserais and carpet shops."
+      },
+      {
+        "name": "Baku Boulevard",
+        "blurb": "A long seaside promenade on the Caspian with parks, cafes and evening views of the Flame Towers lighting up."
+      },
+      {
+        "name": "Heydar Aliyev Center",
+        "blurb": "A museum and cultural centre designed by Zaha Hadid, known for its sweeping white curves."
+      },
+      {
+        "name": "Gobustan National Park",
+        "blurb": "A rocky reserve south of Baku with thousands of ancient rock carvings, often combined with a visit to nearby mud volcanoes."
+      },
+      {
+        "name": "Yanar Dag",
+        "blurb": "A hillside on the Absheron Peninsula where natural gas has burned continuously for decades, best seen after dark."
+      },
+      {
+        "name": "Gabala",
+        "blurb": "A green mountain town with the Tufandag cable car, lakes and walks in the forest."
+      },
+      {
+        "name": "Sheki",
+        "blurb": "An old Silk Road town known for the painted Palace of the Sheki Khans and its stained-glass shebeke windows."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Ateshgah of Baku",
+        "blurb": "A fire temple in Surakhani built by Indian traders in the 17th and 18th centuries, with prayer cells and Sanskrit and Punjabi inscriptions."
+      },
+      {
+        "name": "Bibi-Heybat Mosque",
+        "blurb": "A large mosque on the Caspian shore south of Baku, rebuilt in the 1990s on the site of a 13th-century shrine."
+      },
+      {
+        "name": "Taza Pir Mosque",
+        "blurb": "The main Friday mosque of Baku, built in the early 20th century with a richly decorated interior."
+      },
+      {
+        "name": "Church of Kish",
+        "blurb": "A small, restored stone church in a village near Sheki, linked to the early Christian history of Caucasian Albania."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Shah Plov",
+        "blurb": "Saffron rice with lamb, chestnuts and dried fruit baked inside a crisp lavash crust.",
+        "veg": false
+      },
+      {
+        "name": "Dolma",
+        "blurb": "Vine leaves or vegetables stuffed with minced lamb, rice and herbs.",
+        "veg": false
+      },
+      {
+        "name": "Qutab",
+        "blurb": "Thin folded flatbreads cooked on a griddle, with a vegetarian version filled with fresh greens and herbs.",
+        "veg": true
+      },
+      {
+        "name": "Dushbara",
+        "blurb": "Tiny lamb dumplings served in a clear broth flavoured with dried mint.",
+        "veg": false
+      },
+      {
+        "name": "Tea with Jam",
+        "blurb": "Black tea served in pear-shaped glasses with small dishes of cherry, quince or walnut jam.",
+        "veg": true
+      }
+    ],
+    "highlights": [
+      "Funicular ride up to the Flame Towers viewpoint",
+      "An evening walk on Baku Boulevard",
+      "Seeing the burning hillside at Yanar Dag",
+      "Visiting the Ateshgah fire temple",
+      "Tufandag cable car in Gabala",
+      "The mud volcanoes near Gobustan"
+    ],
+    "indianTraveller": "Baku has many Indian restaurants with full vegetarian menus, flights from Hyderabad usually connect via Delhi or a Gulf hub and take about 7 hours, plugs are the European two-pin type, and manat is easy to get from ATMs or by exchanging US dollars."
+  },
+  "georgia": {
+    "capital": "Tbilisi",
+    "currency": "Georgian lari (GEL)",
+    "intro": "Georgia offers mountain drives, old churches and a lively capital in a compact country that is easy to tour by road. Indian families usually combine Tbilisi with a day or two in Kazbegi and Gudauri, and many add Batumi on the Black Sea. Georgian food has plenty of bean, cheese and vegetable dishes, which helps vegetarians.",
+    "destinations": [
+      {
+        "name": "Old Tbilisi",
+        "blurb": "Narrow lanes of carved wooden balconies, the domed sulphur baths of Abanotubani and a cable car up to Narikala Fortress."
+      },
+      {
+        "name": "Ananuri Fortress",
+        "blurb": "A 17th-century fortress with two churches beside the turquoise Zhinvali reservoir on the Georgian Military Road."
+      },
+      {
+        "name": "Gudauri",
+        "blurb": "A ski resort high on the Georgian Military Road, used for skiing in winter and paragliding and walks in summer."
+      },
+      {
+        "name": "Stepantsminda",
+        "blurb": "A mountain town also known as Kazbegi, at the foot of Mount Kazbek near the Russian border."
+      },
+      {
+        "name": "Sighnaghi",
+        "blurb": "A small hilltop town in the wine region of Kakheti with old walls and views over the Alazani Valley."
+      },
+      {
+        "name": "Uplistsikhe",
+        "blurb": "An ancient cave town cut into the rock above the Mtkvari River near Gori."
+      },
+      {
+        "name": "Batumi",
+        "blurb": "A Black Sea resort city with a long seaside boulevard, botanical garden and modern architecture."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Gergeti Trinity Church",
+        "blurb": "A 14th-century church on a ridge above Stepantsminda with Mount Kazbek behind it, reached by a short drive or hike."
+      },
+      {
+        "name": "Jvari Monastery",
+        "blurb": "A 6th-century church on a hilltop above Mtskheta, overlooking the meeting of the Aragvi and Mtkvari rivers."
+      },
+      {
+        "name": "Svetitskhoveli Cathedral",
+        "blurb": "The great 11th-century cathedral of Mtskheta, the old capital, and one of the holiest sites in Georgia."
+      },
+      {
+        "name": "Holy Trinity Cathedral of Tbilisi",
+        "blurb": "The large modern cathedral known as Sameba, completed in 2004, with gold domes visible across the city."
+      },
+      {
+        "name": "Bodbe Monastery",
+        "blurb": "A convent among cypress trees just outside Sighnaghi, where Saint Nino, who brought Christianity to Georgia, is buried."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Imeruli Khachapuri",
+        "blurb": "A round bread filled with melted Georgian cheese, sold in every bakery and restaurant.",
+        "veg": true
+      },
+      {
+        "name": "Khinkali",
+        "blurb": "Large twisted dumplings filled with spiced meat and broth, eaten by hand.",
+        "veg": false
+      },
+      {
+        "name": "Lobio",
+        "blurb": "Red beans stewed with herbs, garlic and spices, traditionally served in a clay pot.",
+        "veg": true
+      },
+      {
+        "name": "Badrijani Nigvzit",
+        "blurb": "Fried aubergine slices rolled around a walnut and garlic paste, topped with pomegranate seeds.",
+        "veg": true
+      },
+      {
+        "name": "Mtsvadi",
+        "blurb": "Georgian skewers of pork or lamb grilled over vine cuttings.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "Cable car up to Narikala Fortress",
+      "Drive along the Georgian Military Road",
+      "Snow or paragliding at Gudauri",
+      "A visit to the sulphur baths in Tbilisi",
+      "Wine and churchkhela tasting in Kakheti",
+      "Evening walk on the Batumi seafront"
+    ],
+    "indianTraveller": "Tbilisi and Batumi have several Indian restaurants and local menus include many vegetarian dishes, flights from Hyderabad connect via Dubai or Delhi and take about 7–9 hours, plugs are the European two-pin type, and lari is easy to get from ATMs or by exchanging US dollars."
+  },
+  "armenia": {
+    "capital": "Yerevan",
+    "currency": "Armenian dram (AMD)",
+    "intro": "Armenia is one of the oldest Christian countries, and its stone monasteries in mountain settings are the main reason to visit. Yerevan is a friendly, walkable base, and most sights, including Garni, Geghard, Khor Virap and Lake Sevan, are easy day trips. The e-Visa or visa on arrival makes planning straightforward for Indian travellers.",
+    "destinations": [
+      {
+        "name": "Cascade Complex",
+        "blurb": "A giant white stairway in Yerevan lined with sculptures and fountains, with city views and Mount Ararat on clear days from the top."
+      },
+      {
+        "name": "Republic Square",
+        "blurb": "The grand central square of Yerevan, built in pink tuff stone, with musical fountains on summer evenings."
+      },
+      {
+        "name": "Matenadaran",
+        "blurb": "A museum and research institute holding thousands of ancient Armenian manuscripts, many beautifully illuminated."
+      },
+      {
+        "name": "Garni Temple",
+        "blurb": "A 1st-century Greco-Roman style temple on a cliff above a gorge, the only standing building of its kind in the former Soviet Union."
+      },
+      {
+        "name": "Lake Sevan",
+        "blurb": "A large blue lake at about 1,900 metres, popular for summer swims, boat rides and fresh fish lunches."
+      },
+      {
+        "name": "Dilijan",
+        "blurb": "A forested hill town with restored old streets, sometimes called the Switzerland of Armenia."
+      },
+      {
+        "name": "Wings of Tatev",
+        "blurb": "One of the longest reversible cable cars in the world, gliding over the Vorotan gorge to Tatev Monastery."
+      }
+    ],
+    "devotional": [
+      {
+        "name": "Khor Virap",
+        "blurb": "A monastery near the Turkish border with an outstanding view of Mount Ararat, built where Saint Gregory was imprisoned in a pit."
+      },
+      {
+        "name": "Geghard Monastery",
+        "blurb": "A UNESCO-listed monastery partly carved out of the rock in a mountain gorge near Garni."
+      },
+      {
+        "name": "Etchmiadzin Cathedral",
+        "blurb": "The mother cathedral of the Armenian Apostolic Church, traditionally dated to the early 4th century."
+      },
+      {
+        "name": "Sevanavank",
+        "blurb": "Two small stone churches on a peninsula on Lake Sevan, with views across the water."
+      },
+      {
+        "name": "Tatev Monastery",
+        "blurb": "A 9th-century monastery on the edge of a deep gorge in southern Armenia, once an important centre of learning."
+      }
+    ],
+    "dishes": [
+      {
+        "name": "Khorovats",
+        "blurb": "Armenian barbecue of pork, lamb or chicken grilled on skewers over charcoal.",
+        "veg": false
+      },
+      {
+        "name": "Dolma",
+        "blurb": "Grape leaves or cabbage stuffed with minced meat and rice, served with garlic yoghurt.",
+        "veg": false
+      },
+      {
+        "name": "Lavash",
+        "blurb": "Thin soft flatbread baked in a clay tonir oven, listed by UNESCO as part of Armenian heritage.",
+        "veg": true
+      },
+      {
+        "name": "Ghapama",
+        "blurb": "A whole pumpkin stuffed with rice, dried fruit, nuts and honey, baked until soft.",
+        "veg": true
+      },
+      {
+        "name": "Harissa",
+        "blurb": "A thick, slow-cooked porridge of wheat and chicken, traditionally made for festivals.",
+        "veg": false
+      }
+    ],
+    "highlights": [
+      "The Wings of Tatev cable car ride",
+      "Mount Ararat views from Khor Virap",
+      "Watching lavash being baked in a tonir",
+      "Climbing the Cascade in Yerevan",
+      "Musical fountains at Republic Square",
+      "Weekend crafts at the Vernissage market"
+    ],
+    "indianTraveller": "Yerevan has a growing number of Indian restaurants and local meals include vegetarian salads, breads and stews, flights from Hyderabad connect via Dubai or Delhi and take about 7–9 hours, plugs are the European two-pin type, and dram is easy to get from ATMs or by exchanging US dollars."
+  }
+}

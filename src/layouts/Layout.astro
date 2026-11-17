@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import FloatingContactButtons from '../components/FloatingContactButtons.astro';
+import WhatsAppNamePrompt from '../components/WhatsAppNamePrompt.astro';
 import { SITE } from '../consts';
 
 interface Props {
@@ -10,10 +11,15 @@ interface Props {
   description?: string;
   hideFooter?: boolean;
   transparentNav?: boolean;
+  /** Absolute or root-relative URL for og:image / twitter:image. */
+  image?: string;
+  /** Pre-filled message for the header and floating WhatsApp buttons on this page. */
+  whatsappMessage?: string;
 }
 
-const { title, description = SITE.tagline, hideFooter = false, transparentNav = false } = Astro.props;
+const { title, description = SITE.tagline, hideFooter = false, transparentNav = false, image, whatsappMessage } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const imageURL = image ? new URL(image, Astro.site) : undefined;
 ---
 
 <!doctype html>
@@ -40,6 +46,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
     <meta name="twitter:card" content="summary_large_image" />
+    {imageURL && <meta property="og:image" content={imageURL} />}
+    {imageURL && <meta name="twitter:image" content={imageURL} />}
+    <slot name="head" />
 
     <meta name="theme-color" content="#321b10" />
 
@@ -69,12 +78,13 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     </script>
   </head>
   <body class="flex min-h-screen flex-col bg-page font-sans text-ink antialiased">
-    <Nav transparent={transparentNav} />
+    <Nav transparent={transparentNav} whatsappMessage={whatsappMessage} />
     <main class="flex-1">
       <slot />
     </main>
     {!hideFooter && <Footer />}
-    <FloatingContactButtons />
+    <FloatingContactButtons message={whatsappMessage} />
+    <WhatsAppNamePrompt />
 
     <script>
       if (document.documentElement.classList.contains('reveal-ready')) {
