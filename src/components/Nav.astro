@@ -16,7 +16,7 @@ const NAV_LINKS = [
     // No page of its own: clicking Tours opens the menu of tour types.
     href: '/tours',
     label: 'Tours',
-    children: TOUR_CATEGORIES.filter((c) => c.slug === 'domestic' || c.slug === 'international').map((c) => ({
+    children: TOUR_CATEGORIES.map((c) => ({
       href: `/tours/${c.slug}`,
       label: c.label,
     })),
@@ -27,7 +27,7 @@ const NAV_LINKS = [
 const currentPath = Astro.url.pathname;
 
 // A section stays highlighted on its child pages too, so Tours reads as active
-// while you're on /tours/temple or a tour's own page.
+// while you're on /tours/domestic or a tour's own page.
 const isActive = (href: string) => currentPath === href || currentPath.startsWith(href + '/');
 
 const linkClass = (href: string) =>

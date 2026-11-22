@@ -29,10 +29,9 @@ collections:
         name: category
         widget: select
         default: domestic
-        hint: 'Which Tours menu this appears under. Also sets the page address, e.g. /tours/temple/...'
+        hint: 'Which Tours menu this appears under. Also sets the page address, e.g. /tours/domestic/...'
         options:
           - { label: Domestic Tours, value: domestic }
-          - { label: Temple Tours, value: temple }
           - { label: International Tours, value: international }
       - { label: Price From (INR), name: priceFrom, widget: number, value_type: int, required: false, hint: 'Leave blank to show "Enquire for pricing" instead' }
       - { label: Featured on Home page, name: featured, widget: boolean, default: false }

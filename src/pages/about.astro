@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import RouteWatermark from '../components/RouteWatermark.astro';
 import WhatsAppIcon from '../components/WhatsAppIcon.astro';
+import FlightTicketing from '../components/FlightTicketing.astro';
 import { SITE } from '../consts';
 
 import southIndianTempleTank from '../assets/hero/south-indian-temple-tank.jpg';
@@ -336,6 +337,11 @@ const COLUMN_VISIBILITY = ['', '', '', 'hidden sm:block', 'hidden lg:block', 'hi
         </div>
       </div>
     </div>
+  </section>
+
+  {/* Flight ticketing */}
+  <section class="mx-auto max-w-7xl px-4 pt-16 sm:px-6 lg:pt-24">
+    <FlightTicketing />
   </section>
 
   <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24">

@@ -3,10 +3,10 @@ import { getCollection, render } from 'astro:content';
 import { getImage } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import HeroCarousel from '../components/HeroCarousel.astro';
-import TempleTours from '../components/TempleTours.astro';
 import Transportation from '../components/Transportation.astro';
 import GuidedTours from '../components/GuidedTours.astro';
 import VisaAssistance from '../components/VisaAssistance.astro';
+import FlightTicketing from '../components/FlightTicketing.astro';
 import RouteWatermark from '../components/RouteWatermark.astro';
 import PackageCarousel from '../components/PackageCarousel.astro';
 import { SITE } from '../consts';
@@ -63,7 +63,7 @@ const STATS = [
 ];
 ---
 
-<Layout title="Home" description="Customized tours and temple tours, planned around you." transparentNav>
+<Layout title="Home" description="Customized tours, planned around you." transparentNav>
   <HeroCarousel
     slides={[
       { src: southIndianTempleTank, alt: 'South Indian temple tank and gopuram at dusk' },
@@ -88,9 +88,9 @@ const STATS = [
 
     <p class="mt-3 flex flex-wrap items-center justify-center gap-x-2 gap-y-1.5 text-[11px] font-semibold tracking-[0.1em] text-earth uppercase sm:mt-5 sm:gap-x-3 sm:text-sm sm:tracking-[0.15em]">
       <span class="whitespace-nowrap">Customized Tours <span class="text-ink-muted/70" aria-hidden="true">|</span></span>
-      <span class="whitespace-nowrap">Temple Tours <span class="text-ink-muted/70" aria-hidden="true">|</span></span>
       <span class="whitespace-nowrap">Guided Tours <span class="text-ink-muted/70" aria-hidden="true">|</span></span>
-      <span class="whitespace-nowrap">Visa Assistance</span>
+      <span class="whitespace-nowrap">Visa Assistance <span class="text-ink-muted/70" aria-hidden="true">|</span></span>
+      <span class="whitespace-nowrap">Flight Ticketing</span>
     </p>
 
     <a
@@ -146,11 +146,12 @@ const STATS = [
     <div class="grid gap-6">
       <Transportation />
       <VisaAssistance />
-      <TempleTours />
+      <FlightTicketing />
       <GuidedTours />
     </div>
   </section>
 
+  {featured.length > 0 && (
   <section class="mx-auto max-w-5xl px-4 py-16 sm:px-6">
     <div class="mb-2 flex flex-wrap items-center justify-between gap-4" data-reveal="up">
       <h2 class="font-brand flex items-center gap-3 text-4xl text-earth">
@@ -180,6 +181,7 @@ const STATS = [
       </a>
     </div>
   </section>
+  )}
 
   <section id="stats-section" class="relative overflow-hidden py-16">
     <div

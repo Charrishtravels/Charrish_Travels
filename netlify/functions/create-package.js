@@ -26,7 +26,7 @@ function githubHeaders(token) {
 function buildFrontmatter(pkg) {
   // category decides the Tours menu section and the page address, so it is
   // always written — falling back to domestic rather than leaving it unset.
-  const CATEGORIES = ['domestic', 'temple', 'international'];
+  const CATEGORIES = ['domestic', 'international'];
   const fm = {
     title: pkg.title,
     location: pkg.location,

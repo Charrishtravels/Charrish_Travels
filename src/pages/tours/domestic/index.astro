@@ -94,10 +94,13 @@ const jsonLd = {
     </section>
   )}
 
-  {/* Wrapper bounds the sticky bar: it stops sticking once the directory ends. */}
   <div>
-  {/* Directory controls: search and zone filter. Sticky under the nav. */}
-  <div id="directory" class="z-30 border-y lg:sticky lg:top-12 border-line bg-page/95 backdrop-blur">
+  <div class="mx-auto max-w-7xl px-4 pt-10 sm:px-6">
+    <CustomiseNote text="Every state below is a starting point. Combine states, mix temples with sightseeing, choose your days and hotels — we build the trip around your family, pace and budget." />
+  </div>
+
+  {/* Directory controls: search and zone filter. Scrolls inline with the page. */}
+  <div id="directory" class="mt-10 border-y border-line bg-page">
     <div class="mx-auto flex max-w-7xl flex-col gap-2.5 px-4 py-3 sm:px-6 lg:flex-row lg:items-center lg:gap-6">
       <label class="relative block lg:w-72">
         <span class="sr-only">Search states or destinations</span>
@@ -109,10 +112,6 @@ const jsonLd = {
         {zones.map((z) => <button type="button" data-zone-filter={z} aria-pressed="false" class="zone-chip">{z}</button>)}
       </div>
     </div>
-  </div>
-
-  <div class="mx-auto max-w-7xl px-4 pt-10 sm:px-6">
-    <CustomiseNote text="Every state below is a starting point. Combine states, mix temples with sightseeing, choose your days and hotels — we build the trip around your family, pace and budget." />
   </div>
 
   {/* States */}

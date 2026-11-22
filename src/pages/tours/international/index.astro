@@ -75,9 +75,13 @@ const jsonLd = {
     </div>
   </section>
 
-  {/* Wrapper bounds the sticky bar: it stops sticking once the directory ends. */}
   <div>
-    <div id="directory" class="z-30 border-y border-line bg-page/95 backdrop-blur lg:sticky lg:top-12">
+    <div class="mx-auto max-w-7xl px-4 pt-10 sm:px-6">
+      <CustomiseNote text="Every country below is a starting point. Combine countries — Dubai with Turkey, Singapore with Bali, Switzerland with Paris — choose your days, hotels and meals, and we'll handle the route, visas and stays." />
+    </div>
+
+    {/* Directory controls: search and zone filter. Scrolls inline with the page. */}
+    <div id="directory" class="mt-10 border-y border-line bg-page">
       <div class="mx-auto flex max-w-7xl flex-col gap-2.5 px-4 py-3 sm:px-6 lg:flex-row lg:items-center lg:gap-6">
         <label class="relative block lg:w-72 lg:shrink-0">
           <span class="sr-only">Search countries or places</span>
@@ -89,10 +93,6 @@ const jsonLd = {
           {countriesByContinent.map((g) => <button type="button" data-zone-filter={g.continent} aria-pressed="false" class="zone-chip">{g.continent}</button>)}
         </div>
       </div>
-    </div>
-
-    <div class="mx-auto max-w-7xl px-4 pt-10 sm:px-6">
-      <CustomiseNote text="Every country below is a starting point. Combine countries — Dubai with Turkey, Singapore with Bali, Switzerland with Paris — choose your days, hotels and meals, and we'll handle the route, visas and stays." />
     </div>
 
     {countriesByContinent.map((g, gi) => (

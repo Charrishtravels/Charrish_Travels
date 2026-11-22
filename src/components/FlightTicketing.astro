@@ -1,0 +1,190 @@
+---
+import { SITE } from '../consts';
+
+const HIGHLIGHTS = [
+  'Best Fare Guarantee',
+  'Domestic & Global Routes',
+  'Flexible Rescheduling & Corporate Desk',
+];
+
+const SERVICES = [
+  'Domestic & international air tickets',
+  'Round-trip, multi-city & group bookings',
+  'Corporate travel desk & GST invoicing',
+  'Date changes, rescheduling & cancellations',
+  'Web check-in, seat & meal preferences',
+  '24/7 booking & post-ticketing support',
+];
+
+// 8-point compass star matching the logo's star mark
+const STAR_PATH =
+  'M10 0 L10.77 8.15 L14.24 5.76 L11.85 9.23 L20 10 L11.85 10.77 L14.24 14.24 L10.77 11.85 L10 20 L9.23 11.85 L5.76 14.24 L8.15 10.77 L0 10 L8.15 9.23 L5.76 5.76 L9.23 8.15 Z';
+---
+
+<div id="flight-ticketing" class="scroll-mt-20 overflow-hidden rounded-2xl border border-line bg-card p-6 sm:p-8 lg:p-10">
+  <div class="grid gap-10 lg:grid-cols-[3fr_2fr] lg:items-center lg:gap-16">
+    <div class="order-1" data-reveal="up">
+      <p class="text-[11px] font-semibold tracking-[0.2em] text-maroon uppercase">
+        Best Fare Guarantee &amp; Flexible Corporate Solutions
+      </p>
+
+      <h3 class="font-brand mt-2 text-2xl leading-tight text-earth sm:text-3xl">
+        Domestic &amp; International Flight Ticketing
+      </h3>
+
+      <p class="mt-3 text-xs leading-relaxed text-ink-muted sm:text-sm">
+        Whether you need quick domestic connections, long-haul international flights, or end-to-end corporate
+        travel management, Charrish Travels delivers tailored air ticketing with maximum flexibility, transparent
+        fares, and 24/7 booking support.
+      </p>
+
+      <ul class="mt-6 flex flex-wrap gap-2 border-t border-line pt-5">
+        {HIGHLIGHTS.map((item) => (
+          <li class="inline-flex items-center gap-2 rounded-full border border-line bg-page px-3.5 py-1.5 text-xs font-medium text-ink">
+            <span class="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-temple-gold text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-2.5 w-2.5">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+              </svg>
+            </span>
+            {item}
+          </li>
+        ))}
+      </ul>
+
+      <div class="mt-6">
+        <h4 class="text-[11px] font-semibold tracking-[0.18em] text-maroon uppercase">What we handle</h4>
+        <ul class="mt-3 grid gap-x-5 gap-y-2 sm:grid-cols-2">
+          {SERVICES.map((item) => (
+            <li class="flex items-start gap-2 text-xs text-ink-muted">
+              <svg viewBox="0 0 20 20" class="mt-0.5 h-3 w-3 shrink-0 text-temple-gold" aria-hidden="true">
+                <path d={STAR_PATH} fill="currentColor" />
+              </svg>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="mt-6 flex flex-wrap items-center gap-3">
+        <a
+          href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent("Hi Charrish Travels, I'd like to book / inquire about flight ticketing.")}`}
+          target="_blank"
+          rel="noopener"
+          class="inline-flex min-h-10 w-fit items-center gap-2 rounded-full bg-saffron px-5 py-2.5 text-xs font-semibold text-on-saffron transition-all duration-200 hover:scale-105 hover:bg-saffron-deep active:scale-95"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+          </svg>
+          Inquire Air Tickets
+        </a>
+      </div>
+    </div>
+
+    <div class="order-2" data-reveal="right" style="--reveal-delay: 120ms">
+      <div class="relative mx-auto aspect-[3/4] w-full max-w-[16rem] sm:max-w-[18rem]">
+        {/* Background tilted cards for depth */}
+        <div class="absolute inset-x-8 inset-y-5 rotate-[6deg] rounded-2xl border border-line bg-white/70"></div>
+        <div class="absolute inset-x-6 inset-y-4 -rotate-[3deg] rounded-2xl border border-line bg-card shadow-sm"></div>
+
+        {/* Front Boarding Pass */}
+        <div class="absolute inset-x-3 inset-y-2 flex flex-col justify-between overflow-hidden rounded-2xl border border-line bg-card shadow-lg">
+          {/* Header */}
+          <div class="flex items-center justify-between border-b border-line bg-sand px-4 py-3">
+            <div class="flex items-center gap-2">
+              <svg viewBox="0 0 20 20" class="h-3.5 w-3.5 shrink-0 text-temple-gold">
+                <path d={STAR_PATH} fill="currentColor" />
+              </svg>
+              <span class="text-[10px] font-semibold tracking-wider text-earth uppercase">Charrish Air Desk</span>
+            </div>
+            <span class="rounded bg-saffron/15 px-2 py-0.5 text-[9px] font-semibold tracking-wide text-saffron-deep uppercase">
+              Air Ticket
+            </span>
+          </div>
+
+          {/* Route Display */}
+          <div class="px-4 pt-3">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="font-brand text-2xl font-bold text-earth">HYD</p>
+                <p class="text-[10px] text-ink-muted">Hyderabad</p>
+              </div>
+
+              <div class="flex flex-1 flex-col items-center px-3">
+                <div class="relative flex w-full items-center justify-center">
+                  <div class="h-0.5 w-full border-t border-dashed border-temple-gold/60"></div>
+                  <div class="absolute flex h-6 w-6 items-center justify-center rounded-full bg-sand text-temple-gold shadow-xs">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3.5 w-3.5 rotate-90">
+                      <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                    </svg>
+                  </div>
+                </div>
+                <span class="mt-1 text-[9px] font-medium tracking-tight text-maroon">Domestic &amp; Global</span>
+              </div>
+
+              <div class="text-right">
+                <p class="font-brand text-2xl font-bold text-earth">DEST</p>
+                <p class="text-[10px] text-ink-muted">Worldwide</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Ticket Information Fields */}
+          <div class="grid grid-cols-2 gap-x-3 gap-y-2.5 px-4 py-2.5 text-[11px]">
+            <div>
+              <span class="block text-[9px] tracking-wider text-ink-muted uppercase">Service</span>
+              <span class="font-semibold text-ink">Air Ticketing</span>
+            </div>
+            <div>
+              <span class="block text-[9px] tracking-wider text-ink-muted uppercase">Class</span>
+              <span class="font-semibold text-ink">Economy / Corp</span>
+            </div>
+            <div>
+              <span class="block text-[9px] tracking-wider text-ink-muted uppercase">Support</span>
+              <span class="font-semibold text-ink">24/7 Booking Desk</span>
+            </div>
+            <div>
+              <span class="block text-[9px] tracking-wider text-ink-muted uppercase">Fare</span>
+              <span class="font-semibold text-temple-gold">Best Guaranteed</span>
+            </div>
+          </div>
+
+          {/* Perforated Stub Line */}
+          <div class="relative border-t border-dashed border-ink/20">
+            <div class="absolute -top-2 -left-2.5 h-4 w-4 rounded-full border border-line bg-page"></div>
+            <div class="absolute -top-2 -right-2.5 h-4 w-4 rounded-full border border-line bg-page"></div>
+          </div>
+
+          {/* Barcode and Stamp */}
+          <div class="flex items-center justify-between bg-sand/35 px-4 py-3">
+            <div class="flex h-7 items-stretch gap-[2px]" aria-hidden="true">
+              <span class="w-[2px] bg-ink/60"></span>
+              <span class="w-[1px] bg-ink/60"></span>
+              <span class="w-[3px] bg-ink/60"></span>
+              <span class="w-[1px] bg-ink/60"></span>
+              <span class="w-[2px] bg-ink/60"></span>
+              <span class="w-[4px] bg-ink/60"></span>
+              <span class="w-[1px] bg-ink/60"></span>
+              <span class="w-[3px] bg-ink/60"></span>
+              <span class="w-[1px] bg-ink/60"></span>
+              <span class="w-[2px] bg-ink/60"></span>
+              <span class="w-[1px] bg-ink/60"></span>
+              <span class="w-[3px] bg-ink/60"></span>
+              <span class="w-[2px] bg-ink/60"></span>
+              <span class="w-[1px] bg-ink/60"></span>
+              <span class="w-[4px] bg-ink/60"></span>
+              <span class="w-[2px] bg-ink/60"></span>
+              <span class="w-[1px] bg-ink/60"></span>
+            </div>
+
+            <div class="flex items-center gap-1.5 rounded-full border border-temple-gold/60 bg-white/80 px-2.5 py-1 text-[10px] font-semibold text-maroon">
+              <svg viewBox="0 0 20 20" class="h-3 w-3 text-temple-gold">
+                <path d={STAR_PATH} fill="currentColor" />
+              </svg>
+              <span>Verified Fare</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,2 @@
+# Keeps the empty `destinations` content collection directory present so the
+# glob loader's base path resolves. Add tour package .md files here.
